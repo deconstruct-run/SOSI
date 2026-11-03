@@ -17,7 +17,13 @@ window.CASE = {
    "EDGE: SOUTH AMERICA",
    "SILICON LAYER",
    "HORIZON",
-   "GOLDEN DOME"
+   "GOLDEN DOME",
+   "BIO LAYER",
+   "HEALTH DATA LAYER",
+   "BIODEFENSE LAYER",
+   "BODY NETWORK LAYER",
+   "PHARMA + LONGEVITY LAYER",
+   "IoB CLAIMS LEDGER"
   ]
  },
  "layers": [
@@ -110,7 +116,7 @@ window.CASE = {
   {
    "id": "state",
    "n": "01",
-   "name": "State + sovereign buyers",
+   "name": "Government buyers",
    "box": [
     26,
     0,
@@ -122,7 +128,7 @@ window.CASE = {
   {
    "id": "space",
    "n": "06",
-   "name": "Space + orbit",
+   "name": "Space",
    "box": [
     86,
     0,
@@ -146,7 +152,7 @@ window.CASE = {
   {
    "id": "compute",
    "n": "03",
-   "name": "Compute + infrastructure",
+   "name": "Compute",
    "box": [
     0,
     25,
@@ -182,7 +188,7 @@ window.CASE = {
   {
    "id": "autonomy",
    "n": "08",
-   "name": "Autonomy + effectors",
+   "name": "Autonomous systems",
    "box": [
     106,
     25,
@@ -206,7 +212,7 @@ window.CASE = {
   {
    "id": "models",
    "n": "10",
-   "name": "Models + mission apps",
+   "name": "Models + applications",
    "box": [
     32,
     55,
@@ -218,7 +224,7 @@ window.CASE = {
   {
    "id": "allied",
    "n": "11",
-   "name": "Allied industry + buyers",
+   "name": "Allied industry",
    "box": [
     70,
     55,
@@ -230,7 +236,7 @@ window.CASE = {
   {
    "id": "gulf",
    "n": "12",
-   "name": "Gulf theater + counter-bloc",
+   "name": "Gulf + counter-bloc",
    "box": [
     106,
     55,
@@ -242,7 +248,7 @@ window.CASE = {
   {
    "id": "rails",
    "n": "13",
-   "name": "Money rails + custody",
+   "name": "Payments + custody",
    "box": [
     0,
     0,
@@ -254,7 +260,7 @@ window.CASE = {
   {
    "id": "agentic",
    "n": "14",
-   "name": "Agentic + identity",
+   "name": "Agents + digital identity",
    "box": [
     0,
     0,
@@ -290,7 +296,7 @@ window.CASE = {
   {
    "id": "latam",
    "n": "17",
-   "name": "South America theater",
+   "name": "South America",
    "box": [
     0,
     0,
@@ -326,7 +332,7 @@ window.CASE = {
   {
    "id": "cyber",
    "n": "20",
-   "name": "Cyber pre-positioning + defense",
+   "name": "Cyber",
    "box": [
     0,
     0,
@@ -334,43 +340,91 @@ window.CASE = {
     0
    ],
    "tint": "#E07A7A"
+  },
+  {
+   "id": "healthdata",
+   "n": "21",
+   "name": "Health data",
+   "box": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "tint": "#9CC7A4"
+  },
+  {
+   "id": "biodefense",
+   "n": "22",
+   "name": "Biodefense + biomanufacturing",
+   "box": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "tint": "#C9B26A"
+  },
+  {
+   "id": "bodynet",
+   "n": "23",
+   "name": "Neurotech + wearables",
+   "box": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "tint": "#D59AC0"
+  },
+  {
+   "id": "pharma",
+   "n": "24",
+   "name": "Pharma + AI drug discovery",
+   "box": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "tint": "#8EC1D6"
   }
  ],
  "lenses": [
   {
    "id": "all",
-   "name": "All threads",
-   "d": "Every relationship in the case"
+   "name": "All relationships",
+   "d": "Every relationship type"
   },
   {
    "id": "military",
    "name": "Military",
-   "d": "Contracts with defense buyers, effectors, kinetic threats"
+   "d": "Defense buyers, effectors, threats"
   },
   {
    "id": "financial",
    "name": "Financial",
-   "d": "Capital, contract values, supply economics"
+   "d": "Capital, contract values, supply"
   },
   {
    "id": "political",
    "name": "Political",
-   "d": "Oversight, export controls, sovereignty rules, counter-bloc"
+   "d": "Oversight, export controls, sovereignty rules"
   },
   {
    "id": "technological",
    "name": "Technological",
-   "d": "Partnerships, supply chains, model lineage"
+   "d": "Partnerships, supply chains, models"
   },
   {
    "id": "apparatus",
-   "name": "Apparatus",
-   "d": "The circuit: state money, capital and partnerships binding the master nodes"
+   "name": "Influence",
+   "d": "State money, capital, posts and partnerships"
   }
  ],
  "edgeTypes": {
   "contract": {
-   "name": "Contract · state money",
+   "name": "Contract",
    "color": "#F0A63A",
    "dash": false,
    "lenses": [
@@ -433,7 +487,7 @@ window.CASE = {
    ]
   },
   "counter": {
-   "name": "Counter-stack",
+   "name": "Counter",
    "color": "#FF8A5B",
    "dash": [
     0.3,
@@ -445,7 +499,7 @@ window.CASE = {
    ]
   },
   "pressure": {
-   "name": "Pressure · oversight",
+   "name": "Oversight",
    "color": "#FF9A92",
    "dash": [
     0.8,
@@ -456,7 +510,7 @@ window.CASE = {
    ]
   },
   "leads": {
-   "name": "Leads · executive",
+   "name": "Executive",
    "color": "#E9C46A",
    "dash": false,
    "lenses": [
@@ -486,7 +540,7 @@ window.CASE = {
    ]
   },
   "invests": {
-   "name": "Personal stake",
+   "name": "Personal investment",
    "color": "#46C2EA",
    "dash": [
     0.8,
@@ -587,7 +641,11 @@ window.CASE = {
     "Seven pace-setting projects incl. Swarm Forge, Agent Network, Ender's Foundry",
     "FY27 request $1.5T: $1.15T base + $350B reconciliation; both budget resolutions carry only $60B for defense",
     "DoD holds 1,319 of 1,743 AI contracts reviewed for 2026 ($90.7B)",
-    "$1.5T defense request financed through general deficit; no stablecoin earmark (TETHER LAYER 03A)"
+    "$1.5T defense request financed through general deficit; no stablecoin earmark (TETHER LAYER 03A)",
+    "Runs DBIMP (34 awards, >$60M phase one), funds BioMADE ($87.5M 2020, $450M 2023), owns the 1260H list feeding BIOSECURE",
+    "FY26 NDAA creates DoD Biotechnology Management Office",
+    "Oura calls the DoD its largest enterprise customer; tens of thousands of rings deployed",
+    "Added WuXi AppTec to the Section 1260H list (2026-06-08), feeding BIOSECURE coverage."
    ],
    "src": [
     [
@@ -609,8 +667,33 @@ window.CASE = {
     [
      "EDGE: SOVEREIGN SI // TETHER LAYER (Notion)",
      "https://app.notion.com/p/40d709555ee281eda4b7d4b17be9dcc9"
+    ],
+    [
+     "Renewable Carbon: Final nine DBIMP awards",
+     "https://renewable-carbon.eu/news/dod-releases-final-nine-awards-for-distributed-bioindustrial-manufacturing-program/"
+    ],
+    [
+     "FoodNavigator: BioMADE pilot plants",
+     "https://www.foodnavigator.com/Article/2026/05/11/precision-fermentation-us-to-open-pilot-plants-as-issue-of-national-security/"
+    ],
+    [
+     "INSS/NDU: Biotechnology in the FY 2026 NDAA",
+     "https://inss.ndu.edu/news/Article/4358679/biotechnology-in-the-fy-2026-ndaa-strategic-implications-and-recommendations-fo/"
+    ],
+    [
+     "Ropes & Gray: Updated 1260H list includes WuXi AppTec",
+     "https://www.ropesgray.com/en/insights/alerts/2026/06/department-of-defense-releases-updated-1260h-list-that-includes-wuxi-apptec"
+    ],
+    [
+     "Business Wire: Oura U.S. manufacturing and FedStart",
+     "https://www.businesswire.com/news/home/20250827572356/en"
+    ],
+    [
+     "WuXi AppTec added to DOW's 1260H list (Holland & Knight, 2026-06)",
+     "https://www.hklaw.com/en/insights/publications/2026/06/wuxi-apptec-added-to-dows-1260h-list"
     ]
-   ]
+   ],
+   "plan": []
   },
   {
    "id": "army",
@@ -664,7 +747,8 @@ window.CASE = {
     "Skydio X10D order (2,500+, $52M+) is the largest single-vendor small UAS order in Army history",
     "Army Contracting Command IDIQ lets any DoW component buy Govini Ark",
     "Lethal Unmanned Strike orders to Ondas over $240M",
-    "Army Space and Missile Defense Command leadership (Lt. Gen. Rafferty) called high-altitude balloons \"game-changing\""
+    "Army Space and Missile Defense Command leadership (Lt. Gen. Rafferty) called high-altitude balloons \"game-changing\"",
+    "400+ soldiers wore Oura rings in a field exercise; DEVCOM Soldier Center collaborates with Oura"
    ],
    "src": [
     [
@@ -690,6 +774,10 @@ window.CASE = {
     [
      "TWZ: Aerostar balloons as drone motherships",
      "https://www.twz.com/news-features/aerostar-high-altitude-balloons-being-turned-into-drone-motherships"
+    ],
+    [
+     "Business Wire: Oura U.S. manufacturing and FedStart",
+     "https://www.businesswire.com/news/home/20250827572356/en"
     ]
    ],
    "plan": [
@@ -923,11 +1011,23 @@ window.CASE = {
     [
      "POWER: Janus Five",
      "https://powermag.com/the-janus-five-20-commercial-nuclear-microreactors-starting-in-2028"
+    ],
+    [
+     "Defense One: DIU RATE wearables",
+     "https://www.defenseone.com/technology/2020/09/militarys-latest-wearables-can-detect-illness-two-days-you-get-sick/168664/"
     ]
    ],
    "f": [
     "Applied Intuition prototyping contract up to $171.1M",
-    "Vannevar Labs production contract, ceiling $99M"
+    "Vannevar Labs production contract, ceiling $99M",
+    "Ran RATE wearable illness-prediction program with DTRA and Philips (2020)"
+   ],
+   "plan": [
+    [
+     "d",
+     "RATE kits deployed",
+     "2020-06"
+    ]
    ]
   },
   {
@@ -959,7 +1059,8 @@ window.CASE = {
    ],
    "sum": "Ran an Armada Galleon on ship power, streaming data through Foundry and AIP with Maven and Minotaur on top. Awarded Anduril up to $2.9B for submarine components (Oct 6, 2026).",
    "f": [
-    "Galleon ran on ship power, streaming and processing millions of data points with Foundry and AIP; Maven and Minotaur on top"
+    "Galleon ran on ship power, streaming and processing millions of data points with Foundry and AIP; Maven and Minotaur on top",
+    "NHRC adopted Oura after 2017 fatigue-linked collisions; 1,600 sailors on USS Gerald R. Ford CSG in fatigue study (2025); WHOOP CREW contract via MIT Lincoln Laboratory (Apr 2026)"
    ],
    "plan": [
     [
@@ -976,6 +1077,14 @@ window.CASE = {
     [
      "Reboot Hub: World View defense contract",
      "https://reboot-hub.com/blogs/industry-hotspot-analysis/world-view-s-stratospheric-balloon-contract-what-it-means-for-drone-operators-and-defense-isr"
+    ],
+    [
+     "Business Wire: Oura U.S. manufacturing and FedStart",
+     "https://www.businesswire.com/news/home/20250827572356/en"
+    ],
+    [
+     "HLTH: WHOOP MIT Lincoln Laboratory contract",
+     "https://hlth.com/insights/news/whoop-secures-mit-lincoln-laboratory-contract-to-support-u-s-navy-crew-program"
     ]
    ]
   },
@@ -1000,7 +1109,12 @@ window.CASE = {
     "Sen. Blumenthal letter to Brandon Lutnick (Oct 8, 2026)",
     "Wyden and Ocasio-Cortez letter to Palantir on IRS data",
     "Golden Dome FY27: ~$17.1B of ~$17.5B depends on reconciliation; ~$400M base appropriations",
-    "CBO (May 12, 2026) estimates Golden Dome at ~$1.2T over 20 years"
+    "CBO (May 12, 2026) estimates Golden Dome at ~$1.2T over 20 years",
+    "House VA Committee voted 19-0 to subpoena Oracle's Ellison and Sicilia (September 2026)",
+    "House E&C O&I hearing on CMS fraud (March 17, 2026)",
+    "FY26 NDAA enacted 17 biotech provisions incl. BIOSECURE Sec. 851; FY27 NDAA adds biotech to Industrial Base Fund (House)",
+    "PAHPA authorities lapsed since 2023",
+    "MIND Act (S.2925) introduced Sept 24, 2025 by Schumer, Cantwell, Markey"
    ],
    "src": [
     [
@@ -1026,8 +1140,33 @@ window.CASE = {
     [
      "CBO: Golden Dome cost estimate (May 2026)",
      "https://www.cbo.gov/system/files/2026-05/62379-golden-dome.pdf"
+    ],
+    [
+     "House panel subpoenas Oracle heads (Nextgov)",
+     "https://www.nextgov.com/modernization/2026/09/house-panel-subpoenas-oracle-heads-over-va-health-record-overhauls-ballooning-costs/415791/"
+    ],
+    [
+     "CMS witness testimony, House E&C O&I, Mar 17 2026",
+     "https://d1dth6e84htgma.cloudfront.net/03_17_2026_OI_Hearing_Witness_Testimony_Brandt_27650dea5c.pdf"
+    ],
+    [
+     "INSS/NDU: Biotechnology in the FY 2026 NDAA",
+     "https://inss.ndu.edu/news/Article/4358679/biotechnology-in-the-fy-2026-ndaa-strategic-implications-and-recommendations-fo/"
+    ],
+    [
+     "NSCEB: FY27 NDAA biotech provisions (Jun 8, 2026)",
+     "https://www.biotech.senate.gov/press-releases/biotech-further-cemented-as-top-tech-priority-for-defense/"
+    ],
+    [
+     "STAT: ASPR and PAHPA reauthorization",
+     "https://www.statnews.com/2026/06/16/aspr-pandemic-all-hazard-preparedness-act-reauthorization/"
+    ],
+    [
+     "Inside Privacy: MIND Act",
+     "https://www.insideprivacy.com/health-privacy/congress-introduces-neural-data-bill/"
     ]
-   ]
+   ],
+   "plan": []
   },
   {
    "id": "commerce",
@@ -1049,7 +1188,8 @@ window.CASE = {
     "BIS 50% Affiliates Rule effective Nov 10, 2026 with no published extension",
     "Secretary Howard Lutnick",
     "Runs American AI Exports Program (78 full-stack packages)",
-    "SILICON LAYER does not name the agency behind the Intel stake, the Wolfspeed financing or the xLight CHIPS award"
+    "SILICON LAYER does not name the agency behind the Intel stake, the Wolfspeed financing or the xLight CHIPS award",
+    "Administers Proclamation 11020 Section 232 pharma tariffs; may revisit generics within one year."
    ],
    "src": [
     [
@@ -1059,6 +1199,10 @@ window.CASE = {
     [
      "EDGE: SOVEREIGN SI // FINANCIAL LAYER (Notion)",
      "https://app.notion.com/p/40c709555ee2813bb795d6ecacf7a0a8"
+    ],
+    [
+     "Trump administration announces Section 232 tariffs on patented pharmaceuticals (Covington, 2026-04)",
+     "https://www.cov.com/en/news-and-insights/insights/2026/04/trump-administration-announces-section-232-tariffs-on-patented-pharmaceuticals-and-ingredients"
     ]
    ],
    "strat": "Commerce controls chip export approvals for the Gulf, BIS export controls and the American AI Exports Program (78 full-stack packages). Per the financial-layer page it is the hinge between the money and the stack: its Secretary's former firm custodies Tether's U.S. reserves.",
@@ -1180,7 +1324,30 @@ window.CASE = {
     15,
     12
    ],
-   "sum": "Co-led Anduril's $5B round at $61B (May 13, 2026)."
+   "sum": "Co-led Anduril's $5B round at $61B (May 13, 2026).",
+   "plan": [],
+   "f": [
+    "Investor in Neuralink's $650M Series E (Jun 2025)",
+    "Led Isomorphic's $600M (2025) and $2.1B (2026) rounds; invested in NewLimit's Series C (2026)."
+   ],
+   "src": [
+    [
+     "Fierce Biotech: Neuralink $650M Series E",
+     "https://www.fiercebiotech.com/medtech/neuralink-secures-650m-series-e-funding-expand-patient-access-brain-chip-technology"
+    ],
+    [
+     "Isomorphic Labs announces $600M external investment round (Isomorphic, 2025-03-31)",
+     "https://isomorphiclabs.com/articles/isomorphic-labs-announces-600m-external-investment-round"
+    ],
+    [
+     "Isomorphic Labs raises $2.1 billion (YourStory, 2026-05-12)",
+     "https://yourstory.com/ai-story/isomorphic-labs-ai-drug-discovery-series-b-2026"
+    ],
+    [
+     "NewLimit raises $435M Series C, valuation hits $3.1B (Yahoo Finance, 2026-06-03)",
+     "https://finance.yahoo.com/sectors/healthcare/articles/newlimit-raises-435m-series-c-145642833.html"
+    ]
+   ]
   },
   {
    "id": "founders",
@@ -1197,12 +1364,27 @@ window.CASE = {
    "f": [
     "Armada investor; reportedly backs HALEU startup General Matter [VERIFY]",
     "Backs Erebor Bank alongside Armada and Anduril",
-    "Reportedly backs Substrate (X-ray lithography) [VERIFY]"
+    "Reportedly backs Substrate (X-ray lithography) [VERIFY]",
+    "Led Neuralink's $280M Series D (Aug 2023)",
+    "In syndicate for Neuralink's $205M Series C (2021) and $650M Series E (2025)",
+    "Led NewLimit's $435M Series C at $3.1B (2026-06-02)."
    ],
    "src": [
     [
      "EDGE: SOVEREIGN SI // FINANCIAL LAYER (Notion)",
      "https://app.notion.com/p/40c709555ee2813bb795d6ecacf7a0a8"
+    ],
+    [
+     "MedTech Dive: Neuralink $280M led by Founders Fund",
+     "https://www.medtechdive.com/news/elon-musk-neuralink-raises-280-million"
+    ],
+    [
+     "Fierce Biotech: Neuralink $650M Series E",
+     "https://www.fiercebiotech.com/medtech/neuralink-secures-650m-series-e-funding-expand-patient-access-brain-chip-technology"
+    ],
+    [
+     "NewLimit raises $435M Series C, valuation hits $3.1B (Yahoo Finance, 2026-06-03)",
+     "https://finance.yahoo.com/sectors/healthcare/articles/newlimit-raises-435m-series-c-145642833.html"
     ]
    ],
    "plan": []
@@ -1737,7 +1919,11 @@ window.CASE = {
     "Rowan describes Apollo's NVIDIA financing as chip-secured",
     "Appears three times on Palantir's sovereign AI stack: customer, open-weight model supplier (Nemotron, Nemotron Embed, Nemotron Rerank, Kumo), and acceleration inside the Ontology (cuDF, cuVS, cuML, CUDA-X Skills)",
     "Sovereign AI OS Reference Architecture with Palantir (Mar 2026)",
-    "NVQLink: HORIZON expects fault-tolerant quantum machines racked beside GPU clusters around 2029-2030 [ANALYSIS]"
+    "NVQLink: HORIZON expects fault-tolerant quantum machines racked beside GPU clusters around 2029-2030 [ANALYSIS]",
+    "NVentures backs Abridge; co-developing a clinical conversation foundation model (June 2026)",
+    "Synchron runs real-time neural decoding on NVIDIA Holoscan (Jan 2025) and plans Chiral training with Omniverse and Cosmos (GTC, Mar 2025)",
+    "NVIDIA venture arm in Lila's $115M extension (Oct 2025) and reported anchor of Lila's ~$2B round (Jun 2026).",
+    "NVIDIA venture arm invested in Generate's 2023 Series C."
    ],
    "src": [
     [
@@ -1759,9 +1945,53 @@ window.CASE = {
     [
      "Daily Political: Rowan on energy, chips and data centers",
      "https://www.dailypolitical.com/2026/09/23/apollo-global-management-sees-ai-private-credit-and-retirement-driving-growth.html"
+    ],
+    [
+     "Abridge, NVIDIA, Eli Lilly (Fortune)",
+     "https://fortune.com/2026/06/11/abridge-operating-system-medicine-nvidia-eli-lilly-artsight/"
+    ],
+    [
+     "Business Wire: Synchron Chiral with NVIDIA",
+     "https://www.businesswire.com/news/home/20250319964709/en"
+    ],
+    [
+     "Tech Times: Synchron pivotal trial 2026",
+     "https://www.techtimes.com/articles/317929/20260606/synchron-brain-implant-targets-2026-pivotal-trial-first-fda-approved-bci.htm"
+    ],
+    [
+     "NVIDIA and Lilly Announce Co-Innovation AI Lab (NVIDIA, 2026-01-12)",
+     "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-and-Lilly-Announce-Co-Innovation-AI-Lab-to-Reinvent-Drug-Discovery-in-the-Age-of-AI"
+    ],
+    [
+     "Lilly AI factory on NVIDIA Blackwell DGX SuperPOD (NVIDIA blog, 2025-10-28)",
+     "https://blogs.nvidia.com/blog/lilly-ai-factory-nvidia-blackwell-dgx-superpod"
+    ],
+    [
+     "NVIDIA BioNeMo Platform Adopted by Life Sciences Leaders (NVIDIA, 2026-01-12)",
+     "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-BioNeMo-Platform-Adopted-by-Life-Sciences-Leaders-to-Accelerate-AI-Driven-Drug-Discovery/default.aspx"
+    ],
+    [
+     "AI lab Lila Sciences tops $1.3 billion valuation with new Nvidia backing (Reuters via Yahoo, 2025-10-14)",
+     "https://finance.yahoo.com/news/exclusive-ai-lab-lila-sciences-101645837.html"
+    ],
+    [
+     "Lila Sciences said in talks for funds at $8.5 billion valuation (Bloomberg Law, 2026-06-03)",
+     "https://news.bloomberglaw.com/private-equity/lila-sciences-said-in-talks-for-funds-at-8-5-billion-valuation"
     ]
    ],
-   "plan": []
+   "plan": [
+    [
+     "d",
+     "Lilly AI factory",
+     "2025-10-28"
+    ],
+    [
+     "d",
+     "Lilly co-innovation lab; BioNeMo partner roster",
+     "2026-01-12"
+    ]
+   ],
+   "strat": "NVIDIA sells biology as an AI-factory market: Lilly's owned DGX B300 SuperPOD, a joint $1B co-innovation lab on Vera Rubin, BioNeMo and Clara open models, and NVentures stakes in Lila Sciences and Generate."
   },
   {
    "id": "armada",
@@ -1972,7 +2202,11 @@ window.CASE = {
    ],
    "f": [
     "Data centers with Microsoft, Amazon, Meta or Google commitments finance as contracted project financings (Rowan)",
-    "Azure Local inside Galleons dated Apr 1, 2026 on the main page"
+    "Azure Local inside Galleons dated Apr 1, 2026 on the main page",
+    "Microsoft Dragon ambient AI powers Epic's ambient documentation tool",
+    "Invested $1.5B in G42 (April 2024); G42 co-owns M42",
+    "Patent application WO2020060606A1 'Cryptocurrency system using body activity data' (filed 2019-06-20, published 2020-03-26)",
+    "Microsoft AI named in CMS Health Tech Ecosystem"
    ],
    "src": [
     [
@@ -1982,8 +2216,25 @@ window.CASE = {
     [
      "IDC Nova: Microsoft and Armada",
      "https://www.idcnova.com/html/1/59/153/5419.html"
+    ],
+    [
+     "Judy Faulkner unveils healthcare intelligence (Becker's)",
+     "https://www.beckershospitalreview.com/healthcare-information-technology/ehrs/judy-faulkner-unveils-healthcare-intelligence/"
+    ],
+    [
+     "Wikipedia: G42",
+     "https://en.wikipedia.org/wiki/G42_(company)"
+    ],
+    [
+     "Lead Stories: Microsoft patent WO2020060606",
+     "https://leadstories.com/hoax-alert/2020/04/fact-check-microsoft-patent-application-w02020060606-does-not-involve-implanting-sensors-in-people-5g-or-vaccines.html"
+    ],
+    [
+     "Tech Policy Press: wearables campaign critique",
+     "https://techpolicy.press/control-for-whom-keeping-an-eye-on-the-dark-side-of-americas-new-wearables-campaign"
     ]
-   ]
+   ],
+   "plan": []
   },
   {
    "id": "aws",
@@ -2006,7 +2257,9 @@ window.CASE = {
     "Gulf strikes cost about $150M in customer credits, reportedly uncovered by insurance",
     "In September AWS said it could not restore several Bahrain sites and one UAE site",
     "European Sovereign Cloud (Brandenburg) GA Jan 15, 2026, €7.8B",
-    "Amazon's federal court challenge to agentic shopping (open question on AGENTIC LAYER)"
+    "Amazon's federal court challenge to agentic shopping (open question on AGENTIC LAYER)",
+    "AWS GovCloud hosts FDA Elsa",
+    "Amazon is a Health Tech Ecosystem signatory"
    ],
    "src": [
     [
@@ -2020,6 +2273,14 @@ window.CASE = {
     [
      "EDGE: SOVEREIGN SI // AGENTIC LAYER (Notion)",
      "https://app.notion.com/p/40d709555ee2816fb1a9eacf02f74c5e"
+    ],
+    [
+     "FDA's Elsa switches from Claude to Gemini (Clinical Leader)",
+     "https://www.clinicalleader.com/doc/fda-s-elsa-ai-switches-from-claude-to-gemini-what-sponsors-need-to-know-0001"
+    ],
+    [
+     "White House, tech leaders commit to patient-centric ecosystem (CMS)",
+     "https://www.cms.gov/newsroom/press-releases/white-house-tech-leaders-commit-create-patient-centric-healthcare-ecosystem"
     ]
    ]
   },
@@ -2041,14 +2302,43 @@ window.CASE = {
    "ex": "NASDAQ",
    "sum": "Distributed Cloud air-gapped with Gemini (IL6). Palantir partnership at AIPCon (Jun 4, 2026). S3NS with Thales holds SecNumCloud. CY2026 capex $195–205B.",
    "f": [
-    "AP2 mandates; co-author of ERC-8004; Aadhaar credentials in Google Wallet"
+    "AP2 mandates; co-author of ERC-8004; Aadhaar credentials in Google Wallet",
+    "Gemini available for HHS mission use; reportedly Elsa's new primary model [VERIFY]",
+    "Health Tech Ecosystem signatory",
+    "Fitbit pledged as early adopter in CMS Health Tech Ecosystem (Jul 2025)",
+    "Alphabet owns Isomorphic Labs and Calico; GV and CapitalG invest in Isomorphic."
    ],
    "src": [
     [
      "EDGE: SOVEREIGN SI // AGENTIC LAYER (Notion)",
      "https://app.notion.com/p/40d709555ee2816fb1a9eacf02f74c5e"
+    ],
+    [
+     "Agencies begin to shed Anthropic contracts (Nextgov)",
+     "https://www.nextgov.com/acquisition/2026/03/agencies-begin-shed-anthropic-contracts-following-trumps-directive/411823/"
+    ],
+    [
+     "FDA's Elsa switches from Claude to Gemini (Clinical Leader)",
+     "https://www.clinicalleader.com/doc/fda-s-elsa-ai-switches-from-claude-to-gemini-what-sponsors-need-to-know-0001"
+    ],
+    [
+     "White House, tech leaders commit to patient-centric ecosystem (CMS)",
+     "https://www.cms.gov/newsroom/press-releases/white-house-tech-leaders-commit-create-patient-centric-healthcare-ecosystem"
+    ],
+    [
+     "Tech Policy Press: wearables campaign critique",
+     "https://techpolicy.press/control-for-whom-keeping-an-eye-on-the-dark-side-of-americas-new-wearables-campaign"
+    ],
+    [
+     "Isomorphic Labs raises $2.1 billion (YourStory, 2026-05-12)",
+     "https://yourstory.com/ai-story/isomorphic-labs-ai-drug-discovery-series-b-2026"
+    ],
+    [
+     "Calico (company) (Wikipedia)",
+     "https://en.wikipedia.org/wiki/Calico_(company)"
     ]
-   ]
+   ],
+   "plan": []
   },
   {
    "id": "oracle",
@@ -2069,12 +2359,36 @@ window.CASE = {
    "sum": "OCI Dedicated Region from three racks; RPO $664B. Q1 FY27 free cash flow −$5.4B and a $20B ATM equity sale. Bloom fuel cells up to 2.8 GW. Named on the IRGC target list.",
    "f": [
     "Larry Ellison reported major funder of Tony Blair Institute [VERIFY]",
-    "In Stargate; on IRGC target list; runs OCI Dedicated Regions"
+    "In Stargate; on IRGC target list; runs OCI Dedicated Regions",
+    "VA Federal EHR: $10B (2018) plus $17B ceiling (2026); 13 go-lives in 2026",
+    "House VA Committee subpoenaed Ellison and Sicilia, 19-0 (September 2026)",
+    "Oracle Health is a CMS Aligned Network early adopter",
+    "Ellison framed Stargate around AI cancer detection, personalized mRNA vaccines and electronic health records (2025-01-21)."
    ],
    "src": [
     [
      "EDGE: SOVEREIGN SI // FINANCIAL LAYER (Notion)",
      "https://app.notion.com/p/40c709555ee2813bb795d6ecacf7a0a8"
+    ],
+    [
+     "VA completes 2026 EHR deployments (Nextgov)",
+     "https://www.nextgov.com/modernization/2026/10/va-completes-2026-ehr-system-deployments-final-two-site-go-lives/416823/"
+    ],
+    [
+     "House panel subpoenas Oracle heads (Nextgov)",
+     "https://www.nextgov.com/modernization/2026/09/house-panel-subpoenas-oracle-heads-over-va-health-record-overhauls-ballooning-costs/415791/"
+    ],
+    [
+     "CMS Health Tech Ecosystem data network pledgees (CMS)",
+     "https://www.cms.gov/initiatives/health-technology-ecosystem/overview/early-adopters-all-pledgees/data-networks"
+    ],
+    [
+     "Ellison says AI can make cancer vaccine available in 48 hrs (Business Today, 2025-01-22)",
+     "https://businesstoday.in/technology/artificial-intelligence/story/promise-of-the-future-oracles-larry-ellison-says-ai-can-make-cancer-vaccine-available-in-48-hrs-461641-2025-01-22"
+    ],
+    [
+     "Trump launches $500B Project Stargate (HLTH, 2025-01-23)",
+     "https://hlth.com/insights/news/trump-launches-500b-project-stargate-tech-giants-unite-for-ai-powered-healthcare-innovation-2025-01-23"
     ]
    ]
   },
@@ -2432,7 +2746,13 @@ window.CASE = {
     "Customers shown on its sovereign AI stack image: L3Harris, McCarthy, NVIDIA, Ondas, Regna AI, Tampa General Hospital",
     "Brokered the World View introduction to Ondas",
     "Connects stratospheric sensing to the Ontology (L6)",
-    "HORIZON scenario [ANALYSIS]"
+    "HORIZON scenario [ANALYSIS]",
+    "HHS footprint: Gotham licenses $17,361,816 (2020); SHARE BPA $90M (2022); CDC Common Operating Picture $443M (2022); ARPA-H $19M (2024); ICCM task $19,778,616 (2025); ARPA-H agentic AI PaaS order up to $13.7M (June 2026)",
+    "DHS BPA up to $1B over five years (February 2026)",
+    "NHS FDP £330M; break-clause decision early 2027",
+    "Reportedly built ICE's ELITE tool that ingests Medicaid data [VERIFY]",
+    "EFF documents say Palantir provides infrastructure for CMS and serves Humana, Cigna and Blue Shield of California [VERIFY]",
+    "Oura supports DoD population-level readiness analysis on Palantir's FedStart platform, authorized at IL5 (Aug 27, 2025); Oura later said Palantir provides the security layer for some DoD projects and is not a partner"
    ],
    "src": [
     [
@@ -2490,6 +2810,42 @@ window.CASE = {
     [
      "Peoples Dispatch: Thiel meets Milei",
      "https://peoplesdispatch.org/2026/04/27/peter-thiel-has-private-meeting-with-argentine-president-javier-milei/"
+    ],
+    [
+     "Palantir wins $443M CDC contract (Potomac Officers Club)",
+     "https://potomacofficersclub.com/news/palantir-wins-443m-contract-to-streamline-software-offerings-for-cdc"
+    ],
+    [
+     "HHS Palantir SHARE BPA (FedScoop)",
+     "https://fedscoop.com/hhs-palantir-platform-bpa/"
+    ],
+    [
+     "Delivery order 75N99226F00002 (HigherGov)",
+     "https://www.highergov.com/contract/47QTCA24D004L-75N99226F00002/"
+    ],
+    [
+     "DHS $1B Palantir blanket purchase agreement (SiliconANGLE)",
+     "https://siliconangle.com/?p=731512"
+    ],
+    [
+     "ICE allegedly uses Palantir tool tracking Medicaid data (Fortune)",
+     "https://fortune.com/2026/01/26/ice-allegedly-uses-palantir-tool-tracking-medicaid-data/"
+    ],
+    [
+     "Palantir Medicare AI experiment (Common Dreams)",
+     "https://www.commondreams.org/news/palantir-medicare-ai-experiment"
+    ],
+    [
+     "UK reviewing £330M NHS deal with Palantir (The Next Web)",
+     "https://thenextweb.com/news/uk-nhs-palantir-contract-review-break-clause"
+    ],
+    [
+     "Business Wire: Oura U.S. manufacturing and FedStart",
+     "https://www.businesswire.com/news/home/20250827572356/en"
+    ],
+    [
+     "Tom's Guide: Oura military partnership and Palantir",
+     "https://www.tomsguide.com/wellness/smart-rings/oura-is-expanding-its-partnership-with-the-u-s-military-and-users-are-stressed-heres-what-that-means-for-your-data"
     ]
    ],
    "strat": "Own the operating layer for civil, commercial and military buyers at once, then certify an ecosystem around it (modular data center partners, Knox FedRAMP/IL5, Aplos, Accenture Federal) and bundle it with Armada and NVIDIA into export packages. Deliver a Sovereign AI OS (AIP, Ontology, Foundry, Apollo) that runs open-weight and commercial models on infrastructure the customer owns, with the Ontology as the hinge linking data, models and actions. Extend it to physical infrastructure through certified partners (Armada) and to owned mission models through Regna AI with forward-deployed engineers.",
@@ -2503,6 +2859,11 @@ window.CASE = {
      "p",
      "[VERIFY] Speculated deal with the Argentine government following Thiel's meetings with Milei",
      ""
+    ],
+    [
+     "d",
+     "Oura DoD deployments on FedStart IL5",
+     "2025-08-27"
     ]
    ]
   },
@@ -2879,7 +3240,8 @@ window.CASE = {
    "sum": "Golden Dome space-based interceptor awardee. Backlog $41B; civil-agency revenue still falling.",
    "f": [
     "Cleared-workforce constraint favors firms with large cleared benches: Booz Allen, Leidos, CACI, SAIC",
-    "Initial Top Secret for industry ~243 days end to end; Secret ~156 days; backlog ~100k (peak 725k)"
+    "Initial Top Secret for industry ~243 days end to end; Secret ~156 days; backlog ~100k (peak 725k)",
+    "FDA Chief AI Officer Jeremy Walsh spent 14 years at Booz Allen as chief technologist"
    ],
    "src": [
     [
@@ -2889,6 +3251,10 @@ window.CASE = {
     [
      "ClearanceJobs: matching problem",
      "https://news.clearancejobs.com/2026/03/16/the-cleared-workforce-is-increasing-but-probably-not-how-you-think/"
+    ],
+    [
+     "FDA names AI chief Jeremy Walsh (MedTech Dive)",
+     "https://www.medtechdive.com/news/FDA-names-AI-chief-Jeremy-Walsh/747662/"
     ]
    ]
   },
@@ -3614,16 +3980,67 @@ window.CASE = {
     "Partner in Stargate UAE",
     "GenAI.mil IL6/IL7 agreement (May 1); on classified networks (Feb 28)",
     "Models used by Vannevar Labs",
-    "HORIZON anchor: Stargate 2028"
+    "HORIZON anchor: Stargate 2028",
+    "ChatGPT made available to all HHS employees (September 9, 2025)",
+    "ChatGPT Health launched January 7, 2026; 230M+ weekly health askers; connects records via b.well",
+    "Health Tech Ecosystem signatory",
+    "Published governance framework covering CBRN risk (May 2026); bio bug bounty up to $50,000 for universal jailbreaks of ChatGPT biosafety guardrails",
+    "Wrote the largest check in Merge Labs' $252M seed (Jan 2026) after an independent board review; will help build scientific foundation models for neural signals",
+    "Participant in CMS Health Tech Ecosystem (Jul 2025)",
+    "Built GPT-4b micro with Retro Biosciences (2025-08-22).",
+    "Released GPT-Rosalind for life sciences under trusted access (2026-04-17).",
+    "Seed investor in Chai Discovery."
    ],
    "plan": [
     [
      "p",
      "Most Stargate sites online (mostly Q4 2028)",
      "2028"
+    ],
+    [
+     "d",
+     "Merge Labs investment",
+     "2026-01-15"
     ]
    ],
-   "src": []
+   "src": [
+    [
+     "HHS asks all employees to start using ChatGPT (404 Media)",
+     "https://www.404media.co/hhs-asks-all-employees-to-start-using-chatgpt/"
+    ],
+    [
+     "OpenAI launches ChatGPT Health (Fortune)",
+     "https://fortune.com/2026/01/07/openai-launches-chatgpt-health-in-a-push-to-become-a-hub-for-personal-health-data/?rand=8593"
+    ],
+    [
+     "White House, tech leaders commit to patient-centric ecosystem (CMS)",
+     "https://www.cms.gov/newsroom/press-releases/white-house-tech-leaders-commit-create-patient-centric-healthcare-ecosystem"
+    ],
+    [
+     "CRS IF13269: AI and Biosecurity (Sep 2026)",
+     "https://www.everycrsreport.com/files/2026-09-15_IF13269_ce00f5cc67016c1b700886eee55c89c14884d48b.html"
+    ],
+    [
+     "Techloy: OpenAI leads $252M Merge Labs seed",
+     "https://www.techloy.com/openai-bets-252-million-on-a-brain-computer-interface-startup-founded-by-sam-altman.md"
+    ],
+    [
+     "Tech Policy Press: wearables campaign critique",
+     "https://techpolicy.press/control-for-whom-keeping-an-eye-on-the-dark-side-of-americas-new-wearables-campaign"
+    ],
+    [
+     "Accelerating life sciences research with Retro Biosciences (OpenAI, 2025-08-22)",
+     "https://openai.com/index/accelerating-life-sciences-research-with-retro-biosciences"
+    ],
+    [
+     "OpenAI launches GPT-Rosalind (Manufacturing Chemist, 2026-04-17)",
+     "https://manufacturingchemist.com/openai-launches-gpt-rosalind-to-accelerate-life-sciences"
+    ],
+    [
+     "From OpenAI's offices to a deal with Eli Lilly: Chai Discovery (TechCrunch, 2026-01-16)",
+     "https://techcrunch.com/2026/01/16/from-openais-offices-to-a-deal-with-eli-lilly-how-chai-discovery-became-one-of-the-flashiest-names-in-ai-drug-development/"
+    ]
+   ]
   },
   {
    "id": "regna",
@@ -3747,7 +4164,14 @@ window.CASE = {
    ],
    "sum": "DoD supply-chain-risk designation upheld 2–1 by the D.C. Circuit (Sep 25, 2026), covering defense work only; a California court separately found it unlawful. Signed ~460 MW with Nscale.",
    "f": [
-    "Record $35B private-credit financing with Broadcom led by Apollo"
+    "Record $35B private-credit financing with Broadcom led by Apollo",
+    "Health Tech Ecosystem signatory (July 30, 2025)",
+    "Claude for Healthcare launched at JPM, January 2026, with CMS Coverage Database, ICD-10, NPI and PubMed connectors",
+    "Removed from HHS workflows after February 27, 2026 directive; Elsa reportedly moved to Gemini [VERIFY]",
+    "Proposed government policy framework covering biological weapons (June 2026)",
+    "Reported individuals circumvented biosafety safeguards incl. regional access restrictions (Sep 2026)",
+    "Named participant in CMS Health Tech Ecosystem (Jul 2025)",
+    "Claude for Life Sciences (2025-10-20) and Claude for Healthcare (reported 2026-01-19) with CMS, ICD-10 and Medidata connectors."
    ],
    "src": [
     [
@@ -3757,8 +4181,41 @@ window.CASE = {
     [
      "Yahoo Finance: Apollo $35B AI credit deal",
      "https://finance.yahoo.com/technology/ai/articles/apollo-lands-record-35-billion-151249670.html"
+    ],
+    [
+     "Anthropic signs CMS Health Tech Ecosystem pledge (Anthropic)",
+     "https://anthropic.com/news/anthropic-signs-cms-health-tech-ecosystem-pledge-to-advance-healthcare-interoperability"
+    ],
+    [
+     "Anthropic launches Claude for Healthcare (Fierce Healthcare)",
+     "https://www.fiercehealthcare.com/ai-and-machine-learning/jpm26-anthropic-launches-claude-healthcare-targeting-health-systems-payers"
+    ],
+    [
+     "Agencies begin to shed Anthropic contracts (Nextgov)",
+     "https://www.nextgov.com/acquisition/2026/03/agencies-begin-shed-anthropic-contracts-following-trumps-directive/411823/"
+    ],
+    [
+     "FDA's Elsa switches from Claude to Gemini (Clinical Leader)",
+     "https://www.clinicalleader.com/doc/fda-s-elsa-ai-switches-from-claude-to-gemini-what-sponsors-need-to-know-0001"
+    ],
+    [
+     "CRS IF13269: AI and Biosecurity (Sep 2026)",
+     "https://www.everycrsreport.com/files/2026-09-15_IF13269_ce00f5cc67016c1b700886eee55c89c14884d48b.html"
+    ],
+    [
+     "Tech Policy Press: wearables campaign critique",
+     "https://techpolicy.press/control-for-whom-keeping-an-eye-on-the-dark-side-of-americas-new-wearables-campaign"
+    ],
+    [
+     "Claude for Life Sciences (Anthropic, 2025-10-20)",
+     "https://www.anthropic.com/news/claude-for-life-sciences"
+    ],
+    [
+     "Anthropic expands Claude AI tools for health and trials (IT Brief UK, 2026-01-19)",
+     "https://itbrief.co.uk/story/anthropic-expands-claude-ai-tools-for-health-trials"
     ]
-   ]
+   ],
+   "plan": []
   },
   {
    "id": "mistral",
@@ -3904,7 +4361,8 @@ window.CASE = {
     "Partner in CI Fortify (NCSC) and AUKUS Pillar II",
     "Stepped back from its national digital ID scheme",
     "Former PM Tony Blair on Board of Peace",
-    "UK CAA certification is being pursued for AALTO Zephyr"
+    "UK CAA certification is being pursued for AALTO Zephyr",
+    "Reviewing the £330M Palantir NHS FDP contract; break clause early 2027"
    ],
    "src": [
     [
@@ -3918,6 +4376,10 @@ window.CASE = {
     [
      "Advanced Television: AALTO progress",
      "https://www.advanced-television.com/2025/09/29/aalto-progresses-haps-tech/"
+    ],
+    [
+     "UK reviewing Palantir NHS contract (The Star/Reuters)",
+     "https://www.thestar.com.my/tech/tech-news/2026/06/09/uk-reviewing-palantir039s-nhs-contract-amid-pressure-to-use-break-clause"
     ]
    ]
   },
@@ -4158,7 +4620,12 @@ window.CASE = {
     "Chairman Tahnoon bin Zayed",
     "Approved for up to 35k GB300",
     "G42's Larkin reportedly oversees USD1 inside World Liberty",
-    "Former G42 director Hamad Alshamsi signed for StringZ in OCC filing"
+    "Former G42 director Hamad Alshamsi signed for StringZ in OCC filing",
+    "G42 Healthcare merged with Mubadala Health to form M42 (announced Oct 2022, launched Apr 2023)",
+    "2020 reports of G42 cooperation with BGI on UAE genomics and COVID test kits [VERIFY]",
+    "Said it divested China investments Feb 2024; Microsoft invested $1.5B Apr 2024",
+    "Jan 2024 House China Select Committee letter cited ties to Huawei and BGI",
+    "Investor in Neuralink's $650M Series E (Jun 2025)"
    ],
    "src": [
     [
@@ -4184,8 +4651,25 @@ window.CASE = {
     [
      "OCC Corporate Decision #1385",
      "https://www.occ.gov/topics/charters-and-licensing/interpretations-and-decisions/2026/cd1385.pdf"
+    ],
+    [
+     "Wikipedia: G42",
+     "https://en.wikipedia.org/wiki/G42_(company)"
+    ],
+    [
+     "House China Select Committee: Gallagher letter on G42",
+     "https://chinaselectcommittee.house.gov/media/press-releases/gallagher-calls-usg-investigate-ai-firm-g42-ties-prc-military-intelligence"
+    ],
+    [
+     "Zawya: M42 appoints Dimitris Moulavasilis",
+     "https://www.zawya.com/press-release/people-in-the-news/m42-appoints-dimitris-moulavasilis-as-group-ceo-tr72shp9"
+    ],
+    [
+     "Fierce Biotech: Neuralink $650M Series E",
+     "https://www.fiercebiotech.com/medtech/neuralink-secures-650m-series-e-funding-expand-patient-access-brain-chip-technology"
     ]
-   ]
+   ],
+   "plan": []
   },
   {
    "id": "humain",
@@ -4338,7 +4822,11 @@ window.CASE = {
     "Washington and Beijing agreed to explore an AI-incident communication channel",
     "Chinese official buyers have pulled back from Treasuries; offshore demand via Tether acts as a private substitute [ANALYSIS]",
     "Domestic EUV prototype (Reuters, Dec 2025)",
-    "Tungsten export controls; prices up 557%"
+    "Tungsten export controls; prices up 557%",
+    "BGI, MGI, Complete Genomics and WuXi AppTec on DoD 1260H list (June 8, 2026)",
+    "April 2026 Counter-Extraterritorial Jurisdiction Regulation; July 1, 2026 outbound investment rules",
+    "Seven-ministry BCI industry plan (Aug 2025): clinical use by 2027; two to three global leaders by 2030",
+    "Beinao-1 in registered trials (2026); registration application 2027"
    ],
    "src": [
     [
@@ -4348,6 +4836,22 @@ window.CASE = {
     [
      "AI Futures: Chinese DUV and EUV forecast",
      "https://blog.aifutures.org/p/a-forecast-of-chinese-duv-and-euv"
+    ],
+    [
+     "Ropes & Gray: Updated 1260H list includes WuXi AppTec",
+     "https://www.ropesgray.com/en/insights/alerts/2026/06/department-of-defense-releases-updated-1260h-list-that-includes-wuxi-apptec"
+    ],
+    [
+     "DLA Piper: U.S.-China life sciences policy developments (Aug 2026)",
+     "https://www.dlapiper.com/en-us/insights/publications/2026/08/us-china-life-sciences-policy-developments-top-points-for-companies"
+    ],
+    [
+     "Tom's Hardware: China BCI blueprint",
+     "https://www.tomshardware.com/tech-industry/china-bci-blueprint"
+    ],
+    [
+     "China Daily: Beinao-1 and Beinao-2",
+     "https://global.chinadaily.com.cn/a/202606/15/WS6a2fc5cba310986e2b460147.html"
     ]
    ],
    "plan": [
@@ -4365,6 +4869,16 @@ window.CASE = {
      "d",
      "Tungsten export controls",
      ""
+    ],
+    [
+     "p",
+     "BCI targets",
+     "2027"
+    ],
+    [
+     "p",
+     "BCI champions",
+     "2030"
     ]
    ]
   },
@@ -4586,7 +5100,8 @@ window.CASE = {
     "Senators Wyden and Warren demanded a full list of Palantir's federal contracts",
     "Lawmakers pressed DHS and ICE over Palantir tools",
     "Insiders sold in the $170–205 range from August to October 2026",
-    "No published benchmarks support the outperformance claim (independent coverage)"
+    "No published benchmarks support the outperformance claim (independent coverage)",
+    "Palantir CEO during HHS, DHS, ICE and NHS health-data work; has framed enforcement work around serious crime and national security"
    ],
    "src": [
     [
@@ -4604,6 +5119,10 @@ window.CASE = {
     [
      "The AI Insider: Ondas and Palantir Launch Regna AI",
      "https://theaiinsider.tech/?p=53116"
+    ],
+    [
+     "ICE allegedly uses Palantir tool tracking Medicaid data (Fortune)",
+     "https://fortune.com/2026/01/26/ice-allegedly-uses-palantir-tool-tracking-medicaid-data/"
     ]
    ]
   },
@@ -4652,7 +5171,8 @@ window.CASE = {
    "obj": [],
    "f": [
     "CDAO gains authority to compel data release",
-    "Supporters argue the military needs reliable vendors without unilateral restrictions; critics argue the approach penalizes vendor safeguards and concentrates defense AI in fewer firms"
+    "Supporters argue the military needs reliable vendors without unilateral restrictions; critics argue the approach penalizes vendor safeguards and concentrates defense AI in fewer firms",
+    "Ordered Anthropic designated a supply-chain risk (February 27, 2026), which led to HHS and FDA dropping Claude"
    ],
    "src": [
     [
@@ -4662,6 +5182,10 @@ window.CASE = {
     [
      "Holland & Knight: Department of War AI-first agenda",
      "https://www.hklaw.com/en/insights/publications/2026/02/department-of-wars-ai-first-agenda-a-new-era-for-defense-contractors"
+    ],
+    [
+     "Trump directs government to cease using Anthropic (Defense One)",
+     "https://www.defenseone.com/threats/2026/02/trump-directs-government-immediately-cease-using-anthropic-technology/411776/"
     ]
    ]
   },
@@ -4709,7 +5233,8 @@ window.CASE = {
     "Commerce runs BIS export controls, chip approvals for the Gulf and the American AI Exports Program (78 full-stack packages)",
     "Sold majority of Cantor's businesses to his children; announced May 19, closed October 6",
     "Bloomberg (Mar 18, 2026) reported Tether made a loan to Lutnick's children as they bought the firm",
-    "Testified on Tether at a Senate hearing (CoinDesk, Feb 4, 2025)"
+    "Testified on Tether at a Senate hearing (CoinDesk, Feb 4, 2025)",
+    "Copied as Commerce Secretary on Ossoff's June 24, 2026 synthesis-screening letter"
    ],
    "src": [
     [
@@ -4747,6 +5272,10 @@ window.CASE = {
     [
      "Satellogic: completes business combination with CF Acquisition Corp. V",
      "https://investors.satellogic.com/news-releases/news-release-details/satellogic-completes-business-combination-cf-acquisition-corp-v"
+    ],
+    [
+     "Sen. Ossoff letter to OSTP (Jun 24, 2026)",
+     "https://www.ossoff.senate.gov/wp-content/uploads/2026/07/26.06.24_OSTP-AI-Letter.pdf"
     ]
    ]
   },
@@ -4768,7 +5297,8 @@ window.CASE = {
    "f": [
     "Statement (Sep 24, 2026): Busan truce extends to Jan 10, 2027",
     "MOFCOM's Sep 28 statement referenced the wider arrangement without naming rare earths",
-    "Cites potential $3T stablecoin market"
+    "Cites potential $3T stablecoin market",
+    "Rep. Moolenaar asked him on May 21, 2026 to add biotech to COINS Act outbound controls"
    ],
    "src": [
     [
@@ -4794,6 +5324,10 @@ window.CASE = {
     [
      "Coinpaprika: Bessent's bet and a stalling market",
      "https://coinpaprika.com/news/bessents-trillion-dollar-stablecoin-bet-runs/"
+    ],
+    [
+     "DLA Piper: U.S.-China life sciences policy developments (Aug 2026)",
+     "https://www.dlapiper.com/en-us/insights/publications/2026/08/us-china-life-sciences-policy-developments-top-points-for-companies"
     ]
    ],
    "strat": "Uses projected stablecoin demand for T-bills to support shifting Treasury issuance toward bills.",
@@ -4837,7 +5371,9 @@ window.CASE = {
     ]
    ],
    "obj": [],
-   "f": [],
+   "f": [
+    "Quoted on the Lilly lab: AI's 'most profound impact will be in life sciences' (2026-01-12)."
+   ],
    "src": [
     [
      "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
@@ -4850,6 +5386,10 @@ window.CASE = {
     [
      "Quartz: AI data centers and quantum computing",
      "https://qz.com/quantum-coming-to-data-center-near-you-nvidia-ibm"
+    ],
+    [
+     "NVIDIA and Lilly Announce Co-Innovation AI Lab (NVIDIA, 2026-01-12)",
+     "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-and-Lilly-Announce-Co-Innovation-AI-Lab-to-Reinvent-Drug-Discovery-in-the-Age-of-AI"
     ]
    ]
   },
@@ -4867,7 +5407,7 @@ window.CASE = {
    "sum": "His 6.4B SpaceX shares unlock in June 2027. SpaceX now spans launch, the Starshield backbone, Golden Dome interceptor work, frontier models (xAI) and an orbital compute plan.",
    "dir": "Own chip supply for SpaceX and Tesla.",
    "role": "CEO, SpaceX and Tesla; founder, xAI; behind TeraFab, the chip plant for SpaceX and Tesla compute",
-   "strat": "Vertical integration of launch, comms, defense and models under one public company; launch scarcity favors it.",
+   "strat": "Vertical integration of launch, comms, defense and models under one public company; launch scarcity favors it. Through Neuralink, scale intracortical implants with automated surgery and high-volume production in 2026; stack FDA Breakthrough designations (Blindsight, speech); cites Tesla manufacturing expertise for surgical robots.",
    "plan": [
     [
      "d",
@@ -4893,12 +5433,35 @@ window.CASE = {
      "d",
      "TeraFab announced",
      "2026"
+    ],
+    [
+     "d",
+     "Neuralink Series E $650M at $9B pre-money",
+     "2025-06-02"
+    ],
+    [
+     "m",
+     "High-volume production and automated surgery",
+     "2026"
+    ],
+    [
+     "m",
+     "Next-gen implant ~3x capability",
+     "2026"
+    ],
+    [
+     "p",
+     "Blindsight first implant pending regulatory approval",
+     ""
     ]
    ],
    "obj": [],
    "f": [
     "xAI is now part of SpaceX (SPCX) per page",
-    "Page refers to 'Musk's TeraFab'"
+    "Page refers to 'Musk's TeraFab'",
+    "DOGE took read-only access to CMS payment and contracting systems (February 2025); Musk called CMS 'where the big money fraud is happening'",
+    "Oct 30, 2026: said Blindsight is 'ready from an engineering standpoint. Just waiting on regulatory approval.'",
+    "Neuralink: 21 trial participants (Jan 2026)"
    ],
    "src": [
     [
@@ -4924,6 +5487,26 @@ window.CASE = {
     [
      "HTX Insights: Musk TeraFab and lithography",
      "https://www.htx.com/news/an-unexpected-player-enters-the-lithography-machine-arena-en51TeWQ/"
+    ],
+    [
+     "DOGE accesses CMS contracting and payment systems (Arnold & Porter)",
+     "https://www.arnoldporter.com/en/perspectives/blogs/enforcement-edge/2025/02/doge-accesses-cms-contracting-and-payment-systems"
+    ],
+    [
+     "Fierce Biotech: Neuralink $650M Series E",
+     "https://www.fiercebiotech.com/medtech/neuralink-secures-650m-series-e-funding-expand-patient-access-brain-chip-technology"
+    ],
+    [
+     "LatestLY: Neuralink 21 participants",
+     "https://www.latestly.com/technology/science/elon-musks-neuralink-reaches-21-global-trial-participants-billionaire-announces-next-gen-telepathy-implant-and-vision-restoring-blindsight-launch-7293272.html"
+    ],
+    [
+     "Drive Tesla Canada: Blindsight awaiting approval",
+     "https://driveteslacanada.ca/news/elon-musk-neuralink-blindsight-ready-regulatory-approval/"
+    ],
+    [
+     "ROIC: Neuralink funding and Blindsight",
+     "https://www.roic.ai/news/neuralink-secures-650m-funding-advances-blindsight-vision-technology-toward-human-trials-01-28-2026"
     ]
    ]
   },
@@ -4985,7 +5568,10 @@ window.CASE = {
     "Chairman of G42, MGX and IHC (page)",
     "A Tahnoon-linked entity invested about $500M in WLF before the 2025 inauguration, split across two new WLF entities, one of which operates USD1 (WSJ via TechFlow, CAP)",
     "CNBC (Aug 27, 2026) reports a Tahnoon entity holds 49% of the Trump family crypto bank venture",
-    "WSJ reports StringZ holds 49% of WLTC Holdings and links it to Tahnoon"
+    "WSJ reports StringZ holds 49% of WLTC Holdings and links it to Tahnoon",
+    "Chairs G42, MGX, ADIA, ADQ, IHC and Royal Group; UAE National Security Advisor since 2016",
+    "Gulf Business estimates $1.3-1.5T under his oversight; lists biotech among Royal Group and Lunate growth areas",
+    "G42 co-owns M42, operator of the Emirati Genome Programme"
    ],
    "src": [
     [
@@ -5023,6 +5609,14 @@ window.CASE = {
     [
      "Yahoo Finance: the $187M Trump family-Tahnoon deal",
      "https://finance.yahoo.com/news/inside-187m-deal-between-trump-003116654.html"
+    ],
+    [
+     "Gulf Business: Sheikh Tahnoon, Top 100 Global Arabs 2026",
+     "https://gulfbusiness.com/en/2026/lists/top-100-global-arabs-2026-gulfbusiness/1-hh-sheikh-tahnoon-bin-zayed-al-nahyan/"
+    ],
+    [
+     "Wikipedia: G42",
+     "https://en.wikipedia.org/wiki/G42_(company)"
     ]
    ]
   },
@@ -5276,7 +5870,11 @@ window.CASE = {
     "Chairman approval required on majority decisions; chairman is final authority on charter interpretation",
     "Trump has said the board could potentially replace the UN",
     "Pardoned Changpeng Zhao (Cointelegraph, per page)",
-    "Page: no source found showing an equivalent removal mechanism for U.S. office"
+    "Page: no source found showing an equivalent removal mechanism for U.S. office",
+    "Directed all agencies to cease Anthropic use (February 27, 2026)",
+    "Signed EO 14243 (March 20, 2025) and EO 14355 (September 30, 2025)",
+    "Signed EO 14236 (Mar 14, 2025), EO 14292 (May 5, 2025) and FY26 NDAA with BIOSECURE (Dec 18, 2025)",
+    "Announced MFN deals (Pfizer 2025-09-30; Lilly/Novo 2025-11-06), launched TrumpRx (2026-02-05), issued Proclamation 11020 (2026-04-02), nominated Heidi Overton (2026-08-19)."
    ],
    "src": [
     [
@@ -5322,6 +5920,50 @@ window.CASE = {
     [
      "Wikipedia: Golden Dome",
      "https://en.wikipedia.org/wiki/Golden_Dome_(missile_defense_system)"
+    ],
+    [
+     "Trump directs government to cease using Anthropic (Defense One)",
+     "https://www.defenseone.com/threats/2026/02/trump-directs-government-immediately-cease-using-anthropic-technology/411776/"
+    ],
+    [
+     "EO 14243, Eliminating Information Silos (Federal Register)",
+     "https://www.govinfo.gov/content/pkg/FR-2025-03-25/html/2025-05214.htm"
+    ],
+    [
+     "EO 14355, Unlocking Cures for Pediatric Cancer with AI (White House)",
+     "https://www.whitehouse.gov/presidential-actions/2025/09/unlocking-cures-for-pediatric-cancer-with-artificial-intelligence"
+    ],
+    [
+     "JD Supra: EO 14236 revokes EO 14081",
+     "https://jdsupra.com/legalnews/president-trump-revokes-2022-eo-on-8979367"
+    ],
+    [
+     "CRS IN12554: Executive actions on gain-of-function research",
+     "https://www.everycrsreport.com/reports/IN12554.html"
+    ],
+    [
+     "Ropes & Gray: BIOSECURE Act enacted",
+     "https://www.ropesgray.com/en/insights/alerts/2026/01/biosecure-act-enacted"
+    ],
+    [
+     "White House, Pfizer reach first MFN pricing agreement (BioPharm International, 2025-09-30)",
+     "https://www.biopharminternational.com/view/white-house-pfizer-reach-first-mfn-pricing-agreement-who-s-next-"
+    ],
+    [
+     "Lilly, Novo obesity drug pricing deal (Healthcare Dive, 2025-11-06)",
+     "https://www.healthcaredive.com/news/lilly-novo-trump-obesity-drug-pricing-deal-zepbound-wegovy/804937/"
+    ],
+    [
+     "TrumpRx (Wikipedia)",
+     "https://en.wikipedia.org/wiki/TrumpRx"
+    ],
+    [
+     "Trump administration announces Section 232 tariffs on patented pharmaceuticals (Covington, 2026-04)",
+     "https://www.cov.com/en/news-and-insights/insights/2026/04/trump-administration-announces-section-232-tariffs-on-patented-pharmaceuticals-and-ingredients"
+    ],
+    [
+     "President Trump announces nomination of Heidi Overton (Nutritional Outlook, 2026-08-19)",
+     "https://www.nutritionaloutlook.com/view/president-trump-announces-nomination-of-heidi-overton-md-as-fda-s-new-commissioner"
     ]
    ],
    "strat": "Per the page, the administration opposes a retail CBDC and backs privately issued stablecoins through the GENIUS Act. Trump chairs the Board of Peace and has said it could potentially replace the UN."
@@ -5517,7 +6159,12 @@ window.CASE = {
    "sum": "Enters the capital map through Vannevar Labs.",
    "dir": "",
    "obj": [],
-   "f": [],
+   "f": [
+    "B.Next biotech team since 2015 covers biomanufacturing, pandemic preparedness, biodefense and biotech-AI convergence",
+    "CEO Steve Bowsher since Sep 8, 2023",
+    "New investor in Synchron's $200M Series D (Nov 2025)",
+    "Investor in Science Corp's $230M Series C (Mar 2026)"
+   ],
    "src": [
     [
      "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
@@ -5526,8 +6173,25 @@ window.CASE = {
     [
      "BHRRC: Vannevar data scope",
      "https://www.business-humanrights.org/en/from-us/briefings/saving-for-the-future-or-threatening-the-future-are-pensioners-funding-the-militarisation-of-ai/"
+    ],
+    [
+     "IQT: Biotechnology impact story",
+     "https://iqt.org/impact-stories/biotechnology"
+    ],
+    [
+     "GovConWire: Bowsher to lead In-Q-Tel",
+     "https://www.govconwire.com/article/steve-bowsher-to-take-helm-of-in-q-tel-in-september"
+    ],
+    [
+     "Medtech Insight: Synchron $200M Series D",
+     "https://insights.citeline.com/medtech-insight/business/financing/synchron-secures-200m-series-d-plans-new-brain-interface-with-potentially-more-applications-U6MRTIDOVRHXXGDHGHUD35SA5Q"
+    ],
+    [
+     "Business Wire: Science Corp $230M Series C",
+     "https://www.businesswire.com/news/home/20260305896789/en/Science-Corporation-Closes-$230-Million-Series-C-to-Accelerate-Commercialization-of-PRIMA"
     ]
-   ]
+   ],
+   "plan": []
   },
   {
    "id": "kleiner",
@@ -5543,7 +6207,9 @@ window.CASE = {
    "sum": "Co-led Applied Intuition's $600M Series F at $15B with BlackRock.",
    "dir": "",
    "obj": [],
-   "f": [],
+   "f": [
+    "Investor in Chai Discovery Series C and NewLimit."
+   ],
    "src": [
     [
      "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
@@ -5552,6 +6218,14 @@ window.CASE = {
     [
      "CNBC Disruptor 50: Applied Intuition",
      "https://www.cnbc.com/2026/05/19/applied-intuition-cnbc-disruptor-50-ranking.html"
+    ],
+    [
+     "Chai brews up $400M series C (Fierce Biotech, 2026)",
+     "https://www.fiercebiotech.com/biotech/chai-brews-400m-series-c-fuel-ai-used-lilly-novartis-and-pfizer"
+    ],
+    [
+     "NewLimit raises $435M Series C, valuation hits $3.1B (Yahoo Finance, 2026-06-03)",
+     "https://finance.yahoo.com/sectors/healthcare/articles/newlimit-raises-435m-series-c-145642833.html"
     ]
    ]
   },
@@ -6409,7 +7083,11 @@ window.CASE = {
    "sum": "Owner of Humain.",
    "dir": "",
    "obj": [],
-   "f": [],
+   "f": [
+    "Owns Lifera, its biotech vehicle for insulin, genomics and biomanufacturing under Saudi National Biotechnology Strategy",
+    "NEOM (Saudi) Investment Fund invested in Paradromics (Feb 2025); NEOM's relation to PIF not detailed in sources reviewed",
+    "Saudi longevity spending runs through the Hevolution Foundation, a royal-order nonprofit chaired by the Crown Prince; no PIF role found in sources reviewed."
+   ],
    "src": [
     [
      "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
@@ -6422,9 +7100,20 @@ window.CASE = {
     [
      "EDGE: SOVEREIGN SI // FINANCIAL LAYER (Notion)",
      "https://app.notion.com/p/40c709555ee2813bb795d6ecacf7a0a8"
+    ],
+    [
+     "BioProcess International: Saudi Arabia's biotech bet",
+     "https://www.bioprocessintl.com/global-markets/saudi-arabia-s-big-biotech-bet-from-regional-player-to-global-leader"
+    ],
+    [
+     "Newsio: Paradromics NEOM investment",
+     "https://newsio.com/2025/02/12/neuralink-competitor-paradromics-secures-investment-from-saudi-arabias-neom"
+    ],
+    [
+     "Saudi Crown Prince heads new bln-dollar foundation to decelerate aging (Al Arabiya, 2022-07)",
+     "https://english.alarabiya.net/News/gulf/2022/07/07/Exclusive-Saudi-s-Crown-Prince-heads-new-bln-dollar-foundation-to-decelerate-aging-"
     ]
    ],
-   "strat": "",
    "plan": []
   },
   {
@@ -7015,7 +7704,11 @@ window.CASE = {
     ]
    ],
    "obj": [],
-   "f": [],
+   "f": [
+    "Ginkgo building $47M, 97-instrument autonomous lab at PNNL EMSL",
+    "Web of Biological Data Act would task DOE with a central biological data resource",
+    "Ginkgo cites $5B Genesis Mission backing for autonomous labs"
+   ],
    "src": [
     [
      "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
@@ -7028,6 +7721,18 @@ window.CASE = {
     [
      "ESI: U.S. HALEU program and waivers",
      "https://energy-solutions.co/policy-intelligence/tax-credits-and-subsidies/us-haleu-availability-program"
+    ],
+    [
+     "Ginkgo: Q2 2026 results",
+     "https://investors.ginkgobioworks.com/news/news-details/2026/Ginkgo-Bioworks-Reports-Second-Quarter-2026-Results-Wins-Government-Contracts-to-Build-Autonomous-Labs-at-MIT-Caltech-Northwestern-and-University-of-Maryland-2026-qs5ge_LiVB/default.aspx"
+    ],
+    [
+     "SEC: Ginkgo Q4/FY2025 earnings release",
+     "https://www.sec.gov/Archives/edgar/data/1830214/000162828026012339/ex991earningspr.htm"
+    ],
+    [
+     "CRS IF13269: AI and Biosecurity (Sep 2026)",
+     "https://www.everycrsreport.com/files/2026-09-15_IF13269_ce00f5cc67016c1b700886eee55c89c14884d48b.html"
     ]
    ]
   },
@@ -9410,7 +10115,8 @@ window.CASE = {
    "role": "U.S. Secretary of State; Board of Peace founding Executive Board",
    "obj": [],
    "f": [
-    "Founding Executive Board member, Board of Peace"
+    "Founding Executive Board member, Board of Peace",
+    "Copied as Assistant to the President for National Security Affairs on Ossoff's June 24, 2026 synthesis-screening letter"
    ],
    "src": [
     [
@@ -9420,6 +10126,10 @@ window.CASE = {
     [
      "CNN: Board of Peace explainer",
      "https://www.cnn.com/2026/01/22/world/trump-board-of-peace-explainer-intl-hnk"
+    ],
+    [
+     "Sen. Ossoff letter to OSTP (Jun 24, 2026)",
+     "https://www.ossoff.senate.gov/wp-content/uploads/2026/07/26.06.24_OSTP-AI-Letter.pdf"
     ]
    ]
   },
@@ -9738,7 +10448,9 @@ window.CASE = {
     "Reported reasons: taxation, the threat of nuclear war, runaway AI",
     "Rallying point for Milei's critics in Argentina",
     "Page uses the phrase 'the Thiel network' with no named person or title",
-    "Substrate link is [VERIFY]"
+    "Substrate link is [VERIFY]",
+    "Jim O'Neill, HHS Deputy Secretary 2025-2026, was managing director at Thiel Capital and Clarium and CEO of the Thiel Foundation",
+    "Gave $3.5M to the Methuselah Foundation (2006-09-19)."
    ],
    "src": [
     [
@@ -9776,6 +10488,22 @@ window.CASE = {
     [
      "New Lines: What is Thiel up to in Argentina",
      "https://newlinesmag.com/argument/what-is-peter-thiel-up-to-in-argentina/"
+    ],
+    [
+     "Jim O'Neill (investor) (Wikipedia)",
+     "https://en.wikipedia.org/wiki/Jim_O%27Neill_(investor)"
+    ],
+    [
+     "MedTech Dive: Neuralink $280M led by Founders Fund",
+     "https://www.medtechdive.com/news/elon-musk-neuralink-raises-280-million"
+    ],
+    [
+     "Fierce Biotech: Neuralink $650M Series E",
+     "https://www.fiercebiotech.com/medtech/neuralink-secures-650m-series-e-funding-expand-patient-access-brain-chip-technology"
+    ],
+    [
+     "PayPal co-founder Peter Thiel invests $3.5M to stop aging (VentureBeat, 2006-09-19)",
+     "https://venturebeat.com/ai/paypal-co-founder-peter-thiel-invests-35m-to-stop-aging"
     ]
    ],
    "strat": "Stated reasons: taxation, the threat of nuclear war, and runaway AI. [ANALYSIS] The page adds hypotheses to test: Southern Hemisphere distance from a Northern Hemisphere nuclear exchange, Milei's deregulation, lithium, Argentina's nuclear sector and Antarctic access.",
@@ -9794,6 +10522,21 @@ window.CASE = {
      "p",
      "[VERIFY] Palantir deal with the Argentine government (speculated)",
      ""
+    ],
+    [
+     "d",
+     "Blackrock Neurotech stake",
+     "2021"
+    ],
+    [
+     "d",
+     "Founders Fund leads Neuralink $280M",
+     "2023-08"
+    ],
+    [
+     "d",
+     "Founders Fund in Neuralink Series E",
+     "2025-06-02"
     ]
    ]
   },
@@ -9815,7 +10558,8 @@ window.CASE = {
    "f": [
     "Narya Capital reported as early Rumble investor (2021) [VERIFY]",
     "True Anomaly is backed by JD Vance-linked venture capital (Narya)",
-    "Page thread: \"Thiel and Vance network\" covers Palantir, Anduril (Founders Fund), True Anomaly (Narya)"
+    "Page thread: \"Thiel and Vance network\" covers Palantir, Anduril (Founders Fund), True Anomaly (Narya)",
+    "Leads the White House Task Force to Eliminate Fraud, partner in the CMS Medicaid Fraud War Room (April 2026)"
    ],
    "src": [
     [
@@ -9829,6 +10573,10 @@ window.CASE = {
     [
      "AFM: Space-based interceptor awardees",
      "https://www.airandspaceforces.com/space-force-reveals-space-based-interceptor-awards-golden-dome/"
+    ],
+    [
+     "Medicaid Fraud War Room fast facts (CMS)",
+     "https://www.cms.gov/files/document/medicaid-fraud-war-room-fast-facts.pdf"
     ]
    ],
    "plan": []
@@ -9907,15 +10655,36 @@ window.CASE = {
    "role": "Oracle (co-founder/chairman); reported major funder of the Tony Blair Institute [VERIFY]",
    "obj": [],
    "f": [
-    "Reported major TBI funder [VERIFY]"
+    "Reported major TBI funder [VERIFY]",
+    "June 10, 2022: unified national health record database plan",
+    "February 12, 2025, World Government Summit with Tony Blair: move national data 'into a single unified data platform'; cited NHS data as fragmented",
+    "Subpoenaed by House Veterans' Affairs Committee, September 2026",
+    "Said a personalized mRNA cancer vaccine could be made 'robotically, again using AI, in about 48 hours' (2025-01-21)."
    ],
    "src": [
     [
      "EDGE: SOVEREIGN SI // FINANCIAL LAYER (Notion)",
      "https://app.notion.com/p/40c709555ee2813bb795d6ecacf7a0a8"
+    ],
+    [
+     "Ellison on healthcare data fragmentation (Healthcare IT News)",
+     "https://healthcareitnews.com/node/551281"
+    ],
+    [
+     "WGS 2025: unified national data (Gulf News)",
+     "https://gulfnews.com/uae/science/wgs-2025-unified-national-data-will-empower-ai-to-transform-government-services-1.500034960"
+    ],
+    [
+     "House panel subpoenas Oracle heads (Nextgov)",
+     "https://www.nextgov.com/modernization/2026/09/house-panel-subpoenas-oracle-heads-over-va-health-record-overhauls-ballooning-costs/415791/"
+    ],
+    [
+     "Ellison says AI can make cancer vaccine available in 48 hrs (Business Today, 2025-01-22)",
+     "https://businesstoday.in/technology/artificial-intelligence/story/promise-of-the-future-oracles-larry-ellison-says-ai-can-make-cancer-vaccine-available-in-48-hrs-461641-2025-01-22"
     ]
    ],
-   "analysis": true
+   "analysis": true,
+   "strat": "Ellison argues countries must 'unify all of their data so it can be consumed and used by the AI model,' and in 2022 pledged a unified national health record database as Oracle's 'primary mission.'"
   },
   {
    "id": "miran",
@@ -9958,12 +10727,39 @@ window.CASE = {
    "role": "CEO, Tether (per the title of the cited Fortune source)",
    "obj": [],
    "f": [
-    "Name appears in the cited Fortune article URL; page body does not name him"
+    "Name appears in the cited Fortune article URL; page body does not name him",
+    "June 25, 2025: called Blackrock Neurotech 'much more advanced than Neuralink' and claimed 40+ patients"
    ],
    "src": [
     [
      "Fortune: Tether $187B in assets, U.S. expansion",
      "https://fortune.com/article/tether-ceo-paolo-ardoino-crypto-firm-stabelcoins-howard-lutnick-usdt-cantor-fitzgerald/"
+    ],
+    [
+     "The Block: Ardoino on Blackrock Neurotech",
+     "https://www.theblock.co/post/359607/tether-brain-computer-elon-musk-neuralink"
+    ],
+    [
+     "Cointelegraph: Tether Evo $200M in Blackrock Neurotech",
+     "https://cointelegraph.com/news/tether-evo-invests-200-million-neurotech"
+    ]
+   ],
+   "strat": "Uses Tether profits to own a BCI company (Blackrock Neurotech) and pursue an open-source 'brain operating system' he expects could become the next smartphone in 15-30 years.",
+   "plan": [
+    [
+     "d",
+     "Tether Evo majority stake in Blackrock Neurotech",
+     "2024-04-29"
+    ],
+    [
+     "p",
+     "Rename Blackrock Neurotech",
+     ""
+    ],
+    [
+     "p",
+     "Open-source brain OS",
+     "15-30 years"
     ]
    ]
   },
@@ -10265,7 +11061,8 @@ window.CASE = {
    "obj": [],
    "f": [
     "Partner in Stargate UAE",
-    "Exposed to the Oct 29, 2026 Binance hack through its stake"
+    "Exposed to the Oct 29, 2026 Binance hack through its stake",
+    "New investor in Isomorphic Labs' $2.1B Series B (2026-05-12)."
    ],
    "src": [
     [
@@ -10275,6 +11072,10 @@ window.CASE = {
     [
      "Center for American Progress: the $500M UAE crypto deal",
      "https://www.americanprogress.org/article/how-trumps-500-million-uae-crypto-deal-trades-u-s-national-security-for-family-profit/"
+    ],
+    [
+     "Isomorphic Labs raises $2.1 billion (YourStory, 2026-05-12)",
+     "https://yourstory.com/ai-story/isomorphic-labs-ai-drug-discovery-series-b-2026"
     ]
    ]
   },
@@ -10438,6 +11239,11 @@ window.CASE = {
      "p",
      "Northern Data mining unit acquisition, projected close Q2 2026 [VERIFY]",
      "2026-Q2"
+    ],
+    [
+     "d",
+     "Blackrock Neurotech majority stake",
+     "2024-04-29"
     ]
    ],
    "obj": [],
@@ -10448,7 +11254,8 @@ window.CASE = {
     "Direct redemption fee: greater of $1,000 or 0.1%",
     "Bloomberg (Mar 18, 2026): Tether loan to Lutnick's children during Cantor purchase",
     "HSGAC minority report 'Tethered to Terrorism' (Sep 28, 2026) examines Tether's role in Iran's shadow banking network",
-    "USDT is issued from El Salvador and sits outside GENIUS rules"
+    "USDT is issued from El Salvador and sits outside GENIUS rules",
+    "Tether Evo invested $200M for a majority stake in Blackrock Neurotech (Apr 29, 2024)"
    ],
    "src": [
     [
@@ -10474,6 +11281,14 @@ window.CASE = {
     [
      "TechFlow: the unreported Tether loan to Lutnick's children",
      "https://www.techflowpost.com/en-US/article/30761"
+    ],
+    [
+     "Cointelegraph: Tether Evo $200M in Blackrock Neurotech",
+     "https://cointelegraph.com/news/tether-evo-invests-200-million-neurotech"
+    ],
+    [
+     "The Block: Ardoino on Blackrock Neurotech",
+     "https://www.theblock.co/post/359607/tether-brain-computer-elon-musk-neuralink"
     ]
    ]
   },
@@ -11941,7 +12756,9 @@ window.CASE = {
    "sum": "Lets agents carry a zero-knowledge proof they are backed by a unique verified human (World's iris-based ID) without exposing biometrics.",
    "dir": "",
    "obj": [],
-   "f": [],
+   "f": [
+    "Tools for Humanity CEO Alex Blania reported (Aug 2025) as a Merge Labs co-founder with Sam Altman"
+   ],
    "src": [
     [
      "EDGE: SOVEREIGN SI // AGENTIC LAYER (Notion)",
@@ -11950,8 +12767,13 @@ window.CASE = {
     [
      "BlockEden: Know Your Agent and World ID AgentKit",
      "https://blockeden.xyz/blog/2026/04/03/know-your-agent-kya-identity-framework-web3-ai-authentication/"
+    ],
+    [
+     "Engadget: Altman and Blania to co-found Merge Labs",
+     "https://engadget.com/ai/openai-and-sam-altman-are-reportedly-creating-a-startup-rival-to-elon-musks-neuralink-123022874.html"
     ]
-   ]
+   ],
+   "plan": []
   },
   {
    "id": "eudi",
@@ -12097,7 +12919,9 @@ window.CASE = {
    "sum": "$30M ICE system reportedly aggregating IRS, SSA, Medicaid, DMV, passport and license-plate-reader data [VERIFY].",
    "dir": "",
    "obj": [],
-   "f": [],
+   "f": [
+    "Same Palantir-ICE relationship now linked to Medicaid data through ELITE reporting (January 2026)"
+   ],
    "src": [
     [
      "EDGE: SOVEREIGN SI // AGENTIC LAYER (Notion)",
@@ -12110,6 +12934,10 @@ window.CASE = {
     [
      "ACLU: Palantir and removals",
      "https://www.aclu.org/news/privacy-technology/palantir-deportation-roundup"
+    ],
+    [
+     "ICE allegedly uses Palantir tool tracking Medicaid data (Fortune)",
+     "https://fortune.com/2026/01/26/ice-allegedly-uses-palantir-tool-tracking-medicaid-data/"
     ]
    ],
    "analysis": true
@@ -12154,7 +12982,9 @@ window.CASE = {
    "sum": "Customer for Palantir's ImmigrationOS ($30M).",
    "dir": "",
    "obj": [],
-   "f": [],
+   "f": [
+    "Receives Medicaid enrollee data via DHS under court-limited categories; ELITE tool reportedly ingests Medicaid data [VERIFY]"
+   ],
    "src": [
     [
      "EDGE: SOVEREIGN SI // AGENTIC LAYER (Notion)",
@@ -12163,6 +12993,14 @@ window.CASE = {
     [
      "ACLU: Palantir and removals",
      "https://www.aclu.org/news/privacy-technology/palantir-deportation-roundup"
+    ],
+    [
+     "HHS may resume sharing some Medicaid data with ICE (AP via News4Jax)",
+     "https://www.news4jax.com/health/2026/01/05/after-judges-ruling-hhs-authorized-to-resume-sharing-some-medicaid-data-with-deportation-officers/"
+    ],
+    [
+     "ICE allegedly uses Palantir tool tracking Medicaid data (Fortune)",
+     "https://fortune.com/2026/01/26/ice-allegedly-uses-palantir-tool-tracking-medicaid-data/"
     ]
    ]
   },
@@ -12180,7 +13018,9 @@ window.CASE = {
    "sum": "Grand Challenge on digital twins and synthetic population modeling; launched Sep 21, 2026; Phase 1 deadline Apr 19, 2027.",
    "dir": "",
    "obj": [],
-   "f": [],
+   "f": [
+    "Sits alongside the NIH-CMS real-world data platform and Autism Data Science Initiative under Bhattacharya"
+   ],
    "src": [
     [
      "EDGE: SOVEREIGN SI // AGENTIC LAYER (Notion)",
@@ -12189,6 +13029,14 @@ window.CASE = {
     [
      "NIH: Digital twins grand challenge",
      "https://www.nih.gov/challenges/digital-twins-andor-synthetic-data-population-modeling-whole-person-health-mitigate-chronic-disease-disparities-grand-challenge"
+    ],
+    [
+     "NIH and CMS build autism data platform (Healthcare IT News)",
+     "https://www.healthcareitnews.com/news/nih-and-cms-build-autism-data-platform"
+    ],
+    [
+     "NIH launches $50M Autism Data Science Initiative (NIH)",
+     "https://www.nih.gov/news-events/news-releases/nih-launches-fifty-million-autism-data-science-initiative-unlock-causes-improve-outcomes"
     ]
    ]
   },
@@ -12449,11 +13297,17 @@ window.CASE = {
    "dir": "",
    "tk": "COIN",
    "obj": [],
-   "f": [],
+   "f": [
+    "CEO Brian Armstrong co-founded NewLimit."
+   ],
    "src": [
     [
      "EDGE: SOVEREIGN SI // AGENTIC LAYER (Notion)",
      "https://app.notion.com/p/40d709555ee2816fb1a9eacf02f74c5e"
+    ],
+    [
+     "NewLimit raises $435M Series C, valuation hits $3.1B (Yahoo Finance, 2026-06-03)",
+     "https://finance.yahoo.com/sectors/healthcare/articles/newlimit-raises-435m-series-c-145642833.html"
     ]
    ]
   },
@@ -12596,7 +13450,9 @@ window.CASE = {
    "sum": "Published a Jan 15, 2026 report on Palantir; Palantir issued a correction response.",
    "dir": "",
    "obj": [],
-   "f": [],
+   "f": [
+    "Said ICE uses a Palantir tool on Medicaid data to 'stalk people for arrest'; obtained documents tying Palantir to WISeR vendor Zyter"
+   ],
    "src": [
     [
      "EDGE: SOVEREIGN SI // AGENTIC LAYER (Notion)",
@@ -12605,6 +13461,14 @@ window.CASE = {
     [
      "Palantir: response to EFF (Jan 2026)",
      "https://blog.palantir.com/correcting-the-record-response-to-the-eff-january-15-2026-report-on-palantir-4b3a12536cd2?gi=22f2d695fdf1"
+    ],
+    [
+     "ICE allegedly uses Palantir tool tracking Medicaid data (Fortune)",
+     "https://fortune.com/2026/01/26/ice-allegedly-uses-palantir-tool-tracking-medicaid-data/"
+    ],
+    [
+     "Palantir Medicare AI experiment (Common Dreams)",
+     "https://www.commondreams.org/news/palantir-medicare-ai-experiment"
     ]
    ]
   },
@@ -12622,11 +13486,17 @@ window.CASE = {
    "sum": "Secretary Marco Rubio and Middle East envoy Steve Witkoff both sit on the Board of Peace founding Executive Board.",
    "dir": "",
    "obj": [],
-   "f": [],
+   "f": [
+    "Annual arms control compliance report (Apr 2025) flags PLA biological research and AI use"
+   ],
    "src": [
     [
      "EDGE: SOVEREIGN SI // FINANCIAL LAYER (Notion)",
      "https://app.notion.com/p/40c709555ee2813bb795d6ecacf7a0a8"
+    ],
+    [
+     "Washington Times: State Dept compliance report on China (Apr 2025)",
+     "https://www.washingtontimes.com/news/2025/apr/22/us-says-china-using-ai-boost-biological-weapons-research/"
     ]
    ]
   },
@@ -16391,6 +17261,13192 @@ window.CASE = {
    "f": [],
    "src": [],
    "analysis": true
+  },
+  {
+   "id": "hhs",
+   "n": "Department of Health and Human Services (HHS)",
+   "s": "healthdata",
+   "t": "M",
+   "k": "buyer",
+   "L": [
+    6,
+    7,
+    8
+   ],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Parent department for CMS, NIH, CDC, FDA, ARPA-H and ACF. Released a department-wide AI strategy (OneHHS) on December 4, 2025 and gave ChatGPT to all employees on September 9, 2025.",
+   "dir": "Run one department-wide AI and data infrastructure across all divisions.",
+   "strat": "HHS treats AI as core infrastructure. The OneHHS strategy creates an AI-integrated Commons that links divisions and shares data where legally permissible, revises data ownership policies and curates data for AI. Palantir has supplied department platforms since 2020 through Gotham licenses and the SHARE BPA.",
+   "plan": [
+    [
+     "d",
+     "ChatGPT made available to all HHS employees",
+     "2025-09-09"
+    ],
+    [
+     "d",
+     "OneHHS AI strategy released (five pillars)",
+     "2025-12-04"
+    ],
+    [
+     "d",
+     "Phase Anthropic out of workflows under presidential directive",
+     "2026-03-02"
+    ],
+    [
+     "m",
+     "Publish pillar metrics after implementation begins",
+     "2026"
+    ],
+    [
+     "d",
+     "Move AI, tech and data roles back under the CIO",
+     "2026-03"
+    ],
+    [
+     "d",
+     "mRNA wind-down: 22 projects, ~$500M",
+     "2025-08-05"
+    ],
+    [
+     "d",
+     "Operation TrialBlazer launched",
+     "2026-06-22"
+    ],
+    [
+     "d",
+     "Wearables goal announced",
+     "2025-06-24"
+    ]
+   ],
+   "obj": [],
+   "f": [
+    "About 450 AI use cases in the FY2025 inventory",
+    "Staff may enter 'routine non-sensitive PII' and procurement-sensitive data into ChatGPT; sensitive PII barred",
+    "Palantir received more than $35M in HHS payments and obligations in the first year of the second Trump term [VERIFY]",
+    "2024 inventory listed 271 use cases [VERIFY]"
+   ],
+   "src": [
+    [
+     "HHS unveils AI strategy (HHS)",
+     "https://www.hhs.gov/press-room/hhs-unveils-ai-strategy-to-transform-agency-operations.html"
+    ],
+    [
+     "HHS releases AI strategy, OneHHS (Nextgov)",
+     "https://www.nextgov.com/artificial-intelligence/2025/12/hhs-releases-ai-strategy-united-new-onehhs-approach/409983/"
+    ],
+    [
+     "HHS asks all employees to start using ChatGPT (404 Media)",
+     "https://www.404media.co/hhs-asks-all-employees-to-start-using-chatgpt/"
+    ],
+    [
+     "US health agency ramps up AI use (PharmaLetter)",
+     "https://www.thepharmaletter.com/pharma-news/us-health-agency-ramps-up-ai-use-as-transparency-gaps-persist"
+    ],
+    [
+     "Agencies begin to shed Anthropic contracts (Nextgov)",
+     "https://www.nextgov.com/acquisition/2026/03/agencies-begin-shed-anthropic-contracts-following-trumps-directive/411823/"
+    ],
+    [
+     "HHS reports 271 AI use cases in 2024 (CDO Magazine)",
+     "https://www.cdomagazine.tech/us-federal-news-bureau/hhs-reports-271-ai-use-cases-in-2024-66-increase-from-2023"
+    ],
+    [
+     "HHS: Winding down mRNA development under BARDA",
+     "https://hhs.gov/press-room/hhs-winds-down-mrna-development-under-barda.html"
+    ],
+    [
+     "DLA Piper: U.S.-China life sciences policy developments (Aug 2026)",
+     "https://www.dlapiper.com/en-us/insights/publications/2026/08/us-china-life-sciences-policy-developments-top-points-for-companies"
+    ],
+    [
+     "CASRAI: USG Policy for Stopping High-Risk Life Sciences Research",
+     "https://casrai.org/news/usg-policy-stopping-high-risk-life-sciences-research-institutions-2026"
+    ],
+    [
+     "AHCJ: Kennedy wearables goal",
+     "https://healthjournalism.org/blog/2025/07/rfk-jr-wants-us-all-to-wear-health-trackers-will-it-work/"
+    ],
+    [
+     "TrumpRx (Wikipedia)",
+     "https://en.wikipedia.org/wiki/TrumpRx"
+    ]
+   ]
+  },
+  {
+   "id": "cms",
+   "n": "Centers for Medicare & Medicaid Services (CMS)",
+   "s": "healthdata",
+   "t": "M",
+   "k": "buyer",
+   "L": [
+    5,
+    6,
+    8
+   ],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Runs Medicare and Medicaid. Leads the Health Tech Ecosystem, Medicare.gov digital identity, the WISeR AI prior-authorization model, fraud war rooms, and the Medicaid data agreement with DHS.",
+   "dir": "Make Medicare a digital, app-based program and use data and AI against fraud.",
+   "strat": "CMS uses voluntary pledges, payment models and its own identity and app infrastructure to set the standards for health data exchange. It pairs the consumer layer (apps, aligned networks, biometric login) with program-integrity analytics and has extended data sharing to DHS for immigration enforcement.",
+   "plan": [
+    [
+     "d",
+     "Health Tech Ecosystem launched at the White House",
+     "2025-07-30"
+    ],
+    [
+     "d",
+     "CMS-DHS Medicaid data agreement (daily access)",
+     "2025-07"
+    ],
+    [
+     "d",
+     "WISeR model live in six states",
+     "2026-01-01"
+    ],
+    [
+     "d",
+     "Biometric credentials on Medicare.gov",
+     "2026-03-04"
+    ],
+    [
+     "d",
+     "Medicare App Library and first-wave tools",
+     "2026-04-09"
+    ],
+    [
+     "d",
+     "Office of Health Technology and Products established",
+     "2026-06-09"
+    ],
+    [
+     "d",
+     "ACCESS model begins",
+     "2026-07"
+    ],
+    [
+     "p",
+     "States begin quarterly Death Master File checks",
+     "2027-01-01"
+    ]
+   ],
+   "obj": [],
+   "f": [
+    "Center for Program Integrity runs about 250 models a day across 4 to 5 million daily claims",
+    "$5.7B in suspected fraudulent Medicare payments suspended in 2025"
+   ],
+   "src": [
+    [
+     "White House, tech leaders commit to patient-centric ecosystem (CMS)",
+     "https://www.cms.gov/newsroom/press-releases/white-house-tech-leaders-commit-create-patient-centric-healthcare-ecosystem"
+    ],
+    [
+     "CMS launches first wave of HealthTech Ecosystem tools (CMS)",
+     "https://www.cms.gov/newsroom/press-releases/cms-launches-first-wave-healthtech-ecosystem-tools-fast-tracking-fully-digital-patient-centered"
+    ],
+    [
+     "CMS AI fraud detection (FedScoop)",
+     "https://fedscoop.com/cms-ai-fraud-detection-medicare-medicaid-programs/"
+    ],
+    [
+     "CMS witness testimony, House E&C O&I, Mar 17 2026",
+     "https://d1dth6e84htgma.cloudfront.net/03_17_2026_OI_Hearing_Witness_Testimony_Brandt_27650dea5c.pdf"
+    ],
+    [
+     "HHS may resume sharing some Medicaid data with ICE (AP via News4Jax)",
+     "https://www.news4jax.com/health/2026/01/05/after-judges-ruling-hhs-authorized-to-resume-sharing-some-medicaid-data-with-deportation-officers/"
+    ],
+    [
+     "What to Know About the BALANCE Model and the Medicare GLP-1 Bridge (KFF)",
+     "https://www.kff.org/medicare/issue-brief/what-to-know-about-the-balance-model-for-glp-1s-in-medicare-and-medicaid/"
+    ]
+   ]
+  },
+  {
+   "id": "nih",
+   "n": "National Institutes of Health (NIH)",
+   "s": "healthdata",
+   "t": "K",
+   "k": "buyer",
+   "L": [
+    6,
+    7
+   ],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Builds a real-world data platform with CMS claims, EHR and wearable data; funds the Autism Data Science Initiative; ARPA-H contracts run through an NIH office.",
+   "dir": "Link real-world health data at national scale for research on chronic disease.",
+   "strat": "NIH under Bhattacharya is assembling linked real-world data, starting with autism, by pulling CMS Medicare and Medicaid claims together with EHR and wearable data. EO 14355 adds AI on childhood cancer data.",
+   "plan": [
+    [
+     "d",
+     "NIH-CMS real-world data platform announced",
+     "2025-05"
+    ],
+    [
+     "d",
+     "Autism Data Science Initiative awards ($50M+, 13 projects)",
+     "2025-09-22"
+    ],
+    [
+     "m",
+     "Real-World Data Network program [VERIFY]",
+     "2026"
+    ]
+   ],
+   "obj": [],
+   "f": [
+    "HHS said it is 'not creating an autism registry'",
+    "Palantir held a $60M NIH N3C contract [VERIFY]"
+   ],
+   "src": [
+    [
+     "NIH and CMS build autism data platform (Healthcare IT News)",
+     "https://www.healthcareitnews.com/news/nih-and-cms-build-autism-data-platform"
+    ],
+    [
+     "NIH launches $50M Autism Data Science Initiative (NIH)",
+     "https://www.nih.gov/news-events/news-releases/nih-launches-fifty-million-autism-data-science-initiative-unlock-causes-improve-outcomes"
+    ],
+    [
+     "NIH Data COUNTS and the Real-World Data Network (Zintellect)",
+     "https://www.zintellect.com/Opportunity/Details/NIH-DPCPSI-ODSS-DataCOUNTS-2026"
+    ],
+    [
+     "Palantir $60M NIH N3C contract (ExecutiveBiz)",
+     "https://blog.executivebiz.com/tag/n3c/"
+    ],
+    [
+     "NIH NOT-OD-25-112",
+     "https://grants.nih.gov/grants/guide/notice-files/NOT-OD-25-112.html"
+    ],
+    [
+     "CASRAI: USG Policy for Stopping High-Risk Life Sciences Research",
+     "https://casrai.org/news/usg-policy-stopping-high-risk-life-sciences-research-institutions-2026"
+    ]
+   ]
+  },
+  {
+   "id": "cdc",
+   "n": "Centers for Disease Control and Prevention (CDC)",
+   "s": "healthdata",
+   "t": "K",
+   "k": "buyer",
+   "L": [
+    6
+   ],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Runs Palantir's Common Operating Picture for surveillance and outbreak response. Leadership since August 2025: Monarez (fired Aug 2025), O'Neill (acting), Bhattacharya (acting from Feb 18, 2026), then Director Erica Schwartz (confirmed Aug 5, 2026).",
+   "dir": "Disease surveillance and outbreak response on a consolidated data platform.",
+   "strat": "CDC consolidated HHS Protect, ASPR Engage, Tiberius and DCIPHER on Palantir under a $443M, five-year contract in December 2022.",
+   "plan": [
+    [
+     "d",
+     "Palantir Common Operating Picture contract",
+     "2022-12"
+    ],
+    [
+     "d",
+     "Bhattacharya named acting director",
+     "2026-02-18"
+    ],
+    [
+     "p",
+     "Permanent director nomination and HELP Committee review",
+     ""
+    ]
+   ],
+   "obj": [],
+   "f": [
+    "Monarez served 29 days before her firing",
+    "O'Neill's acting tenure approached the 210-day Vacancies Act limit",
+    "Director Dr. Erica Schwartz, confirmed August 5, 2026 (51-44); acting directors before her were Jim O'Neill (to February 2026) and Jay Bhattacharya (from February 18, 2026)",
+    "Without a confirmed director for almost a year as of June 2026"
+   ],
+   "src": [
+    [
+     "Palantir wins $443M CDC contract (Potomac Officers Club)",
+     "https://potomacofficersclub.com/news/palantir-wins-443m-contract-to-streamline-software-offerings-for-cdc"
+    ],
+    [
+     "White House picks Bhattacharya to run CDC (Healio)",
+     "https://www.healio.com/news/infectious-disease/20260219/white-house-picks-nih-director-bhattacharya-to-run-cdc-for-now"
+    ],
+    [
+     "CDC: TGS passes one million participants",
+     "https://www.cdc.gov/media/releases/2026/2026-cdc-surpasses-1-million-voluntary-air-travel-participants-in-biosurveillance-program.html"
+    ],
+    [
+     "AACOM: HELP nomination hearings for ASPR and CDC",
+     "https://www.aacom.org/news-reports/news/2026/07/27/help-committee-holds-nomination-hearings-for-aspr-and-cdc-leadership"
+    ],
+    [
+     "STAT: ASPR and PAHPA reauthorization",
+     "https://www.statnews.com/2026/06/16/aspr-pandemic-all-hazard-preparedness-act-reauthorization/"
+    ]
+   ]
+  },
+  {
+   "id": "fda",
+   "n": "Food and Drug Administration (FDA)",
+   "s": "healthdata",
+   "t": "N",
+   "k": "buyer",
+   "L": [
+    7,
+    8
+   ],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Runs Elsa, an agency-wide generative AI tool launched June 2, 2025, plus agentic AI tools from December 1, 2025. Commissioner Makary resigned May 2026.",
+   "dir": "Use AI to speed scientific review and compliance work.",
+   "strat": "FDA built Elsa as a RAG system in AWS GovCloud, then added optional agentic tools for review, surveillance and inspections, with no training on staff or industry data.",
+   "plan": [
+    [
+     "d",
+     "Chief AI Officer named",
+     "2025-05"
+    ],
+    [
+     "d",
+     "Elsa launched agency-wide",
+     "2025-06-02"
+    ],
+    [
+     "d",
+     "Agentic AI tools for all staff",
+     "2025-12-01"
+    ],
+    [
+     "d",
+     "Elsa primary model moves from Claude to Gemini [VERIFY]",
+     "2026-03"
+    ],
+    [
+     "p",
+     "Commissioner nominee Heidi Overton awaits confirmation",
+     "2026-08-19"
+    ]
+   ],
+   "obj": [],
+   "f": [
+    "Elsa used by more than 70% of FDA staff by December 2025"
+   ],
+   "src": [
+    [
+     "FDA expands AI with agentic deployment (OncoDaily)",
+     "https://oncodaily.com/industry/fda-2"
+    ],
+    [
+     "FDA names AI chief Jeremy Walsh (MedTech Dive)",
+     "https://www.medtechdive.com/news/FDA-names-AI-chief-Jeremy-Walsh/747662/"
+    ],
+    [
+     "FDA's Elsa switches from Claude to Gemini (Clinical Leader)",
+     "https://www.clinicalleader.com/doc/fda-s-elsa-ai-switches-from-claude-to-gemini-what-sponsors-need-to-know-0001"
+    ],
+    [
+     "FDA launches agencywide AI tool (Axios)",
+     "https://www.axios.com/2025/06/02/fda-launches-ai-tool"
+    ],
+    [
+     "Makary's reforms will live on (BioSpace)",
+     "https://www.biospace.com/fda/makarys-reforms-will-live-on-at-fda-even-as-leadership-turns-over"
+    ],
+    [
+     "FDA awards first-ever national priority vouchers to nine sponsors (HHS, 2025-10-16)",
+     "https://www.hhs.gov/press-room/fda-awards-first-ever-national-priority-vouchers-nine-sponsors.html"
+    ],
+    [
+     "FDA launches agency-wide AI tool Elsa (RAPS, 2025-06)",
+     "https://www.raps.org/resource/fda-launches-agency-wide-ai-tool-elsa-ahead-of-sc.html"
+    ],
+    [
+     "FDA animal testing phase-out targets monoclonal antibodies (Xtalks, 2025-04-14)",
+     "https://xtalks.com/fda-animal-testing-phase-out-targets-monoclonal-antibodies-4191/"
+    ],
+    [
+     "FDA Commissioner Marty Makary resigns after tumultuous tenure (KGOU/NPR, 2026-05-13)",
+     "https://www.kgou.org/2026-05-13/fda-commissioner-marty-makary-resigns-after-tumultuous-tenure"
+    ],
+    [
+     "President Trump announces nomination of Heidi Overton (Nutritional Outlook, 2026-08-19)",
+     "https://www.nutritionaloutlook.com/view/president-trump-announces-nomination-of-heidi-overton-md-as-fda-s-new-commissioner"
+    ]
+   ]
+  },
+  {
+   "id": "va",
+   "n": "Department of Veterans Affairs (VA)",
+   "s": "healthdata",
+   "t": "N",
+   "k": "buyer",
+   "L": [
+    6,
+    8
+   ],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Deploying the Oracle Health Federal EHR (13 sites in 2026, 26 planned for 2027) and an ambient AI scribe enterprise contract with Abridge and Knowtex.",
+   "dir": "Replace VistA with Oracle Health at every facility by 2031.",
+   "strat": "VA restarted Oracle EHR deployments in 2026 in batches and raised the contract ceiling by $17B. It is scaling AI scribes after pilots.",
+   "plan": [
+    [
+     "d",
+     "13 Oracle EHR go-lives completed",
+     "2026-10"
+    ],
+    [
+     "d",
+     "$17B ceiling increase plus three option years",
+     "2026-08"
+    ],
+    [
+     "d",
+     "Ambient scribe enterprise contract",
+     "2026-09"
+    ],
+    [
+     "m",
+     "26 go-lives",
+     "2027"
+    ],
+    [
+     "m",
+     "EHR at all facilities",
+     "2031"
+    ]
+   ],
+   "obj": [],
+   "f": [
+    "Earlier VA lifecycle estimate exceeded $56B",
+    "GAO could verify only $1B of an estimated $2B to maintain VistA over two fiscal years"
+   ],
+   "src": [
+    [
+     "VA completes 2026 EHR deployments (Nextgov)",
+     "https://www.nextgov.com/modernization/2026/10/va-completes-2026-ehr-system-deployments-final-two-site-go-lives/416823/"
+    ],
+    [
+     "House panel subpoenas Oracle heads (Nextgov)",
+     "https://www.nextgov.com/modernization/2026/09/house-panel-subpoenas-oracle-heads-over-va-health-record-overhauls-ballooning-costs/415791/"
+    ],
+    [
+     "VA selects Abridge for ambient scribe (Nextgov)",
+     "https://nextgov.com/artificial-intelligence/2026/09/va-selects-abridge-ambient-scribe-under-new-enterprise-contract/416140"
+    ]
+   ]
+  },
+  {
+   "id": "astp",
+   "n": "ASTP/ONC (Assistant Secretary for Technology Policy)",
+   "s": "healthdata",
+   "t": "N",
+   "k": "buyer",
+   "L": [
+    5,
+    6
+   ],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "HHS health IT regulator. Proposed HTI-5 on December 22, 2025 to remove 34 of 60 certification criteria and the AI model-card transparency rules.",
+   "dir": "Deregulate health IT certification and push AI interoperability.",
+   "strat": "ASTP/ONC under Thomas Keane is cutting certification requirements it calls duplicative or burdensome while CMS sets interoperability through voluntary frameworks.",
+   "plan": [
+    [
+     "d",
+     "Keane starts as national coordinator",
+     "2025-06-02"
+    ],
+    [
+     "d",
+     "HTI-5 proposed rule",
+     "2025-12-22"
+    ],
+    [
+     "p",
+     "HTI-5 final rule",
+     ""
+    ]
+   ],
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "HTI-5 proposed rule (Healthcare Dive)",
+     "https://www.healthcaredive.com/news/astp-onc-hti5-ai-model-cards-health-it-certification-proposed-rule/808582/"
+    ],
+    [
+     "Thomas Keane named national coordinator (Healthcare Dive)",
+     "https://www.healthcaredive.com/news/astp-national-coordinator-health-it-thomas-keane/749654/"
+    ]
+   ]
+  },
+  {
+   "id": "arpah",
+   "n": "ARPA-H",
+   "s": "healthdata",
+   "t": "N",
+   "k": "buyer",
+   "L": [
+    6,
+    8
+   ],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "HHS advanced research agency. Palantir supplies its data infrastructure (2024) and, since June 5, 2026, an option for an agentic AI platform-as-a-service.",
+   "dir": "Run agency operations and program oversight on a data platform.",
+   "strat": "ARPA-H uses Palantir AIP and Foundry for program strategy, oversight and ROI tracking.",
+   "plan": [
+    [
+     "d",
+     "Palantir data infrastructure award ($19M, 2 yrs)",
+     "2024-06"
+    ],
+    [
+     "d",
+     "Delivery order 75N99226F00002 (up to $13.7M)",
+     "2026-06-05"
+    ],
+    [
+     "p",
+     "Order ends",
+     "2027-05-31"
+    ],
+    [
+     "d",
+     "Launched",
+     "2026-03-10"
+    ]
+   ],
+   "obj": [],
+   "f": [
+    "Dollar amount described only as 'multimillion'"
+   ],
+   "src": [
+    [
+     "ARPA-H partners with Palantir (Business Wire)",
+     "https://www.businesswire.com/news/home/20240620001188/en/The-Advanced-Research-Projects-Agency-for-Health-ARPA-H-Partners-with-Palantir-to-Accelerate-Health-Outcomes-By-Leveraging-AIML-and-Data-Software-Tooling/"
+    ],
+    [
+     "Delivery order 75N99226F00002 (HigherGov)",
+     "https://www.highergov.com/contract/47QTCA24D004L-75N99226F00002/"
+    ],
+    [
+     "Washington Examiner: ARPA-H biowearables",
+     "https://www.washingtonexaminer.com/?p=4486357"
+    ]
+   ]
+  },
+  {
+   "id": "acf",
+   "n": "Administration for Children and Families (ACF)",
+   "s": "healthdata",
+   "t": "N",
+   "k": "buyer",
+   "L": [
+    8
+   ],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "HHS division that, per WIRED, has used Palantir and Credal AI since March 2025 to flag grants, applications and job descriptions against EO 14151 and EO 14168 [VERIFY].",
+   "dir": "Screen grants for compliance with executive orders.",
+   "strat": "AI generates initial flags; ACF staff do a final review.",
+   "plan": [
+    [
+     "d",
+     "Tools deployed per HHS 2025 AI use-case inventory",
+     "2025-03"
+    ]
+   ],
+   "obj": [],
+   "f": [
+    "Credal AI paid about $750,000 by ACF [VERIFY]"
+   ],
+   "src": [
+    [
+     "WIRED: HHS uses Palantir AI tools to screen grants",
+     "https://www.wired.com/story/hhs-is-using-ai-tools-from-palantir-to-target-dei-and-gender-ideology-in-grants/"
+    ]
+   ]
+  },
+  {
+   "id": "dhs",
+   "n": "Department of Homeland Security (DHS)",
+   "s": "state",
+   "t": "N",
+   "k": "buyer",
+   "L": [
+    6
+   ],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Receives Medicaid enrollee data from CMS under a July 2025 agreement; signed a five-year BPA worth up to $1B with Palantir in February 2026.",
+   "dir": "Use cross-agency data for immigration enforcement.",
+   "strat": "DHS is consolidating Palantir Gotham and Foundry across CBP, ICE, FEMA and CISA and obtaining health program data for enforcement leads.",
+   "plan": [
+    [
+     "d",
+     "CMS data agreement",
+     "2025-07"
+    ],
+    [
+     "d",
+     "Palantir BPA up to $1B",
+     "2026-02"
+    ],
+    [
+     "b",
+     "Use of 22 states' Medicaid data paused pending scope ruling",
+     "2026-04-30"
+    ]
+   ],
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "DHS $1B Palantir blanket purchase agreement (SiliconANGLE)",
+     "https://siliconangle.com/?p=731512"
+    ],
+    [
+     "HHS may resume sharing some Medicaid data with ICE (AP via News4Jax)",
+     "https://www.news4jax.com/health/2026/01/05/after-judges-ruling-hhs-authorized-to-resume-sharing-some-medicaid-data-with-deportation-officers/"
+    ],
+    [
+     "Government pauses Medicaid data use for ICE (Law360/MLex)",
+     "https://www.mlex.com/healthcare-authority/other/articles/2472169/gov-t-pauses-medicaid-data-use-for-ice-amid-injunction-fight"
+    ],
+    [
+     "Chemical Facility Security News: DHS CWMD office to close",
+     "https://chemical-facility-security-news.blogspot.com/2026/05/review-dhs-cwmd-office-to-close.html"
+    ],
+    [
+     "Grants.gov: FY2026 BioWatch grant program",
+     "https://simpler.grants.gov/opportunity/b7dc9f33-5b22-4af5-ba24-09b38ecc4b26"
+    ]
+   ]
+  },
+  {
+   "id": "usds",
+   "n": "U.S. DOGE Service",
+   "s": "state",
+   "t": "N",
+   "k": "buyer",
+   "L": [
+    6
+   ],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Renamed U.S. Digital Service. Took read-only access to CMS payment and contracting systems in February 2025. Acting administrator Amy Gleason also runs CMS's tech office.",
+   "dir": "Find waste and fraud through direct access to agency data systems.",
+   "strat": "DOGE placed staff in agencies and used EO 14243 to press for full access to unclassified records. At CMS it moved from payment-system access to running the consumer tech agenda through Gleason.",
+   "plan": [
+    [
+     "d",
+     "Read-only access to CMS CALM and payment systems",
+     "2025-02"
+    ],
+    [
+     "d",
+     "TRO against DOGE access to DOL/HHS/CFPB denied",
+     "2025-02-14"
+    ]
+   ],
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "DOGE accesses CMS contracting and payment systems (Arnold & Porter)",
+     "https://www.arnoldporter.com/en/perspectives/blogs/enforcement-edge/2025/02/doge-accesses-cms-contracting-and-payment-systems"
+    ],
+    [
+     "Judge declines to block DOGE access to Labor, Health, CFPB data (Bloomberg Law)",
+     "https://news.bloomberglaw.com/litigation/judge-declines-to-block-doge-access-to-labor-health-cfpb-data"
+    ],
+    [
+     "Amy Gleason (Wikipedia)",
+     "https://en.wikipedia.org/wiki/Amy_Gleason"
+    ]
+   ]
+  },
+  {
+   "id": "ohtp",
+   "n": "CMS Office of Health Technology and Products",
+   "s": "healthdata",
+   "t": "N",
+   "k": "buyer",
+   "L": [
+    5,
+    6,
+    8
+   ],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Established June 9, 2026 under Amy Gleason. Eight groups covering AI implementation, standards and interoperability, open source and beneficiary products.",
+   "dir": "Build CMS's own products and AI in house.",
+   "strat": "Consolidates CMS tech authority, recruits engineers and product managers, and runs the Health Tech Ecosystem.",
+   "plan": [
+    [
+     "d",
+     "Office established",
+     "2026-06-09"
+    ]
+   ],
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "CMS creates Office of Health Technology and Products (MedTech Dive)",
+     "https://medtechdive.com/news/cms-creates-office-health-technology-products-ai-interoperability/822814"
+    ]
+   ]
+  },
+  {
+   "id": "htecosystem",
+   "n": "CMS Health Tech Ecosystem",
+   "s": "healthdata",
+   "t": "K",
+   "k": "prog",
+   "L": [
+    5,
+    6,
+    8
+   ],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Voluntary pledge launched July 30, 2025 at a White House 'Make Health Tech Great Again' event. 60+ companies at launch; 700+ organizations by April 2026.",
+   "dir": "Kill the clipboard and make patient data portable through apps and AI assistants.",
+   "strat": "CMS rallies tech firms, EHRs, networks, payers and providers around shared standards for identity, security and interoperability, then showcases products. Categories: conversational AI assistants, diabetes and obesity apps, and digital check-in.",
+   "plan": [
+    [
+     "d",
+     "Pledge launched",
+     "2025-07-30"
+    ],
+    [
+     "d",
+     "Pledge commitments go live target",
+     "2026-03-31"
+    ],
+    [
+     "d",
+     "First Wave Launch with Medicare App Library",
+     "2026-04-09"
+    ],
+    [
+     "d",
+     "Expanded to electronic prior authorization",
+     "2026-05"
+    ],
+    [
+     "m",
+     "FHIR, record locator and event notification requirements",
+     "2026-07"
+    ]
+   ],
+   "obj": [],
+   "f": [
+    "Named at launch: Amazon, Anthropic, Apple, Google, OpenAI",
+    "21 networks, 11 health systems, 7 EHRs and 30 outcome companies pledged at launch",
+    "Followed a May 2025 RFI with nearly 1,400 comments",
+    "600+ organizations by January 2026; 700+ by April 9, 2026"
+   ],
+   "src": [
+    [
+     "White House, tech leaders commit to patient-centric ecosystem (CMS)",
+     "https://www.cms.gov/newsroom/press-releases/white-house-tech-leaders-commit-create-patient-centric-healthcare-ecosystem"
+    ],
+    [
+     "CMS launches first wave of HealthTech Ecosystem tools (CMS)",
+     "https://www.cms.gov/newsroom/press-releases/cms-launches-first-wave-healthtech-ecosystem-tools-fast-tracking-fully-digital-patient-centered"
+    ],
+    [
+     "White House event unveils CMS Health Tech Ecosystem (HIT Consultant)",
+     "https://hitconsultant.net/2025/07/30/white-house-event-unveils-cms-health-tech-ecosystem-initiative"
+    ],
+    [
+     "CMS sets 2026 goalposts for tech and AI (Fierce Healthcare)",
+     "https://www.fiercehealthcare.com/ai-and-machine-learning/cms-trying-speed-tech-innovation-and-ai-patients-major-goalposts-set-2026"
+    ]
+   ]
+  },
+  {
+   "id": "cmsif",
+   "n": "CMS Interoperability Framework / Aligned Networks",
+   "s": "healthdata",
+   "t": "N",
+   "k": "prog",
+   "L": [
+    6
+   ],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Voluntary criteria for trusted exchange. 22 early-adopter networks including Epic, Oracle Health, Carequality, CommonWell, eHealth Exchange, b.well, Particle Health, Datavant, Surescripts.",
+   "dir": "Move Blue Button claims and clinical data through certified networks.",
+   "strat": "Data stays with networks and moves on patient request, with CMS sharing Blue Button claims data through aligned networks.",
+   "plan": [
+    [
+     "m",
+     "Blue Button claims via aligned networks",
+     "2026-Q1"
+    ]
+   ],
+   "obj": [],
+   "f": [
+    "Early adopters: athenahealth, b.well, Carequality, CommonWell, CRISP, CyncHealth, Datavant, eClinicalWorks, eHealth Exchange, Epic, Health Gorilla, Innovaccer, Kno2, KONZA, Louisiana Dept. of Health, MedAllies, MyHealth Access Network, Oracle Health, Particle Health, Surescripts, Velatura, Zus Health"
+   ],
+   "src": [
+    [
+     "CMS Health Tech Ecosystem data network pledgees (CMS)",
+     "https://www.cms.gov/initiatives/health-technology-ecosystem/overview/early-adopters-all-pledgees/data-networks"
+    ]
+   ]
+  },
+  {
+   "id": "medapplib",
+   "n": "Medicare App Library",
+   "s": "healthdata",
+   "t": "N",
+   "k": "app",
+   "L": [
+    8
+   ],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Launched April 2026 on Medicare.gov. Five apps live by June 2026 with eight more expected.",
+   "dir": "A vetted app store for Medicare beneficiaries.",
+   "strat": "Apps must pass independent review and meet CMS privacy and security criteria, use modern identity, and follow the CARIN Code of Conduct or DiMe certification.",
+   "plan": [
+    [
+     "d",
+     "Library launched",
+     "2026-04"
+    ]
+   ],
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Digital health tools in Medicare (KFF)",
+     "https://www.kff.org/medicare/digital-health-tools-and-technologies-an-overview-of-cms-recent-efforts-to-expand-their-use-in-medicare/"
+    ],
+    [
+     "CMS sets 2026 goalposts for tech and AI (Fierce Healthcare)",
+     "https://www.fiercehealthcare.com/ai-and-machine-learning/cms-trying-speed-tech-innovation-and-ai-patients-major-goalposts-set-2026"
+    ]
+   ]
+  },
+  {
+   "id": "medgovid",
+   "n": "Medicare.gov digital identity (Login.gov, ID.me, CLEAR)",
+   "s": "healthdata",
+   "t": "N",
+   "k": "prog",
+   "L": [
+    5
+   ],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Biometric-capable sign-in for Medicare.gov from March 4, 2026. About 60% of new accounts used a modern credential in the first days.",
+   "dir": "Replace legacy Medicare logins with reusable high-assurance identity.",
+   "strat": "CMS contracted CLEAR and ID.me alongside Login.gov. Credentials are reusable across government and health systems, and the administration frames the change as anti-fraud.",
+   "plan": [
+    [
+     "d",
+     "CLEAR contract",
+     "2025-12"
+    ],
+    [
+     "d",
+     "ID.me selected",
+     "2025-12-16"
+    ],
+    [
+     "d",
+     "Rollout",
+     "2026-03-04"
+    ]
+   ],
+   "obj": [],
+   "f": [
+    "Login.gov and ID.me use facial recognition",
+    "About 90% of new account creators had been identity-verified elsewhere"
+   ],
+   "src": [
+    [
+     "CMS touts biometric verification for Medicare.gov (Nextgov)",
+     "https://nextgov.com/digital-government/2026/03/cms-touts-early-uses-new-biometric-verification-tools-medicaregov/412065"
+    ],
+    [
+     "CLEAR inks contract with CMS to kill the clipboard (Fierce Healthcare)",
+     "https://www.fiercehealthcare.com/health-tech/clear-inks-contract-cms-kill-clipboard"
+    ],
+    [
+     "ID.me awarded CMS contract for Medicare.gov (ID Tech Wire)",
+     "https://idtechwire.com/id-me-awarded-cms-contract-to-support-medicare-gov-sign-in-and-identity-verification/"
+    ]
+   ]
+  },
+  {
+   "id": "wiser",
+   "n": "WISeR model (Wasteful and Inappropriate Service Reduction)",
+   "s": "healthdata",
+   "t": "N",
+   "k": "prog",
+   "L": [
+    8
+   ],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "CMS Innovation Center model using AI-assisted prior authorization in traditional Medicare in six states from January 1, 2026.",
+   "dir": "Cut low-value Medicare services through vendor-run prior authorization.",
+   "strat": "Six vendors each take a state and are paid on Medicare savings, adjusted for performance. Critics say the payment design rewards denials.",
+   "plan": [
+    [
+     "d",
+     "Model live: TX, NJ, OK, OH, WA, AZ",
+     "2026-01-01"
+    ]
+   ],
+   "obj": [],
+   "f": [
+    "Vendors: Cohere Health (TX), Genzeon (NJ), Humata Health (OK), Innovaccer (OH), Virtix Health (WA), Zyter (AZ)"
+   ],
+   "src": [
+    [
+     "Meet the 6 vendors in the CMS WISeR Model (TechTarget)",
+     "https://www.techtarget.com/revcyclemanagement/feature/Meet-the-6-vendors-participating-in-the-CMS-WISeR-Model"
+    ],
+    [
+     "Palantir Medicare AI experiment (Common Dreams)",
+     "https://www.commondreams.org/news/palantir-medicare-ai-experiment"
+    ]
+   ]
+  },
+  {
+   "id": "access",
+   "n": "ACCESS model (CMMI)",
+   "s": "healthdata",
+   "t": "N",
+   "k": "prog",
+   "L": [
+    8
+   ],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Ten-year Medicare model (July 2026 to June 2036) paying for technology-enabled chronic care. 190 organizations accepted; 16 insurers pledged to mirror it in Medicare Advantage.",
+   "dir": "Pay digital health companies for chronic disease outcomes.",
+   "strat": "Monthly payments with full payment tied to outcomes across cardiovascular, kidney, metabolic, musculoskeletal and behavioral health tracks.",
+   "plan": [
+    [
+     "d",
+     "Announced",
+     "2025-12"
+    ],
+    [
+     "d",
+     "Begins",
+     "2026-07"
+    ],
+    [
+     "m",
+     "Runs through",
+     "2036-06"
+    ]
+   ],
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Digital health tools in Medicare (KFF)",
+     "https://www.kff.org/medicare/digital-health-tools-and-technologies-an-overview-of-cms-recent-efforts-to-expand-their-use-in-medicare/"
+    ]
+   ]
+  },
+  {
+   "id": "fdoc",
+   "n": "CMS Fraud Defense Operations Center (fraud war rooms)",
+   "s": "healthdata",
+   "t": "N",
+   "k": "prog",
+   "L": [
+    6,
+    8
+   ],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Medicare war room from early 2025; Medicaid Fraud War Room from April 2026 with the White House Task Force to Eliminate Fraud. About 250 models a day.",
+   "dir": "Stop high-risk payments before they go out.",
+   "strat": "Analysts, investigators, HHS-OIG and counsel meet twice weekly to act on model flags. A Health Care Fraud Data Fusion Center with DOJ, HHS-OIG and FBI uses cloud and AI.",
+   "plan": [
+    [
+     "d",
+     "Medicare war room",
+     "2025"
+    ],
+    [
+     "d",
+     "Medicaid Fraud War Room",
+     "2026-04"
+    ],
+    [
+     "m",
+     "Focus shifts from Medicare to Medicaid",
+     "2026"
+    ]
+   ],
+   "obj": [],
+   "f": [
+    "Nearly $2B saved in under a year (CPI)",
+    "$5.7B suspended, $3.7B referred to law enforcement in 2025",
+    "About $1.8B in federal Medicaid funds tied to unsatisfactory immigration status"
+   ],
+   "src": [
+    [
+     "CMS AI fraud detection (FedScoop)",
+     "https://fedscoop.com/cms-ai-fraud-detection-medicare-medicaid-programs/"
+    ],
+    [
+     "Medicaid Fraud War Room fast facts (CMS)",
+     "https://www.cms.gov/files/document/medicaid-fraud-war-room-fast-facts.pdf"
+    ],
+    [
+     "CMS witness testimony, House E&C O&I, Mar 17 2026",
+     "https://d1dth6e84htgma.cloudfront.net/03_17_2026_OI_Hearing_Witness_Testimony_Brandt_27650dea5c.pdf"
+    ]
+   ]
+  },
+  {
+   "id": "fraudtaskforce",
+   "n": "White House Task Force to Eliminate Fraud",
+   "s": "state",
+   "t": "N",
+   "k": "prog",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Executive-level task force led by Vice President JD Vance; partner in the CMS Medicaid Fraud War Room.",
+   "dir": "Set goals for cross-agency fraud enforcement.",
+   "plan": [
+    [
+     "d",
+     "Medicaid Fraud War Room launched with CMS",
+     "2026-04"
+    ]
+   ],
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Medicaid Fraud War Room fast facts (CMS)",
+     "https://www.cms.gov/files/document/medicaid-fraud-war-room-fast-facts.pdf"
+    ]
+   ]
+  },
+  {
+   "id": "nihrwd",
+   "n": "NIH-CMS real-world data platform",
+   "s": "healthdata",
+   "t": "N",
+   "k": "prog",
+   "L": [
+    6
+   ],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Announced May 2025. Links Medicare and Medicaid claims, EHRs and consumer wearable data; first pilot covers enrollees with an autism diagnosis.",
+   "dir": "Find root causes of autism and chronic disease in linked real-world data.",
+   "strat": "Uses a CMS Research Data Disclosure Program. HHS has not said whether data will be de-identified or consent-based.",
+   "plan": [
+    [
+     "d",
+     "Data use agreement announced",
+     "2025-05"
+    ]
+   ],
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "NIH and CMS build autism data platform (Healthcare IT News)",
+     "https://www.healthcareitnews.com/news/nih-and-cms-build-autism-data-platform"
+    ]
+   ]
+  },
+  {
+   "id": "adsi",
+   "n": "NIH Autism Data Science Initiative",
+   "s": "healthdata",
+   "t": "N",
+   "k": "prog",
+   "L": [
+    7
+   ],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "More than $50M across 13 projects, announced September 22, 2025.",
+   "dir": "Integrate genomic, clinical, behavioral and services data on autism.",
+   "plan": [
+    [
+     "d",
+     "Awards announced",
+     "2025-09-22"
+    ]
+   ],
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "NIH launches $50M Autism Data Science Initiative (NIH)",
+     "https://www.nih.gov/news-events/news-releases/nih-launches-fifty-million-autism-data-science-initiative-unlock-causes-improve-outcomes"
+    ]
+   ]
+  },
+  {
+   "id": "elsa",
+   "n": "FDA Elsa",
+   "s": "healthdata",
+   "t": "N",
+   "k": "app",
+   "L": [
+    7,
+    8
+   ],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Agency-wide generative AI assistant launched June 2, 2025. RAG system evolved from CDER-GPT in AWS GovCloud; reportedly built by Deloitte on Claude and moved to Gemini in 2026 [VERIFY].",
+   "dir": "Speed scientific review and reduce repetitive work.",
+   "strat": "FDA tuned Elsa to one frontier model, then had to revalidate when the Anthropic directive forced a switch.",
+   "plan": [
+    [
+     "d",
+     "Launch",
+     "2025-06-02"
+    ],
+    [
+     "d",
+     "Agentic tools added",
+     "2025-12-01"
+    ],
+    [
+     "d",
+     "Gemini becomes primary model [VERIFY]",
+     "2026-03"
+    ]
+   ],
+   "obj": [],
+   "f": [
+    "More than 70% of staff use it",
+    "Mixed-model records may raise APA questions (Clinical Leader)"
+   ],
+   "src": [
+    [
+     "FDA's Elsa switches from Claude to Gemini (Clinical Leader)",
+     "https://www.clinicalleader.com/doc/fda-s-elsa-ai-switches-from-claude-to-gemini-what-sponsors-need-to-know-0001"
+    ],
+    [
+     "FDA expands AI with agentic deployment (OncoDaily)",
+     "https://oncodaily.com/industry/fda-2"
+    ],
+    [
+     "FDA launches agencywide AI tool (Axios)",
+     "https://www.axios.com/2025/06/02/fda-launches-ai-tool"
+    ],
+    [
+     "FDA launches agency-wide AI tool Elsa (RAPS, 2025-06)",
+     "https://www.raps.org/resource/fda-launches-agency-wide-ai-tool-elsa-ahead-of-sc.html"
+    ]
+   ]
+  },
+  {
+   "id": "cdccop",
+   "n": "CDC Common Operating Picture (Palantir)",
+   "s": "healthdata",
+   "t": "N",
+   "k": "app",
+   "L": [
+    6
+   ],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "$443M, five-year Palantir contract (December 2022) merging HHS Protect, ASPR Engage, Tiberius and DCIPHER.",
+   "dir": "Single platform for disease surveillance, outbreak response and supply chain.",
+   "plan": [
+    [
+     "d",
+     "Award",
+     "2022-12"
+    ],
+    [
+     "p",
+     "Five-year term ends [ANALYSIS]",
+     "2027-12"
+    ]
+   ],
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Palantir wins $443M CDC contract (Potomac Officers Club)",
+     "https://potomacofficersclub.com/news/palantir-wins-443m-contract-to-streamline-software-offerings-for-cdc"
+    ]
+   ]
+  },
+  {
+   "id": "vaehr",
+   "n": "VA Federal EHR (Oracle Health)",
+   "s": "healthdata",
+   "t": "N",
+   "k": "prog",
+   "L": [
+    6
+   ],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "$10B Cerner contract (May 2018), now Oracle Health, plus a $17B ceiling increase in 2026. 13 go-lives in 2026; 26 planned for 2027; all facilities by 2031.",
+   "dir": "Single commercial EHR across VA.",
+   "plan": [
+    [
+     "d",
+     "Deployments paused",
+     "2023-04"
+    ],
+    [
+     "d",
+     "Michigan restart",
+     "2026-04"
+    ],
+    [
+     "d",
+     "Final 2026 go-lives (Cleveland, Anchorage)",
+     "2026-10"
+    ],
+    [
+     "m",
+     "26 go-lives",
+     "2027"
+    ]
+   ],
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "VA completes 2026 EHR deployments (Nextgov)",
+     "https://www.nextgov.com/modernization/2026/10/va-completes-2026-ehr-system-deployments-final-two-site-go-lives/416823/"
+    ],
+    [
+     "House panel subpoenas Oracle heads (Nextgov)",
+     "https://www.nextgov.com/modernization/2026/09/house-panel-subpoenas-oracle-heads-over-va-health-record-overhauls-ballooning-costs/415791/"
+    ],
+    [
+     "$27 billion and counting (Rep. Budzinski)",
+     "https://budzinski.house.gov/posts/27-billion-and-counting-budzinski-demands-answers-from-va-admin-on-exploding-oracle-costs"
+    ]
+   ]
+  },
+  {
+   "id": "vascribe",
+   "n": "VA ambient AI scribe enterprise contract",
+   "s": "healthdata",
+   "t": "N",
+   "k": "prog",
+   "L": [
+    8
+   ],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Multi-award enterprise contract with a $775.72M shared ceiling over five years (September 2026). Abridge and Knowtex selected after pilots from October 2025.",
+   "dir": "Reduce clinician documentation time.",
+   "plan": [
+    [
+     "d",
+     "Pilots",
+     "2025-10"
+    ],
+    [
+     "d",
+     "Enterprise contract",
+     "2026-09"
+    ]
+   ],
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "VA selects Abridge for ambient scribe (Nextgov)",
+     "https://nextgov.com/artificial-intelligence/2026/09/va-selects-abridge-ambient-scribe-under-new-enterprise-contract/416140"
+    ]
+   ]
+  },
+  {
+   "id": "medicaidice",
+   "n": "CMS-DHS Medicaid data sharing agreement",
+   "s": "healthdata",
+   "t": "K",
+   "k": "prog",
+   "L": [
+    6
+   ],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "July 2025 agreement giving DHS daily access to Medicaid enrollee data including SSNs and addresses. Since January 2026 limited to basic biographical, location and contact data on people unlawfully present, under court order.",
+   "dir": "Supply Medicaid records for immigration enforcement leads.",
+   "strat": "HHS says the sharing is authorized by law. Litigation by 22 states defines which fields and populations may flow.",
+   "plan": [
+    [
+     "d",
+     "First data shared",
+     "2025-06"
+    ],
+    [
+     "d",
+     "Daily-access agreement",
+     "2025-07"
+    ],
+    [
+     "b",
+     "Preliminary injunction",
+     "2025-08-12"
+    ],
+    [
+     "d",
+     "Limited sharing allowed",
+     "2026-01-05"
+    ],
+    [
+     "b",
+     "Use paused pending scope clarification",
+     "2026-04-30"
+    ],
+    [
+     "p",
+     "Parties ordered to agree on scope",
+     "2026-09-09"
+    ]
+   ],
+   "obj": [],
+   "f": [
+    "Agreement covered about 77 to 80 million Medicaid enrollees",
+    "KFF: not possible to isolate people unlawfully present in the data"
+   ],
+   "src": [
+    [
+     "HHS may resume sharing some Medicaid data with ICE (AP via News4Jax)",
+     "https://www.news4jax.com/health/2026/01/05/after-judges-ruling-hhs-authorized-to-resume-sharing-some-medicaid-data-with-deportation-officers/"
+    ],
+    [
+     "California v. HHS docket (Civil Rights Clearinghouse)",
+     "https://clearinghouse.net/case/46754/"
+    ],
+    [
+     "Government pauses Medicaid data use for ICE (Law360/MLex)",
+     "https://www.mlex.com/healthcare-authority/other/articles/2472169/gov-t-pauses-medicaid-data-use-for-ice-amid-injunction-fight"
+    ],
+    [
+     "Judge seeks clearer limits on ICE use of Medicaid data (Law360/MLex)",
+     "https://www.mlex.com/healthcare-authority/digital-health-technology/articles/2522812/calif-judge-seeks-clearer-limits-on-ice-use-of-medicaid-data"
+    ],
+    [
+     "ICE allegedly uses Palantir tool tracking Medicaid data (Fortune)",
+     "https://fortune.com/2026/01/26/ice-allegedly-uses-palantir-tool-tracking-medicaid-data/"
+    ]
+   ]
+  },
+  {
+   "id": "elite",
+   "n": "ICE ELITE (Palantir)",
+   "s": "agentic",
+   "t": "N",
+   "k": "app",
+   "L": [
+    6,
+    8
+   ],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Palantir-built ICE tool that reportedly ingests Medicaid and other government data to build leads and an address 'confidence score' [VERIFY].",
+   "dir": "Generate deportation leads from government records.",
+   "plan": [
+    [
+     "d",
+     "Reported by 404 Media",
+     "2026-01"
+    ]
+   ],
+   "obj": [],
+   "f": [
+    "Neither Palantir nor DHS commented"
+   ],
+   "src": [
+    [
+     "ICE allegedly uses Palantir tool tracking Medicaid data (Fortune)",
+     "https://fortune.com/2026/01/26/ice-allegedly-uses-palantir-tool-tracking-medicaid-data/"
+    ]
+   ]
+  },
+  {
+   "id": "cavhhs",
+   "n": "California v. HHS (N.D. Cal. 3:25-cv-05536)",
+   "s": "healthdata",
+   "t": "N",
+   "k": "counter",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Suit by 22 states (led by California) to stop Medicaid data use for immigration enforcement. Judge Vince Chhabria.",
+   "dir": "Limit health data flows to DHS and ICE.",
+   "plan": [
+    [
+     "d",
+     "Filed",
+     "2025-07-01"
+    ],
+    [
+     "d",
+     "PI granted in part",
+     "2025-08-12"
+    ],
+    [
+     "d",
+     "Third PI granted in part; basic data allowed",
+     "2025-12-29"
+    ],
+    [
+     "d",
+     "Motion to enforce",
+     "2026-03-26"
+    ],
+    [
+     "d",
+     "Government pauses use",
+     "2026-04-30"
+    ],
+    [
+     "m",
+     "Scope agreement ordered",
+     "2026-09-09"
+    ]
+   ],
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "California v. HHS docket (Civil Rights Clearinghouse)",
+     "https://clearinghouse.net/case/46754/"
+    ],
+    [
+     "States move to enforce Medicaid order (Vermont AG)",
+     "https://ago.vermont.gov/blog/2026/03/27/attorney-general-clark-asks-court-enforce-order-blocking-hhs-sharing-large-swaths-medicaid-data-ice"
+    ],
+    [
+     "Government pauses Medicaid data use for ICE (Law360/MLex)",
+     "https://www.mlex.com/healthcare-authority/other/articles/2472169/gov-t-pauses-medicaid-data-use-for-ice-amid-injunction-fight"
+    ],
+    [
+     "Judge seeks clearer limits on ICE use of Medicaid data (Law360/MLex)",
+     "https://www.mlex.com/healthcare-authority/digital-health-technology/articles/2522812/calif-judge-seeks-clearer-limits-on-ice-use-of-medicaid-data"
+    ]
+   ]
+  },
+  {
+   "id": "nhsfdp",
+   "n": "NHS Federated Data Platform",
+   "s": "healthdata",
+   "t": "N",
+   "k": "prog",
+   "L": [
+    6
+   ],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "£330M Palantir contract (November 2023) connecting NHS England data. Break-clause decision due early 2027; extension up to seven years possible.",
+   "dir": "Connect hospital data for waiting lists, operations and discharge.",
+   "strat": "Federated platform run by Palantir under NHS instruction. NISTA raised whole-life cost to £1.1B and cut benefits to £808M.",
+   "plan": [
+    [
+     "d",
+     "Award",
+     "2023-11"
+    ],
+    [
+     "d",
+     "Government review confirmed",
+     "2026-06"
+    ],
+    [
+     "p",
+     "Break clause decision",
+     "2027"
+    ]
+   ],
+   "obj": [],
+   "f": [
+    "SIT Committee called Palantir's role 'an unacceptable point of weakness'",
+    "NHS England apologized for a DPIA error on access to identifiable data"
+   ],
+   "src": [
+    [
+     "UK reviewing Palantir NHS contract (The Star/Reuters)",
+     "https://www.thestar.com.my/tech/tech-news/2026/06/09/uk-reviewing-palantir039s-nhs-contract-amid-pressure-to-use-break-clause"
+    ],
+    [
+     "UK reviewing £330M NHS deal with Palantir (The Next Web)",
+     "https://thenextweb.com/news/uk-nhs-palantir-contract-review-break-clause"
+    ],
+    [
+     "NHS Palantir platform business case under scrutiny (Computing)",
+     "https://www.computing.co.uk/news/2026/government/nhs-palantir-platform-s-business-case-under-scrutiny-as-costs-rise-and-benefits-fall"
+    ]
+   ]
+  },
+  {
+   "id": "hti5",
+   "n": "HTI-5 proposed rule",
+   "s": "healthdata",
+   "t": "N",
+   "k": "law",
+   "L": [
+    5
+   ],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "December 22, 2025 ASTP/ONC proposal removing 34 of 60 health IT certification criteria, revising 7, and dropping AI model-card transparency for clinical decision support.",
+   "dir": "Deregulate health IT certification.",
+   "plan": [
+    [
+     "d",
+     "Proposed",
+     "2025-12-22"
+    ],
+    [
+     "p",
+     "Final rule",
+     ""
+    ]
+   ],
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "HTI-5 proposed rule (Healthcare Dive)",
+     "https://www.healthcaredive.com/news/astp-onc-hti5-ai-model-cards-health-it-certification-proposed-rule/808582/"
+    ]
+   ]
+  },
+  {
+   "id": "eo14243",
+   "n": "EO 14243, Eliminating Information Silos",
+   "s": "state",
+   "t": "N",
+   "k": "law",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "March 20, 2025 order directing agencies to ensure full and prompt access to unclassified records and data.",
+   "dir": "Break down data silos across agencies for fraud detection.",
+   "plan": [
+    [
+     "d",
+     "Signed",
+     "2025-03-20"
+    ]
+   ],
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "EO 14243, Eliminating Information Silos (Federal Register)",
+     "https://www.govinfo.gov/content/pkg/FR-2025-03-25/html/2025-05214.htm"
+    ]
+   ]
+  },
+  {
+   "id": "eo14355",
+   "n": "EO 14355, Unlocking Cures for Pediatric Cancer with AI",
+   "s": "healthdata",
+   "t": "N",
+   "k": "law",
+   "L": [
+    7
+   ],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "September 30, 2025 order directing the MAHA Commission, HHS and NIH to apply AI to Childhood Cancer Data Initiative data ($50M a year for 10 years), AI trial selection and EHR/claims interoperability.",
+   "dir": "Use AI on pediatric cancer data.",
+   "plan": [
+    [
+     "d",
+     "Signed",
+     "2025-09-30"
+    ]
+   ],
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "EO 14355, Unlocking Cures for Pediatric Cancer with AI (White House)",
+     "https://www.whitehouse.gov/presidential-actions/2025/09/unlocking-cures-for-pediatric-cancer-with-artificial-intelligence"
+    ]
+   ]
+  },
+  {
+   "id": "anthropicban",
+   "n": "Presidential directive to cease Anthropic use",
+   "s": "state",
+   "t": "N",
+   "k": "law",
+   "L": [
+    7
+   ],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "February 27, 2026 directive ordering every agency to stop using Anthropic technology, with a six-month phase-out; Hegseth ordered a supply-chain-risk designation; GSA ended Anthropic's OneGov deal.",
+   "dir": "Remove Anthropic models from federal use.",
+   "plan": [
+    [
+     "d",
+     "Directive issued",
+     "2026-02-27"
+    ],
+    [
+     "d",
+     "HHS phase-out under way",
+     "2026-03-02"
+    ],
+    [
+     "m",
+     "Six-month phase-out window ends [ANALYSIS]",
+     "2026-08"
+    ]
+   ],
+   "obj": [],
+   "f": [
+    "Dispute centered on Anthropic's refusal to allow mass surveillance of U.S. citizens and fully autonomous weapons",
+    "Anthropic is challenging the designation in court [VERIFY]"
+   ],
+   "src": [
+    [
+     "Trump directs government to cease using Anthropic (Defense One)",
+     "https://www.defenseone.com/threats/2026/02/trump-directs-government-immediately-cease-using-anthropic-technology/411776/"
+    ],
+    [
+     "Agencies begin to shed Anthropic contracts (Nextgov)",
+     "https://www.nextgov.com/acquisition/2026/03/agencies-begin-shed-anthropic-contracts-following-trumps-directive/411823/"
+    ],
+    [
+     "FDA's Elsa switches from Claude to Gemini (Clinical Leader)",
+     "https://www.clinicalleader.com/doc/fda-s-elsa-ai-switches-from-claude-to-gemini-what-sponsors-need-to-know-0001"
+    ]
+   ]
+  },
+  {
+   "id": "ftcepic",
+   "n": "FTC antitrust probe of Epic (reported)",
+   "s": "healthdata",
+   "t": "N",
+   "k": "press",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Reported August 14, 2026 by Reuters and STAT: investigators examining Epic's control of patient-data access and employee non-compete terms.",
+   "dir": "Antitrust review of the dominant EHR vendor.",
+   "plan": [
+    [
+     "d",
+     "Probe reported",
+     "2026-08-14"
+    ]
+   ],
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Epic, FTC and agentic AI (MedCity News)",
+     "https://medcitynews.com/2026/08/epic-ftc-agentic-ai/"
+    ],
+    [
+     "Epic confronts succession, AI strategy, antitrust (STAT)",
+     "https://www.statnews.com/2026/08/17/ugm-epic-confronts-challenges-succession-ai-strategy-antitrust/"
+    ]
+   ]
+  },
+  {
+   "id": "epic",
+   "n": "Epic Systems",
+   "s": "healthdata",
+   "t": "K",
+   "k": "co",
+   "L": [
+    6,
+    8
+   ],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Dominant U.S. EHR vendor. Cosmos holds about 300 million de-identified patients and 16 billion encounters. CMS Aligned Network early adopter. Reported FTC antitrust probe.",
+   "dir": "Make the EHR the AI platform for hospitals.",
+   "pv": "Private",
+   "strat": "Epic rebranded its AI as 'healthcare intelligence' and is absorbing functions once sold by standalone vendors: assistants Art, Emmie and Penny, an ambient tool on Microsoft Dragon, a medical model trained on Cosmos, Agent Factory and Cosmos Curiosity.",
+   "plan": [
+    [
+     "d",
+     "AI assistants and Cosmos model unveiled",
+     "2025-08-19"
+    ],
+    [
+     "d",
+     "Ambient documentation tool",
+     "2026"
+    ],
+    [
+     "d",
+     "Agent Factory and Cosmos Curiosity",
+     "2026-08"
+    ]
+   ],
+   "obj": [],
+   "f": [
+    "160 to 200 AI projects in development (2025)",
+    "Particle Health antitrust claims allowed to proceed [VERIFY]",
+    "STAT reported an exodus of key technology leaders"
+   ],
+   "src": [
+    [
+     "Judy Faulkner unveils healthcare intelligence (Becker's)",
+     "https://www.beckershospitalreview.com/healthcare-information-technology/ehrs/judy-faulkner-unveils-healthcare-intelligence/"
+    ],
+    [
+     "Epic, FTC and agentic AI (MedCity News)",
+     "https://medcitynews.com/2026/08/epic-ftc-agentic-ai/"
+    ],
+    [
+     "Epic confronts succession, AI strategy, antitrust (STAT)",
+     "https://www.statnews.com/2026/08/17/ugm-epic-confronts-challenges-succession-ai-strategy-antitrust/"
+    ],
+    [
+     "Particle's antitrust claims against Epic proceed (HIT Consultant)",
+     "https://hitconsultant.net/2025/09/08/us-court-allows-particles-antitrust-claims-against-epic-to-proceed/"
+    ]
+   ]
+  },
+  {
+   "id": "clear",
+   "n": "CLEAR (Clear Secure)",
+   "s": "agentic",
+   "t": "N",
+   "k": "co",
+   "L": [
+    5
+   ],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Identity company contracted by CMS (December 2025) to provide CLEAR1 for Medicare.gov and the National Provider Directory; integrating with Epic MyChart.",
+   "dir": "Reusable biometric identity across airports and health care.",
+   "tk": "YOU",
+   "ex": "NYSE",
+   "strat": "CLEAR1 combines biometrics, document checks and authoritative-source corroboration at IAL2 and is pitched as HIPAA-compliant and reusable.",
+   "plan": [
+    [
+     "d",
+     "CMS contract",
+     "2025-12"
+    ],
+    [
+     "d",
+     "Medicare.gov rollout",
+     "2026-03-04"
+    ]
+   ],
+   "obj": [],
+   "f": [
+    "Health partners: WellStar, University of Miami Health, Hackensack Meridian, Community Health Network, Ochsner"
+   ],
+   "src": [
+    [
+     "CLEAR inks contract with CMS to kill the clipboard (Fierce Healthcare)",
+     "https://www.fiercehealthcare.com/health-tech/clear-inks-contract-cms-kill-clipboard"
+    ],
+    [
+     "CMS touts biometric verification for Medicare.gov (Nextgov)",
+     "https://nextgov.com/digital-government/2026/03/cms-touts-early-uses-new-biometric-verification-tools-medicaregov/412065"
+    ]
+   ]
+  },
+  {
+   "id": "idme",
+   "n": "ID.me",
+   "s": "agentic",
+   "t": "N",
+   "k": "co",
+   "L": [
+    5
+   ],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Selected December 16, 2025 as a primary sign-in and identity verification option for Medicare.gov; about 80 million users verified to IAL2 across SSA, VA and others.",
+   "dir": "Single federated identity across federal benefit programs.",
+   "pv": "Private",
+   "plan": [
+    [
+     "d",
+     "CMS selection",
+     "2025-12-16"
+    ]
+   ],
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "ID.me awarded CMS contract for Medicare.gov (ID Tech Wire)",
+     "https://idtechwire.com/id-me-awarded-cms-contract-to-support-medicare-gov-sign-in-and-identity-verification/"
+    ],
+    [
+     "CMS touts biometric verification for Medicare.gov (Nextgov)",
+     "https://nextgov.com/digital-government/2026/03/cms-touts-early-uses-new-biometric-verification-tools-medicaregov/412065"
+    ]
+   ]
+  },
+  {
+   "id": "abridge",
+   "n": "Abridge",
+   "s": "healthdata",
+   "t": "N",
+   "k": "co",
+   "L": [
+    8
+   ],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Ambient clinical AI company. VA enterprise scribe vendor; 300+ health systems; NVIDIA and Eli Lilly investors.",
+   "dir": "Become the operating system for clinical conversations.",
+   "pv": "$5.3B · 2026",
+   "strat": "Abridge is moving from note-taking to a clinical-conversation foundation model with NVIDIA and a life-sciences module that flags trial eligibility, backed by Lilly.",
+   "plan": [
+    [
+     "d",
+     "VA pilots",
+     "2025-10"
+    ],
+    [
+     "d",
+     "$316M Series E extension",
+     "2026-04"
+    ],
+    [
+     "d",
+     "Lilly investment and NVIDIA model",
+     "2026-06-11"
+    ],
+    [
+     "d",
+     "VA enterprise contract",
+     "2026-09"
+    ]
+   ],
+   "obj": [],
+   "f": [
+    "About $830M raised",
+    "More than 100 million clinical conversations a year"
+   ],
+   "src": [
+    [
+     "Abridge, NVIDIA, Eli Lilly (Fortune)",
+     "https://fortune.com/2026/06/11/abridge-operating-system-medicine-nvidia-eli-lilly-artsight/"
+    ],
+    [
+     "VA selects Abridge for ambient scribe (Nextgov)",
+     "https://nextgov.com/artificial-intelligence/2026/09/va-selects-abridge-ambient-scribe-under-new-enterprise-contract/416140"
+    ]
+   ]
+  },
+  {
+   "id": "knowtex",
+   "n": "Knowtex",
+   "s": "healthdata",
+   "t": "N",
+   "k": "co",
+   "L": [
+    8
+   ],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Ambient scribe vendor selected with Abridge for the VA enterprise contract.",
+   "dir": "",
+   "pv": "Private",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "VA selects Abridge for ambient scribe (Nextgov)",
+     "https://nextgov.com/artificial-intelligence/2026/09/va-selects-abridge-ambient-scribe-under-new-enterprise-contract/416140"
+    ]
+   ]
+  },
+  {
+   "id": "credal",
+   "n": "Credal AI",
+   "s": "healthdata",
+   "t": "N",
+   "k": "co",
+   "L": [
+    8
+   ],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Startup founded by two Palantir alumni; paid about $750,000 by ACF for a GenAI platform used to audit grants [VERIFY].",
+   "dir": "",
+   "pv": "Private",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "WIRED: HHS uses Palantir AI tools to screen grants",
+     "https://www.wired.com/story/hhs-is-using-ai-tools-from-palantir-to-target-dei-and-gender-ideology-in-grants/"
+    ]
+   ]
+  },
+  {
+   "id": "deloitte",
+   "n": "Deloitte",
+   "s": "healthdata",
+   "t": "N",
+   "k": "co",
+   "L": [
+    8
+   ],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Reported builder of FDA's Elsa [VERIFY].",
+   "dir": "",
+   "pv": "Private (partnership)",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "FDA's Elsa switches from Claude to Gemini (Clinical Leader)",
+     "https://www.clinicalleader.com/doc/fda-s-elsa-ai-switches-from-claude-to-gemini-what-sponsors-need-to-know-0001"
+    ]
+   ]
+  },
+  {
+   "id": "zyter",
+   "n": "Zyter",
+   "s": "healthdata",
+   "t": "N",
+   "k": "co",
+   "L": [
+    8
+   ],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "WISeR vendor for Arizona; its application says Palantir provides 'mission critical software infrastructure for CMS' and that Zyter uses Palantir [VERIFY].",
+   "dir": "",
+   "pv": "Private",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Meet the 6 vendors in the CMS WISeR Model (TechTarget)",
+     "https://www.techtarget.com/revcyclemanagement/feature/Meet-the-6-vendors-participating-in-the-CMS-WISeR-Model"
+    ],
+    [
+     "Palantir Medicare AI experiment (Common Dreams)",
+     "https://www.commondreams.org/news/palantir-medicare-ai-experiment"
+    ]
+   ]
+  },
+  {
+   "id": "coherehealth",
+   "n": "Cohere Health",
+   "s": "healthdata",
+   "t": "N",
+   "k": "co",
+   "L": [
+    8
+   ],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "WISeR vendor for Texas.",
+   "dir": "",
+   "pv": "Private",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Meet the 6 vendors in the CMS WISeR Model (TechTarget)",
+     "https://www.techtarget.com/revcyclemanagement/feature/Meet-the-6-vendors-participating-in-the-CMS-WISeR-Model"
+    ]
+   ]
+  },
+  {
+   "id": "humata",
+   "n": "Humata Health",
+   "s": "healthdata",
+   "t": "N",
+   "k": "co",
+   "L": [
+    8
+   ],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "WISeR vendor for Oklahoma; backed by Blue Venture Fund, LRVHealth, 406 Ventures and Highmark Ventures.",
+   "dir": "",
+   "pv": "Private",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Meet the 6 vendors in the CMS WISeR Model (TechTarget)",
+     "https://www.techtarget.com/revcyclemanagement/feature/Meet-the-6-vendors-participating-in-the-CMS-WISeR-Model"
+    ]
+   ]
+  },
+  {
+   "id": "innovaccer",
+   "n": "Innovaccer",
+   "s": "healthdata",
+   "t": "N",
+   "k": "co",
+   "L": [
+    6,
+    8
+   ],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "WISeR vendor for Ohio and a CMS Aligned Network early adopter.",
+   "dir": "",
+   "pv": "Private",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Meet the 6 vendors in the CMS WISeR Model (TechTarget)",
+     "https://www.techtarget.com/revcyclemanagement/feature/Meet-the-6-vendors-participating-in-the-CMS-WISeR-Model"
+    ],
+    [
+     "CMS Health Tech Ecosystem data network pledgees (CMS)",
+     "https://www.cms.gov/initiatives/health-technology-ecosystem/overview/early-adopters-all-pledgees/data-networks"
+    ]
+   ]
+  },
+  {
+   "id": "genzeon",
+   "n": "Genzeon",
+   "s": "healthdata",
+   "t": "N",
+   "k": "co",
+   "L": [
+    8
+   ],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "WISeR vendor for New Jersey.",
+   "dir": "",
+   "pv": "Private",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Meet the 6 vendors in the CMS WISeR Model (TechTarget)",
+     "https://www.techtarget.com/revcyclemanagement/feature/Meet-the-6-vendors-participating-in-the-CMS-WISeR-Model"
+    ]
+   ]
+  },
+  {
+   "id": "virtix",
+   "n": "Virtix Health",
+   "s": "healthdata",
+   "t": "N",
+   "k": "co",
+   "L": [
+    8
+   ],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "WISeR vendor for Washington.",
+   "dir": "",
+   "pv": "Private",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Meet the 6 vendors in the CMS WISeR Model (TechTarget)",
+     "https://www.techtarget.com/revcyclemanagement/feature/Meet-the-6-vendors-participating-in-the-CMS-WISeR-Model"
+    ]
+   ]
+  },
+  {
+   "id": "bwell",
+   "n": "b.well Connected Health",
+   "s": "healthdata",
+   "t": "N",
+   "k": "co",
+   "L": [
+    6
+   ],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "CMS Aligned Network early adopter; medical-records connector for ChatGPT Health (January 2026); Google partnership (October 2025).",
+   "dir": "",
+   "pv": "Private",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "OpenAI launches ChatGPT Health (Fortune)",
+     "https://fortune.com/2026/01/07/openai-launches-chatgpt-health-in-a-push-to-become-a-hub-for-personal-health-data/?rand=8593"
+    ],
+    [
+     "CMS Health Tech Ecosystem data network pledgees (CMS)",
+     "https://www.cms.gov/initiatives/health-technology-ecosystem/overview/early-adopters-all-pledgees/data-networks"
+    ]
+   ]
+  },
+  {
+   "id": "unh",
+   "n": "UnitedHealth Group",
+   "s": "healthdata",
+   "t": "N",
+   "k": "co",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Health Tech Ecosystem pledgee (payer and provider); Optum Insight pledged as a data network. Oz pledged to divest up to $600,000 in UNH stock.",
+   "dir": "",
+   "tk": "UNH",
+   "ex": "NYSE",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "White House event unveils CMS Health Tech Ecosystem (HIT Consultant)",
+     "https://hitconsultant.net/2025/07/30/white-house-event-unveils-cms-health-tech-ecosystem-initiative"
+    ],
+    [
+     "CMS Health Tech Ecosystem data network pledgees (CMS)",
+     "https://www.cms.gov/initiatives/health-technology-ecosystem/overview/early-adopters-all-pledgees/data-networks"
+    ],
+    [
+     "Dr. Oz vows to sell healthcare stocks (Fierce Healthcare)",
+     "https://www.fiercehealthcare.com/regulatory/dr-oz-vows-sell-healthcare-stocks-once-confirmed-run-cms"
+    ]
+   ]
+  },
+  {
+   "id": "cvs",
+   "n": "CVS Health / Aetna",
+   "s": "healthdata",
+   "t": "N",
+   "k": "co",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Health Tech Ecosystem pledgee.",
+   "dir": "",
+   "tk": "CVS",
+   "ex": "NYSE",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "White House event unveils CMS Health Tech Ecosystem (HIT Consultant)",
+     "https://hitconsultant.net/2025/07/30/white-house-event-unveils-cms-health-tech-ecosystem-initiative"
+    ]
+   ]
+  },
+  {
+   "id": "elv",
+   "n": "Elevance Health",
+   "s": "healthdata",
+   "t": "N",
+   "k": "co",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Health Tech Ecosystem payer pledgee.",
+   "dir": "",
+   "tk": "ELV",
+   "ex": "NYSE",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "White House event unveils CMS Health Tech Ecosystem (HIT Consultant)",
+     "https://hitconsultant.net/2025/07/30/white-house-event-unveils-cms-health-tech-ecosystem-initiative"
+    ]
+   ]
+  },
+  {
+   "id": "humana",
+   "n": "Humana",
+   "s": "healthdata",
+   "t": "N",
+   "k": "co",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Health Tech Ecosystem pledgee; named as a Palantir AI decision-tool client in EFF-obtained documents [VERIFY].",
+   "dir": "",
+   "tk": "HUM",
+   "ex": "NYSE",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "White House event unveils CMS Health Tech Ecosystem (HIT Consultant)",
+     "https://hitconsultant.net/2025/07/30/white-house-event-unveils-cms-health-tech-ecosystem-initiative"
+    ],
+    [
+     "Palantir Medicare AI experiment (Common Dreams)",
+     "https://www.commondreams.org/news/palantir-medicare-ai-experiment"
+    ]
+   ]
+  },
+  {
+   "id": "cigna",
+   "n": "Cigna",
+   "s": "healthdata",
+   "t": "N",
+   "k": "co",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Named as a Palantir AI decision-tool client in EFF-obtained documents [VERIFY].",
+   "dir": "",
+   "tk": "CI",
+   "ex": "NYSE",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Palantir Medicare AI experiment (Common Dreams)",
+     "https://www.commondreams.org/news/palantir-medicare-ai-experiment"
+    ]
+   ]
+  },
+  {
+   "id": "apple",
+   "n": "Apple",
+   "s": "bodynet",
+   "t": "N",
+   "k": "co",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Health Tech Ecosystem signatory; Apple Health data connects to ChatGPT Health and Claude.",
+   "dir": "",
+   "tk": "AAPL",
+   "ex": "NASDAQ",
+   "obj": [],
+   "f": [
+    "BCI HID supports two-way context sharing (screen layout) to improve decoding"
+   ],
+   "src": [
+    [
+     "White House, tech leaders commit to patient-centric ecosystem (CMS)",
+     "https://www.cms.gov/newsroom/press-releases/white-house-tech-leaders-commit-create-patient-centric-healthcare-ecosystem"
+    ],
+    [
+     "OpenAI launches ChatGPT Health (Fortune)",
+     "https://fortune.com/2026/01/07/openai-launches-chatgpt-health-in-a-push-to-become-a-hub-for-personal-health-data/?rand=8593"
+    ],
+    [
+     "Anthropic launches Claude for Healthcare (Fierce Healthcare)",
+     "https://www.fiercehealthcare.com/ai-and-machine-learning/jpm26-anthropic-launches-claude-healthcare-targeting-health-systems-payers"
+    ],
+    [
+     "Business Wire: Synchron and Apple BCI HID",
+     "https://www.businesswire.com/news/home/20250513927084/en/Synchron-To-Achieve-First-Native-Brain-Computer-Interface-Integration-with-iPhone-iPad-and-Apple-Vision-Pro"
+    ],
+    [
+     "Tech Policy Press: wearables campaign critique",
+     "https://techpolicy.press/control-for-whom-keeping-an-eye-on-the-dark-side-of-americas-new-wearables-campaign"
+    ]
+   ],
+   "strat": "Standardize BCI as an input class within its accessibility stack; also a CMS Health Tech Ecosystem early adopter (Apple Watch).",
+   "plan": [
+    [
+     "d",
+     "BCI HID profile announced",
+     "2025-05-13"
+    ],
+    [
+     "d",
+     "CMS Health Tech Ecosystem pledge",
+     "2025-07-30"
+    ]
+   ]
+  },
+  {
+   "id": "lilly",
+   "n": "Eli Lilly",
+   "s": "pharma",
+   "t": "M",
+   "k": "co",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Strategic investor in Abridge (June 2026); building an AI supercomputer with NVIDIA; CNPV approval for Foundayo.",
+   "dir": "Own the compute and data for discovery; sell GLP-1 volume at negotiated government prices; onshore API production.",
+   "tk": "LLY",
+   "ex": "NYSE",
+   "obj": [],
+   "f": [
+    "Q3 2026 revenue $24.40B (+39%); Mounjaro $10.72B; Zepbound $5.35B; Foundayo $184M.",
+    "2026 revenue guidance raised to $91-92B; adjusted EPS guidance $35.00-36.00.",
+    "Net realized price fell 15% in Q3 2026 while volume rose 53%.",
+    "$27B for four new U.S. sites announced February 2025; $50B+ U.S. capital since 2020.",
+    "Isomorphic deal: $45M upfront, up to $1.7B milestones (January 2024).",
+    "Cornerstone investor in Insilico's Hong Kong IPO; Eli Lilly Ventures invests in NewLimit."
+   ],
+   "src": [
+    [
+     "Abridge, NVIDIA, Eli Lilly (Fortune)",
+     "https://fortune.com/2026/06/11/abridge-operating-system-medicine-nvidia-eli-lilly-artsight/"
+    ],
+    [
+     "Makary's reforms will live on (BioSpace)",
+     "https://www.biospace.com/fda/makarys-reforms-will-live-on-at-fda-even-as-leadership-turns-over"
+    ],
+    [
+     "Lilly AI factory on NVIDIA Blackwell DGX SuperPOD (NVIDIA blog, 2025-10-28)",
+     "https://blogs.nvidia.com/blog/lilly-ai-factory-nvidia-blackwell-dgx-superpod"
+    ],
+    [
+     "NVIDIA and Lilly Announce Co-Innovation AI Lab (NVIDIA, 2026-01-12)",
+     "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-and-Lilly-Announce-Co-Innovation-AI-Lab-to-Reinvent-Drug-Discovery-in-the-Age-of-AI"
+    ],
+    [
+     "Lilly offers AI discovery models to biotech partners (pharmaphorum, 2025-09-09)",
+     "https://pharmaphorum.com/news/lilly-offers-ai-discovery-models-biotech-partners"
+    ],
+    [
+     "LLY stock jumps as Q3 earnings beat estimates; 2026 sales view raised (Zacks, 2026-10-29)",
+     "https://www.zacks.com/stock/news/3018734/lly-stock-jumps-as-q3-earnings-beat-estimates-2026-sales-view-raised"
+    ],
+    [
+     "Lilly, Novo obesity drug pricing deal (Healthcare Dive, 2025-11-06)",
+     "https://www.healthcaredive.com/news/lilly-novo-trump-obesity-drug-pricing-deal-zepbound-wegovy/804937/"
+    ],
+    [
+     "Eli Lilly advances U.S. manufacturing buildout (Industrial Info, 2026-09-24)",
+     "https://www.industrialinfo.com/news/article/eli-lilly-advances-us-manufacturing-buildout--362903"
+    ]
+   ],
+   "strat": "Lilly pairs a wholly owned NVIDIA AI factory with a five-year, up to $1B co-innovation lab and opens its models to biotechs through TuneLab. It accepted MFN Medicaid pricing and a $245 Medicare GLP-1 price in exchange for three-year tariff relief and a national priority voucher for orforglipron. It is building ten U.S. manufacturing sites announced since 2020.",
+   "plan": [
+    [
+     "d",
+     "TuneLab launched with Circle Pharma and insitro",
+     "2025-09-09"
+    ],
+    [
+     "d",
+     "AI factory (DGX B300 SuperPOD) announced",
+     "2025-10-28"
+    ],
+    [
+     "d",
+     "MFN / GLP-1 pricing deal with White House",
+     "2025-11-06"
+    ],
+    [
+     "d",
+     "Co-innovation lab with NVIDIA, up to $1B over 5 years",
+     "2026-01-12"
+    ],
+    [
+     "d",
+     "Foundayo (orforglipron) approved via CNPV, 50 days after filing",
+     "2026-04-01"
+    ],
+    [
+     "m",
+     "Houston $6.5B API plant under construction, completion 2027",
+     "2027"
+    ],
+    [
+     "m",
+     "South San Francisco lab on NVIDIA Vera Rubin",
+     "2026"
+    ]
+   ]
+  },
+  {
+   "id": "foxglove",
+   "n": "Foxglove",
+   "s": "healthdata",
+   "t": "N",
+   "k": "counter",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "UK campaign group pressing ministers to trigger the NHS FDP break clause; FOI data on FDP outcomes.",
+   "dir": "",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "NHS Palantir platform business case under scrutiny (Computing)",
+     "https://www.computing.co.uk/news/2026/government/nhs-palantir-platform-s-business-case-under-scrutiny-as-costs-rise-and-benefits-fall"
+    ]
+   ]
+  },
+  {
+   "id": "kennedy-rfk",
+   "n": "Robert F. Kennedy Jr.",
+   "s": "healthdata",
+   "t": "K",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "HHS Secretary. Credited with the OneHHS AI strategy; launched the Health Tech Ecosystem with Oz; announced NIH-CMS autism data plans and a wearables campaign.",
+   "dir": "Open health data to patients and researchers and push chronic-disease prevention.",
+   "role": "U.S. Secretary of Health and Human Services",
+   "strat": "Uses HHS data and technology as tools of the MAHA agenda: wearables for every American within four years, linked Medicare/Medicaid data for autism research, and consumer apps that replace paper. Frame wearables as personal responsibility tools under the MAHA agenda; pair with CMS's Health Tech Ecosystem (July 2025) and ARPA-H biowearable research (March 2026). No device list, payment model or data policy announced as of reporting.",
+   "plan": [
+    [
+     "d",
+     "Wearables statement to House E&C Health Subcommittee",
+     "2025-06-24"
+    ],
+    [
+     "d",
+     "Health Tech Ecosystem launch",
+     "2025-07-30"
+    ],
+    [
+     "d",
+     "Leadership shakeup: O'Neill and Stuart out; Klomp chief counselor",
+     "2026-02-13"
+    ],
+    [
+     "d",
+     "mRNA wind-down",
+     "2025-08-05"
+    ],
+    [
+     "d",
+     "High-Risk Life Sciences Research policy with NIH and OSTP",
+     "2026-07-28"
+    ],
+    [
+     "d",
+     "Wearables goal stated at House E&C subcommittee",
+     "2025-06-24"
+    ],
+    [
+     "d",
+     "CMS Health Tech Ecosystem launched at White House",
+     "2025-07-30"
+    ],
+    [
+     "d",
+     "ARPA-H biowearables project",
+     "2026-03-10"
+    ],
+    [
+     "m",
+     "HHS wearables ad campaign",
+     "2025-2026"
+    ],
+    [
+     "p",
+     "Four-year goal end",
+     "2029-06"
+    ],
+    [
+     "d",
+     "Wound down 22 BARDA mRNA projects",
+     "2025-08-05"
+    ]
+   ],
+   "obj": [],
+   "f": [
+    "Quote: 'bureaucrats and entrenched interests buried health data'",
+    "Quote: 'It's a way people can take control of their own health. They can take responsibility.'",
+    "Met wearable company executives in May 2025 (date inferred by AHCJ from a URL)"
+   ],
+   "src": [
+    [
+     "White House, tech leaders commit to patient-centric ecosystem (CMS)",
+     "https://www.cms.gov/newsroom/press-releases/white-house-tech-leaders-commit-create-patient-centric-healthcare-ecosystem"
+    ],
+    [
+     "RFK Jr. on wearables (MacTech)",
+     "https://www.mactech.com/2025/06/25/us-health-and-human-secretary-wants-to-help-make-american-healthy-again-with-wearables-such-as-the-apple-watch"
+    ],
+    [
+     "NIH and CMS build autism data platform (Healthcare IT News)",
+     "https://www.healthcareitnews.com/news/nih-and-cms-build-autism-data-platform"
+    ],
+    [
+     "Two top aides to RFK Jr. leaving HHS (CNN via ABC17)",
+     "https://abc17news.com/cnn-health/2026/02/13/two-top-aides-to-rfk-jr-leaving-hhs-as-part-of-leadership-shakeup/"
+    ],
+    [
+     "HHS: Winding down mRNA development under BARDA",
+     "https://hhs.gov/press-room/hhs-winds-down-mrna-development-under-barda.html"
+    ],
+    [
+     "CASRAI: USG Policy for Stopping High-Risk Life Sciences Research",
+     "https://casrai.org/news/usg-policy-stopping-high-risk-life-sciences-research-institutions-2026"
+    ],
+    [
+     "AHCJ: Kennedy wearables goal",
+     "https://healthjournalism.org/blog/2025/07/rfk-jr-wants-us-all-to-wear-health-trackers-will-it-work/"
+    ],
+    [
+     "Tech Policy Press: wearables campaign critique",
+     "https://techpolicy.press/control-for-whom-keeping-an-eye-on-the-dark-side-of-americas-new-wearables-campaign"
+    ],
+    [
+     "Washington Examiner: ARPA-H biowearables",
+     "https://www.washingtonexaminer.com/?p=4486357"
+    ],
+    [
+     "TrumpRx (Wikipedia)",
+     "https://en.wikipedia.org/wiki/TrumpRx"
+    ]
+   ]
+  },
+  {
+   "id": "oz",
+   "n": "Mehmet Oz",
+   "s": "healthdata",
+   "t": "K",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "CMS Administrator. Leads the Health Tech Ecosystem, Medicare digital identity and the fraud agenda.",
+   "dir": "Bring Medicare 'into the modern era' and cut fraud.",
+   "role": "Administrator, CMS",
+   "strat": "Pairs consumer digital tools (apps, biometric login, AI assistants) with aggressive program integrity, describing Medicare and Medicaid fraud as about $100B a year [VERIFY].",
+   "plan": [
+    [
+     "d",
+     "Pledged to divest health and tech stocks on confirmation",
+     "2025-02-19"
+    ],
+    [
+     "d",
+     "First-wave HealthTech launch",
+     "2026-04-09"
+    ]
+   ],
+   "obj": [],
+   "f": [
+    "Pledged to divest UnitedHealth (up to $600,000), HCA, AbbVie, Lilly, Cencora, Danaher, McKesson; Amazon holding up to $26M",
+    "Resigned adviser roles at iHerb, SandboxAQ and Housey Pharma",
+    "Kept about $1M in Bitcoin plus up to $500,000 in a Bitcoin ETF",
+    "Sen. Warren demanded he sever industry ties [VERIFY]"
+   ],
+   "src": [
+    [
+     "Dr. Oz vows to sell healthcare stocks (Fierce Healthcare)",
+     "https://www.fiercehealthcare.com/regulatory/dr-oz-vows-sell-healthcare-stocks-once-confirmed-run-cms"
+    ],
+    [
+     "CMS launches first wave of HealthTech Ecosystem tools (CMS)",
+     "https://www.cms.gov/newsroom/press-releases/cms-launches-first-wave-healthtech-ecosystem-tools-fast-tracking-fully-digital-patient-centered"
+    ],
+    [
+     "Oz: about $100B of theft a year (24/7 Wall St.)",
+     "https://247wallst.com/investing/2026/09/09/dr-oz-were-experiencing-about-100-billion-of-theft-a-year-in-medicare-and-medicaid-fraud/"
+    ],
+    [
+     "Warren demands Medicare nominee Oz sever industry ties (AOL/Reuters)",
+     "https://www.aol.com/news/us-senator-warren-demands-medicare-110909023.html"
+    ]
+   ]
+  },
+  {
+   "id": "bhattacharya",
+   "n": "Jay Bhattacharya",
+   "s": "healthdata",
+   "t": "K",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "NIH director; acting CDC director from February 18, 2026 until Erica Schwartz was confirmed as CDC director on August 5, 2026. Stanford health economist; co-author of the Great Barrington Declaration.",
+   "dir": "Rebuild research and public health data around linked real-world data.",
+   "role": "Director, NIH; acting Director, CDC (Feb 18 to Aug 5, 2026)",
+   "strat": "Leads the NIH-CMS real-world data platform and the Autism Data Science Initiative, and held both research and surveillance agencies until Erica Schwartz was confirmed as CDC director in August 2026.",
+   "plan": [
+    [
+     "d",
+     "NIH-CMS data platform",
+     "2025-05"
+    ],
+    [
+     "d",
+     "ADSI awards",
+     "2025-09-22"
+    ],
+    [
+     "d",
+     "Acting CDC director",
+     "2026-02-18"
+    ]
+   ],
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "White House picks Bhattacharya to run CDC (Healio)",
+     "https://www.healio.com/news/infectious-disease/20260219/white-house-picks-nih-director-bhattacharya-to-run-cdc-for-now"
+    ],
+    [
+     "NIH launches $50M Autism Data Science Initiative (NIH)",
+     "https://www.nih.gov/news-events/news-releases/nih-launches-fifty-million-autism-data-science-initiative-unlock-causes-improve-outcomes"
+    ],
+    [
+     "NIH and CMS build autism data platform (Healthcare IT News)",
+     "https://www.healthcareitnews.com/news/nih-and-cms-build-autism-data-platform"
+    ]
+   ]
+  },
+  {
+   "id": "makary",
+   "n": "Marty Makary",
+   "s": "healthdata",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Launched Elsa and agentic AI at FDA; created the National Priority Voucher program; resigned May 12, 2026.",
+   "dir": "Speed drug review with AI and new pathways.",
+   "role": "FDA Commissioner (resigned 2026-05-12)",
+   "plan": [
+    [
+     "d",
+     "First AI-assisted review pilot; directed centers to integrate gen AI by June 30, 2025",
+     "2025-05"
+    ],
+    [
+     "d",
+     "Resigned",
+     "2026-05-12"
+    ],
+    [
+     "d",
+     "Elsa launched",
+     "2025-06-02"
+    ],
+    [
+     "d",
+     "First CNPV recipients",
+     "2025-10-16"
+    ]
+   ],
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "FDA names AI chief Jeremy Walsh (MedTech Dive)",
+     "https://www.medtechdive.com/news/FDA-names-AI-chief-Jeremy-Walsh/747662/"
+    ],
+    [
+     "Makary resignation (Fortune)",
+     "https://fortune.com/2026/05/12/fda-commissioner-dr-marty-makary-resignation/"
+    ],
+    [
+     "Makary's reforms will live on (BioSpace)",
+     "https://www.biospace.com/fda/makarys-reforms-will-live-on-at-fda-even-as-leadership-turns-over"
+    ],
+    [
+     "FDA Commissioner Marty Makary resigns after tumultuous tenure (KGOU/NPR, 2026-05-13)",
+     "https://www.kgou.org/2026-05-13/fda-commissioner-marty-makary-resigns-after-tumultuous-tenure"
+    ],
+    [
+     "FDA launches agency-wide AI tool Elsa (RAPS, 2025-06)",
+     "https://www.raps.org/resource/fda-launches-agency-wide-ai-tool-elsa-ahead-of-sc.html"
+    ],
+    [
+     "FDA awards first-ever national priority vouchers to nine sponsors (HHS, 2025-10-16)",
+     "https://www.hhs.gov/press-room/fda-awards-first-ever-national-priority-vouchers-nine-sponsors.html"
+    ]
+   ],
+   "strat": "Faster, priority-driven reviews; AI in review; reduced animal testing."
+  },
+  {
+   "id": "diamantas",
+   "n": "Kyle Diamantas",
+   "s": "healthdata",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Leads FDA temporarily after Makary's resignation.",
+   "dir": "",
+   "role": "Acting FDA Commissioner (from May 2026); former deputy commissioner for food",
+   "plan": [
+    [
+     "d",
+     "Acting commissioner",
+     "2026-05"
+    ]
+   ],
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Makary's reforms will live on (BioSpace)",
+     "https://www.biospace.com/fda/makarys-reforms-will-live-on-at-fda-even-as-leadership-turns-over"
+    ],
+    [
+     "FDA Commissioner Marty Makary resigns after tumultuous tenure (KGOU/NPR, 2026-05-13)",
+     "https://www.kgou.org/2026-05-13/fda-commissioner-marty-makary-resigns-after-tumultuous-tenure"
+    ],
+    [
+     "President Trump announces nomination of Heidi Overton (Nutritional Outlook, 2026-08-19)",
+     "https://www.nutritionaloutlook.com/view/president-trump-announces-nomination-of-heidi-overton-md-as-fda-s-new-commissioner"
+    ]
+   ],
+   "strat": "Interim leadership."
+  },
+  {
+   "id": "overton",
+   "n": "Heidi Overton",
+   "s": "healthdata",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Announced as FDA nominee August 19, 2026. Formerly vice chair of AFPI's Center for a Healthy America and its chief policy officer.",
+   "dir": "",
+   "role": "FDA Commissioner nominee; deputy director, White House Domestic Policy Council",
+   "plan": [
+    [
+     "p",
+     "Senate confirmation",
+     ""
+    ],
+    [
+     "d",
+     "Nominated",
+     "2026-08-19"
+    ],
+    [
+     "d",
+     "HELP hearing",
+     "2026-09-24"
+    ],
+    [
+     "p",
+     "Committee vote",
+     ""
+    ]
+   ],
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Trump announces Heidi Overton nomination (Nutritional Outlook)",
+     "https://www.nutritionaloutlook.com/view/president-trump-announces-nomination-of-heidi-overton-md-as-fda-s-new-commissioner"
+    ],
+    [
+     "FDA commissioner nominee Heidi Overton Senate hearing (STAT, 2026-09-24)",
+     "https://www.statnews.com/2026/09/24/fda-commissioner-nominee-heidi-overton-senate-hearing-dodges-questions/"
+    ]
+   ],
+   "strat": "Awaiting HELP Committee vote."
+  },
+  {
+   "id": "oneill-jim",
+   "n": "Jim O'Neill",
+   "s": "healthdata",
+   "t": "K",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Fronted HHS's AI program: sent the ChatGPT rollout email and the OneHHS strategy. Long career in Peter Thiel's investment network.",
+   "dir": "Replace HHS 'bureaucracy and busy-work' with AI.",
+   "role": "HHS Deputy Secretary (Jun 9, 2025 to Feb 13, 2026); acting CDC Director (Aug 28, 2025 to Feb 2026); NSF Director nominee (Mar 2, 2026)",
+   "strat": "Drove department-wide AI adoption and the OneHHS Commons, then left HHS in the February 2026 shakeup and was nominated to lead NSF.",
+   "plan": [
+    [
+     "d",
+     "ChatGPT to all HHS staff",
+     "2025-09-09"
+    ],
+    [
+     "d",
+     "OneHHS strategy",
+     "2025-12-04"
+    ],
+    [
+     "d",
+     "Left HHS",
+     "2026-02-13"
+    ],
+    [
+     "p",
+     "NSF confirmation",
+     "2026-03-02"
+    ]
+   ],
+   "obj": [],
+   "f": [
+    "Clarium Capital and Thiel Capital managing director, 2008-2012",
+    "Thiel Foundation CEO 2009-2012; co-founded the Thiel Fellowship",
+    "Mithril Capital managing director, 2012-2019",
+    "SENS Research Foundation CEO 2019-2021",
+    "Seasteading Institute board until shortly before 2017; ADvantage Therapeutics board 2023",
+    "HHS principal associate deputy secretary under George W. Bush"
+   ],
+   "src": [
+    [
+     "Jim O'Neill (investor) (Wikipedia)",
+     "https://en.wikipedia.org/wiki/Jim_O%27Neill_(investor)"
+    ],
+    [
+     "HHS asks all employees to start using ChatGPT (404 Media)",
+     "https://www.404media.co/hhs-asks-all-employees-to-start-using-chatgpt/"
+    ],
+    [
+     "HHS unveils AI strategy (HHS)",
+     "https://www.hhs.gov/press-room/hhs-unveils-ai-strategy-to-transform-agency-operations.html"
+    ],
+    [
+     "Two top aides to RFK Jr. leaving HHS (CNN via ABC17)",
+     "https://abc17news.com/cnn-health/2026/02/13/two-top-aides-to-rfk-jr-leaving-hhs-as-part-of-leadership-shakeup/"
+    ],
+    [
+     "CDC: TGS passes one million participants",
+     "https://www.cdc.gov/media/releases/2026/2026-cdc-surpasses-1-million-voluntary-air-travel-participants-in-biosurveillance-program.html"
+    ]
+   ]
+  },
+  {
+   "id": "gleason",
+   "n": "Amy Gleason",
+   "s": "healthdata",
+   "t": "K",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Runs DOGE and the CMS technology office. Leads the Health Tech Ecosystem, kill-the-clipboard and biometric Medicare login; reported to advise HHS on AI in care.",
+   "dir": "Digitize Medicare and make patient data portable through apps and AI.",
+   "role": "Acting Administrator, U.S. DOGE Service; CMS Deputy Administrator and Chief Product Officer (OHTP)",
+   "strat": "Uses CMS convening power and voluntary pledges to standardize identity and interoperability, then builds products in house at OHTP. Cites personal experience with a daughter whose records, run through ChatGPT, changed her diagnostic framing [VERIFY].",
+   "plan": [
+    [
+     "d",
+     "Hired at HHS to lead CMS data and IT modernization",
+     "2025-03-04"
+    ],
+    [
+     "d",
+     "Biometric login rollout announced at HIMSS",
+     "2026-03-10"
+    ],
+    [
+     "d",
+     "OHTP head",
+     "2026-06-09"
+    ]
+   ],
+   "obj": [],
+   "f": [
+    "USDS 2018-2021 on CDC and CMS systems and the Coronavirus Task Force data team",
+    "Co-founded CareSync (2011); worked with Russell Street Ventures; Main Street Health chief product officer"
+   ],
+   "src": [
+    [
+     "Amy Gleason (Wikipedia)",
+     "https://en.wikipedia.org/wiki/Amy_Gleason"
+    ],
+    [
+     "CMS creates Office of Health Technology and Products (MedTech Dive)",
+     "https://medtechdive.com/news/cms-creates-office-health-technology-products-ai-interoperability/822814"
+    ],
+    [
+     "CMS touts biometric verification for Medicare.gov (Nextgov)",
+     "https://nextgov.com/digital-government/2026/03/cms-touts-early-uses-new-biometric-verification-tools-medicaregov/412065"
+    ],
+    [
+     "HHS push for AI doctors, WaPo summary (Discoveries in Health Policy)",
+     "https://www.discoveriesinhealthpolicy.com/2026/06/news-summary-wapo-hhs-wants-to-bring.html"
+    ]
+   ]
+  },
+  {
+   "id": "minor-clark",
+   "n": "Clark Minor",
+   "s": "healthdata",
+   "t": "K",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Led HHS's AI stack and ChatGPT rollout; former Palantir global head of cloud for more than a decade; gave notice by July 28, 2026 and stayed as adviser.",
+   "dir": "Centralize HHS AI, tech and data under the CIO.",
+   "role": "HHS CTO, then CIO; acting Chief AI Officer (Dec 2025)",
+   "strat": "Built the OneHHS AI infrastructure and moved AI, tech and data roles back under the CIO in March 2026.",
+   "plan": [
+    [
+     "d",
+     "OneHHS strategy lead",
+     "2025-12-04"
+    ],
+    [
+     "d",
+     "Reorganized AI and data roles under CIO",
+     "2026-03"
+    ],
+    [
+     "d",
+     "Gave notice; remains adviser",
+     "2026-07-28"
+    ]
+   ],
+   "obj": [],
+   "f": [
+    "Often affiliated with DOGE (FedScoop)",
+    "Successor unconfirmed; David Hong briefly listed as acting"
+   ],
+   "src": [
+    [
+     "Clark Minor out as HHS IT chief (FedScoop)",
+     "https://fedscoop.com/clark-minor-out-as-health-human-services-it-chief/"
+    ],
+    [
+     "HHS unveils AI strategy (HHS)",
+     "https://www.hhs.gov/press-room/hhs-unveils-ai-strategy-to-transform-agency-operations.html"
+    ],
+    [
+     "HHS asks all employees to start using ChatGPT (404 Media)",
+     "https://www.404media.co/hhs-asks-all-employees-to-start-using-chatgpt/"
+    ]
+   ]
+  },
+  {
+   "id": "klomp",
+   "n": "Chris Klomp",
+   "s": "healthdata",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Runs HHS daily operations as de facto chief of staff; nominated as HHS Deputy Secretary.",
+   "dir": "",
+   "role": "CMS Deputy Administrator and Medicare Director (Apr 21, 2025); HHS Chief Counselor (Feb 13, 2026); HHS Deputy Secretary nominee (Jun 25, 2026)",
+   "plan": [
+    [
+     "d",
+     "Medicare director",
+     "2025-04-21"
+    ],
+    [
+     "d",
+     "HHS chief counselor",
+     "2026-02-13"
+    ],
+    [
+     "p",
+     "Deputy Secretary confirmation",
+     "2026-06-25"
+    ]
+   ],
+   "obj": [],
+   "f": [
+    "Bain & Company and Bain Capital; CEO of Collective Medical from 2014 until its 2020 sale",
+    "Board seats at Maven Clinic and Nomi Health"
+   ],
+   "src": [
+    [
+     "Chris Klomp (Wikipedia)",
+     "https://en.wikipedia.org/wiki/Chris_Klomp"
+    ],
+    [
+     "Two top aides to RFK Jr. leaving HHS (CNN via ABC17)",
+     "https://abc17news.com/cnn-health/2026/02/13/two-top-aides-to-rfk-jr-leaving-hhs-as-part-of-leadership-shakeup/"
+    ]
+   ]
+  },
+  {
+   "id": "brandt-kim",
+   "n": "Kimberly Brandt",
+   "s": "healthdata",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Runs CMS operations and program integrity, including fraud war rooms.",
+   "dir": "",
+   "role": "CMS Deputy Administrator and COO; acting Director, Center for Program Integrity",
+   "obj": [],
+   "f": [
+    "Partner, Tarplin, Downs & Young; adviser to Enhanced Healthcare Partners and board member at two portfolio companies",
+    "Former Senate Finance chief oversight counsel; former HHS-OIG senior counsel",
+    "Joined Noridian board, September 2024 [VERIFY]"
+   ],
+   "src": [
+    [
+     "Kimberly Brandt (CMS leadership page)",
+     "https://www.cms.gov/about-cms/who-we-are/leadership/kimberly-brandt-0"
+    ],
+    [
+     "Kim Brandt joins Noridian's board (Lewiston Tribune)",
+     "https://lmtribune.com/northwest/kim-brandt-joins-noridians-board-of-directors0e7f5a9c"
+    ]
+   ]
+  },
+  {
+   "id": "keane-thomas",
+   "n": "Thomas Keane",
+   "s": "healthdata",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Leads ASTP/ONC since June 2, 2025; interventional radiologist and software engineer.",
+   "dir": "",
+   "role": "Assistant Secretary for Technology Policy and National Coordinator for Health IT",
+   "plan": [
+    [
+     "d",
+     "HTI-5 proposed",
+     "2025-12-22"
+    ]
+   ],
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Thomas Keane named national coordinator (Healthcare Dive)",
+     "https://www.healthcaredive.com/news/astp-national-coordinator-health-it-thomas-keane/749654/"
+    ],
+    [
+     "HTI-5 proposed rule (Healthcare Dive)",
+     "https://www.healthcaredive.com/news/astp-onc-hti5-ai-model-cards-health-it-certification-proposed-rule/808582/"
+    ]
+   ]
+  },
+  {
+   "id": "walsh-jeremy",
+   "n": "Jeremy Walsh",
+   "s": "healthdata",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "FDA's first chief AI officer (May 2025); 14 years at Booz Allen Hamilton as chief technologist. Led Elsa and agentic AI rollout.",
+   "dir": "",
+   "role": "FDA Chief AI Officer",
+   "plan": [
+    [
+     "d",
+     "Named",
+     "2025-05"
+    ],
+    [
+     "d",
+     "Agentic AI deployment",
+     "2025-12-01"
+    ]
+   ],
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "FDA names AI chief Jeremy Walsh (MedTech Dive)",
+     "https://www.medtechdive.com/news/FDA-names-AI-chief-Jeremy-Walsh/747662/"
+    ],
+    [
+     "FDA expands AI with agentic deployment (OncoDaily)",
+     "https://oncodaily.com/industry/fda-2"
+    ]
+   ]
+  },
+  {
+   "id": "kara-arda",
+   "n": "Arda Kara",
+   "s": "healthdata",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "CMS technology adviser on the Health Tech Ecosystem; called the Anthropic and OpenAI health launches a 'step change.'",
+   "dir": "",
+   "role": "Senior Advisor for Technology, CMS",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "CMS sets 2026 goalposts for tech and AI (Fierce Healthcare)",
+     "https://www.fiercehealthcare.com/ai-and-machine-learning/cms-trying-speed-tech-innovation-and-ai-patients-major-goalposts-set-2026"
+    ]
+   ]
+  },
+  {
+   "id": "smith-brad",
+   "n": "Brad Smith",
+   "s": "healthdata",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Founder of the firm Gleason worked with after USDS; began advising Elon Musk on DOGE in December 2024.",
+   "dir": "",
+   "role": "Founder, Russell Street Ventures",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Amy Gleason (Wikipedia)",
+     "https://en.wikipedia.org/wiki/Amy_Gleason"
+    ]
+   ]
+  },
+  {
+   "id": "monarez",
+   "n": "Susan Monarez",
+   "s": "healthdata",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Fired in late August 2025 after 29 days as CDC director.",
+   "dir": "",
+   "role": "Former CDC Director",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "White House picks Bhattacharya to run CDC (Healio)",
+     "https://www.healio.com/news/infectious-disease/20260219/white-house-picks-nih-director-bhattacharya-to-run-cdc-for-now"
+    ]
+   ]
+  },
+  {
+   "id": "faulkner",
+   "n": "Judy Faulkner",
+   "s": "healthdata",
+   "t": "K",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Founded Epic nearly 50 years ago. Unveiled Epic's 'healthcare intelligence' AI line and Agent Factory; Epic faces a reported FTC probe.",
+   "dir": "Keep the EHR as the hub for clinical AI.",
+   "role": "Founder and CEO, Epic Systems",
+   "strat": "Builds AI on Cosmos, Epic's de-identified database of about 300 million patients, and folds outside functions into the EHR.",
+   "plan": [
+    [
+     "d",
+     "Healthcare intelligence and assistants",
+     "2025-08-19"
+    ],
+    [
+     "d",
+     "Agent Factory",
+     "2026-08"
+    ]
+   ],
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Judy Faulkner unveils healthcare intelligence (Becker's)",
+     "https://www.beckershospitalreview.com/healthcare-information-technology/ehrs/judy-faulkner-unveils-healthcare-intelligence/"
+    ],
+    [
+     "Epic, FTC and agentic AI (MedCity News)",
+     "https://medcitynews.com/2026/08/epic-ftc-agentic-ai/"
+    ],
+    [
+     "Epic confronts succession, AI strategy, antitrust (STAT)",
+     "https://www.statnews.com/2026/08/17/ugm-epic-confronts-challenges-succession-ai-strategy-antitrust/"
+    ]
+   ]
+  },
+  {
+   "id": "sicilia",
+   "n": "Mike Sicilia",
+   "s": "compute",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Subpoenaed with Ellison by the House Veterans' Affairs Committee (19-0) over VA EHR costs; testified in July 2022 Oracle would fix VA performance issues 'at our expense.'",
+   "dir": "",
+   "role": "CEO, Oracle",
+   "plan": [
+    [
+     "p",
+     "Subpoena response",
+     "2026-09"
+    ]
+   ],
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "House panel subpoenas Oracle heads (Nextgov)",
+     "https://www.nextgov.com/modernization/2026/09/house-panel-subpoenas-oracle-heads-over-va-health-record-overhauls-ballooning-costs/415791/"
+    ]
+   ]
+  },
+  {
+   "id": "simo",
+   "n": "Fidji Simo",
+   "s": "models",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Announced ChatGPT Health (January 7, 2026), which connects medical records and wellness apps.",
+   "dir": "",
+   "role": "CEO of Applications, OpenAI",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "OpenAI launches ChatGPT Health (Fortune)",
+     "https://fortune.com/2026/01/07/openai-launches-chatgpt-health-in-a-push-to-become-a-hub-for-personal-health-data/?rand=8593"
+    ]
+   ]
+  },
+  {
+   "id": "gross-nate",
+   "n": "Nate Gross",
+   "s": "models",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Leads OpenAI's healthcare strategy; co-founded Doximity.",
+   "dir": "",
+   "role": "Head of healthcare strategy, OpenAI",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "OpenAI launches ChatGPT Health (Fortune)",
+     "https://fortune.com/2026/01/07/openai-launches-chatgpt-health-in-a-push-to-become-a-hub-for-personal-health-data/?rand=8593"
+    ]
+   ]
+  },
+  {
+   "id": "amodei",
+   "n": "Dario Amodei",
+   "s": "models",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Refused to allow Claude for mass surveillance of U.S. citizens or fully autonomous weapons; the February 27, 2026 directive removed Anthropic from federal use including HHS and Elsa.",
+   "dir": "",
+   "role": "CEO, Anthropic",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Trump directs government to cease using Anthropic (Defense One)",
+     "https://www.defenseone.com/threats/2026/02/trump-directs-government-immediately-cease-using-anthropic-technology/411776/"
+    ]
+   ]
+  },
+  {
+   "id": "rao-shiv",
+   "n": "Shiv Rao",
+   "s": "healthdata",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Leads Abridge (founded 2018); VA enterprise scribe vendor; partner of NVIDIA and Eli Lilly.",
+   "dir": "",
+   "role": "CEO and co-founder, Abridge",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Abridge, NVIDIA, Eli Lilly (Fortune)",
+     "https://fortune.com/2026/06/11/abridge-operating-system-medicine-nvidia-eli-lilly-artsight/"
+    ],
+    [
+     "VA selects Abridge for ambient scribe (Nextgov)",
+     "https://nextgov.com/artificial-intelligence/2026/09/va-selects-abridge-ambient-scribe-under-new-enterprise-contract/416140"
+    ]
+   ]
+  },
+  {
+   "id": "seidmanbecker",
+   "n": "Caryn Seidman Becker",
+   "s": "agentic",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Leads CLEAR, contracted for Medicare.gov identity verification.",
+   "dir": "",
+   "role": "CEO, CLEAR",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "CLEAR inks contract with CMS to kill the clipboard (Fierce Healthcare)",
+     "https://www.fiercehealthcare.com/health-tech/clear-inks-contract-cms-kill-clipboard"
+    ]
+   ]
+  },
+  {
+   "id": "collins-doug",
+   "n": "Doug Collins",
+   "s": "healthdata",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Raised the 2026 Oracle EHR deployment target to 13 facilities.",
+   "dir": "",
+   "role": "Secretary of Veterans Affairs",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "VA completes 2026 EHR deployments (Nextgov)",
+     "https://www.nextgov.com/modernization/2026/10/va-completes-2026-ehr-system-deployments-final-two-site-go-lives/416823/"
+    ]
+   ]
+  },
+  {
+   "id": "lawrence-paul",
+   "n": "Paul Lawrence",
+   "s": "healthdata",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Defended the Oracle contract modification; said 2026 'lays the groundwork for deployments in 26 hospitals in 2027.'",
+   "dir": "",
+   "role": "Deputy Secretary of Veterans Affairs",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "VA completes 2026 EHR deployments (Nextgov)",
+     "https://www.nextgov.com/modernization/2026/10/va-completes-2026-ehr-system-deployments-final-two-site-go-lives/416823/"
+    ],
+    [
+     "House panel subpoenas Oracle heads (Nextgov)",
+     "https://www.nextgov.com/modernization/2026/09/house-panel-subpoenas-oracle-heads-over-va-health-record-overhauls-ballooning-costs/415791/"
+    ]
+   ]
+  },
+  {
+   "id": "dexter",
+   "n": "Rep. Maxine Dexter",
+   "s": "state",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Moved to subpoena Ellison and Sicilia; committee approved 19-0.",
+   "dir": "",
+   "role": "U.S. Representative (D-Ore.), House Veterans' Affairs Committee",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "House panel subpoenas Oracle heads (Nextgov)",
+     "https://www.nextgov.com/modernization/2026/09/house-panel-subpoenas-oracle-heads-over-va-health-record-overhauls-ballooning-costs/415791/"
+    ]
+   ]
+  },
+  {
+   "id": "bost",
+   "n": "Rep. Mike Bost",
+   "s": "state",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Invited Oracle to testify; Oracle declined.",
+   "dir": "",
+   "role": "Chairman, House Veterans' Affairs Committee (R-Ill.)",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "House panel subpoenas Oracle heads (Nextgov)",
+     "https://www.nextgov.com/modernization/2026/09/house-panel-subpoenas-oracle-heads-over-va-health-record-overhauls-ballooning-costs/415791/"
+    ]
+   ]
+  },
+  {
+   "id": "budzinski",
+   "n": "Rep. Nikki Budzinski",
+   "s": "state",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Called the revised Oracle deal 'just a blank check for Oracle.'",
+   "dir": "",
+   "role": "U.S. Representative (D-Ill.)",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "House panel subpoenas Oracle heads (Nextgov)",
+     "https://www.nextgov.com/modernization/2026/09/house-panel-subpoenas-oracle-heads-over-va-health-record-overhauls-ballooning-costs/415791/"
+    ],
+    [
+     "$27 billion and counting (Rep. Budzinski)",
+     "https://budzinski.house.gov/posts/27-billion-and-counting-budzinski-demands-answers-from-va-admin-on-exploding-oracle-costs"
+    ]
+   ]
+  },
+  {
+   "id": "chhabria",
+   "n": "Vince Chhabria",
+   "s": "healthdata",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Presides over California v. HHS; enjoined Medicaid data use in August 2025, allowed basic-data sharing from January 2026, and ordered a scope agreement in September 2026.",
+   "dir": "",
+   "role": "U.S. District Judge, N.D. Cal.",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "California v. HHS docket (Civil Rights Clearinghouse)",
+     "https://clearinghouse.net/case/46754/"
+    ],
+    [
+     "HHS may resume sharing some Medicaid data with ICE (AP via News4Jax)",
+     "https://www.news4jax.com/health/2026/01/05/after-judges-ruling-hhs-authorized-to-resume-sharing-some-medicaid-data-with-deportation-officers/"
+    ],
+    [
+     "Judge seeks clearer limits on ICE use of Medicaid data (Law360/MLex)",
+     "https://www.mlex.com/healthcare-authority/digital-health-technology/articles/2522812/calif-judge-seeks-clearer-limits-on-ice-use-of-medicaid-data"
+    ]
+   ]
+  },
+  {
+   "id": "bonta",
+   "n": "Rob Bonta",
+   "s": "healthdata",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Lead plaintiff state AG in California v. HHS.",
+   "dir": "",
+   "role": "Attorney General of California",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "California v. HHS docket (Civil Rights Clearinghouse)",
+     "https://clearinghouse.net/case/46754/"
+    ]
+   ]
+  },
+  {
+   "id": "kendall",
+   "n": "Liz Kendall",
+   "s": "allied",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Confirmed in June 2026 that the health secretary is reviewing 'every single aspect' of the Palantir NHS contract.",
+   "dir": "",
+   "role": "UK technology minister",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "UK reviewing £330M NHS deal with Palantir (The Next Web)",
+     "https://thenextweb.com/news/uk-nhs-palantir-contract-review-break-clause"
+    ],
+    [
+     "UK reviewing Palantir NHS contract (The Star/Reuters)",
+     "https://www.thestar.com.my/tech/tech-news/2026/06/09/uk-reviewing-palantir039s-nhs-contract-amid-pressure-to-use-break-clause"
+    ]
+   ]
+  },
+  {
+   "id": "potter",
+   "n": "Wendell Potter",
+   "s": "healthdata",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Former Cigna executive; his group asked insurers on October 28, 2026 to publish vendor agreements involving patient data after EFF documents tied Palantir to WISeR vendor Zyter.",
+   "dir": "",
+   "role": "Founder, Center for Health and Democracy Education Fund",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Palantir Medicare AI experiment (Common Dreams)",
+     "https://www.commondreams.org/news/palantir-medicare-ai-experiment"
+    ]
+   ]
+  },
+  {
+   "id": "darpa",
+   "n": "DARPA",
+   "s": "state",
+   "t": "K",
+   "k": "buyer",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Defense Advanced Research Projects Agency; home of the Biological Technologies Office and the Quantum Benchmarking Initiative.",
+   "dir": "Fund high-risk research that DoD can transition.",
+   "strat": "Runs biotech through BTO: battlefield medicine, distributed biomanufacturing, attribution and foundational biology, with regulatory partnerships such as EQUIP-A-Pharma with ASPR.",
+   "obj": [],
+   "f": [
+    "No darpa node existed in existing.json; created here"
+   ],
+   "src": [
+    [
+     "DARPA: Biological Technologies Office",
+     "https://www.darpa.mil/about/offices/bto"
+    ],
+    [
+     "DARPA: Michael Koeris",
+     "https://www.darpa.mil/about/people/michael-koeris"
+    ],
+    [
+     "DARPA: N3 six teams",
+     "https://www.darpa.mil/news/2019/nonsurgical-brain-machine-interfaces"
+    ],
+    [
+     "DARPA: In Vivo Nanoplatforms",
+     "https://www.darpa.mil/research/programs/in-vivo-nanoplatforms"
+    ],
+    [
+     "Snopes: Profusa biosensor and DARPA",
+     "https://www.snopes.com/fact-check/covid-detecting-microchip/"
+    ]
+   ],
+   "plan": [
+    [
+     "d",
+     "N3 announced",
+     "2018-03"
+    ],
+    [
+     "d",
+     "N3 six teams funded",
+     "2019-05-20"
+    ],
+    [
+     "d",
+     "Additional Profusa funding",
+     "2019-08"
+    ]
+   ]
+  },
+  {
+   "id": "bto",
+   "n": "DARPA Biological Technologies Office (BTO)",
+   "s": "biodefense",
+   "t": "K",
+   "k": "buyer",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "DARPA office that uses biological properties and processes to protect warfighters, across biodefense, medical countermeasures, tactical care and recovery.",
+   "dir": "Protect the warfighter with biology.",
+   "strat": "Funds programs in shelf-stable blood (FSHARP, RAPIID), agile pharmaceutical and protein manufacturing (EQUIP-A-Pharma, RPM, Switch), waste-to-supply conversion (ReSource), biothreat attribution and foundational biology (GO). Uses rolling office-wide solicitations and the ERIS pitch-video pathway.",
+   "plan": [
+    [
+     "m",
+     "Office-wide solicitation HR001126S0003",
+     "2026-09-30"
+    ],
+    [
+     "m",
+     "RAPIID TA-3 solicitation DARPA-PA-26-09 closed",
+     "2026-07-29"
+    ],
+    [
+     "m",
+     "ERIS rolling submissions (Topic Areas 4 and 5)",
+     "2031-10-31"
+    ]
+   ],
+   "obj": [],
+   "f": [
+    "Director Michael Koeris since April 2024",
+    "DARPA Surgical Competition funded at $3.5M; D2 Sprint at $1M",
+    "Bio-Attribution Challenge identifies biological anomalies and defines biothreat origins",
+    "Program manager named in July 2026 newsletter: Dr. William Mounfield"
+   ],
+   "src": [
+    [
+     "DARPA: Biological Technologies Office",
+     "https://www.darpa.mil/about/offices/bto"
+    ],
+    [
+     "DARPA BTO newsletter, July 2026",
+     "https://www.darpa.mil/sites/default/files/attachment/2026-10/darpa-newsletter-bto-july-2026.pdf"
+    ],
+    [
+     "DARPA: Michael Koeris",
+     "https://www.darpa.mil/about/people/michael-koeris"
+    ]
+   ]
+  },
+  {
+   "id": "bmo",
+   "n": "DoD Biotechnology Management Office",
+   "s": "biodefense",
+   "t": "N",
+   "k": "prog",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Office created by the FY26 NDAA reporting to the Deputy Secretary of Defense to run a department-wide biotechnology strategy.",
+   "dir": "Coordinate DoD biotech research, acquisition and sustainment.",
+   "strat": "Strategy to cover bioindustrial capacity, wargaming integration, supply-chain resilience and workforce training, with ethical guidelines for development and deployment.",
+   "plan": [
+    [
+     "m",
+     "Stand up office and publish DoD biotechnology strategy",
+     "2026"
+    ]
+   ],
+   "obj": [],
+   "f": [
+    "Created by FY26 NDAA (signed Dec 18, 2025)",
+    "Senate bill originated the office"
+   ],
+   "src": [
+    [
+     "INSS/NDU: Biotechnology in the FY 2026 NDAA",
+     "https://inss.ndu.edu/news/Article/4358679/biotechnology-in-the-fy-2026-ndaa-strategic-implications-and-recommendations-fo/"
+    ],
+    [
+     "Goodwin: Final FY 2026 NDAA includes BIOSECURE",
+     "https://www.goodwinlaw.com/en/insights/publications/2025/12/alerts-otherindustries-final-fy-2026-ndaa-includes-biosecure"
+    ],
+    [
+     "Defence Finance Monitor: Biotech takes center stage",
+     "https://defencefinancemonitor.substack.com/p/biotech-takes-center-stage-in-us"
+    ]
+   ]
+  },
+  {
+   "id": "dbimp",
+   "n": "Distributed Bioindustrial Manufacturing Program (DBIMP)",
+   "s": "biodefense",
+   "t": "N",
+   "k": "prog",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "DoD program funding plans for U.S. bioindustrial production facilities through the Defense Industrial Base Consortium OTA, overseen by the Office of the Assistant Secretary of Defense for Industrial Base Policy.",
+   "dir": "Build domestic bioindustrial production for defense supply chains.",
+   "strat": "Phase one paid companies for business and technical plans (34 awards, over $60M); selected awardees can advance to facility funding of up to $100M each (Debut example). Expansions continued into 2026 (Visolis).",
+   "plan": [
+    [
+     "d",
+     "First award: Debut, $2M",
+     "2024-07"
+    ],
+    [
+     "d",
+     "Phase one closes: 34 awards, over $60M",
+     "2024-11-14"
+    ],
+    [
+     "d",
+     "Visolis $2.86M expansion",
+     "2026-02-03"
+    ],
+    [
+     "p",
+     "Next-phase facility awards (up to $100M for Debut if approved)",
+     ""
+    ]
+   ],
+   "obj": [],
+   "f": [
+    "Final nine awards: Amyris $1.93M, Cauldron Molecules $1.76M, Checkerspot $3.19M, DSM Nutritional Products $2.07M, EVERY Company $2.0M, The Fynder Group $1.38M, Liberation Labs $1.4M, Perfect Day $1.24M, Solugen $2.0M"
+   ],
+   "src": [
+    [
+     "ExecutiveGov: First DBIMP awardee",
+     "https://www.executivegov.com/2024/07/pentagon-selects-first-awardee-for-distributed-bioindustrial-manufacturing-program/"
+    ],
+    [
+     "Renewable Carbon: Final nine DBIMP awards",
+     "https://renewable-carbon.eu/news/dod-releases-final-nine-awards-for-distributed-bioindustrial-manufacturing-program/"
+    ],
+    [
+     "SynBioBeta: Visolis DBIMP expansion",
+     "https://www.synbiobeta.com/read/visolis-secures-2.86-million-expansion-from-u.s.-department-of-war-for-bioindustrial-manufacturing"
+    ]
+   ]
+  },
+  {
+   "id": "biomade",
+   "n": "BioMADE",
+   "s": "biodefense",
+   "t": "K",
+   "k": "co",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "DoD-founded bioindustrial Manufacturing Innovation Institute building a national network of pilot and demonstration-scale plants.",
+   "dir": "Close the U.S. gap in pilot- to demonstration-scale biomanufacturing.",
+   "pv": "nonprofit Manufacturing Innovation Institute",
+   "strat": "Uses DoD and state money, matched dollar for dollar by members, to build shared fermentation plants in Minnesota, Iowa and California and to fund member projects.",
+   "plan": [
+    [
+     "d",
+     "Founded with $87.5M DoD award plus $187M from members",
+     "2020-10-20"
+    ],
+    [
+     "d",
+     "DoD directs $450M",
+     "2023"
+    ],
+    [
+     "d",
+     "Maple Grove, MN demo plant announced (at least $132M)",
+     "2025-04-29"
+    ],
+    [
+     "d",
+     "DoD and NSF fund 14 projects, $21.4M",
+     "2026-04"
+    ],
+    [
+     "p",
+     "Hayward, CA plant opens",
+     "2027"
+    ],
+    [
+     "p",
+     "Ames, IA and Maple Grove, MN plants open",
+     "2028"
+    ]
+   ],
+   "obj": [],
+   "f": [
+    "300+ members in 39 states",
+    "92 projects funded",
+    "CEO Douglas Friedman"
+   ],
+   "src": [
+    [
+     "FoodNavigator: BioMADE pilot plants",
+     "https://www.foodnavigator.com/Article/2026/05/11/precision-fermentation-us-to-open-pilot-plants-as-issue-of-national-security/"
+    ],
+    [
+     "Renewable Carbon: BioMADE $132M Minnesota facility",
+     "https://renewable-carbon.eu/news/?p=162735"
+    ],
+    [
+     "Business Wire: DoD awards $87.5M to BioMADE",
+     "https://www.businesswire.com/news/home/20201020006281/en/U.S.-Department-of-Defense-Awards-87.5-Million-to-EBRC-led-BioMADE-Establishing-the-Bioindustrial-Manufacturing-Innovation-Institute"
+    ]
+   ]
+  },
+  {
+   "id": "biomademn",
+   "n": "BioMADE Maple Grove demonstration facility",
+   "s": "biodefense",
+   "t": "N",
+   "k": "site",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "122,000 sq ft multi-user demonstration plant in Maple Grove, Minnesota, with two 25,000-liter fermenters.",
+   "dir": "",
+   "obj": [],
+   "f": [
+    "At least $132M from DoD and Minnesota DEED",
+    "Expected to open 2028"
+   ],
+   "src": [
+    [
+     "Renewable Carbon: BioMADE $132M Minnesota facility",
+     "https://renewable-carbon.eu/news/?p=162735"
+    ],
+    [
+     "FoodNavigator: BioMADE pilot plants",
+     "https://www.foodnavigator.com/Article/2026/05/11/precision-fermentation-us-to-open-pilot-plants-as-issue-of-national-security/"
+    ]
+   ]
+  },
+  {
+   "id": "biomadeia",
+   "n": "BioMADE Ames pilot facility",
+   "s": "biodefense",
+   "t": "N",
+   "k": "site",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "15,000 sq ft pilot plant near Ames, Iowa, run with Iowa State University; 10,000-liter tanks.",
+   "dir": "",
+   "obj": [],
+   "f": [
+    "Expected to open 2028"
+   ],
+   "src": [
+    [
+     "FoodNavigator: BioMADE pilot plants",
+     "https://www.foodnavigator.com/Article/2026/05/11/precision-fermentation-us-to-open-pilot-plants-as-issue-of-national-security/"
+    ]
+   ]
+  },
+  {
+   "id": "biomadeca",
+   "n": "BioMADE Hayward pilot facility",
+   "s": "biodefense",
+   "t": "N",
+   "k": "site",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "About 25,000 sq ft former Lygos plant in Hayward, California, with about 4,000-liter tanks; Lygos stays a key customer.",
+   "dir": "",
+   "obj": [],
+   "f": [
+    "Expected to open spring 2027"
+   ],
+   "src": [
+    [
+     "FoodNavigator: BioMADE pilot plants",
+     "https://www.foodnavigator.com/Article/2026/05/11/precision-fermentation-us-to-open-pilot-plants-as-issue-of-national-security/"
+    ]
+   ]
+  },
+  {
+   "id": "switch",
+   "n": "DARPA Switch",
+   "s": "biodefense",
+   "t": "N",
+   "k": "prog",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "BTO program for agile, reprogrammable biomanufacturing for DoD supply-chain resilience; 36 months; PM Dr. Matthew Pava.",
+   "dir": "",
+   "obj": [],
+   "f": [
+    "Reported launched July 30, 2024"
+   ],
+   "src": [
+    [
+     "SynBioBeta: DARPA Switch",
+     "https://www.synbiobeta.com/read/darpas-switch-program-seeks-to-advance-biomanufacturing-for-defense-needs"
+    ]
+   ]
+  },
+  {
+   "id": "equippharma",
+   "n": "DARPA EQUIP-A-Pharma",
+   "s": "biodefense",
+   "t": "N",
+   "k": "prog",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Establishing Qualification Processes for Agile Pharmaceutical Manufacturing: up to four pilot sites generating data for a real-time regulatory approval framework, with HHS/ASPR.",
+   "dir": "",
+   "obj": [],
+   "f": [
+    "Announced January 24, 2024",
+    "Targets the valley of death for Battlefield Medicine, Make-It and Accelerated Molecular Discovery outputs"
+   ],
+   "src": [
+    [
+     "ExecutiveGov: EQUIP-A-Pharma",
+     "https://www.executivegov.com/articles/new-darpa-program-to-establish-digital-regulatory-framework-for-pharmaceutical-products"
+    ]
+   ]
+  },
+  {
+   "id": "rpm",
+   "n": "DARPA Reimagining Protein Manufacturing (RPM)",
+   "s": "biodefense",
+   "t": "N",
+   "k": "prog",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Program shifting therapeutic protein production toward distributed, on-demand manufacturing for remote areas and rapid biothreat response.",
+   "dir": "",
+   "obj": [],
+   "f": [
+    "Ginkgo award up to $18M over 4 years, July 20, 2023"
+   ],
+   "src": [
+    [
+     "Pharmaceutical Technology: Ginkgo DARPA RPM award",
+     "https://www.pharmaceutical-tech.com/news/ginkgo-bioworks-awarded-darpa-contract-to-reimagine"
+    ]
+   ]
+  },
+  {
+   "id": "resource",
+   "n": "DARPA ReSource",
+   "s": "biodefense",
+   "t": "N",
+   "k": "prog",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "BTO program to convert military waste into critical supplies.",
+   "dir": "",
+   "obj": [],
+   "f": [
+    "Announced 2019"
+   ],
+   "src": [
+    [
+     "DARPA: ReSource (2019)",
+     "https://www.darpa.mil/news/2019/sourcing-military-waste-critical-stocks"
+    ]
+   ]
+  },
+  {
+   "id": "fsharp",
+   "n": "DARPA FSHARP",
+   "s": "biodefense",
+   "t": "N",
+   "k": "prog",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Fieldable Solutions for Hemorrhage with bio-Artificial Resuscitation Products: four-year, $46.4M program for a shelf-stable whole blood substitute; PM Robert Murray; lead performer University of Maryland School of Medicine.",
+   "dir": "",
+   "obj": [],
+   "f": [
+    "KaloCyte is a named performer",
+    "SWiFT SBIR topic DPA26BZ01-DV003 opened May 6, 2026; Phase I $100K-$275K"
+   ],
+   "src": [
+    [
+     "GrantedAI: DARPA FSHARP and SWiFT",
+     "https://grantedai.com/blog/darpa-synthetic-blood-fsharp-46-million-swift-sbir-powdered-blood-battlefield-medicine-2026"
+    ]
+   ]
+  },
+  {
+   "id": "rapiid",
+   "n": "DARPA RAPIID",
+   "s": "biodefense",
+   "t": "N",
+   "k": "prog",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Resuscitation and Prevention of Ischemia-Induced Dysfunction: shelf-stable, far-forward blood alternative without cold chain or donor logistics.",
+   "dir": "",
+   "obj": [],
+   "f": [
+    "Launched June 2026",
+    "TA-3 solicitation DARPA-PA-26-09 deadline July 29, 2026"
+   ],
+   "src": [
+    [
+     "AABB: DARPA launches RAPIID",
+     "https://www.aabb.org/news-resources/news/article/2026/06/10/darpa-launches-rapiid-program-to-advance-shelf-stable-blood-analogs"
+    ],
+    [
+     "DARPA BTO newsletter, July 2026",
+     "https://www.darpa.mil/sites/default/files/attachment/2026-10/darpa-newsletter-bto-july-2026.pdf"
+    ]
+   ]
+  },
+  {
+   "id": "darpago",
+   "n": "DARPA Generative Optogenetics (GO)",
+   "s": "biodefense",
+   "t": "N",
+   "k": "prog",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "BTO high-risk foundational biology research effort; solicitation DARPA-PS-26-10.",
+   "dir": "",
+   "obj": [],
+   "f": [
+    "Announced December 19, 2025"
+   ],
+   "src": [
+    [
+     "EverGlade: DARPA Generative Optogenetics",
+     "https://everglade.com/2026/01/06/"
+    ]
+   ]
+  },
+  {
+   "id": "bioattrib",
+   "n": "DARPA Bio-Attribution Challenge",
+   "s": "biodefense",
+   "t": "N",
+   "k": "prog",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Virtual data competition to identify biological anomalies and define biothreat origins.",
+   "dir": "",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "DARPA: Biological Technologies Office",
+     "https://www.darpa.mil/about/offices/bto"
+    ],
+    [
+     "DARPA BTO newsletter, July 2026",
+     "https://www.darpa.mil/sites/default/files/attachment/2026-10/darpa-newsletter-bto-july-2026.pdf"
+    ]
+   ]
+  },
+  {
+   "id": "dtra",
+   "n": "Defense Threat Reduction Agency (DTRA)",
+   "s": "biodefense",
+   "t": "N",
+   "k": "buyer",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "DoD agency countering WMD; its Global Threat Reduction Directorate runs biological threat reduction work with allies.",
+   "dir": "",
+   "obj": [],
+   "f": [
+    "Battelle sole awardee for STEP 2.0: $52.9M base, $93.3M potential (Feb 2026)"
+   ],
+   "src": [
+    [
+     "Battelle: DTRA STEP 2.0",
+     "https://www.battelle.org/insights/newsroom/news-details/2026/03/02/battelle-wins--93m-contract-to-boost-us-biodefense--biological-threat-readiness"
+    ]
+   ]
+  },
+  {
+   "id": "jpeocbrnd",
+   "n": "JPEO-CBRND",
+   "s": "biodefense",
+   "t": "N",
+   "k": "buyer",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Joint Program Executive Office for Chemical, Biological, Radiological and Nuclear Defense; buys medical countermeasures for the force.",
+   "dir": "",
+   "obj": [],
+   "f": [
+    "Anthrax vaccine award to Emergent BioSolutions, up to $235.8M, Jan 9, 2024"
+   ],
+   "src": [
+    [
+     "JPEO-CBRND: Emergent anthrax vaccine award",
+     "https://www.jpeocbrnd.osd.mil/News-and-Media/News/Article/3650473/jpeo-cbrnd-awards-2358-million-procurement-contract-to-emergent-biosolutions-to/"
+    ]
+   ]
+  },
+  {
+   "id": "iarpa",
+   "n": "IARPA",
+   "s": "state",
+   "t": "N",
+   "k": "buyer",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Intelligence Advanced Research Projects Activity; ran B24IC biointelligence program 2022-2025.",
+   "dir": "",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "IARPA: B24IC",
+     "https://www.iarpa.gov/research-programs/b24ic"
+    ]
+   ]
+  },
+  {
+   "id": "b24ic",
+   "n": "IARPA B24IC",
+   "s": "biodefense",
+   "t": "N",
+   "k": "prog",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Biointelligence and Biosecurity for the Intelligence Community: research to improve collection, detection, attribution and analysis of biothreats, including synthetic-biology risks.",
+   "dir": "",
+   "obj": [],
+   "f": [
+    "BAA July 6, 2022; 24 months; ended May 2025",
+    "Primes: Battelle, Exodigm Biosciences, Georgia Tech Research Institute, Ginkgo Bioworks, MIT, MRIGlobal, Quantitative BioSciences, Raytheon BBN, Draper"
+   ],
+   "src": [
+    [
+     "IARPA: B24IC",
+     "https://www.iarpa.gov/research-programs/b24ic"
+    ]
+   ]
+  },
+  {
+   "id": "bnext",
+   "n": "In-Q-Tel B.Next",
+   "s": "biodefense",
+   "t": "N",
+   "k": "cap",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "IQT's biotechnology team, established 2015: biomanufacturing, pandemic preparedness and biodefense, synthetic-biology diagnostics and therapeutics, biotech-AI convergence.",
+   "dir": "",
+   "obj": [],
+   "f": [
+    "Published capital-stack analysis of U.S. foundational biotech investment, Feb 18, 2026",
+    "Featured portfolio companies Antheia and Alta Resource Technologies (Dec 2025)"
+   ],
+   "src": [
+    [
+     "IQT: Biotechnology impact story",
+     "https://iqt.org/impact-stories/biotechnology"
+    ]
+   ]
+  },
+  {
+   "id": "nsceb",
+   "n": "National Security Commission on Emerging Biotechnology (NSCEB)",
+   "s": "biodefense",
+   "t": "K",
+   "k": "press",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Twelve-member congressional commission created by FY22 NDAA Sec. 1091; final report April 8, 2025 called for at least $15B over five years and 49 recommendations.",
+   "dir": "Make biotechnology a national-security priority and keep U.S. lead over China.",
+   "strat": "Converts recommendations into NDAA provisions and standalone bipartisan bills, runs a state roadshow, and publishes China benchmarking. As of June 1, 2026: 36 recommendations with legislative action, 29 bills, 26 provisions in law, 9 recommendations in White House actions.",
+   "plan": [
+    [
+     "d",
+     "Interim report",
+     "2023-12"
+    ],
+    [
+     "d",
+     "Final report 'Charting the Future of Biotechnology'",
+     "2025-04-08"
+    ],
+    [
+     "d",
+     "More than a dozen recommendations enacted in FY26 NDAA",
+     "2025-12-18"
+    ],
+    [
+     "d",
+     "China competition paper",
+     "2025-12-19"
+    ],
+    [
+     "m",
+     "FY27 NDAA biotech provisions in conference",
+     "2026"
+    ],
+    [
+     "m",
+     "Roadshow: 22 states visited",
+     "2026"
+    ]
+   ],
+   "obj": [],
+   "f": [
+    "Chair Sen. Todd Young since Sep 12, 2024; prior chair Jason Kelly",
+    "Vice Chair Dr. Michelle Rozo",
+    "Executive director Caitlin Frazer"
+   ],
+   "src": [
+    [
+     "CRS IN12546: NSCEB final report",
+     "https://www.everycrsreport.com/reports/IN12546.html"
+    ],
+    [
+     "Wikipedia: NSCEB",
+     "https://en.wikipedia.org/wiki/National_Security_Commission_on_Emerging_Biotechnology"
+    ],
+    [
+     "NSCEB monthly newsletter, July 2026",
+     "https://www.biotech.senate.gov/?p=12687"
+    ],
+    [
+     "NSCEB: Young named Chair (Sep 12, 2024)",
+     "https://biotech.senate.gov/?p=9192"
+    ],
+    [
+     "Defence Finance Monitor: Biotech takes center stage",
+     "https://defencefinancemonitor.substack.com/p/biotech-takes-center-stage-in-us"
+    ]
+   ]
+  },
+  {
+   "id": "ndaa26bio",
+   "n": "FY26 NDAA biotechnology provisions",
+   "s": "biodefense",
+   "t": "N",
+   "k": "law",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "17 biotechnology provisions in the FY26 NDAA (Pub. L. 119-60, signed Dec 18, 2025), including the Biotechnology Management Office, defense biotech strategy and BIOSECURE (Sec. 851).",
+   "dir": "",
+   "obj": [],
+   "f": [
+    "Senate version carried $25M dedicated biotech research and $137M for Navy biomolecular lab infrastructure",
+    "House version had eight major biotech provisions; Senate added four"
+   ],
+   "src": [
+    [
+     "INSS/NDU: Biotechnology in the FY 2026 NDAA",
+     "https://inss.ndu.edu/news/Article/4358679/biotechnology-in-the-fy-2026-ndaa-strategic-implications-and-recommendations-fo/"
+    ],
+    [
+     "Ropes & Gray: BIOSECURE Act enacted",
+     "https://www.ropesgray.com/en/insights/alerts/2026/01/biosecure-act-enacted"
+    ],
+    [
+     "Defence Finance Monitor: Biotech takes center stage",
+     "https://defencefinancemonitor.substack.com/p/biotech-takes-center-stage-in-us"
+    ]
+   ]
+  },
+  {
+   "id": "biosecure",
+   "n": "BIOSECURE Act (FY26 NDAA Sec. 851)",
+   "s": "biodefense",
+   "t": "K",
+   "k": "law",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Bars federal agencies, contractors and grant or loan recipients from using biotechnology equipment or services from biotechnology companies of concern.",
+   "dir": "Remove adversary-controlled biotech suppliers from federal supply chains.",
+   "strat": "BCCs come from the DoD 1260H list (plus OMB biotech finding) or OMB criteria. OMB list due Dec 18, 2026; guidance up to 180 days later; FAR revision up to a year after; bans start 60 or 90 days after FAR change; five-year grandfathering for existing contracts.",
+   "plan": [
+    [
+     "d",
+     "Enacted in FY26 NDAA",
+     "2025-12-18"
+    ],
+    [
+     "d",
+     "DoD 1260H update adds WuXi AppTec",
+     "2026-06-08"
+    ],
+    [
+     "p",
+     "OMB initial BCC list",
+     "2026-12-18"
+    ],
+    [
+     "p",
+     "OMB guidance (up to 180 days after list)",
+     "2027"
+    ],
+    [
+     "p",
+     "FAR revision; prohibitions effective ~Aug 2028 on full statutory timeline",
+     "2028"
+    ],
+    [
+     "p",
+     "OMB list of biotechnology companies of concern",
+     "2026-12-18"
+    ],
+    [
+     "p",
+     "FAR revision and prohibitions",
+     "2028"
+    ],
+    [
+     "p",
+     "Grandfather period ends",
+     "2033"
+    ]
+   ],
+   "obj": [],
+   "f": [
+    "Waivers: one year, one 180-day extension, with OMB approval",
+    "Exceptions: intelligence, certain overseas health care, public multiomic data, MCMs in a declared emergency",
+    "Statute names no companies"
+   ],
+   "src": [
+    [
+     "Ropes & Gray: BIOSECURE Act enacted",
+     "https://www.ropesgray.com/en/insights/alerts/2026/01/biosecure-act-enacted"
+    ],
+    [
+     "Goodwin: Final FY 2026 NDAA includes BIOSECURE",
+     "https://www.goodwinlaw.com/en/insights/publications/2025/12/alerts-otherindustries-final-fy-2026-ndaa-includes-biosecure"
+    ],
+    [
+     "Ropes & Gray: Updated 1260H list includes WuXi AppTec",
+     "https://www.ropesgray.com/en/insights/alerts/2026/06/department-of-defense-releases-updated-1260h-list-that-includes-wuxi-apptec"
+    ],
+    [
+     "WuXi AppTec added to DOW's 1260H list (Holland & Knight, 2026-06)",
+     "https://www.hklaw.com/en/insights/publications/2026/06/wuxi-apptec-added-to-dows-1260h-list"
+    ]
+   ]
+  },
+  {
+   "id": "ndaa27bio",
+   "n": "FY27 NDAA biotechnology provisions",
+   "s": "biodefense",
+   "t": "N",
+   "k": "law",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "House FY27 NDAA markup provisions backed by NSCEB: biotech prize competitions (Sec. 221), forward-deployable biomanufacturing pilot (Sec. 223), biotech in the Industrial Base Fund (Sec. 1822), cloud-lab and installation wastewater monitoring pilots.",
+   "dir": "",
+   "plan": [
+    [
+     "d",
+     "HASC markup",
+     "2026-06"
+    ],
+    [
+     "m",
+     "Conference",
+     "2026"
+    ]
+   ],
+   "obj": [],
+   "f": [
+    "Also adds biotech to annual China military power report and requires annual DoD biotech supply-chain dependency reporting"
+   ],
+   "src": [
+    [
+     "NSCEB: FY27 NDAA biotech provisions (Jun 8, 2026)",
+     "https://www.biotech.senate.gov/press-releases/biotech-further-cemented-as-top-tech-priority-for-defense/"
+    ],
+    [
+     "NSCEB monthly newsletter, July 2026",
+     "https://www.biotech.senate.gov/?p=12687"
+    ]
+   ]
+  },
+  {
+   "id": "nbia",
+   "n": "National Biotechnology Initiative Act (S.1387 / H.R.2756)",
+   "s": "biodefense",
+   "t": "N",
+   "k": "law",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Bill to create a National Biotechnology Coordination Office in the Executive Office of the President, a Principal Advisor for Biotechnology, and an interagency committee.",
+   "dir": "",
+   "obj": [],
+   "f": [
+    "Introduced April 9-10, 2025 by Sens. Young and Padilla and Reps. Bice and Khanna",
+    "Would publish a national biotech strategy every five years"
+   ],
+   "src": [
+    [
+     "Sen. Young: National Biotechnology Initiative Act",
+     "https://www.young.senate.gov/?p=12463"
+    ],
+    [
+     "Wikipedia: NSCEB",
+     "https://en.wikipedia.org/wiki/National_Security_Commission_on_Emerging_Biotechnology"
+    ]
+   ]
+  },
+  {
+   "id": "webbio",
+   "n": "Web of Biological Data Act of 2026 (H.R.9307 / S.4770)",
+   "s": "biodefense",
+   "t": "N",
+   "k": "law",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Directs the Energy Secretary to create a single entry point to federally managed or funded biological data for AI-enabled research.",
+   "dir": "",
+   "obj": [],
+   "f": [
+    "Introduced June 11, 2026",
+    "Senate: Young, Padilla, Rounds, Kim; House: Van Epps, Auchincloss"
+   ],
+   "src": [
+    [
+     "NSCEB monthly newsletter, July 2026",
+     "https://www.biotech.senate.gov/?p=12687"
+    ],
+    [
+     "CRS IF13269: AI and Biosecurity (Sep 2026)",
+     "https://www.everycrsreport.com/files/2026-09-15_IF13269_ce00f5cc67016c1b700886eee55c89c14884d48b.html"
+    ]
+   ]
+  },
+  {
+   "id": "binsa",
+   "n": "Biotech Investment National Security Act (H.R.9102)",
+   "s": "biodefense",
+   "t": "N",
+   "k": "law",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Would add biotechnology, including licensing, to COINS Act outbound-investment controls.",
+   "dir": "",
+   "obj": [],
+   "f": [
+    "Introduced June 2, 2026",
+    "Treasury COINS regulations due March 13, 2027"
+   ],
+   "src": [
+    [
+     "DLA Piper: U.S.-China life sciences policy developments (Aug 2026)",
+     "https://www.dlapiper.com/en-us/insights/publications/2026/08/us-china-life-sciences-policy-developments-top-points-for-companies"
+    ]
+   ]
+  },
+  {
+   "id": "synthbills",
+   "n": "AI-bio and synthesis-screening bills (119th Congress)",
+   "s": "biodefense",
+   "t": "N",
+   "k": "law",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Pending bills: H.R.3029 Nucleic Acid Standards for Biosecurity Act (passed House), S.3741 Biosecurity Modernization and Innovation Act of 2026, S.4363 Engineering Biology Readiness Act, S.4069 AI-Ready Bio-Data Standards Act, S.3952 Future of AI Innovation Act of 2026, cloud-lab bills H.R.7801, S.2676, S.3468.",
+   "dir": "",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "CRS IF13269: AI and Biosecurity (Sep 2026)",
+     "https://www.everycrsreport.com/files/2026-09-15_IF13269_ce00f5cc67016c1b700886eee55c89c14884d48b.html"
+    ],
+    [
+     "CRS IF13269: AI and Biosecurity (Jul 2026)",
+     "https://www.everycrsreport.com/files/2026-07-16_IF13269_753d0316d2bb9ed4d75d363e287bcacbf13b40fb.html"
+    ]
+   ]
+  },
+  {
+   "id": "eo14292",
+   "n": "EO 14292: Improving the Safety and Security of Biological Research",
+   "s": "biodefense",
+   "t": "K",
+   "k": "law",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "May 5, 2025 order ending federal funding for dangerous gain-of-function research abroad in countries of concern, pausing it domestically, and ordering OSTP to replace the 2024 DURC/PEPP policy (120 days) and the 2024 synthesis-screening framework (90 days).",
+   "dir": "",
+   "plan": [
+    [
+     "d",
+     "NIH stops accepting dangerous gain-of-function applications",
+     "2025-05-07"
+    ],
+    [
+     "d",
+     "High-Risk Life Sciences Research policy issued",
+     "2026-07-28"
+    ],
+    [
+     "b",
+     "Synthesis-screening framework revision not done as of July-Sep 2026",
+     ""
+    ]
+   ],
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "CRS IN12554: Executive actions on gain-of-function research",
+     "https://www.everycrsreport.com/reports/IN12554.html"
+    ],
+    [
+     "GovInfo: EO 14292",
+     "https://www.govinfo.gov/content/pkg/DCPD-202500561/html/DCPD-202500561.htm"
+    ],
+    [
+     "NIH NOT-OD-25-112",
+     "https://grants.nih.gov/grants/guide/notice-files/NOT-OD-25-112.html"
+    ],
+    [
+     "CRS IF13269: AI and Biosecurity (Jul 2026)",
+     "https://www.everycrsreport.com/files/2026-07-16_IF13269_753d0316d2bb9ed4d75d363e287bcacbf13b40fb.html"
+    ]
+   ]
+  },
+  {
+   "id": "hlsrpolicy",
+   "n": "USG Policy for Stopping High-Risk Life Sciences Research",
+   "s": "biodefense",
+   "t": "N",
+   "k": "law",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Replaces the 2024 DURC/PEPP policy. Prohibits dangerous gain-of-function research, restricts international research of concern, and requires institutional certification enforceable under the False Claims Act.",
+   "dir": "",
+   "plan": [
+    [
+     "d",
+     "Framework dated July 20; announced July 28 by NIH, HHS, OSTP",
+     "2026-07-28"
+    ],
+    [
+     "p",
+     "Agency implementation guidance (120 days)",
+     "2026-11"
+    ],
+    [
+     "p",
+     "False Claims Act certification materiality (180 days)",
+     "2027-01"
+    ]
+   ],
+   "obj": [],
+   "f": [
+    "NIH notice NOT-OD-26-101",
+    "24-hour stop-work notice; penalties up to five years of ineligibility for federal life sciences funding",
+    "Agencies must publish lists of entities of concern"
+   ],
+   "src": [
+    [
+     "CASRAI: USG Policy for Stopping High-Risk Life Sciences Research",
+     "https://casrai.org/news/usg-policy-stopping-high-risk-life-sciences-research-institutions-2026"
+    ],
+    [
+     "CRS IF13269: AI and Biosecurity (Sep 2026)",
+     "https://www.everycrsreport.com/files/2026-09-15_IF13269_ce00f5cc67016c1b700886eee55c89c14884d48b.html"
+    ]
+   ]
+  },
+  {
+   "id": "nasframework",
+   "n": "Framework for Nucleic Acid Synthesis Screening (2024)",
+   "s": "biodefense",
+   "t": "N",
+   "k": "law",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "2024 federal framework on screening synthetic DNA/RNA orders; EO 14292 ordered its revision within 90 days; CRS reports it unrevised as of July and September 2026.",
+   "dir": "",
+   "obj": [],
+   "f": [
+    "Originated under EO 14110, rescinded January 2025",
+    "Ossoff: more than 400 days past the EO deadline (June 24, 2026)",
+    "Industry-led IGSC protocol screens orders and customers"
+   ],
+   "src": [
+    [
+     "CRS IF13269: AI and Biosecurity (Sep 2026)",
+     "https://www.everycrsreport.com/files/2026-09-15_IF13269_ce00f5cc67016c1b700886eee55c89c14884d48b.html"
+    ],
+    [
+     "Sen. Ossoff letter to OSTP (Jun 24, 2026)",
+     "https://www.ossoff.senate.gov/wp-content/uploads/2026/07/26.06.24_OSTP-AI-Letter.pdf"
+    ]
+   ]
+  },
+  {
+   "id": "eo14236",
+   "n": "EO 14236 (revocation of EO 14081)",
+   "s": "biodefense",
+   "t": "N",
+   "k": "law",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "March 14, 2025 order rescinding 19 actions including Biden's EO 14081 on biotechnology and biomanufacturing.",
+   "dir": "",
+   "obj": [],
+   "f": [
+    "Fact sheet: EO 14081 'funneled Federal resources into radical biotech and biomanufacturing initiatives under the guise of environmental policy'"
+   ],
+   "src": [
+    [
+     "JD Supra: EO 14236 revokes EO 14081",
+     "https://jdsupra.com/legalnews/president-trump-revokes-2022-eo-on-8979367"
+    ]
+   ]
+  },
+  {
+   "id": "eo14336",
+   "n": "EO 14336",
+   "s": "biodefense",
+   "t": "N",
+   "k": "law",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Executive order directing ASPR to identify the most critical drugs for national health security; cited as basis for the FY27 $327M Pandemic Preparedness and Biodefense line. [VERIFY]",
+   "dir": "",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "ASPR: FY 2027 budget request highlights",
+     "https://akastage-www.aspr.gov/about/budget/fy-2027-presidents-budget-request-highlights"
+    ]
+   ]
+  },
+  {
+   "id": "sec1260h",
+   "n": "DoD Section 1260H list (Chinese military companies)",
+   "s": "biodefense",
+   "t": "K",
+   "k": "law",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "DoD list of Chinese military companies; listing plus an OMB biotech finding makes a firm a biotechnology company of concern under BIOSECURE.",
+   "dir": "",
+   "plan": [
+    [
+     "d",
+     "Updated to 188 entities including WuXi AppTec, BGI Group, MGI Tech, Complete Genomics",
+     "2026-06-08"
+    ],
+    [
+     "b",
+     "WuXi AppTec designation enjoined by court",
+     "2026-08-07"
+    ]
+   ],
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Ropes & Gray: Updated 1260H list includes WuXi AppTec",
+     "https://www.ropesgray.com/en/insights/alerts/2026/06/department-of-defense-releases-updated-1260h-list-that-includes-wuxi-apptec"
+    ],
+    [
+     "DLA Piper: U.S.-China life sciences policy developments (Aug 2026)",
+     "https://www.dlapiper.com/en-us/insights/publications/2026/08/us-china-life-sciences-policy-developments-top-points-for-companies"
+    ]
+   ]
+  },
+  {
+   "id": "ostp",
+   "n": "White House OSTP",
+   "s": "state",
+   "t": "N",
+   "k": "buyer",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Office of Science and Technology Policy; owns EO 14292 deliverables on gain-of-function oversight and synthesis screening.",
+   "dir": "",
+   "obj": [],
+   "f": [
+    "Director Michael Kratsios"
+   ],
+   "src": [
+    [
+     "Sen. Ossoff letter to OSTP (Jun 24, 2026)",
+     "https://www.ossoff.senate.gov/wp-content/uploads/2026/07/26.06.24_OSTP-AI-Letter.pdf"
+    ],
+    [
+     "CASRAI: USG Policy for Stopping High-Risk Life Sciences Research",
+     "https://casrai.org/news/usg-policy-stopping-high-risk-life-sciences-research-institutions-2026"
+    ]
+   ]
+  },
+  {
+   "id": "nist",
+   "n": "NIST",
+   "s": "state",
+   "t": "N",
+   "k": "buyer",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Runs the Biosecurity for Synthetic Nucleic Acid Sequences effort on DNA screening standards and AI biodesign risk.",
+   "dir": "",
+   "obj": [],
+   "f": [
+    "Has said AI-designed sequences could evade current screening tools",
+    "Under Secretary Arvind Raman copied on Ossoff letter"
+   ],
+   "src": [
+    [
+     "CRS IF13269: AI and Biosecurity (Jul 2026)",
+     "https://www.everycrsreport.com/files/2026-07-16_IF13269_753d0316d2bb9ed4d75d363e287bcacbf13b40fb.html"
+    ],
+    [
+     "Sen. Ossoff letter to OSTP (Jun 24, 2026)",
+     "https://www.ossoff.senate.gov/wp-content/uploads/2026/07/26.06.24_OSTP-AI-Letter.pdf"
+    ]
+   ]
+  },
+  {
+   "id": "aspr",
+   "n": "ASPR",
+   "s": "biodefense",
+   "t": "K",
+   "k": "buyer",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Administration for Strategic Preparedness and Response; parent of BARDA, Project BioShield and the Strategic National Stockpile.",
+   "dir": "",
+   "strat": "FY27 request cuts ASPR to $3,337.1M from $3,627.6M, cuts BARDA 38%, eliminates the Hospital Preparedness Program, and raises Pandemic Preparedness and Biodefense to $327M for critical-drug and API onshoring.",
+   "plan": [
+    [
+     "m",
+     "FY27 budget request",
+     "2026"
+    ],
+    [
+     "p",
+     "Senate confirmation of nominee Sean Kaufman",
+     ""
+    ],
+    [
+     "b",
+     "PAHPA authorities lapsed since 2023; stopgap extensions",
+     ""
+    ]
+   ],
+   "obj": [],
+   "f": [
+    "FY27: BARDA $654.4M (from $1,050.0M); BioShield $725.0M (from $850.0M); SNS $938.2M (from $1,000.0M); Pandemic Influenza $308.0M flat",
+    "HPP cooperative agreements $240M to $0"
+   ],
+   "src": [
+    [
+     "ASPR: FY 2027 budget request highlights",
+     "https://akastage-www.aspr.gov/about/budget/fy-2027-presidents-budget-request-highlights"
+    ],
+    [
+     "STAT: ASPR and PAHPA reauthorization",
+     "https://www.statnews.com/2026/06/16/aspr-pandemic-all-hazard-preparedness-act-reauthorization/"
+    ],
+    [
+     "AACOM: HELP nomination hearings for ASPR and CDC",
+     "https://www.aacom.org/news-reports/news/2026/07/27/help-committee-holds-nomination-hearings-for-aspr-and-cdc-leadership"
+    ]
+   ]
+  },
+  {
+   "id": "barda",
+   "n": "BARDA",
+   "s": "biodefense",
+   "t": "N",
+   "k": "buyer",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Biomedical Advanced Research and Development Authority within ASPR; funds medical countermeasure development.",
+   "dir": "",
+   "obj": [],
+   "f": [
+    "Aug 5, 2025: 22 mRNA projects (~$500M) terminated or restructured; Arcturus and Amplitude allowed to finish; BARDA Ventures equity via GHIC halted",
+    "FY27 request $654.4M vs $1,050.0M FY26 enacted; ~$105M shifted to program management"
+   ],
+   "src": [
+    [
+     "HHS: Winding down mRNA development under BARDA",
+     "https://hhs.gov/press-room/hhs-winds-down-mrna-development-under-barda.html"
+    ],
+    [
+     "ASPR: FY 2027 budget request highlights",
+     "https://akastage-www.aspr.gov/about/budget/fy-2027-presidents-budget-request-highlights"
+    ]
+   ],
+   "plan": []
+  },
+  {
+   "id": "sns",
+   "n": "Strategic National Stockpile",
+   "s": "biodefense",
+   "t": "N",
+   "k": "prog",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Federal medical countermeasure stockpile managed under ASPR.",
+   "dir": "",
+   "obj": [],
+   "f": [
+    "FY27 request $938.2M vs $1,000.0M FY26 enacted"
+   ],
+   "src": [
+    [
+     "ASPR: FY 2027 budget request highlights",
+     "https://akastage-www.aspr.gov/about/budget/fy-2027-presidents-budget-request-highlights"
+    ]
+   ]
+  },
+  {
+   "id": "bioshield",
+   "n": "Project BioShield",
+   "s": "biodefense",
+   "t": "N",
+   "k": "prog",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "ASPR procurement fund for medical countermeasures.",
+   "dir": "",
+   "obj": [],
+   "f": [
+    "FY27 request $725.0M vs $850.0M FY26 enacted"
+   ],
+   "src": [
+    [
+     "ASPR: FY 2027 budget request highlights",
+     "https://akastage-www.aspr.gov/about/budget/fy-2027-presidents-budget-request-highlights"
+    ]
+   ]
+  },
+  {
+   "id": "nwss",
+   "n": "CDC National Wastewater Surveillance System (NWSS)",
+   "s": "biodefense",
+   "t": "K",
+   "k": "prog",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "About 1,300 wastewater testing sites covering about 144 million people (June 2026), funded from 2021 American Rescue Plan money that runs out in fall 2026.",
+   "dir": "",
+   "strat": "CDC grants most money to states and contracts Verily for direct testing at 100+ sites. Advocates seek at least $120M in FY27; the SEWER Act would provide $150M a year through 2030.",
+   "plan": [
+    [
+     "d",
+     "Verily contract begins",
+     "2023"
+    ],
+    [
+     "m",
+     "Verily contract extended to Sep 14, 2026 pending re-competition",
+     "2026-09-14"
+    ],
+    [
+     "b",
+     "Federal funding cliff in fall 2026",
+     "2026"
+    ]
+   ],
+   "obj": [],
+   "f": [
+    "Director Amy Kirby",
+    "Several states funded into 2027; Ohio through July 2029"
+   ],
+   "src": [
+    [
+     "The Sick Times: Wastewater funding beyond fall 2026",
+     "https://thesicktimes.org/2026/06/30/wastewater-testing-is-vital-for-public-health-it-needs-sustained-funding-to-continue-beyond-fall-2026/"
+    ]
+   ]
+  },
+  {
+   "id": "tgs",
+   "n": "CDC Traveler-Based Genomic Surveillance (TGS)",
+   "s": "biodefense",
+   "t": "N",
+   "k": "prog",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Voluntary, anonymous sampling of arriving international travelers at select U.S. airports, launched 2021; partners Ginkgo Biosecurity (now Perimeter) and XWELL.",
+   "dir": "",
+   "obj": [],
+   "f": [
+    "Passed one million participants (Jan 30, 2026)",
+    "More than 2,600 airplane wastewater samples analyzed"
+   ],
+   "src": [
+    [
+     "CDC: TGS passes one million participants",
+     "https://www.cdc.gov/media/releases/2026/2026-cdc-surpasses-1-million-voluntary-air-travel-participants-in-biosurveillance-program.html"
+    ]
+   ]
+  },
+  {
+   "id": "cfa",
+   "n": "CDC Center for Forecasting and Outbreak Analytics (CFA)",
+   "s": "biodefense",
+   "t": "N",
+   "k": "buyer",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "CDC center for national outbreak modeling and forecasting; its director serves as principal data-science advisor to the CDC Director.",
+   "dir": "",
+   "obj": [],
+   "f": [
+    "Director posting Nov 2022"
+   ],
+   "src": [
+    [
+     "FedHealthIT: CDC CFA director posting",
+     "https://www.insights.govforum.io/?p=279349"
+    ]
+   ]
+  },
+  {
+   "id": "cwmd",
+   "n": "DHS Countering WMD Office (dissolved)",
+   "s": "biodefense",
+   "t": "N",
+   "k": "buyer",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "DHS office dissolved by FY26 DHS appropriations (H.R. 7147); functions dispersed and the Assistant Secretary replaced by a CWMD Coordinator. [VERIFY]",
+   "dir": "",
+   "obj": [],
+   "f": [
+    "Radiation portal work to CBP; training to FEMA",
+    "Earlier testimony: office 'spun down worse and worse' (Asha George)"
+   ],
+   "src": [
+    [
+     "Chemical Facility Security News: DHS CWMD office to close",
+     "https://chemical-facility-security-news.blogspot.com/2026/05/review-dhs-cwmd-office-to-close.html"
+    ],
+    [
+     "HSToday: CWMD and BioWatch testimony",
+     "https://www.hstoday.us/federal-pages/dhs/cwmd-has-spun-down-worse-and-worse-with-flawed-biothreat-detection-lawmakers-told/"
+    ]
+   ]
+  },
+  {
+   "id": "biowatch",
+   "n": "BioWatch",
+   "s": "biodefense",
+   "t": "N",
+   "k": "prog",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "DHS air-monitoring system for aerosolized biological attacks in 30+ metro areas in 22 states, about one-third of the population; created 2003.",
+   "dir": "",
+   "plan": [
+    [
+     "d",
+     "FY26 BioWatch grant program posted via FEMA, $35M, ~40 awards",
+     "2026-07-15"
+    ]
+   ],
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Grants.gov: FY2026 BioWatch grant program",
+     "https://simpler.grants.gov/opportunity/b7dc9f33-5b22-4af5-ba24-09b38ecc4b26"
+    ],
+    [
+     "HSToday: CWMD and BioWatch testimony",
+     "https://www.hstoday.us/federal-pages/dhs/cwmd-has-spun-down-worse-and-worse-with-flawed-biothreat-detection-lawmakers-told/"
+    ]
+   ]
+  },
+  {
+   "id": "bd21",
+   "n": "BioDetection 21 (BD21)",
+   "s": "biodefense",
+   "t": "N",
+   "k": "prog",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "DHS program to replace BioWatch; criticized in Congress and by the Bipartisan Commission on Biodefense.",
+   "dir": "",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "HSToday: CWMD and BioWatch testimony",
+     "https://www.hstoday.us/federal-pages/dhs/cwmd-has-spun-down-worse-and-worse-with-flawed-biothreat-detection-lawmakers-told/"
+    ],
+    [
+     "GAO-21-292: Replacing BioWatch",
+     "https://gao.gov/products/gao-21-292"
+    ]
+   ]
+  },
+  {
+   "id": "fema",
+   "n": "FEMA",
+   "s": "state",
+   "t": "N",
+   "k": "buyer",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Administers FY26 BioWatch grants; received CWMD training functions.",
+   "dir": "",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Grants.gov: FY2026 BioWatch grant program",
+     "https://simpler.grants.gov/opportunity/b7dc9f33-5b22-4af5-ba24-09b38ecc4b26"
+    ],
+    [
+     "Chemical Facility Security News: DHS CWMD office to close",
+     "https://chemical-facility-security-news.blogspot.com/2026/05/review-dhs-cwmd-office-to-close.html"
+    ]
+   ]
+  },
+  {
+   "id": "nsf",
+   "n": "National Science Foundation",
+   "s": "state",
+   "t": "N",
+   "k": "buyer",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Co-funds BioMADE projects and a roughly $400M national network of AI-enabled cloud labs.",
+   "dir": "",
+   "obj": [],
+   "f": [
+    "With DoD, $21.4M to 14 BioMADE projects (Apr 2026)"
+   ],
+   "src": [
+    [
+     "FoodNavigator: BioMADE pilot plants",
+     "https://www.foodnavigator.com/Article/2026/05/11/precision-fermentation-us-to-open-pilot-plants-as-issue-of-national-security/"
+    ],
+    [
+     "Ginkgo: Q2 2026 results",
+     "https://investors.ginkgobioworks.com/news/news-details/2026/Ginkgo-Bioworks-Reports-Second-Quarter-2026-Results-Wins-Government-Contracts-to-Build-Autonomous-Labs-at-MIT-Caltech-Northwestern-and-University-of-Maryland-2026-qs5ge_LiVB/default.aspx"
+    ],
+    [
+     "IoT Australia: The Internet of Bio-NanoThings",
+     "https://www.iotaustralia.org.au/2015/07/28/iotnewsglobal/get-ready-for-the-internet-of-bio-nanothings"
+    ]
+   ],
+   "strat": "",
+   "plan": []
+  },
+  {
+   "id": "ginkgo",
+   "n": "Ginkgo Bioworks",
+   "s": "biodefense",
+   "t": "M",
+   "k": "co",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Boston synthetic-biology company that spun out its biosecurity unit in April 2026 to focus on autonomous labs.",
+   "dir": "Make biology easier to engineer through autonomous labs.",
+   "tk": "DNA",
+   "ex": "NYSE",
+   "strat": "Sold Ginkgo Biosecurity for about 20% of Tower Biosecurity (Perimeter) and now sells robotic autonomous labs to NSF-network universities, DOE national labs and pharma, citing the Genesis Mission's $5B push for autonomous labs.",
+   "plan": [
+    [
+     "d",
+     "DARPA RPM award up to $18M",
+     "2023-07-20"
+    ],
+    [
+     "d",
+     "Biosecurity divestiture agreed",
+     "2026-02-26"
+    ],
+    [
+     "d",
+     "Divestiture closed",
+     "2026-04-03"
+    ],
+    [
+     "m",
+     "PNNL EMSL 97-instrument autonomous lab, $47M",
+     "2026"
+    ],
+    [
+     "m",
+     "Autonomous labs for Caltech, Northwestern, University of Maryland",
+     "2026"
+    ]
+   ],
+   "obj": [],
+   "f": [
+    "FY2025 revenue $170.2M (down 25%); biosecurity $37.4M (down 30%); GAAP net loss $312.8M; cash and securities $423M",
+    "Q2 2026 revenue $20M (down 48%); cash $302M; 2026 burn guide $125-150M",
+    "Former IARPA B24IC prime"
+   ],
+   "src": [
+    [
+     "SEC: Ginkgo Q4/FY2025 earnings release",
+     "https://www.sec.gov/Archives/edgar/data/1830214/000162828026012339/ex991earningspr.htm"
+    ],
+    [
+     "Ginkgo: Q2 2026 results",
+     "https://investors.ginkgobioworks.com/news/news-details/2026/Ginkgo-Bioworks-Reports-Second-Quarter-2026-Results-Wins-Government-Contracts-to-Build-Autonomous-Labs-at-MIT-Caltech-Northwestern-and-University-of-Maryland-2026-qs5ge_LiVB/default.aspx"
+    ],
+    [
+     "Index.vn: Ginkgo Q1 2026 call highlights",
+     "https://index.vn/en/news/ginkgo-bioworks-q1-2026-earnings-call-highlights"
+    ],
+    [
+     "Pharmaceutical Technology: Ginkgo DARPA RPM award",
+     "https://www.pharmaceutical-tech.com/news/ginkgo-bioworks-awarded-darpa-contract-to-reimagine"
+    ],
+    [
+     "IARPA: B24IC",
+     "https://www.iarpa.gov/research-programs/b24ic"
+    ]
+   ]
+  },
+  {
+   "id": "perimeter",
+   "n": "Perimeter (formerly Ginkgo Biosecurity)",
+   "s": "biodefense",
+   "t": "K",
+   "k": "co",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Standalone biosecurity company spun out of Ginkgo; runs biosurveillance networks for governments.",
+   "dir": "Be the world's best-capitalized biosecurity startup.",
+   "pv": "$60M raised · Apr 2026",
+   "strat": "Sells Canopy (sampling, sequencing and analytics nodes) and Horizon (intelligence layer) as a Global Biosurveillance Network to nation states and multinationals, acting as advisor and operator. Primary market U.S.; targets UK, Nordics, Germany, Poland, Japan, South Korea, Singapore.",
+   "plan": [
+    [
+     "d",
+     "Launched with $60M growth capital",
+     "2026-04-13"
+    ],
+    [
+     "m",
+     "CDC TGS airport program",
+     "2021"
+    ],
+    [
+     "m",
+     "EU diagnostic platform work",
+     ""
+    ]
+   ],
+   "obj": [],
+   "f": [
+    "CEO Matt McKnight",
+    "Investors: Kanders & Company with SCS Financial, Goldcrest Capital, Four Cities Capital, Safe Artificial Intelligence Fund (SAIF)",
+    "Corporate vehicle reported as Tower Biosecurity, Inc.; Ginkgo holds about 20% [VERIFY]"
+   ],
+   "src": [
+    [
+     "Tectonic: Ginkgo Biosecurity spins out as Perimeter",
+     "https://www.tectonicdefense.com/ginkgo-biosecurity-spins-out-as-perimeter/"
+    ],
+    [
+     "Panabee: Ginkgo divests biosecurity for 20% of Tower Biosecurity",
+     "https://www.panabee.com/news/ginkgo-bioworks-divests-biosecurity-operations-for-20-stake-in-tower-biosecurity"
+    ],
+    [
+     "Index.vn: Ginkgo Q1 2026 call highlights",
+     "https://index.vn/en/news/ginkgo-bioworks-q1-2026-earnings-call-highlights"
+    ]
+   ]
+  },
+  {
+   "id": "xwell",
+   "n": "XWELL (XpresCheck)",
+   "s": "biodefense",
+   "t": "N",
+   "k": "co",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Airport health-services company; CDC TGS partner.",
+   "dir": "",
+   "tk": "XWEL",
+   "ex": "NASDAQ",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "CDC: TGS passes one million participants",
+     "https://www.cdc.gov/media/releases/2026/2026-cdc-surpasses-1-million-voluntary-air-travel-participants-in-biosurveillance-program.html"
+    ]
+   ]
+  },
+  {
+   "id": "verily",
+   "n": "Verily",
+   "s": "biodefense",
+   "t": "N",
+   "k": "co",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Alphabet life-sciences unit; CDC contractor for direct wastewater testing at 100+ NWSS sites since fall 2023.",
+   "dir": "",
+   "obj": [],
+   "f": [
+    "Contract extended to Sep 14, 2026 pending re-competition"
+   ],
+   "src": [
+    [
+     "The Sick Times: Wastewater funding beyond fall 2026",
+     "https://thesicktimes.org/2026/06/30/wastewater-testing-is-vital-for-public-health-it-needs-sustained-funding-to-continue-beyond-fall-2026/"
+    ]
+   ]
+  },
+  {
+   "id": "battelle",
+   "n": "Battelle",
+   "s": "biodefense",
+   "t": "N",
+   "k": "co",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Research nonprofit; DTRA STEP 2.0 sole awardee and IARPA B24IC prime.",
+   "dir": "",
+   "pv": "nonprofit",
+   "obj": [],
+   "f": [
+    "STEP 2.0: $52.9M base, $93.3M potential (Feb 2026)"
+   ],
+   "src": [
+    [
+     "Battelle: DTRA STEP 2.0",
+     "https://www.battelle.org/insights/newsroom/news-details/2026/03/02/battelle-wins--93m-contract-to-boost-us-biodefense--biological-threat-readiness"
+    ],
+    [
+     "IARPA: B24IC",
+     "https://www.iarpa.gov/research-programs/b24ic"
+    ]
+   ]
+  },
+  {
+   "id": "emergent",
+   "n": "Emergent BioSolutions",
+   "s": "biodefense",
+   "t": "N",
+   "k": "co",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Medical countermeasure maker; JPEO-CBRND anthrax vaccine supplier.",
+   "dir": "",
+   "tk": "EBS",
+   "ex": "NYSE",
+   "obj": [],
+   "f": [
+    "Up to $235.8M; $20.1M guaranteed minimum over five-year base (Jan 9, 2024)"
+   ],
+   "src": [
+    [
+     "JPEO-CBRND: Emergent anthrax vaccine award",
+     "https://www.jpeocbrnd.osd.mil/News-and-Media/News/Article/3650473/jpeo-cbrnd-awards-2358-million-procurement-contract-to-emergent-biosolutions-to/"
+    ]
+   ]
+  },
+  {
+   "id": "debut",
+   "n": "Debut",
+   "s": "biodefense",
+   "t": "N",
+   "k": "co",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "First DBIMP awardee: $2M for plans for a U.S. bioindustrial facility; up to $100M if it advances.",
+   "dir": "",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "ExecutiveGov: First DBIMP awardee",
+     "https://www.executivegov.com/2024/07/pentagon-selects-first-awardee-for-distributed-bioindustrial-manufacturing-program/"
+    ]
+   ]
+  },
+  {
+   "id": "visolis",
+   "n": "Visolis",
+   "s": "biodefense",
+   "t": "N",
+   "k": "co",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "DBIMP awardee making a non-toxic aircraft coating stripper and bio-based chemicals.",
+   "dir": "",
+   "obj": [],
+   "f": [
+    "$2.86M expansion Feb 3, 2026; total over $5M"
+   ],
+   "src": [
+    [
+     "SynBioBeta: Visolis DBIMP expansion",
+     "https://www.synbiobeta.com/read/visolis-secures-2.86-million-expansion-from-u.s.-department-of-war-for-bioindustrial-manufacturing"
+    ]
+   ]
+  },
+  {
+   "id": "solugen",
+   "n": "Solugen",
+   "s": "biodefense",
+   "t": "N",
+   "k": "co",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Houston DBIMP awardee, $2.0M (Nov 2024).",
+   "dir": "",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Renewable Carbon: Final nine DBIMP awards",
+     "https://renewable-carbon.eu/news/dod-releases-final-nine-awards-for-distributed-bioindustrial-manufacturing-program/"
+    ]
+   ]
+  },
+  {
+   "id": "checkerspot",
+   "n": "Checkerspot",
+   "s": "biodefense",
+   "t": "N",
+   "k": "co",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Alameda DBIMP awardee, $3.19M (Nov 2024).",
+   "dir": "",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Renewable Carbon: Final nine DBIMP awards",
+     "https://renewable-carbon.eu/news/dod-releases-final-nine-awards-for-distributed-bioindustrial-manufacturing-program/"
+    ]
+   ]
+  },
+  {
+   "id": "liberationlabs",
+   "n": "Liberation Labs",
+   "s": "biodefense",
+   "t": "N",
+   "k": "co",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "New York DBIMP awardee, $1.4M (Nov 2024).",
+   "dir": "",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Renewable Carbon: Final nine DBIMP awards",
+     "https://renewable-carbon.eu/news/dod-releases-final-nine-awards-for-distributed-bioindustrial-manufacturing-program/"
+    ]
+   ]
+  },
+  {
+   "id": "perfectday",
+   "n": "Perfect Day",
+   "s": "biodefense",
+   "t": "N",
+   "k": "co",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Berkeley DBIMP awardee, $1.24M (Nov 2024).",
+   "dir": "",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Renewable Carbon: Final nine DBIMP awards",
+     "https://renewable-carbon.eu/news/dod-releases-final-nine-awards-for-distributed-bioindustrial-manufacturing-program/"
+    ]
+   ]
+  },
+  {
+   "id": "everyco",
+   "n": "The EVERY Company",
+   "s": "biodefense",
+   "t": "N",
+   "k": "co",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Daly City DBIMP awardee, $2.0M (Nov 2024).",
+   "dir": "",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Renewable Carbon: Final nine DBIMP awards",
+     "https://renewable-carbon.eu/news/dod-releases-final-nine-awards-for-distributed-bioindustrial-manufacturing-program/"
+    ]
+   ]
+  },
+  {
+   "id": "kalocyte",
+   "n": "KaloCyte",
+   "s": "biodefense",
+   "t": "N",
+   "k": "co",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "DARPA FSHARP performer developing a synthetic red blood cell component.",
+   "dir": "",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "GrantedAI: DARPA FSHARP and SWiFT",
+     "https://grantedai.com/blog/darpa-synthetic-blood-fsharp-46-million-swift-sbir-powdered-blood-battlefield-medicine-2026"
+    ]
+   ]
+  },
+  {
+   "id": "kanders",
+   "n": "Kanders & Company",
+   "s": "capital",
+   "t": "N",
+   "k": "cap",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Listed first among Perimeter's $60M investors (April 2026).",
+   "dir": "",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Tectonic: Ginkgo Biosecurity spins out as Perimeter",
+     "https://www.tectonicdefense.com/ginkgo-biosecurity-spins-out-as-perimeter/"
+    ]
+   ]
+  },
+  {
+   "id": "saif",
+   "n": "Safe Artificial Intelligence Fund (SAIF)",
+   "s": "capital",
+   "t": "N",
+   "k": "cap",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Investor in Perimeter's $60M round (April 2026).",
+   "dir": "",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Tectonic: Ginkgo Biosecurity spins out as Perimeter",
+     "https://www.tectonicdefense.com/ginkgo-biosecurity-spins-out-as-perimeter/"
+    ]
+   ]
+  },
+  {
+   "id": "scsfin",
+   "n": "SCS Financial",
+   "s": "capital",
+   "t": "N",
+   "k": "cap",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Investor in Perimeter's $60M round (April 2026).",
+   "dir": "",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Tectonic: Ginkgo Biosecurity spins out as Perimeter",
+     "https://www.tectonicdefense.com/ginkgo-biosecurity-spins-out-as-perimeter/"
+    ]
+   ]
+  },
+  {
+   "id": "goldcrest",
+   "n": "Goldcrest Capital",
+   "s": "capital",
+   "t": "N",
+   "k": "cap",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Investor in Perimeter's $60M round (April 2026).",
+   "dir": "",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Tectonic: Ginkgo Biosecurity spins out as Perimeter",
+     "https://www.tectonicdefense.com/ginkgo-biosecurity-spins-out-as-perimeter/"
+    ]
+   ]
+  },
+  {
+   "id": "fourcities",
+   "n": "Four Cities Capital",
+   "s": "capital",
+   "t": "N",
+   "k": "cap",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Investor in Perimeter's $60M round (April 2026).",
+   "dir": "",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Tectonic: Ginkgo Biosecurity spins out as Perimeter",
+     "https://www.tectonicdefense.com/ginkgo-biosecurity-spins-out-as-perimeter/"
+    ]
+   ]
+  },
+  {
+   "id": "bgi",
+   "n": "BGI Group",
+   "s": "biodefense",
+   "t": "K",
+   "k": "counter",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Chinese genomics group (including BGI Genomics, Forensic Genomics International and MGI Tech) on DoD's 1260H list.",
+   "dir": "",
+   "obj": [],
+   "f": [
+    "BIS placed BGI subsidiaries on the Entity List in March 2023 over genomic data and surveillance risk",
+    "Reported in 2020 as cooperating with G42 on UAE genomics and COVID test kits [VERIFY]"
+   ],
+   "src": [
+    [
+     "Ropes & Gray: BIOSECURE Act enacted",
+     "https://www.ropesgray.com/en/insights/alerts/2026/01/biosecure-act-enacted"
+    ],
+    [
+     "Ropes & Gray: Updated 1260H list includes WuXi AppTec",
+     "https://www.ropesgray.com/en/insights/alerts/2026/06/department-of-defense-releases-updated-1260h-list-that-includes-wuxi-apptec"
+    ],
+    [
+     "House China Select Committee: Gallagher letter on G42",
+     "https://chinaselectcommittee.house.gov/media/press-releases/gallagher-calls-usg-investigate-ai-firm-g42-ties-prc-military-intelligence"
+    ],
+    [
+     "Wikipedia: G42",
+     "https://en.wikipedia.org/wiki/G42_(company)"
+    ]
+   ],
+   "plan": []
+  },
+  {
+   "id": "mgi",
+   "n": "MGI Tech",
+   "s": "biodefense",
+   "t": "N",
+   "k": "counter",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "BGI-affiliated sequencing instrument maker on the 1260H list.",
+   "dir": "",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Ropes & Gray: BIOSECURE Act enacted",
+     "https://www.ropesgray.com/en/insights/alerts/2026/01/biosecure-act-enacted"
+    ],
+    [
+     "Ropes & Gray: Updated 1260H list includes WuXi AppTec",
+     "https://www.ropesgray.com/en/insights/alerts/2026/06/department-of-defense-releases-updated-1260h-list-that-includes-wuxi-apptec"
+    ]
+   ]
+  },
+  {
+   "id": "completegen",
+   "n": "Complete Genomics",
+   "s": "biodefense",
+   "t": "N",
+   "k": "counter",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Sequencing company named on DoD's June 2026 1260H update; not on the prior list.",
+   "dir": "",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Ropes & Gray: Updated 1260H list includes WuXi AppTec",
+     "https://www.ropesgray.com/en/insights/alerts/2026/06/department-of-defense-releases-updated-1260h-list-that-includes-wuxi-apptec"
+    ],
+    [
+     "Ropes & Gray: BIOSECURE Act enacted",
+     "https://www.ropesgray.com/en/insights/alerts/2026/01/biosecure-act-enacted"
+    ]
+   ]
+  },
+  {
+   "id": "wuxi",
+   "n": "WuXi AppTec",
+   "s": "biodefense",
+   "t": "K",
+   "k": "counter",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Chinese contract research and manufacturing company added to the 1260H list June 8, 2026; designation enjoined Aug 7, 2026.",
+   "dir": "",
+   "strat": "Disputes any military link and is pursuing removal in court and through BIOSECURE's OMB removal process.",
+   "plan": [
+    [
+     "d",
+     "Added to 1260H list",
+     "2026-06-08"
+    ],
+    [
+     "d",
+     "Sued in D.D.C.",
+     "2026-06-11"
+    ],
+    [
+     "d",
+     "Preliminary injunction against DoD enforcement",
+     "2026-08-07"
+    ]
+   ],
+   "obj": [],
+   "f": [
+    "Designation relied on a 5.32% AVIC figure that was WuXi's share of AVIC's portfolio; AVIC's real ownership about 0.001%",
+    "WuXi Biologics not named on list"
+   ],
+   "src": [
+    [
+     "Ropes & Gray: Updated 1260H list includes WuXi AppTec",
+     "https://www.ropesgray.com/en/insights/alerts/2026/06/department-of-defense-releases-updated-1260h-list-that-includes-wuxi-apptec"
+    ],
+    [
+     "DLA Piper: U.S.-China life sciences policy developments (Aug 2026)",
+     "https://www.dlapiper.com/en-us/insights/publications/2026/08/us-china-life-sciences-policy-developments-top-points-for-companies"
+    ],
+    [
+     "WuXi AppTec added to DOW's 1260H list (Holland & Knight, 2026-06)",
+     "https://www.hklaw.com/en/insights/publications/2026/06/wuxi-apptec-added-to-dows-1260h-list"
+    ],
+    [
+     "BIOSECURE Act Enacted (Ropes & Gray, 2026-01)",
+     "https://www.ropesgray.com/en/insights/alerts/2026/01/biosecure-act-enacted"
+    ]
+   ],
+   "tk": "2359",
+   "ex": "HKEX"
+  },
+  {
+   "id": "plabio",
+   "n": "PLA biological research (State Dept compliance findings)",
+   "s": "biodefense",
+   "t": "N",
+   "k": "threat",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "State Department's annual compliance report (April 2025) says China's military continued biological and toxin research with potential military uses, omitted two military labs (Beijing, Lingbao) from BWC declarations, and probably can use public AI/ML tools in related work.",
+   "dir": "",
+   "obj": [],
+   "f": [
+    "Names the PLA Academy of Military Medical Sciences",
+    "First report to cite AI use in suspected bioweapons research"
+   ],
+   "src": [
+    [
+     "Washington Times: State Dept compliance report on China (Apr 2025)",
+     "https://www.washingtontimes.com/news/2025/apr/22/us-says-china-using-ai-boost-biological-weapons-research/"
+    ]
+   ]
+  },
+  {
+   "id": "mubadala",
+   "n": "Mubadala",
+   "s": "capital",
+   "t": "N",
+   "k": "cap",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Abu Dhabi sovereign investor; Mubadala Health merged with G42 Healthcare to form M42.",
+   "dir": "",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Wikipedia: G42",
+     "https://en.wikipedia.org/wiki/G42_(company)"
+    ],
+    [
+     "Zawya: M42 appoints Dimitris Moulavasilis",
+     "https://www.zawya.com/press-release/people-in-the-news/m42-appoints-dimitris-moulavasilis-as-group-ceo-tr72shp9"
+    ]
+   ]
+  },
+  {
+   "id": "m42",
+   "n": "M42",
+   "s": "gulf",
+   "t": "K",
+   "k": "co",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Abu Dhabi health and genomics group formed from G42 Healthcare and Mubadala Health; operates the Emirati Genome Programme.",
+   "dir": "Build precision health on national genome data.",
+   "strat": "Runs population genomics (Emirati Genome Programme), the Abu Dhabi Biobank with the Department of Health, and 480+ facilities in 26 countries. Chaired by G42 CEO Peng Xiao.",
+   "plan": [
+    [
+     "d",
+     "Merger announced",
+     "2022-10"
+    ],
+    [
+     "d",
+     "Launched as M42",
+     "2023-04"
+    ],
+    [
+     "d",
+     "Dimitris Moulavasilis named Group CEO",
+     "2025-05-06"
+    ],
+    [
+     "d",
+     "Abu Dhabi Biobank inaugurated",
+     "2026-04"
+    ]
+   ],
+   "obj": [],
+   "f": [
+    "20,000+ employees",
+    "Group CEO Hasan Jasem Al Nowais.",
+    "Reported link to the Emirati Genome Programme (800,000+ participants) [VERIFY]."
+   ],
+   "src": [
+    [
+     "Zawya: M42 appoints Dimitris Moulavasilis",
+     "https://www.zawya.com/press-release/people-in-the-news/m42-appoints-dimitris-moulavasilis-as-group-ceo-tr72shp9"
+    ],
+    [
+     "Wikipedia: G42",
+     "https://en.wikipedia.org/wiki/G42_(company)"
+    ],
+    [
+     "The National: Abu Dhabi Biobank",
+     "https://www.thenationalnews.com/news/uae/2026/04/03/inside-abu-dhabis-cutting-edge-biobank-hailed-as-missing-link-in-precision-healthcare-vision"
+    ],
+    [
+     "M42 makes strategic investment in Juvenescence (Abu Dhabi Media Office, 2025-04-16)",
+     "https://www.mediaoffice.abudhabi/en/health/m42-makes-strategic-investment-in-juvenescence-and-forms-partnership-to-develop-therapeutics-for-age-related-diseases/"
+    ],
+    [
+     "More than 800,000 Emiratis contribute to UAE genome programme (The National, 2025-04-17)",
+     "https://www.thenationalnews.com/news/uae/2025/04/17/more-than-800000-emiratis-contribute-to-uae-genome-programme-to-boost-health-of-the-nation"
+    ]
+   ]
+  },
+  {
+   "id": "egp",
+   "n": "Emirati Genome Programme",
+   "s": "gulf",
+   "t": "K",
+   "k": "prog",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Population genome program launched in Abu Dhabi in 2019, operated by M42; more than 800,000 samples collected as of April 2025, target about one million citizens.",
+   "dir": "",
+   "obj": [],
+   "f": [
+    "600,000 samples by June 2024"
+   ],
+   "src": [
+    [
+     "The National: Abu Dhabi Biobank",
+     "https://www.thenationalnews.com/news/uae/2026/04/03/inside-abu-dhabis-cutting-edge-biobank-hailed-as-missing-link-in-precision-healthcare-vision"
+    ],
+    [
+     "Zawya: M42 appoints Dimitris Moulavasilis",
+     "https://www.zawya.com/press-release/people-in-the-news/m42-appoints-dimitris-moulavasilis-as-group-ceo-tr72shp9"
+    ]
+   ]
+  },
+  {
+   "id": "adbiobank",
+   "n": "Abu Dhabi Biobank",
+   "s": "gulf",
+   "t": "N",
+   "k": "site",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Masdar City biobank run by the Abu Dhabi Department of Health with M42; capacity for 5M+ samples and 100,000+ cord blood units.",
+   "dir": "",
+   "obj": [],
+   "f": [
+    "Inaugurated early April 2026",
+    "Partners include Khalifa University and GSK"
+   ],
+   "src": [
+    [
+     "The National: Abu Dhabi Biobank",
+     "https://www.thenationalnews.com/news/uae/2026/04/03/inside-abu-dhabis-cutting-edge-biobank-hailed-as-missing-link-in-precision-healthcare-vision"
+    ]
+   ]
+  },
+  {
+   "id": "lifera",
+   "n": "Lifera",
+   "s": "gulf",
+   "t": "N",
+   "k": "co",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "PIF company supporting Saudi Arabia's National Biotechnology Strategy: insulin (SaudiBio), genomics labs, biomanufacturing.",
+   "dir": "",
+   "plan": [
+    [
+     "d",
+     "Vaccine and biologics JV with Jamjoom Pharma",
+     "2025-10"
+    ],
+    [
+     "p",
+     "Jeddah CDMO construction",
+     "2027"
+    ],
+    [
+     "p",
+     "Jeddah CDMO commissioning",
+     "2030"
+    ]
+   ],
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "BioProcess International: Saudi Arabia's biotech bet",
+     "https://www.bioprocessintl.com/global-markets/saudi-arabia-s-big-biotech-bet-from-regional-player-to-global-leader"
+    ]
+   ]
+  },
+  {
+   "id": "saudinbs",
+   "n": "Saudi National Biotechnology Strategy",
+   "s": "gulf",
+   "t": "N",
+   "k": "law",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Vision 2030 strategy targeting regional and global biotech leadership by 2040.",
+   "dir": "",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "BioProcess International: Saudi Arabia's biotech bet",
+     "https://www.bioprocessintl.com/global-markets/saudi-arabia-s-big-biotech-bet-from-regional-player-to-global-leader"
+    ]
+   ]
+  },
+  {
+   "id": "sgp",
+   "n": "Saudi Genome Program",
+   "s": "gulf",
+   "t": "N",
+   "k": "prog",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Vision 2030 program inaugurated by Crown Prince Mohammed bin Salman to map the genetics of Saudi society and cut genetic disease.",
+   "dir": "",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Vision 2030: Saudi Genome Program",
+     "https://umbraco.vision2030.gov.sa/v2030/v2030-projects/saudi-genome-program"
+    ]
+   ]
+  },
+  {
+   "id": "koeris",
+   "n": "Michael Koeris",
+   "s": "biodefense",
+   "t": "K",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Bioprocessing scientist and serial founder running DARPA's biotech office.",
+   "dir": "",
+   "role": "Director, DARPA Biological Technologies Office (since April 2024)",
+   "strat": "Steers BTO toward battlefield medicine, agile and distributed biomanufacturing, and biothreat attribution.",
+   "plan": [
+    [
+     "d",
+     "Joined DARPA as BTO director",
+     "2024-04"
+    ]
+   ],
+   "obj": [],
+   "f": [
+    "Former professor, Keck Graduate Institute (2020)",
+    "NIH RADx portfolio executive",
+    "Co-founded Sample6 (acquired 2017)",
+    "Addgene board director; AIMBE Fellow 2026"
+   ],
+   "src": [
+    [
+     "DARPA: Michael Koeris",
+     "https://www.darpa.mil/about/people/michael-koeris"
+    ]
+   ]
+  },
+  {
+   "id": "pava",
+   "n": "Matthew Pava",
+   "s": "biodefense",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "DARPA BTO program manager for reprogrammable biomanufacturing.",
+   "dir": "",
+   "role": "Program Manager, DARPA Switch",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "SynBioBeta: DARPA Switch",
+     "https://www.synbiobeta.com/read/darpas-switch-program-seeks-to-advance-biomanufacturing-for-defense-needs"
+    ]
+   ]
+  },
+  {
+   "id": "murray-robert",
+   "n": "Robert Murray",
+   "s": "biodefense",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "DARPA BTO program manager for the $46.4M shelf-stable blood substitute program.",
+   "dir": "",
+   "role": "Program Manager, DARPA FSHARP",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "GrantedAI: DARPA FSHARP and SWiFT",
+     "https://grantedai.com/blog/darpa-synthetic-blood-fsharp-46-million-swift-sbir-powdered-blood-battlefield-medicine-2026"
+    ]
+   ]
+  },
+  {
+   "id": "mounfield",
+   "n": "William Mounfield",
+   "s": "biodefense",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "BTO program manager named in DARPA's July 2026 BTO newsletter.",
+   "dir": "",
+   "role": "Program Manager, DARPA BTO",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "DARPA BTO newsletter, July 2026",
+     "https://www.darpa.mil/sites/default/files/attachment/2026-10/darpa-newsletter-bto-july-2026.pdf"
+    ]
+   ]
+  },
+  {
+   "id": "friedman-douglas",
+   "n": "Douglas Friedman",
+   "s": "biodefense",
+   "t": "K",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Leads the DoD-founded bioindustrial manufacturing institute.",
+   "dir": "",
+   "role": "CEO, BioMADE",
+   "strat": "Build shared pilot and demonstration plants so U.S. firms stop scaling overseas: 'If the US is to remain competitive, we must do the same.'",
+   "plan": [
+    [
+     "p",
+     "Open Hayward (2027), Ames and Maple Grove (2028)",
+     "2028"
+    ]
+   ],
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "FoodNavigator: BioMADE pilot plants",
+     "https://www.foodnavigator.com/Article/2026/05/11/precision-fermentation-us-to-open-pilot-plants-as-issue-of-national-security/"
+    ],
+    [
+     "Renewable Carbon: BioMADE $132M Minnesota facility",
+     "https://renewable-carbon.eu/news/?p=162735"
+    ]
+   ]
+  },
+  {
+   "id": "nathan-david",
+   "n": "David Nathan",
+   "s": "biodefense",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Says the U.S. is 'severely lacking in pilot- and demonstration-scale equipment for precision fermentation.'",
+   "dir": "",
+   "role": "Program Director of Technology, BioMADE",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "FoodNavigator: BioMADE pilot plants",
+     "https://www.foodnavigator.com/Article/2026/05/11/precision-fermentation-us-to-open-pilot-plants-as-issue-of-national-security/"
+    ]
+   ]
+  },
+  {
+   "id": "young-todd",
+   "n": "Todd Young",
+   "s": "biodefense",
+   "t": "K",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Chairs the biotech commission and sponsors its main follow-on bills.",
+   "dir": "",
+   "role": "U.S. Senator (R-IN); Chair, NSCEB (since Sep 12, 2024)",
+   "strat": "Move NSCEB recommendations into NDAAs and standalone bipartisan bills; create a White House biotech coordination office; frame biotech as competition with China.",
+   "plan": [
+    [
+     "d",
+     "Named NSCEB Chair",
+     "2024-09-12"
+    ],
+    [
+     "d",
+     "National Biotechnology Initiative Act introduced",
+     "2025-04-10"
+    ],
+    [
+     "d",
+     "Web of Biological Data Act introduced",
+     "2026-06-11"
+    ],
+    [
+     "m",
+     "FY27 NDAA biotech provisions",
+     "2026"
+    ]
+   ],
+   "obj": [],
+   "f": [
+    "Quote: 'we now risk losing our edge to China'"
+   ],
+   "src": [
+    [
+     "NSCEB: Young named Chair (Sep 12, 2024)",
+     "https://biotech.senate.gov/?p=9192"
+    ],
+    [
+     "Sen. Young: National Biotechnology Initiative Act",
+     "https://www.young.senate.gov/?p=12463"
+    ],
+    [
+     "Sen. Young: NSCEB statement on 1260H list (Jun 10, 2026)",
+     "https://www.young.senate.gov/newsroom/press-releases/nsceb-statement-on-pentagons-updated-list-of-chinese-military-companies-operating-in-u-s/"
+    ],
+    [
+     "NSCEB monthly newsletter, July 2026",
+     "https://www.biotech.senate.gov/?p=12687"
+    ]
+   ]
+  },
+  {
+   "id": "rozo",
+   "n": "Michelle Rozo",
+   "s": "biodefense",
+   "t": "K",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "NSCEB vice chair; co-signs commission statements with Young.",
+   "dir": "",
+   "role": "Vice Chair, NSCEB",
+   "strat": "Keep biotech a top defense priority in NDAAs; backs 1260H listings of Chinese biotech firms.",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Wikipedia: NSCEB",
+     "https://en.wikipedia.org/wiki/National_Security_Commission_on_Emerging_Biotechnology"
+    ],
+    [
+     "NSCEB: FY27 NDAA biotech provisions (Jun 8, 2026)",
+     "https://www.biotech.senate.gov/press-releases/biotech-further-cemented-as-top-tech-priority-for-defense/"
+    ],
+    [
+     "Sen. Young: NSCEB statement on 1260H list (Jun 10, 2026)",
+     "https://www.young.senate.gov/newsroom/press-releases/nsceb-statement-on-pentagons-updated-list-of-chinese-military-companies-operating-in-u-s/"
+    ]
+   ]
+  },
+  {
+   "id": "frazer",
+   "n": "Caitlin Frazer",
+   "s": "biodefense",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Argues the challenge is moving biotech through technology readiness levels fast enough.",
+   "dir": "",
+   "role": "Executive Director, NSCEB",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Defence Finance Monitor: Biotech takes center stage",
+     "https://defencefinancemonitor.substack.com/p/biotech-takes-center-stage-in-us"
+    ]
+   ]
+  },
+  {
+   "id": "padilla",
+   "n": "Alex Padilla",
+   "s": "biodefense",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Co-sponsor of the National Biotechnology Initiative Act and Web of Biological Data Act.",
+   "dir": "",
+   "role": "U.S. Senator (D-CA); NSCEB Commissioner",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Sen. Young: National Biotechnology Initiative Act",
+     "https://www.young.senate.gov/?p=12463"
+    ],
+    [
+     "Wikipedia: NSCEB",
+     "https://en.wikipedia.org/wiki/National_Security_Commission_on_Emerging_Biotechnology"
+    ],
+    [
+     "NSCEB monthly newsletter, July 2026",
+     "https://www.biotech.senate.gov/?p=12687"
+    ]
+   ]
+  },
+  {
+   "id": "bice",
+   "n": "Stephanie Bice",
+   "s": "biodefense",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "House sponsor of the National Biotechnology Initiative Act.",
+   "dir": "",
+   "role": "U.S. Representative (R-OK); NSCEB Commissioner",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Sen. Young: National Biotechnology Initiative Act",
+     "https://www.young.senate.gov/?p=12463"
+    ],
+    [
+     "Wikipedia: NSCEB",
+     "https://en.wikipedia.org/wiki/National_Security_Commission_on_Emerging_Biotechnology"
+    ]
+   ]
+  },
+  {
+   "id": "khanna",
+   "n": "Ro Khanna",
+   "s": "biodefense",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "House sponsor of the National Biotechnology Initiative Act; frames biotech as strategic autonomy.",
+   "dir": "",
+   "role": "U.S. Representative (D-CA); NSCEB Commissioner",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Sen. Young: National Biotechnology Initiative Act",
+     "https://www.young.senate.gov/?p=12463"
+    ],
+    [
+     "Defence Finance Monitor: Biotech takes center stage",
+     "https://defencefinancemonitor.substack.com/p/biotech-takes-center-stage-in-us"
+    ]
+   ]
+  },
+  {
+   "id": "schmidt-eric",
+   "n": "Eric Schmidt",
+   "s": "biodefense",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Member of the biotech commission.",
+   "dir": "",
+   "role": "NSCEB Commissioner",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Wikipedia: NSCEB",
+     "https://en.wikipedia.org/wiki/National_Security_Commission_on_Emerging_Biotechnology"
+    ]
+   ]
+  },
+  {
+   "id": "zakheim",
+   "n": "Dov S. Zakheim",
+   "s": "biodefense",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "",
+   "dir": "",
+   "role": "NSCEB Commissioner; former Under Secretary of Defense (Comptroller)",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Wikipedia: NSCEB",
+     "https://en.wikipedia.org/wiki/National_Security_Commission_on_Emerging_Biotechnology"
+    ]
+   ]
+  },
+  {
+   "id": "arcangeli",
+   "n": "Paul Arcangeli",
+   "s": "biodefense",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "",
+   "dir": "",
+   "role": "NSCEB Commissioner; former HASC staff director",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Wikipedia: NSCEB",
+     "https://en.wikipedia.org/wiki/National_Security_Commission_on_Emerging_Biotechnology"
+    ]
+   ]
+  },
+  {
+   "id": "titus",
+   "n": "Alexander Titus",
+   "s": "biodefense",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "",
+   "dir": "",
+   "role": "NSCEB Commissioner; former Assistant Director for Biotechnology, OUSD(R&E)",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Wikipedia: NSCEB",
+     "https://en.wikipedia.org/wiki/National_Security_Commission_on_Emerging_Biotechnology"
+    ]
+   ]
+  },
+  {
+   "id": "belcher",
+   "n": "Angela Belcher",
+   "s": "biodefense",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "",
+   "dir": "",
+   "role": "NSCEB Commissioner; MIT",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Wikipedia: NSCEB",
+     "https://en.wikipedia.org/wiki/National_Security_Commission_on_Emerging_Biotechnology"
+    ]
+   ]
+  },
+  {
+   "id": "meyerriecks",
+   "n": "Dawn Meyerriecks",
+   "s": "biodefense",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "",
+   "dir": "",
+   "role": "NSCEB Commissioner; former CIA Deputy Director for Science and Technology",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Wikipedia: NSCEB",
+     "https://en.wikipedia.org/wiki/National_Security_Commission_on_Emerging_Biotechnology"
+    ]
+   ]
+  },
+  {
+   "id": "kelly-jason",
+   "n": "Jason Kelly",
+   "s": "biodefense",
+   "t": "K",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Ginkgo chief who chaired the biotech commission until September 2024 after about 18 months on it, then spun out Ginkgo's biosecurity unit.",
+   "dir": "",
+   "role": "CEO, Ginkgo Bioworks; NSCEB Chair until Sep 2024",
+   "strat": "Exit biosecurity into a defense-tech-funded private company while keeping a stake, and sell autonomous labs as 'necessary national infrastructure for American science.'",
+   "plan": [
+    [
+     "d",
+     "Steps down as NSCEB Chair",
+     "2024-09-12"
+    ],
+    [
+     "d",
+     "Biosecurity divestiture closes",
+     "2026-04-03"
+    ],
+    [
+     "m",
+     "Autonomous lab sales to NSF network and DOE labs",
+     "2026"
+    ]
+   ],
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "NSCEB: Young named Chair (Sep 12, 2024)",
+     "https://biotech.senate.gov/?p=9192"
+    ],
+    [
+     "SEC: Ginkgo Q4/FY2025 earnings release",
+     "https://www.sec.gov/Archives/edgar/data/1830214/000162828026012339/ex991earningspr.htm"
+    ],
+    [
+     "Ginkgo: Q2 2026 results",
+     "https://investors.ginkgobioworks.com/news/news-details/2026/Ginkgo-Bioworks-Reports-Second-Quarter-2026-Results-Wins-Government-Contracts-to-Build-Autonomous-Labs-at-MIT-Caltech-Northwestern-and-University-of-Maryland-2026-qs5ge_LiVB/default.aspx"
+    ],
+    [
+     "GenomeWeb: Ginkgo spinning off biosecurity",
+     "https://www.genomeweb.com/business-news/ginkgo-spinning-biosecurity-business-reports-24-percent-decline-q4-revenue"
+    ]
+   ]
+  },
+  {
+   "id": "mcknight",
+   "n": "Matt McKnight",
+   "s": "biodefense",
+   "t": "K",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Runs the spun-out biosurveillance company.",
+   "dir": "",
+   "role": "Founder and CEO, Perimeter (formerly Ginkgo Biosecurity)",
+   "strat": "Stand up national biosurveillance programs for governments and use the data to shape response protocols.",
+   "plan": [
+    [
+     "d",
+     "Perimeter launches with $60M",
+     "2026-04-13"
+    ]
+   ],
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Tectonic: Ginkgo Biosecurity spins out as Perimeter",
+     "https://www.tectonicdefense.com/ginkgo-biosecurity-spins-out-as-perimeter/"
+    ]
+   ]
+  },
+  {
+   "id": "breet",
+   "n": "Max Breet",
+   "s": "biodefense",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Describes Perimeter's goal as 'the world's best capitalized biosecurity startup.'",
+   "dir": "",
+   "role": "EMEA Senior Director, Perimeter",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Tectonic: Ginkgo Biosecurity spins out as Perimeter",
+     "https://www.tectonicdefense.com/ginkgo-biosecurity-spins-out-as-perimeter/"
+    ]
+   ]
+  },
+  {
+   "id": "bowsher",
+   "n": "Steve Bowsher",
+   "s": "capital",
+   "t": "K",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "IQT chief; joined IQT in 2007; former InterWest Partners general partner and E*TRADE executive.",
+   "dir": "",
+   "role": "CEO, In-Q-Tel (since Sep 8, 2023); board of trustees",
+   "strat": "Runs IQT's portfolio, including B.Next biotech investing in biomanufacturing and biodefense.",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "GovConWire: Bowsher to lead In-Q-Tel",
+     "https://www.govconwire.com/article/steve-bowsher-to-take-helm-of-in-q-tel-in-september"
+    ],
+    [
+     "IQT: Biotechnology impact story",
+     "https://iqt.org/impact-stories/biotechnology"
+    ]
+   ]
+  },
+  {
+   "id": "darby",
+   "n": "Chris Darby",
+   "s": "capital",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Built IQT partnerships with other agencies and international markets.",
+   "dir": "",
+   "role": "Former CEO, In-Q-Tel (about 17 years, to Sep 2023)",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "GovConWire: Bowsher to lead In-Q-Tel",
+     "https://www.govconwire.com/article/steve-bowsher-to-take-helm-of-in-q-tel-in-september"
+    ]
+   ]
+  },
+  {
+   "id": "kaufman",
+   "n": "Sean Kaufman",
+   "s": "biodefense",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "ASPR nominee; HELP hearing July 15, 2026; earlier postponement amid concerns about his vaccine-related views.",
+   "dir": "",
+   "role": "Nominee, Assistant Secretary for Preparedness and Response",
+   "strat": "Stronger intergovernmental partnerships, preparedness workforce, modernized medical product development and delivery.",
+   "plan": [
+    [
+     "d",
+     "HELP hearing",
+     "2026-07-15"
+    ],
+    [
+     "p",
+     "Committee vote rescheduled to July 30; floor status not established",
+     "2026-07-30"
+    ]
+   ],
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "AACOM: HELP nomination hearings for ASPR and CDC",
+     "https://www.aacom.org/news-reports/news/2026/07/27/help-committee-holds-nomination-hearings-for-aspr-and-cdc-leadership"
+    ]
+   ]
+  },
+  {
+   "id": "schwartz-erica",
+   "n": "Erica Schwartz",
+   "s": "biodefense",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Confirmed as CDC director by the Senate, 51-44, on August 5, 2026, after a July 15 HELP hearing and July 30 committee vote.",
+   "dir": "",
+   "role": "Director, CDC (confirmed August 5, 2026)",
+   "strat": "Restore public trust, modernize public health data systems, strengthen state and local partnerships.",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "AACOM: HELP nomination hearings for ASPR and CDC",
+     "https://www.aacom.org/news-reports/news/2026/07/27/help-committee-holds-nomination-hearings-for-aspr-and-cdc-leadership"
+    ]
+   ]
+  },
+  {
+   "id": "kirby-amy",
+   "n": "Amy Kirby",
+   "s": "biodefense",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Leads NWSS.",
+   "dir": "",
+   "role": "Director, CDC National Wastewater Surveillance System",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "The Sick Times: Wastewater funding beyond fall 2026",
+     "https://thesicktimes.org/2026/06/30/wastewater-testing-is-vital-for-public-health-it-needs-sustained-funding-to-continue-beyond-fall-2026/"
+    ]
+   ]
+  },
+  {
+   "id": "kratsios",
+   "n": "Michael Kratsios",
+   "s": "state",
+   "t": "K",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Owns EO 14292 deliverables; recipient of Ossoff's June 2026 letter on synthesis screening.",
+   "dir": "",
+   "role": "Director, White House OSTP",
+   "plan": [
+    [
+     "d",
+     "High-Risk Life Sciences Research policy issued",
+     "2026-07-28"
+    ],
+    [
+     "b",
+     "Synthesis-screening framework revision outstanding",
+     ""
+    ]
+   ],
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Sen. Ossoff letter to OSTP (Jun 24, 2026)",
+     "https://www.ossoff.senate.gov/wp-content/uploads/2026/07/26.06.24_OSTP-AI-Letter.pdf"
+    ],
+    [
+     "CASRAI: USG Policy for Stopping High-Risk Life Sciences Research",
+     "https://casrai.org/news/usg-policy-stopping-high-risk-life-sciences-research-institutions-2026"
+    ]
+   ]
+  },
+  {
+   "id": "ossoff",
+   "n": "Jon Ossoff",
+   "s": "state",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Wrote OSTP on June 24, 2026 asking for the status of the synthesis-screening framework and whether AI in biology needs regulation.",
+   "dir": "",
+   "role": "U.S. Senator (D-GA)",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Sen. Ossoff letter to OSTP (Jun 24, 2026)",
+     "https://www.ossoff.senate.gov/wp-content/uploads/2026/07/26.06.24_OSTP-AI-Letter.pdf"
+    ]
+   ]
+  },
+  {
+   "id": "moolenaar",
+   "n": "John Moolenaar",
+   "s": "state",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Asked Treasury Secretary Bessent on May 21, 2026 to add biotech to COINS Act controls.",
+   "dir": "",
+   "role": "U.S. Representative; House China Select Committee",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "DLA Piper: U.S.-China life sciences policy developments (Aug 2026)",
+     "https://www.dlapiper.com/en-us/insights/publications/2026/08/us-china-life-sciences-policy-developments-top-points-for-companies"
+    ],
+    [
+     "House China Select Committee: Gallagher letter on G42",
+     "https://chinaselectcommittee.house.gov/media/press-releases/gallagher-calls-usg-investigate-ai-firm-g42-ties-prc-military-intelligence"
+    ]
+   ]
+  },
+  {
+   "id": "gallagher",
+   "n": "Mike Gallagher",
+   "s": "state",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Jan 2024 letter asked Commerce to examine G42 and affiliates for the Entity List, citing ties to Huawei and BGI.",
+   "dir": "",
+   "role": "Former Chair, House China Select Committee",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "House China Select Committee: Gallagher letter on G42",
+     "https://chinaselectcommittee.house.gov/media/press-releases/gallagher-calls-usg-investigate-ai-firm-g42-ties-prc-military-intelligence"
+    ]
+   ]
+  },
+  {
+   "id": "george-asha",
+   "n": "Asha George",
+   "s": "biodefense",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Told Congress BioWatch 'has not worked particularly well' and called BD21's approach 'flawed.'",
+   "dir": "",
+   "role": "Executive Director, Bipartisan Commission on Biodefense",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "HSToday: CWMD and BioWatch testimony",
+     "https://www.hstoday.us/federal-pages/dhs/cwmd-has-spun-down-worse-and-worse-with-flawed-biothreat-detection-lawmakers-told/"
+    ]
+   ]
+  },
+  {
+   "id": "xiao-peng",
+   "n": "Peng Xiao",
+   "s": "gulf",
+   "t": "K",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Runs G42 and chairs its health and genomics affiliate M42.",
+   "dir": "",
+   "role": "Group CEO, G42; Chairman, M42",
+   "strat": "Holds the Emirati genome program inside the G42 group alongside its AI business.",
+   "obj": [],
+   "f": [
+    "Named in Jan 2024 House China Select Committee letter"
+   ],
+   "src": [
+    [
+     "Zawya: M42 appoints Dimitris Moulavasilis",
+     "https://www.zawya.com/press-release/people-in-the-news/m42-appoints-dimitris-moulavasilis-as-group-ceo-tr72shp9"
+    ],
+    [
+     "Wikipedia: G42",
+     "https://en.wikipedia.org/wiki/G42_(company)"
+    ],
+    [
+     "House China Select Committee: Gallagher letter on G42",
+     "https://chinaselectcommittee.house.gov/media/press-releases/gallagher-calls-usg-investigate-ai-firm-g42-ties-prc-military-intelligence"
+    ]
+   ]
+  },
+  {
+   "id": "moulavasilis",
+   "n": "Dimitris Moulavasilis",
+   "s": "gulf",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Succeeded Hasan Jasem Al Nowais.",
+   "dir": "",
+   "role": "Group CEO, M42 (since May 6, 2025)",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Zawya: M42 appoints Dimitris Moulavasilis",
+     "https://www.zawya.com/press-release/people-in-the-news/m42-appoints-dimitris-moulavasilis-as-group-ceo-tr72shp9"
+    ]
+   ]
+  },
+  {
+   "id": "alnowais",
+   "n": "Hasan Jasem Al Nowais",
+   "s": "gulf",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Former M42 chief now in a UAE industry ministry post.",
+   "dir": "",
+   "role": "M42 board member; former M42 Group CEO; Undersecretary, UAE Ministry of Industry and Advanced Technology (Nov 2025) [VERIFY]",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Zawya: M42 appoints Dimitris Moulavasilis",
+     "https://www.zawya.com/press-release/people-in-the-news/m42-appoints-dimitris-moulavasilis-as-group-ceo-tr72shp9"
+    ],
+    [
+     "Emirates 24/7: Al Nowais named MoIAT Undersecretary",
+     "https://www.emirates247.com/technology/uae-president-appoints-hasan-al-nowais-undersecretary-of-ministry-of-industry-and-advanced-technology-2025-11-27-1.742934"
+    ],
+    [
+     "M42 makes strategic investment in Juvenescence (Abu Dhabi Media Office, 2025-04-16)",
+     "https://www.mediaoffice.abudhabi/en/health/m42-makes-strategic-investment-in-juvenescence-and-forms-partnership-to-develop-therapeutics-for-age-related-diseases/"
+    ]
+   ],
+   "strat": "Build Abu Dhabi biotech capacity via partnerships such as Juvenescence.",
+   "plan": [
+    [
+     "d",
+     "Juvenescence investment",
+     "2025-04-16"
+    ]
+   ]
+  },
+  {
+   "id": "almarzooqi",
+   "n": "Fahed Al Marzooqi",
+   "s": "gulf",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "M42 executive at the Abu Dhabi Biobank launch.",
+   "dir": "",
+   "role": "CEO, Integrated Health Solutions, M42",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "The National: Abu Dhabi Biobank",
+     "https://www.thenationalnews.com/news/uae/2026/04/03/inside-abu-dhabis-cutting-edge-biobank-hailed-as-missing-link-in-precision-healthcare-vision"
+    ]
+   ]
+  },
+  {
+   "id": "almannaei",
+   "n": "Asma Al Mannaei",
+   "s": "gulf",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "DoH lead on the Abu Dhabi Biobank.",
+   "dir": "",
+   "role": "Executive Director, Health Life Sciences Sector, Abu Dhabi Department of Health",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "The National: Abu Dhabi Biobank",
+     "https://www.thenationalnews.com/news/uae/2026/04/03/inside-abu-dhabis-cutting-edge-biobank-hailed-as-missing-link-in-precision-healthcare-vision"
+    ]
+   ]
+  },
+  {
+   "id": "mbs",
+   "n": "Mohammed bin Salman",
+   "s": "gulf",
+   "t": "K",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Launched Vision 2030 (2016) and inaugurated the Saudi Genome Program.",
+   "dir": "",
+   "role": "Crown Prince of Saudi Arabia; Chair, Hevolution board of trustees",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "BioProcess International: Saudi Arabia's biotech bet",
+     "https://www.bioprocessintl.com/global-markets/saudi-arabia-s-big-biotech-bet-from-regional-player-to-global-leader"
+    ],
+    [
+     "Vision 2030: Saudi Genome Program",
+     "https://umbraco.vision2030.gov.sa/v2030/v2030-projects/saudi-genome-program"
+    ],
+    [
+     "Saudi Crown Prince heads new bln-dollar foundation to decelerate aging (Al Arabiya, 2022-07)",
+     "https://english.alarabiya.net/News/gulf/2022/07/07/Exclusive-Saudi-s-Crown-Prince-heads-new-bln-dollar-foundation-to-decelerate-aging-"
+    ]
+   ],
+   "strat": "State-funded healthspan science at up to $1B a year.",
+   "plan": []
+  },
+  {
+   "id": "albuhairan",
+   "n": "Fadi Al-Buhairan",
+   "s": "gulf",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Runs PIF's biotech vehicle.",
+   "dir": "",
+   "role": "Group CEO, Lifera (PIF)",
+   "strat": "Insulin manufacturing, genomics labs and a Jeddah CDMO under the National Biotechnology Strategy.",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "BioProcess International: Saudi Arabia's biotech bet",
+     "https://www.bioprocessintl.com/global-markets/saudi-arabia-s-big-biotech-bet-from-regional-player-to-global-leader"
+    ]
+   ]
+  },
+  {
+   "id": "alkuraya",
+   "n": "Fowzan Alkuraya",
+   "s": "gulf",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Genomics lead at Lifera.",
+   "dir": "",
+   "role": "Chief Medical and Genomic Officer, Lifera",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "BioProcess International: Saudi Arabia's biotech bet",
+     "https://www.bioprocessintl.com/global-markets/saudi-arabia-s-big-biotech-bet-from-regional-player-to-global-leader"
+    ]
+   ]
+  },
+  {
+   "id": "seo-dj",
+   "n": "DJ Seo (Dongjin Seo)",
+   "s": "bodynet",
+   "t": "K",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Co-developed 'neural dust' ultrasound-powered implantable sensors at UC Berkeley before Musk recruited him to Neuralink in 2016.",
+   "dir": "Make the implant wireless, low-power and robot-insertable.",
+   "role": "Neuralink co-founder; led Neuralink's team designing low-power wireless implant chips (2020 profile)",
+   "strat": "Moved from millimeter-scale neural dust to Neuralink's thread electrodes and robotic insertion. His work spans the academic smart-dust lineage and the leading commercial implant.",
+   "plan": [
+    [
+     "d",
+     "Neural dust work at UC Berkeley",
+     "2016"
+    ],
+    [
+     "d",
+     "Recruited by Musk to Neuralink",
+     "2016"
+    ]
+   ],
+   "obj": [],
+   "f": [
+    "Current Neuralink title (often reported as President/COO) not confirmed in this build"
+   ],
+   "src": [
+    [
+     "MIT Technology Review: Dongjin Seo",
+     "https://www.technologyreview.com/innovator/dongjin-seo/"
+    ],
+    [
+     "Berkeley HWNI: neural dust",
+     "https://hwni.berkeley.edu/node/682"
+    ]
+   ]
+  },
+  {
+   "id": "hodak",
+   "n": "Max Hodak",
+   "s": "bodynet",
+   "t": "K",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Runs Science Corp, whose PRIMA retinal implant received European approval for commercial sale in July 2026.",
+   "dir": "Engage the brain directly to get larger clinical effect sizes than conventional medicine.",
+   "role": "CEO and co-founder, Science Corporation; Neuralink co-founder",
+   "strat": "Lead with a vision-restoration product that has peer-reviewed efficacy (NEJM, 38 patients, 80% improvement) and a regulatory path in Europe first, then the U.S. Fund with venture and intelligence-community capital (IQT).",
+   "plan": [
+    [
+     "d",
+     "$230M Series C",
+     "2026-03-05"
+    ],
+    [
+     "d",
+     "EU approval for PRIMA commercial sale",
+     "2026-07"
+    ],
+    [
+     "m",
+     "Launch in Germany, then Italy and Netherlands",
+     "2026"
+    ],
+    [
+     "p",
+     "FDA approval and U.S. launch",
+     "2027"
+    ]
+   ],
+   "obj": [],
+   "f": [
+    "Science Corp has raised about $490M since its 2021 founding"
+   ],
+   "src": [
+    [
+     "Business Wire: Science Corp $230M Series C",
+     "https://www.businesswire.com/news/home/20260305896789/en/Science-Corporation-Closes-$230-Million-Series-C-to-Accelerate-Commercialization-of-PRIMA"
+    ],
+    [
+     "Advisory Board: PRIMA European approval",
+     "https://www.advisory.com/daily-briefing/2026/08/03/retinal-implant"
+    ],
+    [
+     "Founded: Neuralink co-founder Science Corp",
+     "https://www.founded.com/neuralink-co-founder-science-corp-restore-vision/"
+    ]
+   ]
+  },
+  {
+   "id": "oxley",
+   "n": "Tom Oxley",
+   "s": "bodynet",
+   "t": "K",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Leads Synchron, maker of the endovascular Stentrode BCI, the first Apple BCI HID integration and an NVIDIA Holoscan-based decoding stack.",
+   "dir": "Make BCI 'a next-generation interface layer' and the first PMA-approved implantable BCI.",
+   "role": "CEO and founder, Synchron",
+   "strat": "Avoid open-skull surgery by implanting via blood vessels; integrate natively with Apple devices and NVIDIA AI; train a brain foundation model (Chiral) on patient data. Has publicly warned of misuse and called for a kill switch.",
+   "plan": [
+    [
+     "d",
+     "COMMAND met 12-month safety endpoint",
+     "2024-09-30"
+    ],
+    [
+     "d",
+     "Chiral roadmap at NVIDIA GTC",
+     "2025-03-19"
+    ],
+    [
+     "d",
+     "Apple BCI HID integration announced",
+     "2025-05-13"
+    ],
+    [
+     "d",
+     "$200M Series D",
+     "2025-11-06"
+    ],
+    [
+     "m",
+     "Pivotal trial",
+     "2026"
+    ],
+    [
+     "p",
+     "FDA PMA",
+     "2028"
+    ]
+   ],
+   "obj": [],
+   "f": [
+    "Quoted: 'BCI is more than an accessibility tool, it's a next-generation interface layer'",
+    "Expects device price around $40,000-$50,000",
+    "Warned algorithms targeting brain activity could be 'a recipe for human subversion and subjugation'"
+   ],
+   "src": [
+    [
+     "Medtech Insight: Synchron $200M Series D",
+     "https://insights.citeline.com/medtech-insight/business/financing/synchron-secures-200m-series-d-plans-new-brain-interface-with-potentially-more-applications-U6MRTIDOVRHXXGDHGHUD35SA5Q"
+    ],
+    [
+     "Business Wire: Synchron and Apple BCI HID",
+     "https://www.businesswire.com/news/home/20250513927084/en/Synchron-To-Achieve-First-Native-Brain-Computer-Interface-Integration-with-iPhone-iPad-and-Apple-Vision-Pro"
+    ],
+    [
+     "Business Wire: Synchron Chiral with NVIDIA",
+     "https://www.businesswire.com/news/home/20250319964709/en"
+    ],
+    [
+     "Tech Times: Synchron pivotal trial 2026",
+     "https://www.techtimes.com/articles/317929/20260606/synchron-brain-implant-targets-2026-pivotal-trial-first-fda-approved-bci.htm"
+    ]
+   ]
+  },
+  {
+   "id": "altman",
+   "n": "Sam Altman",
+   "s": "models",
+   "t": "K",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Co-founded Merge Labs, a noninvasive BCI company in which OpenAI wrote the largest check of a $252M seed at $850M (January 2026).",
+   "dir": "Link brains and AI models without surgery.",
+   "role": "CEO, OpenAI; investor in Retro Biosciences",
+   "strat": "Pair OpenAI capital and model-building with a molecular-plus-ultrasound neural readout; OpenAI to build 'scientific foundation models' for neural signals. The August 2025 FT-sourced report named World's Alex Blania as co-founder, tying the venture to iris-based identity.",
+   "plan": [
+    [
+     "d",
+     "Merge Labs reported in formation",
+     "2025-08-13"
+    ],
+    [
+     "d",
+     "Merge Labs $252M seed; OpenAI largest investor",
+     "2026-01-15"
+    ],
+    [
+     "p",
+     "Medical applications before consumer use; no trial timeline",
+     ""
+    ],
+    [
+     "d",
+     "Seeded Retro with $180M",
+     ""
+    ],
+    [
+     "d",
+     "Stargate announcement with health claims",
+     "2025-01-21"
+    ],
+    [
+     "d",
+     "Backed Retro round at $1.8B",
+     "2026-05-22"
+    ]
+   ],
+   "obj": [],
+   "f": [
+    "OpenAI said its investment passed an independent board review",
+    "Reports conflict on whether Altman invested personal capital (Engadget/FT: no; Techleap: yes)",
+    "OpenAI previously invested in Altman-linked Helion Energy and Oklo"
+   ],
+   "src": [
+    [
+     "Techloy: OpenAI leads $252M Merge Labs seed",
+     "https://www.techloy.com/openai-bets-252-million-on-a-brain-computer-interface-startup-founded-by-sam-altman.md"
+    ],
+    [
+     "Engadget: Altman and Blania to co-found Merge Labs",
+     "https://engadget.com/ai/openai-and-sam-altman-are-reportedly-creating-a-startup-rival-to-elon-musks-neuralink-123022874.html"
+    ],
+    [
+     "Techleap: Merge Labs $850M valuation (Aug 2025)",
+     "https://finder.techleap.nl/news/feed/sam-altman-backs-merge-labs-850m-valuation"
+    ],
+    [
+     "Accelerating life sciences research with Retro Biosciences (OpenAI, 2025-08-22)",
+     "https://openai.com/index/accelerating-life-sciences-research-with-retro-biosciences"
+    ],
+    [
+     "Sam Altman-backed biotech raising $1 billion to extend human lifespan (Fortune, 2025-01-24)",
+     "https://www.fortune.com/2025/01/24/sam-altman-ai-biotech-1-billion-funding-extend-human-lifespan"
+    ],
+    [
+     "Trump launches $500B Project Stargate (HLTH, 2025-01-23)",
+     "https://hlth.com/insights/news/trump-launches-500b-project-stargate-tech-giants-unite-for-ai-powered-healthcare-innovation-2025-01-23"
+    ],
+    [
+     "From OpenAI's offices to a deal with Eli Lilly: Chai Discovery (TechCrunch, 2026-01-16)",
+     "https://techcrunch.com/2026/01/16/from-openais-offices-to-a-deal-with-eli-lilly-how-chai-discovery-became-one-of-the-flashiest-names-in-ai-drug-development/"
+    ]
+   ]
+  },
+  {
+   "id": "blania",
+   "n": "Alex Blania",
+   "s": "agentic",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Leads the iris-scanning World ID project; reported in August 2025 as co-founding Merge Labs with Sam Altman.",
+   "dir": "Biometric proof of personhood at global scale.",
+   "role": "Co-founder and CEO, Tools for Humanity (World / World ID); reported co-founder, Merge Labs",
+   "strat": "World ID uses iris scans to issue personhood credentials. A Merge Labs role would link iris biometrics and neural interfaces under one founding group.",
+   "plan": [
+    [
+     "d",
+     "Reported as Merge Labs co-founder",
+     "2025-08-13"
+    ]
+   ],
+   "obj": [],
+   "f": [
+    "Merge Labs role single-sourced (Engadget citing FT); not confirmed in January 2026 coverage reviewed"
+   ],
+   "src": [
+    [
+     "Engadget: Altman and Blania to co-found Merge Labs",
+     "https://engadget.com/ai/openai-and-sam-altman-are-reportedly-creating-a-startup-rival-to-elon-musks-neuralink-123022874.html"
+    ]
+   ]
+  },
+  {
+   "id": "shapiro-mikhail",
+   "n": "Mikhail Shapiro",
+   "s": "bodynet",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Pioneer of ultrasound-based brain imaging; co-founder of Merge Labs.",
+   "dir": "Read neural activity from outside the skull.",
+   "role": "Co-founder, Merge Labs; Caltech neuroscientist",
+   "strat": "Uses engineered molecules plus ultrasound to detect neural signals noninvasively.",
+   "plan": [
+    [
+     "d",
+     "Merge Labs seed",
+     "2026-01-15"
+    ]
+   ],
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Techloy: OpenAI leads $252M Merge Labs seed",
+     "https://www.techloy.com/openai-bets-252-million-on-a-brain-computer-interface-startup-founded-by-sam-altman.md"
+    ]
+   ]
+  },
+  {
+   "id": "angle",
+   "n": "Matt Angle",
+   "s": "bodynet",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Leads Paradromics, whose Connexus BCI received an FDA IDE for speech restoration in November 2025.",
+   "dir": "Ship 'the best engineered brain computer interface in the world' for communication restoration.",
+   "role": "CEO and founder, Paradromics",
+   "strat": "High-channel fully implantable wireless device; staged regulatory path via FDA TAP (2024), temporary first-in-human (2025), IDE early feasibility (2025-2026). Took Saudi NEOM strategic capital.",
+   "plan": [
+    [
+     "d",
+     "FDA TAP program entry",
+     "2024-07"
+    ],
+    [
+     "d",
+     "NEOM Investment Fund partnership",
+     "2025-02"
+    ],
+    [
+     "d",
+     "Temporary first-in-human implant at University of Michigan",
+     "2025-06"
+    ],
+    [
+     "d",
+     "FDA IDE for Connect-One",
+     "2025-11-20"
+    ],
+    [
+     "m",
+     "Connect-One enrollment at UC Davis, MGH, Michigan",
+     "2026"
+    ]
+   ],
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "MassDevice: Paradromics FDA IDE",
+     "https://www.massdevice.com/paradromics-fda-green-light-bci-study/"
+    ],
+    [
+     "Michigan Medicine: first Connect-One implant",
+     "https://www.michiganmedicine.org/news-release/university-michigan-implants-first-human-paradromics-wireless-brain-computer-interface-designed"
+    ],
+    [
+     "Newsio: Paradromics NEOM investment",
+     "https://newsio.com/2025/02/12/neuralink-competitor-paradromics-secures-investment-from-saudi-arabias-neom"
+    ]
+   ]
+  },
+  {
+   "id": "mager",
+   "n": "Michael Mager",
+   "s": "bodynet",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Leads Precision, holder of a 510(k) for the Layer 7 Cortical Interface; raised $250M Series D in September 2026 at just over $1B.",
+   "dir": "Win approval for permanent minimally invasive surface implants.",
+   "role": "CEO and co-founder, Precision Neuroscience",
+   "strat": "Use a cleared temporary component (up to 30 days) to build clinical volume (100+ procedures, 18 centers), partner with Medtronic, and move to a fully implantable wireless system.",
+   "plan": [
+    [
+     "d",
+     "510(k) clearance, Layer 7",
+     "2025-04"
+    ],
+    [
+     "d",
+     "Medtronic partnership",
+     "2026-01"
+    ],
+    [
+     "d",
+     "$250M Series D",
+     "2026-09-24"
+    ],
+    [
+     "m",
+     "Early feasibility study of fully implantable system",
+     ""
+    ]
+   ],
+   "obj": [],
+   "f": [
+    "Quoted: 'The next phase of BCI will be defined by more than technology alone.'"
+   ],
+   "src": [
+    [
+     "MedPath: Precision $250M Series D",
+     "https://trial.medpath.com/news/precision-neuroscience-raises-250m-series-d-to-push-its-brain-surface-interface-toward-permanent-implants"
+    ]
+   ]
+  },
+  {
+   "id": "rapoport",
+   "n": "Benjamin Rapoport",
+   "s": "bodynet",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Neurosurgeon-engineer who co-founded both Neuralink and Precision.",
+   "dir": "",
+   "role": "Co-founder, Precision Neuroscience; Neuralink co-founder (per New York Times)",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "MedPath: Precision $250M Series D",
+     "https://trial.medpath.com/news/precision-neuroscience-raises-250m-series-d-to-push-its-brain-surface-interface-toward-permanent-implants"
+    ]
+   ]
+  },
+  {
+   "id": "akyildiz",
+   "n": "Ian F. Akyildiz",
+   "s": "bodynet",
+   "t": "K",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Originated the IoBNT research agenda with Pierobon, Balasubramaniam and Koucheryavy.",
+   "dir": "Build a communication-engineering framework for biological nano-devices networked to the internet.",
+   "role": "Lead author, 'The Internet of Bio-Nano Things' (IEEE Communications Magazine, 2015); Nano Communication Centre, Tampere University of Technology (per 2015 coverage)",
+   "strat": "Define molecular communication and bio-cyber interfaces as an engineering field, with lab work under NSF's MoNaCo project. The paper itself flags 'bio-cyber terrorism' risk and describes most work as theoretical.",
+   "plan": [
+    [
+     "d",
+     "IoBNT paper published",
+     "2015-03"
+    ]
+   ],
+   "obj": [],
+   "f": [
+    "Full author list per the brief; source reviewed names Balasubramaniam, Akyildiz and Koucheryavy"
+   ],
+   "src": [
+    [
+     "IoT Australia: The Internet of Bio-NanoThings",
+     "https://www.iotaustralia.org.au/2015/07/28/iotnewsglobal/get-ready-for-the-internet-of-bio-nanothings"
+    ]
+   ]
+  },
+  {
+   "id": "hale-tom",
+   "n": "Tom Hale",
+   "s": "bodynet",
+   "t": "K",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Runs Oura, which calls the DoD its largest enterprise customer and filed for a Nasdaq IPO in 2026 before postponing.",
+   "dir": "Scale Oura from consumer ring to defense and health-system platform.",
+   "role": "CEO, Oura",
+   "strat": "Grow consumer subscriptions (5M paid members) while building a defense business: secure Fort Worth manufacturing, DoD analytics on Palantir FedStart IL5, and Navy/Army studies. Responded to privacy backlash by stating consumer and enterprise data are handled separately.",
+   "plan": [
+    [
+     "d",
+     "Fort Worth plant and FedStart announced",
+     "2025-08-27"
+    ],
+    [
+     "d",
+     "$900M+ at $11B",
+     "2025-10-14"
+    ],
+    [
+     "d",
+     "Confidential S-1",
+     "2026-05-21"
+    ],
+    [
+     "d",
+     "IPO postponed",
+     "2026-09-29"
+    ],
+    [
+     "m",
+     "Fort Worth plant opening",
+     "2026"
+    ]
+   ],
+   "obj": [],
+   "f": [
+    "Quote: 'Our technology prioritizes security and has been proven in the most extreme environments.'"
+   ],
+   "src": [
+    [
+     "Business Wire: Oura U.S. manufacturing and FedStart",
+     "https://www.businesswire.com/news/home/20250827572356/en"
+    ],
+    [
+     "Tom's Guide: Oura military partnership and Palantir",
+     "https://www.tomsguide.com/wellness/smart-rings/oura-is-expanding-its-partnership-with-the-u-s-military-and-users-are-stressed-heres-what-that-means-for-your-data"
+    ],
+    [
+     "Renaissance Capital: Oura postpones IPO",
+     "https://www.renaissancecapital.com/IPO-Center/News/121945/smart-ring-maker-oura-postpones-2-1-billion-ipo"
+    ]
+   ]
+  },
+  {
+   "id": "solzbacher",
+   "n": "Florian Solzbacher",
+   "s": "bodynet",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Co-founded Blackrock Neurotech at the University of Utah in 2008.",
+   "dir": "",
+   "role": "Co-founder, Blackrock Neurotech",
+   "plan": [
+    [
+     "d",
+     "Blackrock Neurotech founded",
+     "2008"
+    ]
+   ],
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "The Block: Ardoino on Blackrock Neurotech",
+     "https://www.theblock.co/post/359607/tether-brain-computer-elon-musk-neuralink"
+    ],
+    [
+     "Cointelegraph: Tether Evo $200M in Blackrock Neurotech",
+     "https://cointelegraph.com/news/tether-evo-invests-200-million-neurotech"
+    ]
+   ]
+  },
+  {
+   "id": "gerhardt",
+   "n": "Marcus Gerhardt",
+   "s": "bodynet",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Co-founded Blackrock Neurotech in 2008.",
+   "dir": "",
+   "role": "Co-founder, Blackrock Neurotech",
+   "plan": [
+    [
+     "d",
+     "Blackrock Neurotech founded",
+     "2008"
+    ]
+   ],
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "The Block: Ardoino on Blackrock Neurotech",
+     "https://www.theblock.co/post/359607/tether-brain-computer-elon-musk-neuralink"
+    ]
+   ]
+  },
+  {
+   "id": "luo-minmin",
+   "n": "Luo Minmin",
+   "s": "bodynet",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Leads the Beijing state-backed BCI program behind Beinao-1 and Beinao-2.",
+   "dir": "Deliver China's first registered semi-invasive wireless BCI.",
+   "role": "Director, Chinese Institute for Brain Research, Beijing (CIBR); founder of Xinzhida (NeuCyber)",
+   "strat": "Run investigator-initiated implants, then registered trials, then a device registration application, with ZGC Beinao Fund capital.",
+   "plan": [
+    [
+     "d",
+     "Beinao-1 implants begin",
+     "2025-02"
+    ],
+    [
+     "m",
+     "Registered clinical trials, full enrollment",
+     "2026"
+    ],
+    [
+     "p",
+     "Registration certificate application",
+     "2027"
+    ]
+   ],
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "ZGC Group: Beinao-1 sixth implant",
+     "https://www.zgcgroup.com.cn/Home/NewsCenter/DomesticNews/art/2026/art_d2840aa19a3c4e34aaa1c1539f412f47.html"
+    ],
+    [
+     "China Daily: Beinao-1 and Beinao-2",
+     "https://global.chinadaily.com.cn/a/202606/15/WS6a2fc5cba310986e2b460147.html"
+    ]
+   ]
+  },
+  {
+   "id": "emondi",
+   "n": "Al Emondi",
+   "s": "bodynet",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Managed DARPA's Next-Generation Nonsurgical Neurotechnology program.",
+   "dir": "Keep commanders 'meaningfully involved in dynamic operations' through nonsurgical BMIs.",
+   "role": "DARPA program manager, N3 (2019)",
+   "strat": "Funded six parallel approaches (noninvasive and minutely invasive) with human trials in the final phase.",
+   "plan": [
+    [
+     "d",
+     "Six N3 teams funded",
+     "2019-05-20"
+    ]
+   ],
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "DARPA: N3 six teams",
+     "https://www.darpa.mil/news/2019/nonsurgical-brain-machine-interfaces"
+    ]
+   ]
+  },
+  {
+   "id": "ackman",
+   "n": "Bill Ackman",
+   "s": "capital",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Co-led Precision Neuroscience's $250M Series D with $42.5M from Pershing Square and the Ackman Oxman Institute.",
+   "dir": "",
+   "role": "CEO, Pershing Square; Ackman Oxman Institute",
+   "plan": [
+    [
+     "d",
+     "Precision Series D",
+     "2026-09-24"
+    ]
+   ],
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "MedPath: Precision $250M Series D",
+     "https://trial.medpath.com/news/precision-neuroscience-raises-250m-series-d-to-push-its-brain-surface-interface-toward-permanent-implants"
+    ]
+   ]
+  },
+  {
+   "id": "gates-bill",
+   "n": "Bill Gates",
+   "s": "capital",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Gates Frontier invested in Synchron's $75M Series C (December 2022).",
+   "dir": "",
+   "role": "Gates Frontier (investment fund)",
+   "plan": [
+    [
+     "d",
+     "Synchron Series C",
+     "2022-12-15"
+    ]
+   ],
+   "obj": [],
+   "f": [
+    "Gates Foundation funded a 2019 quantum-dot vaccination-record skin study, the kernel of claim c07"
+   ],
+   "src": [
+    [
+     "Becker's: Bezos Expeditions, Gates Frontier in Synchron Series C",
+     "https://www.beckershospitalreview.com/innovation/bezos-expeditions-gates-frontier-back-brain-computer-interface-company-in-75m-financing-round.html"
+    ],
+    [
+     "FactCheck.org: Gates Foundation goals",
+     "https://www.factcheck.org/2020/04/conspiracy-theory-misinterprets-goals-of-gates-foundation/"
+    ]
+   ]
+  },
+  {
+   "id": "bezos",
+   "n": "Jeff Bezos",
+   "s": "capital",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Bezos Expeditions invested in Synchron's Series C (2022) and remains an existing investor in its 2025 Series D.",
+   "dir": "",
+   "role": "Reported backer, Altos Labs",
+   "plan": [
+    [
+     "d",
+     "Synchron Series C",
+     "2022-12-15"
+    ],
+    [
+     "d",
+     "Existing investor in Synchron Series D",
+     "2025-11-06"
+    ]
+   ],
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Becker's: Bezos Expeditions, Gates Frontier in Synchron Series C",
+     "https://www.beckershospitalreview.com/innovation/bezos-expeditions-gates-frontier-back-brain-computer-interface-company-in-75m-financing-round.html"
+    ],
+    [
+     "Medtech Insight: Synchron $200M Series D",
+     "https://insights.citeline.com/medtech-insight/business/financing/synchron-secures-200m-series-d-plans-new-brain-interface-with-potentially-more-applications-U6MRTIDOVRHXXGDHGHUD35SA5Q"
+    ],
+    [
+     "Altos Labs launches with $3B financing and Hal Barron as CEO (The Pharma Letter)",
+     "https://thepharmaletter.com/biotechnology/altos-labs-launches-with-3b-financing-and-hal-barron-as-ceo"
+    ]
+   ]
+  },
+  {
+   "id": "newell",
+   "n": "Gabe Newell",
+   "s": "capital",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Invested in Merge Labs' $252M seed.",
+   "dir": "",
+   "role": "Valve co-founder; Merge Labs investor",
+   "plan": [
+    [
+     "d",
+     "Merge Labs seed",
+     "2026-01-15"
+    ]
+   ],
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Techloy: OpenAI leads $252M Merge Labs seed",
+     "https://www.techloy.com/openai-bets-252-million-on-a-brain-computer-interface-startup-founded-by-sam-altman.md"
+    ]
+   ]
+  },
+  {
+   "id": "schumer",
+   "n": "Sen. Chuck Schumer",
+   "s": "state",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Introduced the MIND Act (S.2925) on September 24, 2025 with Sens. Cantwell and Markey.",
+   "dir": "",
+   "role": "Senate Democratic Leader; MIND Act sponsor",
+   "strat": "Direct an FTC study of neural data and related biometric data, then OSTP guidance on federal neurotech use.",
+   "plan": [
+    [
+     "d",
+     "MIND Act introduced",
+     "2025-09-24"
+    ],
+    [
+     "m",
+     "Committee action",
+     ""
+    ]
+   ],
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Inside Privacy: MIND Act",
+     "https://www.insideprivacy.com/health-privacy/congress-introduces-neural-data-bill/"
+    ],
+    [
+     "Congress.gov: S.2925 text",
+     "https://www.congress.gov/119/bills/s2925/BILLS-119s2925is.htm"
+    ]
+   ]
+  },
+  {
+   "id": "cantwell",
+   "n": "Sen. Maria Cantwell",
+   "s": "state",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Co-introduced the MIND Act.",
+   "dir": "",
+   "role": "U.S. Senator (D-Wash.); MIND Act co-sponsor",
+   "plan": [
+    [
+     "d",
+     "MIND Act introduced",
+     "2025-09-24"
+    ]
+   ],
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Inside Privacy: MIND Act",
+     "https://www.insideprivacy.com/health-privacy/congress-introduces-neural-data-bill/"
+    ]
+   ]
+  },
+  {
+   "id": "markey",
+   "n": "Sen. Ed Markey",
+   "s": "state",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Co-introduced the MIND Act.",
+   "dir": "",
+   "role": "U.S. Senator (D-Mass.); MIND Act co-sponsor",
+   "plan": [
+    [
+     "d",
+     "MIND Act introduced",
+     "2025-09-24"
+    ]
+   ],
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Inside Privacy: MIND Act",
+     "https://www.insideprivacy.com/health-privacy/congress-introduces-neural-data-bill/"
+    ]
+   ]
+  },
+  {
+   "id": "means-casey",
+   "n": "Casey Means",
+   "s": "healthdata",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Co-founded Levels, a continuous glucose monitor membership app; advised Kennedy's 2024 campaign (KFF Health News).",
+   "dir": "",
+   "role": "Co-founder, Levels; Trump nominee for U.S. surgeon general (2025)",
+   "obj": [],
+   "f": [
+    "Cited by critics as a commercial tie to the wearables push"
+   ],
+   "src": [
+    [
+     "AHCJ: Kennedy wearables goal",
+     "https://healthjournalism.org/blog/2025/07/rfk-jr-wants-us-all-to-wear-health-trackers-will-it-work/"
+    ]
+   ]
+  },
+  {
+   "id": "neuralink",
+   "n": "Neuralink",
+   "s": "bodynet",
+   "t": "M",
+   "k": "co",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Musk-founded intracortical BCI company; N1 'Telepathy' implant with robotic insertion; trials in U.S., Canada, UAE and UK.",
+   "dir": "Restore autonomy for paralysis, speech loss and blindness; long-term high-bandwidth human-AI interface.",
+   "pv": "$9B pre-money · 2025-06",
+   "strat": "Scale implants through automated surgery and high-volume production while stacking FDA Breakthrough designations (Blindsight, speech). Capital comes from Founders Fund, Gulf sovereign-linked funds (G42, QIA) and growth investors.",
+   "plan": [
+    [
+     "d",
+     "$280M Series D led by Founders Fund",
+     "2023-08"
+    ],
+    [
+     "d",
+     "First human implant (Noland Arbaugh)",
+     "2024-01"
+    ],
+    [
+     "d",
+     "Blindsight Breakthrough designation",
+     "2024-09"
+    ],
+    [
+     "d",
+     "Speech Breakthrough designation",
+     "2025-05-01"
+    ],
+    [
+     "d",
+     "$650M Series E at $9B pre-money",
+     "2025-06-02"
+    ],
+    [
+     "d",
+     "12 participants",
+     "2025-09"
+    ],
+    [
+     "d",
+     "21 participants",
+     "2026-01"
+    ],
+    [
+     "d",
+     "26th patient reported",
+     "2026-06-22"
+    ],
+    [
+     "m",
+     "High-volume production and automated surgery",
+     "2026"
+    ],
+    [
+     "m",
+     "Next-gen implant with ~3x capability",
+     "2026"
+    ],
+    [
+     "p",
+     "Blindsight first human implant pending approval",
+     ""
+    ],
+    [
+     "p",
+     "Five U.S. clinical centers; 20,000+ surgeries/yr (internal projection)",
+     "2031"
+    ]
+   ],
+   "obj": [],
+   "f": [
+    "N1: 64 threads, 1,024 electrodes; later reports cite up to 3,072 electrodes",
+    "Trial sites: Barrow Neurological Institute, Miami Project, Toronto Western, Cleveland Clinic Abu Dhabi",
+    "Seven enrolled in GB PRIME by May 2026 (single source)",
+    "First patient's implant showed thread retraction",
+    "FDA reportedly rejected first human-testing application over wire migration and lithium battery concerns before May 2023 clearance",
+    "Musk, Oct 30, 2026: Blindsight 'ready from an engineering standpoint. Just waiting on regulatory approval.'"
+   ],
+   "src": [
+    [
+     "Fierce Biotech: Neuralink $650M Series E",
+     "https://www.fiercebiotech.com/medtech/neuralink-secures-650m-series-e-funding-expand-patient-access-brain-chip-technology"
+    ],
+    [
+     "Bloomberg: Neuralink raises $650M",
+     "https://www.bloomberg.com/news/articles/2025-06-02/neuralink-raises-650-million-in-late-stage-funding-round"
+    ],
+    [
+     "MedTech Dive: Neuralink $280M led by Founders Fund",
+     "https://www.medtechdive.com/news/elon-musk-neuralink-raises-280-million"
+    ],
+    [
+     "ROIC: Neuralink funding and Blindsight",
+     "https://www.roic.ai/news/neuralink-secures-650m-funding-advances-blindsight-vision-technology-toward-human-trials-01-28-2026"
+    ],
+    [
+     "LatestLY: Neuralink 21 participants",
+     "https://www.latestly.com/technology/science/elon-musks-neuralink-reaches-21-global-trial-participants-billionaire-announces-next-gen-telepathy-implant-and-vision-restoring-blindsight-launch-7293272.html"
+    ],
+    [
+     "Basenor: Neuralink 26th patient",
+     "https://basenor.com/blogs/news/neuralink-reaches-26th-patient-in-ongoing-brain-computer-interface-trials"
+    ],
+    [
+     "Reuters via The Star: Neuralink speech Breakthrough designation",
+     "https://www.thestar.com.my/tech/tech-news/2025/05/02/neuralink039s-speech-restoration-device-gets-fda039s-039breakthrough039-tag"
+    ],
+    [
+     "Drive Tesla Canada: Blindsight awaiting approval",
+     "https://driveteslacanada.ca/news/elon-musk-neuralink-blindsight-ready-regulatory-approval/"
+    ]
+   ]
+  },
+  {
+   "id": "synchron",
+   "n": "Synchron",
+   "s": "bodynet",
+   "t": "K",
+   "k": "co",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Endovascular BCI (Stentrode) delivered through blood vessels; first U.S. IDE for a permanently implanted BCI.",
+   "dir": "First FDA PMA for an implantable BCI.",
+   "pv": "$345M raised · 2025-11",
+   "strat": "Minimally invasive implant plus deep platform integration (Apple BCI HID, NVIDIA Holoscan) and a brain foundation model (Chiral). Capital from ARCH, Khosla, Bezos, Gates, QIA, IQT and Australia's NRF.",
+   "plan": [
+    [
+     "d",
+     "FDA Breakthrough designation",
+     "2020-08"
+    ],
+    [
+     "d",
+     "$75M Series C (ARCH lead)",
+     "2022-12-15"
+    ],
+    [
+     "d",
+     "COMMAND safety endpoint met (6 patients)",
+     "2024-09-30"
+    ],
+    [
+     "d",
+     "NVIDIA Holoscan decoding",
+     "2025-01"
+    ],
+    [
+     "d",
+     "Chiral roadmap",
+     "2025-03-19"
+    ],
+    [
+     "d",
+     "Apple BCI HID integration",
+     "2025-05-13"
+    ],
+    [
+     "d",
+     "$200M Series D (Double Point lead)",
+     "2025-11-06"
+    ],
+    [
+     "m",
+     "Pivotal trial",
+     "2026"
+    ],
+    [
+     "m",
+     "Third-gen whole-brain transcatheter interface (San Diego hub)",
+     ""
+    ],
+    [
+     "p",
+     "PMA",
+     "2028"
+    ]
+   ],
+   "obj": [],
+   "f": [
+    "10 patients implanted in U.S. and Australia",
+    "$345M raised to date",
+    "First-gen Stentrode has 16 electrodes",
+    "Synchron says BCI investment across 2024-2025 exceeded $1B",
+    "OpenAI model integration reported in 2024 (not re-sourced)"
+   ],
+   "src": [
+    [
+     "Medtech Insight: Synchron $200M Series D",
+     "https://insights.citeline.com/medtech-insight/business/financing/synchron-secures-200m-series-d-plans-new-brain-interface-with-potentially-more-applications-U6MRTIDOVRHXXGDHGHUD35SA5Q"
+    ],
+    [
+     "Tech Times: Synchron pivotal trial 2026",
+     "https://www.techtimes.com/articles/317929/20260606/synchron-brain-implant-targets-2026-pivotal-trial-first-fda-approved-bci.htm"
+    ],
+    [
+     "Business Wire: Synchron Chiral with NVIDIA",
+     "https://www.businesswire.com/news/home/20250319964709/en"
+    ],
+    [
+     "Business Wire: Synchron and Apple BCI HID",
+     "https://www.businesswire.com/news/home/20250513927084/en/Synchron-To-Achieve-First-Native-Brain-Computer-Interface-Integration-with-iPhone-iPad-and-Apple-Vision-Pro"
+    ],
+    [
+     "Becker's: Bezos Expeditions, Gates Frontier in Synchron Series C",
+     "https://www.beckershospitalreview.com/innovation/bezos-expeditions-gates-frontier-back-brain-computer-interface-company-in-75m-financing-round.html"
+    ]
+   ]
+  },
+  {
+   "id": "paradromics",
+   "n": "Paradromics",
+   "s": "bodynet",
+   "t": "K",
+   "k": "co",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Austin-based maker of the Connexus fully implantable wireless BCI (421 microelectrodes).",
+   "dir": "Restore communication via text, synthesized speech and computer control.",
+   "strat": "Staged FDA path (TAP, first-in-human, IDE) and multi-site early feasibility study; Saudi NEOM strategic capital.",
+   "plan": [
+    [
+     "d",
+     "FDA TAP",
+     "2024-07"
+    ],
+    [
+     "d",
+     "NEOM investment",
+     "2025-02"
+    ],
+    [
+     "d",
+     "Temporary first-in-human implant (Michigan)",
+     "2025-06"
+    ],
+    [
+     "d",
+     "FDA IDE, Connect-One",
+     "2025-11-20"
+    ],
+    [
+     "d",
+     "First Connect-One participant implanted (Michigan; date not stated)",
+     ""
+    ],
+    [
+     "m",
+     "Two initial participants; six-year follow-up",
+     ""
+    ]
+   ],
+   "obj": [],
+   "f": [
+    "Connect-One NCT07357428; sites UC Davis, MGH, University of Michigan; lead PI David M. Brandman",
+    "Company calls it the first IDE for speech restoration with a fully implantable BCI"
+   ],
+   "src": [
+    [
+     "MassDevice: Paradromics FDA IDE",
+     "https://www.massdevice.com/paradromics-fda-green-light-bci-study/"
+    ],
+    [
+     "Michigan Medicine: first Connect-One implant",
+     "https://www.michiganmedicine.org/news-release/university-michigan-implants-first-human-paradromics-wireless-brain-computer-interface-designed"
+    ],
+    [
+     "Newsio: Paradromics NEOM investment",
+     "https://newsio.com/2025/02/12/neuralink-competitor-paradromics-secures-investment-from-saudi-arabias-neom"
+    ]
+   ]
+  },
+  {
+   "id": "precision",
+   "n": "Precision Neuroscience",
+   "s": "bodynet",
+   "t": "K",
+   "k": "co",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Thin-film surface BCI (Layer 7, 1,024 electrodes); FDA 510(k) for temporary use up to 30 days.",
+   "dir": "Permanent minimally invasive BCI for severe paralysis.",
+   "pv": "just over $1B · 2026-09",
+   "strat": "Build clinical volume with the cleared temporary array, partner with Medtronic on navigation, manufacture in Texas, then seek permanent-implant approval.",
+   "plan": [
+    [
+     "d",
+     "$102M Series C (~$500M post)",
+     "2024-12"
+    ],
+    [
+     "d",
+     "510(k) clearance",
+     "2025-04"
+    ],
+    [
+     "d",
+     "Medtronic partnership",
+     "2026-01"
+    ],
+    [
+     "d",
+     "$250M Series D (just over $1B)",
+     "2026-09-24"
+    ],
+    [
+     "m",
+     "Early feasibility study, fully implantable wireless system",
+     ""
+    ]
+   ],
+   "obj": [],
+   "f": [
+    "100+ procedures at 18 medical centers",
+    "$430M raised since 2021"
+   ],
+   "src": [
+    [
+     "MedPath: Precision $250M Series D",
+     "https://trial.medpath.com/news/precision-neuroscience-raises-250m-series-d-to-push-its-brain-surface-interface-toward-permanent-implants"
+    ]
+   ]
+  },
+  {
+   "id": "sciencecorp",
+   "n": "Science Corporation",
+   "s": "bodynet",
+   "t": "K",
+   "k": "co",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Neurotech company founded 2021 by Max Hodak; PRIMA subretinal implant for advanced dry AMD.",
+   "dir": "Vision restoration first; Biohybrid neural interface and Vessel perfusion platform next.",
+   "pv": "~$490M raised · 2026-03",
+   "strat": "Commercialize PRIMA in Europe on NEJM evidence, then the U.S.; backed by Lightspeed, Khosla, YC, IQT and Quiet Capital.",
+   "plan": [
+    [
+     "d",
+     "$230M Series C",
+     "2026-03-05"
+    ],
+    [
+     "d",
+     "FDA Humanitarian Use Device designation",
+     "2026"
+    ],
+    [
+     "d",
+     "EU approval for commercial sale",
+     "2026-07"
+    ],
+    [
+     "m",
+     "Germany launch, then Italy and Netherlands",
+     "2026"
+    ],
+    [
+     "p",
+     "U.S. launch if FDA approves",
+     "2027"
+    ]
+   ],
+   "obj": [],
+   "f": [
+    "NEJM trial: 38 patients, 80% meaningful acuity improvement",
+    "~$490M raised",
+    "Trials expanding to Stargardt and retinitis pigmentosa at Sydney Eye Hospital"
+   ],
+   "src": [
+    [
+     "Business Wire: Science Corp $230M Series C",
+     "https://www.businesswire.com/news/home/20260305896789/en/Science-Corporation-Closes-$230-Million-Series-C-to-Accelerate-Commercialization-of-PRIMA"
+    ],
+    [
+     "Advisory Board: PRIMA European approval",
+     "https://www.advisory.com/daily-briefing/2026/08/03/retinal-implant"
+    ]
+   ]
+  },
+  {
+   "id": "blackrockneuro",
+   "n": "Blackrock Neurotech",
+   "s": "bodynet",
+   "t": "K",
+   "k": "co",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Utah Array maker founded 2008 at the University of Utah; majority-owned by Tether since April 2024.",
+   "dir": "Per Ardoino: an open-source 'brain operating system.'",
+   "pv": "Tether majority · $200M · 2024-04",
+   "strat": "Tether capital to commercialize the Utah Array lineage; Ardoino frames open source as protection against control by a single tech giant.",
+   "plan": [
+    [
+     "d",
+     "Thiel stake",
+     "2021"
+    ],
+    [
+     "d",
+     "Tether $200M for majority stake",
+     "2024-04-29"
+    ],
+    [
+     "p",
+     "Rename to avoid confusion with BlackRock (stated intent)",
+     ""
+    ]
+   ],
+   "obj": [],
+   "f": [
+    "Ardoino claims 40+ patients (unverified)",
+    "Tether said patients used its technology to operate robotic arms, wheelchairs and drive a car"
+   ],
+   "src": [
+    [
+     "Cointelegraph: Tether Evo $200M in Blackrock Neurotech",
+     "https://cointelegraph.com/news/tether-evo-invests-200-million-neurotech"
+    ],
+    [
+     "The Block: Ardoino on Blackrock Neurotech",
+     "https://www.theblock.co/post/359607/tether-brain-computer-elon-musk-neuralink"
+    ],
+    [
+     "MedTech Dive: Neuralink $280M led by Founders Fund",
+     "https://www.medtechdive.com/news/elon-musk-neuralink-raises-280-million"
+    ]
+   ]
+  },
+  {
+   "id": "merge",
+   "n": "Merge Labs",
+   "s": "bodynet",
+   "t": "K",
+   "k": "co",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Noninvasive BCI startup co-founded by Sam Altman and Mikhail Shapiro; engineered molecules plus ultrasound.",
+   "dir": "Read neural signals without surgery and interpret them with AI foundation models.",
+   "pv": "$850M · 2026-01",
+   "strat": "OpenAI capital and model collaboration; medical uses first; parity with surgical precision may take 'decades rather than years.'",
+   "plan": [
+    [
+     "d",
+     "Reported in formation",
+     "2025-08-13"
+    ],
+    [
+     "d",
+     "$252M seed at $850M",
+     "2026-01-15"
+    ],
+    [
+     "p",
+     "Clinical trials (no timeline)",
+     ""
+    ]
+   ],
+   "obj": [],
+   "f": [
+    "Investors: OpenAI (largest), Bain Capital Ventures, Gabe Newell",
+    "Morgan Stanley estimates U.S. BCI market at $400B (cited in coverage)"
+   ],
+   "src": [
+    [
+     "Techloy: OpenAI leads $252M Merge Labs seed",
+     "https://www.techloy.com/openai-bets-252-million-on-a-brain-computer-interface-startup-founded-by-sam-altman.md"
+    ],
+    [
+     "Engadget: Altman and Blania to co-found Merge Labs",
+     "https://engadget.com/ai/openai-and-sam-altman-are-reportedly-creating-a-startup-rival-to-elon-musks-neuralink-123022874.html"
+    ],
+    [
+     "Techleap: Merge Labs $850M valuation (Aug 2025)",
+     "https://finder.techleap.nl/news/feed/sam-altman-backs-merge-labs-850m-valuation"
+    ]
+   ]
+  },
+  {
+   "id": "neucyber",
+   "n": "NeuCyber NeuroTech (Beijing) / Xinzhida with CIBR",
+   "s": "bodynet",
+   "t": "N",
+   "k": "co",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Beijing state-backed BCI developer of Beinao-1 (128-channel semi-invasive wireless) and Beinao-2 (512-channel invasive).",
+   "dir": "Executor of Beijing's 'Brain-Computer System Enhancement Plan.'",
+   "strat": "State fund capital (ZGC Beinao Fund), hospital partners (Peking University First, Xuanwu, Tiantan), and a registration timeline aligned to the national 2027 target.",
+   "plan": [
+    [
+     "d",
+     "ZGC Beinao Fund established",
+     "2022"
+    ],
+    [
+     "d",
+     "Beinao-1 human implants begin",
+     "2025-02"
+    ],
+    [
+     "m",
+     "Registered clinical trials; complete enrollment",
+     "2026"
+    ],
+    [
+     "m",
+     "Beinao-2 clinical verification",
+     "2026"
+    ],
+    [
+     "p",
+     "Registration certificate application",
+     "2027"
+    ]
+   ],
+   "obj": [],
+   "f": [
+    "~30 implants in investigator-initiated phase; 65,000+ hours of operation",
+    "Chinese speech decoding of nearly 100 common words",
+    "China Daily names NeucyberNeurotech (Beijing); ZGC names Beijing Xinzhida Neural Technology; treated here as one entity [ANALYSIS]"
+   ],
+   "src": [
+    [
+     "China Daily: Beinao-1 and Beinao-2",
+     "https://global.chinadaily.com.cn/a/202606/15/WS6a2fc5cba310986e2b460147.html"
+    ],
+    [
+     "ZGC Group: Beinao-1 sixth implant",
+     "https://www.zgcgroup.com.cn/Home/NewsCenter/DomesticNews/art/2026/art_d2840aa19a3c4e34aaa1c1539f412f47.html"
+    ]
+   ]
+  },
+  {
+   "id": "cnbciplan",
+   "n": "China BCI Industry Implementation Plan (seven ministries)",
+   "s": "bodynet",
+   "t": "N",
+   "k": "law",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "August 2025 plan by seven ministries including MIIT: 17 measures to build a competitive BCI industry.",
+   "dir": "Clinical use and advanced-standard key technologies by 2027; two to three global leaders by 2030.",
+   "strat": "Industrial policy across medical, industrial (driver alertness, mining) and consumer BCI.",
+   "plan": [
+    [
+     "d",
+     "Plan issued",
+     "2025-08"
+    ],
+    [
+     "p",
+     "Key technology and clinical-use targets",
+     "2027"
+    ],
+    [
+     "p",
+     "Two to three global industry champions",
+     "2030"
+    ]
+   ],
+   "obj": [],
+   "f": [
+    "Estimated 1-2 million Chinese patients could benefit",
+    "NeuroXess named as a domestic leader"
+   ],
+   "src": [
+    [
+     "Tom's Hardware: China BCI blueprint",
+     "https://www.tomshardware.com/tech-industry/china-bci-blueprint"
+    ],
+    [
+     "SCMP: China BCI plan",
+     "https://www.scmp.com/news/china/science/article/3321136/china-plots-pathway-tech-supremacy-through-brain-computer-interfaces"
+    ]
+   ]
+  },
+  {
+   "id": "darpan3",
+   "n": "DARPA N3 (Next-Generation Nonsurgical Neurotechnology)",
+   "s": "bodynet",
+   "t": "K",
+   "k": "prog",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Four-year program for high-resolution bidirectional wearable BMIs for able-bodied service members.",
+   "dir": "Control cyber defense, UAV swarms and complex mission systems by thought.",
+   "strat": "Six teams: Battelle (nanotransducers, minutely invasive), Carnegie Mellon, Johns Hopkins APL, PARC, Rice (magnetogenetics, minutely invasive), Teledyne; human trials in final phase.",
+   "plan": [
+    [
+     "d",
+     "Announced",
+     "2018-03"
+    ],
+    [
+     "d",
+     "Teams funded",
+     "2019-05-20"
+    ]
+   ],
+   "obj": [],
+   "f": [
+    "Program outcomes after the four-year term not located in this build"
+   ],
+   "src": [
+    [
+     "DARPA: N3 six teams",
+     "https://www.darpa.mil/news/2019/nonsurgical-brain-machine-interfaces"
+    ]
+   ]
+  },
+  {
+   "id": "darpaivn",
+   "n": "DARPA In Vivo Nanoplatforms (IVN)",
+   "s": "bodynet",
+   "t": "N",
+   "k": "prog",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "BTO program for implantable nanoplatform sensing (IVN:Dx) and nanoparticle therapeutics (IVN:Tx) for warfighters.",
+   "dir": "",
+   "strat": "Continuous physiological monitoring read externally without implanted electronics.",
+   "plan": [
+    [
+     "d",
+     "Program complete (per DARPA)",
+     ""
+    ]
+   ],
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "DARPA: In Vivo Nanoplatforms",
+     "https://www.darpa.mil/research/programs/in-vivo-nanoplatforms"
+    ]
+   ]
+  },
+  {
+   "id": "profusa",
+   "n": "Profusa",
+   "s": "bodynet",
+   "t": "N",
+   "k": "co",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Emeryville, Calif. maker of an injectable hydrogel biosensor (about 5 mm) read by an external device.",
+   "dir": "Continuous tissue chemistry sensing (oxygen, glucose) for early illness detection.",
+   "strat": "DARPA and JPEO-CBRND collaboration since at least 2018.",
+   "plan": [
+    [
+     "d",
+     "DARPA/JPEO-CBRND collaboration",
+     "2018"
+    ],
+    [
+     "d",
+     "Additional DARPA funding for early disease detection",
+     "2019-08"
+    ]
+   ],
+   "obj": [],
+   "f": [
+    "Needs a separate reader to communicate",
+    "Subject of claim c05"
+   ],
+   "src": [
+    [
+     "Snopes: Profusa biosensor and DARPA",
+     "https://www.snopes.com/fact-check/covid-detecting-microchip/"
+    ],
+    [
+     "Lead Stories: Profusa claim",
+     "https://leadstories.com/hoax-alert/2020/09/fact-check-profusa-others-have-not-created-an-implantable-chip-to-connect-us-to-the-internet-and-open-door-to-brave-new-world.html"
+    ]
+   ]
+  },
+  {
+   "id": "rate",
+   "n": "DIU RATE (Rapid Analysis of Threat Exposure)",
+   "s": "bodynet",
+   "t": "N",
+   "k": "prog",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "DIU/DTRA/Philips illness-prediction program using Garmin watches and Oura rings.",
+   "dir": "",
+   "strat": "Predict infection about 48 hours before symptoms with a 1-100 score; commanders see anonymized identifiers.",
+   "plan": [
+    [
+     "d",
+     "~400 kits deployed",
+     "2020-06"
+    ],
+    [
+     "m",
+     "Expansion to ~5,000 (Navy, VA, West Point)",
+     "2020"
+    ]
+   ],
+   "obj": [],
+   "f": [
+    "Algorithm trained on ~250,000 patient records"
+   ],
+   "src": [
+    [
+     "Defense One: DIU RATE wearables",
+     "https://www.defenseone.com/technology/2020/09/militarys-latest-wearables-can-detect-illness-two-days-you-get-sick/168664/"
+    ]
+   ]
+  },
+  {
+   "id": "dha",
+   "n": "Defense Health Agency",
+   "s": "healthdata",
+   "t": "N",
+   "k": "buyer",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "DoD agency that sought a $96M sole-source Oura ring and wellbeing-platform contract, then canceled the solicitation.",
+   "dir": "",
+   "plan": [
+    [
+     "d",
+     "Sole-source notice to Ouraring",
+     "2024-08"
+    ],
+    [
+     "d",
+     "Ring-only RFP",
+     "2024-12"
+    ],
+    [
+     "d",
+     "Solicitation canceled",
+     "2025-03-04"
+    ]
+   ],
+   "obj": [],
+   "f": [
+    "DHA told lawmakers Oura was the only ring cleared for secure facilities",
+    "DHA head Gen. Telita Crossland departed late Feb 2025"
+   ],
+   "src": [
+    [
+     "Breaking Defense: DHA cancels $96M wearable solicitation",
+     "https://breakingdefense.com/2025/03/this-acquisition-is-no-longer-required-defense-health-agency-cancels-96m-wearable-solicitation/"
+    ]
+   ]
+  },
+  {
+   "id": "navycrew",
+   "n": "Navy CREW program",
+   "s": "bodynet",
+   "t": "N",
+   "k": "prog",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Command Readiness, Endurance and Watchstanding: crew fatigue and readiness monitoring launched by NHRC after 2017 collisions.",
+   "dir": "",
+   "strat": "Continuous fatigue monitoring of sailors via Oura (NHRC) and WHOOP (MIT Lincoln Laboratory).",
+   "plan": [
+    [
+     "d",
+     "USS Gerald R. Ford CSG study, 1,600 sailors",
+     "2025"
+    ],
+    [
+     "d",
+     "WHOOP contract via MIT Lincoln Laboratory",
+     "2026-04"
+    ]
+   ],
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Business Wire: Oura U.S. manufacturing and FedStart",
+     "https://www.businesswire.com/news/home/20250827572356/en"
+    ],
+    [
+     "HLTH: WHOOP MIT Lincoln Laboratory contract",
+     "https://hlth.com/insights/news/whoop-secures-mit-lincoln-laboratory-contract-to-support-u-s-navy-crew-program"
+    ]
+   ]
+  },
+  {
+   "id": "oura",
+   "n": "Oura",
+   "s": "bodynet",
+   "t": "K",
+   "k": "co",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Finnish-founded (2013), San Francisco-based smart ring company; DoD is its largest enterprise customer.",
+   "dir": "Consumer health ring scaled into defense and federal health programs.",
+   "pv": "$11B · 2025-10; ~$13.48B IPO midpoint (postponed)",
+   "strat": "Consumer subscription growth plus a defense line: tens of thousands of rings across services, secure Fort Worth manufacturing, DoD analytics on Palantir FedStart IL5. IPO filed 2026, postponed.",
+   "plan": [
+    [
+     "d",
+     "Defense work begins",
+     "2019"
+    ],
+    [
+     "d",
+     "RATE device",
+     "2020-06"
+    ],
+    [
+     "d",
+     "DHA $96M solicitation canceled",
+     "2025-03-04"
+    ],
+    [
+     "d",
+     "Fort Worth plant and FedStart IL5",
+     "2025-08-27"
+    ],
+    [
+     "d",
+     "$900M+ at $11B",
+     "2025-10-14"
+    ],
+    [
+     "d",
+     "Confidential S-1",
+     "2026-05-21"
+    ],
+    [
+     "d",
+     "IPO terms: 50M shares at $40-$44",
+     "2026-09-21"
+    ],
+    [
+     "b",
+     "IPO postponed",
+     "2026-09-29"
+    ],
+    [
+     "m",
+     "Fort Worth plant opening",
+     "2026"
+    ]
+   ],
+   "obj": [],
+   "f": [
+    "Revenue $1.43B and net income $59M, 12 months to June 30, 2026",
+    "5M paid members; 5.5M+ rings sold",
+    "Army: 400+ soldiers in field exercise",
+    "Collaborators: DEVCOM Soldier Center, AFRL, NHRC",
+    "Says Palantir 'provides the security layer for some of the DoD's projects' and is not a partner"
+   ],
+   "src": [
+    [
+     "Business Wire: Oura U.S. manufacturing and FedStart",
+     "https://www.businesswire.com/news/home/20250827572356/en"
+    ],
+    [
+     "Tom's Guide: Oura military partnership and Palantir",
+     "https://www.tomsguide.com/wellness/smart-rings/oura-is-expanding-its-partnership-with-the-u-s-military-and-users-are-stressed-heres-what-that-means-for-your-data"
+    ],
+    [
+     "Breaking Defense: DHA cancels $96M wearable solicitation",
+     "https://breakingdefense.com/2025/03/this-acquisition-is-no-longer-required-defense-health-agency-cancels-96m-wearable-solicitation/"
+    ],
+    [
+     "Front Office Sports: Oura $11B",
+     "https://frontofficesports.com/ouras-11b-valuation-signals-leap-from-sports-to-defense/"
+    ],
+    [
+     "KuCoin: Oura confidential S-1",
+     "https://www.kucoin.com/news/flash/oura-health-files-for-us-ipo-valued-at-11b-after-875m-funding-round"
+    ],
+    [
+     "Fast Company: Oura S-1",
+     "https://www.fastcompany.com/91602373/oura-ring-ipo-stock-listing-date-nears-see-whats-in-sec-filing"
+    ],
+    [
+     "IPO Scoop: Oura IPO terms",
+     "https://www.iposcoop.com/?p=39366"
+    ],
+    [
+     "Renaissance Capital: Oura postpones IPO",
+     "https://www.renaissancecapital.com/IPO-Center/News/121945/smart-ring-maker-oura-postpones-2-1-billion-ipo"
+    ]
+   ]
+  },
+  {
+   "id": "ourafw",
+   "n": "Oura Fort Worth facility",
+   "s": "bodynet",
+   "t": "N",
+   "k": "site",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Secure, automated Oura manufacturing site in Fort Worth, Texas, for defense contracts.",
+   "dir": "",
+   "plan": [
+    [
+     "d",
+     "Announced",
+     "2025-08-27"
+    ],
+    [
+     "m",
+     "Opening",
+     "2026"
+    ]
+   ],
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Business Wire: Oura U.S. manufacturing and FedStart",
+     "https://www.businesswire.com/news/home/20250827572356/en"
+    ]
+   ]
+  },
+  {
+   "id": "whoop",
+   "n": "WHOOP",
+   "s": "bodynet",
+   "t": "N",
+   "k": "co",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Boston-based wearable maker; protested DHA's ring-only Oura procurement; Navy CREW supplier via MIT Lincoln Laboratory.",
+   "dir": "",
+   "pv": "$10.1B · 2026-03",
+   "strat": "Compete for military and medical-grade monitoring; Abbott strategic tie.",
+   "plan": [
+    [
+     "d",
+     "GAO protests against DHA Oura procurement",
+     "2024-2025"
+    ],
+    [
+     "d",
+     "FDA warning letter on Blood Pressure Insights",
+     "2025"
+    ],
+    [
+     "d",
+     "FDA final guidance places some BP features under wellness exemption",
+     "2026-01"
+    ],
+    [
+     "d",
+     "$575M Series G at $10.1B",
+     "2026-03-31"
+    ],
+    [
+     "d",
+     "MIT Lincoln Lab / Navy CREW contract",
+     "2026-04"
+    ]
+   ],
+   "obj": [],
+   "f": [
+    "Series G led by Collaborative Fund; Abbott strategic; Mayo Clinic"
+   ],
+   "src": [
+    [
+     "MedTech Dive: WHOOP $575M Series G",
+     "https://www.medtechdive.com/news/whoop-raises-575m-adds-abbott-as-strategic-investor/816229/"
+    ],
+    [
+     "HLTH: WHOOP MIT Lincoln Laboratory contract",
+     "https://hlth.com/insights/news/whoop-secures-mit-lincoln-laboratory-contract-to-support-u-s-navy-crew-program"
+    ],
+    [
+     "Breaking Defense: DHA cancels $96M wearable solicitation",
+     "https://breakingdefense.com/2025/03/this-acquisition-is-no-longer-required-defense-health-agency-cancels-96m-wearable-solicitation/"
+    ]
+   ]
+  },
+  {
+   "id": "cmsecosys",
+   "n": "CMS Health Tech Ecosystem",
+   "s": "bodynet",
+   "t": "N",
+   "k": "prog",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "White House/CMS initiative (July 30, 2025) for patient health data access; participants include Amazon, Anthropic, OpenAI, Microsoft AI; Apple, Fitbit and Oura pledged as early adopters.",
+   "dir": "",
+   "plan": [
+    [
+     "d",
+     "Launched",
+     "2025-07-30"
+    ]
+   ],
+   "obj": [],
+   "f": [
+    "Unclear whether wearable data enters the exchange (Tech Policy Press)"
+   ],
+   "src": [
+    [
+     "HIT Consultant: CMS Health Tech Ecosystem",
+     "https://hitconsultant.net/2025/07/30/white-house-event-unveils-cms-health-tech-ecosystem-initiative"
+    ],
+    [
+     "Tech Policy Press: wearables campaign critique",
+     "https://techpolicy.press/control-for-whom-keeping-an-eye-on-the-dark-side-of-americas-new-wearables-campaign"
+    ]
+   ]
+  },
+  {
+   "id": "randiob",
+   "n": "RAND, The Internet of Bodies (RR3226)",
+   "s": "bodynet",
+   "t": "N",
+   "k": "press",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "RAND report (Oct 2020) defining IoB and its cyber, privacy and national security risks; lead researcher Mary Lee.",
+   "dir": "",
+   "plan": [
+    [
+     "d",
+     "Published",
+     "2020-10-29"
+    ]
+   ],
+   "obj": [],
+   "f": [
+    "Cites 2018 fitness-tracker exposure of U.S. base locations"
+   ],
+   "src": [
+    [
+     "RAND: What is the Internet of Bodies",
+     "https://www.rand.org/multimedia/video/2020/10/29/what-is-the-internet-of-bodies.html"
+    ]
+   ]
+  },
+  {
+   "id": "wefiob",
+   "n": "WEF, The Internet of Bodies Is Here",
+   "s": "bodynet",
+   "t": "N",
+   "k": "press",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "WEF white paper (Aug 6, 2020) on governance of devices attached to, implanted in or swallowed by people.",
+   "dir": "",
+   "plan": [
+    [
+     "d",
+     "Published",
+     "2020-08-06"
+    ]
+   ],
+   "obj": [],
+   "f": [
+    "Flags discrimination in jobs, schooling, lending and health insurance"
+   ],
+   "src": [
+    [
+     "WEF: The Internet of Bodies Is Here",
+     "https://www.weforum.org/publications/the-internet-of-bodies-is-here-tackling-new-challenges-of-technology-governance/"
+    ]
+   ]
+  },
+  {
+   "id": "iobnt",
+   "n": "Internet of Bio-Nano Things (IoBNT) field",
+   "s": "bodynet",
+   "t": "K",
+   "k": "sys",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Research field defined by Akyildiz et al. (2015): biological nano-devices networked by molecular communication with a bio-cyber interface to the internet.",
+   "dir": "",
+   "strat": "Mostly theoretical, with lab work under NSF's MoNaCo project.",
+   "plan": [
+    [
+     "d",
+     "Founding paper",
+     "2015-03"
+    ],
+    [
+     "d",
+     "IEEE 1906.1 framework",
+     "2015"
+    ]
+   ],
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "IoT Australia: The Internet of Bio-NanoThings",
+     "https://www.iotaustralia.org.au/2015/07/28/iotnewsglobal/get-ready-for-the-internet-of-bio-nanothings"
+    ],
+    [
+     "StatNano: IEEE 1906.1-2015",
+     "https://statnano.com/standard/ieee-sa/1114/IEEE-19061-2015"
+    ]
+   ]
+  },
+  {
+   "id": "ieee1906",
+   "n": "IEEE 1906.1-2015",
+   "s": "bodynet",
+   "t": "N",
+   "k": "law",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "IEEE Recommended Practice for Nanoscale and Molecular Communication Framework.",
+   "dir": "",
+   "plan": [
+    [
+     "d",
+     "Published",
+     "2015"
+    ]
+   ],
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "StatNano: IEEE 1906.1-2015",
+     "https://statnano.com/standard/ieee-sa/1114/IEEE-19061-2015"
+    ]
+   ]
+  },
+  {
+   "id": "neuraldust",
+   "n": "Neural dust (UC Berkeley)",
+   "s": "bodynet",
+   "t": "N",
+   "k": "prog",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Millimeter-scale ultrasound-powered wireless sensors tested in rat muscle and peripheral nerve (2016).",
+   "dir": "",
+   "plan": [
+    [
+     "d",
+     "Published",
+     "2016-08-03"
+    ]
+   ],
+   "obj": [],
+   "f": [
+    "Researchers include Michel Maharbiz and DJ Seo"
+   ],
+   "src": [
+    [
+     "Berkeley HWNI: neural dust",
+     "https://hwni.berkeley.edu/node/682"
+    ],
+    [
+     "MIT Technology Review: Dongjin Seo",
+     "https://www.technologyreview.com/innovator/dongjin-seo/"
+    ]
+   ]
+  },
+  {
+   "id": "mycite",
+   "n": "Abilify MyCite",
+   "s": "bodynet",
+   "t": "N",
+   "k": "app",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "First FDA-approved digital medicine (Nov 13, 2017): aripiprazole with ingestible sensor, wearable patch and app; Otsuka with Proteus.",
+   "dir": "",
+   "plan": [
+    [
+     "d",
+     "FDA approval",
+     "2017-11-13"
+    ],
+    [
+     "d",
+     "Proteus bankruptcy",
+     "2020-06"
+    ]
+   ],
+   "obj": [],
+   "f": [
+    "Label: ability to improve compliance 'has not been established'",
+    "Data sharing requires patient consent",
+    "Proteus raised $500M+, once valued at $1.5B"
+   ],
+   "src": [
+    [
+     "BioSpace: Abilify MyCite approval",
+     "https://www.biospace.com/otsuka-and-proteus-win-first-fda-approval-for-pill-with-sensor-to-track-ingestion"
+    ],
+    [
+     "pharmaphorum: Proteus bankruptcy",
+     "https://pharmaphorum.com/news/smart-pill-firm-proteus-files-for-bankruptcy"
+    ]
+   ]
+  },
+  {
+   "id": "otsuka",
+   "n": "Otsuka",
+   "s": "bodynet",
+   "t": "N",
+   "k": "co",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Japanese drugmaker behind Abilify MyCite; acquired full license to the adherence technology after splitting with Proteus.",
+   "dir": "",
+   "tk": "4578",
+   "ex": "TSE",
+   "plan": [
+    [
+     "d",
+     "MyCite approval",
+     "2017-11-13"
+    ]
+   ],
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "BioSpace: Abilify MyCite approval",
+     "https://www.biospace.com/otsuka-and-proteus-win-first-fda-approval-for-pill-with-sensor-to-track-ingestion"
+    ],
+    [
+     "pharmaphorum: Proteus bankruptcy",
+     "https://pharmaphorum.com/news/smart-pill-firm-proteus-files-for-bankruptcy"
+    ]
+   ]
+  },
+  {
+   "id": "msftpatent",
+   "n": "Microsoft WO2020060606A1, 'Cryptocurrency system using body activity data'",
+   "s": "bodynet",
+   "t": "N",
+   "k": "prog",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Patent application filed June 20, 2019, published March 26, 2020: body activity sensed by user devices used in a cryptocurrency mining process.",
+   "dir": "",
+   "plan": [
+    [
+     "d",
+     "Filed",
+     "2019-06-20"
+    ],
+    [
+     "d",
+     "Published",
+     "2020-03-26"
+    ]
+   ],
+   "obj": [],
+   "f": [
+    "Describes wearables and smartphones; no implants or vaccines",
+    "Subject of claim c06"
+   ],
+   "src": [
+    [
+     "Lead Stories: Microsoft patent WO2020060606",
+     "https://leadstories.com/hoax-alert/2020/04/fact-check-microsoft-patent-application-w02020060606-does-not-involve-implanting-sensors-in-people-5g-or-vaccines.html"
+    ],
+    [
+     "Snopes: Microsoft patent 666",
+     "https://www.snopes.com/fact-check/microsoft-own-patent-666"
+    ]
+   ]
+  },
+  {
+   "id": "mindact",
+   "n": "MIND Act (S.2925)",
+   "s": "bodynet",
+   "t": "N",
+   "k": "law",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Management of Individuals' Neural Data Act of 2025; directs an FTC study of neural and related data and OSTP guidance on federal neurotech use.",
+   "dir": "",
+   "plan": [
+    [
+     "d",
+     "Introduced",
+     "2025-09-24"
+    ],
+    [
+     "p",
+     "FTC report; OSTP guidance within 180 days after",
+     ""
+    ]
+   ],
+   "obj": [],
+   "f": [
+    "'Other related data' includes heart rate variability, eye tracking, sleep patterns and wearable signals"
+   ],
+   "src": [
+    [
+     "Inside Privacy: MIND Act",
+     "https://www.insideprivacy.com/health-privacy/congress-introduces-neural-data-bill/"
+    ],
+    [
+     "Congress.gov: S.2925 text",
+     "https://www.congress.gov/119/bills/s2925/BILLS-119s2925is.htm"
+    ]
+   ]
+  },
+  {
+   "id": "coneural",
+   "n": "Colorado HB 24-1058",
+   "s": "bodynet",
+   "t": "N",
+   "k": "law",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Adds neural data to sensitive data under the Colorado Privacy Act; consent required.",
+   "dir": "",
+   "plan": [
+    [
+     "d",
+     "Enacted",
+     "2024"
+    ]
+   ],
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Risk Management: state neural data laws",
+     "https://www.rmmagazine.com/articles/article/2026/02/24/state-of-mind--the-new-landscape-of-neural-data-privacy-laws"
+    ]
+   ]
+  },
+  {
+   "id": "caneural",
+   "n": "California SB 1223",
+   "s": "bodynet",
+   "t": "N",
+   "k": "law",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Treats neural data as sensitive personal information under CCPA.",
+   "dir": "",
+   "plan": [
+    [
+     "d",
+     "Enacted",
+     "2024"
+    ]
+   ],
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Risk Management: state neural data laws",
+     "https://www.rmmagazine.com/articles/article/2026/02/24/state-of-mind--the-new-landscape-of-neural-data-privacy-laws"
+    ]
+   ]
+  },
+  {
+   "id": "ctneural",
+   "n": "Connecticut SB 1295",
+   "s": "bodynet",
+   "t": "N",
+   "k": "law",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Adds neural data to sensitive data under the Connecticut Data Privacy Act; consent for sale and targeted advertising.",
+   "dir": "",
+   "plan": [
+    [
+     "d",
+     "Enacted",
+     "2025"
+    ]
+   ],
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Risk Management: state neural data laws",
+     "https://www.rmmagazine.com/articles/article/2026/02/24/state-of-mind--the-new-landscape-of-neural-data-privacy-laws"
+    ]
+   ]
+  },
+  {
+   "id": "mtneural",
+   "n": "Montana SB 163",
+   "s": "bodynet",
+   "t": "N",
+   "k": "law",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Extends the Genetic Information Privacy Act to neurotechnology data with separate express consent per purpose and third party.",
+   "dir": "",
+   "plan": [
+    [
+     "d",
+     "Enacted",
+     "2025"
+    ]
+   ],
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Risk Management: state neural data laws",
+     "https://www.rmmagazine.com/articles/article/2026/02/24/state-of-mind--the-new-landscape-of-neural-data-privacy-laws"
+    ]
+   ]
+  },
+  {
+   "id": "unesconeuro",
+   "n": "UNESCO Recommendation on the Ethics of Neurotechnology",
+   "s": "bodynet",
+   "t": "N",
+   "k": "law",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "First global neurotech ethics standard, adopted at the General Conference in Samarkand, November 2025.",
+   "dir": "",
+   "plan": [
+    [
+     "d",
+     "In force",
+     "2025-11-12"
+    ]
+   ],
+   "obj": [],
+   "f": [
+    "Warns against workplace productivity monitoring; caution on non-therapeutic use by young people"
+   ],
+   "src": [
+    [
+     "UNESCO UK: neurotechnology ethics framework",
+     "https://unesco.org.uk/news/unesco-adopts-first-global-framework-on-neurotechnology-ethics"
+    ]
+   ]
+  },
+  {
+   "id": "qia",
+   "n": "Qatar Investment Authority",
+   "s": "gulf",
+   "t": "N",
+   "k": "fund",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Qatar sovereign fund; investor in Neuralink's Series E and Synchron's Series D.",
+   "dir": "",
+   "plan": [
+    [
+     "d",
+     "Neuralink Series E",
+     "2025-06-02"
+    ],
+    [
+     "d",
+     "Synchron Series D",
+     "2025-11-06"
+    ]
+   ],
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Fierce Biotech: Neuralink $650M Series E",
+     "https://www.fiercebiotech.com/medtech/neuralink-secures-650m-series-e-funding-expand-patient-access-brain-chip-technology"
+    ],
+    [
+     "Medtech Insight: Synchron $200M Series D",
+     "https://insights.citeline.com/medtech-insight/business/financing/synchron-secures-200m-series-d-plans-new-brain-interface-with-potentially-more-applications-U6MRTIDOVRHXXGDHGHUD35SA5Q"
+    ]
+   ]
+  },
+  {
+   "id": "neom",
+   "n": "NEOM Investment Fund",
+   "s": "gulf",
+   "t": "N",
+   "k": "fund",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Saudi NEOM investment arm; strategic investor and partner in Paradromics (Feb 2025).",
+   "dir": "",
+   "plan": [
+    [
+     "d",
+     "Paradromics investment",
+     "2025-02"
+    ]
+   ],
+   "obj": [],
+   "f": [
+    "Amount undisclosed in sources reviewed"
+   ],
+   "src": [
+    [
+     "Newsio: Paradromics NEOM investment",
+     "https://newsio.com/2025/02/12/neuralink-competitor-paradromics-secures-investment-from-saudi-arabias-neom"
+    ]
+   ]
+  },
+  {
+   "id": "mubadalacap",
+   "n": "Mubadala Capital",
+   "s": "gulf",
+   "t": "N",
+   "k": "fund",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Abu Dhabi asset manager; investor in Precision Neuroscience's $250M Series D.",
+   "dir": "",
+   "plan": [
+    [
+     "d",
+     "Precision Series D",
+     "2026-09-24"
+    ]
+   ],
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "MedPath: Precision $250M Series D",
+     "https://trial.medpath.com/news/precision-neuroscience-raises-250m-series-d-to-push-its-brain-surface-interface-toward-permanent-implants"
+    ]
+   ]
+  },
+  {
+   "id": "arch",
+   "n": "ARCH Venture Partners",
+   "s": "capital",
+   "t": "N",
+   "k": "cap",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Led Synchron's $75M Series C; existing investor in Series D.",
+   "dir": "",
+   "plan": [
+    [
+     "d",
+     "Synchron Series C lead",
+     "2022-12-15"
+    ]
+   ],
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Becker's: Bezos Expeditions, Gates Frontier in Synchron Series C",
+     "https://www.beckershospitalreview.com/innovation/bezos-expeditions-gates-frontier-back-brain-computer-interface-company-in-75m-financing-round.html"
+    ],
+    [
+     "Medtech Insight: Synchron $200M Series D",
+     "https://insights.citeline.com/medtech-insight/business/financing/synchron-secures-200m-series-d-plans-new-brain-interface-with-potentially-more-applications-U6MRTIDOVRHXXGDHGHUD35SA5Q"
+    ],
+    [
+     "New AI drug discovery powerhouse Xaira rises with $1B (Fierce Biotech)",
+     "https://www.fiercebiotech.com/biotech/new-ai-drug-discovery-powerhouse-xaira-rises-1b-funding"
+    ]
+   ]
+  },
+  {
+   "id": "khosla",
+   "n": "Khosla Ventures",
+   "s": "capital",
+   "t": "N",
+   "k": "cap",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Investor in Synchron and Science Corp.",
+   "dir": "",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Medtech Insight: Synchron $200M Series D",
+     "https://insights.citeline.com/medtech-insight/business/financing/synchron-secures-200m-series-d-plans-new-brain-interface-with-potentially-more-applications-U6MRTIDOVRHXXGDHGHUD35SA5Q"
+    ],
+    [
+     "Business Wire: Science Corp $230M Series C",
+     "https://www.businesswire.com/news/home/20260305896789/en/Science-Corporation-Closes-$230-Million-Series-C-to-Accelerate-Commercialization-of-PRIMA"
+    ]
+   ]
+  },
+  {
+   "id": "lightspeed",
+   "n": "Lightspeed Venture Partners",
+   "s": "capital",
+   "t": "N",
+   "k": "cap",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Investor in Neuralink's Series E and Science Corp's Series C.",
+   "dir": "",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Fierce Biotech: Neuralink $650M Series E",
+     "https://www.fiercebiotech.com/medtech/neuralink-secures-650m-series-e-funding-expand-patient-access-brain-chip-technology"
+    ],
+    [
+     "Business Wire: Science Corp $230M Series C",
+     "https://www.businesswire.com/news/home/20260305896789/en/Science-Corporation-Closes-$230-Million-Series-C-to-Accelerate-Commercialization-of-PRIMA"
+    ]
+   ]
+  },
+  {
+   "id": "ark",
+   "n": "ARK Invest",
+   "s": "capital",
+   "t": "N",
+   "k": "cap",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Investor in Neuralink's Series E and Precision's Series D.",
+   "dir": "",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Fierce Biotech: Neuralink $650M Series E",
+     "https://www.fiercebiotech.com/medtech/neuralink-secures-650m-series-e-funding-expand-patient-access-brain-chip-technology"
+    ],
+    [
+     "MedPath: Precision $250M Series D",
+     "https://trial.medpath.com/news/precision-neuroscience-raises-250m-series-d-to-push-its-brain-surface-interface-toward-permanent-implants"
+    ]
+   ]
+  },
+  {
+   "id": "sequoia",
+   "n": "Sequoia Capital",
+   "s": "capital",
+   "t": "N",
+   "k": "cap",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Investor in Neuralink's Series E.",
+   "dir": "",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Fierce Biotech: Neuralink $650M Series E",
+     "https://www.fiercebiotech.com/medtech/neuralink-secures-650m-series-e-funding-expand-patient-access-brain-chip-technology"
+    ]
+   ]
+  },
+  {
+   "id": "valoreq",
+   "n": "Valor Equity Partners",
+   "s": "capital",
+   "t": "N",
+   "k": "cap",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Investor in Neuralink's Series E.",
+   "dir": "",
+   "obj": [],
+   "f": [
+    "Relation to existing node 'valor' (Valor Compute Infrastructure L.P.) not established in sources reviewed"
+   ],
+   "src": [
+    [
+     "Fierce Biotech: Neuralink $650M Series E",
+     "https://www.fiercebiotech.com/medtech/neuralink-secures-650m-series-e-funding-expand-patient-access-brain-chip-technology"
+    ]
+   ]
+  },
+  {
+   "id": "doublepoint",
+   "n": "Double Point Ventures",
+   "s": "capital",
+   "t": "N",
+   "k": "cap",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Led Synchron's $200M Series D.",
+   "dir": "",
+   "plan": [
+    [
+     "d",
+     "Synchron Series D lead",
+     "2025-11-06"
+    ]
+   ],
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Medtech Insight: Synchron $200M Series D",
+     "https://insights.citeline.com/medtech-insight/business/financing/synchron-secures-200m-series-d-plans-new-brain-interface-with-potentially-more-applications-U6MRTIDOVRHXXGDHGHUD35SA5Q"
+    ]
+   ]
+  },
+  {
+   "id": "ausnrf",
+   "n": "Australia National Reconstruction Fund",
+   "s": "allied",
+   "t": "N",
+   "k": "fund",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Australian government fund; new investor in Synchron's Series D.",
+   "dir": "",
+   "plan": [
+    [
+     "d",
+     "Synchron Series D",
+     "2025-11-06"
+    ]
+   ],
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Medtech Insight: Synchron $200M Series D",
+     "https://insights.citeline.com/medtech-insight/business/financing/synchron-secures-200m-series-d-plans-new-brain-interface-with-potentially-more-applications-U6MRTIDOVRHXXGDHGHUD35SA5Q"
+    ]
+   ]
+  },
+  {
+   "id": "pershing",
+   "n": "Pershing Square / Ackman Oxman Institute",
+   "s": "capital",
+   "t": "N",
+   "k": "cap",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Co-led Precision's Series D with $42.5M combined.",
+   "dir": "",
+   "plan": [
+    [
+     "d",
+     "Precision Series D",
+     "2026-09-24"
+    ]
+   ],
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "MedPath: Precision $250M Series D",
+     "https://trial.medpath.com/news/precision-neuroscience-raises-250m-series-d-to-push-its-brain-surface-interface-toward-permanent-implants"
+    ]
+   ]
+  },
+  {
+   "id": "fidelity",
+   "n": "Fidelity Management & Research",
+   "s": "capital",
+   "t": "N",
+   "k": "cap",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Led Oura's $900M+ round at $11B (Oct 2025).",
+   "dir": "",
+   "plan": [
+    [
+     "d",
+     "Oura round lead",
+     "2025-10-14"
+    ]
+   ],
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Front Office Sports: Oura $11B",
+     "https://frontofficesports.com/ouras-11b-valuation-signals-leap-from-sports-to-defense/"
+    ]
+   ]
+  },
+  {
+   "id": "collabfund",
+   "n": "Collaborative Fund",
+   "s": "capital",
+   "t": "N",
+   "k": "cap",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Led WHOOP's $575M Series G.",
+   "dir": "",
+   "plan": [
+    [
+     "d",
+     "WHOOP Series G lead",
+     "2026-03-31"
+    ]
+   ],
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "MedTech Dive: WHOOP $575M Series G",
+     "https://www.medtechdive.com/news/whoop-raises-575m-adds-abbott-as-strategic-investor/816229/"
+    ]
+   ]
+  },
+  {
+   "id": "bainvc",
+   "n": "Bain Capital Ventures",
+   "s": "capital",
+   "t": "N",
+   "k": "cap",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Investor in Merge Labs' seed.",
+   "dir": "",
+   "plan": [
+    [
+     "d",
+     "Merge Labs seed",
+     "2026-01-15"
+    ]
+   ],
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Techloy: OpenAI leads $252M Merge Labs seed",
+     "https://www.techloy.com/openai-bets-252-million-on-a-brain-computer-interface-startup-founded-by-sam-altman.md"
+    ]
+   ]
+  },
+  {
+   "id": "zgcfund",
+   "n": "ZGC Beinao Fund",
+   "s": "bodynet",
+   "t": "N",
+   "k": "fund",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Beijing ZGC Development Group fund (2022) supporting CIBR and Xinzhida.",
+   "dir": "",
+   "plan": [
+    [
+     "d",
+     "Established",
+     "2022"
+    ]
+   ],
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "ZGC Group: Beinao-1 sixth implant",
+     "https://www.zgcgroup.com.cn/Home/NewsCenter/DomesticNews/art/2026/art_d2840aa19a3c4e34aaa1c1539f412f47.html"
+    ]
+   ]
+  },
+  {
+   "id": "medtronic",
+   "n": "Medtronic",
+   "s": "bodynet",
+   "t": "N",
+   "k": "co",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Partnered with Precision (Jan 2026) to integrate its electrode array with surgical navigation.",
+   "dir": "",
+   "tk": "MDT",
+   "ex": "NYSE",
+   "plan": [
+    [
+     "d",
+     "Precision partnership",
+     "2026-01"
+    ]
+   ],
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "MedPath: Precision $250M Series D",
+     "https://trial.medpath.com/news/precision-neuroscience-raises-250m-series-d-to-push-its-brain-surface-interface-toward-permanent-implants"
+    ]
+   ]
+  },
+  {
+   "id": "abbott",
+   "n": "Abbott",
+   "s": "bodynet",
+   "t": "N",
+   "k": "co",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Strategic investor in WHOOP's Series G.",
+   "dir": "",
+   "tk": "ABT",
+   "ex": "NYSE",
+   "plan": [
+    [
+     "d",
+     "WHOOP Series G",
+     "2026-03-31"
+    ]
+   ],
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "MedTech Dive: WHOOP $575M Series G",
+     "https://www.medtechdive.com/news/whoop-raises-575m-adds-abbott-as-strategic-investor/816229/"
+    ]
+   ]
+  },
+  {
+   "id": "philips",
+   "n": "Philips",
+   "s": "bodynet",
+   "t": "N",
+   "k": "co",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Built the RATE illness-prediction algorithm for DIU and DTRA.",
+   "dir": "",
+   "tk": "PHG",
+   "ex": "NYSE",
+   "plan": [
+    [
+     "d",
+     "RATE deployment",
+     "2020-06"
+    ]
+   ],
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Defense One: DIU RATE wearables",
+     "https://www.defenseone.com/technology/2020/09/militarys-latest-wearables-can-detect-illness-two-days-you-get-sick/168664/"
+    ]
+   ]
+  },
+  {
+   "id": "garmin",
+   "n": "Garmin",
+   "s": "bodynet",
+   "t": "N",
+   "k": "co",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Watch used in DIU RATE.",
+   "dir": "",
+   "tk": "GRMN",
+   "ex": "NYSE",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Defense One: DIU RATE wearables",
+     "https://www.defenseone.com/technology/2020/09/militarys-latest-wearables-can-detect-illness-two-days-you-get-sick/168664/"
+    ]
+   ]
+  },
+  {
+   "id": "lillyaif",
+   "n": "Lilly AI factory (DGX B300 SuperPOD)",
+   "s": "pharma",
+   "t": "N",
+   "k": "site",
+   "L": [
+    3
+   ],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Wholly owned Lilly supercomputer: 1,016 NVIDIA Blackwell Ultra GPUs, over 9,000 petaflops of AI performance; first DGX SuperPOD with DGX B300 systems.",
+   "dir": "",
+   "obj": [],
+   "f": [
+    "Announced at NVIDIA GTC Washington, D.C., 2025-10-28.",
+    "Uses NVIDIA Spectrum-X, Mission Control, BioNeMo, Omniverse, Isaac, NeMo, Clara and FLARE."
+   ],
+   "src": [
+    [
+     "Lilly AI factory on NVIDIA Blackwell DGX SuperPOD (NVIDIA blog, 2025-10-28)",
+     "https://blogs.nvidia.com/blog/lilly-ai-factory-nvidia-blackwell-dgx-superpod"
+    ]
+   ]
+  },
+  {
+   "id": "tunelab",
+   "n": "Lilly TuneLab",
+   "s": "pharma",
+   "t": "N",
+   "k": "app",
+   "L": [
+    8
+   ],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Lilly platform giving biotechs access to discovery models built on about $1B of Lilly research data; federated learning on NVIDIA FLARE; offers NVIDIA Clara models.",
+   "dir": "",
+   "obj": [],
+   "f": [
+    "Launched 2025-09-09; first users Circle Pharma and insitro.",
+    "Biotechs contribute training data in exchange for access."
+   ],
+   "src": [
+    [
+     "Lilly offers AI discovery models to biotech partners (pharmaphorum, 2025-09-09)",
+     "https://pharmaphorum.com/news/lilly-offers-ai-discovery-models-biotech-partners"
+    ],
+    [
+     "Lilly AI factory on NVIDIA Blackwell DGX SuperPOD (NVIDIA blog, 2025-10-28)",
+     "https://blogs.nvidia.com/blog/lilly-ai-factory-nvidia-blackwell-dgx-superpod"
+    ]
+   ]
+  },
+  {
+   "id": "lillynvlab",
+   "n": "NVIDIA-Lilly AI co-innovation lab",
+   "s": "pharma",
+   "t": "N",
+   "k": "prog",
+   "L": [
+    3,
+    8
+   ],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Up to $1B over five years from NVIDIA and Lilly for talent, infrastructure and compute; South San Francisco; links agentic wet labs and dry labs.",
+   "dir": "",
+   "plan": [
+    [
+     "m",
+     "Work begins in South San Francisco",
+     "2026"
+    ],
+    [
+     "p",
+     "Infrastructure on NVIDIA Vera Rubin",
+     "2026"
+    ]
+   ],
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "NVIDIA and Lilly Announce Co-Innovation AI Lab (NVIDIA, 2026-01-12)",
+     "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-and-Lilly-Announce-Co-Innovation-AI-Lab-to-Reinvent-Drug-Discovery-in-the-Age-of-AI"
+    ],
+    [
+     "NVIDIA BioNeMo Platform Adopted by Life Sciences Leaders (NVIDIA, 2026-01-12)",
+     "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-BioNeMo-Platform-Adopted-by-Life-Sciences-Leaders-to-Accelerate-AI-Driven-Drug-Discovery/default.aspx"
+    ]
+   ]
+  },
+  {
+   "id": "bionemo",
+   "n": "NVIDIA BioNeMo / Clara",
+   "s": "pharma",
+   "t": "N",
+   "k": "sys",
+   "L": [
+    3,
+    8
+   ],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "NVIDIA's biology AI platform and open model family (Clara) used by Lilly, Thermo Fisher, Chai, Lila, Basecamp, Boltz, Natera and others.",
+   "dir": "",
+   "obj": [],
+   "f": [
+    "New Clara models RNAPro and ReaSyn v2 released 2026-01-12.",
+    "Partner roster includes Amgen, Roche, Automata, Transcripta Bio digital twins on Omniverse and Isaac Sim."
+   ],
+   "src": [
+    [
+     "NVIDIA BioNeMo Platform Adopted by Life Sciences Leaders (NVIDIA, 2026-01-12)",
+     "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-BioNeMo-Platform-Adopted-by-Life-Sciences-Leaders-to-Accelerate-AI-Driven-Drug-Discovery/default.aspx"
+    ],
+    [
+     "Lilly AI factory on NVIDIA Blackwell DGX SuperPOD (NVIDIA blog, 2025-10-28)",
+     "https://blogs.nvidia.com/blog/lilly-ai-factory-nvidia-blackwell-dgx-superpod"
+    ]
+   ]
+  },
+  {
+   "id": "isomorphic",
+   "n": "Isomorphic Labs",
+   "s": "pharma",
+   "t": "K",
+   "k": "co",
+   "L": [
+    8
+   ],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Alphabet's AI drug discovery company led by Demis Hassabis; raised $2.1B in May 2026 with MGX and the UK Sovereign AI Fund; reported talks at a valuation of at least $40B.",
+   "dir": "",
+   "pv": "talks at >=$40B, up to $50B reported · 2026-10 [VERIFY]",
+   "strat": "Isomorphic builds an AI drug design engine on AlphaFold-lineage science and funds internal and partnered programs toward the clinic. It raises from crossover, sovereign and AI-focused capital at AI-lab valuations.",
+   "plan": [
+    [
+     "d",
+     "Lilly and Novartis collaborations (~$3B potential)",
+     "2024-01-07"
+    ],
+    [
+     "d",
+     "$600M first external round led by Thrive",
+     "2025-03-31"
+    ],
+    [
+     "d",
+     "$2.1B Series B led by Thrive",
+     "2026-05-12"
+    ],
+    [
+     "p",
+     "First-in-human clinical studies",
+     "2026"
+    ],
+    [
+     "p",
+     "New round at >=$40B in early talks",
+     "2026-10"
+    ]
+   ],
+   "obj": [],
+   "f": [
+    "Series B investors: Thrive (lead), Alphabet, GV, CapitalG, Temasek, MGX, UK Sovereign AI Fund.",
+    "Sites: London, Cambridge (MA), Lausanne.",
+    "President Max Jaderberg."
+   ],
+   "src": [
+    [
+     "Isomorphic Labs announces $600M external investment round (Isomorphic, 2025-03-31)",
+     "https://isomorphiclabs.com/articles/isomorphic-labs-announces-600m-external-investment-round"
+    ],
+    [
+     "Isomorphic Labs raises $2.1 billion (YourStory, 2026-05-12)",
+     "https://yourstory.com/ai-story/isomorphic-labs-ai-drug-discovery-series-b-2026"
+    ],
+    [
+     "Isomorphic Labs in funding talks for at least $40 billion (Bloomberg Law, 2026-10-08)",
+     "https://news.bgov.com/private-equity/isomorphic-labs-in-funding-talks-for-at-least-40-billion-value"
+    ],
+    [
+     "Isomorphic Labs partners with Eli Lilly and Novartis (SiliconANGLE, 2024-01-07)",
+     "https://siliconangle.com/2024/01/07/ai-drug-discovery-startup-isomorphic-labs-partners-eli-lilly-novartis/"
+    ]
+   ]
+  },
+  {
+   "id": "alphafold",
+   "n": "AlphaFold / 2024 Chemistry Nobel",
+   "s": "pharma",
+   "t": "N",
+   "k": "model",
+   "L": [
+    8
+   ],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Protein structure prediction work recognized by the 2024 Nobel Prize in Chemistry to Demis Hassabis and John M. Jumper, shared with David Baker.",
+   "dir": "",
+   "obj": [],
+   "f": [
+    "Nobel announced 2024-10-09."
+   ],
+   "src": [
+    [
+     "The Nobel Prize in Chemistry awarded to David Baker, Demis Hassabis and John M Jumper (AlphaGalileo, 2024-10-09)",
+     "https://alphagalileo.org/en-gb/Item-Display/ItemId/250899"
+    ]
+   ]
+  },
+  {
+   "id": "xaira",
+   "n": "Xaira Therapeutics",
+   "s": "pharma",
+   "t": "N",
+   "k": "co",
+   "L": [
+    8
+   ],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "AI drug discovery and development company launched with $1B committed, incubated by Foresite Labs and co-led by ARCH; CEO Marc Tessier-Lavigne; co-founder David Baker.",
+   "dir": "",
+   "pv": "$1B committed at launch · 2024",
+   "obj": [],
+   "f": [
+    "Investors: ARCH, Foresite Labs, F-Prime, NEA, Sequoia, Lux, Lightspeed.",
+    "Includes RFdiffusion/RFantibody team, Illumina functional genomics spinout and Interline proteomics group."
+   ],
+   "src": [
+    [
+     "New AI drug discovery powerhouse Xaira rises with $1B (Fierce Biotech)",
+     "https://www.fiercebiotech.com/biotech/new-ai-drug-discovery-powerhouse-xaira-rises-1b-funding"
+    ]
+   ]
+  },
+  {
+   "id": "foresite",
+   "n": "Foresite Labs",
+   "s": "capital",
+   "t": "N",
+   "k": "cap",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Incubator and co-lead of Xaira's launch.",
+   "dir": "",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "New AI drug discovery powerhouse Xaira rises with $1B (Fierce Biotech)",
+     "https://www.fiercebiotech.com/biotech/new-ai-drug-discovery-powerhouse-xaira-rises-1b-funding"
+    ]
+   ]
+  },
+  {
+   "id": "chai",
+   "n": "Chai Discovery",
+   "s": "pharma",
+   "t": "N",
+   "k": "co",
+   "L": [
+    8
+   ],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "AI molecule design company spun out with OpenAI support; $400M Series C at $3.8B (2026); partners Lilly, Pfizer, Novartis.",
+   "dir": "",
+   "pv": "$3.8B · 2026-07",
+   "strat": "Chai builds foundation models for molecular interactions (Chai-1, Chai-2, Chai-3) and positions them as a computer-aided design suite for molecules sold to large pharma.",
+   "plan": [
+    [
+     "d",
+     "$130M Series B at $1.3B",
+     "2025-12"
+    ],
+    [
+     "d",
+     "Lilly partnership",
+     "2026-01-08"
+    ],
+    [
+     "d",
+     "$400M Series C led by Index Ventures",
+     "2026-07-14"
+    ]
+   ],
+   "obj": [],
+   "f": [
+    "OpenAI was a seed investor; founders worked from OpenAI's San Francisco offices.",
+    "Funding: $30M seed, $70M A, $130M B, $400M C; total above $600M.",
+    "Uses NVIDIA BioNeMo.",
+    "Series C close date 2026-07-14 is single-source [VERIFY]."
+   ],
+   "src": [
+    [
+     "From OpenAI's offices to a deal with Eli Lilly: Chai Discovery (TechCrunch, 2026-01-16)",
+     "https://techcrunch.com/2026/01/16/from-openais-offices-to-a-deal-with-eli-lilly-how-chai-discovery-became-one-of-the-flashiest-names-in-ai-drug-development/"
+    ],
+    [
+     "Chai brews up $400M series C (Fierce Biotech, 2026)",
+     "https://www.fiercebiotech.com/biotech/chai-brews-400m-series-c-fuel-ai-used-lilly-novartis-and-pfizer"
+    ],
+    [
+     "Chai Discovery Series C valuation (IntuitionLabs)",
+     "https://intuitionlabs.ai/articles/chai-discovery-series-c-valuation"
+    ],
+    [
+     "NVIDIA BioNeMo Platform Adopted by Life Sciences Leaders (NVIDIA, 2026-01-12)",
+     "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-BioNeMo-Platform-Adopted-by-Life-Sciences-Leaders-to-Accelerate-AI-Driven-Drug-Discovery/default.aspx"
+    ]
+   ]
+  },
+  {
+   "id": "generate",
+   "n": "Generate Biomedicines",
+   "s": "pharma",
+   "t": "N",
+   "k": "co",
+   "L": [
+    8
+   ],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Flagship AI protein therapeutics company; Nasdaq IPO February 26, 2026 at $16 raising $400M.",
+   "dir": "",
+   "tk": "GENB",
+   "ex": "Nasdaq",
+   "obj": [],
+   "f": [
+    "Market cap $2.04B at pricing; closed first day at $12.65.",
+    "Noubar Afeyan controls 57% via Flagship.",
+    "$110M collected from Novartis and Amgen collaborations.",
+    "NVIDIA's venture arm invested in 2023 $273M Series C.",
+    "CEO Michael Nally holds 6.4%."
+   ],
+   "src": [
+    [
+     "Generate Biomedicines files for IPO (Boston Globe, 2026-02-23)",
+     "https://www.bostonglobe.com/2026/02/23/business/generate-biomedicines-flagship-ipo/"
+    ],
+    [
+     "Generate Biomedicines prices IPO at $16 (IPO Scoop, 2026-02-27)",
+     "https://www.iposcoop.com/the-ipo-buzz-generate-biomedicines-genb-prices-ipo-at-16-mid-point/"
+    ]
+   ]
+  },
+  {
+   "id": "flagship",
+   "n": "Flagship Pioneering",
+   "s": "capital",
+   "t": "N",
+   "k": "cap",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Venture creator behind Generate Biomedicines and Lila Sciences.",
+   "dir": "",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Generate Biomedicines files for IPO (Boston Globe, 2026-02-23)",
+     "https://www.bostonglobe.com/2026/02/23/business/generate-biomedicines-flagship-ipo/"
+    ],
+    [
+     "AI lab Lila Sciences tops $1.3 billion valuation with new Nvidia backing (Reuters via Yahoo, 2025-10-14)",
+     "https://finance.yahoo.com/news/exclusive-ai-lab-lila-sciences-101645837.html"
+    ]
+   ]
+  },
+  {
+   "id": "lila",
+   "n": "Lila Sciences",
+   "s": "pharma",
+   "t": "N",
+   "k": "co",
+   "L": [
+    8
+   ],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Flagship company building 'scientific superintelligence' with AI-run automated labs; NVIDIA and an ADIA subsidiary invested; reported talks at $8.5B pre-money.",
+   "dir": "",
+   "pv": "$8.5B pre-money talks · 2026-06 [VERIFY]",
+   "plan": [
+    [
+     "d",
+     "$115M Series A extension at >$1.3B",
+     "2025-10-14"
+    ],
+    [
+     "p",
+     "~$2B Series B anchored by CalPERS and NVentures (reported)",
+     "2026-06"
+    ]
+   ],
+   "obj": [],
+   "f": [
+    "Total raised $550M by October 2025, including $350M Series A.",
+    "235,500 sq ft lease in Cambridge, MA for AI Science Factories."
+   ],
+   "src": [
+    [
+     "AI lab Lila Sciences tops $1.3 billion valuation with new Nvidia backing (Reuters via Yahoo, 2025-10-14)",
+     "https://finance.yahoo.com/news/exclusive-ai-lab-lila-sciences-101645837.html"
+    ],
+    [
+     "Lila Sciences said in talks for funds at $8.5 billion valuation (Bloomberg Law, 2026-06-03)",
+     "https://news.bloomberglaw.com/private-equity/lila-sciences-said-in-talks-for-funds-at-8-5-billion-valuation"
+    ],
+    [
+     "NVIDIA BioNeMo Platform Adopted by Life Sciences Leaders (NVIDIA, 2026-01-12)",
+     "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-BioNeMo-Platform-Adopted-by-Life-Sciences-Leaders-to-Accelerate-AI-Driven-Drug-Discovery/default.aspx"
+    ]
+   ]
+  },
+  {
+   "id": "recursion",
+   "n": "Recursion Pharmaceuticals",
+   "s": "pharma",
+   "t": "N",
+   "k": "co",
+   "L": [
+    8
+   ],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Public AI drug discovery company; merged with Exscientia (2024), cut ~20% of staff (2025); Najat Khan CEO from 2026.",
+   "dir": "",
+   "tk": "RXRX",
+   "ex": "Nasdaq",
+   "plan": [
+    [
+     "d",
+     "20% workforce cut; three clinical programs deprioritized",
+     "2025-06-10"
+    ],
+    [
+     "d",
+     "Najat Khan becomes CEO; Chris Gibson becomes chair",
+     "2026-01-01"
+    ],
+    [
+     "m",
+     "REC-4881 regulatory update; REC-1245 dose escalation data",
+     "2026-H2"
+    ],
+    [
+     "p",
+     "REC-617 and REC-3565 early data",
+     "2027-H1"
+    ]
+   ],
+   "obj": [],
+   "f": [
+    "Cash $665.2M at 2026-03-31; runway into early 2028; 2026 burn under $390M.",
+    "Over $500M in partnership milestones and upfronts to date (Sanofi, Roche/Genentech).",
+    "REC-617 update: 1 confirmed partial response in 29 patients."
+   ],
+   "src": [
+    [
+     "Recursion Q1 2026 results (Recursion, 2026-05-06)",
+     "https://ir.recursion.com/news-releases/news-release-details/recursion-reports-first-quarter-financial-results-and-provides"
+    ],
+    [
+     "Recursion slides on data update as new CEO named (GEN, 2025-11-09)",
+     "https://www.genengnews.com/topics/artificial-intelligence/stockwatch-recursion-slides-on-data-update-as-new-ceo-named/"
+    ],
+    [
+     "Recursion lays off 20% of staff (Fierce Biotech, 2025-06)",
+     "https://www.fiercebiotech.com/biotech/recursion-lays-20-staff-wake-pipeline-cutbacks"
+    ]
+   ]
+  },
+  {
+   "id": "insilico",
+   "n": "Insilico Medicine",
+   "s": "pharma",
+   "t": "N",
+   "k": "co",
+   "L": [
+    8
+   ],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "AI drug discovery company listed in Hong Kong (3696.HK) in December 2025 raising HKD 2.277B; lead asset rentosertib in IPF.",
+   "dir": "",
+   "tk": "3696",
+   "ex": "HKEX",
+   "obj": [],
+   "f": [
+    "Offer HKD 24.05; closed day one up 24.66%.",
+    "Cornerstones include Lilly, Tencent, Temasek, Schroders, UBS AM, Oaktree.",
+    "Three out-licensing deals worth up to $2.1B.",
+    "Rentosertib (TNIK inhibitor) positive Phase IIa in China."
+   ],
+   "src": [
+    [
+     "Insilico ends 2025 with $293m Hong Kong IPO (pharmaphorum, 2025-12-31)",
+     "https://pharmaphorum.com/news/insilico-ends-2025-293m-hong-kong-ipo"
+    ],
+    [
+     "Insilico Medicine debuts on HKEX (Nasdaq.com, 2025-12-30)",
+     "https://www.nasdaq.com/articles/insilico-medicine-debuts-hkex-first-ai-driven-biotech-under-chapter-805"
+    ]
+   ]
+  },
+  {
+   "id": "insitro",
+   "n": "insitro",
+   "s": "pharma",
+   "t": "N",
+   "k": "co",
+   "L": [
+    8
+   ],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "South San Francisco ML drug discovery company; early TuneLab user building small-molecule property models with Lilly.",
+   "dir": "",
+   "obj": [],
+   "f": [
+    "Founder and CEO Daphne Koller."
+   ],
+   "src": [
+    [
+     "Lilly offers AI discovery models to biotech partners (pharmaphorum, 2025-09-09)",
+     "https://pharmaphorum.com/news/lilly-offers-ai-discovery-models-biotech-partners"
+    ]
+   ]
+  },
+  {
+   "id": "thermo",
+   "n": "Thermo Fisher Scientific",
+   "s": "pharma",
+   "t": "N",
+   "k": "co",
+   "L": [
+    8
+   ],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Building autonomous lab infrastructure with NVIDIA; named GPT-Rosalind partner.",
+   "dir": "",
+   "tk": "TMO",
+   "ex": "NYSE",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "NVIDIA BioNeMo Platform Adopted by Life Sciences Leaders (NVIDIA, 2026-01-12)",
+     "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-BioNeMo-Platform-Adopted-by-Life-Sciences-Leaders-to-Accelerate-AI-Driven-Drug-Discovery/default.aspx"
+    ],
+    [
+     "OpenAI launches GPT-Rosalind (Manufacturing Chemist, 2026-04-17)",
+     "https://manufacturingchemist.com/openai-launches-gpt-rosalind-to-accelerate-life-sciences"
+    ]
+   ]
+  },
+  {
+   "id": "gpt4bmicro",
+   "n": "GPT-4b micro",
+   "s": "pharma",
+   "t": "N",
+   "k": "model",
+   "L": [
+    8
+   ],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "OpenAI protein-engineering model (scaled-down GPT-4o) built with Retro Biosciences; designed Yamanaka factor variants with >50x higher reprogramming marker expression in vitro.",
+   "dir": "",
+   "obj": [],
+   "f": [
+    "Not broadly available.",
+    "OpenAI disclosed Sam Altman is a Retro investor."
+   ],
+   "src": [
+    [
+     "Accelerating life sciences research with Retro Biosciences (OpenAI, 2025-08-22)",
+     "https://openai.com/index/accelerating-life-sciences-research-with-retro-biosciences"
+    ]
+   ]
+  },
+  {
+   "id": "gptrosalind",
+   "n": "GPT-Rosalind",
+   "s": "models",
+   "t": "N",
+   "k": "model",
+   "L": [
+    8
+   ],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "OpenAI life sciences reasoning model released as a research preview under trusted access (April 17, 2026); partners Amgen, Moderna, Thermo Fisher.",
+   "dir": "",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "OpenAI launches GPT-Rosalind (Manufacturing Chemist, 2026-04-17)",
+     "https://manufacturingchemist.com/openai-launches-gpt-rosalind-to-accelerate-life-sciences"
+    ]
+   ]
+  },
+  {
+   "id": "claudels",
+   "n": "Claude for Life Sciences / Healthcare",
+   "s": "models",
+   "t": "N",
+   "k": "app",
+   "L": [
+    8
+   ],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Anthropic offerings with connectors to Benchling, 10x Genomics, PubMed, Medidata, ClinicalTrials.gov and the CMS Coverage Database; HIPAA-ready healthcare tier.",
+   "dir": "",
+   "obj": [],
+   "f": [
+    "Life Sciences launched 2025-10-20; users include Sanofi, Novo Nordisk, Genmab, Broad Institute.",
+    "Healthcare expansion reported 2026-01-19 with ICD-10, NPI Registry and consumer health-record connectors.",
+    "Anthropic says health data is not used for model training."
+   ],
+   "src": [
+    [
+     "Claude for Life Sciences (Anthropic, 2025-10-20)",
+     "https://www.anthropic.com/news/claude-for-life-sciences"
+    ],
+    [
+     "Anthropic expands Claude AI tools for health and trials (IT Brief UK, 2026-01-19)",
+     "https://itbrief.co.uk/story/anthropic-expands-claude-ai-tools-for-health-trials"
+    ]
+   ]
+  },
+  {
+   "id": "stargate",
+   "n": "Stargate",
+   "s": "compute",
+   "t": "N",
+   "k": "prog",
+   "L": [
+    3
+   ],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "OpenAI, SoftBank and Oracle AI infrastructure venture announced at the White House on January 21, 2025 at $500B, $100B up front; pitched partly on AI cancer detection and vaccines.",
+   "dir": "",
+   "obj": [],
+   "f": [
+    "MGX, NVIDIA and Microsoft named in support.",
+    "Construction underway in Abilene, Texas at announcement.",
+    "Ellison: personalized mRNA cancer vaccine made 'robotically, again using AI, in about 48 hours'."
+   ],
+   "src": [
+    [
+     "Trump launches $500B Project Stargate (HLTH, 2025-01-23)",
+     "https://hlth.com/insights/news/trump-launches-500b-project-stargate-tech-giants-unite-for-ai-powered-healthcare-innovation-2025-01-23"
+    ],
+    [
+     "Ellison says AI can make cancer vaccine available in 48 hrs (Business Today, 2025-01-22)",
+     "https://businesstoday.in/technology/artificial-intelligence/story/promise-of-the-future-oracles-larry-ellison-says-ai-can-make-cancer-vaccine-available-in-48-hrs-461641-2025-01-22"
+    ]
+   ]
+  },
+  {
+   "id": "retro",
+   "n": "Retro Biosciences",
+   "s": "pharma",
+   "t": "N",
+   "k": "co",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Longevity company seeded with $180M by Sam Altman; valued at $1.8B (May 2026); first trial is an oral autophagy pill in Alzheimer's.",
+   "dir": "",
+   "pv": "$1.8B · 2026-05-22",
+   "strat": "Retro aims to add 10 healthy years to human life through cell reprogramming, blood stem cell replacement and autophagy drugs, using OpenAI-built protein models.",
+   "plan": [
+    [
+     "d",
+     "$1B fundraise launched, led by Sandro Salsano",
+     "2025-01-24"
+    ],
+    [
+     "d",
+     "GPT-4b micro results with OpenAI",
+     "2025-08-22"
+    ],
+    [
+     "d",
+     "New round at $1.8B valuation",
+     "2026-05-22"
+    ],
+    [
+     "m",
+     "First clinical trial (Alzheimer's) data expected",
+     "2026-08"
+    ]
+   ],
+   "obj": [],
+   "f": [
+    "No dose-limiting toxicities reported as of May 2026."
+   ],
+   "src": [
+    [
+     "Sam Altman-backed biotech raising $1 billion to extend human lifespan (Fortune, 2025-01-24)",
+     "https://www.fortune.com/2025/01/24/sam-altman-ai-biotech-1-billion-funding-extend-human-lifespan"
+    ],
+    [
+     "Retro Biosciences longevity valuation (STAT, 2026-05-22)",
+     "https://statnews.com/2026/05/22/retro-biosciences-longevity-valuation"
+    ],
+    [
+     "Accelerating life sciences research with Retro Biosciences (OpenAI, 2025-08-22)",
+     "https://openai.com/index/accelerating-life-sciences-research-with-retro-biosciences"
+    ]
+   ]
+  },
+  {
+   "id": "altos",
+   "n": "Altos Labs",
+   "s": "pharma",
+   "t": "N",
+   "k": "co",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Cellular rejuvenation company launched with $3B committed; Yuri Milner and Jeff Bezos reported among backers; CEO Hal Barron.",
+   "dir": "",
+   "pv": "$3B committed · 2022",
+   "plan": [
+    [
+     "d",
+     "Acquired Dorian Therapeutics (senoblockers)",
+     "2025-05-23"
+    ],
+    [
+     "p",
+     "First human trials (none reported as of May 2025)",
+     ""
+    ]
+   ],
+   "obj": [],
+   "f": [
+    "Sites: San Francisco Bay Area, San Diego, Cambridge (UK).",
+    "Founders include Rick Klausner and Hans Bishop; COO Ann Lee-Karlon."
+   ],
+   "src": [
+    [
+     "Altos Labs launches with $3B financing and Hal Barron as CEO (The Pharma Letter)",
+     "https://thepharmaletter.com/biotechnology/altos-labs-launches-with-3b-financing-and-hal-barron-as-ceo"
+    ],
+    [
+     "Altos Labs snaps up Dorian Therapeutics (Longevity.Technology, 2025-05-23)",
+     "https://longevity.technology/news/altos-labs-snaps-up-dorian-therapeutics/"
+    ]
+   ]
+  },
+  {
+   "id": "newlimit",
+   "n": "NewLimit",
+   "s": "pharma",
+   "t": "N",
+   "k": "co",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Epigenetic reprogramming company co-founded by Brian Armstrong and Blake Byers; $435M Series C at $3.1B led by Founders Fund (June 2026).",
+   "dir": "",
+   "pv": "$3.1B · 2026-06-02",
+   "plan": [
+    [
+     "d",
+     "$130M Series B",
+     "2025-05"
+    ],
+    [
+     "d",
+     "$45M follow-on",
+     "2025-10"
+    ],
+    [
+     "d",
+     "$435M Series C",
+     "2026-06-02"
+    ],
+    [
+     "p",
+     "Phase 1 in fatty liver disease",
+     "2027"
+    ]
+   ],
+   "obj": [],
+   "f": [
+    "Investors: Founders Fund, Thrive, Greenoaks, Quiet, Kleiner Perkins, Eli Lilly Ventures, Valor Equity Partners.",
+    "CEO Jacob Kimmel."
+   ],
+   "src": [
+    [
+     "NewLimit raises $435M Series C, valuation hits $3.1B (Yahoo Finance, 2026-06-03)",
+     "https://finance.yahoo.com/sectors/healthcare/articles/newlimit-raises-435m-series-c-145642833.html"
+    ]
+   ]
+  },
+  {
+   "id": "calico",
+   "n": "Calico (Alphabet)",
+   "s": "pharma",
+   "t": "N",
+   "k": "co",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Alphabet aging-research company; AbbVie ended its collaboration in November 2025 after about $1.75B invested.",
+   "dir": "",
+   "obj": [],
+   "f": [
+    "Founded 2013; CEO Art Levinson; founder Bill Maris.",
+    "Fosigotifator failed in ALS (2025).",
+    "Remaining compounds ABBV-CLS-484 and ABBV-CLS-628; ~375 employees (2025)."
+   ],
+   "src": [
+    [
+     "Calico (company) (Wikipedia)",
+     "https://en.wikipedia.org/wiki/Calico_(company)"
+    ],
+    [
+     "AbbVie reportedly ends partnership with Alphabet-backed Calico (Stocktwits, 2025-11-12)",
+     "https://stocktwits.com/news-articles/markets/equity/abbvie-reportedly-ends-partnership-with-alphabet-backed-calico-life-sciences/cLPed8yREdo"
+    ]
+   ]
+  },
+  {
+   "id": "abbvie",
+   "n": "AbbVie",
+   "s": "pharma",
+   "t": "N",
+   "k": "co",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Calico's partner from 2014 until terminating the collaboration in November 2025; pledged more than $10B in U.S. capital over a decade.",
+   "dir": "",
+   "tk": "ABBV",
+   "ex": "NYSE",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "AbbVie reportedly ends partnership with Alphabet-backed Calico (Stocktwits, 2025-11-12)",
+     "https://stocktwits.com/news-articles/markets/equity/abbvie-reportedly-ends-partnership-with-alphabet-backed-calico-life-sciences/cLPed8yREdo"
+    ],
+    [
+     "Big Pharma and US Manufacturing Investment (DCAT Value Chain Insights, 2025-08-21)",
+     "https://www.dcatvci.org/features/big-pharma-us-manufacturing-investment/"
+    ]
+   ]
+  },
+  {
+   "id": "hevolution",
+   "n": "Hevolution Foundation",
+   "s": "gulf",
+   "t": "N",
+   "k": "fund",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Saudi royal-order nonprofit for healthspan science with a budget of up to $1B a year; board chaired by Crown Prince Mohammed bin Salman.",
+   "dir": "",
+   "obj": [],
+   "f": [
+    "Over $400M in grants and early-stage investments by June 2024.",
+    "Grants: Buck Institute $21M; Northwestern SR121M; Albert Einstein SR75.7M; AFAR $16M.",
+    "North American hub in Boston; CEO Mehmood Khan."
+   ],
+   "src": [
+    [
+     "Saudi Crown Prince heads new bln-dollar foundation to decelerate aging (Al Arabiya, 2022-07)",
+     "https://english.alarabiya.net/News/gulf/2022/07/07/Exclusive-Saudi-s-Crown-Prince-heads-new-bln-dollar-foundation-to-decelerate-aging-"
+    ],
+    [
+     "Nonprofit organization in Riyadh funnels billions into extending healthy human lifespan (Arab News, 2024-06-25)",
+     "https://www.arabnews.com/node/2537546"
+    ],
+    [
+     "Hevolution Foundation announces multi-million dollar research grants (Oman Observer, 2023-12-02)",
+     "https://www.omanobserver.om/article/1146388/world/hevolution-foundation-announces-multi-million-dollar-research-grants"
+    ]
+   ]
+  },
+  {
+   "id": "blueprint",
+   "n": "Blueprint (Bryan Johnson)",
+   "s": "pharma",
+   "t": "N",
+   "k": "co",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Consumer longevity platform built on Bryan Johnson's protocol; raised $60M from about 50 individuals (October 2025).",
+   "dir": "",
+   "obj": [],
+   "f": [
+    "CEO Gyre Renwick; Johnson focuses on Don't Die."
+   ],
+   "src": [
+    [
+     "Bryan Johnson's Blueprint raises star-studded $60m funding round (Longevity.Technology, 2025-10-29)",
+     "https://longevity.technology/news/bryan-johnsons-blueprint-raises-star-studded-60m-funding-round/"
+    ]
+   ]
+  },
+  {
+   "id": "methuselah",
+   "n": "Methuselah Foundation",
+   "s": "pharma",
+   "t": "N",
+   "k": "fund",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Anti-aging nonprofit; received $3.5M from Peter Thiel (2006) and 1,000 ETH from Vitalik Buterin (2021).",
+   "dir": "",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "PayPal co-founder Peter Thiel invests $3.5M to stop aging (VentureBeat, 2006-09-19)",
+     "https://venturebeat.com/ai/paypal-co-founder-peter-thiel-invests-35m-to-stop-aging"
+    ],
+    [
+     "Vitalik Buterin donates more than $2 million to the Methuselah Foundation (Fight Aging!, 2021-05-17)",
+     "https://www.fightaging.org/archives/2021/05/vitalik-buterin-donates-more-than-2-million-to-the-methuselah-foundation/?nc"
+    ]
+   ]
+  },
+  {
+   "id": "juvenescence",
+   "n": "Juvenescence",
+   "s": "pharma",
+   "t": "N",
+   "k": "co",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Longevity biotech; M42 invested in its Series B-1 and formed an AI therapeutics partnership (April 2025).",
+   "dir": "",
+   "obj": [],
+   "f": [
+    "CEO Richard Marshall."
+   ],
+   "src": [
+    [
+     "M42 makes strategic investment in Juvenescence (Abu Dhabi Media Office, 2025-04-16)",
+     "https://www.mediaoffice.abudhabi/en/health/m42-makes-strategic-investment-in-juvenescence-and-forms-partnership-to-develop-therapeutics-for-age-related-diseases/"
+    ]
+   ]
+  },
+  {
+   "id": "dohad",
+   "n": "Department of Health Abu Dhabi",
+   "s": "gulf",
+   "t": "N",
+   "k": "buyer",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Abu Dhabi regulator that set licensing standards for Healthy Longevity Medicine Centres (October 2024), using Malaffi health-record data.",
+   "dir": "",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Abu Dhabi sets standards for world-first Healthy Longevity Medicine Centres (DoH Abu Dhabi, 2024-10-31)",
+     "https://www.doh.gov.ae/en/news/abu-dhabi-sets-standards-for-the-world-first-healthy-longevity-medicine-centres"
+    ]
+   ]
+  },
+  {
+   "id": "adia",
+   "n": "ADIA (Abu Dhabi Investment Authority)",
+   "s": "gulf",
+   "t": "N",
+   "k": "fund",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Abu Dhabi sovereign fund; a subsidiary invested in Lila Sciences' $115M extension (October 2025).",
+   "dir": "",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "AI lab Lila Sciences tops $1.3 billion valuation with new Nvidia backing (Reuters via Yahoo, 2025-10-14)",
+     "https://finance.yahoo.com/news/exclusive-ai-lab-lila-sciences-101645837.html"
+    ]
+   ]
+  },
+  {
+   "id": "ukaif",
+   "n": "UK Sovereign AI Fund",
+   "s": "allied",
+   "t": "N",
+   "k": "fund",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "UK state AI fund; new investor in Isomorphic Labs' $2.1B Series B (May 2026).",
+   "dir": "",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Isomorphic Labs raises $2.1 billion (YourStory, 2026-05-12)",
+     "https://yourstory.com/ai-story/isomorphic-labs-ai-drug-discovery-series-b-2026"
+    ]
+   ]
+  },
+  {
+   "id": "temasek",
+   "n": "Temasek",
+   "s": "capital",
+   "t": "N",
+   "k": "fund",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Singapore state investor; in Isomorphic's Series B and an Insilico IPO cornerstone.",
+   "dir": "",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Isomorphic Labs raises $2.1 billion (YourStory, 2026-05-12)",
+     "https://yourstory.com/ai-story/isomorphic-labs-ai-drug-discovery-series-b-2026"
+    ],
+    [
+     "Insilico Medicine debuts on HKEX (Nasdaq.com, 2025-12-30)",
+     "https://www.nasdaq.com/articles/insilico-medicine-debuts-hkex-first-ai-driven-biotech-under-chapter-805"
+    ]
+   ]
+  },
+  {
+   "id": "pfizer",
+   "n": "Pfizer",
+   "s": "pharma",
+   "t": "N",
+   "k": "co",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "First company to sign an MFN pricing deal (September 30, 2025) with a $70B U.S. investment pledge and three-year tariff grace; paid 3SBio a record $1.25B upfront.",
+   "dir": "",
+   "tk": "PFE",
+   "ex": "NYSE",
+   "strat": "Pfizer traded Medicaid MFN pricing, TrumpRx discounts and new U.S. investment for tariff certainty, while sourcing assets from China and AI design partners.",
+   "plan": [
+    [
+     "d",
+     "MFN agreement with White House",
+     "2025-09-30"
+    ],
+    [
+     "d",
+     "3SBio license, $1.25B upfront",
+     "2025-05"
+    ],
+    [
+     "m",
+     "$70B U.S. R&D and capital projects",
+     "2025-2029"
+    ]
+   ],
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "White House, Pfizer reach first MFN pricing agreement (BioPharm International, 2025-09-30)",
+     "https://www.biopharminternational.com/view/white-house-pfizer-reach-first-mfn-pricing-agreement-who-s-next-"
+    ],
+    [
+     "Chinese drugmakers strike record $136 billion in cross-border licensing deals (Caixin, 2026-01-14)",
+     "https://www.caixinglobal.com/2026-01-14/chinese-drugmakers-strike-record-136-billion-in-cross-border-licensing-deals-102403540.html"
+    ],
+    [
+     "Chai brews up $400M series C (Fierce Biotech, 2026)",
+     "https://www.fiercebiotech.com/biotech/chai-brews-400m-series-c-fuel-ai-used-lilly-novartis-and-pfizer"
+    ]
+   ]
+  },
+  {
+   "id": "novo",
+   "n": "Novo Nordisk",
+   "s": "pharma",
+   "t": "N",
+   "k": "co",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "GLP-1 maker in the November 2025 MFN deal; oral Wegovy approved December 2025; participant in BALANCE and the Medicare GLP-1 Bridge.",
+   "dir": "",
+   "tk": "NVO",
+   "ex": "NYSE",
+   "obj": [],
+   "f": [
+    "Guided a low single-digit impact on 2026 global sales growth from the deal.",
+    "$4.1B Clayton, NC fill-finish plant (completion 2027-2029).",
+    "Named Claude for Life Sciences user."
+   ],
+   "src": [
+    [
+     "Lilly, Novo obesity drug pricing deal (Healthcare Dive, 2025-11-06)",
+     "https://www.healthcaredive.com/news/lilly-novo-trump-obesity-drug-pricing-deal-zepbound-wegovy/804937/"
+    ],
+    [
+     "Eli Lilly's oral obesity pill approved (BioSpace, 2026-04-01)",
+     "https://www.biospace.com/fda/eli-lillys-oral-obesity-pill-approved-kicking-off-renewed-novo-rivalry"
+    ],
+    [
+     "What to Know About the BALANCE Model and the Medicare GLP-1 Bridge (KFF)",
+     "https://www.kff.org/medicare/issue-brief/what-to-know-about-the-balance-model-for-glp-1s-in-medicare-and-medicaid/"
+    ],
+    [
+     "Big Pharma and US Manufacturing Investment (DCAT Value Chain Insights, 2025-08-21)",
+     "https://www.dcatvci.org/features/big-pharma-us-manufacturing-investment/"
+    ],
+    [
+     "Claude for Life Sciences (Anthropic, 2025-10-20)",
+     "https://www.anthropic.com/news/claude-for-life-sciences"
+    ]
+   ]
+  },
+  {
+   "id": "azn",
+   "n": "AstraZeneca",
+   "s": "pharma",
+   "t": "N",
+   "k": "co",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Signed an MFN deal (October 2025); pledged $50B in U.S. investment by 2030.",
+   "dir": "",
+   "tk": "AZN",
+   "ex": "Nasdaq",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "TrumpRx (Wikipedia)",
+     "https://en.wikipedia.org/wiki/TrumpRx"
+    ],
+    [
+     "Big Pharma and US Manufacturing Investment (DCAT Value Chain Insights, 2025-08-21)",
+     "https://www.dcatvci.org/features/big-pharma-us-manufacturing-investment/"
+    ]
+   ]
+  },
+  {
+   "id": "jnj",
+   "n": "Johnson & Johnson",
+   "s": "pharma",
+   "t": "N",
+   "k": "co",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Pledged more than $55B in U.S. manufacturing, R&D and technology over four years (March 2025).",
+   "dir": "",
+   "tk": "JNJ",
+   "ex": "NYSE",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Big Pharma and US Manufacturing Investment (DCAT Value Chain Insights, 2025-08-21)",
+     "https://www.dcatvci.org/features/big-pharma-us-manufacturing-investment/"
+    ]
+   ]
+  },
+  {
+   "id": "roche",
+   "n": "Roche",
+   "s": "pharma",
+   "t": "N",
+   "k": "co",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Pledged $50B in U.S. R&D and manufacturing over five years (April 2025); Recursion partner; NVIDIA digital-twin user.",
+   "dir": "",
+   "tk": "RHHBY",
+   "ex": "OTC",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Big Pharma and US Manufacturing Investment (DCAT Value Chain Insights, 2025-08-21)",
+     "https://www.dcatvci.org/features/big-pharma-us-manufacturing-investment/"
+    ],
+    [
+     "Recursion Q1 2026 results (Recursion, 2026-05-06)",
+     "https://ir.recursion.com/news-releases/news-release-details/recursion-reports-first-quarter-financial-results-and-provides"
+    ],
+    [
+     "NVIDIA BioNeMo Platform Adopted by Life Sciences Leaders (NVIDIA, 2026-01-12)",
+     "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-BioNeMo-Platform-Adopted-by-Life-Sciences-Leaders-to-Accelerate-AI-Driven-Drug-Discovery/default.aspx"
+    ]
+   ]
+  },
+  {
+   "id": "novartis",
+   "n": "Novartis",
+   "s": "pharma",
+   "t": "N",
+   "k": "co",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Pledged $23B across 10 U.S. facilities; partner of Isomorphic, Chai and Generate.",
+   "dir": "",
+   "tk": "NVS",
+   "ex": "NYSE",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Big Pharma and US Manufacturing Investment (DCAT Value Chain Insights, 2025-08-21)",
+     "https://www.dcatvci.org/features/big-pharma-us-manufacturing-investment/"
+    ],
+    [
+     "Isomorphic Labs partners with Eli Lilly and Novartis (SiliconANGLE, 2024-01-07)",
+     "https://siliconangle.com/2024/01/07/ai-drug-discovery-startup-isomorphic-labs-partners-eli-lilly-novartis/"
+    ],
+    [
+     "Chai brews up $400M series C (Fierce Biotech, 2026)",
+     "https://www.fiercebiotech.com/biotech/chai-brews-400m-series-c-fuel-ai-used-lilly-novartis-and-pfizer"
+    ],
+    [
+     "Generate Biomedicines files for IPO (Boston Globe, 2026-02-23)",
+     "https://www.bostonglobe.com/2026/02/23/business/generate-biomedicines-flagship-ipo/"
+    ]
+   ]
+  },
+  {
+   "id": "sanofi",
+   "n": "Sanofi",
+   "s": "pharma",
+   "t": "N",
+   "k": "co",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Pledged at least $20B in U.S. R&D and manufacturing through 2030; Recursion partner; Claude for Life Sciences user; BARDA mRNA proposal cancelled.",
+   "dir": "",
+   "tk": "SNY",
+   "ex": "Nasdaq",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Big Pharma and US Manufacturing Investment (DCAT Value Chain Insights, 2025-08-21)",
+     "https://www.dcatvci.org/features/big-pharma-us-manufacturing-investment/"
+    ],
+    [
+     "Recursion Q1 2026 results (Recursion, 2026-05-06)",
+     "https://ir.recursion.com/news-releases/news-release-details/recursion-reports-first-quarter-financial-results-and-provides"
+    ],
+    [
+     "Claude for Life Sciences (Anthropic, 2025-10-20)",
+     "https://www.anthropic.com/news/claude-for-life-sciences"
+    ],
+    [
+     "HHS winds down mRNA development under BARDA (HHS, 2025-08-05)",
+     "https://hhs.gov/press-room/hhs-winds-down-mrna-development-under-barda.html"
+    ]
+   ]
+  },
+  {
+   "id": "moderna",
+   "n": "Moderna",
+   "s": "pharma",
+   "t": "N",
+   "k": "co",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "mRNA company; its BARDA-linked collaboration with DoD-JPEO (Moderna/UTMB) was restructured in August 2025; named GPT-Rosalind partner.",
+   "dir": "",
+   "tk": "MRNA",
+   "ex": "Nasdaq",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "HHS winds down mRNA development under BARDA (HHS, 2025-08-05)",
+     "https://hhs.gov/press-room/hhs-winds-down-mrna-development-under-barda.html"
+    ],
+    [
+     "OpenAI launches GPT-Rosalind (Manufacturing Chemist, 2026-04-17)",
+     "https://manufacturingchemist.com/openai-launches-gpt-rosalind-to-accelerate-life-sciences"
+    ]
+   ]
+  },
+  {
+   "id": "sbio3",
+   "n": "3SBio",
+   "s": "pharma",
+   "t": "N",
+   "k": "co",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Chinese biotech that licensed a bispecific antibody to Pfizer for a record $1.25B upfront (May 2025).",
+   "dir": "",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Chinese drugmakers strike record $136 billion in cross-border licensing deals (Caixin, 2026-01-14)",
+     "https://www.caixinglobal.com/2026-01-14/chinese-drugmakers-strike-record-136-billion-in-cross-border-licensing-deals-102403540.html"
+    ]
+   ]
+  },
+  {
+   "id": "hengrui",
+   "n": "Jiangsu Hengrui",
+   "s": "pharma",
+   "t": "N",
+   "k": "co",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Chinese drugmaker with $16.7B in 2025 out-licensing value, including GSK (~$12B) and Merck deals.",
+   "dir": "",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Chinese drugmakers strike record $136 billion in cross-border licensing deals (Caixin, 2026-01-14)",
+     "https://www.caixinglobal.com/2026-01-14/chinese-drugmakers-strike-record-136-billion-in-cross-border-licensing-deals-102403540.html"
+    ]
+   ]
+  },
+  {
+   "id": "chinalic",
+   "n": "China out-licensing wave",
+   "s": "pharma",
+   "t": "N",
+   "k": "sys",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Chinese drugmakers signed $135.7B in out-licensing deals in 2025 (157 deals), and a reported $60B in Q1 2026.",
+   "dir": "",
+   "obj": [],
+   "f": [
+    "China's share of out-licensing deal value: 32% in Q1 2025 vs 21% in 2023-2024 (Jefferies).",
+    "Jefferies: ~69% of global biotech deal value year to date in 2026 [VERIFY]."
+   ],
+   "src": [
+    [
+     "Chinese drugmakers strike record $136 billion in cross-border licensing deals (Caixin, 2026-01-14)",
+     "https://www.caixinglobal.com/2026-01-14/chinese-drugmakers-strike-record-136-billion-in-cross-border-licensing-deals-102403540.html"
+    ],
+    [
+     "Next tech war: why biotech may become new US-China battleground (SCMP, 2026-06-02)",
+     "https://www.scmp.com/economy/global-economy/article/3355700/next-tech-war-why-biotech-may-become-new-us-china-battleground"
+    ],
+    [
+     "Trump admin mulls 'severe restrictions' on US pharmas licensing Chinese meds (Fierce Biotech, 2025-09)",
+     "https://www.fiercebiotech.com/biotech/trump-admin-mulls-severe-restrictions-us-pharmas-securing-chinese-meds-nyt"
+    ]
+   ]
+  },
+  {
+   "id": "mfn",
+   "n": "MFN drug pricing agreements",
+   "s": "pharma",
+   "t": "N",
+   "k": "prog",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "White House most-favored-nation agreements trading Medicaid MFN prices, TrumpRx participation and U.S. investment for tariff relief.",
+   "dir": "",
+   "plan": [
+    [
+     "d",
+     "Pfizer",
+     "2025-09-30"
+    ],
+    [
+     "d",
+     "AstraZeneca; EMD Serono",
+     "2025-10"
+    ],
+    [
+     "d",
+     "Eli Lilly and Novo Nordisk",
+     "2025-11-06"
+    ]
+   ],
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "White House, Pfizer reach first MFN pricing agreement (BioPharm International, 2025-09-30)",
+     "https://www.biopharminternational.com/view/white-house-pfizer-reach-first-mfn-pricing-agreement-who-s-next-"
+    ],
+    [
+     "Lilly, Novo obesity drug pricing deal (Healthcare Dive, 2025-11-06)",
+     "https://www.healthcaredive.com/news/lilly-novo-trump-obesity-drug-pricing-deal-zepbound-wegovy/804937/"
+    ],
+    [
+     "TrumpRx (Wikipedia)",
+     "https://en.wikipedia.org/wiki/TrumpRx"
+    ],
+    [
+     "Trump administration announces Section 232 tariffs on patented pharmaceuticals (Covington, 2026-04)",
+     "https://www.cov.com/en/news-and-insights/insights/2026/04/trump-administration-announces-section-232-tariffs-on-patented-pharmaceuticals-and-ingredients"
+    ]
+   ]
+  },
+  {
+   "id": "trumprx",
+   "n": "TrumpRx.gov",
+   "s": "pharma",
+   "t": "N",
+   "k": "prog",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Government portal linking cash buyers to discounted manufacturer prices; launched February 5, 2026 with 43 drugs; 800+ by June 2026.",
+   "dir": "",
+   "obj": [],
+   "f": [
+    "Generic partners Amazon Pharmacy, GoodRx, Cost Plus Drugs (May 2026).",
+    "Built by the National Design Studio."
+   ],
+   "src": [
+    [
+     "TrumpRx (Wikipedia)",
+     "https://en.wikipedia.org/wiki/TrumpRx"
+    ]
+   ]
+  },
+  {
+   "id": "s232pharma",
+   "n": "Proclamation 11020 (Section 232 pharma tariffs)",
+   "s": "pharma",
+   "t": "N",
+   "k": "law",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "100% tariff on patented drugs with 20%, 15% and 0% tiers; effective July 31, 2026 for large companies and September 29, 2026 for others.",
+   "dir": "",
+   "obj": [],
+   "f": [
+    "0% tier for companies with onshoring plans plus MFN agreements, to 2029-01-20.",
+    "20% tier for approved onshoring plans, to 2030-04-02.",
+    "15% all-in for Japan, EU, Korea, Switzerland, Liechtenstein.",
+    "Generics, biosimilars, orphan drugs, cell and gene therapies exempt."
+   ],
+   "src": [
+    [
+     "Trump administration announces Section 232 tariffs on patented pharmaceuticals (Covington, 2026-04)",
+     "https://www.cov.com/en/news-and-insights/insights/2026/04/trump-administration-announces-section-232-tariffs-on-patented-pharmaceuticals-and-ingredients"
+    ],
+    [
+     "President Trump announces and then pauses 100 percent tariff on branded pharmaceuticals (Mondaq, 2025)",
+     "https://webiis10.mondaq.com/unitedstates/healthcare/1687748/president-trump-announces-and-then-pauses-100-percent-tariff-on-branded-pharmaceuticals-from-companies-without-us-factories-under-construction"
+    ]
+   ]
+  },
+  {
+   "id": "cnpv",
+   "n": "Commissioner's National Priority Vouchers",
+   "s": "pharma",
+   "t": "N",
+   "k": "prog",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "FDA pilot targeting 1-2 month reviews for products serving national priorities, including MFN affordability and domestic manufacturing.",
+   "dir": "",
+   "obj": [],
+   "f": [
+    "First nine recipients named 2025-10-16.",
+    "Foundayo was the fifth approval under the program."
+   ],
+   "src": [
+    [
+     "FDA awards first-ever national priority vouchers to nine sponsors (HHS, 2025-10-16)",
+     "https://www.hhs.gov/press-room/fda-awards-first-ever-national-priority-vouchers-nine-sponsors.html"
+    ],
+    [
+     "Eli Lilly's oral obesity pill approved (BioSpace, 2026-04-01)",
+     "https://www.biospace.com/fda/eli-lillys-oral-obesity-pill-approved-kicking-off-renewed-novo-rivalry"
+    ]
+   ]
+  },
+  {
+   "id": "fdanams",
+   "n": "FDA animal-testing phase-out (NAMs)",
+   "s": "pharma",
+   "t": "N",
+   "k": "prog",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "April 10, 2025 plan letting sponsors use AI models and organ-on-chip data in place of some animal studies, starting with monoclonal antibodies.",
+   "dir": "",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "FDA animal testing phase-out targets monoclonal antibodies (Xtalks, 2025-04-14)",
+     "https://xtalks.com/fda-animal-testing-phase-out-targets-monoclonal-antibodies-4191/"
+    ]
+   ]
+  },
+  {
+   "id": "glp1bridge",
+   "n": "Medicare GLP-1 Bridge / BALANCE",
+   "s": "pharma",
+   "t": "N",
+   "k": "prog",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "CMS programs pricing GLP-1s at $245 net with a $50 copay; Bridge runs July 1, 2026 to December 31, 2027.",
+   "dir": "",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "What to Know About the BALANCE Model and the Medicare GLP-1 Bridge (KFF)",
+     "https://www.kff.org/medicare/issue-brief/what-to-know-about-the-balance-model-for-glp-1s-in-medicare-and-medicaid/"
+    ],
+    [
+     "Lilly, Novo obesity drug pricing deal (Healthcare Dive, 2025-11-06)",
+     "https://www.healthcaredive.com/news/lilly-novo-trump-obesity-drug-pricing-deal-zepbound-wegovy/804937/"
+    ]
+   ]
+  },
+  {
+   "id": "hlmc",
+   "n": "Abu Dhabi Healthy Longevity Medicine Centres",
+   "s": "gulf",
+   "t": "N",
+   "k": "prog",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Licensing framework for longevity clinics issued by the Abu Dhabi Department of Health.",
+   "dir": "",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Abu Dhabi sets standards for world-first Healthy Longevity Medicine Centres (DoH Abu Dhabi, 2024-10-31)",
+     "https://www.doh.gov.ae/en/news/abu-dhabi-sets-standards-for-the-world-first-healthy-longevity-medicine-centres"
+    ]
+   ]
+  },
+  {
+   "id": "ricks",
+   "n": "Dave Ricks",
+   "s": "pharma",
+   "t": "K",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Chair and CEO, Eli Lilly",
+   "dir": "",
+   "role": "Chair and CEO, Eli Lilly",
+   "strat": "Pairs owned AI compute and pooled data with GLP-1 volume growth and U.S. plant buildout.",
+   "plan": [
+    [
+     "d",
+     "Co-innovation lab with NVIDIA",
+     "2026-01-12"
+    ],
+    [
+     "d",
+     "GLP-1 pricing deal at White House",
+     "2025-11-06"
+    ]
+   ],
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "NVIDIA and Lilly Announce Co-Innovation AI Lab (NVIDIA, 2026-01-12)",
+     "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-and-Lilly-Announce-Co-Innovation-AI-Lab-to-Reinvent-Drug-Discovery-in-the-Age-of-AI"
+    ],
+    [
+     "Lilly, Novo obesity drug pricing deal (Healthcare Dive, 2025-11-06)",
+     "https://www.healthcaredive.com/news/lilly-novo-trump-obesity-drug-pricing-deal-zepbound-wegovy/804937/"
+    ]
+   ]
+  },
+  {
+   "id": "rau",
+   "n": "Diogo Rau",
+   "s": "pharma",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "EVP and Chief Information and Digital Officer, Eli Lilly",
+   "dir": "",
+   "role": "EVP and Chief Information and Digital Officer, Eli Lilly",
+   "strat": "Runs Lilly's AI factory and agentic lab push.",
+   "plan": [
+    [
+     "d",
+     "AI factory announced",
+     "2025-10-28"
+    ]
+   ],
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Lilly AI factory on NVIDIA Blackwell DGX SuperPOD (NVIDIA blog, 2025-10-28)",
+     "https://blogs.nvidia.com/blog/lilly-ai-factory-nvidia-blackwell-dgx-superpod"
+    ],
+    [
+     "NVIDIA BioNeMo Platform Adopted by Life Sciences Leaders (NVIDIA, 2026-01-12)",
+     "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-BioNeMo-Platform-Adopted-by-Life-Sciences-Leaders-to-Accelerate-AI-Driven-Drug-Discovery/default.aspx"
+    ]
+   ]
+  },
+  {
+   "id": "fuchs",
+   "n": "Thomas Fuchs",
+   "s": "pharma",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Chief AI Officer, Eli Lilly",
+   "dir": "",
+   "role": "Chief AI Officer, Eli Lilly",
+   "strat": "Applies AI across discovery, manufacturing and medicine design.",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Lilly AI factory on NVIDIA Blackwell DGX SuperPOD (NVIDIA blog, 2025-10-28)",
+     "https://blogs.nvidia.com/blog/lilly-ai-factory-nvidia-blackwell-dgx-superpod"
+    ]
+   ]
+  },
+  {
+   "id": "skovronsky",
+   "n": "Daniel Skovronsky",
+   "s": "pharma",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Chief Scientific Officer, Eli Lilly",
+   "dir": "",
+   "role": "Chief Scientific Officer, Eli Lilly",
+   "strat": "Positions TuneLab as an equalizer giving small biotechs access to Lilly-trained models.",
+   "plan": [
+    [
+     "d",
+     "TuneLab launch",
+     "2025-09-09"
+    ]
+   ],
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Lilly offers AI discovery models to biotech partners (pharmaphorum, 2025-09-09)",
+     "https://pharmaphorum.com/news/lilly-offers-ai-discovery-models-biotech-partners"
+    ]
+   ]
+  },
+  {
+   "id": "hassabis",
+   "n": "Demis Hassabis",
+   "s": "pharma",
+   "t": "K",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Founder and CEO, Isomorphic Labs; 2024 Nobel laureate in Chemistry",
+   "dir": "",
+   "role": "Founder and CEO, Isomorphic Labs; 2024 Nobel laureate in Chemistry",
+   "strat": "Turns AlphaFold-lineage science into a drug design engine and moves programs into first-in-human studies, funded at AI-lab valuations.",
+   "plan": [
+    [
+     "d",
+     "$2.1B Series B",
+     "2026-05-12"
+    ],
+    [
+     "p",
+     "First-in-human trials",
+     "2026"
+    ]
+   ],
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Isomorphic Labs raises $2.1 billion (YourStory, 2026-05-12)",
+     "https://yourstory.com/ai-story/isomorphic-labs-ai-drug-discovery-series-b-2026"
+    ],
+    [
+     "The Nobel Prize in Chemistry awarded to David Baker, Demis Hassabis and John M Jumper (AlphaGalileo, 2024-10-09)",
+     "https://alphagalileo.org/en-gb/Item-Display/ItemId/250899"
+    ],
+    [
+     "Isomorphic Labs announces $600M external investment round (Isomorphic, 2025-03-31)",
+     "https://isomorphiclabs.com/articles/isomorphic-labs-announces-600m-external-investment-round"
+    ]
+   ]
+  },
+  {
+   "id": "jaderberg",
+   "n": "Max Jaderberg",
+   "s": "pharma",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "President, Isomorphic Labs",
+   "dir": "",
+   "role": "President, Isomorphic Labs",
+   "strat": "Co-leads Isomorphic's research expansion across London, Cambridge (MA) and Lausanne.",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Isomorphic Labs raises $2.1 billion (YourStory, 2026-05-12)",
+     "https://yourstory.com/ai-story/isomorphic-labs-ai-drug-discovery-series-b-2026"
+    ]
+   ]
+  },
+  {
+   "id": "jumper",
+   "n": "John M. Jumper",
+   "s": "pharma",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "2024 Nobel laureate in Chemistry (AlphaFold)",
+   "dir": "",
+   "role": "2024 Nobel laureate in Chemistry (AlphaFold)",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "The Nobel Prize in Chemistry awarded to David Baker, Demis Hassabis and John M Jumper (AlphaGalileo, 2024-10-09)",
+     "https://alphagalileo.org/en-gb/Item-Display/ItemId/250899"
+    ]
+   ]
+  },
+  {
+   "id": "baker-david",
+   "n": "David Baker",
+   "s": "pharma",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "2024 Nobel laureate in Chemistry; Director, Institute for Protein Design (UW); co-founder, Xaira",
+   "dir": "",
+   "role": "2024 Nobel laureate in Chemistry; Director, Institute for Protein Design (UW); co-founder, Xaira",
+   "strat": "Computational protein design moved into a $1B commercial vehicle via Xaira.",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "The Nobel Prize in Chemistry awarded to David Baker, Demis Hassabis and John M Jumper (AlphaGalileo, 2024-10-09)",
+     "https://alphagalileo.org/en-gb/Item-Display/ItemId/250899"
+    ],
+    [
+     "New AI drug discovery powerhouse Xaira rises with $1B (Fierce Biotech)",
+     "https://www.fiercebiotech.com/biotech/new-ai-drug-discovery-powerhouse-xaira-rises-1b-funding"
+    ]
+   ]
+  },
+  {
+   "id": "tessier-lavigne",
+   "n": "Marc Tessier-Lavigne",
+   "s": "pharma",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "CEO, Xaira Therapeutics; former Genentech CSO and Stanford president",
+   "dir": "",
+   "role": "CEO, Xaira Therapeutics; former Genentech CSO and Stanford president",
+   "strat": "Integrated AI discovery and development with $1B committed.",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "New AI drug discovery powerhouse Xaira rises with $1B (Fierce Biotech)",
+     "https://www.fiercebiotech.com/biotech/new-ai-drug-discovery-powerhouse-xaira-rises-1b-funding"
+    ]
+   ]
+  },
+  {
+   "id": "nelsen",
+   "n": "Robert Nelsen",
+   "s": "capital",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "ARCH Venture Partners",
+   "dir": "",
+   "role": "ARCH Venture Partners",
+   "strat": "Backs large initial commitments to AI-driven biotech (Xaira).",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "New AI drug discovery powerhouse Xaira rises with $1B (Fierce Biotech)",
+     "https://www.fiercebiotech.com/biotech/new-ai-drug-discovery-powerhouse-xaira-rises-1b-funding"
+    ]
+   ]
+  },
+  {
+   "id": "afeyan",
+   "n": "Noubar Afeyan",
+   "s": "capital",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Founder, Flagship Pioneering; Board chair, Generate Biomedicines",
+   "dir": "",
+   "role": "Founder, Flagship Pioneering; Board chair, Generate Biomedicines",
+   "strat": "Builds platform companies and takes them public; controls 57% of Generate.",
+   "plan": [
+    [
+     "d",
+     "Generate IPO",
+     "2026-02-26"
+    ]
+   ],
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Generate Biomedicines files for IPO (Boston Globe, 2026-02-23)",
+     "https://www.bostonglobe.com/2026/02/23/business/generate-biomedicines-flagship-ipo/"
+    ]
+   ]
+  },
+  {
+   "id": "vonmaltzahn",
+   "n": "Geoffrey von Maltzahn",
+   "s": "pharma",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Co-founder and CEO, Lila Sciences",
+   "dir": "",
+   "role": "Co-founder and CEO, Lila Sciences",
+   "strat": "Build scientific superintelligence with AI models running automated labs.",
+   "plan": [
+    [
+     "p",
+     "~$2B Series B (reported)",
+     "2026-06"
+    ]
+   ],
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "AI lab Lila Sciences tops $1.3 billion valuation with new Nvidia backing (Reuters via Yahoo, 2025-10-14)",
+     "https://finance.yahoo.com/news/exclusive-ai-lab-lila-sciences-101645837.html"
+    ]
+   ]
+  },
+  {
+   "id": "nally",
+   "n": "Michael Nally",
+   "s": "pharma",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "CEO, Generate Biomedicines",
+   "dir": "",
+   "role": "CEO, Generate Biomedicines",
+   "strat": "Advance late-stage severe asthma and COPD programs after IPO.",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Generate Biomedicines files for IPO (Boston Globe, 2026-02-23)",
+     "https://www.bostonglobe.com/2026/02/23/business/generate-biomedicines-flagship-ipo/"
+    ]
+   ]
+  },
+  {
+   "id": "khan-najat",
+   "n": "Najat Khan",
+   "s": "pharma",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "CEO and President, Recursion (from 2026-01-01)",
+   "dir": "",
+   "role": "CEO and President, Recursion (from 2026-01-01)",
+   "strat": "Extend runway into early 2028 and progress REC-4881 toward a registrational path.",
+   "plan": [
+    [
+     "m",
+     "REC-4881 regulatory update",
+     "2026-H2"
+    ]
+   ],
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Recursion slides on data update as new CEO named (GEN, 2025-11-09)",
+     "https://www.genengnews.com/topics/artificial-intelligence/stockwatch-recursion-slides-on-data-update-as-new-ceo-named/"
+    ],
+    [
+     "Recursion Q1 2026 results (Recursion, 2026-05-06)",
+     "https://ir.recursion.com/news-releases/news-release-details/recursion-reports-first-quarter-financial-results-and-provides"
+    ]
+   ]
+  },
+  {
+   "id": "gibson-chris",
+   "n": "Chris Gibson",
+   "s": "pharma",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Co-founder and Board Chair, Recursion",
+   "dir": "",
+   "role": "Co-founder and Board Chair, Recursion",
+   "strat": "Stepped down as CEO to chair the board.",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Recursion slides on data update as new CEO named (GEN, 2025-11-09)",
+     "https://www.genengnews.com/topics/artificial-intelligence/stockwatch-recursion-slides-on-data-update-as-new-ceo-named/"
+    ]
+   ]
+  },
+  {
+   "id": "meier",
+   "n": "Josh Meier",
+   "s": "pharma",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Co-founder, Chai Discovery; former OpenAI researcher",
+   "dir": "",
+   "role": "Co-founder, Chai Discovery; former OpenAI researcher",
+   "strat": "Molecule CAD suite built on foundation models.",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "From OpenAI's offices to a deal with Eli Lilly: Chai Discovery (TechCrunch, 2026-01-16)",
+     "https://techcrunch.com/2026/01/16/from-openais-offices-to-a-deal-with-eli-lilly-how-chai-discovery-became-one-of-the-flashiest-names-in-ai-drug-development/"
+    ]
+   ]
+  },
+  {
+   "id": "dent",
+   "n": "Jack Dent",
+   "s": "pharma",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Co-founder, Chai Discovery; former Stripe engineer",
+   "dir": "",
+   "role": "Co-founder, Chai Discovery; former Stripe engineer",
+   "strat": "Commercializes Chai models with large pharma.",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "From OpenAI's offices to a deal with Eli Lilly: Chai Discovery (TechCrunch, 2026-01-16)",
+     "https://techcrunch.com/2026/01/16/from-openais-offices-to-a-deal-with-eli-lilly-how-chai-discovery-became-one-of-the-flashiest-names-in-ai-drug-development/"
+    ]
+   ]
+  },
+  {
+   "id": "koller",
+   "n": "Daphne Koller",
+   "s": "pharma",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Founder and CEO, insitro",
+   "dir": "",
+   "role": "Founder and CEO, insitro",
+   "strat": "Data-driven ML discovery; TuneLab partner.",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Lilly offers AI discovery models to biotech partners (pharmaphorum, 2025-09-09)",
+     "https://pharmaphorum.com/news/lilly-offers-ai-discovery-models-biotech-partners"
+    ],
+    [
+     "Calico (company) (Wikipedia)",
+     "https://en.wikipedia.org/wiki/Calico_(company)"
+    ]
+   ]
+  },
+  {
+   "id": "powell-kimberly",
+   "n": "Kimberly Powell",
+   "s": "pharma",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "NVIDIA executive quoted on BioNeMo",
+   "dir": "",
+   "role": "NVIDIA executive quoted on BioNeMo",
+   "strat": "Turn experimental data into AI training signal via BioNeMo.",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "NVIDIA BioNeMo Platform Adopted by Life Sciences Leaders (NVIDIA, 2026-01-12)",
+     "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-BioNeMo-Platform-Adopted-by-Life-Sciences-Leaders-to-Accelerate-AI-Driven-Drug-Discovery/default.aspx"
+    ]
+   ]
+  },
+  {
+   "id": "betts-lacroix",
+   "n": "Joe Betts-LaCroix",
+   "s": "pharma",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "CEO, Retro Biosciences",
+   "dir": "",
+   "role": "CEO, Retro Biosciences",
+   "strat": "Add 10 healthy years; first drug out in the 2020s.",
+   "plan": [
+    [
+     "m",
+     "Alzheimer's trial data",
+     "2026-08"
+    ]
+   ],
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Sam Altman-backed biotech raising $1 billion to extend human lifespan (Fortune, 2025-01-24)",
+     "https://www.fortune.com/2025/01/24/sam-altman-ai-biotech-1-billion-funding-extend-human-lifespan"
+    ],
+    [
+     "Retro Biosciences longevity valuation (STAT, 2026-05-22)",
+     "https://statnews.com/2026/05/22/retro-biosciences-longevity-valuation"
+    ]
+   ]
+  },
+  {
+   "id": "salsano",
+   "n": "Sandro Salsano",
+   "s": "capital",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Board member, Retro Biosciences; led its 2025 fundraise",
+   "dir": "",
+   "role": "Board member, Retro Biosciences; led its 2025 fundraise",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Sam Altman-backed biotech raising $1 billion to extend human lifespan (Fortune, 2025-01-24)",
+     "https://www.fortune.com/2025/01/24/sam-altman-ai-biotech-1-billion-funding-extend-human-lifespan"
+    ]
+   ]
+  },
+  {
+   "id": "armstrong",
+   "n": "Brian Armstrong",
+   "s": "pharma",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Co-founder, NewLimit; CEO, Coinbase",
+   "dir": "",
+   "role": "Co-founder, NewLimit; CEO, Coinbase",
+   "strat": "Fund epigenetic reprogramming to treat aging as disease.",
+   "plan": [
+    [
+     "p",
+     "NewLimit first human trial",
+     "2027"
+    ]
+   ],
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "NewLimit raises $435M Series C, valuation hits $3.1B (Yahoo Finance, 2026-06-03)",
+     "https://finance.yahoo.com/sectors/healthcare/articles/newlimit-raises-435m-series-c-145642833.html"
+    ]
+   ]
+  },
+  {
+   "id": "byers",
+   "n": "Blake Byers",
+   "s": "pharma",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Co-founder, NewLimit; former GV partner",
+   "dir": "",
+   "role": "Co-founder, NewLimit; former GV partner",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "NewLimit raises $435M Series C, valuation hits $3.1B (Yahoo Finance, 2026-06-03)",
+     "https://finance.yahoo.com/sectors/healthcare/articles/newlimit-raises-435m-series-c-145642833.html"
+    ]
+   ]
+  },
+  {
+   "id": "kimmel",
+   "n": "Jacob Kimmel",
+   "s": "pharma",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "CEO and President, NewLimit",
+   "dir": "",
+   "role": "CEO and President, NewLimit",
+   "strat": "Liver reprogramming therapy into Phase 1 in 2027.",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "NewLimit raises $435M Series C, valuation hits $3.1B (Yahoo Finance, 2026-06-03)",
+     "https://finance.yahoo.com/sectors/healthcare/articles/newlimit-raises-435m-series-c-145642833.html"
+    ]
+   ]
+  },
+  {
+   "id": "milner",
+   "n": "Yuri Milner",
+   "s": "capital",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Reported backer, Altos Labs",
+   "dir": "",
+   "role": "Reported backer, Altos Labs",
+   "strat": "Large-scale cellular rejuvenation bet.",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Altos Labs launches with $3B financing and Hal Barron as CEO (The Pharma Letter)",
+     "https://thepharmaletter.com/biotechnology/altos-labs-launches-with-3b-financing-and-hal-barron-as-ceo"
+    ]
+   ]
+  },
+  {
+   "id": "barron",
+   "n": "Hal Barron",
+   "s": "pharma",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "CEO, Altos Labs; former Calico R&D head (left for GSK 2017)",
+   "dir": "",
+   "role": "CEO, Altos Labs; former Calico R&D head (left for GSK 2017)",
+   "strat": "Build a rejuvenation pipeline; expanded into senotherapeutics via Dorian.",
+   "plan": [
+    [
+     "d",
+     "Dorian acquisition",
+     "2025-05-23"
+    ]
+   ],
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Altos Labs launches with $3B financing and Hal Barron as CEO (The Pharma Letter)",
+     "https://thepharmaletter.com/biotechnology/altos-labs-launches-with-3b-financing-and-hal-barron-as-ceo"
+    ],
+    [
+     "Calico (company) (Wikipedia)",
+     "https://en.wikipedia.org/wiki/Calico_(company)"
+    ]
+   ]
+  },
+  {
+   "id": "klausner",
+   "n": "Rick Klausner",
+   "s": "pharma",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Co-founder and Chief Scientist, Altos Labs",
+   "dir": "",
+   "role": "Co-founder and Chief Scientist, Altos Labs",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Altos Labs launches with $3B financing and Hal Barron as CEO (The Pharma Letter)",
+     "https://thepharmaletter.com/biotechnology/altos-labs-launches-with-3b-financing-and-hal-barron-as-ceo"
+    ],
+    [
+     "Altos Labs snaps up Dorian Therapeutics (Longevity.Technology, 2025-05-23)",
+     "https://longevity.technology/news/altos-labs-snaps-up-dorian-therapeutics/"
+    ]
+   ]
+  },
+  {
+   "id": "bishop-hans",
+   "n": "Hans Bishop",
+   "s": "pharma",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Co-founder and President, Altos Labs",
+   "dir": "",
+   "role": "Co-founder and President, Altos Labs",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Altos Labs launches with $3B financing and Hal Barron as CEO (The Pharma Letter)",
+     "https://thepharmaletter.com/biotechnology/altos-labs-launches-with-3b-financing-and-hal-barron-as-ceo"
+    ]
+   ]
+  },
+  {
+   "id": "levinson",
+   "n": "Art Levinson",
+   "s": "pharma",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "CEO, Calico",
+   "dir": "",
+   "role": "CEO, Calico",
+   "strat": "Keep remaining Calico compounds moving after AbbVie exit.",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Calico (company) (Wikipedia)",
+     "https://en.wikipedia.org/wiki/Calico_(company)"
+    ]
+   ]
+  },
+  {
+   "id": "maris",
+   "n": "Bill Maris",
+   "s": "capital",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Founder, Calico; former GV CEO",
+   "dir": "",
+   "role": "Founder, Calico; former GV CEO",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Calico (company) (Wikipedia)",
+     "https://en.wikipedia.org/wiki/Calico_(company)"
+    ]
+   ]
+  },
+  {
+   "id": "khan-mehmood",
+   "n": "Mehmood Khan",
+   "s": "gulf",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "CEO, Hevolution Foundation",
+   "dir": "",
+   "role": "CEO, Hevolution Foundation",
+   "strat": "Fund global geroscience through grants and early-stage investment.",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Nonprofit organization in Riyadh funnels billions into extending healthy human lifespan (Arab News, 2024-06-25)",
+     "https://www.arabnews.com/node/2537546"
+    ],
+    [
+     "Saudi Crown Prince heads new bln-dollar foundation to decelerate aging (Al Arabiya, 2022-07)",
+     "https://english.alarabiya.net/News/gulf/2022/07/07/Exclusive-Saudi-s-Crown-Prince-heads-new-bln-dollar-foundation-to-decelerate-aging-"
+    ]
+   ]
+  },
+  {
+   "id": "haya",
+   "n": "Princess Dr. Haya bint Khaled Al Saud",
+   "s": "gulf",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Hevolution executive; Director, Saudi National Center for Genomics Technology",
+   "dir": "",
+   "role": "Hevolution executive; Director, Saudi National Center for Genomics Technology",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Saudi Crown Prince heads new bln-dollar foundation to decelerate aging (Al Arabiya, 2022-07)",
+     "https://english.alarabiya.net/News/gulf/2022/07/07/Exclusive-Saudi-s-Crown-Prince-heads-new-bln-dollar-foundation-to-decelerate-aging-"
+    ],
+    [
+     "Nonprofit organization in Riyadh funnels billions into extending healthy human lifespan (Arab News, 2024-06-25)",
+     "https://www.arabnews.com/node/2537546"
+    ]
+   ]
+  },
+  {
+   "id": "alghaithi",
+   "n": "Dr. Noura Khamis Al Ghaithi",
+   "s": "gulf",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Undersecretary, Department of Health Abu Dhabi",
+   "dir": "",
+   "role": "Undersecretary, Department of Health Abu Dhabi",
+   "strat": "Shift Abu Dhabi to preventive, longevity-focused care.",
+   "plan": [
+    [
+     "d",
+     "HLMC standards",
+     "2024-10-31"
+    ]
+   ],
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Abu Dhabi sets standards for world-first Healthy Longevity Medicine Centres (DoH Abu Dhabi, 2024-10-31)",
+     "https://www.doh.gov.ae/en/news/abu-dhabi-sets-standards-for-the-world-first-healthy-longevity-medicine-centres"
+    ]
+   ]
+  },
+  {
+   "id": "johnson-bryan",
+   "n": "Bryan Johnson",
+   "s": "pharma",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Founder, Blueprint; Don't Die",
+   "dir": "",
+   "role": "Founder, Blueprint; Don't Die",
+   "strat": "Productize his longevity protocol; Gyre Renwick runs the company.",
+   "plan": [
+    [
+     "d",
+     "$60M raise",
+     "2025-10-29"
+    ]
+   ],
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Bryan Johnson's Blueprint raises star-studded $60m funding round (Longevity.Technology, 2025-10-29)",
+     "https://longevity.technology/news/bryan-johnsons-blueprint-raises-star-studded-60m-funding-round/"
+    ]
+   ]
+  },
+  {
+   "id": "buterin",
+   "n": "Vitalik Buterin",
+   "s": "capital",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Ethereum co-founder; longevity donor",
+   "dir": "",
+   "role": "Ethereum co-founder; longevity donor",
+   "strat": "Philanthropic funding of anti-aging research.",
+   "plan": [
+    [
+     "d",
+     "1,000 ETH to Methuselah Foundation",
+     "2021-05"
+    ]
+   ],
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Vitalik Buterin donates more than $2 million to the Methuselah Foundation (Fight Aging!, 2021-05-17)",
+     "https://www.fightaging.org/archives/2021/05/vitalik-buterin-donates-more-than-2-million-to-the-methuselah-foundation/?nc"
+    ]
+   ]
+  },
+  {
+   "id": "bourla",
+   "n": "Albert Bourla",
+   "s": "pharma",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Chairman and CEO, Pfizer",
+   "dir": "",
+   "role": "Chairman and CEO, Pfizer",
+   "strat": "Secured three-year tariff grace through the first MFN deal and $70B U.S. investment.",
+   "plan": [
+    [
+     "d",
+     "Oval Office MFN deal",
+     "2025-09-30"
+    ]
+   ],
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "White House, Pfizer reach first MFN pricing agreement (BioPharm International, 2025-09-30)",
+     "https://www.biopharminternational.com/view/white-house-pfizer-reach-first-mfn-pricing-agreement-who-s-next-"
+    ],
+    [
+     "TrumpRx (Wikipedia)",
+     "https://en.wikipedia.org/wiki/TrumpRx"
+    ]
+   ]
+  },
+  {
+   "id": "auchincloss",
+   "n": "Rep. Jake Auchincloss",
+   "s": "state",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "U.S. Representative",
+   "dir": "",
+   "role": "U.S. Representative",
+   "strat": "Critic of CNPV transparency.",
+   "obj": [],
+   "f": [],
+   "src": [
+    [
+     "Eli Lilly's oral obesity pill approved (BioSpace, 2026-04-01)",
+     "https://www.biospace.com/fda/eli-lillys-oral-obesity-pill-approved-kicking-off-renewed-novo-rivalry"
+    ]
+   ]
   }
  ],
  "edges": [
@@ -17614,7 +31670,7 @@ window.CASE = {
    "tahnoon",
    "g42",
    "board",
-   "Chairs G42",
+   "Chairman; controlling shareholder",
    "",
    1
   ],
@@ -19076,14 +33132,6 @@ window.CASE = {
   ],
   [
    "lutnick",
-   "commerce",
-   "post",
-   "Secretary of Commerce",
-   "",
-   1
-  ],
-  [
-   "lutnick",
    "cantor",
    "own",
    "Sold majority to his children; announced May 19, closed Oct 6",
@@ -19206,9 +33254,9 @@ window.CASE = {
    "ardoino",
    "tether",
    "leads",
-   "CEO (per cited Fortune source)",
+   "CEO (named in cited Fortune source title)",
    "",
-   0
+   1
   ],
   [
    "tether",
@@ -19286,9 +33334,9 @@ window.CASE = {
    "vance",
    "narya",
    "tie",
-   "Business: page calls it 'JD Vance's Narya Capital'",
+   "JD Vance-linked venture capital (nature of link not stated on page)",
    "",
-   0
+   1
   ],
   [
    "luckey",
@@ -19638,7 +33686,7 @@ window.CASE = {
    "ellison",
    "oracle",
    "leads",
-   "Oracle",
+   "Chairman and co-founder",
    "",
    1
   ],
@@ -19767,14 +33815,6 @@ window.CASE = {
    "nvda",
    "capital",
    "Chip-secured financing (per Rowan)",
-   "",
-   1
-  ],
-  [
-   "bessent",
-   "treasury",
-   "post",
-   "Treasury Secretary",
    "",
    1
   ],
@@ -20107,14 +34147,6 @@ window.CASE = {
    1
   ],
   [
-   "vance",
-   "narya",
-   "tie",
-   "JD Vance-linked venture capital (nature of link not stated on page)",
-   "",
-   1
-  ],
-  [
    "thiel",
    "vance",
    "tie",
@@ -20143,14 +34175,6 @@ window.CASE = {
    "apollofirm",
    "leads",
    "Marc Rowan's firm",
-   "",
-   1
-  ],
-  [
-   "rowan",
-   "boardofpeace",
-   "board",
-   "Member",
    "",
    1
   ],
@@ -20507,14 +34531,6 @@ window.CASE = {
    1
   ],
   [
-   "wright-dan",
-   "armada",
-   "leads",
-   "CEO",
-   "",
-   1
-  ],
-  [
    "pradeep",
    "armada",
    "leads",
@@ -20535,14 +34551,6 @@ window.CASE = {
    "ondas",
    "board",
    "Chairman",
-   "",
-   1
-  ],
-  [
-   "karp",
-   "palantir",
-   "leads",
-   "CEO",
    "",
    1
   ],
@@ -21067,14 +35075,6 @@ window.CASE = {
    1
   ],
   [
-   "brock",
-   "ondas",
-   "leads",
-   "CEO",
-   "",
-   1
-  ],
-  [
    "hartman",
    "sentinel",
    "leads",
@@ -21343,14 +35343,6 @@ window.CASE = {
    "argentina",
    "partner",
    "[VERIFY] Speculated deal with the Argentine government",
-   "",
-   0
-  ],
-  [
-   "ardoino",
-   "tether",
-   "leads",
-   "CEO (named in cited Fortune source title)",
    "",
    0
   ],
@@ -21745,12 +35737,4508 @@ window.CASE = {
    "India's own operating-layer stack (scenario)",
    "2028-2030",
    0
+  ],
+  [
+   "kennedy-rfk",
+   "hhs",
+   "post",
+   "Secretary of Health and Human Services",
+   "2025",
+   1
+  ],
+  [
+   "oz",
+   "cms",
+   "post",
+   "Administrator",
+   "2025",
+   1
+  ],
+  [
+   "bhattacharya",
+   "nih",
+   "post",
+   "Director",
+   "2025",
+   1
+  ],
+  [
+   "bhattacharya",
+   "cdc",
+   "post",
+   "Acting Director (dual role)",
+   "2026-02-18",
+   1
+  ],
+  [
+   "makary",
+   "fda",
+   "post",
+   "Commissioner (resigned May 12, 2026)",
+   "2025",
+   1
+  ],
+  [
+   "diamantas",
+   "fda",
+   "post",
+   "Acting Commissioner",
+   "2026-05",
+   1
+  ],
+  [
+   "overton",
+   "fda",
+   "post",
+   "Nominee for Commissioner (pending)",
+   "2026-08-19",
+   0
+  ],
+  [
+   "oneill-jim",
+   "hhs",
+   "post",
+   "Deputy Secretary (Jun 9, 2025 to Feb 13, 2026)",
+   "2025-06-09",
+   1
+  ],
+  [
+   "oneill-jim",
+   "cdc",
+   "post",
+   "Acting Director (from Aug 28, 2025)",
+   "2025-08-28",
+   1
+  ],
+  [
+   "oneill-jim",
+   "thiel",
+   "tie",
+   "Business: former managing director, Thiel Capital and Clarium; CEO, Thiel Foundation (2008-2012)",
+   "2008",
+   1
+  ],
+  [
+   "gleason",
+   "usds",
+   "leads",
+   "Acting Administrator",
+   "2025-02",
+   1
+  ],
+  [
+   "gleason",
+   "cms",
+   "post",
+   "Deputy Administrator and Chief Product Officer",
+   "2026-06",
+   1
+  ],
+  [
+   "gleason",
+   "ohtp",
+   "leads",
+   "Heads Office of Health Technology and Products",
+   "2026-06-09",
+   1
+  ],
+  [
+   "gleason",
+   "htecosystem",
+   "leads",
+   "Spearheads Health Tech Ecosystem",
+   "2025-07",
+   1
+  ],
+  [
+   "gleason",
+   "smith-brad",
+   "tie",
+   "Business: worked with Smith's Russell Street Ventures after USDS",
+   "2022",
+   1
+  ],
+  [
+   "smith-brad",
+   "musk",
+   "advises",
+   "Advised Musk on DOGE from December 2024",
+   "2024-12",
+   1
+  ],
+  [
+   "minor-clark",
+   "hhs",
+   "post",
+   "CTO, then CIO; acting Chief AI Officer",
+   "2025",
+   1
+  ],
+  [
+   "minor-clark",
+   "palantir",
+   "leads",
+   "Former global head of cloud, Palantir (10+ years)",
+   "",
+   1
+  ],
+  [
+   "minor-clark",
+   "usds",
+   "tie",
+   "Often affiliated with DOGE (FedScoop)",
+   "2025",
+   0
+  ],
+  [
+   "klomp",
+   "cms",
+   "post",
+   "Deputy Administrator and Director, Center for Medicare",
+   "2025-04-21",
+   1
+  ],
+  [
+   "klomp",
+   "hhs",
+   "post",
+   "Chief Counselor; Deputy Secretary nominee (Jun 25, 2026)",
+   "2026-02-13",
+   1
+  ],
+  [
+   "brandt-kim",
+   "cms",
+   "post",
+   "Deputy Administrator and COO; acting CPI director",
+   "2025",
+   1
+  ],
+  [
+   "brandt-kim",
+   "fdoc",
+   "leads",
+   "Oversees program integrity and fraud war rooms",
+   "2025",
+   1
+  ],
+  [
+   "keane-thomas",
+   "astp",
+   "post",
+   "National Coordinator for Health IT",
+   "2025-06-02",
+   1
+  ],
+  [
+   "walsh-jeremy",
+   "fda",
+   "post",
+   "Chief AI Officer",
+   "2025-05",
+   1
+  ],
+  [
+   "walsh-jeremy",
+   "bah",
+   "leads",
+   "Former chief technologist, Booz Allen (14 years)",
+   "",
+   1
+  ],
+  [
+   "walsh-jeremy",
+   "elsa",
+   "leads",
+   "Leads FDA AI and Elsa rollout",
+   "2025-06",
+   1
+  ],
+  [
+   "kara-arda",
+   "cms",
+   "post",
+   "Senior Advisor for Technology",
+   "2026",
+   1
+  ],
+  [
+   "monarez",
+   "cdc",
+   "post",
+   "Former Director (fired after 29 days)",
+   "2025-08",
+   1
+  ],
+  [
+   "vance",
+   "fraudtaskforce",
+   "leads",
+   "Leads White House Task Force to Eliminate Fraud",
+   "2026",
+   1
+  ],
+  [
+   "faulkner",
+   "epic",
+   "founded",
+   "Founder and CEO",
+   "1979",
+   1
+  ],
+  [
+   "sicilia",
+   "oracle",
+   "leads",
+   "CEO",
+   "",
+   1
+  ],
+  [
+   "simo",
+   "openai",
+   "leads",
+   "CEO of Applications; announced ChatGPT Health",
+   "2026-01-07",
+   1
+  ],
+  [
+   "gross-nate",
+   "openai",
+   "leads",
+   "Leads healthcare strategy",
+   "2026",
+   1
+  ],
+  [
+   "amodei",
+   "anthropic",
+   "leads",
+   "CEO",
+   "",
+   1
+  ],
+  [
+   "rao-shiv",
+   "abridge",
+   "founded",
+   "Co-founder and CEO",
+   "2018",
+   1
+  ],
+  [
+   "seidmanbecker",
+   "clear",
+   "leads",
+   "CEO",
+   "",
+   1
+  ],
+  [
+   "collins-doug",
+   "va",
+   "post",
+   "Secretary",
+   "2025",
+   1
+  ],
+  [
+   "lawrence-paul",
+   "va",
+   "post",
+   "Deputy Secretary",
+   "2025-03",
+   1
+  ],
+  [
+   "dexter",
+   "congress",
+   "post",
+   "House Veterans' Affairs Committee member",
+   "",
+   1
+  ],
+  [
+   "bost",
+   "congress",
+   "post",
+   "Chairman, House Veterans' Affairs Committee",
+   "",
+   1
+  ],
+  [
+   "budzinski",
+   "congress",
+   "post",
+   "U.S. Representative (D-Ill.)",
+   "",
+   1
+  ],
+  [
+   "dexter",
+   "oracle",
+   "pressure",
+   "Motion to subpoena Ellison and Sicilia, approved 19-0",
+   "2026-09-02",
+   1
+  ],
+  [
+   "budzinski",
+   "vaehr",
+   "pressure",
+   "Called revised deal 'a blank check for Oracle'",
+   "2026-09",
+   1
+  ],
+  [
+   "chhabria",
+   "cavhhs",
+   "post",
+   "Presiding judge, N.D. Cal.",
+   "2025-07-02",
+   1
+  ],
+  [
+   "bonta",
+   "cavhhs",
+   "leads",
+   "Lead plaintiff state Attorney General",
+   "2025-07-01",
+   1
+  ],
+  [
+   "kendall",
+   "uk",
+   "post",
+   "Technology minister",
+   "2026",
+   1
+  ],
+  [
+   "kendall",
+   "nhsfdp",
+   "pressure",
+   "Confirms review of 'every single aspect' of contract",
+   "2026-06",
+   1
+  ],
+  [
+   "potter",
+   "wiser",
+   "pressure",
+   "Calls for disclosure of insurer AI vendor contracts",
+   "2026-10-28",
+   1
+  ],
+  [
+   "kennedy-rfk",
+   "oz",
+   "tie",
+   "Political: HHS Secretary and CMS Administrator jointly launched the Health Tech Ecosystem",
+   "2025-07-30",
+   1
+  ],
+  [
+   "kennedy-rfk",
+   "oneill-jim",
+   "tie",
+   "Political: Deputy Secretary under Kennedy until Feb 13, 2026 shakeup",
+   "2026-02-13",
+   1
+  ],
+  [
+   "kennedy-rfk",
+   "klomp",
+   "tie",
+   "Political: appointed Klomp HHS chief counselor",
+   "2026-02-13",
+   1
+  ],
+  [
+   "gleason",
+   "oz",
+   "tie",
+   "Political: runs CMS tech office under Administrator Oz",
+   "2026-06",
+   1
+  ],
+  [
+   "trump",
+   "anthropicban",
+   "leads",
+   "Issued directive via Truth Social",
+   "2026-02-27",
+   1
+  ],
+  [
+   "trump",
+   "overton",
+   "tie",
+   "Nominated as FDA Commissioner (political appointment)",
+   "2026-08-19",
+   1
+  ],
+  [
+   "klomp",
+   "kennedy-rfk",
+   "advises",
+   "Chief counselor; de facto chief of staff",
+   "2026-02-13",
+   1
+  ],
+  [
+   "ellison",
+   "uk",
+   "pressure",
+   "Called NHS population data 'fragmented' at WGS 2025 with Tony Blair",
+   "2025-02-12",
+   1
+  ],
+  [
+   "hhs",
+   "palantir",
+   "contract",
+   "Gotham licenses, $17,361,816 (12 months, one bidder)",
+   "2020-04",
+   1
+  ],
+  [
+   "hhs",
+   "palantir",
+   "contract",
+   "SHARE BPA (Foundry), $90M / 5 yrs",
+   "2022-05",
+   1
+  ],
+  [
+   "cdc",
+   "palantir",
+   "contract",
+   "Common Operating Picture, $443M / 5 yrs",
+   "2022-12",
+   1
+  ],
+  [
+   "arpah",
+   "palantir",
+   "contract",
+   "Data infrastructure (AIP, Foundry), $19M / 2 yrs",
+   "2024-06",
+   1
+  ],
+  [
+   "hhs",
+   "palantir",
+   "contract",
+   "ICCM and database support task, $19,778,616",
+   "2025-08-04",
+   1
+  ],
+  [
+   "arpah",
+   "palantir",
+   "contract",
+   "Delivery order 75N99226F00002, up to $13.7M; agentic AI PaaS option",
+   "2026-06-05",
+   1
+  ],
+  [
+   "acf",
+   "palantir",
+   "contract",
+   "Grant and job-description screening against EO 14151/14168",
+   "2025-03",
+   0
+  ],
+  [
+   "acf",
+   "credal",
+   "contract",
+   "GenAI platform, about $750,000",
+   "2025",
+   0
+  ],
+  [
+   "nih",
+   "palantir",
+   "contract",
+   "N3C COVID-19 research data, $60M",
+   "2021",
+   0
+  ],
+  [
+   "dhs",
+   "palantir",
+   "contract",
+   "BPA up to $1B / 5 yrs (CBP, ICE, FEMA, CISA)",
+   "2026-02",
+   1
+  ],
+  [
+   "ice",
+   "palantir",
+   "contract",
+   "ImmigrationOS, $30M through 2027",
+   "2025",
+   1
+  ],
+  [
+   "uk",
+   "palantir",
+   "contract",
+   "NHS Federated Data Platform, £330M",
+   "2023-11",
+   1
+  ],
+  [
+   "va",
+   "oracle",
+   "contract",
+   "Federal EHR: $10B (2018) + $17B ceiling (2026)",
+   "2026-08",
+   1
+  ],
+  [
+   "va",
+   "abridge",
+   "contract",
+   "Ambient scribe enterprise contract ($775.72M shared ceiling)",
+   "2026-09",
+   1
+  ],
+  [
+   "va",
+   "knowtex",
+   "contract",
+   "Ambient scribe enterprise contract ($775.72M shared ceiling)",
+   "2026-09",
+   1
+  ],
+  [
+   "cms",
+   "clear",
+   "contract",
+   "Medicare.gov identity verification (CLEAR1)",
+   "2025-12",
+   1
+  ],
+  [
+   "cms",
+   "idme",
+   "contract",
+   "Medicare.gov sign-in and identity verification",
+   "2025-12-16",
+   1
+  ],
+  [
+   "fda",
+   "deloitte",
+   "contract",
+   "Built Elsa (RAG on AWS GovCloud)",
+   "2025-06",
+   0
+  ],
+  [
+   "hhs",
+   "openai",
+   "contract",
+   "ChatGPT for all HHS employees",
+   "2025-09-09",
+   1
+  ],
+  [
+   "cms",
+   "coherehealth",
+   "contract",
+   "WISeR prior authorization, Texas (paid on savings)",
+   "2026-01-01",
+   1
+  ],
+  [
+   "cms",
+   "genzeon",
+   "contract",
+   "WISeR prior authorization, New Jersey",
+   "2026-01-01",
+   1
+  ],
+  [
+   "cms",
+   "humata",
+   "contract",
+   "WISeR prior authorization, Oklahoma",
+   "2026-01-01",
+   1
+  ],
+  [
+   "cms",
+   "innovaccer",
+   "contract",
+   "WISeR prior authorization, Ohio",
+   "2026-01-01",
+   1
+  ],
+  [
+   "cms",
+   "virtix",
+   "contract",
+   "WISeR prior authorization, Washington",
+   "2026-01-01",
+   1
+  ],
+  [
+   "cms",
+   "zyter",
+   "contract",
+   "WISeR prior authorization, Arizona",
+   "2026-01-01",
+   1
+  ],
+  [
+   "palantir",
+   "cdccop",
+   "supply",
+   "Platform for HHS Protect, ASPR Engage, Tiberius, DCIPHER",
+   "2022-12",
+   1
+  ],
+  [
+   "palantir",
+   "nhsfdp",
+   "supply",
+   "Builds and runs FDP",
+   "2023-11",
+   1
+  ],
+  [
+   "palantir",
+   "elite",
+   "supply",
+   "Developed ELITE for ICE (404 Media report)",
+   "2026-01",
+   0
+  ],
+  [
+   "elite",
+   "ice",
+   "supply",
+   "Medicaid-fed leads and address confidence scores",
+   "2026-01",
+   0
+  ],
+  [
+   "palantir",
+   "zyter",
+   "supply",
+   "Software infrastructure (EFF-obtained documents)",
+   "2026-10-28",
+   0
+  ],
+  [
+   "palantir",
+   "humana",
+   "supply",
+   "AI decision tools (EFF-obtained documents)",
+   "2026-10-28",
+   0
+  ],
+  [
+   "palantir",
+   "cigna",
+   "supply",
+   "AI decision tools (EFF-obtained documents)",
+   "2026-10-28",
+   0
+  ],
+  [
+   "palantir",
+   "cms",
+   "supply",
+   "'Mission critical software infrastructure for CMS' per Zyter application",
+   "2026-10-28",
+   0
+  ],
+  [
+   "anthropic",
+   "elsa",
+   "supply",
+   "Claude model under Elsa until 2026",
+   "2025-06",
+   0
+  ],
+  [
+   "google",
+   "elsa",
+   "supply",
+   "Gemini becomes primary model",
+   "2026-03",
+   0
+  ],
+  [
+   "aws",
+   "elsa",
+   "supply",
+   "AWS GovCloud hosting (FedRAMP-High)",
+   "2025-06",
+   0
+  ],
+  [
+   "deloitte",
+   "elsa",
+   "supply",
+   "System builder",
+   "2025-06",
+   0
+  ],
+  [
+   "google",
+   "hhs",
+   "supply",
+   "Gemini available for authorized mission use",
+   "2026-03",
+   1
+  ],
+  [
+   "openai",
+   "hhs",
+   "supply",
+   "ChatGPT Enterprise remains available after Anthropic removal",
+   "2026-03",
+   1
+  ],
+  [
+   "cms",
+   "dhs",
+   "supply",
+   "Medicaid enrollee data, daily access (court-limited since Jan 2026)",
+   "2025-07",
+   1
+  ],
+  [
+   "medicaidice",
+   "ice",
+   "supply",
+   "Basic biographical, location, contact data on people unlawfully present",
+   "2026-01-05",
+   1
+  ],
+  [
+   "cms",
+   "medicaidice",
+   "own",
+   "Party to agreement",
+   "2025-07",
+   1
+  ],
+  [
+   "dhs",
+   "ice",
+   "own",
+   "ICE is a DHS component",
+   "",
+   1
+  ],
+  [
+   "cms",
+   "nihrwd",
+   "supply",
+   "Medicare and Medicaid claims for NIH platform",
+   "2025-05",
+   1
+  ],
+  [
+   "nih",
+   "nihrwd",
+   "own",
+   "Runs real-world data platform",
+   "2025-05",
+   1
+  ],
+  [
+   "nih",
+   "adsi",
+   "capital",
+   "$50M+ across 13 projects",
+   "2025-09-22",
+   1
+  ],
+  [
+   "nih",
+   "arpah",
+   "own",
+   "ARPA-H contracts issued through NIH office",
+   "2026-06",
+   1
+  ],
+  [
+   "fda",
+   "elsa",
+   "own",
+   "Agency-wide AI tool",
+   "2025-06-02",
+   1
+  ],
+  [
+   "cdc",
+   "cdccop",
+   "own",
+   "Platform owner",
+   "2022-12",
+   1
+  ],
+  [
+   "va",
+   "vaehr",
+   "own",
+   "Program owner",
+   "2018-05",
+   1
+  ],
+  [
+   "va",
+   "vascribe",
+   "own",
+   "Program owner",
+   "2026-09",
+   1
+  ],
+  [
+   "oracle",
+   "vaehr",
+   "supply",
+   "Oracle Health (Cerner) EHR",
+   "2022",
+   1
+  ],
+  [
+   "abridge",
+   "vascribe",
+   "supply",
+   "Selected vendor",
+   "2026-09",
+   1
+  ],
+  [
+   "cms",
+   "ohtp",
+   "own",
+   "CMS office",
+   "2026-06-09",
+   1
+  ],
+  [
+   "ohtp",
+   "htecosystem",
+   "own",
+   "Runs the initiative",
+   "2026-06",
+   1
+  ],
+  [
+   "cms",
+   "cmsif",
+   "own",
+   "Sets framework criteria",
+   "2025-07-30",
+   1
+  ],
+  [
+   "cms",
+   "medapplib",
+   "own",
+   "Medicare.gov app library",
+   "2026-04",
+   1
+  ],
+  [
+   "cms",
+   "medgovid",
+   "own",
+   "Medicare.gov credentials",
+   "2026-03-04",
+   1
+  ],
+  [
+   "clear",
+   "medgovid",
+   "supply",
+   "CLEAR1 credential",
+   "2025-12",
+   1
+  ],
+  [
+   "idme",
+   "medgovid",
+   "supply",
+   "Primary sign-in option",
+   "2025-12-16",
+   1
+  ],
+  [
+   "cms",
+   "wiser",
+   "own",
+   "CMMI model",
+   "2026-01-01",
+   1
+  ],
+  [
+   "cms",
+   "access",
+   "own",
+   "CMMI model",
+   "2025-12",
+   1
+  ],
+  [
+   "cms",
+   "fdoc",
+   "own",
+   "Center for Program Integrity",
+   "2025",
+   1
+  ],
+  [
+   "fraudtaskforce",
+   "fdoc",
+   "partner",
+   "Medicaid Fraud War Room",
+   "2026-04",
+   1
+  ],
+  [
+   "hhs",
+   "cms",
+   "own",
+   "Operating division",
+   "",
+   1
+  ],
+  [
+   "hhs",
+   "nih",
+   "own",
+   "Operating division",
+   "",
+   1
+  ],
+  [
+   "hhs",
+   "cdc",
+   "own",
+   "Operating division",
+   "",
+   1
+  ],
+  [
+   "hhs",
+   "fda",
+   "own",
+   "Operating division",
+   "",
+   1
+  ],
+  [
+   "hhs",
+   "astp",
+   "own",
+   "Staff division",
+   "",
+   1
+  ],
+  [
+   "hhs",
+   "acf",
+   "own",
+   "Operating division",
+   "",
+   1
+  ],
+  [
+   "astp",
+   "hti5",
+   "own",
+   "Proposed rule",
+   "2025-12-22",
+   1
+  ],
+  [
+   "msft",
+   "epic",
+   "supply",
+   "Dragon ambient AI inside Epic ambient tool",
+   "2025-08-19",
+   1
+  ],
+  [
+   "bwell",
+   "openai",
+   "supply",
+   "Medical-records connector for ChatGPT Health",
+   "2026-01-07",
+   1
+  ],
+  [
+   "nvda",
+   "abridge",
+   "capital",
+   "NVentures backing; co-developing clinical foundation model",
+   "2026-06-11",
+   1
+  ],
+  [
+   "lilly",
+   "abridge",
+   "capital",
+   "Strategic investment",
+   "2026-06-11",
+   1
+  ],
+  [
+   "clear",
+   "epic",
+   "partner",
+   "Integrating CLEAR verification into MyChart",
+   "2025-12",
+   1
+  ],
+  [
+   "epic",
+   "cmsif",
+   "partner",
+   "Aligned Network early adopter",
+   "2025-07-30",
+   1
+  ],
+  [
+   "oracle",
+   "cmsif",
+   "partner",
+   "Oracle Health aligned network early adopter",
+   "2025-07-30",
+   1
+  ],
+  [
+   "bwell",
+   "cmsif",
+   "partner",
+   "Aligned Network early adopter",
+   "2025-07-30",
+   1
+  ],
+  [
+   "innovaccer",
+   "cmsif",
+   "partner",
+   "Aligned Network early adopter",
+   "2025-07-30",
+   1
+  ],
+  [
+   "openai",
+   "htecosystem",
+   "partner",
+   "Pledge signatory",
+   "2025-07-30",
+   1
+  ],
+  [
+   "anthropic",
+   "htecosystem",
+   "partner",
+   "Pledge signatory (conversational AI)",
+   "2025-07-30",
+   1
+  ],
+  [
+   "google",
+   "htecosystem",
+   "partner",
+   "Pledge signatory",
+   "2025-07-30",
+   1
+  ],
+  [
+   "aws",
+   "htecosystem",
+   "partner",
+   "Pledge signatory",
+   "2025-07-30",
+   1
+  ],
+  [
+   "apple",
+   "htecosystem",
+   "partner",
+   "Pledge signatory",
+   "2025-07-30",
+   1
+  ],
+  [
+   "epic",
+   "htecosystem",
+   "partner",
+   "EHR pledgee",
+   "2025-07-30",
+   1
+  ],
+  [
+   "oracle",
+   "htecosystem",
+   "partner",
+   "EHR pledgee (Oracle Health)",
+   "2025-07-30",
+   1
+  ],
+  [
+   "unh",
+   "htecosystem",
+   "partner",
+   "Payer and provider pledgee",
+   "2025-07-30",
+   1
+  ],
+  [
+   "cvs",
+   "htecosystem",
+   "partner",
+   "Payer pledgee (Aetna)",
+   "2025-07-30",
+   1
+  ],
+  [
+   "elv",
+   "htecosystem",
+   "partner",
+   "Payer pledgee",
+   "2025-07-30",
+   1
+  ],
+  [
+   "humana",
+   "htecosystem",
+   "partner",
+   "Payer pledgee",
+   "2025-07-30",
+   1
+  ],
+  [
+   "clear",
+   "htecosystem",
+   "partner",
+   "Kill the Clipboard identity provider",
+   "2025-12",
+   1
+  ],
+  [
+   "usds",
+   "cms",
+   "pressure",
+   "Read-only access to CMS payment and contracting systems (CALM)",
+   "2025-02",
+   1
+  ],
+  [
+   "eo14243",
+   "hhs",
+   "pressure",
+   "Full and prompt access to unclassified records",
+   "2025-03-20",
+   1
+  ],
+  [
+   "eo14355",
+   "nih",
+   "pressure",
+   "AI on Childhood Cancer Data Initiative data",
+   "2025-09-30",
+   1
+  ],
+  [
+   "anthropicban",
+   "anthropic",
+   "pressure",
+   "Cease all federal use; six-month phase-out",
+   "2026-02-27",
+   1
+  ],
+  [
+   "anthropicban",
+   "hhs",
+   "pressure",
+   "HHS phases out Claude",
+   "2026-03-02",
+   1
+  ],
+  [
+   "anthropicban",
+   "elsa",
+   "pressure",
+   "Forces model switch to Gemini",
+   "2026-03",
+   0
+  ],
+  [
+   "hegseth",
+   "anthropic",
+   "pressure",
+   "Supply-chain-risk designation",
+   "2026-02-27",
+   1
+  ],
+  [
+   "cavhhs",
+   "medicaidice",
+   "counter",
+   "PI Aug 12, 2025; partial relief Dec 29, 2025; pause Apr 30, 2026",
+   "2025-08-12",
+   1
+  ],
+  [
+   "congress",
+   "oracle",
+   "pressure",
+   "House VA Committee subpoena of Ellison and Sicilia (19-0)",
+   "2026-09-02",
+   1
+  ],
+  [
+   "ftcepic",
+   "epic",
+   "pressure",
+   "Reported antitrust probe on data access and non-competes",
+   "2026-08-14",
+   1
+  ],
+  [
+   "foxglove",
+   "nhsfdp",
+   "counter",
+   "Campaign to trigger break clause; FOI outcome data",
+   "2026",
+   1
+  ],
+  [
+   "eff",
+   "medicaidice",
+   "counter",
+   "Asked court to block Medicaid data use for enforcement",
+   "2025",
+   1
+  ],
+  [
+   "eff",
+   "wiser",
+   "counter",
+   "Obtained Zyter application documents",
+   "2026-10-28",
+   1
+  ],
+  [
+   "potter",
+   "cigna",
+   "tie",
+   "Former Cigna executive",
+   "",
+   1
+  ],
+  [
+   "darpa",
+   "bto",
+   "own",
+   "Technical office of DARPA",
+   "",
+   1
+  ],
+  [
+   "dow",
+   "darpa",
+   "own",
+   "DoD research agency",
+   "",
+   1
+  ],
+  [
+   "koeris",
+   "bto",
+   "leads",
+   "Director since April 2024",
+   "2024-04",
+   1
+  ],
+  [
+   "pava",
+   "switch",
+   "leads",
+   "Program manager",
+   "2024",
+   1
+  ],
+  [
+   "murray-robert",
+   "fsharp",
+   "leads",
+   "Program manager",
+   "2026",
+   1
+  ],
+  [
+   "mounfield",
+   "bto",
+   "post",
+   "Program manager",
+   "2026",
+   1
+  ],
+  [
+   "bto",
+   "switch",
+   "capital",
+   "Funds reprogrammable biomanufacturing program",
+   "2024",
+   1
+  ],
+  [
+   "bto",
+   "equippharma",
+   "capital",
+   "Funds agile pharma pilot sites",
+   "2024-01-24",
+   1
+  ],
+  [
+   "bto",
+   "rpm",
+   "capital",
+   "Funds distributed protein manufacturing",
+   "2023",
+   1
+  ],
+  [
+   "bto",
+   "resource",
+   "capital",
+   "Funds waste-to-supply conversion",
+   "2019",
+   1
+  ],
+  [
+   "bto",
+   "fsharp",
+   "capital",
+   "$46.4M, four years",
+   "2026",
+   1
+  ],
+  [
+   "bto",
+   "rapiid",
+   "capital",
+   "Shelf-stable blood alternative",
+   "2026-06",
+   1
+  ],
+  [
+   "bto",
+   "darpago",
+   "capital",
+   "Solicitation DARPA-PS-26-10",
+   "2025-12-19",
+   1
+  ],
+  [
+   "bto",
+   "bioattrib",
+   "capital",
+   "Biothreat attribution challenge",
+   "",
+   1
+  ],
+  [
+   "darpa",
+   "aspr",
+   "partner",
+   "EQUIP-A-Pharma regulatory framework",
+   "2024-01-24",
+   1
+  ],
+  [
+   "darpa",
+   "ginkgo",
+   "contract",
+   "RPM award up to $18M over 4 years",
+   "2023-07-20",
+   1
+  ],
+  [
+   "fsharp",
+   "kalocyte",
+   "contract",
+   "Named performer (synthetic red blood cell component)",
+   "2026",
+   1
+  ],
+  [
+   "dow",
+   "dbimp",
+   "capital",
+   "Phase one: 34 awards, over $60M",
+   "2024-11-14",
+   1
+  ],
+  [
+   "dbimp",
+   "debut",
+   "contract",
+   "$2M plans; up to $100M next phase",
+   "2024-07",
+   1
+  ],
+  [
+   "dbimp",
+   "visolis",
+   "contract",
+   "$2.86M expansion; >$5M total",
+   "2026-02-03",
+   1
+  ],
+  [
+   "dbimp",
+   "solugen",
+   "contract",
+   "$2.0M",
+   "2024-11",
+   1
+  ],
+  [
+   "dbimp",
+   "checkerspot",
+   "contract",
+   "$3.19M",
+   "2024-11",
+   1
+  ],
+  [
+   "dbimp",
+   "liberationlabs",
+   "contract",
+   "$1.4M",
+   "2024-11",
+   1
+  ],
+  [
+   "dbimp",
+   "perfectday",
+   "contract",
+   "$1.24M",
+   "2024-11",
+   1
+  ],
+  [
+   "dbimp",
+   "everyco",
+   "contract",
+   "$2.0M",
+   "2024-11",
+   1
+  ],
+  [
+   "dow",
+   "biomade",
+   "capital",
+   "$87.5M founding (2020); $450M (2023)",
+   "2023",
+   1
+  ],
+  [
+   "nsf",
+   "biomade",
+   "capital",
+   "With DoD, $21.4M to 14 projects",
+   "2026-04",
+   1
+  ],
+  [
+   "friedman-douglas",
+   "biomade",
+   "leads",
+   "CEO",
+   "",
+   1
+  ],
+  [
+   "nathan-david",
+   "biomade",
+   "leads",
+   "Program Director of Technology",
+   "",
+   1
+  ],
+  [
+   "biomade",
+   "biomademn",
+   "own",
+   "Demo plant, at least $132M (DoD + Minnesota DEED)",
+   "2025-04-29",
+   1
+  ],
+  [
+   "biomade",
+   "biomadeia",
+   "own",
+   "Pilot plant with Iowa State, opening 2028",
+   "",
+   1
+  ],
+  [
+   "biomade",
+   "biomadeca",
+   "own",
+   "Former Lygos plant, opening spring 2027",
+   "",
+   1
+  ],
+  [
+   "dow",
+   "bmo",
+   "own",
+   "Created by FY26 NDAA, reports to Deputy Secretary",
+   "2025-12-18",
+   1
+  ],
+  [
+   "ndaa26bio",
+   "bmo",
+   "pressure",
+   "Directs creation of the office and a DoD biotech strategy",
+   "2025-12-18",
+   1
+  ],
+  [
+   "ndaa26bio",
+   "biosecure",
+   "own",
+   "Sec. 851",
+   "2025-12-18",
+   1
+  ],
+  [
+   "nsceb",
+   "ndaa26bio",
+   "pressure",
+   "More than a dozen recommendations enacted",
+   "2025-12-18",
+   1
+  ],
+  [
+   "nsceb",
+   "ndaa27bio",
+   "pressure",
+   "Backs prize, forward biomanufacturing, Industrial Base Fund provisions",
+   "2026-06-08",
+   1
+  ],
+  [
+   "congress",
+   "nsceb",
+   "own",
+   "Created by FY22 NDAA Sec. 1091",
+   "2022-03",
+   1
+  ],
+  [
+   "young-todd",
+   "nsceb",
+   "leads",
+   "Chair since Sep 12, 2024",
+   "2024-09-12",
+   1
+  ],
+  [
+   "rozo",
+   "nsceb",
+   "board",
+   "Vice Chair",
+   "",
+   1
+  ],
+  [
+   "frazer",
+   "nsceb",
+   "leads",
+   "Executive Director",
+   "",
+   1
+  ],
+  [
+   "padilla",
+   "nsceb",
+   "board",
+   "Commissioner",
+   "",
+   1
+  ],
+  [
+   "bice",
+   "nsceb",
+   "board",
+   "Commissioner",
+   "",
+   1
+  ],
+  [
+   "khanna",
+   "nsceb",
+   "board",
+   "Commissioner",
+   "",
+   1
+  ],
+  [
+   "schmidt-eric",
+   "nsceb",
+   "board",
+   "Commissioner",
+   "",
+   1
+  ],
+  [
+   "zakheim",
+   "nsceb",
+   "board",
+   "Commissioner",
+   "",
+   1
+  ],
+  [
+   "arcangeli",
+   "nsceb",
+   "board",
+   "Commissioner",
+   "",
+   1
+  ],
+  [
+   "titus",
+   "nsceb",
+   "board",
+   "Commissioner",
+   "",
+   1
+  ],
+  [
+   "belcher",
+   "nsceb",
+   "board",
+   "Commissioner",
+   "",
+   1
+  ],
+  [
+   "meyerriecks",
+   "nsceb",
+   "board",
+   "Commissioner",
+   "",
+   1
+  ],
+  [
+   "kelly-jason",
+   "nsceb",
+   "leads",
+   "Chair until Sep 2024 (about 18 months on commission)",
+   "2024-09-12",
+   1
+  ],
+  [
+   "young-todd",
+   "kelly-jason",
+   "tie",
+   "Succeeded Kelly as NSCEB Chair (political/institutional succession)",
+   "2024-09-12",
+   1
+  ],
+  [
+   "young-todd",
+   "nbia",
+   "leads",
+   "Senate sponsor",
+   "2025-04-10",
+   1
+  ],
+  [
+   "padilla",
+   "nbia",
+   "leads",
+   "Senate co-sponsor",
+   "2025-04-10",
+   1
+  ],
+  [
+   "bice",
+   "nbia",
+   "leads",
+   "House sponsor",
+   "2025-04-10",
+   1
+  ],
+  [
+   "khanna",
+   "nbia",
+   "leads",
+   "House sponsor",
+   "2025-04-10",
+   1
+  ],
+  [
+   "young-todd",
+   "webbio",
+   "leads",
+   "Senate sponsor",
+   "2026-06-11",
+   1
+  ],
+  [
+   "padilla",
+   "webbio",
+   "leads",
+   "Senate sponsor",
+   "2026-06-11",
+   1
+  ],
+  [
+   "young-todd",
+   "padilla",
+   "tie",
+   "Bipartisan bill partners on NBIA and Web of Biological Data Act",
+   "2025-04-10",
+   1
+  ],
+  [
+   "trump",
+   "ndaa26bio",
+   "leads",
+   "Signed FY26 NDAA",
+   "2025-12-18",
+   1
+  ],
+  [
+   "trump",
+   "eo14292",
+   "leads",
+   "Signed",
+   "2025-05-05",
+   1
+  ],
+  [
+   "trump",
+   "eo14236",
+   "leads",
+   "Signed; revoked EO 14081",
+   "2025-03-14",
+   1
+  ],
+  [
+   "eo14292",
+   "hlsrpolicy",
+   "pressure",
+   "Ordered replacement of 2024 DURC/PEPP policy",
+   "2026-07-28",
+   1
+  ],
+  [
+   "eo14292",
+   "nasframework",
+   "pressure",
+   "Ordered revision in 90 days; still unrevised Jul-Sep 2026",
+   "2025-05-05",
+   1
+  ],
+  [
+   "ostp",
+   "hlsrpolicy",
+   "own",
+   "Issued with NIH and HHS",
+   "2026-07-28",
+   1
+  ],
+  [
+   "nih",
+   "hlsrpolicy",
+   "partner",
+   "NOT-OD-26-101",
+   "2026-07-28",
+   1
+  ],
+  [
+   "kratsios",
+   "ostp",
+   "leads",
+   "Director",
+   "",
+   1
+  ],
+  [
+   "ossoff",
+   "ostp",
+   "pressure",
+   "Letter on synthesis screening and AI-bio oversight",
+   "2026-06-24",
+   1
+  ],
+  [
+   "nist",
+   "nasframework",
+   "partner",
+   "Biosecurity for Synthetic Nucleic Acid Sequences standards work",
+   "",
+   1
+  ],
+  [
+   "synthbills",
+   "nasframework",
+   "pressure",
+   "Pending bills would legislate synthesis security standards",
+   "2026",
+   1
+  ],
+  [
+   "dow",
+   "sec1260h",
+   "own",
+   "Publishes 1260H list",
+   "2026-06-08",
+   1
+  ],
+  [
+   "sec1260h",
+   "biosecure",
+   "supply",
+   "1260H listing plus OMB finding makes a BCC",
+   "",
+   1
+  ],
+  [
+   "sec1260h",
+   "wuxi",
+   "pressure",
+   "Listed June 8, 2026",
+   "2026-06-08",
+   1
+  ],
+  [
+   "sec1260h",
+   "bgi",
+   "pressure",
+   "Listed",
+   "2026-06-08",
+   1
+  ],
+  [
+   "sec1260h",
+   "mgi",
+   "pressure",
+   "Listed",
+   "2026-06-08",
+   1
+  ],
+  [
+   "sec1260h",
+   "completegen",
+   "pressure",
+   "Listed",
+   "2026-06-08",
+   1
+  ],
+  [
+   "wuxi",
+   "sec1260h",
+   "counter",
+   "Sued in D.D.C. Jun 11; preliminary injunction Aug 7, 2026",
+   "2026-08-07",
+   1
+  ],
+  [
+   "biosecure",
+   "bgi",
+   "counter",
+   "Procurement ban once designated",
+   "",
+   1
+  ],
+  [
+   "biosecure",
+   "wuxi",
+   "counter",
+   "Procurement ban once designated",
+   "",
+   1
+  ],
+  [
+   "bgi",
+   "mgi",
+   "own",
+   "BGI Group includes MGI Tech",
+   "",
+   1
+  ],
+  [
+   "china",
+   "plabio",
+   "own",
+   "PLA biological research per State Dept",
+   "2025-04",
+   1
+  ],
+  [
+   "statedept",
+   "plabio",
+   "pressure",
+   "Compliance report flags undeclared labs and AI use",
+   "2025-04-22",
+   1
+  ],
+  [
+   "young-todd",
+   "sec1260h",
+   "pressure",
+   "Applauded June 2026 update (with Rozo)",
+   "2026-06-10",
+   1
+  ],
+  [
+   "moolenaar",
+   "treasury",
+   "pressure",
+   "Asked Bessent to add biotech to COINS controls",
+   "2026-05-21",
+   1
+  ],
+  [
+   "binsa",
+   "treasury",
+   "pressure",
+   "Would add biotech to COINS Act controls",
+   "2026-06-02",
+   1
+  ],
+  [
+   "hhs",
+   "aspr",
+   "own",
+   "",
+   "",
+   1
+  ],
+  [
+   "hhs",
+   "cdc",
+   "own",
+   "",
+   "",
+   1
+  ],
+  [
+   "hhs",
+   "nih",
+   "own",
+   "",
+   "",
+   1
+  ],
+  [
+   "aspr",
+   "barda",
+   "own",
+   "",
+   "",
+   1
+  ],
+  [
+   "aspr",
+   "sns",
+   "own",
+   "FY27 request $938.2M",
+   "",
+   1
+  ],
+  [
+   "aspr",
+   "bioshield",
+   "own",
+   "FY27 request $725.0M",
+   "",
+   1
+  ],
+  [
+   "kennedy-rfk",
+   "hhs",
+   "leads",
+   "Secretary",
+   "",
+   1
+  ],
+  [
+   "kennedy-rfk",
+   "barda",
+   "pressure",
+   "Ended 22 mRNA projects (~$500M)",
+   "2025-08-05",
+   1
+  ],
+  [
+   "oneill-jim",
+   "cdc",
+   "leads",
+   "Acting Director (as of Jan 2026)",
+   "2026-01-30",
+   1
+  ],
+  [
+   "kaufman",
+   "aspr",
+   "post",
+   "Nominee, Assistant Secretary",
+   "2026-07-15",
+   1
+  ],
+  [
+   "schwartz-erica",
+   "cdc",
+   "post",
+   "Nominee, Director",
+   "2026-07-15",
+   1
+  ],
+  [
+   "cdc",
+   "nwss",
+   "own",
+   "",
+   "",
+   1
+  ],
+  [
+   "cdc",
+   "tgs",
+   "own",
+   "",
+   "2021",
+   1
+  ],
+  [
+   "cdc",
+   "cfa",
+   "own",
+   "",
+   "",
+   1
+  ],
+  [
+   "kirby-amy",
+   "nwss",
+   "leads",
+   "Director",
+   "",
+   1
+  ],
+  [
+   "cdc",
+   "verily",
+   "contract",
+   "Direct NWSS testing at 100+ sites; extended to Sep 14, 2026, to be re-competed",
+   "2023",
+   1
+  ],
+  [
+   "tgs",
+   "perimeter",
+   "contract",
+   "Airport traveler surveillance partner (as Ginkgo Biosecurity)",
+   "2021",
+   1
+  ],
+  [
+   "tgs",
+   "xwell",
+   "contract",
+   "Airport partner",
+   "2021",
+   1
+  ],
+  [
+   "ginkgo",
+   "perimeter",
+   "own",
+   "About 20% of Tower Biosecurity; $7.6M equity-method investment (Q2 2026)",
+   "2026-04-03",
+   0
+  ],
+  [
+   "kelly-jason",
+   "ginkgo",
+   "leads",
+   "CEO",
+   "",
+   1
+  ],
+  [
+   "mcknight",
+   "perimeter",
+   "leads",
+   "Founder and CEO",
+   "2026-04-13",
+   1
+  ],
+  [
+   "breet",
+   "perimeter",
+   "leads",
+   "EMEA Senior Director",
+   "2026-04-13",
+   1
+  ],
+  [
+   "kelly-jason",
+   "mcknight",
+   "tie",
+   "Business: Ginkgo spun McKnight's unit out as Perimeter; Ginkgo stays shareholder",
+   "2026-04",
+   1
+  ],
+  [
+   "kanders",
+   "perimeter",
+   "invests",
+   "$60M round (listed first)",
+   "2026-04-13",
+   1
+  ],
+  [
+   "scsfin",
+   "perimeter",
+   "invests",
+   "$60M round",
+   "2026-04-13",
+   1
+  ],
+  [
+   "goldcrest",
+   "perimeter",
+   "invests",
+   "$60M round",
+   "2026-04-13",
+   1
+  ],
+  [
+   "fourcities",
+   "perimeter",
+   "invests",
+   "$60M round",
+   "2026-04-13",
+   1
+  ],
+  [
+   "saif",
+   "perimeter",
+   "invests",
+   "$60M round",
+   "2026-04-13",
+   1
+  ],
+  [
+   "nsf",
+   "ginkgo",
+   "contract",
+   "Autonomous labs at Caltech, Northwestern, UMD under ~$400M cloud-lab network (via universities)",
+   "2026",
+   1
+  ],
+  [
+   "doe",
+   "ginkgo",
+   "contract",
+   "PNNL EMSL 97-instrument autonomous lab, $47M",
+   "2026",
+   1
+  ],
+  [
+   "iarpa",
+   "b24ic",
+   "own",
+   "2022-2025",
+   "2022-07-06",
+   1
+  ],
+  [
+   "b24ic",
+   "ginkgo",
+   "contract",
+   "Prime performer",
+   "2022",
+   1
+  ],
+  [
+   "b24ic",
+   "battelle",
+   "contract",
+   "Prime performer",
+   "2022",
+   1
+  ],
+  [
+   "dow",
+   "dtra",
+   "own",
+   "",
+   "",
+   1
+  ],
+  [
+   "dtra",
+   "battelle",
+   "contract",
+   "STEP 2.0 biological threat reduction: $52.9M base, $93.3M potential",
+   "2026-02-27",
+   1
+  ],
+  [
+   "dow",
+   "jpeocbrnd",
+   "own",
+   "",
+   "",
+   1
+  ],
+  [
+   "jpeocbrnd",
+   "emergent",
+   "contract",
+   "Anthrax vaccine, up to $235.8M",
+   "2024-01-09",
+   1
+  ],
+  [
+   "iqt",
+   "bnext",
+   "own",
+   "Biotech team since 2015",
+   "2015",
+   1
+  ],
+  [
+   "bowsher",
+   "iqt",
+   "leads",
+   "CEO since Sep 8, 2023",
+   "2023-09-08",
+   1
+  ],
+  [
+   "darby",
+   "iqt",
+   "leads",
+   "CEO about 17 years, to Sep 2023",
+   "2023-09",
+   1
+  ],
+  [
+   "bowsher",
+   "darby",
+   "tie",
+   "Business: succeeded Darby as IQT CEO",
+   "2023-09-08",
+   1
+  ],
+  [
+   "dhs",
+   "cwmd",
+   "own",
+   "Dissolved via FY26 DHS appropriations (H.R. 7147)",
+   "2026-05",
+   0
+  ],
+  [
+   "congress",
+   "cwmd",
+   "pressure",
+   "FY26 DHS appropriations dispersed the office",
+   "2026-05",
+   0
+  ],
+  [
+   "dhs",
+   "biowatch",
+   "own",
+   "",
+   "2003",
+   1
+  ],
+  [
+   "fema",
+   "biowatch",
+   "capital",
+   "FY26 grants, $35M, ~40 awards",
+   "2026-07-15",
+   1
+  ],
+  [
+   "dhs",
+   "bd21",
+   "own",
+   "BioWatch replacement program",
+   "",
+   1
+  ],
+  [
+   "george-asha",
+   "bd21",
+   "pressure",
+   "Called its approach 'flawed' in testimony",
+   "",
+   1
+  ],
+  [
+   "g42",
+   "m42",
+   "own",
+   "G42 Healthcare merged with Mubadala Health",
+   "2023-04",
+   1
+  ],
+  [
+   "mubadala",
+   "m42",
+   "own",
+   "Mubadala Health merged with G42 Healthcare",
+   "2023-04",
+   1
+  ],
+  [
+   "m42",
+   "egp",
+   "own",
+   "Operates the programme",
+   "2019",
+   1
+  ],
+  [
+   "m42",
+   "adbiobank",
+   "partner",
+   "With Abu Dhabi Department of Health",
+   "2026-04",
+   1
+  ],
+  [
+   "xiao-peng",
+   "g42",
+   "leads",
+   "Group CEO",
+   "",
+   1
+  ],
+  [
+   "xiao-peng",
+   "m42",
+   "board",
+   "Chairman",
+   "",
+   1
+  ],
+  [
+   "moulavasilis",
+   "m42",
+   "leads",
+   "Group CEO since May 6, 2025",
+   "2025-05-06",
+   1
+  ],
+  [
+   "alnowais",
+   "m42",
+   "board",
+   "Board member; former Group CEO",
+   "2025-05-06",
+   1
+  ],
+  [
+   "almarzooqi",
+   "m42",
+   "leads",
+   "CEO, Integrated Health Solutions",
+   "",
+   1
+  ],
+  [
+   "almannaei",
+   "adbiobank",
+   "post",
+   "Abu Dhabi DoH Health Life Sciences lead",
+   "2026-04",
+   1
+  ],
+  [
+   "tahnoon",
+   "xiao-peng",
+   "tie",
+   "Business: chairman and group CEO of G42",
+   "",
+   1
+  ],
+  [
+   "msft",
+   "g42",
+   "capital",
+   "$1.5B investment",
+   "2024-04",
+   1
+  ],
+  [
+   "g42",
+   "bgi",
+   "partner",
+   "Reported 2020 cooperation on UAE genomics and COVID test kits",
+   "2020",
+   0
+  ],
+  [
+   "gallagher",
+   "g42",
+   "pressure",
+   "Letter asking Commerce to weigh Entity List over Huawei and BGI ties",
+   "2024-01-09",
+   1
+  ],
+  [
+   "pif",
+   "lifera",
+   "own",
+   "PIF company",
+   "",
+   1
+  ],
+  [
+   "albuhairan",
+   "lifera",
+   "leads",
+   "Group CEO",
+   "",
+   1
+  ],
+  [
+   "alkuraya",
+   "lifera",
+   "leads",
+   "Chief Medical and Genomic Officer",
+   "",
+   1
+  ],
+  [
+   "lifera",
+   "saudinbs",
+   "supply",
+   "Committed to supporting the strategy",
+   "",
+   1
+  ],
+  [
+   "mbs",
+   "sgp",
+   "leads",
+   "Inaugurated the program",
+   "",
+   1
+  ],
+  [
+   "musk",
+   "neuralink",
+   "founded",
+   "Founder",
+   "2016",
+   1
+  ],
+  [
+   "seo-dj",
+   "neuralink",
+   "founded",
+   "Co-founder; led implant chip team",
+   "2016",
+   1
+  ],
+  [
+   "seo-dj",
+   "neuraldust",
+   "founded",
+   "Co-developed neural dust at UC Berkeley",
+   "2016",
+   1
+  ],
+  [
+   "hodak",
+   "sciencecorp",
+   "leads",
+   "CEO and co-founder",
+   "2021",
+   1
+  ],
+  [
+   "hodak",
+   "neuralink",
+   "founded",
+   "Neuralink co-founder",
+   "2016",
+   1
+  ],
+  [
+   "rapoport",
+   "precision",
+   "founded",
+   "Co-founder",
+   "2021",
+   1
+  ],
+  [
+   "rapoport",
+   "neuralink",
+   "founded",
+   "Neuralink co-founder (per NYT)",
+   "2016",
+   0
+  ],
+  [
+   "mager",
+   "precision",
+   "leads",
+   "CEO and co-founder",
+   "",
+   1
+  ],
+  [
+   "oxley",
+   "synchron",
+   "leads",
+   "CEO and founder",
+   "",
+   1
+  ],
+  [
+   "altman",
+   "merge",
+   "founded",
+   "Co-founder",
+   "2026-01",
+   1
+  ],
+  [
+   "altman",
+   "openai",
+   "leads",
+   "CEO",
+   "",
+   1
+  ],
+  [
+   "blania",
+   "merge",
+   "founded",
+   "Reported co-founder (FT via Engadget)",
+   "2025-08-13",
+   0
+  ],
+  [
+   "blania",
+   "worldid",
+   "leads",
+   "Tools for Humanity / World",
+   "",
+   1
+  ],
+  [
+   "blania",
+   "altman",
+   "tie",
+   "Business partners: World and reported Merge Labs co-founders",
+   "2025-08",
+   0
+  ],
+  [
+   "shapiro-mikhail",
+   "merge",
+   "founded",
+   "Co-founder",
+   "2026-01",
+   1
+  ],
+  [
+   "angle",
+   "paradromics",
+   "leads",
+   "CEO and founder",
+   "",
+   1
+  ],
+  [
+   "ardoino",
+   "blackrockneuro",
+   "invests",
+   "Tether Evo majority stake",
+   "2024-04-29",
+   1
+  ],
+  [
+   "thiel",
+   "blackrockneuro",
+   "invests",
+   "Acquired stake",
+   "2021",
+   1
+  ],
+  [
+   "solzbacher",
+   "blackrockneuro",
+   "founded",
+   "Co-founder",
+   "2008",
+   1
+  ],
+  [
+   "gerhardt",
+   "blackrockneuro",
+   "founded",
+   "Co-founder",
+   "2008",
+   1
+  ],
+  [
+   "ackman",
+   "precision",
+   "invests",
+   "Pershing Square + Ackman Oxman Institute, $42.5M",
+   "2026-09-24",
+   1
+  ],
+  [
+   "ackman",
+   "pershing",
+   "leads",
+   "CEO",
+   "",
+   1
+  ],
+  [
+   "gates-bill",
+   "synchron",
+   "invests",
+   "Gates Frontier, Series C",
+   "2022-12-15",
+   1
+  ],
+  [
+   "bezos",
+   "synchron",
+   "invests",
+   "Bezos Expeditions, Series C and existing in D",
+   "2022-12-15",
+   1
+  ],
+  [
+   "newell",
+   "merge",
+   "invests",
+   "Seed investor",
+   "2026-01-15",
+   1
+  ],
+  [
+   "akyildiz",
+   "iobnt",
+   "founded",
+   "Lead author, IoBNT paper",
+   "2015-03",
+   1
+  ],
+  [
+   "akyildiz",
+   "nsf",
+   "tie",
+   "NSF MoNaCo project ties to IoBNT wet-lab work",
+   "2015",
+   1
+  ],
+  [
+   "kennedy-rfk",
+   "cmsecosys",
+   "pressure",
+   "Wearables push tied to MAHA agenda",
+   "2025-07-30",
+   1
+  ],
+  [
+   "means-casey",
+   "kennedy-rfk",
+   "advises",
+   "Advised Kennedy's 2024 campaign (KFF Health News)",
+   "2024",
+   0
+  ],
+  [
+   "hale-tom",
+   "oura",
+   "leads",
+   "CEO",
+   "",
+   1
+  ],
+  [
+   "luo-minmin",
+   "neucyber",
+   "founded",
+   "Founder of Xinzhida; CIBR director",
+   "",
+   1
+  ],
+  [
+   "emondi",
+   "darpan3",
+   "post",
+   "Program manager",
+   "2019",
+   1
+  ],
+  [
+   "emondi",
+   "darpa",
+   "post",
+   "DARPA program manager",
+   "2019",
+   1
+  ],
+  [
+   "schumer",
+   "mindact",
+   "post",
+   "Sponsor",
+   "2025-09-24",
+   1
+  ],
+  [
+   "cantwell",
+   "mindact",
+   "post",
+   "Co-sponsor",
+   "2025-09-24",
+   1
+  ],
+  [
+   "markey",
+   "mindact",
+   "post",
+   "Co-sponsor",
+   "2025-09-24",
+   1
+  ],
+  [
+   "seo-dj",
+   "musk",
+   "tie",
+   "Recruited by Musk to Neuralink",
+   "2016",
+   1
+  ],
+  [
+   "hodak",
+   "musk",
+   "tie",
+   "Neuralink co-founders",
+   "2016",
+   1
+  ],
+  [
+   "founders",
+   "neuralink",
+   "capital",
+   "Led $280M Series D; Series C and E participant",
+   "2023-08",
+   1
+  ],
+  [
+   "g42",
+   "neuralink",
+   "capital",
+   "Series E investor",
+   "2025-06-02",
+   1
+  ],
+  [
+   "qia",
+   "neuralink",
+   "capital",
+   "Series E investor",
+   "2025-06-02",
+   1
+  ],
+  [
+   "thrive",
+   "neuralink",
+   "capital",
+   "Series E investor",
+   "2025-06-02",
+   1
+  ],
+  [
+   "ark",
+   "neuralink",
+   "capital",
+   "Series E investor",
+   "2025-06-02",
+   1
+  ],
+  [
+   "sequoia",
+   "neuralink",
+   "capital",
+   "Series E investor",
+   "2025-06-02",
+   1
+  ],
+  [
+   "lightspeed",
+   "neuralink",
+   "capital",
+   "Series E investor",
+   "2025-06-02",
+   1
+  ],
+  [
+   "valoreq",
+   "neuralink",
+   "capital",
+   "Series E investor",
+   "2025-06-02",
+   1
+  ],
+  [
+   "arch",
+   "synchron",
+   "capital",
+   "Led $75M Series C",
+   "2022-12-15",
+   1
+  ],
+  [
+   "doublepoint",
+   "synchron",
+   "capital",
+   "Led $200M Series D",
+   "2025-11-06",
+   1
+  ],
+  [
+   "qia",
+   "synchron",
+   "capital",
+   "Series D investor",
+   "2025-11-06",
+   1
+  ],
+  [
+   "iqt",
+   "synchron",
+   "capital",
+   "Series D investor",
+   "2025-11-06",
+   1
+  ],
+  [
+   "ausnrf",
+   "synchron",
+   "capital",
+   "Series D investor",
+   "2025-11-06",
+   1
+  ],
+  [
+   "khosla",
+   "synchron",
+   "capital",
+   "Existing investor",
+   "2025-11-06",
+   1
+  ],
+  [
+   "openai",
+   "merge",
+   "capital",
+   "Largest check in $252M seed",
+   "2026-01-15",
+   1
+  ],
+  [
+   "bainvc",
+   "merge",
+   "capital",
+   "Seed investor",
+   "2026-01-15",
+   1
+  ],
+  [
+   "pershing",
+   "precision",
+   "capital",
+   "Co-led $250M Series D",
+   "2026-09-24",
+   1
+  ],
+  [
+   "mubadalacap",
+   "precision",
+   "capital",
+   "Series D investor",
+   "2026-09-24",
+   1
+  ],
+  [
+   "ark",
+   "precision",
+   "capital",
+   "Series D investor",
+   "2026-09-24",
+   1
+  ],
+  [
+   "lightspeed",
+   "sciencecorp",
+   "capital",
+   "Series C investor",
+   "2026-03-05",
+   1
+  ],
+  [
+   "khosla",
+   "sciencecorp",
+   "capital",
+   "Series C investor",
+   "2026-03-05",
+   1
+  ],
+  [
+   "iqt",
+   "sciencecorp",
+   "capital",
+   "Series C investor",
+   "2026-03-05",
+   1
+  ],
+  [
+   "tether",
+   "blackrockneuro",
+   "own",
+   "Majority stake, $200M via Tether Evo",
+   "2024-04-29",
+   1
+  ],
+  [
+   "neom",
+   "paradromics",
+   "capital",
+   "Strategic investment and partnership",
+   "2025-02",
+   1
+  ],
+  [
+   "fidelity",
+   "oura",
+   "capital",
+   "Led $900M+ round at $11B",
+   "2025-10-14",
+   1
+  ],
+  [
+   "collabfund",
+   "whoop",
+   "capital",
+   "Led $575M Series G",
+   "2026-03-31",
+   1
+  ],
+  [
+   "abbott",
+   "whoop",
+   "capital",
+   "Strategic investor",
+   "2026-03-31",
+   1
+  ],
+  [
+   "zgcfund",
+   "neucyber",
+   "capital",
+   "Beinao Fund backs CIBR and Xinzhida",
+   "2022",
+   1
+  ],
+  [
+   "darpa",
+   "profusa",
+   "capital",
+   "Biosensor collaboration with JPEO-CBRND; added funding Aug 2019",
+   "2018",
+   1
+  ],
+  [
+   "darpa",
+   "darpan3",
+   "own",
+   "Program",
+   "2018-03",
+   1
+  ],
+  [
+   "darpa",
+   "darpaivn",
+   "own",
+   "Program (complete)",
+   "",
+   1
+  ],
+  [
+   "nsf",
+   "iobnt",
+   "capital",
+   "MoNaCo project funding",
+   "2015",
+   1
+  ],
+  [
+   "nvda",
+   "synchron",
+   "supply",
+   "Holoscan real-time decoding; Omniverse and Cosmos for Chiral",
+   "2025-01",
+   1
+  ],
+  [
+   "apple",
+   "synchron",
+   "partner",
+   "First native BCI HID integration (iPhone, iPad, Vision Pro)",
+   "2025-05-13",
+   1
+  ],
+  [
+   "medtronic",
+   "precision",
+   "partner",
+   "Surgical navigation integration",
+   "2026-01",
+   1
+  ],
+  [
+   "palantir",
+   "oura",
+   "supply",
+   "FedStart IL5 hosting for Oura DoD deployments ('security layer')",
+   "2025-08-27",
+   1
+  ],
+  [
+   "dow",
+   "oura",
+   "contract",
+   "Largest enterprise customer; tens of thousands of rings",
+   "2019",
+   1
+  ],
+  [
+   "dha",
+   "oura",
+   "contract",
+   "$96M sole-source notice; solicitation canceled",
+   "2025-03-04",
+   1
+  ],
+  [
+   "whoop",
+   "dha",
+   "counter",
+   "GAO protests against ring-only procurement",
+   "2025-01",
+   1
+  ],
+  [
+   "navy",
+   "navycrew",
+   "own",
+   "Navy program (NHRC origin)",
+   "2017",
+   1
+  ],
+  [
+   "oura",
+   "navycrew",
+   "supply",
+   "Rings for NHRC sailor fatigue tracking",
+   "2025",
+   1
+  ],
+  [
+   "whoop",
+   "navycrew",
+   "supply",
+   "MIT Lincoln Laboratory contract",
+   "2026-04",
+   1
+  ],
+  [
+   "army",
+   "oura",
+   "contract",
+   "400+ soldiers in field exercise",
+   "",
+   1
+  ],
+  [
+   "diu",
+   "rate",
+   "own",
+   "Program with DTRA",
+   "2020-06",
+   1
+  ],
+  [
+   "philips",
+   "rate",
+   "supply",
+   "Illness-prediction algorithm",
+   "2020-06",
+   1
+  ],
+  [
+   "garmin",
+   "rate",
+   "supply",
+   "Watch",
+   "2020-06",
+   1
+  ],
+  [
+   "oura",
+   "rate",
+   "supply",
+   "Ring",
+   "2020-06",
+   1
+  ],
+  [
+   "oura",
+   "ourafw",
+   "own",
+   "Defense manufacturing site",
+   "2025-08-27",
+   1
+  ],
+  [
+   "oura",
+   "cmsecosys",
+   "partner",
+   "Early adopter pledge",
+   "2025-07-30",
+   1
+  ],
+  [
+   "apple",
+   "cmsecosys",
+   "partner",
+   "Early adopter pledge",
+   "2025-07-30",
+   1
+  ],
+  [
+   "google",
+   "cmsecosys",
+   "partner",
+   "Fitbit early adopter pledge",
+   "2025-07-30",
+   1
+  ],
+  [
+   "openai",
+   "cmsecosys",
+   "partner",
+   "Participant",
+   "2025-07-30",
+   1
+  ],
+  [
+   "anthropic",
+   "cmsecosys",
+   "partner",
+   "Participant",
+   "2025-07-30",
+   1
+  ],
+  [
+   "msft",
+   "cmsecosys",
+   "partner",
+   "Microsoft AI participant",
+   "2025-07-30",
+   1
+  ],
+  [
+   "hhs",
+   "arpah",
+   "own",
+   "ARPA-H biowearables project",
+   "2026-03-10",
+   1
+  ],
+  [
+   "hhs",
+   "cmsecosys",
+   "own",
+   "CMS initiative",
+   "2025-07-30",
+   1
+  ],
+  [
+   "otsuka",
+   "mycite",
+   "own",
+   "Abilify MyCite (with Proteus)",
+   "2017-11-13",
+   1
+  ],
+  [
+   "msft",
+   "msftpatent",
+   "own",
+   "Applicant (Microsoft Technology Licensing)",
+   "2019-06-20",
+   1
+  ],
+  [
+   "china",
+   "cnbciplan",
+   "own",
+   "Seven-ministry plan",
+   "2025-08",
+   1
+  ],
+  [
+   "cnbciplan",
+   "neucyber",
+   "pressure",
+   "National 2027 / 2030 targets",
+   "2025-08",
+   1
+  ],
+  [
+   "cnbciplan",
+   "neuralink",
+   "counter",
+   "Plan aims to outpace Neuralink and Synchron",
+   "2025-08",
+   1
+  ],
+  [
+   "mindact",
+   "neuralink",
+   "pressure",
+   "Proposed FTC study of neural data",
+   "2025-09-24",
+   1
+  ],
+  [
+   "mindact",
+   "oura",
+   "pressure",
+   "'Other related data' covers wearable signals",
+   "2025-09-24",
+   1
+  ],
+  [
+   "mtneural",
+   "neuralink",
+   "pressure",
+   "Express consent for neurotechnology data",
+   "2025",
+   1
+  ],
+  [
+   "unesconeuro",
+   "neuralink",
+   "pressure",
+   "Global ethics standard for neurotech",
+   "2025-11-12",
+   1
+  ],
+  [
+   "randiob",
+   "oura",
+   "pressure",
+   "IoB risk framing (privacy, security)",
+   "2020-10-29",
+   1
+  ],
+  [
+   "neuraldust",
+   "neuralink",
+   "supply",
+   "Founder lineage: neural dust research to Neuralink (Seo)",
+   "2016",
+   1
+  ],
+  [
+   "ricks",
+   "lilly",
+   "leads",
+   "Chair and CEO",
+   "",
+   1
+  ],
+  [
+   "rau",
+   "lilly",
+   "leads",
+   "EVP, chief information and digital officer",
+   "",
+   1
+  ],
+  [
+   "fuchs",
+   "lilly",
+   "leads",
+   "Chief AI officer",
+   "",
+   1
+  ],
+  [
+   "skovronsky",
+   "lilly",
+   "leads",
+   "Chief scientific officer",
+   "",
+   1
+  ],
+  [
+   "powell-kimberly",
+   "nvda",
+   "leads",
+   "Healthcare executive quoted on BioNeMo",
+   "2026-01-12",
+   1
+  ],
+  [
+   "hassabis",
+   "isomorphic",
+   "leads",
+   "Founder and CEO",
+   "",
+   1
+  ],
+  [
+   "jaderberg",
+   "isomorphic",
+   "leads",
+   "President",
+   "",
+   1
+  ],
+  [
+   "hassabis",
+   "alphafold",
+   "leads",
+   "AlphaFold work; 2024 Nobel",
+   "2024-10-09",
+   1
+  ],
+  [
+   "jumper",
+   "alphafold",
+   "leads",
+   "AlphaFold work; 2024 Nobel",
+   "2024-10-09",
+   1
+  ],
+  [
+   "baker-david",
+   "xaira",
+   "founded",
+   "Co-founder",
+   "2024",
+   1
+  ],
+  [
+   "tessier-lavigne",
+   "xaira",
+   "leads",
+   "CEO",
+   "2024",
+   1
+  ],
+  [
+   "nelsen",
+   "arch",
+   "leads",
+   "ARCH partner; Xaira launch",
+   "2024",
+   1
+  ],
+  [
+   "afeyan",
+   "flagship",
+   "founded",
+   "Founder",
+   "",
+   1
+  ],
+  [
+   "afeyan",
+   "generate",
+   "board",
+   "Board chair; controls 57% via Flagship",
+   "2026-02-23",
+   1
+  ],
+  [
+   "nally",
+   "generate",
+   "leads",
+   "CEO",
+   "",
+   1
+  ],
+  [
+   "vonmaltzahn",
+   "lila",
+   "leads",
+   "Co-founder and CEO",
+   "",
+   1
+  ],
+  [
+   "khan-najat",
+   "recursion",
+   "leads",
+   "CEO and President",
+   "2026-01-01",
+   1
+  ],
+  [
+   "gibson-chris",
+   "recursion",
+   "board",
+   "Chair; co-founder",
+   "2026-01-01",
+   1
+  ],
+  [
+   "meier",
+   "chai",
+   "founded",
+   "Co-founder",
+   "2024",
+   1
+  ],
+  [
+   "dent",
+   "chai",
+   "founded",
+   "Co-founder",
+   "2024",
+   1
+  ],
+  [
+   "koller",
+   "insitro",
+   "leads",
+   "Founder and CEO",
+   "",
+   1
+  ],
+  [
+   "koller",
+   "calico",
+   "leads",
+   "Former chief computing officer (left 2018)",
+   "2018-03",
+   1
+  ],
+  [
+   "altman",
+   "retro",
+   "invests",
+   "Seeded $180M; backed 2026 round",
+   "2025-01-24",
+   1
+  ],
+  [
+   "altman",
+   "stargate",
+   "partner",
+   "Co-announced at White House",
+   "2025-01-21",
+   1
+  ],
+  [
+   "altman",
+   "chai",
+   "advises",
+   "Pitched the proteomics spinout to founders",
+   "",
+   1
+  ],
+  [
+   "betts-lacroix",
+   "retro",
+   "leads",
+   "CEO",
+   "",
+   1
+  ],
+  [
+   "salsano",
+   "retro",
+   "board",
+   "Board member; led 2025 fundraise",
+   "2025-01-24",
+   1
+  ],
+  [
+   "armstrong",
+   "newlimit",
+   "founded",
+   "Co-founder",
+   "2021",
+   1
+  ],
+  [
+   "byers",
+   "newlimit",
+   "founded",
+   "Co-founder",
+   "2021",
+   1
+  ],
+  [
+   "kimmel",
+   "newlimit",
+   "leads",
+   "CEO and President",
+   "",
+   1
+  ],
+  [
+   "armstrong",
+   "coinbase",
+   "leads",
+   "CEO",
+   "",
+   1
+  ],
+  [
+   "milner",
+   "altos",
+   "invests",
+   "Reported backer",
+   "2022",
+   0
+  ],
+  [
+   "bezos",
+   "altos",
+   "invests",
+   "Reported backer",
+   "2022",
+   0
+  ],
+  [
+   "barron",
+   "altos",
+   "leads",
+   "CEO",
+   "2022",
+   1
+  ],
+  [
+   "klausner",
+   "altos",
+   "founded",
+   "Co-founder, chief scientist",
+   "2022",
+   1
+  ],
+  [
+   "bishop-hans",
+   "altos",
+   "founded",
+   "Co-founder, president",
+   "2022",
+   1
+  ],
+  [
+   "barron",
+   "calico",
+   "leads",
+   "Former head of R&D (left Dec 2017)",
+   "2017-12",
+   1
+  ],
+  [
+   "levinson",
+   "calico",
+   "leads",
+   "CEO",
+   "",
+   1
+  ],
+  [
+   "maris",
+   "calico",
+   "founded",
+   "Founder",
+   "2013",
+   1
+  ],
+  [
+   "mbs",
+   "hevolution",
+   "board",
+   "Chairs board of trustees",
+   "2022",
+   1
+  ],
+  [
+   "khan-mehmood",
+   "hevolution",
+   "leads",
+   "CEO",
+   "",
+   1
+  ],
+  [
+   "haya",
+   "hevolution",
+   "leads",
+   "Executive (impact and insight / research)",
+   "",
+   1
+  ],
+  [
+   "alnowais",
+   "m42",
+   "leads",
+   "Managing Director and Group CEO",
+   "",
+   1
+  ],
+  [
+   "alghaithi",
+   "dohad",
+   "post",
+   "Undersecretary",
+   "",
+   1
+  ],
+  [
+   "johnson-bryan",
+   "blueprint",
+   "founded",
+   "Founder; vision and strategy",
+   "",
+   1
+  ],
+  [
+   "buterin",
+   "methuselah",
+   "invests",
+   "Donated 1,000 ETH plus ELON tokens",
+   "2021-05",
+   1
+  ],
+  [
+   "thiel",
+   "methuselah",
+   "invests",
+   "Donated $3.5M",
+   "2006-09-19",
+   1
+  ],
+  [
+   "bourla",
+   "pfizer",
+   "leads",
+   "Chairman and CEO",
+   "",
+   1
+  ],
+  [
+   "ellison",
+   "stargate",
+   "partner",
+   "Co-announced; health claims",
+   "2025-01-21",
+   1
+  ],
+  [
+   "trump",
+   "mfn",
+   "pressure",
+   "Announced MFN agreements",
+   "2025-09-30",
+   1
+  ],
+  [
+   "trump",
+   "s232pharma",
+   "pressure",
+   "Issued Proclamation 11020",
+   "2026-04-02",
+   1
+  ],
+  [
+   "auchincloss",
+   "cnpv",
+   "pressure",
+   "Called program 'shrouded in secrecy'",
+   "2026-04-01",
+   1
+  ],
+  [
+   "nvda",
+   "lilly",
+   "supply",
+   "AI factory: 1,016 Blackwell Ultra GPUs",
+   "2025-10-28",
+   1
+  ],
+  [
+   "lilly",
+   "lillyaif",
+   "own",
+   "Wholly owned and operated",
+   "2025-10-28",
+   1
+  ],
+  [
+   "nvda",
+   "lillynvlab",
+   "capital",
+   "Joint up to $1B over 5 years",
+   "2026-01-12",
+   1
+  ],
+  [
+   "lilly",
+   "lillynvlab",
+   "capital",
+   "Joint up to $1B over 5 years",
+   "2026-01-12",
+   1
+  ],
+  [
+   "lilly",
+   "tunelab",
+   "own",
+   "Platform owner",
+   "2025-09-09",
+   1
+  ],
+  [
+   "bionemo",
+   "tunelab",
+   "supply",
+   "NVIDIA Clara models offered in TuneLab",
+   "2025-10-28",
+   1
+  ],
+  [
+   "nvda",
+   "bionemo",
+   "own",
+   "Platform owner",
+   "",
+   1
+  ],
+  [
+   "insitro",
+   "tunelab",
+   "partner",
+   "Early TuneLab partner",
+   "2025-09-09",
+   1
+  ],
+  [
+   "thermo",
+   "bionemo",
+   "partner",
+   "Autonomous lab infrastructure",
+   "2026-01-12",
+   1
+  ],
+  [
+   "chai",
+   "bionemo",
+   "partner",
+   "Uses BioNeMo",
+   "2026-01-12",
+   1
+  ],
+  [
+   "lila",
+   "bionemo",
+   "partner",
+   "BioNeMo partner",
+   "2026-01-12",
+   1
+  ],
+  [
+   "roche",
+   "bionemo",
+   "partner",
+   "Omniverse/Isaac digital twins",
+   "2026-01-12",
+   1
+  ],
+  [
+   "google",
+   "isomorphic",
+   "own",
+   "Alphabet parent; GV, CapitalG invest",
+   "",
+   1
+  ],
+  [
+   "thrive",
+   "isomorphic",
+   "capital",
+   "Led $600M and $2.1B rounds",
+   "2026-05-12",
+   1
+  ],
+  [
+   "mgx",
+   "isomorphic",
+   "capital",
+   "New investor in $2.1B Series B",
+   "2026-05-12",
+   1
+  ],
+  [
+   "ukaif",
+   "isomorphic",
+   "capital",
+   "New investor in $2.1B Series B",
+   "2026-05-12",
+   1
+  ],
+  [
+   "temasek",
+   "isomorphic",
+   "capital",
+   "New investor in $2.1B Series B",
+   "2026-05-12",
+   1
+  ],
+  [
+   "lilly",
+   "isomorphic",
+   "contract",
+   "$45M upfront; up to $1.7B",
+   "2024-01-07",
+   1
+  ],
+  [
+   "novartis",
+   "isomorphic",
+   "contract",
+   "$37.5M upfront; up to $1.2B",
+   "2024-01-07",
+   1
+  ],
+  [
+   "arch",
+   "xaira",
+   "capital",
+   "Co-lead, $1B launch",
+   "2024",
+   1
+  ],
+  [
+   "foresite",
+   "xaira",
+   "capital",
+   "Incubator; co-lead",
+   "2024",
+   1
+  ],
+  [
+   "openai",
+   "chai",
+   "capital",
+   "Seed investor; office space",
+   "",
+   1
+  ],
+  [
+   "lilly",
+   "chai",
+   "contract",
+   "Software partnership (terms undisclosed)",
+   "2026-01-08",
+   1
+  ],
+  [
+   "pfizer",
+   "chai",
+   "partner",
+   "Chai partner",
+   "2026",
+   1
+  ],
+  [
+   "novartis",
+   "chai",
+   "partner",
+   "Chai partner",
+   "2026",
+   1
+  ],
+  [
+   "kleiner",
+   "chai",
+   "capital",
+   "Series C participant",
+   "2026-07",
+   1
+  ],
+  [
+   "flagship",
+   "generate",
+   "own",
+   "Founder; 57% control",
+   "2018",
+   1
+  ],
+  [
+   "nvda",
+   "generate",
+   "capital",
+   "NVentures in 2023 Series C",
+   "2023",
+   1
+  ],
+  [
+   "novartis",
+   "generate",
+   "contract",
+   "Collaboration ($110M collected with Amgen)",
+   "",
+   1
+  ],
+  [
+   "flagship",
+   "lila",
+   "own",
+   "Originated Lila",
+   "",
+   1
+  ],
+  [
+   "nvda",
+   "lila",
+   "capital",
+   "Venture arm in $115M extension; reported anchor of ~$2B round",
+   "2025-10-14",
+   1
+  ],
+  [
+   "adia",
+   "lila",
+   "capital",
+   "Subsidiary in $115M extension",
+   "2025-10-14",
+   1
+  ],
+  [
+   "roche",
+   "recursion",
+   "contract",
+   "Large-scale biology maps",
+   "",
+   1
+  ],
+  [
+   "sanofi",
+   "recursion",
+   "contract",
+   "Joint programs",
+   "",
+   1
+  ],
+  [
+   "lilly",
+   "insilico",
+   "capital",
+   "IPO cornerstone",
+   "2025-12-29",
+   1
+  ],
+  [
+   "temasek",
+   "insilico",
+   "capital",
+   "IPO cornerstone",
+   "2025-12-29",
+   1
+  ],
+  [
+   "openai",
+   "gpt4bmicro",
+   "own",
+   "Developed with Retro",
+   "2025-08-22",
+   1
+  ],
+  [
+   "gpt4bmicro",
+   "retro",
+   "supply",
+   "Designed RetroSOX/RetroKLF variants",
+   "2025-08-22",
+   1
+  ],
+  [
+   "openai",
+   "gptrosalind",
+   "own",
+   "Model owner",
+   "2026-04-17",
+   1
+  ],
+  [
+   "gptrosalind",
+   "moderna",
+   "supply",
+   "Named partner",
+   "2026-04-17",
+   1
+  ],
+  [
+   "gptrosalind",
+   "thermo",
+   "supply",
+   "Named partner",
+   "2026-04-17",
+   1
+  ],
+  [
+   "anthropic",
+   "claudels",
+   "own",
+   "Product owner",
+   "2025-10-20",
+   1
+  ],
+  [
+   "claudels",
+   "sanofi",
+   "supply",
+   "Named user",
+   "2025-10-20",
+   1
+  ],
+  [
+   "claudels",
+   "novo",
+   "supply",
+   "Named user",
+   "2025-10-20",
+   1
+  ],
+  [
+   "claudels",
+   "cms",
+   "partner",
+   "CMS Coverage Database connector",
+   "2026-01-19",
+   1
+  ],
+  [
+   "oracle",
+   "stargate",
+   "partner",
+   "Equity partner",
+   "2025-01-21",
+   1
+  ],
+  [
+   "openai",
+   "stargate",
+   "partner",
+   "Equity partner",
+   "2025-01-21",
+   1
+  ],
+  [
+   "softbank",
+   "stargate",
+   "partner",
+   "Equity partner",
+   "2025-01-21",
+   1
+  ],
+  [
+   "mgx",
+   "stargate",
+   "partner",
+   "Supporting partner",
+   "2025-01-21",
+   1
+  ],
+  [
+   "nvda",
+   "stargate",
+   "supply",
+   "Technology partner",
+   "2025-01-21",
+   1
+  ],
+  [
+   "msft",
+   "stargate",
+   "partner",
+   "Technology partner",
+   "2025-01-21",
+   1
+  ],
+  [
+   "founders",
+   "newlimit",
+   "capital",
+   "Led $435M Series C",
+   "2026-06-02",
+   1
+  ],
+  [
+   "thrive",
+   "newlimit",
+   "capital",
+   "Series C",
+   "2026-06-02",
+   1
+  ],
+  [
+   "kleiner",
+   "newlimit",
+   "capital",
+   "Returning investor",
+   "2026-06-02",
+   1
+  ],
+  [
+   "lilly",
+   "newlimit",
+   "capital",
+   "Eli Lilly Ventures returning investor",
+   "2026-06-02",
+   1
+  ],
+  [
+   "google",
+   "calico",
+   "own",
+   "Alphabet unit",
+   "2013",
+   1
+  ],
+  [
+   "abbvie",
+   "calico",
+   "capital",
+   "~$1.75B invested; terminated",
+   "2025-11",
+   1
+  ],
+  [
+   "m42",
+   "juvenescence",
+   "capital",
+   "Strategic investment, Series B-1",
+   "2025-04-16",
+   1
+  ],
+  [
+   "dohad",
+   "hlmc",
+   "own",
+   "Issued licensing standards",
+   "2024-10-31",
+   1
+  ],
+  [
+   "pfizer",
+   "sbio3",
+   "contract",
+   "$1.25B upfront; up to $4.8B; $100M equity",
+   "2025-05",
+   1
+  ],
+  [
+   "hengrui",
+   "chinalic",
+   "partner",
+   "Top 2025 out-licensor ($16.7B)",
+   "2025",
+   1
+  ],
+  [
+   "sbio3",
+   "chinalic",
+   "partner",
+   "Record upfront",
+   "2025-05",
+   1
+  ],
+  [
+   "dow",
+   "wuxi",
+   "pressure",
+   "Added to 1260H list",
+   "2026-06-08",
+   1
+  ],
+  [
+   "biosecure",
+   "wuxi",
+   "pressure",
+   "Potential BCC via 1260H",
+   "2026-06-08",
+   1
+  ],
+  [
+   "biosecure",
+   "bgi",
+   "pressure",
+   "Covered via 1260H list",
+   "2025-12-18",
+   1
+  ],
+  [
+   "congress",
+   "biosecure",
+   "pressure",
+   "Enacted in FY2026 NDAA Sec. 851",
+   "2025-12-18",
+   1
+  ],
+  [
+   "hhs",
+   "barda",
+   "own",
+   "HHS component",
+   "",
+   1
+  ],
+  [
+   "barda",
+   "moderna",
+   "pressure",
+   "Moderna/UTMB collaboration restructured",
+   "2025-08-05",
+   1
+  ],
+  [
+   "barda",
+   "pfizer",
+   "pressure",
+   "mRNA proposal rejected/cancelled",
+   "2025-08-05",
+   1
+  ],
+  [
+   "barda",
+   "sanofi",
+   "pressure",
+   "mRNA proposal rejected/cancelled",
+   "2025-08-05",
+   1
+  ],
+  [
+   "hhs",
+   "fda",
+   "own",
+   "HHS component",
+   "",
+   1
+  ],
+  [
+   "hhs",
+   "cms",
+   "own",
+   "HHS component",
+   "",
+   1
+  ],
+  [
+   "fda",
+   "cnpv",
+   "own",
+   "Program owner",
+   "2025-10-16",
+   1
+  ],
+  [
+   "fda",
+   "elsa",
+   "own",
+   "Agency tool",
+   "2025-06-02",
+   1
+  ],
+  [
+   "fda",
+   "fdanams",
+   "own",
+   "Program owner",
+   "2025-04-10",
+   1
+  ],
+  [
+   "cnpv",
+   "lilly",
+   "supply",
+   "Foundayo approved in 50 days",
+   "2026-04-01",
+   1
+  ],
+  [
+   "cnpv",
+   "novo",
+   "supply",
+   "Voucher for oral Wegovy",
+   "2025-11-06",
+   1
+  ],
+  [
+   "pfizer",
+   "mfn",
+   "contract",
+   "First MFN deal; $70B U.S.; 3-year tariff grace",
+   "2025-09-30",
+   1
+  ],
+  [
+   "azn",
+   "mfn",
+   "contract",
+   "MFN deal",
+   "2025-10",
+   1
+  ],
+  [
+   "lilly",
+   "mfn",
+   "contract",
+   "GLP-1 MFN deal",
+   "2025-11-06",
+   1
+  ],
+  [
+   "novo",
+   "mfn",
+   "contract",
+   "GLP-1 MFN deal",
+   "2025-11-06",
+   1
+  ],
+  [
+   "mfn",
+   "s232pharma",
+   "counter",
+   "MFN plus onshoring earns 0% tier to 2029-01-20",
+   "2026-04-02",
+   1
+  ],
+  [
+   "commerce",
+   "s232pharma",
+   "own",
+   "Administers",
+   "2026-04-02",
+   1
+  ],
+  [
+   "s232pharma",
+   "novartis",
+   "pressure",
+   "15% EU/Swiss tier or onshoring tiers",
+   "2026-07-31",
+   1
+  ],
+  [
+   "pfizer",
+   "trumprx",
+   "partner",
+   "Listed on TrumpRx",
+   "2026-02-05",
+   1
+  ],
+  [
+   "azn",
+   "trumprx",
+   "partner",
+   "Listed on TrumpRx",
+   "2026-02-05",
+   1
+  ],
+  [
+   "lilly",
+   "trumprx",
+   "partner",
+   "GLP-1 cash prices",
+   "2026-02-05",
+   1
+  ],
+  [
+   "novo",
+   "trumprx",
+   "partner",
+   "GLP-1 cash prices",
+   "2026-02-05",
+   1
+  ],
+  [
+   "cms",
+   "glp1bridge",
+   "own",
+   "Runs Bridge and BALANCE",
+   "2026-07-01",
+   1
+  ],
+  [
+   "lilly",
+   "glp1bridge",
+   "contract",
+   "$245 net price",
+   "2026-07-01",
+   1
+  ],
+  [
+   "novo",
+   "glp1bridge",
+   "contract",
+   "$245 net price",
+   "2026-07-01",
+   1
   ]
  ],
  "threads": [
   {
    "id": "01",
-   "name": "The circuit",
+   "name": "Budget, contract and capital cycle",
    "lenses": [
     "apparatus",
     "financial"
@@ -21768,9 +40256,23 @@ window.CASE = {
     "bundeswehr",
     "regna",
     "nemotron",
-    "golden"
+    "golden",
+    "cdc",
+    "hhs",
+    "lilly",
+    "isomorphic",
+    "mgx"
    ],
    "events": [
+    [
+     "2022-12",
+     "CDC awards Palantir the $443M Common Operating Picture",
+     "Five-year platform for HHS Protect, ASPR Engage, Tiberius and DCIPHER. The operating layer enters federal health.",
+     "response",
+     "confirmed",
+     "Potomac Officers Club",
+     "https://potomacofficersclub.com/news/palantir-wins-443m-contract-to-streamline-software-offerings-for-cdc"
+    ],
     [
      "2025-07",
      "Army consolidates 75 contracts into Palantir's $10B enterprise agreement",
@@ -21779,6 +40281,15 @@ window.CASE = {
      "confirmed",
      "Tom's Hardware",
      "https://www.tomshardware.com/tech-industry/artificial-intelligence/pentagon-formalizes-palantirs-maven-ai-as-a-core-military-system-with-multi-year-funding-platforms-investment-grows-to-usd13-billion-from-usd480-million-in-2024"
+    ],
+    [
+     "2025-10-28",
+     "Lilly announces a wholly owned NVIDIA AI factory",
+     "1,016 Blackwell Ultra GPUs; the largest pharma-owned AI factory.",
+     "response",
+     "confirmed",
+     "NVIDIA",
+     "https://blogs.nvidia.com/blog/lilly-ai-factory-nvidia-blackwell-dgx-superpod"
     ],
     [
      "2026-03-09",
@@ -21806,6 +40317,15 @@ window.CASE = {
      "confirmed",
      "Air & Space Forces",
      "https://www.airandspaceforces.com/look-anduril-new-factory-cca-production"
+    ],
+    [
+     "2026-05-12",
+     "MGX joins Isomorphic Labs' $2.1B Series B",
+     "The Abu Dhabi investor in Stargate buys into AI drug discovery alongside the UK Sovereign AI Fund.",
+     "context",
+     "confirmed",
+     "YourStory",
+     "https://yourstory.com/ai-story/isomorphic-labs-ai-drug-discovery-series-b-2026"
     ],
     [
      "2026-05-13",
@@ -21853,12 +40373,13 @@ window.CASE = {
      "https://ir.ondas.com/press-releases/detail/334/ondas-announces-regna-ai-powered-by-palantir-to-advance"
     ]
    ],
-   "shows": "Each pass through the loop strengthens the same nodes. Valuations react to policy, and policy documents cite the private champions. The loop can sustain itself through the budget cycle and can unwind quickly if reconciliation fails.",
+   "shows": "Each pass through the loop strengthens the same nodes. Valuations react to policy, and policy documents cite the private champions. The loop can sustain itself through the budget cycle and can unwind quickly if reconciliation fails. The same circuit now runs through health: HHS and CDC anchor contracts on Palantir, a drugmaker buying NVIDIA compute outright, and Gulf capital pricing AI drug discovery like an AI lab.",
    "gains": [
     "Palantir",
     "Anduril",
     "NVIDIA",
-    "Crossover investors"
+    "Crossover investors",
+    "Eli Lilly"
    ],
    "exposed": [
     "Taxpayer budget line",
@@ -21867,11 +40388,12 @@ window.CASE = {
    "questions": [
     "Does the FY27 appropriation fund the circuit at the requested level?",
     "How fast do allied buyers convert pledges into orders?"
-   ]
+   ],
+   "spine": true
   },
   {
    "id": "02",
-   "name": "Ontology lock-in",
+   "name": "Operating-layer switching costs",
    "lenses": [
     "apparatus",
     "technological",
@@ -21972,7 +40494,7 @@ window.CASE = {
   },
   {
    "id": "03",
-   "name": "Funding cliff · Dec 11",
+   "name": "FY27 defense funding and the Dec 11 deadline",
    "lenses": [
     "political",
     "financial",
@@ -22064,7 +40586,7 @@ window.CASE = {
   },
   {
    "id": "04",
-   "name": "Power chokepoint",
+   "name": "Power and grid constraints",
    "lenses": [
     "technological",
     "financial",
@@ -22179,7 +40701,7 @@ window.CASE = {
   },
   {
    "id": "05",
-   "name": "Open weights, private tuning",
+   "name": "Open-weight models and private post-training",
    "lenses": [
     "technological",
     "political"
@@ -22281,7 +40803,7 @@ window.CASE = {
   },
   {
    "id": "06",
-   "name": "Shared capital",
+   "name": "Common investors across layers",
    "lenses": [
     "financial",
     "apparatus"
@@ -22387,7 +40909,7 @@ window.CASE = {
   },
   {
    "id": "07",
-   "name": "Threat validates product",
+   "name": "Data center strikes and resilience procurement",
    "lenses": [
     "military",
     "financial",
@@ -22519,7 +41041,7 @@ window.CASE = {
   },
   {
    "id": "08",
-   "name": "China counter-stack",
+   "name": "China's domestic AI stack",
    "lenses": [
     "political",
     "technological"
@@ -22625,7 +41147,7 @@ window.CASE = {
   },
   {
    "id": "09",
-   "name": "SpaceX across five functions",
+   "name": "SpaceX across launch, defense, models and compute",
    "lenses": [
     "military",
     "financial",
@@ -22721,7 +41243,7 @@ window.CASE = {
   },
   {
    "id": "10",
-   "name": "Quantum proof of concept",
+   "name": "D-Wave, Davidson and Anduril missile-defense pilot",
    "lenses": [
     "technological",
     "military"
@@ -22817,7 +41339,7 @@ window.CASE = {
   },
   {
    "id": "11",
-   "name": "Faces of the circuit",
+   "name": "Officials and executives behind the contracts",
    "lenses": [
     "political",
     "apparatus"
@@ -22917,7 +41439,7 @@ window.CASE = {
   },
   {
    "id": "12",
-   "name": "War risk gets priced",
+   "name": "Gulf war-risk insurance after March 1",
    "lenses": [
     "financial",
     "military"
@@ -23005,7 +41527,7 @@ window.CASE = {
   },
   {
    "id": "13",
-   "name": "The state as shareholder",
+   "name": "U.S. government equity stakes",
    "lenses": [
     "financial",
     "political",
@@ -23101,7 +41623,7 @@ window.CASE = {
   },
   {
    "id": "14",
-   "name": "The November 10 cliff",
+   "name": "China rare-earth suspension expiry, Nov 10",
    "lenses": [
     "political",
     "military"
@@ -23213,7 +41735,7 @@ window.CASE = {
   },
   {
    "id": "15",
-   "name": "Resident access",
+   "name": "Volt Typhoon and Salt Typhoon access",
    "lenses": [
     "military",
     "technological"
@@ -23292,7 +41814,7 @@ window.CASE = {
   },
   {
    "id": "16",
-   "name": "The HALEU gap",
+   "name": "HALEU supply for microreactors",
    "lenses": [
     "political",
     "technological"
@@ -23387,7 +41909,7 @@ window.CASE = {
   },
   {
    "id": "17",
-   "name": "Quantum moves into the hall",
+   "name": "Quantum systems in data centers",
    "lenses": [
     "technological"
    ],
@@ -23465,7 +41987,7 @@ window.CASE = {
   },
   {
    "id": "18",
-   "name": "Drop-ship logistics",
+   "name": "Armada Galleon logistics",
    "lenses": [
     "military",
     "technological"
@@ -23523,7 +42045,7 @@ window.CASE = {
   },
   {
    "id": "19",
-   "name": "Everyone builds their own Palantir",
+   "name": "Domestic operating layers: India, Germany, China",
    "lenses": [
     "political",
     "technological"
@@ -23580,7 +42102,7 @@ window.CASE = {
   },
   {
    "id": "20",
-   "name": "Allied industrial plug-ins",
+   "name": "Allied industrial participation",
    "lenses": [
     "military",
     "financial"
@@ -23663,7 +42185,7 @@ window.CASE = {
   },
   {
    "id": "21",
-   "name": "Gulf hubs trail their timelines",
+   "name": "Stargate UAE and Humain schedules",
    "lenses": [
     "political",
     "military"
@@ -23746,7 +42268,7 @@ window.CASE = {
   },
   {
    "id": "22",
-   "name": "Second ring: autonomy software and intelligence",
+   "name": "Autonomy software and intelligence vendors",
    "lenses": [
     "military",
     "financial"
@@ -23816,7 +42338,7 @@ window.CASE = {
   },
   {
    "id": "23",
-   "name": "The Abu Dhabi rail",
+   "name": "Sheikh Tahnoon: G42, MGX and World Liberty Financial",
    "lenses": [
     "financial",
     "political"
@@ -23944,7 +42466,7 @@ window.CASE = {
   },
   {
    "id": "24",
-   "name": "Commerce, Cantor and Tether",
+   "name": "Commerce, Cantor Fitzgerald and Tether",
    "lenses": [
     "financial",
     "political"
@@ -24037,7 +42559,7 @@ window.CASE = {
   },
   {
    "id": "25",
-   "name": "Erebor: the stack's bank",
+   "name": "Erebor Bank charter",
    "lenses": [
     "financial",
     "technological",
@@ -24246,7 +42768,7 @@ window.CASE = {
   },
   {
    "id": "27",
-   "name": "Apollo and the compute credit layer",
+   "name": "Apollo financing for xAI and SpaceX compute",
    "lenses": [
     "financial",
     "technological"
@@ -24329,7 +42851,7 @@ window.CASE = {
   },
   {
    "id": "28",
-   "name": "Tether's compute arm",
+   "name": "Tether compute holdings",
    "lenses": [
     "financial",
     "technological"
@@ -24416,7 +42938,7 @@ window.CASE = {
   },
   {
    "id": "29",
-   "name": "Binance hack and freeze power",
+   "name": "Binance theft and stablecoin freezes",
    "lenses": [
     "financial",
     "technological",
@@ -24494,7 +43016,7 @@ window.CASE = {
   },
   {
    "id": "30",
-   "name": "Stablecoins as Treasury buyer",
+   "name": "Stablecoin demand for Treasury bills",
    "lenses": [
     "financial",
     "political"
@@ -24577,7 +43099,7 @@ window.CASE = {
   },
   {
    "id": "31",
-   "name": "The agentic node",
+   "name": "Agent payments and digital identity",
    "lenses": [
     "technological",
     "apparatus",
@@ -24776,7 +43298,7 @@ window.CASE = {
   },
   {
    "id": "32",
-   "name": "Golden Dome: shield, bill and circuit",
+   "name": "Golden Dome cost, contracts and funding",
    "lenses": [
     "military",
     "financial",
@@ -24950,7 +43472,7 @@ window.CASE = {
   },
   {
    "id": "33",
-   "name": "Ondas systems of systems feeds Regna",
+   "name": "Ondas units and Regna AI deployment",
    "lenses": [
     "technological",
     "financial",
@@ -24999,7 +43521,7 @@ window.CASE = {
   },
   {
    "id": "34",
-   "name": "The stratospheric layer",
+   "name": "Balloons, airships and HAPS",
    "lenses": [
     "military",
     "technological",
@@ -25149,7 +43671,7 @@ window.CASE = {
   },
   {
    "id": "35",
-   "name": "The Satellogic loop",
+   "name": "Satellogic ownership and capital",
    "lenses": [
     "financial",
     "political",
@@ -25257,7 +43779,7 @@ window.CASE = {
   },
   {
    "id": "36",
-   "name": "Thiel in Argentina",
+   "name": "Peter Thiel in Argentina",
    "lenses": [
     "political",
     "financial"
@@ -25328,7 +43850,7 @@ window.CASE = {
   },
   {
    "id": "37",
-   "name": "The chokepoint has a chokepoint",
+   "name": "TSMC, ASML and EUV suppliers",
    "lenses": [
     "military",
     "technological",
@@ -25475,7 +43997,7 @@ window.CASE = {
   },
   {
    "id": "38",
-   "name": "The light-source bypass",
+   "name": "Alternative EUV light sources",
    "lenses": [
     "technological",
     "financial",
@@ -25564,7 +44086,7 @@ window.CASE = {
   },
   {
    "id": "39",
-   "name": "Horizon: governance migrates into software",
+   "name": "Outlook 2028–2033",
    "lenses": [
     "political",
     "technological",
@@ -25694,9 +44216,2051 @@ window.CASE = {
     "How exposed is every timeline to a Taiwan conflict?",
     "Will a court or the CFPB settle Regulation E allocation for agent-initiated transfers?"
    ]
+  },
+  {
+   "id": "40",
+   "name": "Medicare digital identity and app platform",
+   "lenses": [
+    "technological",
+    "apparatus",
+    "political"
+   ],
+   "lede": "In under a year CMS moved from a White House pledge to biometric Medicare logins, a vetted app store, and an in-house product office run by the acting head of DOGE.",
+   "nodes": [
+    "kennedy-rfk",
+    "oz",
+    "gleason",
+    "cms",
+    "htecosystem",
+    "cmsif",
+    "medgovid",
+    "clear",
+    "idme",
+    "medapplib",
+    "openai",
+    "anthropic",
+    "epic",
+    "ohtp",
+    "access"
+   ],
+   "events": [
+    [
+     "2025-05",
+     "CMS/ASTP RFI on digital health ecosystem",
+     "Nearly 1,400 comments",
+     "context",
+     "confirmed",
+     "CMS",
+     "https://www.cms.gov/newsroom/press-releases/white-house-tech-leaders-commit-create-patient-centric-healthcare-ecosystem"
+    ],
+    [
+     "2025-07-30",
+     "Health Tech Ecosystem launched at White House",
+     "60+ companies incl. Amazon, Anthropic, Apple, Google, OpenAI; 21 networks; 7 EHRs",
+     "context",
+     "confirmed",
+     "CMS",
+     "https://www.cms.gov/newsroom/press-releases/white-house-tech-leaders-commit-create-patient-centric-healthcare-ecosystem"
+    ],
+    [
+     "2025-12",
+     "CLEAR contracted for Medicare.gov identity",
+     "CLEAR1 biometric IAL2; MyChart integration",
+     "context",
+     "confirmed",
+     "Fierce Healthcare",
+     "https://www.fiercehealthcare.com/health-tech/clear-inks-contract-cms-kill-clipboard"
+    ],
+    [
+     "2025-12-16",
+     "ID.me selected as primary Medicare.gov sign-in",
+     "About 80M users verified to IAL2",
+     "context",
+     "confirmed",
+     "ID Tech Wire",
+     "https://idtechwire.com/id-me-awarded-cms-contract-to-support-medicare-gov-sign-in-and-identity-verification/"
+    ],
+    [
+     "2025-12",
+     "ACCESS model announced",
+     "10-year tech-enabled chronic care payments",
+     "context",
+     "confirmed",
+     "KFF",
+     "https://www.kff.org/medicare/digital-health-tools-and-technologies-an-overview-of-cms-recent-efforts-to-expand-their-use-in-medicare/"
+    ],
+    [
+     "2026-01-07",
+     "OpenAI launches ChatGPT Health",
+     "Records via b.well; 230M weekly health askers",
+     "context",
+     "confirmed",
+     "Fortune",
+     "https://fortune.com/2026/01/07/openai-launches-chatgpt-health-in-a-push-to-become-a-hub-for-personal-health-data/?rand=8593"
+    ],
+    [
+     "2026-01",
+     "Anthropic launches Claude for Healthcare",
+     "CMS Coverage Database, ICD-10, NPI connectors",
+     "context",
+     "confirmed",
+     "Fierce Healthcare",
+     "https://www.fiercehealthcare.com/ai-and-machine-learning/jpm26-anthropic-launches-claude-healthcare-targeting-health-systems-payers"
+    ],
+    [
+     "2026-03-04",
+     "Biometric credentials go live on Medicare.gov",
+     "About 60% of new accounts use modern credential",
+     "stage",
+     "confirmed",
+     "Nextgov",
+     "https://nextgov.com/digital-government/2026/03/cms-touts-early-uses-new-biometric-verification-tools-medicaregov/412065"
+    ],
+    [
+     "2026-04-09",
+     "First Wave Launch and Medicare App Library",
+     "700+ pledged organizations; tools from 50+ companies",
+     "stage",
+     "confirmed",
+     "CMS",
+     "https://www.cms.gov/newsroom/press-releases/cms-launches-first-wave-healthtech-ecosystem-tools-fast-tracking-fully-digital-patient-centered"
+    ],
+    [
+     "2026-06-09",
+     "CMS Office of Health Technology and Products created",
+     "Gleason as deputy administrator and chief product officer",
+     "stage",
+     "confirmed",
+     "MedTech Dive",
+     "https://medtechdive.com/news/cms-creates-office-health-technology-products-ai-interoperability/822814"
+    ],
+    [
+     "2026-07",
+     "ACCESS model begins",
+     "190 organizations; 16 insurers pledge MA versions",
+     "stage",
+     "confirmed",
+     "KFF",
+     "https://www.kff.org/medicare/digital-health-tools-and-technologies-an-overview-of-cms-recent-efforts-to-expand-their-use-in-medicare/"
+    ]
+   ],
+   "shows": "The federal government is building a consumer health identity and app layer through voluntary pledges and procurement, with frontier model labs as named participants.",
+   "gains": [
+    "CMS gains a reusable identity and app distribution channel to Medicare beneficiaries",
+    "Identity vendors (CLEAR, ID.me) gain federal health credential status",
+    "Model labs gain a sanctioned path to patient records through aligned networks"
+   ],
+   "exposed": [
+    "Medicare beneficiaries' biometric and health data held across private identity and app vendors",
+    "Consumer apps outside HIPAA coverage"
+   ],
+   "questions": [
+    "What are the CLEAR and ID.me contract values and data-retention terms?",
+    "Which conversational AI assistants are in the Medicare App Library?",
+    "Will Medicare credentials be reused for Medicaid eligibility or other programs?"
+   ]
+  },
+  {
+   "id": "41",
+   "name": "Medicaid data sharing with DHS and ICE",
+   "lenses": [
+    "apparatus",
+    "political",
+    "technological"
+   ],
+   "lede": "Medicaid enrollee data moved from CMS to DHS under a 2025 agreement; courts now define which fields flow, while ICE's Palantir tooling reportedly consumes it.",
+   "nodes": [
+    "cms",
+    "medicaidice",
+    "dhs",
+    "ice",
+    "palantir",
+    "elite",
+    "immigrationos",
+    "cavhhs",
+    "chhabria",
+    "bonta",
+    "eff",
+    "fdoc",
+    "vance",
+    "fraudtaskforce"
+   ],
+   "events": [
+    [
+     "2025-02",
+     "DOGE gets read-only access to CMS payment systems",
+     "CALM acquisition system; HIGLAS access unclear",
+     "context",
+     "reported",
+     "Arnold & Porter",
+     "https://www.arnoldporter.com/en/perspectives/blogs/enforcement-edge/2025/02/doge-accesses-cms-contracting-and-payment-systems"
+    ],
+    [
+     "2025-03-20",
+     "EO 14243 on information silos",
+     "Full access to unclassified records",
+     "context",
+     "confirmed",
+     "Federal Register",
+     "https://www.govinfo.gov/content/pkg/FR-2025-03-25/html/2025-05214.htm"
+    ],
+    [
+     "2025-06",
+     "HHS shares Medicaid data from several states with DHS",
+     "Not announced publicly",
+     "threat",
+     "confirmed",
+     "AP",
+     "https://www.news4jax.com/health/2026/01/05/after-judges-ruling-hhs-authorized-to-resume-sharing-some-medicaid-data-with-deportation-officers/"
+    ],
+    [
+     "2025-07",
+     "CMS-DHS daily-access agreement",
+     "SSNs and addresses; about 77-80M enrollees",
+     "threat",
+     "confirmed",
+     "AP",
+     "https://www.news4jax.com/health/2026/01/05/after-judges-ruling-hhs-authorized-to-resume-sharing-some-medicaid-data-with-deportation-officers/"
+    ],
+    [
+     "2025-07-01",
+     "22-state suit filed (California v. HHS)",
+     "N.D. Cal. 3:25-cv-05536",
+     "response",
+     "confirmed",
+     "Clearinghouse",
+     "https://clearinghouse.net/case/46754/"
+    ],
+    [
+     "2025-08-12",
+     "Preliminary injunction",
+     "Blocks enforcement use of plaintiff states' data",
+     "response",
+     "confirmed",
+     "Clearinghouse",
+     "https://clearinghouse.net/case/46754/"
+    ],
+    [
+     "2025-12-29",
+     "Court allows basic biographical, location, contact data",
+     "Effective after Jan 5, 2026; medical data stays blocked",
+     "context",
+     "confirmed",
+     "AP",
+     "https://www.news4jax.com/health/2026/01/05/after-judges-ruling-hhs-authorized-to-resume-sharing-some-medicaid-data-with-deportation-officers/"
+    ],
+    [
+     "2026-01",
+     "ICE ELITE reportedly ingests Medicaid data",
+     "Palantir-built; address confidence score",
+     "threat",
+     "reported",
+     "Fortune / 404 Media",
+     "https://fortune.com/2026/01/26/ice-allegedly-uses-palantir-tool-tracking-medicaid-data/"
+    ],
+    [
+     "2026-02",
+     "DHS-Palantir BPA up to $1B",
+     "CBP, ICE, FEMA, CISA",
+     "context",
+     "reported",
+     "SiliconANGLE",
+     "https://siliconangle.com/?p=731512"
+    ],
+    [
+     "2026-03-26",
+     "States move to enforce injunction",
+     "Allege 'large and complex data set' shared with ICE",
+     "response",
+     "confirmed",
+     "Vermont AG",
+     "https://ago.vermont.gov/blog/2026/03/27/attorney-general-clark-asks-court-enforce-order-blocking-hhs-sharing-large-swaths-medicaid-data-ice"
+    ],
+    [
+     "2026-04",
+     "Medicaid Fraud War Room with Vance-led task force",
+     "Cross-agency enforcement",
+     "context",
+     "confirmed",
+     "CMS",
+     "https://www.cms.gov/files/document/medicaid-fraud-war-room-fast-facts.pdf"
+    ],
+    [
+     "2026-04-30",
+     "Government pauses use of 22 states' Medicaid data",
+     "Pending scope clarification",
+     "response",
+     "confirmed",
+     "Law360/MLex",
+     "https://www.mlex.com/healthcare-authority/other/articles/2472169/gov-t-pauses-medicaid-data-use-for-ice-amid-injunction-fight"
+    ],
+    [
+     "2026-09-09",
+     "Judge orders parties to agree on scope",
+     "Open question on DACA holders",
+     "scheduled",
+     "confirmed",
+     "Law360/MLex",
+     "https://www.mlex.com/healthcare-authority/digital-health-technology/articles/2522812/calif-judge-seeks-clearer-limits-on-ice-use-of-medicaid-data"
+    ]
+   ],
+   "shows": "Health program data is now an enforcement input, bounded by court orders. The same vendor operates both health and enforcement platforms.",
+   "gains": [
+    "DHS/ICE gain address and contact data on Medicaid enrollees",
+    "Palantir extends its platform role across HHS and DHS"
+   ],
+   "exposed": [
+    "Immigrant Medicaid enrollees and mixed-status families",
+    "States' Medicaid programs and public-health outreach"
+   ],
+   "questions": [
+    "What exactly did HHS transfer in the dataset at issue in March 2026?",
+    "Does ELITE ingest CMS data directly or via DHS copies?",
+    "What scope did the parties agree after the September 2026 order?"
+   ]
+  },
+  {
+   "id": "42",
+   "name": "AI model vendors at HHS",
+   "lenses": [
+    "technological",
+    "political",
+    "apparatus"
+   ],
+   "lede": "HHS adopted ChatGPT department-wide, built FDA Elsa on Claude, then removed Anthropic by presidential directive and moved to Gemini, while Palantir took an agentic AI option at ARPA-H.",
+   "nodes": [
+    "hhs",
+    "oneill-jim",
+    "minor-clark",
+    "openai",
+    "fda",
+    "elsa",
+    "walsh-jeremy",
+    "deloitte",
+    "aws",
+    "anthropic",
+    "anthropicban",
+    "hegseth",
+    "google",
+    "arpah",
+    "palantir"
+   ],
+   "events": [
+    [
+     "2025-05",
+     "FDA names Jeremy Walsh chief AI officer",
+     "Ex-Booz Allen chief technologist",
+     "context",
+     "confirmed",
+     "MedTech Dive",
+     "https://www.medtechdive.com/news/FDA-names-AI-chief-Jeremy-Walsh/747662/"
+    ],
+    [
+     "2025-06-02",
+     "FDA launches Elsa",
+     "RAG in AWS GovCloud; Deloitte-built on Claude [VERIFY]",
+     "context",
+     "confirmed",
+     "Axios / Clinical Leader",
+     "https://www.axios.com/2025/06/02/fda-launches-ai-tool"
+    ],
+    [
+     "2025-09-09",
+     "ChatGPT for all HHS employees",
+     "O'Neill email; Minor oversees",
+     "context",
+     "confirmed",
+     "404 Media",
+     "https://www.404media.co/hhs-asks-all-employees-to-start-using-chatgpt/"
+    ],
+    [
+     "2025-12-01",
+     "FDA deploys agentic AI",
+     "Elsa at 70%+ staff use",
+     "context",
+     "confirmed",
+     "OncoDaily",
+     "https://oncodaily.com/industry/fda-2"
+    ],
+    [
+     "2025-12-04",
+     "OneHHS AI strategy",
+     "AI-integrated Commons across divisions",
+     "context",
+     "confirmed",
+     "HHS",
+     "https://www.hhs.gov/press-room/hhs-unveils-ai-strategy-to-transform-agency-operations.html"
+    ],
+    [
+     "2026-02-13",
+     "O'Neill leaves HHS",
+     "Nominated to NSF March 2, 2026",
+     "context",
+     "confirmed",
+     "CNN / Wikipedia",
+     "https://abc17news.com/cnn-health/2026/02/13/two-top-aides-to-rfk-jr-leaving-hhs-as-part-of-leadership-shakeup/"
+    ],
+    [
+     "2026-02-27",
+     "Directive to cease Anthropic use",
+     "Six-month phase-out; supply-chain-risk designation",
+     "threat",
+     "confirmed",
+     "Defense One",
+     "https://www.defenseone.com/threats/2026/02/trump-directs-government-immediately-cease-using-anthropic-technology/411776/"
+    ],
+    [
+     "2026-03-02",
+     "HHS phases out Anthropic",
+     "ChatGPT Enterprise and Gemini remain",
+     "response",
+     "confirmed",
+     "Nextgov",
+     "https://www.nextgov.com/acquisition/2026/03/agencies-begin-shed-anthropic-contracts-following-trumps-directive/411823/"
+    ],
+    [
+     "2026-03",
+     "Elsa moves to Gemini",
+     "Revalidation and APA concerns",
+     "response",
+     "reported",
+     "Clinical Leader",
+     "https://www.clinicalleader.com/doc/fda-s-elsa-ai-switches-from-claude-to-gemini-what-sponsors-need-to-know-0001"
+    ],
+    [
+     "2026-05-12",
+     "Makary resigns",
+     "Diamantas acting",
+     "context",
+     "confirmed",
+     "Fortune",
+     "https://fortune.com/2026/05/12/fda-commissioner-dr-marty-makary-resignation/"
+    ],
+    [
+     "2026-06-05",
+     "ARPA-H order to Palantir with agentic AI PaaS option",
+     "Up to $13.7M",
+     "context",
+     "confirmed",
+     "HigherGov",
+     "https://www.highergov.com/contract/47QTCA24D004L-75N99226F00002/"
+    ],
+    [
+     "2026-07-28",
+     "HHS CIO Clark Minor gives notice",
+     "Ex-Palantir; stays as adviser",
+     "context",
+     "reported",
+     "FedScoop",
+     "https://fedscoop.com/clark-minor-out-as-health-human-services-it-chief/"
+    ]
+   ],
+   "shows": "Frontier model choice inside HHS follows political direction, and the operating layer below the models stays with Palantir and the hyperscalers.",
+   "gains": [
+    "OpenAI and Google gain default model status inside HHS",
+    "Palantir extends from data platform into agentic AI services"
+   ],
+   "exposed": [
+    "Continuity and auditability of FDA review records across model switches",
+    "Anthropic's federal health business"
+   ],
+   "questions": [
+    "Who replaced Clark Minor as HHS CIO?",
+    "Has Elsa been revalidated on Gemini, and where is it hosted?",
+    "What is the status of Anthropic's legal challenge?"
+   ]
+  },
+  {
+   "id": "43",
+   "name": "BIOSECURE and 1260H biotech listings",
+   "lenses": [
+    "political",
+    "financial",
+    "apparatus"
+   ],
+   "lede": "Congress copied the chip playbook for biotech: a DoD list of Chinese military companies feeds a federal procurement ban, and outbound-investment controls are next. The first big test, WuXi AppTec, is now in court.",
+   "nodes": [
+    "nsceb",
+    "young-todd",
+    "ndaa26bio",
+    "biosecure",
+    "sec1260h",
+    "wuxi",
+    "bgi",
+    "mgi",
+    "completegen",
+    "binsa",
+    "moolenaar",
+    "plabio",
+    "china"
+   ],
+   "events": [
+    [
+     "2023-03",
+     "BIS adds BGI subsidiaries to Entity List",
+     "Genomic data and surveillance risk",
+     "response",
+     "confirmed",
+     "House China Select Committee",
+     "https://chinaselectcommittee.house.gov/media/press-releases/gallagher-calls-usg-investigate-ai-firm-g42-ties-prc-military-intelligence"
+    ],
+    [
+     "2025-04-08",
+     "NSCEB final report",
+     "At least $15B over five years; 49 recommendations",
+     "context",
+     "confirmed",
+     "CRS",
+     "https://www.everycrsreport.com/reports/IN12546.html"
+    ],
+    [
+     "2025-04-22",
+     "State Dept compliance report flags PLA bio research and AI use",
+     "Two undeclared military labs; AI/ML tools",
+     "threat",
+     "reported",
+     "Washington Times",
+     "https://www.washingtontimes.com/news/2025/apr/22/us-says-china-using-ai-boost-biological-weapons-research/"
+    ],
+    [
+     "2025-12-18",
+     "FY26 NDAA signed with BIOSECURE as Sec. 851",
+     "OMB list due in one year",
+     "response",
+     "confirmed",
+     "Ropes & Gray",
+     "https://www.ropesgray.com/en/insights/alerts/2026/01/biosecure-act-enacted"
+    ],
+    [
+     "2025-12-19",
+     "NSCEB China competition paper",
+     "'non-market practices and brute force economics'",
+     "context",
+     "confirmed",
+     "National Law Review",
+     "https://natlawreview.com/article/nsceb-assesses-future-us-china-biotechnology-competition"
+    ],
+    [
+     "2026-05-21",
+     "Moolenaar asks Bessent to add biotech to COINS",
+     "",
+     "response",
+     "confirmed",
+     "DLA Piper",
+     "https://www.dlapiper.com/en-us/insights/publications/2026/08/us-china-life-sciences-policy-developments-top-points-for-companies"
+    ],
+    [
+     "2026-06-02",
+     "BINSA (H.R.9102) introduced",
+     "Biotech into outbound-investment controls",
+     "response",
+     "confirmed",
+     "DLA Piper",
+     "https://www.dlapiper.com/en-us/insights/publications/2026/08/us-china-life-sciences-policy-developments-top-points-for-companies"
+    ],
+    [
+     "2026-06-08",
+     "DoD 1260H update: 188 entities incl. WuXi AppTec, BGI, MGI, Complete Genomics",
+     "",
+     "response",
+     "confirmed",
+     "Ropes & Gray",
+     "https://www.ropesgray.com/en/insights/alerts/2026/06/department-of-defense-releases-updated-1260h-list-that-includes-wuxi-apptec"
+    ],
+    [
+     "2026-06-11",
+     "WuXi AppTec sues in D.D.C.",
+     "",
+     "context",
+     "confirmed",
+     "DLA Piper",
+     "https://www.dlapiper.com/en-us/insights/publications/2026/08/us-china-life-sciences-policy-developments-top-points-for-companies"
+    ],
+    [
+     "2026-08-07",
+     "Court enjoins WuXi AppTec designation",
+     "AVIC stake was ~0.001%, not 5.32%",
+     "context",
+     "confirmed",
+     "DLA Piper",
+     "https://www.dlapiper.com/en-us/insights/publications/2026/08/us-china-life-sciences-policy-developments-top-points-for-companies"
+    ],
+    [
+     "2026-12-18",
+     "OMB initial BIOSECURE list due",
+     "",
+     "response",
+     "scheduled",
+     "Goodwin",
+     "https://www.goodwinlaw.com/en/insights/publications/2025/12/alerts-otherindustries-final-fy-2026-ndaa-includes-biosecure"
+    ],
+    [
+     "2027-03-13",
+     "Treasury COINS Act regulations due",
+     "",
+     "response",
+     "scheduled",
+     "DLA Piper",
+     "https://www.dlapiper.com/en-us/insights/publications/2026/08/us-china-life-sciences-policy-developments-top-points-for-companies"
+    ]
+   ],
+   "shows": "Biotech is being governed with the same list-and-ban tools used for semiconductors, with the courts as the first check on how DoD builds its lists.",
+   "gains": [
+    "U.S. CDMOs and sequencing firms that replace Chinese suppliers",
+    "NSCEB and its congressional sponsors"
+   ],
+   "exposed": [
+    "WuXi AppTec, BGI, MGI customers in U.S. pharma and federal grant programs",
+    "DoD's list methodology after the WuXi injunction"
+   ],
+   "questions": [
+    "Will OMB publish its BCC list by Dec 18, 2026?",
+    "Does the WuXi ruling force DoD to rework other 1260H biotech listings?",
+    "Does Treasury add biotech to COINS before Congress acts?"
+   ]
+  },
+  {
+   "id": "44",
+   "name": "BARDA cuts and DoD biomanufacturing",
+   "lenses": [
+    "military",
+    "political",
+    "financial"
+   ],
+   "lede": "Civilian biodefense lines are shrinking while DoD builds biomanufacturing capacity. BARDA, hospital preparedness, wastewater surveillance and DHS's counter-WMD office lost money or existence; BioMADE, DBIMP and a new DoD biotech office gained.",
+   "nodes": [
+    "hhs",
+    "kennedy-rfk",
+    "barda",
+    "aspr",
+    "nwss",
+    "cwmd",
+    "biowatch",
+    "dow",
+    "bmo",
+    "dbimp",
+    "biomade",
+    "friedman-douglas",
+    "bto",
+    "koeris",
+    "ndaa27bio"
+   ],
+   "events": [
+    [
+     "2020-10-20",
+     "DoD funds BioMADE with $87.5M",
+     "",
+     "response",
+     "confirmed",
+     "Business Wire",
+     "https://www.businesswire.com/news/home/20201020006281/en/U.S.-Department-of-Defense-Awards-87.5-Million-to-EBRC-led-BioMADE-Establishing-the-Bioindustrial-Manufacturing-Innovation-Institute"
+    ],
+    [
+     "2023",
+     "DoD directs $450M to BioMADE",
+     "",
+     "response",
+     "confirmed",
+     "FoodNavigator",
+     "https://www.foodnavigator.com/Article/2026/05/11/precision-fermentation-us-to-open-pilot-plants-as-issue-of-national-security/"
+    ],
+    [
+     "2024-11-14",
+     "DBIMP phase one closes at 34 awards, over $60M",
+     "",
+     "response",
+     "confirmed",
+     "Renewable Carbon",
+     "https://renewable-carbon.eu/news/dod-releases-final-nine-awards-for-distributed-bioindustrial-manufacturing-program/"
+    ],
+    [
+     "2025-03-14",
+     "EO 14236 revokes Biden biotech and biomanufacturing EO",
+     "",
+     "context",
+     "confirmed",
+     "JD Supra",
+     "https://jdsupra.com/legalnews/president-trump-revokes-2022-eo-on-8979367"
+    ],
+    [
+     "2025-04-29",
+     "BioMADE Minnesota demo plant, at least $132M",
+     "",
+     "response",
+     "confirmed",
+     "Renewable Carbon",
+     "https://renewable-carbon.eu/news/?p=162735"
+    ],
+    [
+     "2025-08-05",
+     "HHS ends 22 BARDA mRNA projects (~$500M)",
+     "",
+     "context",
+     "confirmed",
+     "HHS",
+     "https://hhs.gov/press-room/hhs-winds-down-mrna-development-under-barda.html"
+    ],
+    [
+     "2025-12-18",
+     "FY26 NDAA creates DoD Biotechnology Management Office",
+     "",
+     "response",
+     "confirmed",
+     "INSS/NDU",
+     "https://inss.ndu.edu/news/Article/4358679/biotechnology-in-the-fy-2026-ndaa-strategic-implications-and-recommendations-fo/"
+    ],
+    [
+     "2026-02-03",
+     "Visolis DBIMP expansion, $2.86M",
+     "",
+     "response",
+     "confirmed",
+     "SynBioBeta",
+     "https://www.synbiobeta.com/read/visolis-secures-2.86-million-expansion-from-u.s.-department-of-war-for-bioindustrial-manufacturing"
+    ],
+    [
+     "2026-05",
+     "DHS CWMD office dissolved by FY26 appropriations",
+     "",
+     "context",
+     "reported",
+     "Chemical Facility Security News",
+     "https://chemical-facility-security-news.blogspot.com/2026/05/review-dhs-cwmd-office-to-close.html"
+    ],
+    [
+     "2026-06-08",
+     "House FY27 NDAA: biotech in Industrial Base Fund; forward biomanufacturing pilot",
+     "",
+     "response",
+     "confirmed",
+     "NSCEB",
+     "https://www.biotech.senate.gov/press-releases/biotech-further-cemented-as-top-tech-priority-for-defense/"
+    ],
+    [
+     "2026",
+     "FY27 request cuts BARDA to $654.4M and zeroes HPP",
+     "",
+     "context",
+     "confirmed",
+     "ASPR",
+     "https://akastage-www.aspr.gov/about/budget/fy-2027-presidents-budget-request-highlights"
+    ],
+    [
+     "2026-09-14",
+     "Verily NWSS contract extension ends; re-competition",
+     "",
+     "context",
+     "scheduled",
+     "The Sick Times",
+     "https://thesicktimes.org/2026/06/30/wastewater-testing-is-vital-for-public-health-it-needs-sustained-funding-to-continue-beyond-fall-2026/"
+    ],
+    [
+     "2027",
+     "BioMADE Hayward plant opens",
+     "",
+     "response",
+     "scheduled",
+     "FoodNavigator",
+     "https://www.foodnavigator.com/Article/2026/05/11/precision-fermentation-us-to-open-pilot-plants-as-issue-of-national-security/"
+    ],
+    [
+     "2028",
+     "BioMADE Minnesota and Iowa plants open",
+     "",
+     "response",
+     "scheduled",
+     "FoodNavigator",
+     "https://www.foodnavigator.com/Article/2026/05/11/precision-fermentation-us-to-open-pilot-plants-as-issue-of-national-security/"
+    ]
+   ],
+   "shows": "Biodefense spending is moving from HHS and DHS civilian programs toward DoD industrial capacity and onshored drug supply.",
+   "gains": [
+    "BioMADE members and DBIMP awardees",
+    "Domestic API and generic drug makers under ASPR onshoring",
+    "DoD biotech office"
+   ],
+   "exposed": [
+    "State and local wastewater programs",
+    "Hospital preparedness grantees",
+    "mRNA platform developers dependent on BARDA"
+   ],
+   "questions": [
+    "Does Congress restore BARDA and NWSS in FY27 appropriations?",
+    "Who leads the DoD Biotechnology Management Office?",
+    "Do DBIMP plan awards convert into $100M-scale facility awards?"
+   ]
+  },
+  {
+   "id": "45",
+   "name": "National genome programs and biosurveillance",
+   "lenses": [
+    "technological",
+    "apparatus",
+    "financial"
+   ],
+   "lede": "National biosurveillance and population genome data are becoming owned infrastructure. Perimeter took Ginkgo's government surveillance business private with defense-tech money; Abu Dhabi and Riyadh hold their genome programs inside sovereign holding groups.",
+   "nodes": [
+    "ginkgo",
+    "kelly-jason",
+    "perimeter",
+    "mcknight",
+    "tgs",
+    "cdc",
+    "kanders",
+    "saif",
+    "g42",
+    "m42",
+    "egp",
+    "xiao-peng",
+    "tahnoon",
+    "lifera",
+    "pif"
+   ],
+   "events": [
+    [
+     "2019",
+     "Emirati Genome Programme launched",
+     "",
+     "context",
+     "confirmed",
+     "The National",
+     "https://www.thenationalnews.com/news/uae/2026/04/03/inside-abu-dhabis-cutting-edge-biobank-hailed-as-missing-link-in-precision-healthcare-vision"
+    ],
+    [
+     "2021",
+     "CDC TGS launched with Ginkgo",
+     "",
+     "context",
+     "confirmed",
+     "CDC",
+     "https://www.cdc.gov/media/releases/2026/2026-cdc-surpasses-1-million-voluntary-air-travel-participants-in-biosurveillance-program.html"
+    ],
+    [
+     "2023-04",
+     "M42 launched from G42 Healthcare and Mubadala Health",
+     "",
+     "context",
+     "confirmed",
+     "Wikipedia",
+     "https://en.wikipedia.org/wiki/G42_(company)"
+    ],
+    [
+     "2024-01-09",
+     "House China Select Committee letter on G42 ties to BGI and Huawei",
+     "",
+     "threat",
+     "confirmed",
+     "House China Select Committee",
+     "https://chinaselectcommittee.house.gov/media/press-releases/gallagher-calls-usg-investigate-ai-firm-g42-ties-prc-military-intelligence"
+    ],
+    [
+     "2025-05-06",
+     "M42 names Moulavasilis CEO; Peng Xiao chairman",
+     "",
+     "context",
+     "confirmed",
+     "Zawya",
+     "https://www.zawya.com/press-release/people-in-the-news/m42-appoints-dimitris-moulavasilis-as-group-ceo-tr72shp9"
+    ],
+    [
+     "2026-01-30",
+     "CDC TGS passes one million travelers",
+     "",
+     "response",
+     "confirmed",
+     "CDC",
+     "https://www.cdc.gov/media/releases/2026/2026-cdc-surpasses-1-million-voluntary-air-travel-participants-in-biosurveillance-program.html"
+    ],
+    [
+     "2026-02-26",
+     "Ginkgo agrees to divest biosecurity for ~20% equity",
+     "",
+     "context",
+     "reported",
+     "Panabee / SEC 8-K",
+     "https://www.panabee.com/news/ginkgo-bioworks-divests-biosecurity-operations-for-20-stake-in-tower-biosecurity"
+    ],
+    [
+     "2026-04",
+     "Abu Dhabi Biobank inaugurated",
+     "",
+     "context",
+     "confirmed",
+     "The National",
+     "https://www.thenationalnews.com/news/uae/2026/04/03/inside-abu-dhabis-cutting-edge-biobank-hailed-as-missing-link-in-precision-healthcare-vision"
+    ],
+    [
+     "2026-04-03",
+     "Ginkgo closes biosecurity divestiture",
+     "",
+     "context",
+     "confirmed",
+     "Index.vn",
+     "https://index.vn/en/news/ginkgo-bioworks-q1-2026-earnings-call-highlights"
+    ],
+    [
+     "2026-04-13",
+     "Perimeter launches with $60M",
+     "Kanders & Co., SCS, Goldcrest, Four Cities, SAIF",
+     "response",
+     "confirmed",
+     "Tectonic",
+     "https://www.tectonicdefense.com/ginkgo-biosecurity-spins-out-as-perimeter/"
+    ],
+    [
+     "2030",
+     "Lifera Jeddah CDMO commissioning",
+     "",
+     "context",
+     "scheduled",
+     "BioProcess International",
+     "https://www.bioprocessintl.com/global-markets/saudi-arabia-s-big-biotech-bet-from-regional-player-to-global-leader"
+    ]
+   ],
+   "shows": "The data layer of biodefense, who samples, sequences and analyzes, is consolidating into a few operators tied to national security investors or sovereign principals.",
+   "gains": [
+    "Perimeter and its defense-tech investors",
+    "G42/M42 and Tahnoon's holding network",
+    "PIF via Lifera"
+   ],
+   "exposed": [
+    "Governments that outsource biosurveillance data analysis",
+    "Ginkgo shareholders (minority stake only)"
+   ],
+   "questions": [
+    "Which governments sign Perimeter national programs?",
+    "Who governs access to Emirati genome data inside the G42 group?",
+    "Does CDC re-compete TGS or extend Perimeter?"
+   ]
+  },
+  {
+   "id": "46",
+   "name": "Brain-computer interface funding",
+   "lenses": [
+    "financial",
+    "technological",
+    "apparatus"
+   ],
+   "lede": "Between 2023 and 2026 the BCI field raised well over $2B. The money comes from the same pools that fund this map's compute and identity layers: Founders Fund, Thrive, G42, QIA, IQT, Mubadala, OpenAI and Tether.",
+   "nodes": [
+    "founders",
+    "neuralink",
+    "g42",
+    "qia",
+    "synchron",
+    "iqt",
+    "sciencecorp",
+    "precision",
+    "mubadalacap",
+    "paradromics",
+    "neom",
+    "tether",
+    "blackrockneuro",
+    "openai",
+    "merge",
+    "worldid"
+   ],
+   "events": [
+    [
+     "2021",
+     "Thiel stake in Blackrock Neurotech",
+     "Reported by MedTech Dive",
+     "context",
+     "reported",
+     "MedTech Dive",
+     "https://www.medtechdive.com/news/elon-musk-neuralink-raises-280-million"
+    ],
+    [
+     "2022-12-15",
+     "Synchron $75M Series C",
+     "ARCH lead; Bezos Expeditions, Gates Frontier",
+     "context",
+     "confirmed",
+     "Becker's",
+     "https://www.beckershospitalreview.com/innovation/bezos-expeditions-gates-frontier-back-brain-computer-interface-company-in-75m-financing-round.html"
+    ],
+    [
+     "2023-08",
+     "Neuralink $280M Series D",
+     "Led by Founders Fund",
+     "context",
+     "confirmed",
+     "MedTech Dive",
+     "https://www.medtechdive.com/news/elon-musk-neuralink-raises-280-million"
+    ],
+    [
+     "2024-04-29",
+     "Tether takes majority of Blackrock Neurotech",
+     "$200M via Tether Evo",
+     "context",
+     "confirmed",
+     "Cointelegraph",
+     "https://cointelegraph.com/news/tether-evo-invests-200-million-neurotech"
+    ],
+    [
+     "2025-02",
+     "NEOM invests in Paradromics",
+     "Saudi strategic investment",
+     "context",
+     "reported",
+     "Newsio",
+     "https://newsio.com/2025/02/12/neuralink-competitor-paradromics-secures-investment-from-saudi-arabias-neom"
+    ],
+    [
+     "2025-06-02",
+     "Neuralink $650M Series E",
+     "$9B pre-money; G42, QIA, Founders Fund, Thrive, Sequoia, ARK",
+     "context",
+     "confirmed",
+     "Fierce Biotech",
+     "https://www.fiercebiotech.com/medtech/neuralink-secures-650m-series-e-funding-expand-patient-access-brain-chip-technology"
+    ],
+    [
+     "2025-11-06",
+     "Synchron $200M Series D",
+     "Double Point lead; QIA, IQT, Australia NRF",
+     "context",
+     "confirmed",
+     "Medtech Insight",
+     "https://insights.citeline.com/medtech-insight/business/financing/synchron-secures-200m-series-d-plans-new-brain-interface-with-potentially-more-applications-U6MRTIDOVRHXXGDHGHUD35SA5Q"
+    ],
+    [
+     "2026-01-15",
+     "Merge Labs $252M seed",
+     "OpenAI largest check; $850M valuation",
+     "context",
+     "confirmed",
+     "Techloy",
+     "https://www.techloy.com/openai-bets-252-million-on-a-brain-computer-interface-startup-founded-by-sam-altman.md"
+    ],
+    [
+     "2026-03-05",
+     "Science Corp $230M Series C",
+     "IQT among investors",
+     "context",
+     "confirmed",
+     "Business Wire",
+     "https://www.businesswire.com/news/home/20260305896789/en/Science-Corporation-Closes-$230-Million-Series-C-to-Accelerate-Commercialization-of-PRIMA"
+    ],
+    [
+     "2026-09-24",
+     "Precision $250M Series D",
+     "Pershing Square, Mubadala Capital; just over $1B",
+     "context",
+     "confirmed",
+     "MedPath",
+     "https://trial.medpath.com/news/precision-neuroscience-raises-250m-series-d-to-push-its-brain-surface-interface-toward-permanent-implants"
+    ]
+   ],
+   "shows": "BCI is financed by sovereign Gulf funds, an intelligence-community venture arm, a stablecoin issuer and the leading AI lab, alongside conventional venture capital.",
+   "gains": [
+    "Gulf funds gain early positions in neurotech (Neuralink, Synchron, Precision, Paradromics)",
+    "OpenAI gains a neural-data foundation-model partner (Merge Labs)",
+    "IQT gains visibility into two implant platforms"
+   ],
+   "exposed": [
+    "Patients and trial participants whose neural data trains foundation models (Chiral; Merge)",
+    "Regulators setting neural data rules after capital has committed"
+   ],
+   "questions": [
+    "What data rights do investors such as IQT, QIA or G42 hold, if any?",
+    "Will Blackrock Neurotech's rename or open-source OS proceed under Tether?",
+    "Does Alex Blania hold a formal Merge Labs role?"
+   ]
+  },
+  {
+   "id": "47",
+   "name": "Wearables in defense: Oura and WHOOP",
+   "lenses": [
+    "military",
+    "apparatus",
+    "financial"
+   ],
+   "lede": "Consumer wearables became DoD readiness infrastructure: Oura on Palantir FedStart IL5, a Fort Worth defense plant, Navy CREW, Army field use, and a canceled $96M DHA ring contract.",
+   "nodes": [
+    "navycrew",
+    "oura",
+    "rate",
+    "diu",
+    "dha",
+    "whoop",
+    "palantir",
+    "ourafw",
+    "dow",
+    "army",
+    "navy"
+   ],
+   "events": [
+    [
+     "2017",
+     "Navy collisions kill 17 sailors",
+     "NHRC launches CREW and adopts Oura",
+     "context",
+     "confirmed",
+     "Business Wire (Oura)",
+     "https://www.businesswire.com/news/home/20250827572356/en"
+    ],
+    [
+     "2020-06",
+     "DIU RATE deploys ~400 kits",
+     "Garmin + Oura + Philips algorithm",
+     "response",
+     "confirmed",
+     "Defense One",
+     "https://www.defenseone.com/technology/2020/09/militarys-latest-wearables-can-detect-illness-two-days-you-get-sick/168664/"
+    ],
+    [
+     "2024-08",
+     "DHA sole-source notice to Ouraring",
+     "$96M",
+     "context",
+     "confirmed",
+     "Breaking Defense",
+     "https://breakingdefense.com/2025/03/this-acquisition-is-no-longer-required-defense-health-agency-cancels-96m-wearable-solicitation/"
+    ],
+    [
+     "2025-03-04",
+     "DHA cancels solicitation",
+     "After WHOOP GAO protests",
+     "context",
+     "confirmed",
+     "Breaking Defense",
+     "https://breakingdefense.com/2025/03/this-acquisition-is-no-longer-required-defense-health-agency-cancels-96m-wearable-solicitation/"
+    ],
+    [
+     "2025-08-27",
+     "Oura Fort Worth plant and Palantir FedStart IL5",
+     "DoD largest enterprise customer",
+     "context",
+     "confirmed",
+     "Business Wire",
+     "https://www.businesswire.com/news/home/20250827572356/en"
+    ],
+    [
+     "2025-09-05",
+     "User backlash; Oura says Palantir is not a partner",
+     "Consumer data handled separately (Hale)",
+     "context",
+     "reported",
+     "Tom's Guide",
+     "https://www.tomsguide.com/wellness/smart-rings/oura-is-expanding-its-partnership-with-the-u-s-military-and-users-are-stressed-heres-what-that-means-for-your-data"
+    ],
+    [
+     "2026-04",
+     "WHOOP wins Navy CREW work via MIT Lincoln Lab",
+     "",
+     "context",
+     "reported",
+     "HLTH",
+     "https://hlth.com/insights/news/whoop-secures-mit-lincoln-laboratory-contract-to-support-u-s-navy-crew-program"
+    ],
+    [
+     "2026-09-29",
+     "Oura postpones $2.1B IPO",
+     "Nasdaq: OURA",
+     "context",
+     "confirmed",
+     "Renaissance Capital",
+     "https://www.renaissancecapital.com/IPO-Center/News/121945/smart-ring-maker-oura-postpones-2-1-billion-ipo"
+    ]
+   ],
+   "shows": "Soldier biometrics now run through a commercial ring and the operating layer of this map (Palantir).",
+   "gains": [
+    "Palantir extends FedStart into biometric readiness data",
+    "Oura gains a secure defense manufacturing base"
+   ],
+   "exposed": [
+    "Service members' sleep, stress and illness data",
+    "Consumer users concerned about data segregation"
+   ],
+   "questions": [
+    "What does the Oura S-1 disclose about DoD revenue and Palantir terms?",
+    "Did any replacement DHA procurement follow the March 2025 cancellation?"
+   ]
+  },
+  {
+   "id": "48",
+   "name": "Neural and wearable data law",
+   "lenses": [
+    "political",
+    "technological"
+   ],
+   "lede": "Neural and wearable data protection is emerging from states, a Senate study bill and UNESCO, while HHS promotes wearables for every American.",
+   "nodes": [
+    "coneural",
+    "caneural",
+    "ctneural",
+    "mtneural",
+    "mindact",
+    "unesconeuro",
+    "hhs",
+    "cmsecosys",
+    "arpah"
+   ],
+   "events": [
+    [
+     "2024",
+     "Colorado and California add neural data to sensitive data",
+     "HB 24-1058; SB 1223",
+     "response",
+     "confirmed",
+     "Risk Management",
+     "https://www.rmmagazine.com/articles/article/2026/02/24/state-of-mind--the-new-landscape-of-neural-data-privacy-laws"
+    ],
+    [
+     "2025",
+     "Connecticut and Montana follow",
+     "SB 1295; SB 163",
+     "response",
+     "confirmed",
+     "Risk Management",
+     "https://www.rmmagazine.com/articles/article/2026/02/24/state-of-mind--the-new-landscape-of-neural-data-privacy-laws"
+    ],
+    [
+     "2025-06-24",
+     "Kennedy sets four-year wearables goal",
+     "House E&C subcommittee",
+     "context",
+     "confirmed",
+     "AHCJ",
+     "https://healthjournalism.org/blog/2025/07/rfk-jr-wants-us-all-to-wear-health-trackers-will-it-work/"
+    ],
+    [
+     "2025-07-30",
+     "CMS Health Tech Ecosystem",
+     "Apple, Fitbit, Oura pledge",
+     "context",
+     "confirmed",
+     "Tech Policy Press",
+     "https://techpolicy.press/control-for-whom-keeping-an-eye-on-the-dark-side-of-americas-new-wearables-campaign"
+    ],
+    [
+     "2025-09-24",
+     "MIND Act introduced",
+     "S.2925",
+     "response",
+     "confirmed",
+     "Inside Privacy",
+     "https://www.insideprivacy.com/health-privacy/congress-introduces-neural-data-bill/"
+    ],
+    [
+     "2025-11-12",
+     "UNESCO neurotech recommendation in force",
+     "Adopted in Samarkand",
+     "response",
+     "confirmed",
+     "UNESCO UK",
+     "https://unesco.org.uk/news/unesco-adopts-first-global-framework-on-neurotechnology-ethics"
+    ],
+    [
+     "2026-03-10",
+     "ARPA-H biowearables project",
+     "Multimillion-dollar",
+     "context",
+     "reported",
+     "Washington Examiner",
+     "https://www.washingtonexaminer.com/?p=4486357"
+    ],
+    [
+     "2026-04-09",
+     "Vermont H.814 testimony on state neural data laws",
+     "",
+     "context",
+     "confirmed",
+     "Vermont Legislature",
+     "https://legislature.vermont.gov/Documents/2026/Workgroups/Senate%20Health%20and%20Welfare/Bills/H.814/Witness%20Testimony/H.814~Ashley%20Collins~US%20State%20Legislation%20to%20Protect%20Neural%20Data~4-9-2026.pdf"
+    ]
+   ],
+   "shows": "Federal promotion of wearables is moving faster than federal protection of the data they generate.",
+   "gains": [
+    "Wearable makers gain a federal promotional channel"
+   ],
+   "exposed": [
+    "Consumer wearable data outside HIPAA"
+   ],
+   "questions": [
+    "Will the MIND Act move out of committee?",
+    "Will HHS publish a data policy for the wearables campaign?"
+   ]
+  },
+  {
+   "id": "49",
+   "name": "Lilly, NVIDIA and AI drug discovery",
+   "lenses": [
+    "technological",
+    "financial"
+   ],
+   "lede": "A drugmaker now owns frontier compute, distributes NVIDIA models to biotechs, and funds a joint lab on Vera Rubin, while the AI-native cohort raises at AI-lab valuations.",
+   "nodes": [
+    "nvda",
+    "lilly",
+    "lillyaif",
+    "tunelab",
+    "lillynvlab",
+    "bionemo",
+    "chai",
+    "isomorphic",
+    "lila",
+    "generate"
+   ],
+   "events": [
+    [
+     "2024-01-07",
+     "Isomorphic signs Lilly and Novartis",
+     "Lilly $45M upfront/$1.7B; Novartis $37.5M/$1.2B",
+     "context",
+     "confirmed",
+     "SiliconANGLE",
+     "https://siliconangle.com/2024/01/07/ai-drug-discovery-startup-isomorphic-labs-partners-eli-lilly-novartis/"
+    ],
+    [
+     "2024-10-09",
+     "Nobel Prize in Chemistry to Baker, Hassabis, Jumper",
+     "Protein design and structure prediction recognized",
+     "context",
+     "confirmed",
+     "AlphaGalileo",
+     "https://alphagalileo.org/en-gb/Item-Display/ItemId/250899"
+    ],
+    [
+     "2025-03-31",
+     "Isomorphic $600M first external round",
+     "Led by Thrive; GV and Alphabet",
+     "context",
+     "confirmed",
+     "Isomorphic Labs",
+     "https://isomorphiclabs.com/articles/isomorphic-labs-announces-600m-external-investment-round"
+    ],
+    [
+     "2025-09-09",
+     "Lilly launches TuneLab",
+     "Models built on ~$1B of data; Circle Pharma and insitro",
+     "response",
+     "confirmed",
+     "pharmaphorum",
+     "https://pharmaphorum.com/news/lilly-offers-ai-discovery-models-biotech-partners"
+    ],
+    [
+     "2025-10-14",
+     "Lila $115M extension at >$1.3B",
+     "NVIDIA venture arm and an ADIA subsidiary join",
+     "context",
+     "confirmed",
+     "Reuters",
+     "https://finance.yahoo.com/news/exclusive-ai-lab-lila-sciences-101645837.html"
+    ],
+    [
+     "2025-10-28",
+     "Lilly AI factory announced",
+     "1,016 Blackwell Ultra GPUs; wholly owned",
+     "response",
+     "confirmed",
+     "NVIDIA",
+     "https://blogs.nvidia.com/blog/lilly-ai-factory-nvidia-blackwell-dgx-superpod"
+    ],
+    [
+     "2025-12",
+     "Chai $130M Series B at $1.3B",
+     "Oak HC/FT and General Catalyst lead",
+     "context",
+     "confirmed",
+     "TechCrunch",
+     "https://techcrunch.com/2026/01/16/from-openais-offices-to-a-deal-with-eli-lilly-how-chai-discovery-became-one-of-the-flashiest-names-in-ai-drug-development/"
+    ],
+    [
+     "2026-01-08",
+     "Chai-Lilly partnership",
+     "Terms undisclosed",
+     "response",
+     "confirmed",
+     "TechCrunch",
+     "https://techcrunch.com/2026/01/16/from-openais-offices-to-a-deal-with-eli-lilly-how-chai-discovery-became-one-of-the-flashiest-names-in-ai-drug-development/"
+    ],
+    [
+     "2026-01-12",
+     "NVIDIA-Lilly $1B co-innovation lab",
+     "Five years; South San Francisco; Vera Rubin",
+     "response",
+     "confirmed",
+     "NVIDIA",
+     "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-and-Lilly-Announce-Co-Innovation-AI-Lab-to-Reinvent-Drug-Discovery-in-the-Age-of-AI"
+    ],
+    [
+     "2026-02-26",
+     "Generate IPO prices at $16",
+     "$400M raised; closes day one at $12.65",
+     "context",
+     "confirmed",
+     "IPO Scoop",
+     "https://www.iposcoop.com/the-ipo-buzz-generate-biomedicines-genb-prices-ipo-at-16-mid-point/"
+    ],
+    [
+     "2026-05-12",
+     "Isomorphic $2.1B Series B",
+     "MGX and UK Sovereign AI Fund among new investors",
+     "context",
+     "confirmed",
+     "YourStory",
+     "https://yourstory.com/ai-story/isomorphic-labs-ai-drug-discovery-series-b-2026"
+    ],
+    [
+     "2026-06-03",
+     "Lila in talks at $8.5B pre-money",
+     "CalPERS and NVentures reported anchors",
+     "context",
+     "reported",
+     "Bloomberg Law",
+     "https://news.bloomberglaw.com/private-equity/lila-sciences-said-in-talks-for-funds-at-8-5-billion-valuation"
+    ],
+    [
+     "2026-07-14",
+     "Chai $400M Series C at $3.8B",
+     "Index Ventures lead",
+     "context",
+     "reported",
+     "IntuitionLabs",
+     "https://intuitionlabs.ai/articles/chai-discovery-series-c-valuation"
+    ],
+    [
+     "2026-10-08",
+     "Isomorphic talks at >=$40B",
+     "Possibly up to $50B",
+     "context",
+     "reported",
+     "Bloomberg Law",
+     "https://news.bgov.com/private-equity/isomorphic-labs-in-funding-talks-for-at-least-40-billion-value"
+    ]
+   ],
+   "shows": "Discovery compute is consolidating around NVIDIA, with Lilly as both buyer and distribution channel, while private AI-discovery valuations rise faster than clinical proof.",
+   "gains": [
+    "NVIDIA gains a pharma channel for BioNeMo and Clara",
+    "Lilly gains data network effects through TuneLab",
+    "Sovereign funds gain exposure to AI-discovery equity"
+   ],
+   "exposed": [
+    "Smaller biotechs that contribute data to TuneLab",
+    "Investors pricing pre-clinical AI platforms at $3.8B to $40B+"
+   ],
+   "questions": [
+    "Does Isomorphic start first-in-human studies in 2026?",
+    "What data rights do TuneLab contributors give up?",
+    "Does the Lila round close at $8.5B pre-money?"
+   ]
+  },
+  {
+   "id": "50",
+   "name": "Drug pricing, MFN deals and Section 232 tariffs",
+   "lenses": [
+    "political",
+    "financial"
+   ],
+   "lede": "The administration used tariff threats to win price cuts and U.S. plant pledges, then wrote the bargain into Proclamation 11020's 0% tier.",
+   "nodes": [
+    "trump",
+    "mfn",
+    "pfizer",
+    "lilly",
+    "novo",
+    "azn",
+    "trumprx",
+    "s232pharma",
+    "cnpv",
+    "glp1bridge",
+    "cms",
+    "fda"
+   ],
+   "events": [
+    [
+     "2025-04-10",
+     "FDA plans animal-testing phase-out",
+     "Starting with monoclonal antibodies",
+     "context",
+     "confirmed",
+     "Xtalks",
+     "https://xtalks.com/fda-animal-testing-phase-out-targets-monoclonal-antibodies-4191/"
+    ],
+    [
+     "2025-06-02",
+     "FDA launches Elsa",
+     "Agency-wide LLM in GovCloud",
+     "context",
+     "confirmed",
+     "RAPS",
+     "https://www.raps.org/resource/fda-launches-agency-wide-ai-tool-elsa-ahead-of-sc.html"
+    ],
+    [
+     "2025-07-31",
+     "MFN mandate letters",
+     "Pfizer deal follows 61 days later",
+     "threat",
+     "confirmed",
+     "BioPharm International",
+     "https://www.biopharminternational.com/view/white-house-pfizer-reach-first-mfn-pricing-agreement-who-s-next-"
+    ],
+    [
+     "2025-08-05",
+     "HHS winds down BARDA mRNA",
+     "22 projects; ~$500M",
+     "context",
+     "confirmed",
+     "HHS",
+     "https://hhs.gov/press-room/hhs-winds-down-mrna-development-under-barda.html"
+    ],
+    [
+     "2025-09-25",
+     "100% tariff on branded drugs announced",
+     "Exemption for firms building U.S. plants",
+     "threat",
+     "confirmed",
+     "Mondaq",
+     "https://webiis10.mondaq.com/unitedstates/healthcare/1687748/president-trump-announces-and-then-pauses-100-percent-tariff-on-branded-pharmaceuticals-from-companies-without-us-factories-under-construction"
+    ],
+    [
+     "2025-09-30",
+     "Pfizer MFN deal",
+     "$70B U.S.; 3-year tariff grace; others paused",
+     "response",
+     "confirmed",
+     "BioPharm International",
+     "https://www.biopharminternational.com/view/white-house-pfizer-reach-first-mfn-pricing-agreement-who-s-next-"
+    ],
+    [
+     "2025-10-16",
+     "First national priority vouchers",
+     "Nine recipients incl. domestic manufacturing",
+     "context",
+     "confirmed",
+     "HHS",
+     "https://www.hhs.gov/press-room/fda-awards-first-ever-national-priority-vouchers-nine-sponsors.html"
+    ],
+    [
+     "2025-11-06",
+     "Lilly and Novo GLP-1 deal",
+     "Medicare $245; $50 copay; $149 oral starter",
+     "response",
+     "confirmed",
+     "Healthcare Dive",
+     "https://www.healthcaredive.com/news/lilly-novo-trump-obesity-drug-pricing-deal-zepbound-wegovy/804937/"
+    ],
+    [
+     "2026-02-05",
+     "TrumpRx launches",
+     "43 drugs",
+     "response",
+     "confirmed",
+     "Wikipedia",
+     "https://en.wikipedia.org/wiki/TrumpRx"
+    ],
+    [
+     "2026-04-01",
+     "Foundayo approved via CNPV",
+     "50 days after filing",
+     "response",
+     "confirmed",
+     "BioSpace",
+     "https://www.biospace.com/fda/eli-lillys-oral-obesity-pill-approved-kicking-off-renewed-novo-rivalry"
+    ],
+    [
+     "2026-04-02",
+     "Proclamation 11020",
+     "100% base; 0%/15%/20% tiers",
+     "threat",
+     "confirmed",
+     "Covington",
+     "https://www.cov.com/en/news-and-insights/insights/2026/04/trump-administration-announces-section-232-tariffs-on-patented-pharmaceuticals-and-ingredients"
+    ],
+    [
+     "2026-04-21",
+     "Medicare Part D BALANCE delayed indefinitely",
+     "Participation below 80% threshold",
+     "context",
+     "confirmed",
+     "KFF",
+     "https://www.kff.org/medicare/issue-brief/what-to-know-about-the-balance-model-for-glp-1s-in-medicare-and-medicaid/"
+    ],
+    [
+     "2026-05-12",
+     "Makary resigns",
+     "Diamantas acting",
+     "context",
+     "confirmed",
+     "KGOU/NPR",
+     "https://www.kgou.org/2026-05-13/fda-commissioner-marty-makary-resigns-after-tumultuous-tenure"
+    ],
+    [
+     "2026-07-01",
+     "Medicare GLP-1 Bridge starts",
+     "$50 copay; extended to 2027-12-31",
+     "response",
+     "confirmed",
+     "KFF",
+     "https://www.kff.org/medicare/issue-brief/what-to-know-about-the-balance-model-for-glp-1s-in-medicare-and-medicaid/"
+    ],
+    [
+     "2026-07-31",
+     "Section 232 pharma tariffs effective for large companies",
+     "Annex III companies",
+     "threat",
+     "scheduled",
+     "Covington",
+     "https://www.cov.com/en/news-and-insights/insights/2026/04/trump-administration-announces-section-232-tariffs-on-patented-pharmaceuticals-and-ingredients"
+    ],
+    [
+     "2026-08-19",
+     "Overton nominated for FDA",
+     "Hearing 2026-09-24",
+     "context",
+     "confirmed",
+     "Nutritional Outlook",
+     "https://www.nutritionaloutlook.com/view/president-trump-announces-nomination-of-heidi-overton-md-as-fda-s-new-commissioner"
+    ],
+    [
+     "2026-09-29",
+     "Section 232 pharma tariffs effective for all others",
+     "",
+     "threat",
+     "scheduled",
+     "Covington",
+     "https://www.cov.com/en/news-and-insights/insights/2026/04/trump-administration-announces-section-232-tariffs-on-patented-pharmaceuticals-and-ingredients"
+    ]
+   ],
+   "shows": "Pricing concessions, onshoring capex and faster FDA review are being bundled into one negotiated relationship between the White House and each large drugmaker.",
+   "gains": [
+    "Large pharma with MFN and onshoring plans (0% tier)",
+    "Medicare and Medicaid GLP-1 buyers",
+    "U.S. plant host states"
+   ],
+   "exposed": [
+    "Importers without MFN or onshoring plans (100%)",
+    "Insured patients who see little TrumpRx benefit (NYT analysis)",
+    "FDA review consistency amid leadership turnover"
+   ],
+   "questions": [
+    "Which companies sit in Annex II (0%) versus Annex III?",
+    "Does the 0% tier survive past 2029-01-20?",
+    "Will Overton be confirmed before year-end?"
+   ]
+  },
+  {
+   "id": "51",
+   "name": "Longevity funding",
+   "lenses": [
+    "financial",
+    "technological"
+   ],
+   "lede": "The founders and funds behind frontier AI are also the main private backers of aging research, with Gulf states running parallel state programs.",
+   "nodes": [
+    "altman",
+    "retro",
+    "gpt4bmicro",
+    "newlimit",
+    "founders",
+    "altos",
+    "calico",
+    "hevolution",
+    "mbs",
+    "m42",
+    "blueprint",
+    "methuselah"
+   ],
+   "events": [
+    [
+     "2006-09-19",
+     "Thiel gives $3.5M to Methuselah Foundation",
+     "",
+     "context",
+     "confirmed",
+     "VentureBeat",
+     "https://venturebeat.com/ai/paypal-co-founder-peter-thiel-invests-35m-to-stop-aging"
+    ],
+    [
+     "2021-05-17",
+     "Buterin gives 1,000 ETH to Methuselah",
+     "Plus ELON tokens",
+     "context",
+     "confirmed",
+     "Fight Aging!",
+     "https://www.fightaging.org/archives/2021/05/vitalik-buterin-donates-more-than-2-million-to-the-methuselah-foundation/?nc"
+    ],
+    [
+     "2022-07",
+     "Hevolution unveiled with Crown Prince as chair",
+     "Up to $1B a year",
+     "context",
+     "confirmed",
+     "Al Arabiya",
+     "https://english.alarabiya.net/News/gulf/2022/07/07/Exclusive-Saudi-s-Crown-Prince-heads-new-bln-dollar-foundation-to-decelerate-aging-"
+    ],
+    [
+     "2024-10-31",
+     "Abu Dhabi sets longevity clinic standards",
+     "HLMC licensing framework",
+     "context",
+     "confirmed",
+     "DoH Abu Dhabi",
+     "https://www.doh.gov.ae/en/news/abu-dhabi-sets-standards-for-the-world-first-healthy-longevity-medicine-centres"
+    ],
+    [
+     "2025-01-24",
+     "Retro launches $1B raise",
+     "Altman seeded $180M",
+     "context",
+     "confirmed",
+     "Fortune",
+     "https://www.fortune.com/2025/01/24/sam-altman-ai-biotech-1-billion-funding-extend-human-lifespan"
+    ],
+    [
+     "2025-04-16",
+     "M42 invests in Juvenescence",
+     "AI therapeutics for healthy lifespan",
+     "context",
+     "confirmed",
+     "Abu Dhabi Media Office",
+     "https://www.mediaoffice.abudhabi/en/health/m42-makes-strategic-investment-in-juvenescence-and-forms-partnership-to-develop-therapeutics-for-age-related-diseases/"
+    ],
+    [
+     "2025-05-23",
+     "Altos acquires Dorian Therapeutics",
+     "Senoblockers",
+     "context",
+     "confirmed",
+     "Longevity.Technology",
+     "https://longevity.technology/news/altos-labs-snaps-up-dorian-therapeutics/"
+    ],
+    [
+     "2025-08-22",
+     "OpenAI and Retro publish GPT-4b micro results",
+     ">50x reprogramming marker expression",
+     "context",
+     "confirmed",
+     "OpenAI",
+     "https://openai.com/index/accelerating-life-sciences-research-with-retro-biosciences"
+    ],
+    [
+     "2025-10-29",
+     "Blueprint raises $60M",
+     "~50 angels",
+     "context",
+     "confirmed",
+     "Longevity.Technology",
+     "https://longevity.technology/news/bryan-johnsons-blueprint-raises-star-studded-60m-funding-round/"
+    ],
+    [
+     "2025-11",
+     "AbbVie ends Calico partnership",
+     "~$1.75B invested",
+     "context",
+     "confirmed",
+     "Stocktwits/STAT",
+     "https://stocktwits.com/news-articles/markets/equity/abbvie-reportedly-ends-partnership-with-alphabet-backed-calico-life-sciences/cLPed8yREdo"
+    ],
+    [
+     "2026-05-22",
+     "Retro valued at $1.8B",
+     "Alzheimer's trial, no DLTs",
+     "context",
+     "confirmed",
+     "STAT",
+     "https://statnews.com/2026/05/22/retro-biosciences-longevity-valuation"
+    ],
+    [
+     "2026-06-02",
+     "NewLimit $435M Series C at $3.1B",
+     "Founders Fund lead",
+     "context",
+     "confirmed",
+     "Yahoo Finance",
+     "https://finance.yahoo.com/sectors/healthcare/articles/newlimit-raises-435m-series-c-145642833.html"
+    ]
+   ],
+   "shows": "Private longevity funding is concentrated among AI and crypto founders and their funds, and the first human trials are only now starting.",
+   "gains": [
+    "Founders Fund, Thrive and Kleiner across AI and longevity",
+    "Gulf states building health-data and longevity clinic regimes"
+   ],
+   "exposed": [
+    "Calico's partnered pipeline after AbbVie exit",
+    "Valuations ahead of human data (Retro, NewLimit)"
+   ],
+   "questions": [
+    "What did Retro's Alzheimer's trial show around August 2026?",
+    "Has Altos started any human trial?",
+    "Does Hevolution invest in U.S. companies directly?"
+   ]
+  },
+  {
+   "id": "52",
+   "name": "Health and biotech links to the core stack",
+   "lenses": [
+    "apparatus",
+    "technological",
+    "financial",
+    "political"
+   ],
+   "spine": true,
+   "lede": "Palantir, NVIDIA, the frontier labs, Founders Fund, IQT and Gulf sovereign funds hold positions in health records, biometric identity, neural implants and drug discovery, alongside their positions elsewhere in the stack.",
+   "nodes": [
+    "hhs",
+    "cdc",
+    "palantir",
+    "minor-clark",
+    "oneill-jim",
+    "thiel",
+    "founders",
+    "neuralink",
+    "g42",
+    "qia",
+    "iqt",
+    "synchron",
+    "tether",
+    "blackrockneuro",
+    "nhsfdp",
+    "cms",
+    "htecosystem",
+    "oura",
+    "dow",
+    "stargate",
+    "ellison",
+    "altman",
+    "nvda",
+    "lilly",
+    "mgx",
+    "isomorphic",
+    "newlimit",
+    "sec1260h",
+    "wuxi",
+    "bgi"
+   ],
+   "events": [
+    [
+     "2022-12",
+     "CDC awards Palantir the $443M Common Operating Picture",
+     "Five-year platform for HHS Protect, ASPR Engage, Tiberius and DCIPHER. The operating layer enters federal health.",
+     "response",
+     "confirmed",
+     "Potomac Officers Club",
+     "https://potomacofficersclub.com/news/palantir-wins-443m-contract-to-streamline-software-offerings-for-cdc"
+    ],
+    [
+     "2023-08",
+     "Founders Fund leads Neuralink's $280M Series D",
+     "Thiel's fund takes the lead position in the largest implanted-BCI company.",
+     "context",
+     "confirmed",
+     "MedTech Dive",
+     "https://www.medtechdive.com/news/elon-musk-neuralink-raises-280-million"
+    ],
+    [
+     "2023-11",
+     "Palantir wins the NHS Federated Data Platform",
+     "£330M platform across English hospital trusts; a 2027 break clause is under review.",
+     "response",
+     "confirmed",
+     "The Next Web",
+     "https://thenextweb.com/news/uk-nhs-palantir-contract-review-break-clause"
+    ],
+    [
+     "2024-04-29",
+     "Tether takes a majority of Blackrock Neurotech",
+     "$200M through Tether Evo. The stablecoin issuer on the money rail now controls an implant maker.",
+     "context",
+     "confirmed",
+     "Cointelegraph",
+     "https://cointelegraph.com/news/tether-evo-invests-200-million-neurotech"
+    ],
+    [
+     "2025-01-21",
+     "Stargate launches with a health pitch",
+     "At the White House, Larry Ellison describes AI cancer detection and personalized mRNA vaccines made in about 48 hours. Sam Altman predicts rapid cures.",
+     "context",
+     "confirmed",
+     "Business Today",
+     "https://businesstoday.in/technology/artificial-intelligence/story/promise-of-the-future-oracles-larry-ellison-says-ai-can-make-cancer-vaccine-available-in-48-hrs-461641-2025-01-22"
+    ],
+    [
+     "2025-06-02",
+     "G42 and QIA join Neuralink's $650M Series E",
+     "Gulf sovereign capital from the AI stack enters the skull.",
+     "context",
+     "confirmed",
+     "Fierce Biotech",
+     "https://www.fiercebiotech.com/medtech/neuralink-secures-650m-series-e-funding-expand-patient-access-brain-chip-technology"
+    ],
+    [
+     "2025-07-30",
+     "CMS Health Tech Ecosystem launches at the White House",
+     "OpenAI, Anthropic, Google, Oracle, Epic and the large insurers pledge. Medicare becomes an app and identity platform.",
+     "response",
+     "confirmed",
+     "CMS",
+     "https://www.cms.gov/newsroom/press-releases/white-house-tech-leaders-commit-create-patient-centric-healthcare-ecosystem"
+    ],
+    [
+     "2025-08-27",
+     "Oura runs DoD readiness data on Palantir FedStart",
+     "IL5 hosting for the Defense Department, Oura's largest enterprise customer, plus a Fort Worth plant for defense contracts.",
+     "response",
+     "confirmed",
+     "Business Wire",
+     "https://www.businesswire.com/news/home/20250827572356/en"
+    ],
+    [
+     "2025-10-28",
+     "Lilly announces a wholly owned NVIDIA AI factory",
+     "1,016 Blackwell Ultra GPUs; the largest pharma-owned AI factory.",
+     "response",
+     "confirmed",
+     "NVIDIA",
+     "https://blogs.nvidia.com/blog/lilly-ai-factory-nvidia-blackwell-dgx-superpod"
+    ],
+    [
+     "2025-11-06",
+     "IQT and QIA join Synchron's $200M Series D",
+     "The intelligence community's venture arm and Qatar's sovereign fund back the same implant.",
+     "context",
+     "confirmed",
+     "Medtech Insight",
+     "https://insights.citeline.com/medtech-insight/business/financing/synchron-secures-200m-series-d-plans-new-brain-interface-with-potentially-more-applications-U6MRTIDOVRHXXGDHGHUD35SA5Q"
+    ],
+    [
+     "2025-12-04",
+     "HHS releases the OneHHS AI strategy",
+     "Rolled out by HHS IT chief Clark Minor, Palantir's former global head of cloud, under Deputy Secretary Jim O'Neill, formerly of Thiel Capital.",
+     "response",
+     "confirmed",
+     "HHS",
+     "https://www.hhs.gov/press-room/hhs-unveils-ai-strategy-to-transform-agency-operations.html"
+    ],
+    [
+     "2026-05-12",
+     "MGX joins Isomorphic Labs' $2.1B Series B",
+     "The Abu Dhabi investor in Stargate buys into AI drug discovery alongside the UK Sovereign AI Fund.",
+     "context",
+     "confirmed",
+     "YourStory",
+     "https://yourstory.com/ai-story/isomorphic-labs-ai-drug-discovery-series-b-2026"
+    ],
+    [
+     "2026-06-02",
+     "Founders Fund leads NewLimit's $435M Series C",
+     "Longevity capital follows the AI money at a $3.1B valuation.",
+     "context",
+     "confirmed",
+     "Yahoo Finance",
+     "https://finance.yahoo.com/sectors/healthcare/articles/newlimit-raises-435m-series-c-145642833.html"
+    ],
+    [
+     "2026-06-08",
+     "DoD 1260H list names BGI, MGI and WuXi AppTec",
+     "Biology joins the chip playbook of lists, procurement bans and investment controls.",
+     "threat",
+     "confirmed",
+     "Ropes & Gray",
+     "https://www.ropesgray.com/en/insights/alerts/2026/06/department-of-defense-releases-updated-1260h-list-that-includes-wuxi-apptec"
+    ]
+   ],
+   "shows": "The body layer has no separate set of owners. Palantir runs federal and UK health data and the DoD ring data. NVIDIA sits inside Lilly. Founders Fund, IQT, G42, QIA, MGX and Tether fund the implants, the discovery labs and the longevity bets. Thiel-network and Palantir alumni held the HHS posts that adopted the platforms. The same list-and-ban tools built for chips now apply to genomics.",
+   "gains": [
+    "Palantir",
+    "NVIDIA",
+    "Founders Fund",
+    "Gulf sovereign funds",
+    "Frontier labs"
+   ],
+   "exposed": [
+    "Patients and enrollees",
+    "Consent and neural data law",
+    "Chinese genomics and CDMO suppliers"
+   ],
+   "questions": [
+    "Do state neural data laws or the MIND Act reach implant and wearable data held on defense infrastructure?",
+    "Does the Medicaid-to-DHS data order survive the 22-state suit?",
+    "Will the 2027 NHS break clause test whether a buyer can leave the operating layer?",
+    "Do Gulf genome programmes link to the same compute and operating layers as Gulf AI hubs?"
+   ]
   }
  ],
  "timeline": [
+  [
+   "2015",
+   "In-Q-Tel establishes B.Next biotech team",
+   "capital"
+  ],
+  [
+   "2015-03",
+   "Akyildiz et al. publish 'The Internet of Bio-Nano Things'",
+   "policy"
+  ],
+  [
+   "2016-08-03",
+   "UC Berkeley neural dust published",
+   "partner"
+  ],
+  [
+   "2017-11-13",
+   "FDA approves Abilify MyCite ingestible sensor",
+   "policy"
+  ],
+  [
+   "2018-03",
+   "DARPA announces N3",
+   "contract"
+  ],
+  [
+   "2018-05",
+   "VA signs $10B Cerner EHR contract",
+   "contract"
+  ],
+  [
+   "2019",
+   "Emirati Genome Programme launched in Abu Dhabi",
+   "policy"
+  ],
+  [
+   "2019-05-20",
+   "DARPA funds six N3 teams",
+   "contract"
+  ],
+  [
+   "2019-06-20",
+   "Microsoft files WO2020060606 (published 2020-03-26)",
+   "policy"
+  ],
+  [
+   "2020-04",
+   "HHS buys Palantir Gotham licenses ($17.4M)",
+   "contract"
+  ],
+  [
+   "2020-06",
+   "DIU RATE deploys wearables",
+   "contract"
+  ],
+  [
+   "2020-08",
+   "Synchron FDA Breakthrough designation",
+   "policy"
+  ],
+  [
+   "2020-08-06",
+   "WEF IoB white paper",
+   "policy"
+  ],
+  [
+   "2020-10-20",
+   "DoD awards $87.5M to found BioMADE",
+   "contract"
+  ],
+  [
+   "2020-10-29",
+   "RAND Internet of Bodies report",
+   "policy"
+  ],
+  [
+   "2021",
+   "CDC launches Traveler-Based Genomic Surveillance with Ginkgo",
+   "contract"
+  ],
   [
    "2021-12",
    "Marcos Galperin joins Satellogic board",
@@ -25708,14 +46272,79 @@ window.CASE = {
    "capital"
   ],
   [
+   "2022-03",
+   "NSCEB created by FY22 NDAA Sec. 1091",
+   "policy"
+  ],
+  [
+   "2022-05",
+   "HHS SHARE BPA with Palantir ($90M)",
+   "contract"
+  ],
+  [
+   "2022-06-10",
+   "Ellison pledges unified national health record database",
+   "policy"
+  ],
+  [
+   "2022-07-06",
+   "IARPA B24IC BAA released",
+   "contract"
+  ],
+  [
+   "2022-12",
+   "CDC Common Operating Picture to Palantir ($443M)",
+   "contract"
+  ],
+  [
+   "2022-12-15",
+   "Synchron $75M Series C (Bezos, Gates)",
+   "capital"
+  ],
+  [
+   "2023",
+   "DoD directs $450M to BioMADE",
+   "capital"
+  ],
+  [
    "2023-03",
    "Silicon Valley Bank collapses",
    "market"
   ],
   [
+   "2023-04",
+   "VA pauses most Oracle EHR deployments",
+   "policy"
+  ],
+  [
+   "2023-04",
+   "M42 launched (G42 Healthcare + Mubadala Health)",
+   "partner"
+  ],
+  [
+   "2023-07-20",
+   "DARPA RPM award to Ginkgo, up to $18M",
+   "contract"
+  ],
+  [
+   "2023-08",
+   "Neuralink $280M Series D led by Founders Fund",
+   "capital"
+  ],
+  [
    "2023-09",
    "Tether invests in Northern Data via Damoon (~54%)",
    "capital"
+  ],
+  [
+   "2023-09-08",
+   "Steve Bowsher becomes In-Q-Tel CEO",
+   "partner"
+  ],
+  [
+   "2023-11",
+   "NHS FDP awarded to Palantir (£330M)",
+   "contract"
   ],
   [
    "2024",
@@ -25728,14 +46357,89 @@ window.CASE = {
    "partner"
   ],
   [
+   "2024-01-07",
+   "Isomorphic signs Lilly and Novartis deals (~$3B potential)",
+   "contract"
+  ],
+  [
+   "2024-01-09",
+   "JPEO-CBRND anthrax vaccine award to Emergent, up to $235.8M",
+   "contract"
+  ],
+  [
+   "2024-01-09",
+   "House China Select Committee letter on G42, Huawei, BGI",
+   "threat"
+  ],
+  [
+   "2024-01-24",
+   "DARPA EQUIP-A-Pharma announced with ASPR",
+   "contract"
+  ],
+  [
    "2024-04",
    "Satellogic LOI with O.N.E. Amazon (Internet of Forests)",
    "partner"
   ],
   [
+   "2024-04",
+   "Michael Koeris becomes DARPA BTO director; Microsoft invests $1.5B in G42",
+   "capital"
+  ],
+  [
+   "2024-04-29",
+   "Tether $200M majority stake in Blackrock Neurotech",
+   "capital"
+  ],
+  [
+   "2024-06",
+   "ARPA-H data infrastructure to Palantir ($19M)",
+   "contract"
+  ],
+  [
+   "2024-07",
+   "First DBIMP award: Debut, $2M",
+   "contract"
+  ],
+  [
+   "2024-08",
+   "DHA sole-source $96M Oura notice",
+   "contract"
+  ],
+  [
+   "2024-09",
+   "Neuralink Blindsight Breakthrough designation",
+   "policy"
+  ],
+  [
+   "2024-09-12",
+   "Sen. Todd Young succeeds Jason Kelly as NSCEB Chair",
+   "policy"
+  ],
+  [
+   "2024-09-30",
+   "Synchron COMMAND safety results",
+   "policy"
+  ],
+  [
+   "2024-10-09",
+   "Nobel Chemistry to Baker, Hassabis, Jumper",
+   "market"
+  ],
+  [
    "2024-10-23",
    "L3Harris and Palantir strategic partnership",
    "partner"
+  ],
+  [
+   "2024-10-31",
+   "Abu Dhabi DoH sets longevity clinic standards",
+   "policy"
+  ],
+  [
+   "2024-11-14",
+   "DBIMP phase one closes: 34 awards, over $60M",
+   "contract"
   ],
   [
    "2025",
@@ -25745,6 +46449,16 @@ window.CASE = {
   [
    "2025-01",
    "Tahnoon-linked Aryam invests ~$500M in World Liberty Financial",
+   "capital"
+  ],
+  [
+   "2025-01-21",
+   "Stargate announced at White House; Ellison mRNA vaccine pitch",
+   "partner"
+  ],
+  [
+   "2025-01-24",
+   "Retro Biosciences launches $1B raise",
    "capital"
   ],
   [
@@ -25763,8 +46477,28 @@ window.CASE = {
    "threat"
   ],
   [
+   "2025-02",
+   "DOGE read-only access to CMS systems",
+   "threat"
+  ],
+  [
+   "2025-02",
+   "NEOM invests in Paradromics",
+   "capital"
+  ],
+  [
    "2025-02-04",
    "Lutnick on Tether at Senate hearing",
+   "policy"
+  ],
+  [
+   "2025-02-12",
+   "Ellison at WGS: unify national data for AI",
+   "policy"
+  ],
+  [
+   "2025-02-14",
+   "Court denies TRO against DOGE access at DOL/HHS/CFPB",
    "policy"
   ],
   [
@@ -25773,9 +46507,64 @@ window.CASE = {
    "partner"
   ],
   [
+   "2025-03-04",
+   "DHA cancels Oura wearable solicitation",
+   "contract"
+  ],
+  [
+   "2025-03-14",
+   "EO 14236 revokes EO 14081 on biotech and biomanufacturing",
+   "policy"
+  ],
+  [
+   "2025-03-19",
+   "Synchron unveils Chiral with NVIDIA",
+   "partner"
+  ],
+  [
+   "2025-03-20",
+   "EO 14243 Eliminating Information Silos",
+   "policy"
+  ],
+  [
+   "2025-03-31",
+   "Isomorphic raises $600M led by Thrive",
+   "capital"
+  ],
+  [
    "2025-04",
    "Mastercard Agent Pay launches",
    "partner"
+  ],
+  [
+   "2025-04",
+   "Precision Layer 7 510(k)",
+   "policy"
+  ],
+  [
+   "2025-04-08",
+   "NSCEB final report: at least $15B over five years",
+   "policy"
+  ],
+  [
+   "2025-04-10",
+   "National Biotechnology Initiative Act introduced",
+   "policy"
+  ],
+  [
+   "2025-04-10",
+   "FDA animal-testing phase-out plan",
+   "policy"
+  ],
+  [
+   "2025-04-16",
+   "M42 invests in Juvenescence",
+   "capital"
+  ],
+  [
+   "2025-04-29",
+   "BioMADE Minnesota demonstration plant, at least $132M",
+   "capital"
   ],
   [
    "2025-05",
@@ -25788,14 +46577,69 @@ window.CASE = {
    "market"
   ],
   [
+   "2025-05",
+   "NIH-CMS real-world data platform announced",
+   "policy"
+  ],
+  [
+   "2025-05",
+   "FDA names first Chief AI Officer",
+   "policy"
+  ],
+  [
+   "2025-05",
+   "Pfizer licenses 3SBio bispecific for $1.25B upfront",
+   "contract"
+  ],
+  [
+   "2025-05-01",
+   "Neuralink speech Breakthrough designation",
+   "policy"
+  ],
+  [
+   "2025-05-05",
+   "EO 14292 on biological research safety",
+   "policy"
+  ],
+  [
+   "2025-05-06",
+   "M42 names Dimitris Moulavasilis Group CEO",
+   "partner"
+  ],
+  [
+   "2025-05-13",
+   "Apple BCI HID profile; Synchron integration",
+   "partner"
+  ],
+  [
    "2025-05-15",
    "US-UAE AI chip deal announced",
    "policy"
   ],
   [
+   "2025-05-23",
+   "Altos Labs acquires Dorian Therapeutics",
+   "capital"
+  ],
+  [
    "2025-05-30",
    "Palantir blog response on IRS database reports",
    "policy"
+  ],
+  [
+   "2025-06-02",
+   "FDA launches Elsa",
+   "policy"
+  ],
+  [
+   "2025-06-02",
+   "Neuralink $650M Series E",
+   "capital"
+  ],
+  [
+   "2025-06-10",
+   "Recursion cuts ~20% of staff",
+   "market"
   ],
   [
    "2025-06-11",
@@ -25806,6 +46650,16 @@ window.CASE = {
    "2025-06-18",
    "Anduril and Rheinmetall team on European variants",
    "partner"
+  ],
+  [
+   "2025-06-24",
+   "RFK Jr.: wearable for every American within four years",
+   "policy"
+  ],
+  [
+   "2025-06-24",
+   "Kennedy wearables goal",
+   "policy"
   ],
   [
    "2025-07",
@@ -25823,6 +46677,31 @@ window.CASE = {
    "capital"
   ],
   [
+   "2025-07",
+   "CMS-DHS Medicaid data agreement",
+   "threat"
+  ],
+  [
+   "2025-07",
+   "GSK-Hengrui ~$12B license",
+   "contract"
+  ],
+  [
+   "2025-07-01",
+   "California v. HHS filed by 22 states",
+   "policy"
+  ],
+  [
+   "2025-07-30",
+   "CMS Health Tech Ecosystem launched",
+   "partner"
+  ],
+  [
+   "2025-07-30",
+   "CMS Health Tech Ecosystem",
+   "policy"
+  ],
+  [
    "2025-08",
    "Commerce takes ~10% of Intel",
    "capital"
@@ -25833,14 +46712,89 @@ window.CASE = {
    "market"
   ],
   [
+   "2025-08",
+   "China seven-ministry BCI plan",
+   "policy"
+  ],
+  [
+   "2025-08-04",
+   "Palantir ICCM task order ($19.8M)",
+   "contract"
+  ],
+  [
+   "2025-08-05",
+   "HHS ends 22 BARDA mRNA projects (~$500M)",
+   "policy"
+  ],
+  [
+   "2025-08-05",
+   "HHS cancels ~$500M BARDA mRNA work",
+   "policy"
+  ],
+  [
+   "2025-08-12",
+   "Injunction on Medicaid data for enforcement",
+   "policy"
+  ],
+  [
+   "2025-08-19",
+   "Epic unveils 'healthcare intelligence'",
+   "market"
+  ],
+  [
+   "2025-08-22",
+   "OpenAI/Retro GPT-4b micro results",
+   "partner"
+  ],
+  [
+   "2025-08-27",
+   "Oura Fort Worth plant; Palantir FedStart IL5",
+   "contract"
+  ],
+  [
    "2025-09",
    "Tether launches USAT under GENIUS Act",
    "market"
   ],
   [
+   "2025-09-09",
+   "ChatGPT to all HHS employees",
+   "contract"
+  ],
+  [
+   "2025-09-09",
+   "Lilly launches TuneLab",
+   "partner"
+  ],
+  [
    "2025-09-10",
    "Australia: Ghost Shark A$1.7B to Anduril",
    "contract"
+  ],
+  [
+   "2025-09-22",
+   "NIH Autism Data Science Initiative ($50M+)",
+   "capital"
+  ],
+  [
+   "2025-09-24",
+   "MIND Act introduced",
+   "policy"
+  ],
+  [
+   "2025-09-25",
+   "100% branded-drug tariff announced",
+   "policy"
+  ],
+  [
+   "2025-09-30",
+   "EO 14355 Pediatric Cancer + AI",
+   "policy"
+  ],
+  [
+   "2025-09-30",
+   "Pfizer MFN deal; tariffs paused for others",
+   "policy"
   ],
   [
    "2025-10",
@@ -25853,14 +46807,59 @@ window.CASE = {
    "partner"
   ],
   [
+   "2025-10-14",
+   "Oura $900M+ at $11B",
+   "capital"
+  ],
+  [
+   "2025-10-14",
+   "Lila $115M extension at >$1.3B with NVIDIA, ADIA subsidiary",
+   "capital"
+  ],
+  [
    "2025-10-15",
    "Erebor OCC preliminary conditional approval",
    "policy"
   ],
   [
+   "2025-10-16",
+   "First nine national priority vouchers",
+   "policy"
+  ],
+  [
+   "2025-10-20",
+   "Anthropic launches Claude for Life Sciences",
+   "partner"
+  ],
+  [
+   "2025-10-28",
+   "Lilly AI factory (1,016 Blackwell Ultra GPUs)",
+   "contract"
+  ],
+  [
+   "2025-10-29",
+   "Blueprint raises $60M",
+   "capital"
+  ],
+  [
    "2025-11",
    "Initial smaller Golden Dome SBI awards reportedly made in secret",
    "contract"
+  ],
+  [
+   "2025-11",
+   "AbbVie ends Calico partnership",
+   "market"
+  ],
+  [
+   "2025-11-06",
+   "Synchron $200M Series D",
+   "capital"
+  ],
+  [
+   "2025-11-06",
+   "Lilly and Novo GLP-1 MFN deal",
+   "policy"
   ],
   [
    "2025-11-07",
@@ -25878,9 +46877,19 @@ window.CASE = {
    "contract"
   ],
   [
+   "2025-11-12",
+   "UNESCO neurotech recommendation in force",
+   "policy"
+  ],
+  [
    "2025-11-13",
    "EDGE Group and Anduril Omen alliance",
    "partner"
+  ],
+  [
+   "2025-11-20",
+   "Paradromics FDA IDE",
+   "policy"
   ],
   [
    "2025-12",
@@ -25893,9 +46902,64 @@ window.CASE = {
    "threat"
   ],
   [
+   "2025-12",
+   "CLEAR CMS identity contract",
+   "contract"
+  ],
+  [
+   "2025-12",
+   "Chai $130M Series B at $1.3B",
+   "capital"
+  ],
+  [
+   "2025-12-01",
+   "FDA agentic AI deployment",
+   "policy"
+  ],
+  [
+   "2025-12-04",
+   "HHS OneHHS AI strategy",
+   "policy"
+  ],
+  [
    "2025-12-16",
    "Erebor FDIC deposit insurance",
    "policy"
+  ],
+  [
+   "2025-12-16",
+   "ID.me selected for Medicare.gov",
+   "contract"
+  ],
+  [
+   "2025-12-18",
+   "FY26 NDAA signed: BIOSECURE Sec. 851; DoD Biotechnology Management Office",
+   "policy"
+  ],
+  [
+   "2025-12-18",
+   "BIOSECURE Act enacted in FY2026 NDAA",
+   "policy"
+  ],
+  [
+   "2025-12-19",
+   "NSCEB China competition paper; DARPA GO solicitation",
+   "policy"
+  ],
+  [
+   "2025-12-22",
+   "HTI-5 proposed rule",
+   "policy"
+  ],
+  [
+   "2025-12-29",
+   "Court permits basic Medicaid data sharing with ICE",
+   "policy"
+  ],
+  [
+   "2025-12-29",
+   "Insilico lists in Hong Kong (HKD 2.277B)",
+   "market"
   ],
   [
    "2026",
@@ -25938,9 +47002,49 @@ window.CASE = {
    "capital"
   ],
   [
+   "2026-01",
+   "Anthropic launches Claude for Healthcare",
+   "market"
+  ],
+  [
+   "2026-01",
+   "ICE ELITE reportedly uses Medicaid data",
+   "threat"
+  ],
+  [
+   "2026-01",
+   "Neuralink reports 21 participants",
+   "market"
+  ],
+  [
+   "2026-01",
+   "Precision partners with Medtronic",
+   "partner"
+  ],
+  [
+   "2026-01-01",
+   "WISeR AI prior authorization starts in six states",
+   "policy"
+  ],
+  [
+   "2026-01-01",
+   "Najat Khan becomes Recursion CEO",
+   "market"
+  ],
+  [
    "2026-01-07",
    "Apollo leads $3.5B for Valor/xAI $5.4B compute deal",
    "capital"
+  ],
+  [
+   "2026-01-07",
+   "OpenAI launches ChatGPT Health",
+   "market"
+  ],
+  [
+   "2026-01-08",
+   "Chai-Lilly partnership",
+   "partner"
   ],
   [
    "2026-01-09",
@@ -25953,6 +47057,11 @@ window.CASE = {
    "policy"
   ],
   [
+   "2026-01-12",
+   "NVIDIA-Lilly $1B co-innovation lab; BioNeMo roster",
+   "contract"
+  ],
+  [
    "2026-01-14",
    "Marsh McLennan becomes Marsh (MRSH)",
    "market"
@@ -25963,14 +47072,39 @@ window.CASE = {
    "market"
   ],
   [
+   "2026-01-15",
+   "Merge Labs $252M seed",
+   "capital"
+  ],
+  [
+   "2026-01-19",
+   "Claude for Healthcare reported",
+   "partner"
+  ],
+  [
    "2026-01-22",
    "Board of Peace charter signed at Davos",
    "policy"
   ],
   [
+   "2026-01-30",
+   "CDC TGS passes one million participants",
+   "contract"
+  ],
+  [
    "2026-02",
    "Singtel–NVIDIA sovereign AI lab",
    "partner"
+  ],
+  [
+   "2026-02",
+   "DHS-Palantir BPA up to $1B",
+   "contract"
+  ],
+  [
+   "2026-02-03",
+   "Visolis DBIMP expansion, $2.86M",
+   "contract"
   ],
   [
    "2026-02-04",
@@ -25983,9 +47117,24 @@ window.CASE = {
    "partner"
   ],
   [
+   "2026-02-05",
+   "TrumpRx launches with 43 drugs",
+   "policy"
+  ],
+  [
    "2026-02-08",
    "Erebor opens",
    "market"
+  ],
+  [
+   "2026-02-13",
+   "O'Neill leaves HHS; Klomp chief counselor",
+   "policy"
+  ],
+  [
+   "2026-02-18",
+   "Bhattacharya acting CDC director",
+   "policy"
   ],
   [
    "2026-02-24",
@@ -25996,6 +47145,26 @@ window.CASE = {
    "2026-02-25",
    "Senate Banking Democrats letter to OCC on Erebor",
    "policy"
+  ],
+  [
+   "2026-02-26",
+   "Ginkgo announces biosecurity divestiture",
+   "market"
+  ],
+  [
+   "2026-02-26",
+   "Generate IPO at $16, $400M",
+   "market"
+  ],
+  [
+   "2026-02-27",
+   "Directive to cease Anthropic use",
+   "policy"
+  ],
+  [
+   "2026-02-27",
+   "Battelle wins DTRA STEP 2.0 ($93.3M potential)",
+   "contract"
   ],
   [
    "2026-03",
@@ -26018,9 +47187,29 @@ window.CASE = {
    "partner"
   ],
   [
+   "2026-03-04",
+   "Biometric Medicare.gov credentials live",
+   "policy"
+  ],
+  [
+   "2026-03-05",
+   "Science Corp $230M Series C",
+   "capital"
+  ],
+  [
+   "2026-03-10",
+   "ARPA-H biowearables project",
+   "policy"
+  ],
+  [
    "2026-03-12",
    "Palantir partners with Ondas and World View",
    "partner"
+  ],
+  [
+   "2026-03-17",
+   "House E&C hearing on CMS fraud",
+   "policy"
   ],
   [
    "2026-03-18",
@@ -26041,6 +47230,11 @@ window.CASE = {
    "2026-03-31",
    "Stablecoin issuers hold ~$142B T-bills",
    "market"
+  ],
+  [
+   "2026-03-31",
+   "WHOOP $575M Series G at $10.1B",
+   "capital"
   ],
   [
    "2026-04",
@@ -26073,6 +47267,21 @@ window.CASE = {
    "contract"
   ],
   [
+   "2026-04",
+   "Medicaid Fraud War Room",
+   "policy"
+  ],
+  [
+   "2026-04",
+   "Abridge $316M Series E extension",
+   "capital"
+  ],
+  [
+   "2026-04",
+   "WHOOP Navy CREW contract via MIT Lincoln Lab",
+   "contract"
+  ],
+  [
    "2026-04-01",
    "Microsoft and Armada put Azure Local inside Galleons",
    "partner"
@@ -26083,9 +47292,44 @@ window.CASE = {
    "capital"
   ],
   [
+   "2026-04-01",
+   "Foundayo approved via CNPV",
+   "policy"
+  ],
+  [
    "2026-04-02",
    "Erebor adds Sui",
    "market"
+  ],
+  [
+   "2026-04-02",
+   "Proclamation 11020 Section 232 pharma tariffs",
+   "policy"
+  ],
+  [
+   "2026-04-03",
+   "Ginkgo closes biosecurity divestiture",
+   "market"
+  ],
+  [
+   "2026-04-09",
+   "CMS First Wave and Medicare App Library",
+   "partner"
+  ],
+  [
+   "2026-04-13",
+   "Perimeter launches with $60M",
+   "capital"
+  ],
+  [
+   "2026-04-17",
+   "OpenAI GPT-Rosalind",
+   "partner"
+  ],
+  [
+   "2026-04-21",
+   "CMS delays BALANCE Part D",
+   "policy"
   ],
   [
    "2026-04-23",
@@ -26108,6 +47352,11 @@ window.CASE = {
    "partner"
   ],
   [
+   "2026-04-30",
+   "Government pauses Medicaid data use for ICE",
+   "policy"
+  ],
+  [
    "2026-05",
    "Board of Peace World Bank account holds no funds",
    "policy"
@@ -26128,6 +47377,11 @@ window.CASE = {
    "policy"
   ],
   [
+   "2026-05",
+   "DHS CWMD office dissolved via FY26 appropriations",
+   "policy"
+  ],
+  [
    "2026-05-01",
    "GenAI.mil IL6/IL7 agreements",
    "contract"
@@ -26136,6 +47390,16 @@ window.CASE = {
    "2026-05-12",
    "CBO estimates Golden Dome at ~$1.2T over 20 years",
    "policy"
+  ],
+  [
+   "2026-05-12",
+   "Makary resigns as FDA commissioner",
+   "policy"
+  ],
+  [
+   "2026-05-12",
+   "Isomorphic $2.1B Series B; Makary resigns",
+   "capital"
   ],
   [
    "2026-05-19",
@@ -26151,6 +47415,16 @@ window.CASE = {
    "2026-05-20",
    "TSMC Arizona reports $514M year-one profit",
    "market"
+  ],
+  [
+   "2026-05-21",
+   "Oura confidential S-1",
+   "market"
+  ],
+  [
+   "2026-05-22",
+   "Retro valued at $1.8B",
+   "capital"
   ],
   [
    "2026-06",
@@ -26178,9 +47452,49 @@ window.CASE = {
    "capital"
   ],
   [
+   "2026-06",
+   "UK confirms review of Palantir NHS contract",
+   "threat"
+  ],
+  [
+   "2026-06",
+   "Beinao-1 enters registered clinical trials",
+   "policy"
+  ],
+  [
+   "2026-06-02",
+   "BINSA introduced to add biotech to COINS controls",
+   "policy"
+  ],
+  [
+   "2026-06-02",
+   "NewLimit $435M Series C at $3.1B",
+   "capital"
+  ],
+  [
    "2026-06-03",
    "EU Cloud and AI Development Act proposed",
    "policy"
+  ],
+  [
+   "2026-06-03",
+   "Lila reported in talks at $8.5B pre-money",
+   "capital"
+  ],
+  [
+   "2026-06-05",
+   "ARPA-H agentic AI order to Palantir",
+   "contract"
+  ],
+  [
+   "2026-06-08",
+   "DoD 1260H update adds WuXi AppTec; HASC FY27 NDAA biotech provisions",
+   "policy"
+  ],
+  [
+   "2026-06-08",
+   "WuXi AppTec added to 1260H list",
+   "threat"
   ],
   [
    "2026-06-09",
@@ -26188,14 +47502,34 @@ window.CASE = {
    "contract"
   ],
   [
+   "2026-06-09",
+   "CMS Office of Health Technology and Products",
+   "policy"
+  ],
+  [
    "2026-06-10",
    "Ondas Sentinel / World View $4.8M Navy / Southern Command balloon contract",
    "contract"
   ],
   [
+   "2026-06-11",
+   "Lilly invests in Abridge; NVIDIA model partnership",
+   "capital"
+  ],
+  [
+   "2026-06-11",
+   "WuXi AppTec sues; Web of Biological Data Act introduced",
+   "policy"
+  ],
+  [
    "2026-06-17",
    "FQ-44A and FQ-42A CCA production lots",
    "contract"
+  ],
+  [
+   "2026-06-24",
+   "Sen. Ossoff letter to OSTP on synthesis screening",
+   "policy"
   ],
   [
    "2026-06-30",
@@ -26223,6 +47557,31 @@ window.CASE = {
    "policy"
   ],
   [
+   "2026-07",
+   "ACCESS model begins",
+   "policy"
+  ],
+  [
+   "2026-07",
+   "PRIMA European approval",
+   "policy"
+  ],
+  [
+   "2026-07-01",
+   "Medicare GLP-1 Bridge starts",
+   "policy"
+  ],
+  [
+   "2026-07-14",
+   "Chai $400M Series C at $3.8B",
+   "capital"
+  ],
+  [
+   "2026-07-15",
+   "HELP hearing for ASPR and CDC nominees; FEMA posts $35M BioWatch grants",
+   "policy"
+  ],
+  [
    "2026-07-20",
    "Anduril and Archer unveil Thunder and Halo",
    "partner"
@@ -26230,6 +47589,21 @@ window.CASE = {
   [
    "2026-07-28",
    "CI Fortify framework",
+   "policy"
+  ],
+  [
+   "2026-07-28",
+   "HHS CIO Clark Minor gives notice",
+   "policy"
+  ],
+  [
+   "2026-07-28",
+   "USG Policy for Stopping High-Risk Life Sciences Research announced",
+   "policy"
+  ],
+  [
+   "2026-07-31",
+   "Section 232 pharma tariffs effective (large companies)",
    "policy"
   ],
   [
@@ -26243,8 +47617,38 @@ window.CASE = {
    "market"
   ],
   [
+   "2026-08",
+   "VA adds $17B ceiling to Oracle EHR contract",
+   "contract"
+  ],
+  [
+   "2026-08-05",
+   "Ginkgo Q2 2026: revenue $20M; NSF and PNNL autonomous lab contracts",
+   "market"
+  ],
+  [
+   "2026-08-07",
+   "Court enjoins WuXi AppTec 1260H designation",
+   "policy"
+  ],
+  [
    "2026-08-14",
    "OCC Decision #1385: World Liberty Trust conditional approval",
+   "policy"
+  ],
+  [
+   "2026-08-14",
+   "FTC antitrust probe of Epic reported",
+   "threat"
+  ],
+  [
+   "2026-08-19",
+   "Heidi Overton announced as FDA nominee",
+   "policy"
+  ],
+  [
+   "2026-08-19",
+   "Heidi Overton nominated FDA Commissioner",
    "policy"
   ],
   [
@@ -26258,6 +47662,26 @@ window.CASE = {
    "market"
   ],
   [
+   "2026-09",
+   "VA ambient scribe enterprise contract (Abridge, Knowtex)",
+   "contract"
+  ],
+  [
+   "2026-09-02",
+   "House VA Committee subpoenas Ellison and Sicilia",
+   "threat"
+  ],
+  [
+   "2026-09-09",
+   "Judge orders scope agreement on Medicaid data",
+   "policy"
+  ],
+  [
+   "2026-09-14",
+   "Verily NWSS contract extension ends",
+   "contract"
+  ],
+  [
    "2026-09-18",
    "Sanctions legislation could reach uranium logistics",
    "policy"
@@ -26268,13 +47692,38 @@ window.CASE = {
    "policy"
   ],
   [
+   "2026-09-21",
+   "Oura sets IPO terms",
+   "market"
+  ],
+  [
    "2026-09-24",
    "Bessent: Busan truce to Jan 10, 2027",
    "policy"
   ],
   [
+   "2026-09-24",
+   "Precision $250M Series D",
+   "capital"
+  ],
+  [
+   "2026-09-24",
+   "Overton HELP hearing",
+   "policy"
+  ],
+  [
    "2026-09-28",
    "HSGAC 'Tethered to Terrorism' report",
+   "policy"
+  ],
+  [
+   "2026-09-29",
+   "Oura postpones IPO",
+   "market"
+  ],
+  [
+   "2026-09-29",
+   "Section 232 pharma tariffs effective (all others)",
    "policy"
   ],
   [
@@ -26303,6 +47752,11 @@ window.CASE = {
    "capital"
   ],
   [
+   "2026-10",
+   "VA completes 13 Oracle EHR go-lives for 2026",
+   "market"
+  ],
+  [
    "2026-10-06",
    "Anduril NGC2 $1.8B; Navy $2.9B; Arsenal-2",
    "contract"
@@ -26316,6 +47770,11 @@ window.CASE = {
    "2026-10-08",
    "Blumenthal letter to Brandon Lutnick",
    "policy"
+  ],
+  [
+   "2026-10-08",
+   "Isomorphic reported in talks at >=$40B",
+   "capital"
   ],
   [
    "2026-10-13",
@@ -26348,9 +47807,24 @@ window.CASE = {
    "partner"
   ],
   [
+   "2026-10-28",
+   "EFF documents tie Palantir to WISeR vendor Zyter",
+   "threat"
+  ],
+  [
    "2026-10-29",
    "$6.36B Binance hack; ~$3B stablecoins frozen in ~70 min",
    "threat"
+  ],
+  [
+   "2026-10-29",
+   "Lilly Q3 2026: revenue $24.40B; guidance $91-92B",
+   "market"
+  ],
+  [
+   "2026-10-30",
+   "Musk: Blindsight awaiting regulatory approval",
+   "policy"
   ],
   [
    "2026-10-31",
@@ -26361,6 +47835,11 @@ window.CASE = {
    "2026-11",
    "SBI Holdings $100M into Erebor",
    "capital"
+  ],
+  [
+   "2026-11",
+   "Agency guidance due under High-Risk Life Sciences Research policy",
+   "policy"
   ],
   [
    "2026-11-03",
@@ -26415,6 +47894,11 @@ window.CASE = {
   [
    "2026-12-11",
    "Continuing resolution expires; Golden Dome FY27 funding at risk",
+   "policy"
+  ],
+  [
+   "2026-12-18",
+   "OMB initial BIOSECURE list due",
    "policy"
   ],
   [
@@ -26473,6 +47957,11 @@ window.CASE = {
    "policy"
   ],
   [
+   "2027-03-13",
+   "Treasury COINS Act regulations due",
+   "policy"
+  ],
+  [
    "2027-04-19",
    "NIH digital twins Phase 1 deadline",
    "policy"
@@ -26518,6 +48007,11 @@ window.CASE = {
    "contract"
   ],
   [
+   "2028",
+   "BioMADE Minnesota and Iowa plants open; earliest full BIOSECURE prohibitions",
+   "policy"
+  ],
+  [
    "2028-01-01",
    "Russian uranium waivers end",
    "policy"
@@ -26551,27 +48045,31 @@ window.CASE = {
  "brief": {
   "core": [
    [
-    "Compute is moving to where the data, the power and the threat are.",
+    "Compute location",
     "Grid interconnection takes 4 to 8+ years, at least ten US localities have passed moratoria, and drone strikes damaged three AWS facilities on Mar 1, 2026. Distributed, owned, modular compute answers all three."
    ],
    [
-    "Sovereign SI is a layered stack with a controlling company at each layer.",
+    "Stack structure",
     "Energy (GE Vernova, Caterpillar, Bloom, microreactors), silicon (NVIDIA), physical compute (Armada, Vertiv), control plane (Armada, Microsoft), operating layer (Palantir, Anduril), models (Nemotron, Regna AI), effectors (Anduril, Ondas, Shield AI), orbit (SpaceX)."
    ],
    [
-    "The operating layer is the control point.",
+    "Operating layer",
     "Palantir's Ontology and Anduril's Lattice model an institution's objects, actions and permissions. Hardware can be swapped. Replacing the operating layer means rebuilding how the institution works."
    ],
    [
-    "Governments are the anchor buyers, and they are writing demand into law.",
+    "Health and biotech",
+    "Health records, biometric sign-in, wearables, neural implants and the drug pipeline run on the same operating layer, compute and capital as the rest of the stack: Palantir at HHS, CDC and the NHS; NVIDIA inside Lilly; Founders Fund, G42, QIA and IQT in the BCI companies; MGX in Isomorphic."
+   ],
+   [
+    "Government demand",
     "$1.5T FY27 request, $54.6B for DAWG, $185B Golden Dome, $4.2B for sovereign AI infrastructure. Most of the new money sits in reconciliation, exposed to the Nov 3 midterms and the Dec 11 CR deadline."
    ],
    [
-    "Capital is moving ahead of the policy.",
+    "Private capital",
     "Defense-tech venture funding passed the narrow-definition 2025 total by May 2026. Private marks compound in months: Anduril from $61B to talks near $100B."
    ],
    [
-    "The model is being exported, and counter-blocs are forming.",
+    "Exports and counter-blocs",
     "78 US full-stack export packages and NATO's Maven adoption on one side; the EU's Level 4 sovereignty tier, Germany's European alternatives and China's Ascend-plus-DeepSeek stack on the other."
    ]
   ],
@@ -26593,8 +48091,12 @@ window.CASE = {
     "A node is threatened or lost; the grid shifts critical workloads; tactical nodes keep running disconnected until links return."
    ],
    [
-    "Commercial flywheel",
+    "Commercial cycle",
     "Anchor contract pays for factory capex; unit cost falls; packages are exported; allies adopt; more mission data; better models; more contracts."
+   ],
+   [
+    "Body data loop",
+    "Devices, records and implants capture physiology; the operating layer fuses it with identity and claims; models train on it; agencies, insurers and employers act on it; consent law trails each step."
    ]
   ],
   "hold": [
@@ -26625,6 +48127,18 @@ window.CASE = {
    [
     "Accreditation and export terms",
     "US and national authorities"
+   ],
+   [
+    "Health records and claims data",
+    "HHS, CMS and the VA, on Palantir, Oracle and Epic"
+   ],
+   [
+    "Biometric and neural data",
+    "Device makers (Oura, Neuralink, Synchron), under state neural data laws"
+   ],
+   [
+    "Genomes",
+    "National programmes (Emirati Genome Programme, Saudi Genome Program) and sequencers named on the 1260H list"
    ]
   ],
   "leverage": [
@@ -26862,6 +48376,131 @@ window.CASE = {
     "Operating-layer vendors",
     "up",
     "Bloc lock-in once ministries commit workflows [ANALYSIS]"
+   ],
+   [
+    "Oracle",
+    "mixed",
+    "$17B ceiling increase versus bipartisan subpoena and cost scrutiny"
+   ],
+   [
+    "Epic",
+    "mixed",
+    "Cosmos scale and AI absorption versus reported FTC probe"
+   ],
+   [
+    "Anthropic",
+    "down",
+    "Removed from federal use including HHS and Elsa"
+   ],
+   [
+    "OpenAI",
+    "up",
+    "Default HHS chatbot; ChatGPT Health consumer records hub"
+   ],
+   [
+    "Google",
+    "up",
+    "Gemini replacing Claude in HHS tools"
+   ],
+   [
+    "CLEAR / ID.me",
+    "up",
+    "Federal health credential status on Medicare.gov"
+   ],
+   [
+    "22 states (California v. HHS)",
+    "counter",
+    "Injunction limits Medicaid data fields and populations shared with ICE"
+   ],
+   [
+    "UK Parliament / Foxglove",
+    "counter",
+    "Pressure to use the NHS FDP break clause in 2027"
+   ],
+   [
+    "NSCEB / Sen. Young",
+    "up",
+    "Turns commission recommendations into NDAA text every cycle"
+   ],
+   [
+    "DoD (1260H list)",
+    "up",
+    "Listing triggers BIOSECURE procurement bans"
+   ],
+   [
+    "WuXi AppTec",
+    "counter",
+    "Court injunction against designation (Aug 7, 2026)"
+   ],
+   [
+    "HHS / Kennedy",
+    "down",
+    "Cut BARDA mRNA; FY27 cuts BARDA and HPP"
+   ],
+   [
+    "Perimeter",
+    "up",
+    "Holds CDC airport surveillance and foreign government channels"
+   ],
+   [
+    "G42 / M42 / Tahnoon",
+    "up",
+    "Controls Emirati Genome Programme data inside sovereign AI group"
+   ],
+   [
+    "OSTP",
+    "mixed",
+    "Issued gain-of-function policy; synthesis framework still pending"
+   ],
+   [
+    "Tether",
+    "up",
+    "Majority owner of Blackrock Neurotech"
+   ],
+   [
+    "Gulf funds (G42, QIA, Mubadala, NEOM)",
+    "up",
+    "Equity across four BCI companies"
+   ],
+   [
+    "State neural data laws / MIND Act / UNESCO",
+    "counter",
+    "Consent and purpose limits on neural and related data"
+   ],
+   [
+    "WHOOP",
+    "counter",
+    "Protests broke DHA's ring-only Oura procurement"
+   ],
+   [
+    "China (seven-ministry plan)",
+    "counter",
+    "State-backed BCI industry with 2027/2030 targets"
+   ],
+   [
+    "White House",
+    "up",
+    "Section 232 tiers and MFN agreements set tariff exposure company by company"
+   ],
+   [
+    "FDA",
+    "mixed",
+    "CNPV can cut review to 50 days; leadership turnover since May 2026"
+   ],
+   [
+    "China biotech",
+    "up",
+    "Record out-licensing ($135.7B in 2025) supplies U.S. pipelines"
+   ],
+   [
+    "BIOSECURE / DOW",
+    "counter",
+    "1260H listings push procurement away from BGI, potentially WuXi"
+   ],
+   [
+    "Gulf funds",
+    "up",
+    "MGX in Isomorphic; ADIA subsidiary in Lila; Hevolution up to $1B a year"
    ]
   ],
   "pivot": [
@@ -26914,6 +48553,21 @@ window.CASE = {
     "Space",
     "Launch as a service",
     "Vertical integration of launch, comms, defense and models"
+   ],
+   [
+    "Health data",
+    "Siloed agency records",
+    "One operating layer across HHS, tied to identity and enforcement"
+   ],
+   [
+    "Biotech",
+    "Global supply, pandemic response",
+    "Listed adversary vendors, defense biomanufacturing"
+   ],
+   [
+    "Drug discovery",
+    "Wet lab first, rented compute",
+    "Owned AI factories and foundation models"
    ]
   ],
   "weigh": [
@@ -27170,6 +48824,121 @@ window.CASE = {
     "Regulation E rulings or CFPB action on agent-initiated transfers",
     "Liability model for agentic payments",
     "Event"
+   ],
+   [
+    "Rulings in California v. HHS",
+    "Scope of health data available to immigration enforcement",
+    "per filing"
+   ],
+   [
+    "USAspending HHS obligations to Palantir",
+    "Growth of the HHS operating layer",
+    "quarterly"
+   ],
+   [
+    "Medicare App Library listings",
+    "Which AI assistants reach beneficiaries",
+    "monthly"
+   ],
+   [
+    "HHS AI use-case inventory",
+    "Breadth of AI deployment and high-impact classifications",
+    "annual"
+   ],
+   [
+    "VA EHR go-live schedule and cost reports",
+    "Oracle execution against the $27B ceiling",
+    "per deployment wave"
+   ],
+   [
+    "UK FDP break-clause decision",
+    "Allied appetite for Palantir health platforms",
+    "2027"
+   ],
+   [
+    "OMB BIOSECURE list publication",
+    "Which Chinese biotech firms become BCCs",
+    "Once, due Dec 18, 2026"
+   ],
+   [
+    "FY27 appropriations for BARDA, BioShield, NWSS",
+    "Whether Congress reverses civilian biodefense cuts",
+    "At each CR / omnibus"
+   ],
+   [
+    "DBIMP facility-scale awards",
+    "Whether DoD moves from plans to plants",
+    "Quarterly DoD releases"
+   ],
+   [
+    "Perimeter government contracts",
+    "Spread of privatized national biosurveillance",
+    "Press releases"
+   ],
+   [
+    "OSTP synthesis-screening framework",
+    "Federal floor for DNA order screening as AI design tools spread",
+    "Watch Federal Register"
+   ],
+   [
+    "Emirati Genome Programme sample count",
+    "Scale of Gulf sovereign genome asset",
+    "M42/DoH releases"
+   ],
+   [
+    "Neuralink participant count",
+    "Pace of scale-up toward 'high-volume' 2026 goal",
+    "Quarterly / Musk posts"
+   ],
+   [
+    "FDA decisions on Blindsight, PRIMA, Synchron PMA",
+    "First U.S. market approvals for implanted BCI",
+    "Event-driven"
+   ],
+   [
+    "Oura IPO relaunch and S-1 amendments",
+    "DoD revenue and Palantir terms disclosed",
+    "Event-driven"
+   ],
+   [
+    "MIND Act committee action",
+    "Federal neural-data definitions that reach wearables",
+    "Congressional calendar"
+   ],
+   [
+    "Beinao-1 registration filing",
+    "China's progress against 2027 target",
+    "2027"
+   ],
+   [
+    "Annex II and III company lists under Proclamation 11020",
+    "Who holds 0% versus 100% tariff exposure",
+    "As amended"
+   ],
+   [
+    "Lilly realized price vs volume",
+    "Cost of government pricing deals",
+    "Quarterly"
+   ],
+   [
+    "Isomorphic first-in-human start",
+    "Whether AI-native valuations meet clinical proof",
+    "Event"
+   ],
+   [
+    "OMB biotechnology companies of concern list",
+    "BIOSECURE scope beyond BGI/MGI",
+    "By ~2026-12-18"
+   ],
+   [
+    "China out-licensing deal value",
+    "U.S. pipeline dependence on China",
+    "Quarterly"
+   ],
+   [
+    "Overton confirmation",
+    "FDA policy continuity",
+    "Event"
    ]
   ],
   "patterns": [
@@ -27204,7 +48973,27 @@ window.CASE = {
    "Government capital (CHIPS for xLight, ~10% of Intel, Wolfspeed warrants) takes equity-like positions in silicon, matching the pattern seen elsewhere in the research.",
    "The drop-ship model reaches chipmaking: Tau Systems claims a container-sized X-ray source [ANALYSIS].",
    "Governance migrates into software: ontology, permissions and human-authorization rules become the seat of power [ANALYSIS].",
-   "Operating layers consolidate into blocs where switching becomes rare once a ministry's workflows live in one [ANALYSIS]."
+   "Operating layers consolidate into blocs where switching becomes rare once a ministry's workflows live in one [ANALYSIS].",
+   "The same vendor runs health and enforcement platforms: Palantir at CDC, HHS, ARPA-H and the NHS, and at DHS and ICE, where Medicaid data now flows under court limits.",
+   "Former Palantir and Thiel-network figures held top HHS technology and deputy posts: Clark Minor (HHS CIO, ex-Palantir) and Jim O'Neill (Deputy Secretary, ex-Thiel Capital).",
+   "CMS builds national infrastructure through voluntary pledges and payment models (Health Tech Ecosystem, ACCESS, WISeR), while ASTP/ONC removes certification requirements (HTI-5).",
+   "Identity becomes a health layer: Login.gov, ID.me and CLEAR credentials now gate Medicare.gov, with biometric enrollment.",
+   "Model supply inside HHS follows presidential direction: Anthropic was removed in days; OpenAI and Google remain.",
+   "[ANALYSIS] Fraud prevention is the stated basis for cross-agency data fusion (EO 14243, war rooms, Vance task force).",
+   "Biotech is being governed with chip-style tools: DoD list (1260H), procurement ban (BIOSECURE), outbound-investment controls (COINS/BINSA).",
+   "Civilian biodefense funding is falling while DoD biomanufacturing funding rises. [ANALYSIS]",
+   "Biosurveillance is moving from a company division to a standalone, defense-tech-funded operator selling to nation states.",
+   "Gulf genome programs sit inside the same holding groups as Gulf AI programs (G42/M42 under Tahnoon; PIF/Lifera).",
+   "AI-bio safeguards remain voluntary at the model layer; the federal synthesis-screening rule is overdue.",
+   "Gulf sovereign capital appears in at least four BCI companies (Neuralink: G42, QIA; Synchron: QIA; Precision: Mubadala Capital; Paradromics: NEOM). [ANALYSIS]",
+   "IQT invests in two implant platforms (Synchron, Science Corp). [ANALYSIS]",
+   "Neuralink alumni found or run rival companies (Hodak at Science Corp; Rapoport at Precision).",
+   "BCI companies are building foundation models on neural data (Synchron Chiral with NVIDIA; Merge Labs with OpenAI).",
+   "The operating layer (Palantir FedStart IL5) carries DoD biometric readiness data from a consumer ring.",
+   "Tariff relief is exchanged for MFN pricing plus U.S. plants, codified as a 0% tier to 2029-01-20.",
+   "Pharma now owns frontier compute and redistributes NVIDIA models to biotechs (TuneLab).",
+   "The same funds (Thrive, Founders Fund, Kleiner, MGX) appear across AI labs, AI drug discovery and longevity.",
+   "Frontier labs release bio-capable models under restricted access (GPT-4b micro not public; GPT-Rosalind trusted access)."
   ]
  },
  "markets": {
@@ -27496,7 +49285,7 @@ window.CASE = {
      "FQ3 results"
     ],
     "risk": "Civil-agency drag",
-    "act": ""
+    "act": "Search FDA and HHS AI task orders to Booz Allen"
    },
    "MSI": {
     "role": "Silvus mesh radios",
@@ -27568,7 +49357,7 @@ window.CASE = {
      "Ignite · Foundry Local GA"
     ],
     "risk": "CLOUD Act exposure in Europe",
-    "act": ""
+    "act": "Check Dragon share of Epic ambient deployments"
    },
    "ORCL": {
     "role": "OCI · Bloom power",
@@ -27724,7 +49513,7 @@ window.CASE = {
      ""
     ],
     "risk": "Gulf regions damaged; EU CADA Level 4",
-    "act": ""
+    "act": "Confirm where Elsa runs after the Gemini switch"
    },
    "GOOGL": {
     "role": "Air-gapped Gemini · Palantir partner",
@@ -27735,8 +49524,8 @@ window.CASE = {
      "",
      ""
     ],
-    "risk": "",
-    "act": ""
+    "risk": "Federal model choice subject to political direction",
+    "act": "Confirm Gemini hosting and FedRAMP scope for FDA"
    },
    "IBM": {
     "role": "Sovereign Core",
@@ -28313,6 +50102,262 @@ window.CASE = {
      "TeraFab announced (spring)"
     ],
     "act": "Confirm TeraFab ownership split and lithography approach"
+   },
+   "YOU": {
+    "role": "CLEAR: Medicare.gov identity and National Provider Directory; Epic MyChart integration",
+    "book": "CMS contract value undisclosed",
+    "risk": "Competition with ID.me and Login.gov inside the same flow",
+    "cat": [
+     "2026",
+     "Medicare credential adoption data"
+    ],
+    "act": "Find CMS contract value and adoption share by provider"
+   },
+   "UNH": {
+    "role": "Health Tech Ecosystem pledgee; Optum Insight data-network pledgee",
+    "cat": [
+     "2026",
+     "Aligned network go-live"
+    ],
+    "act": "Check Optum aligned-network status"
+   },
+   "HUM": {
+    "role": "Pledgee; Palantir AI decision-tool client per EFF documents [VERIFY]",
+    "risk": "Disclosure demands on AI vendor agreements",
+    "cat": [
+     "2026-10-28",
+     "Center for Health and Democracy report"
+    ],
+    "act": "Verify Palantir relationship in Humana filings"
+   },
+   "CI": {
+    "role": "Palantir AI decision-tool client per EFF documents [VERIFY]",
+    "risk": "Disclosure demands on AI vendor agreements",
+    "cat": [
+     "2026-10-28",
+     "Center for Health and Democracy report"
+    ],
+    "act": "Verify Palantir relationship in Cigna filings"
+   },
+   "CVS": {
+    "role": "Pledgee (Aetna)",
+    "cat": [
+     "2026",
+     "Aligned network go-live"
+    ],
+    "act": "Check Aetna app and network commitments"
+   },
+   "ELV": {
+    "role": "Pledgee",
+    "cat": [
+     "2026",
+     "Aligned network go-live"
+    ],
+    "act": "Check Elevance commitments"
+   },
+   "LLY": {
+    "role": "Owns largest pharma AI factory; TuneLab; NVIDIA lab partner; GLP-1 leader",
+    "cat": [
+     "2027",
+     "Houston $6.5B API plant completion"
+    ],
+    "act": "Read Q3 2026 10-Q for AI factory capex and Annex II tariff status",
+    "print": "Q3 2026 revenue $24.40B (+39%); Mounjaro $10.72B; Zepbound $5.35B; Foundayo $184M (2026-10-29)",
+    "guide": "2026 revenue $91-92B; adjusted EPS $35.00-36.00",
+    "risk": "Net realized price -15% in Q3; BALANCE Part D delayed; MFN obligations"
+   },
+   "AAPL": {
+    "role": "BCI HID native neural input; Apple Watch; CMS ecosystem pledge",
+    "cat": [
+     "",
+     "Wider BCI HID rollout beyond trial participants"
+    ],
+    "act": "Track BCI HID adoption by other BCI makers",
+    "risk": "Neural data regulation (MIND Act definitions)"
+   },
+   "DNA": {
+    "role": "Ginkgo Bioworks: autonomous labs; ~20% holder of Perimeter [VERIFY]",
+    "print": "Q2 2026 revenue $20M (down 48%); adj. EBITDA -$36M; cash $302M",
+    "book": "$47M PNNL autonomous lab; NSF cloud-lab builds for Caltech, Northwestern, UMD",
+    "guide": "2026 cash burn $125-150M; no revenue guidance",
+    "risk": "Revenue down sharply; concentration in federal science budgets; biosecurity upside now indirect through minority stake",
+    "cat": [
+     "2026-11",
+     "Q3 2026 results"
+    ],
+    "act": "Confirm Perimeter stake size in 10-Q and any Genesis Mission contract"
+   },
+   "XWEL": {
+    "role": "XWELL (XpresCheck): CDC TGS airport partner",
+    "risk": "TGS contract dependence; small-cap",
+    "cat": [
+     "",
+     ""
+    ],
+    "act": "Check TGS contract term and revenue share in filings"
+   },
+   "EBS": {
+    "role": "Emergent BioSolutions: JPEO-CBRND anthrax vaccine supplier",
+    "book": "Up to $235.8M; $20.1M guaranteed minimum (Jan 2024)",
+    "risk": "BARDA and BioShield cuts in FY27 request",
+    "cat": [
+     "",
+     "FY27 appropriations for BioShield ($725.0M request)"
+    ],
+    "act": "Check backlog exposure to BioShield and SNS lines"
+   },
+   "TWST": {
+    "role": "Twist Bioscience: DNA synthesis provider exposed to any revised federal screening rule [ANALYSIS]",
+    "risk": "Synthesis-screening mandate via OSTP or S.3741 / H.R.3029",
+    "cat": [
+     "",
+     "OSTP synthesis-screening framework revision"
+    ],
+    "act": "Verify Twist's IGSC status and any public comment on pending bills"
+   },
+   "MDT": {
+    "role": "Precision Neuroscience navigation partner",
+    "cat": [
+     "",
+     "Precision fully implantable EFS"
+    ],
+    "act": "Look for equity or distribution terms"
+   },
+   "ABT": {
+    "role": "Strategic investor in WHOOP",
+    "cat": [
+     "",
+     "WHOOP IPO"
+    ],
+    "act": "Check Abbott-WHOOP data integration"
+   },
+   "PHG": {
+    "role": "RATE illness-prediction algorithm",
+    "cat": [
+     "",
+     ""
+    ],
+    "act": "Check follow-on DoD awards"
+   },
+   "GRMN": {
+    "role": "RATE device",
+    "cat": [
+     "",
+     ""
+    ]
+   },
+   "4578.T": {
+    "role": "Otsuka: Abilify MyCite",
+    "cat": [
+     "",
+     ""
+    ],
+    "act": "Confirm MyCite commercial status after Proteus"
+   },
+   "NVO": {
+    "role": "GLP-1 rival; MFN deal; Bridge and BALANCE participant",
+    "guide": "Guided low single-digit impact on 2026 global sales growth from pricing deal (2025-11-06)",
+    "risk": "Price competition with Lilly's Foundayo; tariff tier",
+    "cat": [
+     "2027-12-31",
+     "Medicare GLP-1 Bridge ends"
+    ],
+    "act": "Pull latest quarterly report; not gathered this session"
+   },
+   "PFE": {
+    "role": "First MFN deal; 3SBio license; Chai partner",
+    "guide": "$70B additional U.S. R&D and capital",
+    "risk": "China-licensing policy scrutiny; MFN Medicaid pricing",
+    "cat": [
+     "2028-09-30",
+     "Three-year tariff grace ends (from 2025-09-30)"
+    ],
+    "act": "Confirm Annex II listing under Proclamation 11020"
+   },
+   "RXRX": {
+    "role": "Public AI-discovery bellwether",
+    "print": "Cash $665.2M at 2026-03-31; Q1 operating cash use $81.1M",
+    "guide": "2026 cash burn under $390M; runway into early 2028",
+    "risk": "Clinical data quality (REC-617); dilution",
+    "cat": [
+     "2026-H2",
+     "REC-4881 regulatory update; REC-1245 data"
+    ],
+    "act": "Pull Q3 2026 release"
+   },
+   "GENB": {
+    "role": "Flagship AI protein therapeutics; IPO 2026-02-26",
+    "print": "IPO $16; day-one close $12.65; $2.04B market cap at pricing",
+    "risk": "Flagship 57% control; post-IPO trading below offer",
+    "cat": [
+     "2026",
+     "Early COPD data"
+    ],
+    "act": "Check lock-up expiry (about 180 days after IPO) and current price"
+   },
+   "SDGR": {
+    "role": "Computational chemistry; predictive toxicology tool cited in FDA NAMs coverage; Claude for Life Sciences user",
+    "cat": [
+     "",
+     ""
+    ],
+    "act": "No 2026 financials gathered this session"
+   },
+   "ABSI": {
+    "role": "AI biologics peer; Chai co-founder Josh Meier worked there",
+    "cat": [
+     "",
+     ""
+    ],
+    "act": "No 2025-2026 primary data gathered this session"
+   },
+   "MRNA": {
+    "role": "mRNA; BARDA collaboration restructured; GPT-Rosalind partner",
+    "risk": "Federal mRNA funding retreat",
+    "cat": [
+     "",
+     ""
+    ],
+    "act": "No 2026 financials gathered this session"
+   },
+   "BNTX": {
+    "role": "mRNA oncology peer to the Stargate personalized-vaccine pitch [ANALYSIS]",
+    "cat": [
+     "",
+     ""
+    ],
+    "act": "No primary data gathered this session"
+   },
+   "TMO": {
+    "role": "NVIDIA autonomous-lab partner; GPT-Rosalind partner",
+    "cat": [
+     "",
+     ""
+    ],
+    "act": "Track autonomous lab revenue disclosures"
+   },
+   "AZN": {
+    "role": "MFN deal; $50B U.S. pledge by 2030",
+    "cat": [
+     "2030",
+     "U.S. investment window"
+    ],
+    "act": "Confirm tariff tier"
+   },
+   "JNJ": {
+    "role": "$55B+ U.S. pledge",
+    "cat": [
+     "",
+     ""
+    ],
+    "act": "Confirm tariff tier"
+   },
+   "ABBV": {
+    "role": "Ended Calico partnership (2025-11); $10B+ U.S. capital",
+    "cat": [
+     "",
+     ""
+    ]
    }
   },
   "nodeTicker": {
@@ -28846,6 +50891,312 @@ window.CASE = {
     "who": "",
     "sig": "Drive lasers for ASML's light source",
     "route": "No listed route given on page"
+   },
+   {
+    "node": "epic",
+    "n": "Epic Systems",
+    "val": "Not disclosed",
+    "date": "2026",
+    "who": "Founder-controlled (Judy Faulkner)",
+    "sig": "Cosmos ~300M de-identified patients; reported FTC probe Aug 2026",
+    "route": "Microsoft (MSFT) as Dragon supplier; CLEAR (YOU) integration"
+   },
+   {
+    "node": "abridge",
+    "n": "Abridge",
+    "val": "$5.3B",
+    "date": "2026-06-11",
+    "who": "Eli Lilly (strategic), NVentures; ~$830M raised",
+    "sig": "VA enterprise scribe; NVIDIA foundation model",
+    "route": "NVIDIA (NVDA), Eli Lilly (LLY)"
+   },
+   {
+    "node": "idme",
+    "n": "ID.me",
+    "val": "Not disclosed",
+    "date": "2025-12-16",
+    "who": "Not researched",
+    "sig": "Primary Medicare.gov sign-in; ~80M IAL2 users",
+    "route": "None direct"
+   },
+   {
+    "node": "credal",
+    "n": "Credal AI",
+    "val": "Not disclosed",
+    "date": "2025",
+    "who": "Founded by two Palantir alumni",
+    "sig": "ACF grant screening [VERIFY]",
+    "route": "Palantir (PLTR) adjacency"
+   },
+   {
+    "node": "zyter",
+    "n": "Zyter",
+    "val": "Not disclosed",
+    "date": "2026",
+    "who": "Not researched",
+    "sig": "WISeR Arizona; uses Palantir infrastructure [VERIFY]",
+    "route": "Palantir (PLTR)"
+   },
+   {
+    "node": "humata",
+    "n": "Humata Health",
+    "val": "Not disclosed",
+    "date": "2025",
+    "who": "Blue Venture Fund, LRVHealth, 406 Ventures, Highmark Ventures",
+    "sig": "WISeR Oklahoma",
+    "route": "None direct"
+   },
+   {
+    "node": "coherehealth",
+    "n": "Cohere Health",
+    "val": "Not disclosed",
+    "date": "2025",
+    "who": "Not researched",
+    "sig": "WISeR Texas",
+    "route": "None direct"
+   },
+   {
+    "node": "innovaccer",
+    "n": "Innovaccer",
+    "val": "Not disclosed",
+    "date": "2025",
+    "who": "Not researched",
+    "sig": "WISeR Ohio; aligned network early adopter",
+    "route": "None direct"
+   },
+   {
+    "node": "knowtex",
+    "n": "Knowtex",
+    "val": "Not disclosed",
+    "date": "2026-09",
+    "who": "Not researched",
+    "sig": "VA enterprise scribe vendor",
+    "route": "None direct"
+   },
+   {
+    "node": "bwell",
+    "n": "b.well Connected Health",
+    "val": "Not disclosed",
+    "date": "2026-01",
+    "who": "Not researched",
+    "sig": "Records connector for ChatGPT Health; Google partner",
+    "route": "Alphabet (GOOGL) partnership"
+   },
+   {
+    "node": "perimeter",
+    "n": "Perimeter",
+    "val": "$60M raised",
+    "date": "2026-04-13",
+    "who": "Kanders & Company, SCS Financial, Goldcrest Capital, Four Cities Capital, SAIF; Ginkgo ~20%",
+    "sig": "Biosurveillance priced as defense tech",
+    "route": "Ginkgo (DNA)"
+   },
+   {
+    "node": "biomade",
+    "n": "BioMADE",
+    "val": "Nonprofit; $87.5M + $450M DoD",
+    "date": "2023",
+    "who": "DoD, NSF, Commerce, Minnesota DEED, 300+ members",
+    "sig": "Federal pilot-plant buildout",
+    "route": "None listed"
+   },
+   {
+    "node": "m42",
+    "n": "M42",
+    "val": "",
+    "date": "",
+    "who": "G42, Mubadala",
+    "sig": "Sovereign genome asset inside G42 group",
+    "route": "Microsoft (MSFT) holds G42 stake"
+   },
+   {
+    "node": "lifera",
+    "n": "Lifera",
+    "val": "",
+    "date": "",
+    "who": "PIF",
+    "sig": "Saudi biotech and genomics vehicle",
+    "route": "None listed"
+   },
+   {
+    "node": "verily",
+    "n": "Verily",
+    "val": "",
+    "date": "",
+    "who": "Alphabet",
+    "sig": "CDC wastewater contractor",
+    "route": "Alphabet (GOOGL)"
+   },
+   {
+    "node": "solugen",
+    "n": "Solugen",
+    "val": "",
+    "date": "2024-11",
+    "who": "",
+    "sig": "DBIMP awardee",
+    "route": "None listed"
+   },
+   {
+    "node": "neuralink",
+    "n": "Neuralink",
+    "val": "$9B pre-money",
+    "date": "2025-06-02",
+    "who": "ARK, DFJ Growth, Founders Fund, G42, Human Capital, Lightspeed, QIA, Sequoia, Thrive, Valor, Vy",
+    "sig": "21 participants Jan 2026; high-volume production planned 2026",
+    "route": "None listed"
+   },
+   {
+    "node": "merge",
+    "n": "Merge Labs",
+    "val": "$850M",
+    "date": "2026-01-15",
+    "who": "OpenAI (largest), Bain Capital Ventures, Gabe Newell",
+    "sig": "Noninvasive ultrasound BCI; no trial timeline",
+    "route": "None listed (OpenAI private; MSFT holds OpenAI stake)"
+   },
+   {
+    "node": "precision",
+    "n": "Precision Neuroscience",
+    "val": "Just over $1B",
+    "date": "2026-09-24",
+    "who": "Pershing Square, Ackman Oxman Institute, Mubadala Capital, ARK, Duquesne, B Capital, Hitachi Ventures and others",
+    "sig": "510(k) for temporary use; Medtronic partner",
+    "route": "Medtronic partnership (MDT)"
+   },
+   {
+    "node": "synchron",
+    "n": "Synchron",
+    "val": "Not disclosed; $345M raised",
+    "date": "2025-11-06",
+    "who": "Double Point, ARCH, Khosla, Bezos Expeditions, QIA, IQT, Australia NRF, K5 Global, Protocol Labs",
+    "sig": "Pivotal trial 2026; PMA target 2028",
+    "route": "Apple (AAPL) and NVIDIA (NVDA) as platform partners"
+   },
+   {
+    "node": "sciencecorp",
+    "n": "Science Corp",
+    "val": "Not disclosed; ~$490M raised",
+    "date": "2026-03-05",
+    "who": "Lightspeed, Khosla, Y Combinator, IQT, Quiet Capital",
+    "sig": "PRIMA EU approval Jul 2026",
+    "route": "None listed"
+   },
+   {
+    "node": "paradromics",
+    "n": "Paradromics",
+    "val": "Not disclosed",
+    "date": "2025-02",
+    "who": "NEOM Investment Fund and others",
+    "sig": "Connect-One IDE trial",
+    "route": "None listed"
+   },
+   {
+    "node": "blackrockneuro",
+    "n": "Blackrock Neurotech",
+    "val": "Tether majority for $200M",
+    "date": "2024-04-29",
+    "who": "Tether; Peter Thiel (2021 stake)",
+    "sig": "Rename and open-source OS stated",
+    "route": "None listed"
+   },
+   {
+    "node": "oura",
+    "n": "Oura",
+    "val": "$11B (private); ~$13.48B at IPO midpoint",
+    "date": "2025-10-14",
+    "who": "Fidelity, Iconiq, Whale Rock, Atreides, Dexcom",
+    "sig": "IPO postponed 2026-09-29",
+    "route": "Dexcom (DXCM) as prior investor"
+   },
+   {
+    "node": "whoop",
+    "n": "WHOOP",
+    "val": "$10.1B",
+    "date": "2026-03-31",
+    "who": "Collaborative Fund, Abbott, Mayo Clinic",
+    "sig": "Navy CREW work",
+    "route": "Abbott (ABT)"
+   },
+   {
+    "node": "isomorphic",
+    "n": "Isomorphic Labs",
+    "val": ">=$40B in talks (reported); $2.1B Series B",
+    "date": "2026-10-08",
+    "who": "Thrive, Alphabet, GV, CapitalG, Temasek, MGX, UK Sovereign AI Fund",
+    "sig": "Sovereign AI capital enters AI drug discovery",
+    "route": "Alphabet (GOOGL)"
+   },
+   {
+    "node": "lila",
+    "n": "Lila Sciences",
+    "val": "$8.5B pre-money talks (reported); >$1.3B in Oct 2025",
+    "date": "2026-06-03",
+    "who": "Flagship, NVIDIA NVentures, General Catalyst, ADIA subsidiary, CalPERS (reported)",
+    "sig": "AI-run autonomous labs priced as AI labs",
+    "route": "NVIDIA (NVDA) via NVentures"
+   },
+   {
+    "node": "chai",
+    "n": "Chai Discovery",
+    "val": "$3.8B",
+    "date": "2026-07-14",
+    "who": "Index Ventures, Kleiner Perkins, Sequoia, Dimension, Oak HC/FT, General Catalyst, OpenAI (seed)",
+    "sig": "OpenAI-incubated design models sold to Lilly, Pfizer, Novartis",
+    "route": "Partners LLY, PFE, NVS"
+   },
+   {
+    "node": "newlimit",
+    "n": "NewLimit",
+    "val": "$3.1B",
+    "date": "2026-06-02",
+    "who": "Founders Fund, Thrive, Greenoaks, Quiet, Kleiner Perkins, Eli Lilly Ventures, Valor Equity Partners",
+    "sig": "Founders Fund and Lilly in longevity",
+    "route": "Eli Lilly (LLY) via Lilly Ventures; Coinbase (COIN) indirect via founder"
+   },
+   {
+    "node": "retro",
+    "n": "Retro Biosciences",
+    "val": "$1.8B",
+    "date": "2026-05-22",
+    "who": "Sam Altman; Sandro Salsano-led round",
+    "sig": "OpenAI-linked longevity",
+    "route": "None listed"
+   },
+   {
+    "node": "xaira",
+    "n": "Xaira Therapeutics",
+    "val": "$1B committed",
+    "date": "2024",
+    "who": "ARCH, Foresite, F-Prime, NEA, Sequoia, Lux, Lightspeed",
+    "sig": "Nobel-linked protein design team",
+    "route": "None listed"
+   },
+   {
+    "node": "altos",
+    "n": "Altos Labs",
+    "val": "$3B committed",
+    "date": "2022",
+    "who": "Yuri Milner and Jeff Bezos reported",
+    "sig": "Largest single longevity raise",
+    "route": "None listed"
+   },
+   {
+    "node": "blueprint",
+    "n": "Blueprint",
+    "val": "$60M raised",
+    "date": "2025-10-29",
+    "who": "~50 individuals incl. Naval Ravikant, Balaji Srinivasan, Winklevoss brothers",
+    "sig": "Consumer longevity",
+    "route": "None listed"
+   },
+   {
+    "node": "calico",
+    "n": "Calico",
+    "val": "Alphabet unit",
+    "date": "2025-11",
+    "who": "Alphabet; AbbVie (exited)",
+    "sig": "Partner exit after ALS failure",
+    "route": "Alphabet (GOOGL); AbbVie (ABBV)"
    }
   ],
   "catalysts": [
@@ -30587,6 +52938,1798 @@ window.CASE = {
      "https://app.notion.com/p/40d709555ee28101b720c635edb2f547"
     ]
    ]
+  ],
+  [
+   "HHS strategy, models, IT leadership",
+   [
+    [
+     "HHS unveils AI strategy (HHS)",
+     "https://www.hhs.gov/press-room/hhs-unveils-ai-strategy-to-transform-agency-operations.html"
+    ],
+    [
+     "HHS Artificial Intelligence Strategy (PDF)",
+     "https://www.hhs.gov/sites/default/files/hhs-artificial-intelligence-strategy.pdf"
+    ],
+    [
+     "HHS releases AI strategy, OneHHS (Nextgov)",
+     "https://www.nextgov.com/artificial-intelligence/2025/12/hhs-releases-ai-strategy-united-new-onehhs-approach/409983/"
+    ],
+    [
+     "HHS asks all employees to start using ChatGPT (404 Media)",
+     "https://www.404media.co/hhs-asks-all-employees-to-start-using-chatgpt/"
+    ],
+    [
+     "Clark Minor out as HHS IT chief (FedScoop)",
+     "https://fedscoop.com/clark-minor-out-as-health-human-services-it-chief/"
+    ],
+    [
+     "US health agency ramps up AI use (PharmaLetter)",
+     "https://www.thepharmaletter.com/pharma-news/us-health-agency-ramps-up-ai-use-as-transparency-gaps-persist"
+    ],
+    [
+     "HHS reports 271 AI use cases in 2024 (CDO Magazine)",
+     "https://www.cdomagazine.tech/us-federal-news-bureau/hhs-reports-271-ai-use-cases-in-2024-66-increase-from-2023"
+    ],
+    [
+     "Trump directs government to cease using Anthropic (Defense One)",
+     "https://www.defenseone.com/threats/2026/02/trump-directs-government-immediately-cease-using-anthropic-technology/411776/"
+    ],
+    [
+     "Agencies begin to shed Anthropic contracts (Nextgov)",
+     "https://www.nextgov.com/acquisition/2026/03/agencies-begin-shed-anthropic-contracts-following-trumps-directive/411823/"
+    ]
+   ]
+  ],
+  [
+   "CMS Health Tech Ecosystem and identity",
+   [
+    [
+     "White House, tech leaders commit to patient-centric ecosystem (CMS)",
+     "https://www.cms.gov/newsroom/press-releases/white-house-tech-leaders-commit-create-patient-centric-healthcare-ecosystem"
+    ],
+    [
+     "CMS launches first wave of HealthTech Ecosystem tools (CMS)",
+     "https://www.cms.gov/newsroom/press-releases/cms-launches-first-wave-healthtech-ecosystem-tools-fast-tracking-fully-digital-patient-centered"
+    ],
+    [
+     "CMS Health Tech Ecosystem data network pledgees (CMS)",
+     "https://www.cms.gov/initiatives/health-technology-ecosystem/overview/early-adopters-all-pledgees/data-networks"
+    ],
+    [
+     "White House event unveils CMS Health Tech Ecosystem (HIT Consultant)",
+     "https://hitconsultant.net/2025/07/30/white-house-event-unveils-cms-health-tech-ecosystem-initiative"
+    ],
+    [
+     "Anthropic signs CMS Health Tech Ecosystem pledge (Anthropic)",
+     "https://anthropic.com/news/anthropic-signs-cms-health-tech-ecosystem-pledge-to-advance-healthcare-interoperability"
+    ],
+    [
+     "CMS sets 2026 goalposts for tech and AI (Fierce Healthcare)",
+     "https://www.fiercehealthcare.com/ai-and-machine-learning/cms-trying-speed-tech-innovation-and-ai-patients-major-goalposts-set-2026"
+    ],
+    [
+     "CMS creates Office of Health Technology and Products (MedTech Dive)",
+     "https://medtechdive.com/news/cms-creates-office-health-technology-products-ai-interoperability/822814"
+    ],
+    [
+     "Digital health tools in Medicare (KFF)",
+     "https://www.kff.org/medicare/digital-health-tools-and-technologies-an-overview-of-cms-recent-efforts-to-expand-their-use-in-medicare/"
+    ],
+    [
+     "CLEAR inks contract with CMS to kill the clipboard (Fierce Healthcare)",
+     "https://www.fiercehealthcare.com/health-tech/clear-inks-contract-cms-kill-clipboard"
+    ],
+    [
+     "ID.me awarded CMS contract for Medicare.gov (ID Tech Wire)",
+     "https://idtechwire.com/id-me-awarded-cms-contract-to-support-medicare-gov-sign-in-and-identity-verification/"
+    ],
+    [
+     "CMS touts biometric verification for Medicare.gov (Nextgov)",
+     "https://nextgov.com/digital-government/2026/03/cms-touts-early-uses-new-biometric-verification-tools-medicaregov/412065"
+    ],
+    [
+     "HHS push for AI doctors, WaPo summary (Discoveries in Health Policy)",
+     "https://www.discoveriesinhealthpolicy.com/2026/06/news-summary-wapo-hhs-wants-to-bring.html"
+    ],
+    [
+     "RFK Jr. on wearables (MacTech)",
+     "https://www.mactech.com/2025/06/25/us-health-and-human-secretary-wants-to-help-make-american-healthy-again-with-wearables-such-as-the-apple-watch"
+    ]
+   ]
+  ],
+  [
+   "CMS program integrity and WISeR",
+   [
+    [
+     "Meet the 6 vendors in the CMS WISeR Model (TechTarget)",
+     "https://www.techtarget.com/revcyclemanagement/feature/Meet-the-6-vendors-participating-in-the-CMS-WISeR-Model"
+    ],
+    [
+     "Palantir Medicare AI experiment (Common Dreams)",
+     "https://www.commondreams.org/news/palantir-medicare-ai-experiment"
+    ],
+    [
+     "CMS AI fraud detection (FedScoop)",
+     "https://fedscoop.com/cms-ai-fraud-detection-medicare-medicaid-programs/"
+    ],
+    [
+     "Medicaid Fraud War Room fast facts (CMS)",
+     "https://www.cms.gov/files/document/medicaid-fraud-war-room-fast-facts.pdf"
+    ],
+    [
+     "CMS witness testimony, House E&C O&I, Mar 17 2026",
+     "https://d1dth6e84htgma.cloudfront.net/03_17_2026_OI_Hearing_Witness_Testimony_Brandt_27650dea5c.pdf"
+    ],
+    [
+     "Oz: about $100B of theft a year (24/7 Wall St.)",
+     "https://247wallst.com/investing/2026/09/09/dr-oz-were-experiencing-about-100-billion-of-theft-a-year-in-medicare-and-medicaid-fraud/"
+    ]
+   ]
+  ],
+  [
+   "NIH, CDC, ARPA-H",
+   [
+    [
+     "NIH and CMS build autism data platform (Healthcare IT News)",
+     "https://www.healthcareitnews.com/news/nih-and-cms-build-autism-data-platform"
+    ],
+    [
+     "NIH launches $50M Autism Data Science Initiative (NIH)",
+     "https://www.nih.gov/news-events/news-releases/nih-launches-fifty-million-autism-data-science-initiative-unlock-causes-improve-outcomes"
+    ],
+    [
+     "NIH Data COUNTS and the Real-World Data Network (Zintellect)",
+     "https://www.zintellect.com/Opportunity/Details/NIH-DPCPSI-ODSS-DataCOUNTS-2026"
+    ],
+    [
+     "EO 14355, Unlocking Cures for Pediatric Cancer with AI (White House)",
+     "https://www.whitehouse.gov/presidential-actions/2025/09/unlocking-cures-for-pediatric-cancer-with-artificial-intelligence"
+    ],
+    [
+     "White House picks Bhattacharya to run CDC (Healio)",
+     "https://www.healio.com/news/infectious-disease/20260219/white-house-picks-nih-director-bhattacharya-to-run-cdc-for-now"
+    ],
+    [
+     "Two top aides to RFK Jr. leaving HHS (CNN via ABC17)",
+     "https://abc17news.com/cnn-health/2026/02/13/two-top-aides-to-rfk-jr-leaving-hhs-as-part-of-leadership-shakeup/"
+    ],
+    [
+     "Jim O'Neill (investor) (Wikipedia)",
+     "https://en.wikipedia.org/wiki/Jim_O%27Neill_(investor)"
+    ],
+    [
+     "Palantir wins $443M CDC contract (Potomac Officers Club)",
+     "https://potomacofficersclub.com/news/palantir-wins-443m-contract-to-streamline-software-offerings-for-cdc"
+    ],
+    [
+     "HHS Palantir SHARE BPA (FedScoop)",
+     "https://fedscoop.com/hhs-palantir-platform-bpa/"
+    ],
+    [
+     "HHS Palantir Gotham licenses (GovForum)",
+     "https://www.insights.govforum.io/?p=265183"
+    ],
+    [
+     "Palantir ICCM task on SHARE BPA (Orange Slices)",
+     "https://orangeslices.ai/palantir-scores-20m-hhs-integrated-care-and-case-management-iccm-and-database-support-task-on-share-bpa"
+    ],
+    [
+     "ARPA-H partners with Palantir (Business Wire)",
+     "https://www.businesswire.com/news/home/20240620001188/en/The-Advanced-Research-Projects-Agency-for-Health-ARPA-H-Partners-with-Palantir-to-Accelerate-Health-Outcomes-By-Leveraging-AIML-and-Data-Software-Tooling/"
+    ],
+    [
+     "Delivery order 75N99226F00002 (HigherGov)",
+     "https://www.highergov.com/contract/47QTCA24D004L-75N99226F00002/"
+    ],
+    [
+     "WIRED: HHS uses Palantir AI tools to screen grants",
+     "https://www.wired.com/story/hhs-is-using-ai-tools-from-palantir-to-target-dei-and-gender-ideology-in-grants/"
+    ],
+    [
+     "Palantir $60M NIH N3C contract (ExecutiveBiz)",
+     "https://blog.executivebiz.com/tag/n3c/"
+    ]
+   ]
+  ],
+  [
+   "FDA",
+   [
+    [
+     "FDA names AI chief Jeremy Walsh (MedTech Dive)",
+     "https://www.medtechdive.com/news/FDA-names-AI-chief-Jeremy-Walsh/747662/"
+    ],
+    [
+     "FDA's Elsa switches from Claude to Gemini (Clinical Leader)",
+     "https://www.clinicalleader.com/doc/fda-s-elsa-ai-switches-from-claude-to-gemini-what-sponsors-need-to-know-0001"
+    ],
+    [
+     "FDA expands AI with agentic deployment (OncoDaily)",
+     "https://oncodaily.com/industry/fda-2"
+    ],
+    [
+     "FDA launches agencywide AI tool (Axios)",
+     "https://www.axios.com/2025/06/02/fda-launches-ai-tool"
+    ],
+    [
+     "Makary resignation (Fortune)",
+     "https://fortune.com/2026/05/12/fda-commissioner-dr-marty-makary-resignation/"
+    ],
+    [
+     "Makary's reforms will live on (BioSpace)",
+     "https://www.biospace.com/fda/makarys-reforms-will-live-on-at-fda-even-as-leadership-turns-over"
+    ],
+    [
+     "Trump announces Heidi Overton nomination (Nutritional Outlook)",
+     "https://www.nutritionaloutlook.com/view/president-trump-announces-nomination-of-heidi-overton-md-as-fda-s-new-commissioner"
+    ]
+   ]
+  ],
+  [
+   "VA",
+   [
+    [
+     "VA completes 2026 EHR deployments (Nextgov)",
+     "https://www.nextgov.com/modernization/2026/10/va-completes-2026-ehr-system-deployments-final-two-site-go-lives/416823/"
+    ],
+    [
+     "House panel subpoenas Oracle heads (Nextgov)",
+     "https://www.nextgov.com/modernization/2026/09/house-panel-subpoenas-oracle-heads-over-va-health-record-overhauls-ballooning-costs/415791/"
+    ],
+    [
+     "$27 billion and counting (Rep. Budzinski)",
+     "https://budzinski.house.gov/posts/27-billion-and-counting-budzinski-demands-answers-from-va-admin-on-exploding-oracle-costs"
+    ],
+    [
+     "VA selects Abridge for ambient scribe (Nextgov)",
+     "https://nextgov.com/artificial-intelligence/2026/09/va-selects-abridge-ambient-scribe-under-new-enterprise-contract/416140"
+    ]
+   ]
+  ],
+  [
+   "DOGE and Medicaid to enforcement",
+   [
+    [
+     "DOGE accesses CMS contracting and payment systems (Arnold & Porter)",
+     "https://www.arnoldporter.com/en/perspectives/blogs/enforcement-edge/2025/02/doge-accesses-cms-contracting-and-payment-systems"
+    ],
+    [
+     "Judge declines to block DOGE access to Labor, Health, CFPB data (Bloomberg Law)",
+     "https://news.bloomberglaw.com/litigation/judge-declines-to-block-doge-access-to-labor-health-cfpb-data"
+    ],
+    [
+     "EO 14243, Eliminating Information Silos (Federal Register)",
+     "https://www.govinfo.gov/content/pkg/FR-2025-03-25/html/2025-05214.htm"
+    ],
+    [
+     "Amy Gleason (Wikipedia)",
+     "https://en.wikipedia.org/wiki/Amy_Gleason"
+    ],
+    [
+     "HHS may resume sharing some Medicaid data with ICE (AP via News4Jax)",
+     "https://www.news4jax.com/health/2026/01/05/after-judges-ruling-hhs-authorized-to-resume-sharing-some-medicaid-data-with-deportation-officers/"
+    ],
+    [
+     "California v. HHS docket (Civil Rights Clearinghouse)",
+     "https://clearinghouse.net/case/46754/"
+    ],
+    [
+     "States move to enforce Medicaid order (Vermont AG)",
+     "https://ago.vermont.gov/blog/2026/03/27/attorney-general-clark-asks-court-enforce-order-blocking-hhs-sharing-large-swaths-medicaid-data-ice"
+    ],
+    [
+     "Government pauses Medicaid data use for ICE (Law360/MLex)",
+     "https://www.mlex.com/healthcare-authority/other/articles/2472169/gov-t-pauses-medicaid-data-use-for-ice-amid-injunction-fight"
+    ],
+    [
+     "Judge seeks clearer limits on ICE use of Medicaid data (Law360/MLex)",
+     "https://www.mlex.com/healthcare-authority/digital-health-technology/articles/2522812/calif-judge-seeks-clearer-limits-on-ice-use-of-medicaid-data"
+    ],
+    [
+     "ICE allegedly uses Palantir tool tracking Medicaid data (Fortune)",
+     "https://fortune.com/2026/01/26/ice-allegedly-uses-palantir-tool-tracking-medicaid-data/"
+    ],
+    [
+     "DHS $1B Palantir blanket purchase agreement (SiliconANGLE)",
+     "https://siliconangle.com/?p=731512"
+    ]
+   ]
+  ],
+  [
+   "Private platforms",
+   [
+    [
+     "Ellison on healthcare data fragmentation (Healthcare IT News)",
+     "https://healthcareitnews.com/node/551281"
+    ],
+    [
+     "WGS 2025: unified national data (Gulf News)",
+     "https://gulfnews.com/uae/science/wgs-2025-unified-national-data-will-empower-ai-to-transform-government-services-1.500034960"
+    ],
+    [
+     "Judy Faulkner unveils healthcare intelligence (Becker's)",
+     "https://www.beckershospitalreview.com/healthcare-information-technology/ehrs/judy-faulkner-unveils-healthcare-intelligence/"
+    ],
+    [
+     "Epic, FTC and agentic AI (MedCity News)",
+     "https://medcitynews.com/2026/08/epic-ftc-agentic-ai/"
+    ],
+    [
+     "Epic confronts succession, AI strategy, antitrust (STAT)",
+     "https://www.statnews.com/2026/08/17/ugm-epic-confronts-challenges-succession-ai-strategy-antitrust/"
+    ],
+    [
+     "Particle's antitrust claims against Epic proceed (HIT Consultant)",
+     "https://hitconsultant.net/2025/09/08/us-court-allows-particles-antitrust-claims-against-epic-to-proceed/"
+    ],
+    [
+     "OpenAI launches ChatGPT Health (Fortune)",
+     "https://fortune.com/2026/01/07/openai-launches-chatgpt-health-in-a-push-to-become-a-hub-for-personal-health-data/?rand=8593"
+    ],
+    [
+     "Anthropic launches Claude for Healthcare (Fierce Healthcare)",
+     "https://www.fiercehealthcare.com/ai-and-machine-learning/jpm26-anthropic-launches-claude-healthcare-targeting-health-systems-payers"
+    ],
+    [
+     "Abridge, NVIDIA, Eli Lilly (Fortune)",
+     "https://fortune.com/2026/06/11/abridge-operating-system-medicine-nvidia-eli-lilly-artsight/"
+    ]
+   ]
+  ],
+  [
+   "Rules and people",
+   [
+    [
+     "HTI-5 proposed rule (Healthcare Dive)",
+     "https://www.healthcaredive.com/news/astp-onc-hti5-ai-model-cards-health-it-certification-proposed-rule/808582/"
+    ],
+    [
+     "Thomas Keane named national coordinator (Healthcare Dive)",
+     "https://www.healthcaredive.com/news/astp-national-coordinator-health-it-thomas-keane/749654/"
+    ],
+    [
+     "Chris Klomp (Wikipedia)",
+     "https://en.wikipedia.org/wiki/Chris_Klomp"
+    ],
+    [
+     "Kimberly Brandt (CMS leadership page)",
+     "https://www.cms.gov/about-cms/who-we-are/leadership/kimberly-brandt-0"
+    ],
+    [
+     "Kim Brandt joins Noridian's board (Lewiston Tribune)",
+     "https://lmtribune.com/northwest/kim-brandt-joins-noridians-board-of-directors0e7f5a9c"
+    ],
+    [
+     "Dr. Oz vows to sell healthcare stocks (Fierce Healthcare)",
+     "https://www.fiercehealthcare.com/regulatory/dr-oz-vows-sell-healthcare-stocks-once-confirmed-run-cms"
+    ],
+    [
+     "Warren demands Medicare nominee Oz sever industry ties (AOL/Reuters)",
+     "https://www.aol.com/news/us-senator-warren-demands-medicare-110909023.html"
+    ]
+   ]
+  ],
+  [
+   "United Kingdom",
+   [
+    [
+     "UK reviewing Palantir NHS contract (The Star/Reuters)",
+     "https://www.thestar.com.my/tech/tech-news/2026/06/09/uk-reviewing-palantir039s-nhs-contract-amid-pressure-to-use-break-clause"
+    ],
+    [
+     "UK reviewing £330M NHS deal with Palantir (The Next Web)",
+     "https://thenextweb.com/news/uk-nhs-palantir-contract-review-break-clause"
+    ],
+    [
+     "NHS Palantir platform business case under scrutiny (Computing)",
+     "https://www.computing.co.uk/news/2026/government/nhs-palantir-platform-s-business-case-under-scrutiny-as-costs-rise-and-benefits-fall"
+    ]
+   ]
+  ],
+  [
+   "Congress, NSCEB, NDAA",
+   [
+    [
+     "Ropes & Gray: BIOSECURE Act enacted",
+     "https://www.ropesgray.com/en/insights/alerts/2026/01/biosecure-act-enacted"
+    ],
+    [
+     "Goodwin: Final FY 2026 NDAA includes BIOSECURE",
+     "https://www.goodwinlaw.com/en/insights/publications/2025/12/alerts-otherindustries-final-fy-2026-ndaa-includes-biosecure"
+    ],
+    [
+     "INSS/NDU: Biotechnology in the FY 2026 NDAA",
+     "https://inss.ndu.edu/news/Article/4358679/biotechnology-in-the-fy-2026-ndaa-strategic-implications-and-recommendations-fo/"
+    ],
+    [
+     "Defence Finance Monitor: Biotech takes center stage",
+     "https://defencefinancemonitor.substack.com/p/biotech-takes-center-stage-in-us"
+    ],
+    [
+     "CRS IN12546: NSCEB final report",
+     "https://www.everycrsreport.com/reports/IN12546.html"
+    ],
+    [
+     "Wikipedia: NSCEB",
+     "https://en.wikipedia.org/wiki/National_Security_Commission_on_Emerging_Biotechnology"
+    ],
+    [
+     "NSCEB: Young named Chair (Sep 12, 2024)",
+     "https://biotech.senate.gov/?p=9192"
+    ],
+    [
+     "NSCEB: FY27 NDAA biotech provisions (Jun 8, 2026)",
+     "https://www.biotech.senate.gov/press-releases/biotech-further-cemented-as-top-tech-priority-for-defense/"
+    ],
+    [
+     "NSCEB monthly newsletter, July 2026",
+     "https://www.biotech.senate.gov/?p=12687"
+    ],
+    [
+     "Sen. Young: National Biotechnology Initiative Act",
+     "https://www.young.senate.gov/?p=12463"
+    ],
+    [
+     "Sen. Young: NSCEB statement on 1260H list (Jun 10, 2026)",
+     "https://www.young.senate.gov/newsroom/press-releases/nsceb-statement-on-pentagons-updated-list-of-chinese-military-companies-operating-in-u-s/"
+    ],
+    [
+     "National Law Review: NSCEB assesses U.S.-China competition",
+     "https://natlawreview.com/article/nsceb-assesses-future-us-china-biotechnology-competition"
+    ]
+   ]
+  ],
+  [
+   "White House, OSTP, AI-bio",
+   [
+    [
+     "CRS IN12554: Executive actions on gain-of-function research",
+     "https://www.everycrsreport.com/reports/IN12554.html"
+    ],
+    [
+     "GovInfo: EO 14292",
+     "https://www.govinfo.gov/content/pkg/DCPD-202500561/html/DCPD-202500561.htm"
+    ],
+    [
+     "NIH NOT-OD-25-112",
+     "https://grants.nih.gov/grants/guide/notice-files/NOT-OD-25-112.html"
+    ],
+    [
+     "CASRAI: USG Policy for Stopping High-Risk Life Sciences Research",
+     "https://casrai.org/news/usg-policy-stopping-high-risk-life-sciences-research-institutions-2026"
+    ],
+    [
+     "CRS IF13269: AI and Biosecurity (Sep 2026)",
+     "https://www.everycrsreport.com/files/2026-09-15_IF13269_ce00f5cc67016c1b700886eee55c89c14884d48b.html"
+    ],
+    [
+     "CRS IF13269: AI and Biosecurity (Jul 2026)",
+     "https://www.everycrsreport.com/files/2026-07-16_IF13269_753d0316d2bb9ed4d75d363e287bcacbf13b40fb.html"
+    ],
+    [
+     "Sen. Ossoff letter to OSTP (Jun 24, 2026)",
+     "https://www.ossoff.senate.gov/wp-content/uploads/2026/07/26.06.24_OSTP-AI-Letter.pdf"
+    ],
+    [
+     "JD Supra: EO 14236 revokes EO 14081",
+     "https://jdsupra.com/legalnews/president-trump-revokes-2022-eo-on-8979367"
+    ]
+   ]
+  ],
+  [
+   "DoD, DARPA, biomanufacturing",
+   [
+    [
+     "DARPA: Michael Koeris",
+     "https://www.darpa.mil/about/people/michael-koeris"
+    ],
+    [
+     "DARPA: Biological Technologies Office",
+     "https://www.darpa.mil/about/offices/bto"
+    ],
+    [
+     "DARPA BTO newsletter, July 2026",
+     "https://www.darpa.mil/sites/default/files/attachment/2026-10/darpa-newsletter-bto-july-2026.pdf"
+    ],
+    [
+     "SynBioBeta: DARPA Switch",
+     "https://www.synbiobeta.com/read/darpas-switch-program-seeks-to-advance-biomanufacturing-for-defense-needs"
+    ],
+    [
+     "ExecutiveGov: EQUIP-A-Pharma",
+     "https://www.executivegov.com/articles/new-darpa-program-to-establish-digital-regulatory-framework-for-pharmaceutical-products"
+    ],
+    [
+     "DARPA: ReSource (2019)",
+     "https://www.darpa.mil/news/2019/sourcing-military-waste-critical-stocks"
+    ],
+    [
+     "EverGlade: DARPA Generative Optogenetics",
+     "https://everglade.com/2026/01/06/"
+    ],
+    [
+     "GrantedAI: DARPA FSHARP and SWiFT",
+     "https://grantedai.com/blog/darpa-synthetic-blood-fsharp-46-million-swift-sbir-powdered-blood-battlefield-medicine-2026"
+    ],
+    [
+     "AABB: DARPA launches RAPIID",
+     "https://www.aabb.org/news-resources/news/article/2026/06/10/darpa-launches-rapiid-program-to-advance-shelf-stable-blood-analogs"
+    ],
+    [
+     "Pharmaceutical Technology: Ginkgo DARPA RPM award",
+     "https://www.pharmaceutical-tech.com/news/ginkgo-bioworks-awarded-darpa-contract-to-reimagine"
+    ],
+    [
+     "ExecutiveGov: First DBIMP awardee",
+     "https://www.executivegov.com/2024/07/pentagon-selects-first-awardee-for-distributed-bioindustrial-manufacturing-program/"
+    ],
+    [
+     "Renewable Carbon: Final nine DBIMP awards",
+     "https://renewable-carbon.eu/news/dod-releases-final-nine-awards-for-distributed-bioindustrial-manufacturing-program/"
+    ],
+    [
+     "SynBioBeta: Visolis DBIMP expansion",
+     "https://www.synbiobeta.com/read/visolis-secures-2.86-million-expansion-from-u.s.-department-of-war-for-bioindustrial-manufacturing"
+    ],
+    [
+     "FoodNavigator: BioMADE pilot plants",
+     "https://www.foodnavigator.com/Article/2026/05/11/precision-fermentation-us-to-open-pilot-plants-as-issue-of-national-security/"
+    ],
+    [
+     "Renewable Carbon: BioMADE $132M Minnesota facility",
+     "https://renewable-carbon.eu/news/?p=162735"
+    ],
+    [
+     "Business Wire: DoD awards $87.5M to BioMADE",
+     "https://www.businesswire.com/news/home/20201020006281/en/U.S.-Department-of-Defense-Awards-87.5-Million-to-EBRC-led-BioMADE-Establishing-the-Bioindustrial-Manufacturing-Innovation-Institute"
+    ],
+    [
+     "Battelle: DTRA STEP 2.0",
+     "https://www.battelle.org/insights/newsroom/news-details/2026/03/02/battelle-wins--93m-contract-to-boost-us-biodefense--biological-threat-readiness"
+    ],
+    [
+     "JPEO-CBRND: Emergent anthrax vaccine award",
+     "https://www.jpeocbrnd.osd.mil/News-and-Media/News/Article/3650473/jpeo-cbrnd-awards-2358-million-procurement-contract-to-emergent-biosolutions-to/"
+    ],
+    [
+     "IARPA: B24IC",
+     "https://www.iarpa.gov/research-programs/b24ic"
+    ]
+   ]
+  ],
+  [
+   "HHS, CDC, DHS",
+   [
+    [
+     "HHS: Winding down mRNA development under BARDA",
+     "https://hhs.gov/press-room/hhs-winds-down-mrna-development-under-barda.html"
+    ],
+    [
+     "ASPR: FY 2027 budget request highlights",
+     "https://akastage-www.aspr.gov/about/budget/fy-2027-presidents-budget-request-highlights"
+    ],
+    [
+     "STAT: ASPR and PAHPA reauthorization",
+     "https://www.statnews.com/2026/06/16/aspr-pandemic-all-hazard-preparedness-act-reauthorization/"
+    ],
+    [
+     "AACOM: HELP nomination hearings for ASPR and CDC",
+     "https://www.aacom.org/news-reports/news/2026/07/27/help-committee-holds-nomination-hearings-for-aspr-and-cdc-leadership"
+    ],
+    [
+     "CDC: TGS passes one million participants",
+     "https://www.cdc.gov/media/releases/2026/2026-cdc-surpasses-1-million-voluntary-air-travel-participants-in-biosurveillance-program.html"
+    ],
+    [
+     "The Sick Times: Wastewater funding beyond fall 2026",
+     "https://thesicktimes.org/2026/06/30/wastewater-testing-is-vital-for-public-health-it-needs-sustained-funding-to-continue-beyond-fall-2026/"
+    ],
+    [
+     "FedHealthIT: CDC CFA director posting",
+     "https://www.insights.govforum.io/?p=279349"
+    ],
+    [
+     "Chemical Facility Security News: DHS CWMD office to close",
+     "https://chemical-facility-security-news.blogspot.com/2026/05/review-dhs-cwmd-office-to-close.html"
+    ],
+    [
+     "Grants.gov: FY2026 BioWatch grant program",
+     "https://simpler.grants.gov/opportunity/b7dc9f33-5b22-4af5-ba24-09b38ecc4b26"
+    ],
+    [
+     "HSToday: CWMD and BioWatch testimony",
+     "https://www.hstoday.us/federal-pages/dhs/cwmd-has-spun-down-worse-and-worse-with-flawed-biothreat-detection-lawmakers-told/"
+    ],
+    [
+     "GAO-21-292: Replacing BioWatch",
+     "https://gao.gov/products/gao-21-292"
+    ]
+   ]
+  ],
+  [
+   "In-Q-Tel, Ginkgo, Perimeter",
+   [
+    [
+     "IQT: Biotechnology impact story",
+     "https://iqt.org/impact-stories/biotechnology"
+    ],
+    [
+     "GovConWire: Bowsher to lead In-Q-Tel",
+     "https://www.govconwire.com/article/steve-bowsher-to-take-helm-of-in-q-tel-in-september"
+    ],
+    [
+     "SEC: Ginkgo Q4/FY2025 earnings release",
+     "https://www.sec.gov/Archives/edgar/data/1830214/000162828026012339/ex991earningspr.htm"
+    ],
+    [
+     "Ginkgo: Q2 2026 results",
+     "https://investors.ginkgobioworks.com/news/news-details/2026/Ginkgo-Bioworks-Reports-Second-Quarter-2026-Results-Wins-Government-Contracts-to-Build-Autonomous-Labs-at-MIT-Caltech-Northwestern-and-University-of-Maryland-2026-qs5ge_LiVB/default.aspx"
+    ],
+    [
+     "Index.vn: Ginkgo Q1 2026 call highlights",
+     "https://index.vn/en/news/ginkgo-bioworks-q1-2026-earnings-call-highlights"
+    ],
+    [
+     "GenomeWeb: Ginkgo spinning off biosecurity",
+     "https://www.genomeweb.com/business-news/ginkgo-spinning-biosecurity-business-reports-24-percent-decline-q4-revenue"
+    ],
+    [
+     "Tectonic: Ginkgo Biosecurity spins out as Perimeter",
+     "https://www.tectonicdefense.com/ginkgo-biosecurity-spins-out-as-perimeter/"
+    ],
+    [
+     "Panabee: Ginkgo divests biosecurity for 20% of Tower Biosecurity",
+     "https://www.panabee.com/news/ginkgo-bioworks-divests-biosecurity-operations-for-20-stake-in-tower-biosecurity"
+    ]
+   ]
+  ],
+  [
+   "China",
+   [
+    [
+     "Ropes & Gray: Updated 1260H list includes WuXi AppTec",
+     "https://www.ropesgray.com/en/insights/alerts/2026/06/department-of-defense-releases-updated-1260h-list-that-includes-wuxi-apptec"
+    ],
+    [
+     "DLA Piper: U.S.-China life sciences policy developments (Aug 2026)",
+     "https://www.dlapiper.com/en-us/insights/publications/2026/08/us-china-life-sciences-policy-developments-top-points-for-companies"
+    ],
+    [
+     "Washington Times: State Dept compliance report on China (Apr 2025)",
+     "https://www.washingtontimes.com/news/2025/apr/22/us-says-china-using-ai-boost-biological-weapons-research/"
+    ],
+    [
+     "House China Select Committee: Gallagher letter on G42",
+     "https://chinaselectcommittee.house.gov/media/press-releases/gallagher-calls-usg-investigate-ai-firm-g42-ties-prc-military-intelligence"
+    ]
+   ]
+  ],
+  [
+   "Gulf",
+   [
+    [
+     "Wikipedia: G42",
+     "https://en.wikipedia.org/wiki/G42_(company)"
+    ],
+    [
+     "The National: Abu Dhabi Biobank",
+     "https://www.thenationalnews.com/news/uae/2026/04/03/inside-abu-dhabis-cutting-edge-biobank-hailed-as-missing-link-in-precision-healthcare-vision"
+    ],
+    [
+     "Zawya: M42 appoints Dimitris Moulavasilis",
+     "https://www.zawya.com/press-release/people-in-the-news/m42-appoints-dimitris-moulavasilis-as-group-ceo-tr72shp9"
+    ],
+    [
+     "Emirates 24/7: Al Nowais named MoIAT Undersecretary",
+     "https://www.emirates247.com/technology/uae-president-appoints-hasan-al-nowais-undersecretary-of-ministry-of-industry-and-advanced-technology-2025-11-27-1.742934"
+    ],
+    [
+     "Gulf Business: Sheikh Tahnoon, Top 100 Global Arabs 2026",
+     "https://gulfbusiness.com/en/2026/lists/top-100-global-arabs-2026-gulfbusiness/1-hh-sheikh-tahnoon-bin-zayed-al-nahyan/"
+    ],
+    [
+     "BioProcess International: Saudi Arabia's biotech bet",
+     "https://www.bioprocessintl.com/global-markets/saudi-arabia-s-big-biotech-bet-from-regional-player-to-global-leader"
+    ],
+    [
+     "Vision 2030: Saudi Genome Program",
+     "https://umbraco.vision2030.gov.sa/v2030/v2030-projects/saudi-genome-program"
+    ]
+   ]
+  ],
+  [
+   "BCI companies",
+   [
+    [
+     "Fierce Biotech: Neuralink $650M Series E",
+     "https://www.fiercebiotech.com/medtech/neuralink-secures-650m-series-e-funding-expand-patient-access-brain-chip-technology"
+    ],
+    [
+     "Bloomberg: Neuralink raises $650M",
+     "https://www.bloomberg.com/news/articles/2025-06-02/neuralink-raises-650-million-in-late-stage-funding-round"
+    ],
+    [
+     "MedTech Dive: Neuralink $280M led by Founders Fund",
+     "https://www.medtechdive.com/news/elon-musk-neuralink-raises-280-million"
+    ],
+    [
+     "ROIC: Neuralink funding and Blindsight",
+     "https://www.roic.ai/news/neuralink-secures-650m-funding-advances-blindsight-vision-technology-toward-human-trials-01-28-2026"
+    ],
+    [
+     "LatestLY: Neuralink 21 participants",
+     "https://www.latestly.com/technology/science/elon-musks-neuralink-reaches-21-global-trial-participants-billionaire-announces-next-gen-telepathy-implant-and-vision-restoring-blindsight-launch-7293272.html"
+    ],
+    [
+     "Basenor: Neuralink 26th patient",
+     "https://basenor.com/blogs/news/neuralink-reaches-26th-patient-in-ongoing-brain-computer-interface-trials"
+    ],
+    [
+     "Reuters via The Star: Neuralink speech Breakthrough designation",
+     "https://www.thestar.com.my/tech/tech-news/2025/05/02/neuralink039s-speech-restoration-device-gets-fda039s-039breakthrough039-tag"
+    ],
+    [
+     "Drive Tesla Canada: Blindsight awaiting approval",
+     "https://driveteslacanada.ca/news/elon-musk-neuralink-blindsight-ready-regulatory-approval/"
+    ],
+    [
+     "Medtech Insight: Synchron $200M Series D",
+     "https://insights.citeline.com/medtech-insight/business/financing/synchron-secures-200m-series-d-plans-new-brain-interface-with-potentially-more-applications-U6MRTIDOVRHXXGDHGHUD35SA5Q"
+    ],
+    [
+     "Tech Times: Synchron pivotal trial 2026",
+     "https://www.techtimes.com/articles/317929/20260606/synchron-brain-implant-targets-2026-pivotal-trial-first-fda-approved-bci.htm"
+    ],
+    [
+     "Business Wire: Synchron Chiral with NVIDIA",
+     "https://www.businesswire.com/news/home/20250319964709/en"
+    ],
+    [
+     "Business Wire: Synchron and Apple BCI HID",
+     "https://www.businesswire.com/news/home/20250513927084/en/Synchron-To-Achieve-First-Native-Brain-Computer-Interface-Integration-with-iPhone-iPad-and-Apple-Vision-Pro"
+    ],
+    [
+     "Becker's: Bezos Expeditions, Gates Frontier in Synchron Series C",
+     "https://www.beckershospitalreview.com/innovation/bezos-expeditions-gates-frontier-back-brain-computer-interface-company-in-75m-financing-round.html"
+    ],
+    [
+     "MassDevice: Paradromics FDA IDE",
+     "https://www.massdevice.com/paradromics-fda-green-light-bci-study/"
+    ],
+    [
+     "Michigan Medicine: first Connect-One implant",
+     "https://www.michiganmedicine.org/news-release/university-michigan-implants-first-human-paradromics-wireless-brain-computer-interface-designed"
+    ],
+    [
+     "Newsio: Paradromics NEOM investment",
+     "https://newsio.com/2025/02/12/neuralink-competitor-paradromics-secures-investment-from-saudi-arabias-neom"
+    ],
+    [
+     "MedPath: Precision $250M Series D",
+     "https://trial.medpath.com/news/precision-neuroscience-raises-250m-series-d-to-push-its-brain-surface-interface-toward-permanent-implants"
+    ],
+    [
+     "Business Wire: Science Corp $230M Series C",
+     "https://www.businesswire.com/news/home/20260305896789/en/Science-Corporation-Closes-$230-Million-Series-C-to-Accelerate-Commercialization-of-PRIMA"
+    ],
+    [
+     "Advisory Board: PRIMA European approval",
+     "https://www.advisory.com/daily-briefing/2026/08/03/retinal-implant"
+    ],
+    [
+     "Founded: Neuralink co-founder Science Corp",
+     "https://www.founded.com/neuralink-co-founder-science-corp-restore-vision/"
+    ],
+    [
+     "Cointelegraph: Tether Evo $200M in Blackrock Neurotech",
+     "https://cointelegraph.com/news/tether-evo-invests-200-million-neurotech"
+    ],
+    [
+     "The Block: Ardoino on Blackrock Neurotech",
+     "https://www.theblock.co/post/359607/tether-brain-computer-elon-musk-neuralink"
+    ],
+    [
+     "Techloy: OpenAI leads $252M Merge Labs seed",
+     "https://www.techloy.com/openai-bets-252-million-on-a-brain-computer-interface-startup-founded-by-sam-altman.md"
+    ],
+    [
+     "Engadget: Altman and Blania to co-found Merge Labs",
+     "https://engadget.com/ai/openai-and-sam-altman-are-reportedly-creating-a-startup-rival-to-elon-musks-neuralink-123022874.html"
+    ],
+    [
+     "Techleap: Merge Labs $850M valuation (Aug 2025)",
+     "https://finder.techleap.nl/news/feed/sam-altman-backs-merge-labs-850m-valuation"
+    ]
+   ]
+  ],
+  [
+   "China BCI",
+   [
+    [
+     "Tom's Hardware: China BCI blueprint",
+     "https://www.tomshardware.com/tech-industry/china-bci-blueprint"
+    ],
+    [
+     "SCMP: China BCI plan",
+     "https://www.scmp.com/news/china/science/article/3321136/china-plots-pathway-tech-supremacy-through-brain-computer-interfaces"
+    ],
+    [
+     "China Daily: Beinao-1 and Beinao-2",
+     "https://global.chinadaily.com.cn/a/202606/15/WS6a2fc5cba310986e2b460147.html"
+    ],
+    [
+     "ZGC Group: Beinao-1 sixth implant",
+     "https://www.zgcgroup.com.cn/Home/NewsCenter/DomesticNews/art/2026/art_d2840aa19a3c4e34aaa1c1539f412f47.html"
+    ]
+   ]
+  ],
+  [
+   "Defense neurotech and sensing",
+   [
+    [
+     "DARPA: N3 six teams",
+     "https://www.darpa.mil/news/2019/nonsurgical-brain-machine-interfaces"
+    ],
+    [
+     "DARPA: In Vivo Nanoplatforms",
+     "https://www.darpa.mil/research/programs/in-vivo-nanoplatforms"
+    ],
+    [
+     "Snopes: Profusa biosensor and DARPA",
+     "https://www.snopes.com/fact-check/covid-detecting-microchip/"
+    ],
+    [
+     "Lead Stories: Profusa claim",
+     "https://leadstories.com/hoax-alert/2020/09/fact-check-profusa-others-have-not-created-an-implantable-chip-to-connect-us-to-the-internet-and-open-door-to-brave-new-world.html"
+    ],
+    [
+     "Defense One: DIU RATE wearables",
+     "https://www.defenseone.com/technology/2020/09/militarys-latest-wearables-can-detect-illness-two-days-you-get-sick/168664/"
+    ]
+   ]
+  ],
+  [
+   "Wearables",
+   [
+    [
+     "Business Wire: Oura U.S. manufacturing and FedStart",
+     "https://www.businesswire.com/news/home/20250827572356/en"
+    ],
+    [
+     "Tom's Guide: Oura military partnership and Palantir",
+     "https://www.tomsguide.com/wellness/smart-rings/oura-is-expanding-its-partnership-with-the-u-s-military-and-users-are-stressed-heres-what-that-means-for-your-data"
+    ],
+    [
+     "Breaking Defense: DHA cancels $96M wearable solicitation",
+     "https://breakingdefense.com/2025/03/this-acquisition-is-no-longer-required-defense-health-agency-cancels-96m-wearable-solicitation/"
+    ],
+    [
+     "Front Office Sports: Oura $11B",
+     "https://frontofficesports.com/ouras-11b-valuation-signals-leap-from-sports-to-defense/"
+    ],
+    [
+     "KuCoin: Oura confidential S-1",
+     "https://www.kucoin.com/news/flash/oura-health-files-for-us-ipo-valued-at-11b-after-875m-funding-round"
+    ],
+    [
+     "Fast Company: Oura S-1",
+     "https://www.fastcompany.com/91602373/oura-ring-ipo-stock-listing-date-nears-see-whats-in-sec-filing"
+    ],
+    [
+     "IPO Scoop: Oura IPO terms",
+     "https://www.iposcoop.com/?p=39366"
+    ],
+    [
+     "Renaissance Capital: Oura postpones IPO",
+     "https://www.renaissancecapital.com/IPO-Center/News/121945/smart-ring-maker-oura-postpones-2-1-billion-ipo"
+    ],
+    [
+     "MedTech Dive: WHOOP $575M Series G",
+     "https://www.medtechdive.com/news/whoop-raises-575m-adds-abbott-as-strategic-investor/816229/"
+    ],
+    [
+     "HLTH: WHOOP MIT Lincoln Laboratory contract",
+     "https://hlth.com/insights/news/whoop-secures-mit-lincoln-laboratory-contract-to-support-u-s-navy-crew-program"
+    ],
+    [
+     "AHCJ: Kennedy wearables goal",
+     "https://healthjournalism.org/blog/2025/07/rfk-jr-wants-us-all-to-wear-health-trackers-will-it-work/"
+    ],
+    [
+     "Tech Policy Press: wearables campaign critique",
+     "https://techpolicy.press/control-for-whom-keeping-an-eye-on-the-dark-side-of-americas-new-wearables-campaign"
+    ],
+    [
+     "HIT Consultant: CMS Health Tech Ecosystem",
+     "https://hitconsultant.net/2025/07/30/white-house-event-unveils-cms-health-tech-ecosystem-initiative"
+    ],
+    [
+     "Washington Examiner: ARPA-H biowearables",
+     "https://www.washingtonexaminer.com/?p=4486357"
+    ]
+   ]
+  ],
+  [
+   "IoB / IoBNT",
+   [
+    [
+     "RAND: What is the Internet of Bodies",
+     "https://www.rand.org/multimedia/video/2020/10/29/what-is-the-internet-of-bodies.html"
+    ],
+    [
+     "WEF: The Internet of Bodies Is Here",
+     "https://www.weforum.org/publications/the-internet-of-bodies-is-here-tackling-new-challenges-of-technology-governance/"
+    ],
+    [
+     "IoT Australia: The Internet of Bio-NanoThings",
+     "https://www.iotaustralia.org.au/2015/07/28/iotnewsglobal/get-ready-for-the-internet-of-bio-nanothings"
+    ],
+    [
+     "StatNano: IEEE 1906.1-2015",
+     "https://statnano.com/standard/ieee-sa/1114/IEEE-19061-2015"
+    ],
+    [
+     "Berkeley HWNI: neural dust",
+     "https://hwni.berkeley.edu/node/682"
+    ],
+    [
+     "MIT Technology Review: Dongjin Seo",
+     "https://www.technologyreview.com/innovator/dongjin-seo/"
+    ],
+    [
+     "BioSpace: Abilify MyCite approval",
+     "https://www.biospace.com/otsuka-and-proteus-win-first-fda-approval-for-pill-with-sensor-to-track-ingestion"
+    ],
+    [
+     "pharmaphorum: Proteus bankruptcy",
+     "https://pharmaphorum.com/news/smart-pill-firm-proteus-files-for-bankruptcy"
+    ],
+    [
+     "Lead Stories: Microsoft patent WO2020060606",
+     "https://leadstories.com/hoax-alert/2020/04/fact-check-microsoft-patent-application-w02020060606-does-not-involve-implanting-sensors-in-people-5g-or-vaccines.html"
+    ],
+    [
+     "Snopes: Microsoft patent 666",
+     "https://www.snopes.com/fact-check/microsoft-own-patent-666"
+    ]
+   ]
+  ],
+  [
+   "Neural data law",
+   [
+    [
+     "Inside Privacy: MIND Act",
+     "https://www.insideprivacy.com/health-privacy/congress-introduces-neural-data-bill/"
+    ],
+    [
+     "Congress.gov: S.2925 text",
+     "https://www.congress.gov/119/bills/s2925/BILLS-119s2925is.htm"
+    ],
+    [
+     "Risk Management: state neural data laws",
+     "https://www.rmmagazine.com/articles/article/2026/02/24/state-of-mind--the-new-landscape-of-neural-data-privacy-laws"
+    ],
+    [
+     "Vermont H.814 testimony: state neural data legislation (Apr 9, 2026)",
+     "https://legislature.vermont.gov/Documents/2026/Workgroups/Senate%20Health%20and%20Welfare/Bills/H.814/Witness%20Testimony/H.814~Ashley%20Collins~US%20State%20Legislation%20to%20Protect%20Neural%20Data~4-9-2026.pdf"
+    ],
+    [
+     "UNESCO UK: neurotechnology ethics framework",
+     "https://unesco.org.uk/news/unesco-adopts-first-global-framework-on-neurotechnology-ethics"
+    ]
+   ]
+  ],
+  [
+   "Claims ledger",
+   [
+    [
+     "Science Feedback: graphene oxide claim",
+     "https://science.feedback.org/review/there-is-no-conclusive-evidence-that-the-pfizer-biontech-covid-19-vaccine-contains-graphene-oxide/"
+    ],
+    [
+     "Maldita: University of Almería report",
+     "https://maldita.es/malditaciencia/20210707/informe-universidad-almeria-vacuna-covid-19-pfizer-grafeno-oxido/"
+    ],
+    [
+     "Lead Stories: vaccinated people do not emit MAC addresses",
+     "https://leadstories.com/hoax-alert/2024/01/fact-check-vaccinated-people-do-not-emit-mac-addresses-its-bluetooth-tech.html"
+    ],
+    [
+     "Full Fact: vaccine and Bluetooth",
+     "https://fullfact.org/online/vaccine-magnet-bluetooth/"
+    ],
+    [
+     "PolitiFact: no luciferase in COVID-19 vaccines",
+     "https://www.politifact.com/factchecks/2021/nov/19/blog-posting/no-covid-19-vaccines-dont-contain-luciferase/"
+    ],
+    [
+     "Gavi: luciferase claims",
+     "https://www.gavi.org/vaccineswork/claims-covid-jabs-can-be-used-track-you-luciferase-are-false-substance-isnt-even"
+    ],
+    [
+     "Full Fact: 5G and vaccine nanotechnology",
+     "https://fullfact.org/health/5G-covid-vaccine-deaths/"
+    ],
+    [
+     "Snopes: Profusa biosensor and DARPA",
+     "https://www.snopes.com/fact-check/covid-detecting-microchip/"
+    ],
+    [
+     "Lead Stories: Profusa claim",
+     "https://leadstories.com/hoax-alert/2020/09/fact-check-profusa-others-have-not-created-an-implantable-chip-to-connect-us-to-the-internet-and-open-door-to-brave-new-world.html"
+    ],
+    [
+     "Snopes: Microsoft patent 666",
+     "https://www.snopes.com/fact-check/microsoft-own-patent-666"
+    ],
+    [
+     "Lead Stories: Microsoft patent WO2020060606",
+     "https://leadstories.com/hoax-alert/2020/04/fact-check-microsoft-patent-application-w02020060606-does-not-involve-implanting-sensors-in-people-5g-or-vaccines.html"
+    ],
+    [
+     "Cointelegraph: patent claim propagation",
+     "https://cointelegraph.com/news/ex-cia-agent-drags-microsofts-crypto-patent-into-right-wing-conspiracy"
+    ],
+    [
+     "EUvsDisinfo: Microsoft patent 666",
+     "https://www.euvsdisinfo.eu/report/microsofts-patent-666-involves-microchipping-people-in-order-to-monitor-their-daily-activity-in-exchange-for-cryptocurrency/"
+    ],
+    [
+     "FactCheck.org: Gates Foundation goals",
+     "https://www.factcheck.org/2020/04/conspiracy-theory-misinterprets-goals-of-gates-foundation/"
+    ],
+    [
+     "AAP FactCheck: vaccine nanotech claim",
+     "https://www.aap.com.au/factcheck/vaccine-nanotech-claim-needs-a-check-up/"
+    ],
+    [
+     "Lead Stories: 2024 nanostructure paper",
+     "https://leadstories.com/hoax-alert/2024/09/fact-check-2024-paper-on-mrna-covid-19-vaccines-is-not-valid-scientific-study.html"
+    ],
+    [
+     "Full Fact: vaccines do not make you magnetic",
+     "https://fullfact.org/online/covid-vaccine-magnet/"
+    ],
+    [
+     "PolitiFact: Tenpenny magnet claim",
+     "https://api.politifact.com/factchecks/2021/jun/09/sherri-tenpenny/sherri-tenpenny-makes-false-covid-19-vaccine-magne/"
+    ],
+    [
+     "Lead Stories: WEF brain implants claim",
+     "https://leadstories.com/hoax-alert/2022/10/fact-check-wef-to-force-public-to-wear-brain-implants-so-the-elite-can-read-their-minds.html"
+    ],
+    [
+     "WEF: The Internet of Bodies Is Here",
+     "https://www.weforum.org/publications/the-internet-of-bodies-is-here-tackling-new-challenges-of-technology-governance/"
+    ],
+    [
+     "Berkeley HWNI: neural dust",
+     "https://hwni.berkeley.edu/node/682"
+    ],
+    [
+     "MIT Technology Review: smart dust and the brain (2013)",
+     "https://www.technologyreview.com/2013/07/16/177343/how-smart-dust-could-spy-on-your-brain/"
+    ],
+    [
+     "DARPA: N3 six teams",
+     "https://www.darpa.mil/news/2019/nonsurgical-brain-machine-interfaces"
+    ],
+    [
+     "IoT Australia: The Internet of Bio-NanoThings",
+     "https://www.iotaustralia.org.au/2015/07/28/iotnewsglobal/get-ready-for-the-internet-of-bio-nanothings"
+    ],
+    [
+     "BioSpace: Abilify MyCite approval",
+     "https://www.biospace.com/otsuka-and-proteus-win-first-fda-approval-for-pill-with-sensor-to-track-ingestion"
+    ],
+    [
+     "pharmaphorum: Proteus bankruptcy",
+     "https://pharmaphorum.com/news/smart-pill-firm-proteus-files-for-bankruptcy"
+    ],
+    [
+     "Business Wire: Oura U.S. manufacturing and FedStart",
+     "https://www.businesswire.com/news/home/20250827572356/en"
+    ],
+    [
+     "Tom's Guide: Oura military partnership and Palantir",
+     "https://www.tomsguide.com/wellness/smart-rings/oura-is-expanding-its-partnership-with-the-u-s-military-and-users-are-stressed-heres-what-that-means-for-your-data"
+    ],
+    [
+     "AHCJ: Kennedy wearables goal",
+     "https://healthjournalism.org/blog/2025/07/rfk-jr-wants-us-all-to-wear-health-trackers-will-it-work/"
+    ],
+    [
+     "greenMe: Oura ring on every citizen claim",
+     "https://www.greenme.it/scienza-e-tecnologia/trump-vuole-gli-americani-con-lanello-al-dito-obiettivo-uno-smart-ring-oura-al-dito-di-ogni-cittadino-entro-il-2030/"
+    ]
+   ]
+  ],
+  [
+   "Compute and AI discovery",
+   [
+    [
+     "NVIDIA and Lilly Announce Co-Innovation AI Lab (NVIDIA, 2026-01-12)",
+     "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-and-Lilly-Announce-Co-Innovation-AI-Lab-to-Reinvent-Drug-Discovery-in-the-Age-of-AI"
+    ],
+    [
+     "Lilly AI factory on NVIDIA Blackwell DGX SuperPOD (NVIDIA blog, 2025-10-28)",
+     "https://blogs.nvidia.com/blog/lilly-ai-factory-nvidia-blackwell-dgx-superpod"
+    ],
+    [
+     "NVIDIA BioNeMo Platform Adopted by Life Sciences Leaders (NVIDIA, 2026-01-12)",
+     "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-BioNeMo-Platform-Adopted-by-Life-Sciences-Leaders-to-Accelerate-AI-Driven-Drug-Discovery/default.aspx"
+    ],
+    [
+     "Lilly offers AI discovery models to biotech partners (pharmaphorum, 2025-09-09)",
+     "https://pharmaphorum.com/news/lilly-offers-ai-discovery-models-biotech-partners"
+    ],
+    [
+     "Isomorphic Labs announces $600M external investment round (Isomorphic, 2025-03-31)",
+     "https://isomorphiclabs.com/articles/isomorphic-labs-announces-600m-external-investment-round"
+    ],
+    [
+     "Isomorphic Labs raises $2.1 billion (YourStory, 2026-05-12)",
+     "https://yourstory.com/ai-story/isomorphic-labs-ai-drug-discovery-series-b-2026"
+    ],
+    [
+     "Isomorphic Labs in funding talks for at least $40 billion (Bloomberg Law, 2026-10-08)",
+     "https://news.bgov.com/private-equity/isomorphic-labs-in-funding-talks-for-at-least-40-billion-value"
+    ],
+    [
+     "Isomorphic Labs partners with Eli Lilly and Novartis (SiliconANGLE, 2024-01-07)",
+     "https://siliconangle.com/2024/01/07/ai-drug-discovery-startup-isomorphic-labs-partners-eli-lilly-novartis/"
+    ],
+    [
+     "The Nobel Prize in Chemistry awarded to David Baker, Demis Hassabis and John M Jumper (AlphaGalileo, 2024-10-09)",
+     "https://alphagalileo.org/en-gb/Item-Display/ItemId/250899"
+    ],
+    [
+     "New AI drug discovery powerhouse Xaira rises with $1B (Fierce Biotech)",
+     "https://www.fiercebiotech.com/biotech/new-ai-drug-discovery-powerhouse-xaira-rises-1b-funding"
+    ],
+    [
+     "From OpenAI's offices to a deal with Eli Lilly: Chai Discovery (TechCrunch, 2026-01-16)",
+     "https://techcrunch.com/2026/01/16/from-openais-offices-to-a-deal-with-eli-lilly-how-chai-discovery-became-one-of-the-flashiest-names-in-ai-drug-development/"
+    ],
+    [
+     "Chai brews up $400M series C (Fierce Biotech, 2026)",
+     "https://www.fiercebiotech.com/biotech/chai-brews-400m-series-c-fuel-ai-used-lilly-novartis-and-pfizer"
+    ],
+    [
+     "Chai Discovery Series C valuation (IntuitionLabs)",
+     "https://intuitionlabs.ai/articles/chai-discovery-series-c-valuation"
+    ],
+    [
+     "Generate Biomedicines files for IPO (Boston Globe, 2026-02-23)",
+     "https://www.bostonglobe.com/2026/02/23/business/generate-biomedicines-flagship-ipo/"
+    ],
+    [
+     "Generate Biomedicines prices IPO at $16 (IPO Scoop, 2026-02-27)",
+     "https://www.iposcoop.com/the-ipo-buzz-generate-biomedicines-genb-prices-ipo-at-16-mid-point/"
+    ],
+    [
+     "AI lab Lila Sciences tops $1.3 billion valuation with new Nvidia backing (Reuters via Yahoo, 2025-10-14)",
+     "https://finance.yahoo.com/news/exclusive-ai-lab-lila-sciences-101645837.html"
+    ],
+    [
+     "Lila Sciences said in talks for funds at $8.5 billion valuation (Bloomberg Law, 2026-06-03)",
+     "https://news.bloomberglaw.com/private-equity/lila-sciences-said-in-talks-for-funds-at-8-5-billion-valuation"
+    ],
+    [
+     "Recursion Q1 2026 results (Recursion, 2026-05-06)",
+     "https://ir.recursion.com/news-releases/news-release-details/recursion-reports-first-quarter-financial-results-and-provides"
+    ],
+    [
+     "Recursion slides on data update as new CEO named (GEN, 2025-11-09)",
+     "https://www.genengnews.com/topics/artificial-intelligence/stockwatch-recursion-slides-on-data-update-as-new-ceo-named/"
+    ],
+    [
+     "Recursion lays off 20% of staff (Fierce Biotech, 2025-06)",
+     "https://www.fiercebiotech.com/biotech/recursion-lays-20-staff-wake-pipeline-cutbacks"
+    ],
+    [
+     "Insilico ends 2025 with $293m Hong Kong IPO (pharmaphorum, 2025-12-31)",
+     "https://pharmaphorum.com/news/insilico-ends-2025-293m-hong-kong-ipo"
+    ],
+    [
+     "Insilico Medicine debuts on HKEX (Nasdaq.com, 2025-12-30)",
+     "https://www.nasdaq.com/articles/insilico-medicine-debuts-hkex-first-ai-driven-biotech-under-chapter-805"
+    ]
+   ]
+  ],
+  [
+   "Frontier labs and Stargate",
+   [
+    [
+     "Accelerating life sciences research with Retro Biosciences (OpenAI, 2025-08-22)",
+     "https://openai.com/index/accelerating-life-sciences-research-with-retro-biosciences"
+    ],
+    [
+     "OpenAI launches GPT-Rosalind (Manufacturing Chemist, 2026-04-17)",
+     "https://manufacturingchemist.com/openai-launches-gpt-rosalind-to-accelerate-life-sciences"
+    ],
+    [
+     "Claude for Life Sciences (Anthropic, 2025-10-20)",
+     "https://www.anthropic.com/news/claude-for-life-sciences"
+    ],
+    [
+     "Anthropic expands Claude AI tools for health and trials (IT Brief UK, 2026-01-19)",
+     "https://itbrief.co.uk/story/anthropic-expands-claude-ai-tools-for-health-trials"
+    ],
+    [
+     "Ellison says AI can make cancer vaccine available in 48 hrs (Business Today, 2025-01-22)",
+     "https://businesstoday.in/technology/artificial-intelligence/story/promise-of-the-future-oracles-larry-ellison-says-ai-can-make-cancer-vaccine-available-in-48-hrs-461641-2025-01-22"
+    ],
+    [
+     "Trump launches $500B Project Stargate (HLTH, 2025-01-23)",
+     "https://hlth.com/insights/news/trump-launches-500b-project-stargate-tech-giants-unite-for-ai-powered-healthcare-innovation-2025-01-23"
+    ]
+   ]
+  ],
+  [
+   "Pricing, tariffs, onshoring",
+   [
+    [
+     "Trump administration announces Section 232 tariffs on patented pharmaceuticals (Covington, 2026-04)",
+     "https://www.cov.com/en/news-and-insights/insights/2026/04/trump-administration-announces-section-232-tariffs-on-patented-pharmaceuticals-and-ingredients"
+    ],
+    [
+     "President Trump announces and then pauses 100 percent tariff on branded pharmaceuticals (Mondaq, 2025)",
+     "https://webiis10.mondaq.com/unitedstates/healthcare/1687748/president-trump-announces-and-then-pauses-100-percent-tariff-on-branded-pharmaceuticals-from-companies-without-us-factories-under-construction"
+    ],
+    [
+     "White House, Pfizer reach first MFN pricing agreement (BioPharm International, 2025-09-30)",
+     "https://www.biopharminternational.com/view/white-house-pfizer-reach-first-mfn-pricing-agreement-who-s-next-"
+    ],
+    [
+     "Lilly, Novo obesity drug pricing deal (Healthcare Dive, 2025-11-06)",
+     "https://www.healthcaredive.com/news/lilly-novo-trump-obesity-drug-pricing-deal-zepbound-wegovy/804937/"
+    ],
+    [
+     "About the Trump, Eli Lilly, Novo Nordisk deals on GLP-1 prices (NCPA, 2025-11-11)",
+     "https://ncpa.org/newsroom/qam/2025/11/11/about-trump-eli-lilly-novo-nordisk-deals-glp-1-prices"
+    ],
+    [
+     "TrumpRx (Wikipedia)",
+     "https://en.wikipedia.org/wiki/TrumpRx"
+    ],
+    [
+     "What to Know About the BALANCE Model and the Medicare GLP-1 Bridge (KFF)",
+     "https://www.kff.org/medicare/issue-brief/what-to-know-about-the-balance-model-for-glp-1s-in-medicare-and-medicaid/"
+    ],
+    [
+     "Eli Lilly's oral obesity pill approved (BioSpace, 2026-04-01)",
+     "https://www.biospace.com/fda/eli-lillys-oral-obesity-pill-approved-kicking-off-renewed-novo-rivalry"
+    ],
+    [
+     "LLY stock jumps as Q3 earnings beat estimates; 2026 sales view raised (Zacks, 2026-10-29)",
+     "https://www.zacks.com/stock/news/3018734/lly-stock-jumps-as-q3-earnings-beat-estimates-2026-sales-view-raised"
+    ],
+    [
+     "Big Pharma and US Manufacturing Investment (DCAT Value Chain Insights, 2025-08-21)",
+     "https://www.dcatvci.org/features/big-pharma-us-manufacturing-investment/"
+    ],
+    [
+     "With pharma throwing billions at US manufacturing, where is the cash going? (BioSpace, 2025-04-29)",
+     "https://www.biospace.com/business/with-pharma-throwing-billions-at-us-manufacturing-where-is-the-cash-going"
+    ],
+    [
+     "Eli Lilly advances U.S. manufacturing buildout (Industrial Info, 2026-09-24)",
+     "https://www.industrialinfo.com/news/article/eli-lilly-advances-us-manufacturing-buildout--362903"
+    ]
+   ]
+  ],
+  [
+   "FDA and HHS",
+   [
+    [
+     "HHS winds down mRNA development under BARDA (HHS, 2025-08-05)",
+     "https://hhs.gov/press-room/hhs-winds-down-mrna-development-under-barda.html"
+    ],
+    [
+     "FDA awards first-ever national priority vouchers to nine sponsors (HHS, 2025-10-16)",
+     "https://www.hhs.gov/press-room/fda-awards-first-ever-national-priority-vouchers-nine-sponsors.html"
+    ],
+    [
+     "FDA launches agency-wide AI tool Elsa (RAPS, 2025-06)",
+     "https://www.raps.org/resource/fda-launches-agency-wide-ai-tool-elsa-ahead-of-sc.html"
+    ],
+    [
+     "FDA animal testing phase-out targets monoclonal antibodies (Xtalks, 2025-04-14)",
+     "https://xtalks.com/fda-animal-testing-phase-out-targets-monoclonal-antibodies-4191/"
+    ],
+    [
+     "FDA Commissioner Marty Makary resigns after tumultuous tenure (KGOU/NPR, 2026-05-13)",
+     "https://www.kgou.org/2026-05-13/fda-commissioner-marty-makary-resigns-after-tumultuous-tenure"
+    ],
+    [
+     "President Trump announces nomination of Heidi Overton (Nutritional Outlook, 2026-08-19)",
+     "https://www.nutritionaloutlook.com/view/president-trump-announces-nomination-of-heidi-overton-md-as-fda-s-new-commissioner"
+    ],
+    [
+     "FDA commissioner nominee Heidi Overton Senate hearing (STAT, 2026-09-24)",
+     "https://www.statnews.com/2026/09/24/fda-commissioner-nominee-heidi-overton-senate-hearing-dodges-questions/"
+    ]
+   ]
+  ],
+  [
+   "China and BIOSECURE",
+   [
+    [
+     "BIOSECURE Act Enacted (Ropes & Gray, 2026-01)",
+     "https://www.ropesgray.com/en/insights/alerts/2026/01/biosecure-act-enacted"
+    ],
+    [
+     "WuXi AppTec added to DOW's 1260H list (Holland & Knight, 2026-06)",
+     "https://www.hklaw.com/en/insights/publications/2026/06/wuxi-apptec-added-to-dows-1260h-list"
+    ],
+    [
+     "Chinese drugmakers strike record $136 billion in cross-border licensing deals (Caixin, 2026-01-14)",
+     "https://www.caixinglobal.com/2026-01-14/chinese-drugmakers-strike-record-136-billion-in-cross-border-licensing-deals-102403540.html"
+    ],
+    [
+     "Next tech war: why biotech may become new US-China battleground (SCMP, 2026-06-02)",
+     "https://www.scmp.com/economy/global-economy/article/3355700/next-tech-war-why-biotech-may-become-new-us-china-battleground"
+    ],
+    [
+     "Trump admin mulls 'severe restrictions' on US pharmas licensing Chinese meds (Fierce Biotech, 2025-09)",
+     "https://www.fiercebiotech.com/biotech/trump-admin-mulls-severe-restrictions-us-pharmas-securing-chinese-meds-nyt"
+    ]
+   ]
+  ],
+  [
+   "Longevity and Gulf",
+   [
+    [
+     "Sam Altman-backed biotech raising $1 billion to extend human lifespan (Fortune, 2025-01-24)",
+     "https://www.fortune.com/2025/01/24/sam-altman-ai-biotech-1-billion-funding-extend-human-lifespan"
+    ],
+    [
+     "Retro Biosciences longevity valuation (STAT, 2026-05-22)",
+     "https://statnews.com/2026/05/22/retro-biosciences-longevity-valuation"
+    ],
+    [
+     "NewLimit raises $435M Series C, valuation hits $3.1B (Yahoo Finance, 2026-06-03)",
+     "https://finance.yahoo.com/sectors/healthcare/articles/newlimit-raises-435m-series-c-145642833.html"
+    ],
+    [
+     "Altos Labs launches with $3B financing and Hal Barron as CEO (The Pharma Letter)",
+     "https://thepharmaletter.com/biotechnology/altos-labs-launches-with-3b-financing-and-hal-barron-as-ceo"
+    ],
+    [
+     "Altos Labs snaps up Dorian Therapeutics (Longevity.Technology, 2025-05-23)",
+     "https://longevity.technology/news/altos-labs-snaps-up-dorian-therapeutics/"
+    ],
+    [
+     "Calico (company) (Wikipedia)",
+     "https://en.wikipedia.org/wiki/Calico_(company)"
+    ],
+    [
+     "AbbVie reportedly ends partnership with Alphabet-backed Calico (Stocktwits, 2025-11-12)",
+     "https://stocktwits.com/news-articles/markets/equity/abbvie-reportedly-ends-partnership-with-alphabet-backed-calico-life-sciences/cLPed8yREdo"
+    ],
+    [
+     "Saudi Crown Prince heads new bln-dollar foundation to decelerate aging (Al Arabiya, 2022-07)",
+     "https://english.alarabiya.net/News/gulf/2022/07/07/Exclusive-Saudi-s-Crown-Prince-heads-new-bln-dollar-foundation-to-decelerate-aging-"
+    ],
+    [
+     "Nonprofit organization in Riyadh funnels billions into extending healthy human lifespan (Arab News, 2024-06-25)",
+     "https://www.arabnews.com/node/2537546"
+    ],
+    [
+     "Hevolution Foundation announces multi-million dollar research grants (Oman Observer, 2023-12-02)",
+     "https://www.omanobserver.om/article/1146388/world/hevolution-foundation-announces-multi-million-dollar-research-grants"
+    ],
+    [
+     "Abu Dhabi sets standards for world-first Healthy Longevity Medicine Centres (DoH Abu Dhabi, 2024-10-31)",
+     "https://www.doh.gov.ae/en/news/abu-dhabi-sets-standards-for-the-world-first-healthy-longevity-medicine-centres"
+    ],
+    [
+     "M42 makes strategic investment in Juvenescence (Abu Dhabi Media Office, 2025-04-16)",
+     "https://www.mediaoffice.abudhabi/en/health/m42-makes-strategic-investment-in-juvenescence-and-forms-partnership-to-develop-therapeutics-for-age-related-diseases/"
+    ],
+    [
+     "More than 800,000 Emiratis contribute to UAE genome programme (The National, 2025-04-17)",
+     "https://www.thenationalnews.com/news/uae/2025/04/17/more-than-800000-emiratis-contribute-to-uae-genome-programme-to-boost-health-of-the-nation"
+    ],
+    [
+     "Bryan Johnson's Blueprint raises star-studded $60m funding round (Longevity.Technology, 2025-10-29)",
+     "https://longevity.technology/news/bryan-johnsons-blueprint-raises-star-studded-60m-funding-round/"
+    ],
+    [
+     "PayPal co-founder Peter Thiel invests $3.5M to stop aging (VentureBeat, 2006-09-19)",
+     "https://venturebeat.com/ai/paypal-co-founder-peter-thiel-invests-35m-to-stop-aging"
+    ],
+    [
+     "Vitalik Buterin donates more than $2 million to the Methuselah Foundation (Fight Aging!, 2021-05-17)",
+     "https://www.fightaging.org/archives/2021/05/vitalik-buterin-donates-more-than-2-million-to-the-methuselah-foundation/?nc"
+    ]
+   ]
   ]
+ ],
+ "claims": [
+  {
+   "id": "c01",
+   "claim": "COVID-19 vaccines (Pfizer-BioNTech) contain graphene oxide, 'over 99%'.",
+   "origin": "Pablo Campra (University of Almería) unreviewed interim report, June 28, 2021, on one sample supplied by Ricardo Delgado Martín (La Quinta Columna); amplified by the Stew Peters Show (Jane Ruby) July 5, 2021, after spreading on Spanish-language Telegram.",
+   "evidence": "Sample had no traceability; method compared microscopy images to literature; author wrote microscopy 'doesn't provide conclusive evidence'; University of Almería disowned it July 2, 2021; Comirnaty package insert lists no graphene oxide.",
+   "status": "CONTRADICTED",
+   "kernel": "A PNAS 2021 paper used graphene oxide in an unlicensed intranasal flu vaccine tested in animals; unrelated to licensed COVID-19 vaccines.",
+   "confirm": "Chain-of-custody vials tested by independent labs (Raman, XPS) showing graphene oxide.",
+   "refute": "Same testing showing listed components only.",
+   "nodes": [],
+   "src": [
+    [
+     "Science Feedback: graphene oxide claim",
+     "https://science.feedback.org/review/there-is-no-conclusive-evidence-that-the-pfizer-biontech-covid-19-vaccine-contains-graphene-oxide/"
+    ],
+    [
+     "Maldita: University of Almería report",
+     "https://maldita.es/malditaciencia/20210707/informe-universidad-almeria-vacuna-covid-19-pfizer-grafeno-oxido/"
+    ]
+   ]
+  },
+  {
+   "id": "c02",
+   "claim": "Vaccinated people emit Bluetooth MAC addresses.",
+   "origin": "Recurring social posts since 2021; Instagram screenshot Jan 23, 2024; train-station phone video.",
+   "evidence": "MAC addresses identify networked devices; crowds carry about two Bluetooth devices per person; FDA (2021) states vaccines contain no microchips; no ingredient can power a radio.",
+   "status": "CONTRADICTED",
+   "kernel": "Bluetooth devices broadcast identifiers; the detected signals came from phones, earbuds and similar devices.",
+   "confirm": "An identifier that follows a person with all devices removed inside a shielded room.",
+   "refute": "The same test showing no signal.",
+   "nodes": [],
+   "src": [
+    [
+     "Lead Stories: vaccinated people do not emit MAC addresses",
+     "https://leadstories.com/hoax-alert/2024/01/fact-check-vaccinated-people-do-not-emit-mac-addresses-its-bluetooth-tech.html"
+    ],
+    [
+     "Full Fact: vaccine and Bluetooth",
+     "https://fullfact.org/online/vaccine-magnet-bluetooth/"
+    ]
+   ]
+  },
+  {
+   "id": "c03",
+   "claim": "Vaccines contain the bioluminescent enzyme luciferase so people can be tracked.",
+   "origin": "Newsmax reporter Emerald Robinson tweet, November 2021 (Newsmax called it false; account suspended); repeated in a blog shared on Facebook.",
+   "evidence": "CDC ingredient lists for Pfizer, Moderna and J&J contain no luciferase. Cited Moderna patent US 10,703,789 mentions luciferase but not COVID-19 or SARS-CoV-2.",
+   "status": "CONTRADICTED",
+   "kernel": "The Moderna patent exists; luciferase is a standard lab reporter enzyme used in COVID research assays.",
+   "confirm": "Luciferase detected in marketed vials or listed in a regulator filing.",
+   "refute": "Published composition and lot-release testing.",
+   "nodes": [],
+   "src": [
+    [
+     "PolitiFact: no luciferase in COVID-19 vaccines",
+     "https://www.politifact.com/factchecks/2021/nov/19/blog-posting/no-covid-19-vaccines-dont-contain-luciferase/"
+    ],
+    [
+     "Gavi: luciferase claims",
+     "https://www.gavi.org/vaccineswork/claims-covid-jabs-can-be-used-track-you-luciferase-are-false-substance-isnt-even"
+    ]
+   ]
+  },
+  {
+   "id": "c04",
+   "claim": "5G signals activate nanotechnology in vaccines, causing spasms or death.",
+   "origin": "Facebook videos tracing to an InfoWars interview with psychiatrist Rima Laibow; earlier 2020 5G-COVID claims.",
+   "evidence": "mRNA vaccines contain lipid nanoparticles ('nano' refers to size); experts cite no physical or biological mechanism linking radio signals to them (Full Fact, May 31, 2023).",
+   "status": "CONTRADICTED",
+   "kernel": "Lipid nanoparticles are real vaccine components.",
+   "confirm": "Reproducible lab evidence of RF-triggered change in lipid nanoparticles at 5G exposure levels.",
+   "refute": "Physics of non-ionizing RF absorption at regulated limits.",
+   "nodes": [],
+   "src": [
+    [
+     "Full Fact: 5G and vaccine nanotechnology",
+     "https://fullfact.org/health/5G-covid-vaccine-deaths/"
+    ]
+   ]
+  },
+  {
+   "id": "c05",
+   "claim": "DARPA-funded hydrogel 'biochips' are injected (often via vaccines) to monitor, track and connect people to the internet.",
+   "origin": "Joseph Mercola article and tweet, Sept 15, 2020; revived after an April 2021 60 Minutes segment featuring former DARPA program manager Matt Hepburn.",
+   "evidence": "Profusa's hydrogel sensor (~5 mm) fluoresces with tissue chemistry and needs a separate reader; DARPA/JPEO-CBRND collaboration since at least 2018, added funding Aug 2019; not part of any vaccine. DARPA IVN sought nanoplatforms read externally without implanted electronics.",
+   "status": "PARTLY GROUNDED",
+   "kernel": "A DARPA-funded injectable hydrogel biosensor exists and was in late-stage testing.",
+   "confirm": "A vaccine label or regulator filing listing a sensor, or procurement for mass deployment.",
+   "refute": "Clearance documents limiting use to consented clinical settings.",
+   "nodes": [
+    "profusa",
+    "darpa",
+    "darpaivn"
+   ],
+   "src": [
+    [
+     "Snopes: Profusa biosensor and DARPA",
+     "https://www.snopes.com/fact-check/covid-detecting-microchip/"
+    ],
+    [
+     "Lead Stories: Profusa claim",
+     "https://leadstories.com/hoax-alert/2020/09/fact-check-profusa-others-have-not-created-an-implantable-chip-to-connect-us-to-the-internet-and-open-door-to-brave-new-world.html"
+    ],
+    [
+     "DARPA: In Vivo Nanoplatforms",
+     "https://www.darpa.mil/research/programs/in-vivo-nanoplatforms"
+    ]
+   ]
+  },
+  {
+   "id": "c06",
+   "claim": "Microsoft patent WO2020060606 ('666', 'World Order') will microchip people, linked to vaccines and 5G.",
+   "origin": "Social posts April 2020 (incl. April 18, 2020 Facebook post); Russian director Nikita Mikhalkov on RT; former CIA staffer Kevin Shipp tweets, Sept 2020.",
+   "evidence": "Patent application text: 'Human body activity associated with a task provided to a user may be used in a mining process of a cryptocurrency system'; sensor connected to or included in a user device such as a wearable or smartphone; filed June 20, 2019, published March 26, 2020; no implant, vaccine or 5G language. 'WO' is the WIPO prefix; 060606 is a sequence number.",
+   "status": "PARTLY GROUNDED",
+   "kernel": "The Microsoft application exists and proposes using device-sensed body-activity data in crypto mining and rewards.",
+   "confirm": "Claims or national-phase filings covering implanted sensors.",
+   "refute": "The published claim set; national-phase status not checked.",
+   "nodes": [
+    "msftpatent",
+    "msft"
+   ],
+   "src": [
+    [
+     "Lead Stories: Microsoft patent WO2020060606",
+     "https://leadstories.com/hoax-alert/2020/04/fact-check-microsoft-patent-application-w02020060606-does-not-involve-implanting-sensors-in-people-5g-or-vaccines.html"
+    ],
+    [
+     "Snopes: Microsoft patent 666",
+     "https://www.snopes.com/fact-check/microsoft-own-patent-666"
+    ],
+    [
+     "Cointelegraph: patent claim propagation",
+     "https://cointelegraph.com/news/ex-cia-agent-drags-microsofts-crypto-patent-into-right-wing-conspiracy"
+    ],
+    [
+     "EUvsDisinfo: Microsoft patent 666",
+     "https://www.euvsdisinfo.eu/report/microsofts-patent-666-involves-microchipping-people-in-order-to-monitor-their-daily-activity-in-exchange-for-cryptocurrency/"
+    ]
+   ]
+  },
+  {
+   "id": "c07",
+   "claim": "Bill Gates will use COVID-19 vaccines to implant tracking microchips via 'quantum-dot tattoos'.",
+   "origin": "Gates Reddit AMA, March 18, 2020 ('digital certificates'); Biohackinfo.com, March 19, 2020; amplified by Emerald Robinson (Newsmax) and discussed on Fox News.",
+   "evidence": "The Gates-funded study (Science Translational Medicine, Dec 2019) used microneedle patches to place near-infrared dye in skin as a vaccination record, readable from under one foot; no microchip; Gates Foundation said it is unrelated to COVID-19 vaccines and the certificate remark concerned home testing.",
+   "status": "PARTLY GROUNDED",
+   "kernel": "The Gates-funded skin-record study and the digital certificate remark are real.",
+   "confirm": "A licensed vaccine whose label includes a marker or chip.",
+   "refute": "Vaccine labels and lot-release data.",
+   "nodes": [
+    "gates-bill"
+   ],
+   "src": [
+    [
+     "FactCheck.org: Gates Foundation goals",
+     "https://www.factcheck.org/2020/04/conspiracy-theory-misinterprets-goals-of-gates-foundation/"
+    ]
+   ]
+  },
+  {
+   "id": "c08",
+   "claim": "Microscopy shows self-assembling electronic nanostructures or 'nanobots' in Pfizer and Moderna vials.",
+   "origin": "NZ GP Matt Shelton at a Wellington protest, Feb 18, 2022; Young Mi Lee and Daniel Broudy, International Journal of Vaccine Theory, Practice, and Research, July 18, 2024; promoted by The People's Voice and briefly by John Campbell.",
+   "evidence": "Medsafe and Pfizer ingredient data list no electronic components; lipid nanoparticles are too small for ordinary microscopes; journal not indexed by NLM; reviewers called the paper 'scientific gibberish' and noted listed materials such as beer and a cordless phone charger.",
+   "status": "CONTRADICTED",
+   "kernel": "Lipid nanoparticles exist in mRNA vaccines; drying artifacts can form crystal patterns [ANALYSIS].",
+   "confirm": "Independent electron microscopy and elemental analysis of sealed, traceable vials showing metal or semiconductor structures.",
+   "refute": "The same analysis showing lipids and salts only.",
+   "nodes": [],
+   "src": [
+    [
+     "AAP FactCheck: vaccine nanotech claim",
+     "https://www.aap.com.au/factcheck/vaccine-nanotech-claim-needs-a-check-up/"
+    ],
+    [
+     "Lead Stories: 2024 nanostructure paper",
+     "https://leadstories.com/hoax-alert/2024/09/fact-check-2024-paper-on-mrna-covid-19-vaccines-is-not-valid-scientific-study.html"
+    ]
+   ]
+  },
+  {
+   "id": "c09",
+   "claim": "Vaccines make the injection site magnetic because they contain metal or a chip.",
+   "origin": "'Magnet challenge' videos, May 2021; Sherri Tenpenny in Ohio legislative testimony, June 2021.",
+   "evidence": "Ingredient lists (Pfizer, AstraZeneca, Moderna) contain nothing magnetic in usable quantity; videos show adhesion without 'tenting'.",
+   "status": "CONTRADICTED",
+   "kernel": "",
+   "confirm": "Controlled test on a non-adhesive surface showing magnetic pull.",
+   "refute": "The same test, consistent with ingredient lists.",
+   "nodes": [],
+   "src": [
+    [
+     "Full Fact: vaccines do not make you magnetic",
+     "https://fullfact.org/online/covid-vaccine-magnet/"
+    ],
+    [
+     "PolitiFact: Tenpenny magnet claim",
+     "https://api.politifact.com/factchecks/2021/jun/09/sherri-tenpenny/sherri-tenpenny-makes-false-covid-19-vaccine-magne/"
+    ]
+   ]
+  },
+  {
+   "id": "c10",
+   "claim": "The WEF plans to force brain implants on the public so elites can read minds.",
+   "origin": "NewsPunch, Sept 21, 2022, using a 2017 Schwab-Sergey Brin conversation; earlier posts citing a 2016 Schwab interview.",
+   "evidence": "In the 2017 clip Schwab asks whether implants are imaginable within 10 years; Brin says it is imaginable but hard to predict; no plan discussed. The WEF's 2020 IoB paper is a governance paper warning of privacy and discrimination risks.",
+   "status": "PARTLY GROUNDED",
+   "kernel": "Schwab publicly speculated about brain implants; the WEF publishes on the Internet of Bodies.",
+   "confirm": "A WEF or government program document proposing compulsory implants.",
+   "refute": "Absence of any such program across WEF publications.",
+   "nodes": [
+    "wefiob"
+   ],
+   "src": [
+    [
+     "Lead Stories: WEF brain implants claim",
+     "https://leadstories.com/hoax-alert/2022/10/fact-check-wef-to-force-public-to-wear-brain-implants-so-the-elite-can-read-their-minds.html"
+    ],
+    [
+     "WEF: The Internet of Bodies Is Here",
+     "https://www.weforum.org/publications/the-internet-of-bodies-is-here-tackling-new-challenges-of-technology-governance/"
+    ]
+   ]
+  },
+  {
+   "id": "c11",
+   "claim": "'Smart dust' sensors are dispersed or implanted to monitor people covertly.",
+   "origin": "Recurring online commentary; mainstream framing such as MIT Technology Review (2013). Specific propagators not traced in this build.",
+   "evidence": "Berkeley neural dust (2016) was millimeter-scale, ultrasound-powered, tested in rat muscle and nerve; DARPA IVN nanoplatforms required external readout and the program is complete; no source shows covert human deployment.",
+   "status": "PARTLY GROUNDED",
+   "kernel": "Neural dust and DARPA nanoplatform research exist; neural dust co-developer DJ Seo co-founded Neuralink.",
+   "confirm": "Procurement, patent or field records of covert dispersal in people.",
+   "refute": "Documented power and readout range limits.",
+   "nodes": [
+    "neuraldust",
+    "seo-dj",
+    "darpaivn"
+   ],
+   "src": [
+    [
+     "Berkeley HWNI: neural dust",
+     "https://hwni.berkeley.edu/node/682"
+    ],
+    [
+     "MIT Technology Review: Dongjin Seo",
+     "https://www.technologyreview.com/innovator/dongjin-seo/"
+    ],
+    [
+     "MIT Technology Review: smart dust and the brain (2013)",
+     "https://www.technologyreview.com/2013/07/16/177343/how-smart-dust-could-spy-on-your-brain/"
+    ],
+    [
+     "DARPA: In Vivo Nanoplatforms",
+     "https://www.darpa.mil/research/programs/in-vivo-nanoplatforms"
+    ]
+   ]
+  },
+  {
+   "id": "c12",
+   "claim": "DARPA is building nonsurgical mind-reading or mind-control interfaces for soldiers, including nanoparticles delivered to the brain.",
+   "origin": "Commentary on DARPA N3 since 2019. Specific propagators not traced in this build.",
+   "evidence": "N3 (2018-) funded six teams (May 2019) for bidirectional wearable BMIs for able-bodied service members; Battelle used nonsurgically delivered nanotransducers; Rice used magnetogenetics; uses cited include UAV swarms and cyber defense; human trials planned for the final phase.",
+   "status": "PARTLY GROUNDED",
+   "kernel": "DARPA's own description confirms read-write neural interface research for troops, including nanotransducers.",
+   "confirm": "Records of fielded N3-derived systems or covert use.",
+   "refute": "Program close-out reports showing lab-stage results only.",
+   "nodes": [
+    "darpan3",
+    "darpa",
+    "emondi"
+   ],
+   "src": [
+    [
+     "DARPA: N3 six teams",
+     "https://www.darpa.mil/news/2019/nonsurgical-brain-machine-interfaces"
+    ]
+   ]
+  },
+  {
+   "id": "c13",
+   "claim": "IoBNT nanonetworks are already deployed in people through injections, connecting them to the internet.",
+   "origin": "Online posts citing IoBNT literature alongside MAC-address claims (seen in search results; content not reviewed).",
+   "evidence": "The founding IoBNT paper (IEEE Communications Magazine, March 2015) describes a research paradigm and states most work is theoretical; IEEE 1906.1-2015 is a recommended-practice framework; vaccine ingredient lists contain no such components.",
+   "status": "PARTLY GROUNDED",
+   "kernel": "IoBNT is a real academic field with NSF funding and an IEEE standard.",
+   "confirm": "Peer-reviewed in-human demonstration of networked molecular communication with an internet gateway.",
+   "refute": "Field reviews describing lab-stage status.",
+   "nodes": [
+    "iobnt",
+    "akyildiz",
+    "ieee1906"
+   ],
+   "src": [
+    [
+     "IoT Australia: The Internet of Bio-NanoThings",
+     "https://www.iotaustralia.org.au/2015/07/28/iotnewsglobal/get-ready-for-the-internet-of-bio-nanothings"
+    ],
+    [
+     "StatNano: IEEE 1906.1-2015",
+     "https://statnano.com/standard/ieee-sa/1114/IEEE-19061-2015"
+    ]
+   ]
+  },
+  {
+   "id": "c14",
+   "claim": "Ingestible 'digital pills' are a system to surveil and enforce medication compliance.",
+   "origin": "Commentary following the 2017 Abilify MyCite approval. Specific propagators not traced in this build.",
+   "evidence": "MyCite (FDA, Nov 13, 2017) signals a wearable patch and app; sharing requires patient consent; detection can be delayed or fail; label says ability to improve compliance 'has not been established'; Proteus filed for bankruptcy June 2020.",
+   "status": "PARTLY GROUNDED",
+   "kernel": "An FDA-approved ingestible tracking system exists.",
+   "confirm": "Court orders, payer rules or institutional mandates requiring sensor pills.",
+   "refute": "Label and consent requirements.",
+   "nodes": [
+    "mycite",
+    "otsuka"
+   ],
+   "src": [
+    [
+     "BioSpace: Abilify MyCite approval",
+     "https://www.biospace.com/otsuka-and-proteus-win-first-fda-approval-for-pill-with-sensor-to-track-ingestion"
+    ],
+    [
+     "pharmaphorum: Proteus bankruptcy",
+     "https://pharmaphorum.com/news/smart-pill-firm-proteus-files-for-bankruptcy"
+    ]
+   ]
+  },
+  {
+   "id": "c15",
+   "claim": "Oura sends ring users' health data to Palantir and the Pentagon.",
+   "origin": "User backlash after Oura's Aug 27, 2025 announcement; covered by Tom's Guide and others.",
+   "evidence": "Oura's release: DoD population-level readiness analysis on Palantir FedStart (IL5). Oura later said Palantir provides the security layer for some DoD projects and is not a partner; CEO Tom Hale said consumer data is handled separately; policy says no third-party sharing without consent.",
+   "status": "PARTLY GROUNDED",
+   "kernel": "DoD enterprise ring data runs on Palantir-hosted FedStart infrastructure.",
+   "confirm": "Data processing agreements, S-1 disclosures or audits showing consumer data in government systems.",
+   "refute": "Independent audit of data segregation.",
+   "nodes": [
+    "oura",
+    "palantir",
+    "hale-tom",
+    "dow"
+   ],
+   "src": [
+    [
+     "Business Wire: Oura U.S. manufacturing and FedStart",
+     "https://www.businesswire.com/news/home/20250827572356/en"
+    ],
+    [
+     "Tom's Guide: Oura military partnership and Palantir",
+     "https://www.tomsguide.com/wellness/smart-rings/oura-is-expanding-its-partnership-with-the-u-s-military-and-users-are-stressed-heres-what-that-means-for-your-data"
+    ]
+   ]
+  },
+  {
+   "id": "c16",
+   "claim": "The government will put a tracker (some posts say an Oura ring) on every American.",
+   "origin": "Kennedy testimony June 24, 2025; derivative posts including an Italian article claiming Trump wants an Oura ring on every citizen by 2030.",
+   "evidence": "Kennedy stated a goal of every American wearing a wearable within four years and promised a large ad campaign; no device, brand, payment model, mandate or data policy announced; CMS ecosystem participation (Apple, Fitbit, Oura) is voluntary.",
+   "status": "PARTLY GROUNDED",
+   "kernel": "The stated four-year goal and federal promotion are real.",
+   "confirm": "Rules tying benefits, coverage or employment to wearable use.",
+   "refute": "Program documents limited to voluntary promotion.",
+   "nodes": [
+    "kennedy-rfk",
+    "hhs",
+    "cmsecosys",
+    "oura"
+   ],
+   "src": [
+    [
+     "AHCJ: Kennedy wearables goal",
+     "https://healthjournalism.org/blog/2025/07/rfk-jr-wants-us-all-to-wear-health-trackers-will-it-work/"
+    ],
+    [
+     "Tech Policy Press: wearables campaign critique",
+     "https://techpolicy.press/control-for-whom-keeping-an-eye-on-the-dark-side-of-americas-new-wearables-campaign"
+    ],
+    [
+     "greenMe: Oura ring on every citizen claim",
+     "https://www.greenme.it/scienza-e-tecnologia/trump-vuole-gli-americani-con-lanello-al-dito-obiettivo-uno-smart-ring-oura-al-dito-di-ogni-cittadino-entro-il-2030/"
+    ]
+   ]
+  }
  ]
 };

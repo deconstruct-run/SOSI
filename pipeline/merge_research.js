@@ -13,7 +13,7 @@ require(CASE_PATH);
 const C = window.CASE;
 
 /* file order sets precedence for scalar fields (first wins) */
-const ORDER = ['deepdive.json', 'financial.json', 'goldendome_main.json', 'strato_latam.json', 'silicon_horizon.json'];
+const ORDER = ['deepdive.json', 'financial.json', 'goldendome_main.json', 'strato_latam.json', 'silicon_horizon.json', 'healthdata.json', 'biodefense.json', 'bodynet.json', 'pharma.json'];
 const files = fs.readdirSync(dir).filter(f => f.endsWith('.json') && f !== 'existing.json')
   .sort((a, b) => (ORDER.indexOf(a) + 1 || 99) - (ORDER.indexOf(b) + 1 || 99));
 
@@ -32,7 +32,11 @@ const NEW_SYSTEMS = {
   latam: { n: '17', name: 'South America theater', tint: '#E8A06A' },
   insurance: { n: '18', name: 'War-risk insurance', tint: '#B9A27A' },
   minerals: { n: '19', name: 'Critical minerals + nuclear fuel', tint: '#C98B5E' },
-  cyber: { n: '20', name: 'Cyber pre-positioning + defense', tint: '#E07A7A' }
+  cyber: { n: '20', name: 'Cyber pre-positioning + defense', tint: '#E07A7A' },
+  healthdata: { n: '21', name: 'Health data + federal AI', tint: '#9CC7A4' },
+  biodefense: { n: '22', name: 'Biodefense + bioindustry', tint: '#C9B26A' },
+  bodynet: { n: '23', name: 'Body network: BCI + IoB', tint: '#D59AC0' },
+  pharma: { n: '24', name: 'Pharma, AI discovery + longevity', tint: '#8EC1D6' }
 };
 const ROLE_OVERRIDE = {
   'wright-dan': 'Co-founder and CEO, Armada', pradeep: 'Founding CTO, Armada',
@@ -129,6 +133,11 @@ for (const file of files) {
     log.threads++;
   }
   (D.timeline || []).forEach(x => C.timeline.push(x));
+  /* circulating-claims ledger: claims never become nodes or edges */
+  if (D.claims && D.claims.length) {
+    C.claims = C.claims || [];
+    D.claims.forEach(c => { if (!C.claims.some(x => x.claim === c.claim)) C.claims.push({ ...c, id: 'c' + String(C.claims.length + 1).padStart(2, '0'), nodes: (c.nodes || []).map(x => rid(x, file)) }); });
+  }
   /* markets */
   Object.entries(D.markets || {}).forEach(([tk, r]) => {
     const cur = C.markets.research[tk] || {};
@@ -164,7 +173,8 @@ C.nodes.forEach(n => { if (n.k === 'person') { if (ROLE_OVERRIDE[n.id]) n.role =
 /* threads: drop unknown node ids */
 C.threads.forEach(t => { const bad = t.nodes.filter(x => !BY[x]); if (bad.length) log.notes.push(`thread ${t.id} unknown nodes ${bad.join(',')}`); t.nodes = t.nodes.filter(x => BY[x]); });
 C.timeline = uniq(C.timeline, x => x[0] + (x[1] || '').slice(0, 30)).sort((a, b) => String(a[0]).localeCompare(String(b[0])));
-C.meta.pages = ['EDGE: SOVEREIGN SI', 'DEEP DIVE', 'FINANCIAL LAYER', 'TETHER LAYER', 'AGENTIC LAYER', 'STRATOSPHERIC LAYER', 'EDGE: SOUTH AMERICA', 'SILICON LAYER', 'HORIZON', 'GOLDEN DOME'];
+C.meta.pages = ['EDGE: SOVEREIGN SI', 'DEEP DIVE', 'FINANCIAL LAYER', 'TETHER LAYER', 'AGENTIC LAYER', 'STRATOSPHERIC LAYER', 'EDGE: SOUTH AMERICA', 'SILICON LAYER', 'HORIZON', 'GOLDEN DOME', 'BIO LAYER', 'HEALTH DATA LAYER', 'BIODEFENSE LAYER', 'BODY NETWORK LAYER', 'PHARMA + LONGEVITY LAYER', 'IoB CLAIMS LEDGER'];
+C.claims = (C.claims || []).map(c => ({ ...c, nodes: (c.nodes || []).filter(x => BY[x]) }));
 
 console.log(JSON.stringify({ files: log.files, added: log.added, updated: log.updated, edges: log.edges, threads: log.threads, skipped: log.skippedEdges.length, totals: { nodes: C.nodes.length, people: C.nodes.filter(n => n.k === 'person').length, edges: C.edges.length, threads: C.threads.length, systems: C.systems.length } }, null, 1));
 if (log.skippedEdges.length) console.log('SKIPPED EDGES:\n  ' + log.skippedEdges.join('\n  '));

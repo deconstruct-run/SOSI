@@ -8,14 +8,14 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..500&family=Albert+Sans:wght@400;500;600;700&family=Fragment+Mono&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/app.css">
-<script src="data/case.js"></script>
-<script src="data/market.js"></script>
+<link rel="stylesheet" href="assets/app.css?v=20261103h">
+<script src="data/case.js?v=20261103h"></script>
+<script src="data/market.js?v=20261103h"></script>
 </head>
 <body class="v-map">
 <header id="top">
   <div class="brand">
-    <div class="brand-title">SOVEREIGN SI <b>//</b> CASE MAP</div>
+    <a class="brand-title" id="home" href="./" title="Back to the overview">SOVEREIGN SI <b>//</b> CASE MAP</a>
   </div>
   <nav id="nav" aria-label="Views">
     <button type="button" data-view="map" aria-current="page">MAP</button>
@@ -38,11 +38,11 @@
   <section id="main">
     <div id="bar" role="status"></div>
     <div id="board-wrap">
-      <div id="board"></div>
+      <div id="board" class="ov" aria-label="Systems overview"></div>
+      <div id="etable" hidden></div>
       <div id="subject" hidden></div>
     </div>
   </section>
-  <aside id="dossier" aria-label="Node dossier" hidden></aside>
 </main>
 
 <section class="sheet" id="sheet-threads" aria-label="Investigation threads"></section>
@@ -51,7 +51,8 @@
 <section class="sheet" id="sheet-markets" aria-label="Markets"></section>
 <section class="sheet" id="sheet-brief" aria-label="Brief"></section>
 <section class="sheet" id="sheet-sources" aria-label="Sources"></section>
+<aside id="dossier" aria-label="Entity detail" hidden></aside>
 
-<script type="module" src="assets/app.js"></script>
+<script type="module" src="assets/app.js?v=20261103h"></script>
 </body>
 </html>

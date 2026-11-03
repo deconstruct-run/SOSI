@@ -40,11 +40,20 @@ TICKERS = [
     "MRSH", "AON", "WTW", "RYAN", "AJG", "AIG", "KIE",
     # field, space, theater
     "ACHR", "SATL", "MELI",
+    # health data + payers
+    "UNH", "ELV", "CI", "CVS", "HUM", "YOU", "AAPL",
+    # biodefense + bioindustry
+    "DNA", "TWST", "EBS", "XWEL",
+    # body network: devices + wearables
+    "MDT", "ABT", "PHG", "GRMN",
+    # pharma, AI discovery + longevity
+    "LLY", "NVO", "PFE", "AZN", "JNJ", "ABBV", "NVS", "SNY", "MRNA", "BNTX", "TMO",
+    "RXRX", "SDGR", "ABSI", "GENB",
 ]
 
 REV = ["Revenues", "RevenueFromContractWithCustomerExcludingAssessedTax",
        "RevenueFromContractWithCustomerIncludingAssessedTax", "SalesRevenueNet",
-       "Revenue", "RevenueFromContractsWithCustomers"]
+       "Revenue", "RevenueFromContractsWithCustomers", "RevenueFromSaleOfGoods"]
 GROSS = ["GrossProfit"]
 OPINC = ["OperatingIncomeLoss", "ProfitLossFromOperatingActivities"]
 NET = ["NetIncomeLoss", "ProfitLoss", "ProfitLossAttributableToOwnersOfParent"]
@@ -343,11 +352,13 @@ def health(f, q, tk=None):
     if fcf is not None and fcf < 0 and cash:
         runway = cash / (-fcf / 4)
         flags.append(f"Runway ~{runway:.0f} qtrs")
-    if rev < 100e6:
+    rev_known = f.get("rev_ttm") is not None or f.get("rev_q") is not None
+    margin = f.get("op_margin") if f.get("op_margin") is not None else f.get("net_margin")
+    if rev_known and rev < 100e6:
         grade = "SPECULATIVE"
     elif (fcf is not None and fcf < 0 and net_cash is not None and net_cash < 0) or (runway is not None and runway < 6):
         grade = "STRETCHED"
-    elif fcf is not None and fcf > 0 and ((net_cash or 0) >= 0 or (f.get("op_margin") or 0) > 0.15):
+    elif fcf is not None and fcf > 0 and ((net_cash or 0) >= 0 or (margin or 0) > 0.15):
         grade = "STRONG"
     else:
         grade = "STABLE"
