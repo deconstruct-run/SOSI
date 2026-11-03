@@ -1,11 +1,4 @@
-/* SOVEREIGN SI // CASE MAP — application */
-import * as THREE from 'three';
-import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
-import { CSS2DRenderer, CSS2DObject } from 'three/addons/renderers/CSS2DRenderer.js';
-import { Line2 } from 'three/addons/lines/Line2.js';
-import { LineMaterial } from 'three/addons/lines/LineMaterial.js';
-import { LineGeometry } from 'three/addons/lines/LineGeometry.js';
-
+/* SOVEREIGN SI // CASE MAP — flat case board. Docked layout, nothing overlaps. */
 const C = window.CASE;
 const MARKET = window.MARKET || { tickers: {} };
 const MK = MARKET.tickers || {};
@@ -32,7 +25,7 @@ const NODE_THREADS = {};
 THREADS.forEach(t => t.nodes.forEach(n => (NODE_THREADS[n] = NODE_THREADS[n] || []).push(t.id)));
 const EXTRA_NAMES = { VOYG: ['Voyager Technologies', 'space'], BBAI: ['BigBear.ai', 'operating'], DUOT: ['Duos Technologies', 'compute'], DELL: ['Dell Technologies', 'compute'], HPE: ['Hewlett Packard Enterprise', 'compute'] };
 const TIER = { M: 'Master node', K: 'Key node', N: 'Node' };
-const KIND = { co: 'Company', buyer: 'Sovereign buyer', prog: 'Program', cap: 'Capital', press: 'Oversight', threat: 'Threat', counter: 'Counter-bloc', model: 'Model', app: 'Mission app', channel: 'Channel', site: 'Site', sys: 'System constraint' };
+const KIND = { co: 'Company', buyer: 'Sovereign buyer', prog: 'Program', cap: 'Capital', press: 'Oversight', threat: 'Threat', counter: 'Counter-bloc', model: 'Model', app: 'Mission app', channel: 'Channel', site: 'Site', sys: 'System constraint' , person: 'Key player', fund: 'Fund', token: 'Token · rail', law: 'Law · policy', site: 'Site'};
 
 /* ---------------- formatting ---------------- */
 const MON = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
@@ -73,443 +66,531 @@ const shortSum = s => { const t = (s || '').split(/(?<=\.)\s/)[0]; return t.leng
 
 /* ---------------- layers ---------------- */
 const PL = { palantir: 6, anduril: 6, nvda: 1, spacex: 3, ondas: 9, armada: 2, aws: 2, google: 4, oracle: 2, rklb: 3, shieldai: 9, helsing: 8, applied: 8 };
-const LH = 7.2;
-const yOf = lv => (lv - 4.5) * LH;
-function level(n) {
-  if (PL[n.id] != null) return PL[n.id];
-  if (n.L && n.L.length) return n.L[0];
-  if (n.k === 'threat' || n.k === 'counter') return -1.9;
-  return 10.9;
+const isThreat = n => n.k === 'threat' || n.k === 'counter';
+function layerCode(n) {
+  if (n.L && n.L.length) return 'L' + (PL[n.id] ?? n.L[0]);
+  return isThreat(n) ? 'X' : 'S';
 }
-const LAYER_TINT = ['#F0A63A', '#46C2EA', '#46C2EA', '#A996FF', '#A996FF', '#C9D2DE', '#E7EBF1', '#A996FF', '#46C2EA', '#F0A63A'];
-const SHAFT = { palantir: '#E7EBF1', anduril: '#C9D2DE', nvda: '#46C2EA', spacex: '#A996FF', ondas: '#6FD6B5', armada: '#F0A63A', aws: '#C9D2DE', google: '#C9D2DE', oracle: '#C9D2DE', rklb: '#A996FF', shieldai: '#6FD6B5', helsing: '#C9D2DE', applied: '#6FD6B5' };
+function inLayer(n, code) {
+  if (n.k === 'person') return false;
+  if (code === 'S') return !(n.L && n.L.length) && !isThreat(n);
+  if (code === 'X') return isThreat(n);
+  return (n.L || []).includes(+code.slice(1));
+}
+const LAYER_CODES = ['S', 'L9', 'L8', 'L7', 'L6', 'L5', 'L4', 'L3', 'L2', 'L1', 'L0', 'X'];
+function layerName(code) {
+  if (code === 'S') return C.bands.S.name;
+  if (code === 'X') return C.bands.X.name;
+  return C.layers[+code.slice(1)].name;
+}
+
+/* ---------------- board layout ---------------- */
+const COLS = [
+  { n: '01', name: 'Money + mandate', d: 'Who funds, buys and directs the stack, and the rails the money moves on', dp: 'Officials, funders, financiers and allied buyers', sys: ['state', 'capital', 'rails', 'insurance', 'allied'] },
+  { n: '02', name: 'Control', d: 'Who owns the operating layer, the models, the agents and the integration', dp: 'Executives and boards of the operating layer, models and primes', sys: ['operating', 'models', 'agentic', 'primes'] },
+  { n: '03', name: 'Field + theater', d: 'Where the stack meets the mission, the sky and the threat', dp: 'Operators in the field, the stratosphere and each theater', sys: ['autonomy', 'space', 'stratosphere', 'gulf', 'latam', 'cyber'] },
+  { n: '04', name: 'Infrastructure', d: 'Silicon, compute, power and the next substrate', dp: 'Builders of silicon, compute, power and the next substrate', sys: ['compute', 'silicon', 'power', 'minerals', 'quantum'] }
+];
+/* any system not placed above lands in the column it fits best by default */
+C.systems.forEach(sy => { if (!COLS.some(c => c.sys.includes(sy.id))) COLS[0].sys.push(sy.id); });
+const TIER_ORD = { M: 0, K: 1, N: 2 };
+const DEG = Object.fromEntries(NODES.map(n => [n.id, ADJ[n.id].length]));
+const FIRST = Object.fromEntries(NODES.map(n => {
+  const ds = ADJ[n.id].map(e => e.date).filter(Boolean).sort();
+  return [n.id, ds[0] || null];
+}));
+
+/* relation of the OTHER node to the subject: [when other acts on subject, when subject acts on other] */
+const REL = {
+  contract: ['BUYER', 'VENDOR'], capital: ['INVESTOR', 'PORTFOLIO'], supply: ['SUPPLIER', 'CUSTOMER'], own: ['OWNER', 'HOLDING'],
+  partner: ['PARTNER', 'PARTNER'], threat: ['THREAT', 'TARGET'], counter: ['COUNTER', 'COUNTERED'], pressure: ['PRESSURE', 'PRESSURED'],
+  leads: ['LEADER', 'LEADS'], board: ['DIRECTOR', 'BOARD SEAT'], founded: ['FOUNDER', 'FOUNDED'], invests: ['INVESTOR', 'STAKE'],
+  advises: ['ADVISER', 'ADVISES'], post: ['OFFICIAL', 'POST'], tie: ['TIE', 'TIE']
+};
+const GROUP_IN = { leads: 'Leadership', board: 'Board', founded: 'Founders', post: 'Officials', invests: 'Backers · people', advises: 'Advisers', contract: 'Buyers · pay it', capital: 'Investors', supply: 'Suppliers', own: 'Owner', threat: 'Threats', counter: 'Counter-stack', pressure: 'Pressure · oversight' };
+const GROUP_OUT = { leads: 'Leads', board: 'Board seats', founded: 'Founded', post: 'Government posts', invests: 'Stakes', advises: 'Advises', contract: 'Vendors · it pays', capital: 'Portfolio · it funds', supply: 'Customers · it supplies', own: 'Holdings', threat: 'Targets', counter: 'Counters', pressure: 'Pressures' };
+const GROUP_ORDER = ['leads', 'board', 'founded', 'post', 'invests', 'advises', 'contract', 'capital', 'supply', 'own', 'pressure', 'threat', 'counter'];
+
+/* ---------------- people ---------------- */
+const PEOPLE_T = ['leads', 'board', 'founded', 'post', 'invests', 'advises'];
+const isPerson = n => n && n.k === 'person';
+const ORGS = NODES.filter(n => !isPerson(n));
+const PEOPLE = NODES.filter(isPerson);
+const PERSON_ORGS = {}, ORG_PEOPLE = {};
+EDGES.forEach(e => {
+  if (!PEOPLE_T.includes(e.type)) return;
+  const pa = isPerson(BY[e.a]), pb = isPerson(BY[e.b]);
+  if (pa === pb) return;
+  const p = pa ? e.a : e.b, o = pa ? e.b : e.a;
+  (PERSON_ORGS[p] = PERSON_ORGS[p] || []).push({ org: o, e });
+  (ORG_PEOPLE[o] = ORG_PEOPLE[o] || []).push({ p, e });
+});
+const ROLE_ORD = { leads: 0, founded: 1, board: 2, post: 3, invests: 4, advises: 5 };
+function peopleOf(org) { return (ORG_PEOPLE[org] || []).filter(x => edgeOn(x.e)).sort((a, b) => ROLE_ORD[a.e.type] - ROLE_ORD[b.e.type]); }
+function orgsOf(p) { return (PERSON_ORGS[p] || []).filter(x => edgeOn(x.e)).sort((a, b) => ROLE_ORD[a.e.type] - ROLE_ORD[b.e.type]); }
+/* board interlocks: other orgs that share a person with this org */
+function interlocks(org) {
+  const out = new Map();
+  peopleOf(org).forEach(({ p }) => orgsOf(p).forEach(({ org: o2, e }) => {
+    if (o2 === org) return;
+    const cur = out.get(o2) || { org: o2, via: [] };
+    if (!cur.via.includes(p)) cur.via.push(p);
+    out.set(o2, cur);
+  }));
+  return [...out.values()].sort((a, b) => b.via.length - a.via.length);
+}
+/* people who share an organization with this person */
+function colleagues(p) {
+  const out = new Map();
+  orgsOf(p).forEach(({ org }) => peopleOf(org).forEach(({ p: q }) => {
+    if (q === p) return;
+    const cur = out.get(q) || { p: q, orgs: [] };
+    if (!cur.orgs.includes(org)) cur.orgs.push(org);
+    out.set(q, cur);
+  }));
+  return [...out.values()];
+}
+const roleLine = id => { const n = BY[id]; if (n.role) return n.role; const o = (PERSON_ORGS[id] || [])[0]; return o ? `${REL[o.e.type][1].toLowerCase()} · ${BY[o.org].n}` : ''; };
+const PERSON_ICON = '<svg width="9" height="10" viewBox="0 0 9 10" aria-hidden="true"><circle cx="4.5" cy="2.6" r="2.1" fill="currentColor"/><path d="M0.6 9.6c0-2.3 1.7-3.9 3.9-3.9s3.9 1.6 3.9 3.9z" fill="currentColor"/></svg>';
 
 /* ---------------- state ---------------- */
-const S = { view: 'map', mode: 'world', t: 0, lens: 'all', sys: null, off: new Set(), sel: null, hover: null, thread: null, cutoff: null, labelsAll: false, open: new Set(), activeThread: '07', edgeHover: null };
-let threadSet = null;
-let positionsDirty = true;
-
-/* ---------------- renderer ---------------- */
-const stage = $('#stage');
-let renderer;
-try {
-  renderer = new THREE.WebGLRenderer({ antialias: true, powerPreference: 'high-performance' });
-} catch (err) {
-  $('#gl').innerHTML = '<p style="padding:120px 24px;text-align:center;color:#95A0B2;font-family:var(--mono)">WebGL is unavailable in this browser. The Threads, Markets, Brief and Sources views still work.</p>';
-}
-const scene = new THREE.Scene();
-scene.fog = new THREE.FogExp2(0x05070B, 0.0028);
-const camera = new THREE.PerspectiveCamera(38, 1, 0.5, 3000);
-const css = new CSS2DRenderer();
-css.domElement.style.position = 'absolute';
-css.domElement.style.inset = '0';
-css.domElement.style.pointerEvents = 'none';
-$('#labels').appendChild(css.domElement);
+const S = { view: 'map', board: 'org', mv: 'board', lens: 'all', off: new Set(), layer: null, sel: null, trail: [], hover: null, edgeHover: null, thread: null, cutoff: null, q: '', open: new Set(), activeThread: '07' };
 const MOBILE = () => innerWidth <= 820;
-const HOME = {
-  world: { pos: new THREE.Vector3(0, 122, 104), tgt: new THREE.Vector3(0, 0, 3) },
-  depth: { pos: new THREE.Vector3(-192, 96, 175), tgt: new THREE.Vector3(-16, -2, -15) }
-};
-const HOME_M = {
-  world: { pos: new THREE.Vector3(70, 290, 4), tgt: new THREE.Vector3(0, 0, 0) },
-  depth: { pos: new THREE.Vector3(-250, 140, 230), tgt: new THREE.Vector3(-16, -2, -15) }
-};
-function homeFor(mode) {
-  const h = MOBILE() ? HOME_M[mode] : HOME[mode];
-  return { pos: h.pos.clone(), tgt: h.tgt.clone() };
-}
-let controls = null;
-if (renderer) {
-  renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
-  renderer.setClearColor(0x05070B, 1);
-  $('#gl').appendChild(renderer.domElement);
-  controls = new OrbitControls(camera, renderer.domElement);
-  controls.enableDamping = true;
-  controls.dampingFactor = 0.08;
-  controls.minDistance = 16;
-  controls.maxDistance = 360;
-  controls.maxPolarAngle = Math.PI * 0.495;
-  controls.screenSpacePanning = true;
-  controls.zoomSpeed = 0.9;
-  const h = homeFor('world');
-  camera.position.copy(h.pos);
-  controls.target.copy(h.tgt);
-}
 
-/* floor grid */
-const grid = new THREE.GridHelper(180, 36, 0x1b2432, 0x0f151e);
-grid.material.transparent = true;
-grid.material.opacity = 0.6;
-grid.material.depthWrite = false;
-grid.position.y = -0.3;
-scene.add(grid);
-
-/* zones */
-function rrect(w, h, r) {
-  const s = new THREE.Shape();
-  s.moveTo(-w / 2 + r, -h / 2); s.lineTo(w / 2 - r, -h / 2); s.quadraticCurveTo(w / 2, -h / 2, w / 2, -h / 2 + r);
-  s.lineTo(w / 2, h / 2 - r); s.quadraticCurveTo(w / 2, h / 2, w / 2 - r, h / 2);
-  s.lineTo(-w / 2 + r, h / 2); s.quadraticCurveTo(-w / 2, h / 2, -w / 2, h / 2 - r);
-  s.lineTo(-w / 2, -h / 2 + r); s.quadraticCurveTo(-w / 2, -h / 2, -w / 2 + r, -h / 2);
-  return s;
-}
-const zones = C.systems.map(sy => {
-  const [x, y, w, h] = sy.box;
-  const g = new THREE.Group();
-  const shape = rrect(w - 1.2, h - 1.2, 2.2);
-  const fill = new THREE.Mesh(new THREE.ShapeGeometry(shape), new THREE.MeshBasicMaterial({ color: sy.tint, transparent: true, opacity: 0.035, depthWrite: false, side: THREE.DoubleSide }));
-  fill.rotation.x = -Math.PI / 2;
-  const pts = shape.getPoints(10).map(p => new THREE.Vector3(p.x, 0, -p.y));
-  const border = new THREE.LineLoop(new THREE.BufferGeometry().setFromPoints(pts), new THREE.LineBasicMaterial({ color: sy.tint, transparent: true, opacity: 0.24, depthWrite: false }));
-  g.add(fill, border);
-  g.position.set(x + w / 2 - 70, 0, y + h / 2 - 45);
-  const el = document.createElement('div');
-  el.className = 'zlabel';
-  el.innerHTML = `<b>${esc(sy.n)}</b> // ${esc(sy.name)}`;
-  const obj = new CSS2DObject(el);
-  obj.center.set(0, 0);
-  obj.position.set(-(w - 1.2) / 2, 0.05, -(h - 1.2) / 2);
-  g.add(obj);
-  scene.add(g);
-  return { sy, g, fill, border, el };
-});
-
-/* layer planes */
-const layerDefs = [
-  ...C.layers.map(l => ({ lv: l.id, code: l.code, name: l.name, d: l.d, tint: LAYER_TINT[l.id] })),
-  { lv: 10.9, code: 'S', name: C.bands.S.name, d: C.bands.S.d, tint: '#F0A63A' },
-  { lv: -1.9, code: 'X', name: C.bands.X.name, d: C.bands.X.d, tint: '#FF5B4F' }
-];
-const planes = layerDefs.map(L => {
-  const geo = new THREE.PlaneGeometry(146, 96);
-  const m = new THREE.Mesh(geo, new THREE.MeshBasicMaterial({ color: L.tint, transparent: true, opacity: 0, depthWrite: false, side: THREE.DoubleSide }));
-  m.rotation.x = -Math.PI / 2;
-  m.position.y = yOf(L.lv);
-  const edges = new THREE.LineSegments(new THREE.EdgesGeometry(geo), new THREE.LineBasicMaterial({ color: L.tint, transparent: true, opacity: 0, depthWrite: false }));
-  edges.rotation.x = -Math.PI / 2;
-  edges.position.y = yOf(L.lv);
-  m.visible = edges.visible = false;
-  scene.add(m, edges);
-  const el = document.createElement('div');
-  el.className = 'llabel';
-  el.innerHTML = `<b>${esc(L.code)}</b>${esc(L.name)}<span>${esc(L.d)}</span>`;
-  el.style.opacity = 0;
-  const obj = new CSS2DObject(el);
-  obj.center.set(1, 0.5);
-  obj.position.set(-73, yOf(L.lv), -48);
-  obj.visible = false;
-  scene.add(obj);
-  const base = L.lv === 6 ? 0.085 : (L.code === 'S' || L.code === 'X') ? 0.03 : 0.045;
-  const ebase = L.lv === 6 ? 0.6 : 0.3;
-  return { L, m, edges, el, obj, base, ebase };
-});
-
-/* nodes */
-const tooltip = $('#tip');
-NODES.forEach(n => {
-  const el = document.createElement('button');
-  el.type = 'button';
-  el.className = `node t-${n.t} k-${n.k}`;
-  el.dataset.id = n.id;
-  const tk = NODE_TK[n.id] || n.tk;
-  const layers = n.L && n.L.length ? n.L.map(l => 'L' + l).join(' ') : '';
-  const sub = n.t === 'M' ? [tk, layers].filter(Boolean).join(' · ') : (tk || '');
-  el.innerHTML = `<span class="glyph" aria-hidden="true"></span><span class="lbl">${esc(n.n)}</span>${sub ? `<span class="sub">${esc(sub)}</span>` : ''}`;
-  el.setAttribute('aria-label', `${n.n}, ${TIER[n.t]}, ${SYS[n.s].name}`);
-  el.addEventListener('click', ev => { ev.stopPropagation(); select(n.id, true); });
-  el.addEventListener('mouseenter', ev => { S.hover = n.id; applyState(); showTip(n, ev); });
-  el.addEventListener('mousemove', ev => moveTip(ev));
-  el.addEventListener('mouseleave', () => { S.hover = null; applyState(); hideTip(); });
-  el.addEventListener('focus', () => { S.hover = n.id; applyState(); });
-  el.addEventListener('blur', () => { S.hover = null; applyState(); });
-  const obj = new CSS2DObject(el);
-  obj.center.set(0.5, 0);
-  scene.add(obj);
-  n._el = el; n._obj = obj;
-  n._w = new THREE.Vector3(n.p[0] - 70, 0.6, n.p[1] - 45);
-  n._d = new THREE.Vector3(n.p[0] - 70, yOf(level(n)), n.p[1] - 45);
-  n._pos = n._w.clone();
-  n._lbl = true; n._sub = true;
-  obj.position.copy(n._pos);
-});
-if (!renderer) NODES.forEach(n => { n._el.style.display = 'none'; });
-
-/* edges */
-const SEG = 28;
-const tmpV = new THREE.Vector3();
-EDGES.forEach(e => {
-  const geo = new LineGeometry();
-  e.pts = new Float32Array((SEG + 1) * 3);
-  geo.setPositions(e.pts);
-  const dash = e.T.dash;
-  e.mat = new LineMaterial({ color: new THREE.Color(e.T.color).getHex(), linewidth: 1.4, transparent: true, opacity: 0.4, depthWrite: false, dashed: !!dash, dashSize: dash ? dash[0] : 1, gapSize: dash ? dash[1] : 1, worldUnits: false });
-  e.line = new Line2(geo, e.mat);
-  e.line.renderOrder = 2;
-  e.geo = geo;
-  e.curve = new THREE.QuadraticBezierCurve3(new THREE.Vector3(), new THREE.Vector3(), new THREE.Vector3());
-  scene.add(e.line);
-});
-function updateEdge(e) {
-  const A = BY[e.a]._pos, B = BY[e.b]._pos, c = e.curve;
-  const d = A.distanceTo(B);
-  c.v0.copy(A); c.v2.copy(B);
-  c.v1.copy(A).add(B).multiplyScalar(0.5);
-  c.v1.y += (1 - S.t) * (d * 0.2 + 1.2) + S.t * (d * 0.08 + 1.5);
-  for (let i = 0; i <= SEG; i++) {
-    c.getPoint(i / SEG, tmpV);
-    e.pts[i * 3] = tmpV.x; e.pts[i * 3 + 1] = tmpV.y; e.pts[i * 3 + 2] = tmpV.z;
-  }
-  e.geo.setPositions(e.pts);
-  if (e.mat.dashed) e.line.computeLineDistances();
-  if (e.lblObj) e.lblObj.position.copy(c.getPoint(e.lblT ?? 0.5, tmpV));
-}
-function edgeLabel(e) {
-  if (!e.lblObj) {
-    const el = document.createElement('div');
-    el.className = 'elabel';
-    el.style.borderColor = e.T.color;
-    el.style.color = e.T.color;
-    el.textContent = e.label + (e.date ? ' · ' + fmtDate(e.date) : '') + (e.v ? '' : ' · UNVERIFIED');
-    e.lblObj = new CSS2DObject(el);
-    e.lblObj.position.copy(e.curve.getPoint(e.lblT ?? 0.5, tmpV));
-    scene.add(e.lblObj);
-  }
-  return e.lblObj;
-}
-
-/* shafts + ghosts (depth) */
-const shafts = [];
-NODES.filter(n => n.L && n.L.length > 1).forEach(n => {
-  const lo = Math.min(...n.L), hi = Math.max(...n.L);
-  const geo = new LineGeometry();
-  geo.setPositions([n._d.x, yOf(lo), n._d.z, n._d.x, yOf(hi), n._d.z]);
-  const col = new THREE.Color(SHAFT[n.id] || '#C9D2DE').getHex();
-  const mat = new LineMaterial({ color: col, linewidth: 3, transparent: true, opacity: 0, depthWrite: false });
-  const line = new Line2(geo, mat);
-  line.visible = false;
-  scene.add(line);
-  const ghosts = n.L.filter(l => l !== level(n)).map(l => {
-    const m = new THREE.Mesh(new THREE.SphereGeometry(0.62, 12, 12), new THREE.MeshBasicMaterial({ color: col, transparent: true, opacity: 0, depthWrite: false }));
-    m.position.set(n._d.x, yOf(l), n._d.z);
-    m.visible = false;
-    scene.add(m);
-    return m;
-  });
-  shafts.push({ n, line, mat, ghosts });
-});
-
-/* pulses */
-const PULSE_MAX = 48;
-const pulseGeo = new THREE.BufferGeometry();
-pulseGeo.setAttribute('position', new THREE.BufferAttribute(new Float32Array(PULSE_MAX * 3), 3));
-pulseGeo.setAttribute('color', new THREE.BufferAttribute(new Float32Array(PULSE_MAX * 3), 3));
-pulseGeo.setDrawRange(0, 0);
-const pulses = new THREE.Points(pulseGeo, new THREE.PointsMaterial({ size: 1.15, vertexColors: true, transparent: true, opacity: 0.95, depthWrite: false, sizeAttenuation: true }));
-pulses.renderOrder = 3;
-scene.add(pulses);
-let strongEdges = [];
-
-/* ---------------- positions / transition ---------------- */
-const ease = k => k < 0.5 ? 4 * k * k * k : 1 - Math.pow(-2 * k + 2, 3) / 2;
-function updatePositions() {
-  const t = S.t;
-  NODES.forEach(n => { n._pos.lerpVectors(n._w, n._d, t); n._obj.position.copy(n._pos); });
-  EDGES.forEach(e => { updateEdge(e); e.mat.opacity = e._strong ? e._op : e._op * (1 - 0.45 * t); });
-  zones.forEach(z => {
-    const sel = S.sys === z.sy.id;
-    z.fill.material.opacity = (sel ? 0.09 : S.sys ? 0.015 : 0.035) * (1 - t);
-    z.border.material.opacity = (sel ? 0.6 : S.sys ? 0.1 : 0.24) * (1 - t);
-    z.el.style.opacity = (1 - t) * (S.sys && !sel ? 0.4 : 1);
-    z.g.visible = t < 0.99;
-  });
-  planes.forEach(p => {
-    p.m.material.opacity = p.base * t;
-    p.edges.material.opacity = p.ebase * t;
-    p.el.style.opacity = t;
-    const vis = t > 0.01;
-    p.m.visible = p.edges.visible = p.obj.visible = vis;
-  });
-  shafts.forEach(s => {
-    s.mat.opacity = 0.75 * t;
-    s.line.visible = t > 0.01;
-    s.ghosts.forEach(g => { g.material.opacity = 0.85 * t; g.visible = t > 0.01; });
-  });
-  grid.position.y = -0.3 + (yOf(-2.8) + 0.3) * t;
-  grid.material.opacity = 0.6 - 0.25 * t;
-}
-let modeTween = null;
-function setMode(m, fly = true) {
-  if (S.mode === m && !modeTween) { if (fly) flyHome(); return; }
-  S.mode = m;
-  document.body.classList.toggle('depth', m === 'depth');
-  modeTween = { s: performance.now(), from: S.t, to: m === 'depth' ? 1 : 0, ms: REDUCE ? 1 : 1500 };
-  if (controls) controls.maxPolarAngle = m === 'depth' ? Math.PI * 0.9 : Math.PI * 0.495;
-  if (fly) flyHome();
-  renderRail();
-  writeHash();
-}
-
-/* ---------------- camera ---------------- */
-let fly = null;
-function flyTo(pos, tgt, ms = 1000) {
-  if (!controls) return;
-  if (REDUCE) { camera.position.copy(pos); controls.target.copy(tgt); return; }
-  fly = { p0: camera.position.clone(), t0: controls.target.clone(), p1: pos.clone(), t1: tgt.clone(), s: performance.now(), ms };
-}
-function flyHome() { const h = homeFor(S.mode); flyTo(h.pos, h.tgt, 1300); }
-function flyToNode(id) {
-  if (!controls) return;
-  const n = BY[id];
-  const dir = camera.position.clone().sub(controls.target).normalize();
-  const dist = Math.min(Math.max(camera.position.distanceTo(controls.target), S.mode === 'depth' ? 78 : 50), MOBILE() ? 130 : (S.mode === 'depth' ? 120 : 86));
-  const tgt = n._pos.clone();
-  flyTo(tgt.clone().add(dir.multiplyScalar(dist)), tgt, 900);
-}
-if (controls) controls.addEventListener('start', () => { fly = null; });
-
-/* view offset so the scene centers between the panels */
-let viewOff = 0;
-function targetOffset() {
-  if (MOBILE()) return 0;
-  const railW = $('#rail').offsetWidth + 14;
-  const dosW = document.body.classList.contains('no-dossier') ? 0 : $('#dossier').offsetWidth + 14;
-  return (dosW - railW) / 2;
-}
-
-/* ---------------- state application ---------------- */
-function edgeVisible(e) {
+function edgeOn(e) {
   if (S.off.has(e.type)) return false;
   if (S.lens !== 'all' && !e.T.lenses.includes(S.lens)) return false;
   if (S.cutoff && e.date && e.date > S.cutoff) return false;
-  if (S.sys && BY[e.a].s !== S.sys && BY[e.b].s !== S.sys) return false;
-  if (threadSet && !(threadSet.has(e.a) && threadSet.has(e.b))) return false;
   return true;
 }
-const BASE_OP = { contract: 0.5, capital: 0.42, partner: 0.42, supply: 0.3, own: 0.32, threat: 0.65, counter: 0.5, pressure: 0.45 };
-let nbSet = new Set();
-function applyState() {
-  threadSet = S.thread ? new Set(THREADS.find(t => t.id === S.thread).nodes) : null;
-  const focus = S.sel || S.hover;
-  const filtered = S.lens !== 'all' || !!S.sys || !!S.thread || !!S.cutoff || S.off.size > 0;
-  const vis = new Map();
-  const active = new Set();
-  EDGES.forEach(e => { const v = edgeVisible(e); vis.set(e, v); if (v) { active.add(e.a); active.add(e.b); } });
-  nbSet = new Set();
-  if (focus) { nbSet.add(focus); ADJ[focus].forEach(e => { if (vis.get(e)) { nbSet.add(e.a); nbSet.add(e.b); } }); }
-  strongEdges = [];
-  const labelled = new Set();
-  if (focus) {
-    const inc = ADJ[focus].filter(e => vis.get(e));
-    const pr = { threat: 0, contract: 1, capital: 2, partner: 3, pressure: 4, counter: 5, supply: 6, own: 7 };
-    inc.sort((a, b) => (b.date || '0').localeCompare(a.date || '0') || pr[a.type] - pr[b.type]);
-    (S.edgeHover != null ? inc.filter(e => e.i === S.edgeHover) : inc.slice(0, MOBILE() ? 5 : 9)).forEach(e => labelled.add(e));
-  } else if (threadSet) {
-    EDGES.filter(e => vis.get(e)).sort((a, b) => (b.date || '0').localeCompare(a.date || '0')).slice(0, 14).forEach(e => labelled.add(e));
+const other = (e, id) => (e.a === id ? e.b : e.a);
+const relWord = (e, id) => (REL[e.type] || [e.type.toUpperCase(), e.type.toUpperCase()])[e.a === id ? 1 : 0];
+
+/* ---------------- board render (once) ---------------- */
+const BOARD = $('#board');
+function defaultRt(n) {
+  if (isPerson(n)) { const k = (PERSON_ORGS[n.id] || []).length; return k > 1 ? `<span class="pc" title="${k} positions on file">${k}</span>` : ''; }
+  const tk = NODE_TK[n.id] || n.tk || '';
+  const pc = (ORG_PEOPLE[n.id] || []).length;
+  return (pc ? `<span class="pc" title="${pc} people on file">${PERSON_ICON}${pc}</span>` : '') + (tk ? `<span class="tk">${esc(tk)}</span>` : '');
+}
+function nodeRow(n) {
+  const sub = isPerson(n) ? `<span class="sub">${esc(roleLine(n.id))}</span>` : '';
+  return `<button type="button" class="nrow t-${n.t} k-${n.k}" data-id="${n.id}" title="${esc(n.n)}">
+    <span class="gl t-${n.t} k-${n.k}" aria-hidden="true"></span>
+    <span class="nmw"><span class="nm">${esc(n.n)}</span>${sub}</span>
+    <span class="rt" data-rt>${defaultRt(n)}</span>
+  </button>`;
+}
+function boardNodes(sid) {
+  return NODES.filter(n => n.s === sid && (S.board === 'ppl' ? isPerson(n) : !isPerson(n)))
+    .sort((a, b) => (TIER_ORD[a.t] ?? 2) - (TIER_ORD[b.t] ?? 2) || DEG[b.id] - DEG[a.id] || a.n.localeCompare(b.n));
+}
+const ROWS = {};
+function renderBoard() {
+  BOARD.innerHTML = COLS.map(col => {
+    const tiles = col.sys.map(sid => {
+      const ns = boardNodes(sid);
+      if (!ns.length) return '';
+      const sy = SYS[sid];
+      return `<section class="tile" data-sys="${sid}" style="--tint:${sy.tint}">
+        <div class="tile-head"><span class="n">${esc(sy.n)}</span><span class="nm">${esc(sy.name)}</span><span class="c" data-c>${ns.length}</span></div>
+        <div class="rows">${ns.map(nodeRow).join('')}</div>
+      </section>`;
+    }).join('');
+    return `<div class="col"><div class="col-head"><b><span>${col.n}</span>${esc(col.name)}</b><p>${esc(S.board === 'ppl' ? col.dp : col.d)}</p></div>${tiles || '<p class="sj-empty">No players on file in this column.</p>'}</div>`;
+  }).join('');
+  for (const k in ROWS) delete ROWS[k];
+  $$('.nrow', BOARD).forEach(r => { ROWS[r.dataset.id] = r; });
+}
+function indexRows() {}
+
+/* search matching */
+function searchMatches(q) {
+  q = q.trim().toLowerCase();
+  if (!q) return [];
+  const items = [];
+  NODES.forEach(n => {
+    const tk = (NODE_TK[n.id] || n.tk || '').toLowerCase();
+    const nm = n.n.toLowerCase();
+    const score = tk === q ? 5 : nm.startsWith(q) ? 4 : tk.startsWith(q) ? 3.5 : nm.includes(q) ? 3 : (n.sum || '').toLowerCase().includes(q) ? 1 : 0;
+    if (score) items.push({ score, kind: 'node', id: n.id, name: n.n, tk: NODE_TK[n.id] || n.tk });
+  });
+  Object.keys(MK).forEach(tk => {
+    if (!TK2NODE[tk] && tk.toLowerCase().startsWith(q)) items.push({ score: 3.4, kind: 'ticker', tk, name: (EXTRA_NAMES[tk] || [tk])[0] });
+  });
+  THREADS.forEach(t => {
+    if (t.name.toLowerCase().includes(q)) items.push({ score: 2.5, kind: 'thread', id: t.id, name: t.name });
+  });
+  return items.sort((a, b) => b.score - a.score);
+}
+
+/* ---------------- board state (no movement: only opacity, borders, badges) ---------------- */
+function boardFocus() {
+  // returns { on: Map(id -> badge html), subj: id|null, label }
+  if (S.q.trim()) {
+    const m = searchMatches(S.q).filter(x => x.kind === 'node');
+    return { on: new Map(m.map(x => [x.id, ''])), subj: null };
   }
-  EDGES.forEach(e => {
-    const v = vis.get(e);
-    let op = 0, w = 1.4, strong = false;
-    if (v) {
-      if (focus) {
-        if (e.a === focus || e.b === focus) {
-          strong = true;
-          op = S.edgeHover == null || S.edgeHover === e.i ? 0.95 : 0.35;
-          w = S.edgeHover === e.i ? 4 : 2.6;
-          strongEdges.push(e);
-        } else { op = 0.035; w = 1; }
-      } else if (threadSet) { op = 0.85; w = 2.2; strong = true; strongEdges.push(e); }
-      else { op = BASE_OP[e.type] * (filtered ? 1.45 : 1) * (MOBILE() ? 0.7 : 1); w = filtered ? 1.9 : (MOBILE() ? 1.1 : 1.4); }
+  const subj = S.hover || (S.sel ? S.sel : null);
+  if (subj) {
+    const on = new Map();
+    let edges = ADJ[subj].filter(edgeOn);
+    if (S.edgeHover != null && !S.hover) edges = edges.filter(e => e.i === S.edgeHover);
+    edges.forEach(e => {
+      const o = other(e, subj);
+      const b = `<span class="rel c-${e.type}">${relWord(e, subj)}</span>`;
+      on.set(o, on.has(o) ? on.get(o) : b);
+    });
+    if (S.edgeHover == null || S.hover) {
+      const short = t => esc(t.length > 15 ? t.slice(0, 14) + '…' : t).toUpperCase();
+      if (isPerson(BY[subj])) colleagues(subj).forEach(c => { if (!on.has(c.p)) on.set(c.p, `<span class="rel c-board">${short(BY[c.orgs[0]].n)}</span>`); });
+      else interlocks(subj).forEach(x => { if (!on.has(x.org)) on.set(x.org, `<span class="rel c-board">INTERLOCK</span>`); });
     }
-    e._op = Math.min(op, 1);
-    e._strong = strong;
-    e.line.visible = v && op > 0;
-    e.mat.linewidth = w;
-    if (labelled.has(e) && renderer) {
-      e.lblT = focus ? (e.a === focus ? 0.62 : 0.38) : 0.5;
-      const o = edgeLabel(e);
-      o.position.copy(e.curve.getPoint(e.lblT, tmpV));
-      o.visible = true;
-    } else if (e.lblObj) { e.lblObj.visible = false; }
-  });
-  NODES.forEach(n => {
-    const el = n._el;
-    let st = '';
-    if (focus) st = nbSet.has(n.id) ? 'nb' : 'dim';
-    else if (threadSet) st = threadSet.has(n.id) ? '' : 'dim';
-    else if (filtered) st = (active.has(n.id) || (S.sys && n.s === S.sys)) ? '' : 'faint';
-    el.classList.toggle('s-dim', st === 'dim');
-    n._sop = st === 'dim' ? 0.13 : st === 'faint' ? 0.3 : 1;
-    el.classList.toggle('s-faint', st === 'faint');
-    el.classList.toggle('s-nb', st === 'nb' && n.id !== S.sel);
-    el.classList.toggle('s-sel', n.id === S.sel);
-    n._st = st;
-  });
-  planes.forEach(p => {
-    const f = focus && BY[focus];
-    p.el.classList.toggle('hot', !!(f && (f.L || []).includes(p.L.lv)));
-  });
-  positionsDirty = true;
-  lod(true);
+    return { on, subj, count: edges.length };
+  }
+  if (S.thread) {
+    const T = THREADS.find(t => t.id === S.thread);
+    return { on: new Map(T.nodes.map((id, i) => [id, `<span class="step">${i + 1}</span>`])), subj: null };
+  }
+  if (S.layer) {
+    return { on: new Map(NODES.filter(n => inLayer(n, S.layer)).map(n => [n.id, `<span class="rel" style="color:var(--amber)">${S.layer}</span>`])), subj: null };
+  }
+  return null;
 }
-let lastCam = new THREE.Vector3(1e9, 0, 0);
-function lod(force) {
-  if (!renderer) return;
-  if (!force && lastCam.distanceToSquared(camera.position) < 0.25) return;
-  lastCam.copy(camera.position);
-  const focus = S.sel || S.hover;
+function applyBoard() {
+  const f = boardFocus();
+  BOARD.classList.toggle('focus', !!f);
   NODES.forEach(n => {
-    const d = camera.position.distanceTo(n._pos);
-    let show;
-    if (n._st === 'dim') show = n.id === focus;
-    else show = S.labelsAll || n.t === 'M' || (n.t === 'K' && d < 270) || d < 125 || nbSet.has(n.id) || (threadSet && threadSet.has(n.id)) || (S.sys === n.s && d < 230);
-    const sub = n.t === 'M' ? d < 330 : (d < 80 || n.id === focus);
-    const fade = n._st === 'dim' ? 1 : Math.min(1, Math.max(0.5, 1.2 - (d - 110) / 380));
-    const op = ((n._sop ?? 1) * fade).toFixed(2);
-    if (op !== n._op) { n._el.style.opacity = op; n._op = op; }
-    if (show !== n._lbl) { n._el.classList.toggle('hide-lbl', !show); n._lbl = show; }
-    if (sub !== n._sub) { n._el.classList.toggle('hide-sub', !sub); n._sub = sub; }
+    const r = ROWS[n.id];
+    if (!r) return;
+    const isOn = f ? f.on.has(n.id) : false;
+    const isSubj = f ? f.subj === n.id : false;
+    r.classList.toggle('on', isOn);
+    r.classList.toggle('subj', isSubj || (!f && S.sel === n.id));
+    const later = !f && S.cutoff && FIRST[n.id] && FIRST[n.id] > S.cutoff;
+    r.style.opacity = later ? '0.2' : '';
+    const rt = r.querySelector('[data-rt]');
+    const want = isOn && f.on.get(n.id) ? f.on.get(n.id) : defaultRt(n);
+    if (rt.innerHTML !== want) rt.innerHTML = want;
+  });
+  $$('.tile', BOARD).forEach(t => {
+    const ids = boardNodes(t.dataset.sys).map(n => n.id);
+    const c = t.querySelector('[data-c]');
+    if (f) {
+      const k = ids.filter(id => f.on.has(id) || f.subj === id).length;
+      t.classList.toggle('has-on', k > 0);
+      const linked = ids.filter(id => f.on.has(id)).length;
+      c.textContent = linked ? `${linked} LINKED` : (ids.includes(f.subj) ? 'SUBJECT' : '—');
+      c.classList.toggle('hot', k > 0);
+    } else {
+      t.classList.remove('has-on');
+      c.textContent = ids.length;
+      c.classList.remove('hot');
+    }
   });
 }
+BOARD.addEventListener('pointerover', ev => {
+  if (ev.pointerType === 'touch') return;
+  const r = ev.target.closest('.nrow');
+  const id = r ? r.dataset.id : null;
+  if (id !== S.hover) { S.hover = id; applyBoard(); renderBar(); }
+});
+BOARD.addEventListener('pointerleave', () => { if (S.hover) { S.hover = null; applyBoard(); renderBar(); } });
+BOARD.addEventListener('focusin', ev => { const r = ev.target.closest('.nrow'); if (r) { S.hover = r.dataset.id; applyBoard(); renderBar(); } });
+BOARD.addEventListener('focusout', () => { S.hover = null; applyBoard(); renderBar(); });
+BOARD.addEventListener('click', ev => {
+  const r = ev.target.closest('.nrow');
+  if (r) { S.hover = null; select(r.dataset.id, 'reset'); }
+});
 
-/* ---------------- tooltip ---------------- */
-function showTip(n, ev) {
-  const tk = NODE_TK[n.id] || n.tk;
+/* ---------------- subject board ---------------- */
+const SUBJ = $('#subject');
+function subjCard(e, id) {
+  const o = BY[other(e, id)];
+  const tk = NODE_TK[o.id] || o.tk || '';
+  return `<button type="button" class="sj-card c-${e.type}" data-go="${o.id}" data-ei="${e.i}">
+    <span class="top"><span class="nm">${esc(o.n)}</span>${tk ? `<span class="tk" style="font-size:10.5px">${esc(tk)}</span>` : ''}</span>
+    <span class="lb">${esc(e.label)}</span>
+    <span class="dt"><span class="rw">${esc(relWord(e, id))}</span>${e.date ? ' · ' + esc(fmtDate(e.date).toUpperCase()) : ''}${e.v ? '' : ' · <span class="uv">UNVERIFIED</span>'}</span>
+  </button>`;
+}
+function groupHtml(type, label, list, id) {
+  if (!list.length) return '';
+  const T = C.edgeTypes[type];
+  return `<div class="sj-group"><span class="eyebrow"><span style="color:${T.color}">${esc(label)}</span><span>${list.length}</span></span>${list.map(e => subjCard(e, id)).join('')}</div>`;
+}
+function viaGroup(label, rows) {
+  if (!rows.length) return '';
+  return `<div class="sj-group"><span class="eyebrow"><span style="color:#C9A86A">${esc(label)}</span><span>${rows.length}</span></span>${rows.map(([id, lb, tag]) => {
+    const o = BY[id]; const tk = NODE_TK[id] || o.tk || '';
+    return `<button type="button" class="sj-card c-board" data-go="${id}"><span class="top"><span class="nm">${esc(o.n)}</span>${tk ? `<span class="tk" style="font-size:10.5px">${esc(tk)}</span>` : ''}</span><span class="lb">${esc(lb)}</span><span class="dt"><span class="rw">${tag}</span></span></button>`;
+  }).join('')}</div>`;
+}
+function renderSubject() {
+  const id = S.sel;
+  if (!id) { SUBJ.innerHTML = ''; return; }
+  const n = BY[id], sy = SYS[n.s];
+  const tk = NODE_TK[id] || n.tk;
   const m = tk && MK[tk];
-  const priceLine = m && m.quote && m.quote.current_price ? ` · ${px(m.quote.current_price)}` : '';
-  tooltip.innerHTML = `<b>${esc(n.n)}</b>${esc(shortSum(n.sum))}<span class="m">${esc(TIER[n.t])} · ${esc(SYS[n.s].name)} · ${ADJ[n.id].length} threads${tk ? ' · ' + esc(tk) : ''}${esc(priceLine)}${n.pv ? ' · ' + esc(n.pv) : ''}</span>`;
-  tooltip.classList.add('on');
-  moveTip(ev);
+  const edges = ADJ[id].filter(edgeOn).sort((a, b) => (b.date || '0').localeCompare(a.date || '0'));
+  const inc = {}, out = {}, partners = [], ties = [];
+  edges.forEach(e => {
+    if (e.type === 'partner') { partners.push(e); return; }
+    if (e.type === 'tie') { ties.push(e); return; }
+    const bucket = e.b === id ? inc : out;
+    (bucket[e.type] = bucket[e.type] || []).push(e);
+  });
+  const left = GROUP_ORDER.map(t => groupHtml(t, GROUP_IN[t], inc[t] || [], id)).join('');
+  const right = GROUP_ORDER.map(t => groupHtml(t, GROUP_OUT[t], out[t] || [], id)).join('');
+  const hidden = ADJ[id].length - edges.length;
+  const short = n.n.length > 16 ? (isPerson(n) ? 'them' : 'it') : n.n;
+  SUBJ.innerHTML = `
+    <div class="sj-grid">
+      <svg class="sj-lines" aria-hidden="true"></svg>
+      <div class="sj-col l"><div class="sj-side-head">Acts on ${esc(short)}</div>${left || `<div class="sj-empty">${hidden ? 'None in the current filters.' : 'None on file.'}</div>`}</div>
+      <div class="sj-col c">
+        <div class="sj-core" id="sj-core">
+          <span class="eyebrow" style="color:${sy.tint}">${esc(sy.n)} // ${esc(sy.name)}</span>
+          <h2>${esc(n.n)}</h2>
+          <div class="meta">${isPerson(n) ? `<span class="chip">Key player</span>` : ''}${tk ? `<span class="tk">${esc(tk)}</span>` : ''}${m ? `<span class="grade g-${m.grade}">${m.grade}</span>` : ''}${n.pv ? `<span class="chip">${esc(n.pv)}</span>` : ''}${isPerson(n) ? '' : `<span class="chip">${esc(layerCode(n))}</span>`}</div>
+          ${isPerson(n) && n.role ? `<p class="sj-role">${esc(n.role)}</p>` : ''}
+          <p>${esc(shortSum(n.sum))}</p>
+          <span class="eyebrow">${edges.length} threads${hidden ? ` · ${hidden} filtered out` : ''}</span>
+        </div>
+        ${groupHtml('partner', 'Partners', partners, id)}
+        ${groupHtml('tie', 'Ties', ties, id)}
+        ${isPerson(n) ? viaGroup('Shares a seat with', colleagues(id).map(c => [c.p, 'via ' + c.orgs.map(o => BY[o].n).join(', '), 'COLLEAGUE'])) : viaGroup('Board interlocks', interlocks(id).map(x => [x.org, 'via ' + x.via.map(q => BY[q].n).join(', '), 'INTERLOCK']))}
+      </div>
+      <div class="sj-col r"><div class="sj-side-head">${esc(n.n.length > 16 ? (isPerson(n) ? 'They' : 'It') : n.n)} act${isPerson(n) && n.n.length > 16 ? '' : 's'} on</div>${right || `<div class="sj-empty">${hidden ? 'None in the current filters.' : 'None on file.'}</div>`}</div>
+    </div>`;
+  drawLines();
 }
-function moveTip(ev) {
-  if (!ev || ev.clientX == null) { tooltip.style.left = '-999px'; return; }
-  const w = tooltip.offsetWidth, h = tooltip.offsetHeight;
-  let x = ev.clientX + 16, y = ev.clientY + 16;
-  if (x + w > innerWidth - 8) x = ev.clientX - w - 16;
-  if (y + h > innerHeight - 8) y = ev.clientY - h - 16;
-  tooltip.style.left = x + 'px'; tooltip.style.top = y + 'px';
+/* connectors live only in the two gutters: card edge → spine → subject card */
+function drawLines() {
+  const grid = $('.sj-grid', SUBJ);
+  if (!grid || !S.sel) return;
+  const svg = $('.sj-lines', grid);
+  if (getComputedStyle(svg).display === 'none') { svg.innerHTML = ''; return; }
+  const g = grid.getBoundingClientRect();
+  const core = $('#sj-core', grid).getBoundingClientRect();
+  const coreY = core.top - g.top + 34;
+  const parts = [];
+  ['l', 'r'].forEach(side => {
+    const col = $('.sj-col.' + side, grid);
+    const cards = $$('.sj-card', col);
+    if (!cards.length) return;
+    const cr = col.getBoundingClientRect();
+    const edgeX = side === 'l' ? cr.right - g.left : cr.left - g.left;
+    const coreX = side === 'l' ? core.left - g.left : core.right - g.left;
+    const spineX = (edgeX + coreX) / 2;
+    const ys = cards.map(c => { const b = c.getBoundingClientRect(); return b.top - g.top + Math.min(18, b.height / 2); });
+    const y0 = Math.min(coreY, ...ys), y1 = Math.max(coreY, ...ys);
+    parts.push(`<path d="M${spineX} ${y0}V${y1}" stroke="rgba(165,165,165,0.28)" stroke-width="1.5" fill="none"/>`);
+    parts.push(`<path d="M${spineX} ${coreY}H${coreX}" stroke="rgba(237,237,237,0.5)" stroke-width="1.5" fill="none"/>`);
+    cards.forEach((c, i) => {
+      const col2 = C.edgeTypes[EDGES[+c.dataset.ei].type].color;
+      parts.push(`<path class="stub" data-ei="${c.dataset.ei}" d="M${edgeX} ${ys[i]}H${spineX}" stroke="${col2}" stroke-width="1.5" fill="none" opacity="0.7"/>`);
+      parts.push(`<circle cx="${spineX}" cy="${ys[i]}" r="2.5" fill="${col2}"/>`);
+    });
+    parts.push(`<circle cx="${coreX}" cy="${coreY}" r="3.5" fill="#F0A63A"/>`);
+  });
+  svg.innerHTML = parts.join('');
 }
-function hideTip() { tooltip.classList.remove('on'); }
+function hlSubject(ei) {
+  const grid = $('.sj-grid', SUBJ);
+  if (!grid) return;
+  grid.classList.toggle('sj-dim', ei != null);
+  $$('.sj-card', grid).forEach(c => c.classList.toggle('hl', ei != null && +c.dataset.ei === ei));
+  $$('.stub', grid).forEach(p => { const on = ei != null && +p.dataset.ei === ei; p.setAttribute('opacity', ei == null ? '0.7' : on ? '1' : '0.15'); p.setAttribute('stroke-width', on ? '2.5' : '1.5'); });
+}
+SUBJ.addEventListener('click', ev => {
+  const c = ev.target.closest('.sj-card');
+  if (c) select(c.dataset.go, 'push');
+});
+SUBJ.addEventListener('pointerover', ev => { const c = ev.target.closest('.sj-card'); hlSubject(c ? +c.dataset.ei : null); });
+SUBJ.addEventListener('pointerleave', () => hlSubject(null));
+new ResizeObserver(() => { if (S.mv === 'subject' && S.sel) drawLines(); }).observe($('#board-wrap'));
 
-/* ---------------- selection + dossier ---------------- */
-function select(id, fly = false) {
+/* ---------------- status bar ---------------- */
+const BAR = $('#bar');
+function renderBar() {
+  const h = [];
+  if (MOBILE()) h.push(`<button type="button" class="btn" id="rail-toggle" aria-pressed="${document.body.classList.contains('rail-open')}">FILTERS</button>`);
+  if (S.q.trim()) {
+    const m = searchMatches(S.q).slice(0, 10);
+    h.push(`<span class="crumbs"><span class="cur">${m.length ? m.length + (m.length === 10 ? '+' : '') + ' MATCH' + (m.length === 1 ? '' : 'ES') : 'NO MATCH'}</span></span>`);
+    h.push(m.map((x, i) => `<button type="button" class="match ${i === 0 ? 'first' : ''}" data-m="${i}">${x.kind === 'thread' ? `<span class="eyebrow" style="margin-right:6px">THREAD ${x.id}</span>` : ''}${esc(x.name)}${x.tk ? `<span class="tk">${esc(x.tk)}</span>` : ''}</button>`).join(''));
+    BAR.innerHTML = h.join('');
+    return;
+  }
+  const boardVisible = !(S.sel && S.mv === 'subject');
+  if (boardVisible) h.push(`<span class="seg2" role="group" aria-label="Board"><button type="button" data-bm="org" aria-pressed="${S.board === 'org'}">ORGANIZATIONS</button><button type="button" data-bm="ppl" aria-pressed="${S.board === 'ppl'}">PEOPLE</button></span>`);
+  if (S.sel) {
+    const trail = S.trail.length ? S.trail : [S.sel];
+    h.push(`<span class="crumbs"><button type="button" data-crumb="-1">BOARD</button>${trail.map((id, i) => `<span>/</span>${i === trail.length - 1 ? `<span class="cur">${esc(BY[id].n.toUpperCase())}</span>` : `<button type="button" data-crumb="${i}">${esc(BY[id].n.toUpperCase())}</button>`}`).join('')}</span>`);
+    h.push(`<span class="bar-actions"><button type="button" class="btn" data-mv="subject" aria-pressed="${S.mv === 'subject'}">SUBJECT</button><button type="button" class="btn" data-mv="board" aria-pressed="${S.mv === 'board'}">ON BOARD</button><button type="button" class="btn icon" data-act="close" aria-label="Close subject"><svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="M2 2l8 8M10 2l-8 8" stroke="currentColor" stroke-width="1.5"/></svg></button></span>`);
+    BAR.innerHTML = h.join('');
+    return;
+  }
+  const note = (b, m) => `<span class="bar-note" style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis"><b>${b}</b><span class="m">${m}</span></span>`;
+  let ctxNote = '', actions = '';
+  if (S.thread) {
+    const T = THREADS.find(t => t.id === S.thread);
+    h.push(`<span class="bar-tag">THREAD ${esc(T.id)}</span>`);
+    ctxNote = note(esc(T.name), 'Numbers show the order of entry');
+    actions = `<span class="bar-actions"><button type="button" class="btn" data-act="case">OPEN CASE</button><button type="button" class="btn" data-act="clear">CLEAR</button></span>`;
+  } else if (S.layer) {
+    h.push(`<span class="bar-tag" style="border-color:rgba(240,166,58,.6);color:var(--amber)">${esc(S.layer)}</span>`);
+    ctxNote = note(esc(layerName(S.layer)), `${NODES.filter(n => inLayer(n, S.layer)).length} organizations on this layer`);
+    actions = `<span class="bar-actions"><button type="button" class="btn" data-act="clear">CLEAR</button></span>`;
+  } else {
+    ctxNote = note(`${ORGS.length} organizations · ${PEOPLE.length} people · ${EDGES.length} threads`, MOBILE() ? 'Tap a name to open its subject board' : 'Hover a name to light its connections, click to open its subject board');
+  }
+  if (S.hover) {
+    const n = BY[S.hover];
+    const vis = ADJ[n.id].filter(edgeOn).length;
+    h.push(note(esc(n.n), isPerson(n) ? `${esc(roleLine(n.id))} · ${vis} link${vis === 1 ? '' : 's'} · ${colleagues(n.id).length} shared seats · click to open` : `${esc(SYS[n.s].name)} · ${esc(layerCode(n))} · ${vis} thread${vis === 1 ? '' : 's'} lit · ${peopleOf(n.id).length} people · click to open`));
+  } else h.push(ctxNote);
+  h.push(actions);
+  BAR.innerHTML = h.join('');
+}
+BAR.addEventListener('click', ev => {
+  const b = ev.target.closest('button');
+  if (!b) return;
+  if (b.id === 'rail-toggle') { document.body.classList.toggle('rail-open'); renderBar(); return; }
+  if (b.dataset.m != null) { goMatch(searchMatches(S.q)[+b.dataset.m]); return; }
+  if (b.dataset.bm) { S.board = b.dataset.bm; S.hover = null; renderBoard(); applyBoard(); renderBar(); writeHash(); return; }
+  if (b.dataset.crumb != null) {
+    const i = +b.dataset.crumb;
+    if (i < 0) { select(null); return; }
+    S.trail = S.trail.slice(0, i + 1);
+    select(S.trail[i], 'keep');
+    return;
+  }
+  if (b.dataset.mv) { S.mv = b.dataset.mv; showMain(); renderBar(); applyBoard(); writeHash(); return; }
+  if (b.dataset.act === 'close') select(null);
+  if (b.dataset.act === 'case') openThread(S.thread);
+  if (b.dataset.act === 'clear') { S.thread = null; S.layer = null; renderRail(); renderBar(); applyBoard(); writeHash(); }
+});
+
+/* ---------------- selection ---------------- */
+function showMain() {
+  const subj = S.sel && S.mv === 'subject';
+  BOARD.hidden = !!subj;
+  SUBJ.hidden = !subj;
+  if (subj) renderSubject();
+}
+function select(id, how = 'reset') {
   S.sel = id;
   S.edgeHover = null;
-  hideTip();
+  S.hover = null;
   if (id) {
+    if (how === 'push') { if (S.trail[S.trail.length - 1] !== id) S.trail.push(id); if (S.trail.length > 7) S.trail.shift(); }
+    else if (how !== 'keep') S.trail = [id];
+    S.mv = 'subject';
     renderDossier(id);
-    document.body.classList.remove('no-dossier');
-    if (fly) flyToNode(id);
+    $('#dossier').hidden = false;
+    document.body.classList.add('has-sel');
   } else {
-    document.body.classList.add('no-dossier');
+    S.trail = [];
+    S.mv = 'board';
+    $('#dossier').hidden = true;
+    document.body.classList.remove('has-sel');
   }
-  applyState();
+  showMain();
+  renderBar();
+  applyBoard();
+  $('#board-wrap').scrollTop = 0;
+  if (MOBILE()) $('#stage').scrollTop = 0;
   writeHash();
 }
+
+/* ---------------- rail ---------------- */
+const RAIL = $('#rail');
+const TL_START = [2024, 10];
+const TL_MAX = 50;
+function cutoffFor(i) {
+  const tot = TL_START[1] - 1 + i;
+  const y = TL_START[0] + Math.floor(tot / 12), m = (tot % 12) + 1;
+  return `${y}-${String(m).padStart(2, '0')}-31`;
+}
+let rpIndex = TL_MAX;
 function typeSwatch(type) {
   const T = C.edgeTypes[type];
   const style = T.dash ? (T.dash[0] < 0.6 ? 'dotted' : 'dashed') : 'solid';
   return `<span class="sw" style="border-top-color:${T.color};border-top-style:${style}"></span>`;
 }
+function renderRail() {
+  const typeCount = {};
+  EDGES.forEach(e => { typeCount[e.type] = (typeCount[e.type] || 0) + 1; });
+  RAIL.innerHTML = `
+  <section><span class="eyebrow">Lens</span>
+    ${C.lenses.map(l => `<button type="button" class="lens" data-lens="${l.id}" aria-pressed="${S.lens === l.id}"><b>${esc(l.name)}</b><span>${esc(l.d)}</span></button>`).join('')}
+  </section>
+  <section><span class="eyebrow">Stack layer · tap to light</span>
+    ${LAYER_CODES.map(code => `<button type="button" class="row-btn" data-layer="${code}" aria-pressed="${S.layer === code}"><span class="n">${code}</span><span class="lbl">${esc(layerName(code))}</span><span class="c">${NODES.filter(n => inLayer(n, code)).length}</span></button>`).join('')}
+  </section>
+  <section><span class="eyebrow">Thread types · tap to hide</span>
+    ${Object.entries(C.edgeTypes).map(([k, T]) => `<button type="button" class="row-btn ${S.off.has(k) ? 'type-off' : ''}" data-type="${k}" aria-pressed="false"><span>${typeSwatch(k)}</span><span class="lbl">${esc(T.name)}</span><span class="c">${typeCount[k] || 0}</span></button>`).join('')}
+  </section>
+  <section><span class="eyebrow">Replay the build</span>
+    <div class="replay"><button type="button" class="btn icon" id="rp-play" aria-label="Replay the build"><svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 1.5v9l7.5-4.5z" fill="currentColor"/></svg></button>
+    <div><label class="sr" for="rp-range">Show the case as of</label><input type="range" id="rp-range" min="0" max="${TL_MAX}" value="${rpIndex}"><div id="rp-label">${rpLabel()}</div></div></div>
+  </section>
+  <section><span class="eyebrow">Key</span>
+    <div class="legend-row"><span class="g"><span class="gl t-M"></span></span>Master node</div>
+    <div class="legend-row"><span class="g"><span class="gl t-K"></span></span>Key node</div>
+    <div class="legend-row"><span class="g"><span class="gl t-N"></span></span>Node</div>
+    <div class="legend-row"><span class="g"><span class="gl t-N k-buyer"></span></span>Sovereign buyer · program</div>
+    <div class="legend-row"><span class="g"><span class="gl t-N k-cap"></span></span>Capital</div>
+    <div class="legend-row"><span class="g"><span class="gl t-N k-model"></span></span>Model</div>
+    <div class="legend-row"><span class="g"><span class="gl t-N k-threat"></span></span>Threat · counter-bloc · oversight</div>
+    <div class="legend-row"><span class="g"><span class="tk" style="font-size:10px">TKR</span></span>Listed ticker</div>
+  </section>
+  <section><button type="button" class="btn" data-act="reset">RESET ALL</button></section>`;
+}
+function rpLabel() { return rpIndex >= TL_MAX ? 'ALL DATES' : 'THROUGH ' + fmtDate(cutoffFor(rpIndex).slice(0, 7)).toUpperCase(); }
+function setReplay(i) {
+  rpIndex = +i;
+  S.cutoff = rpIndex >= TL_MAX ? null : cutoffFor(rpIndex);
+  const r = $('#rp-range'); if (r) r.value = rpIndex;
+  const l = $('#rp-label'); if (l) l.textContent = rpLabel();
+  applyBoard();
+  if (S.sel && S.mv === 'subject') renderSubject();
+}
+let playTimer = null;
+RAIL.addEventListener('input', ev => { if (ev.target.id === 'rp-range') { stopPlay(); setReplay(ev.target.value); } });
+function stopPlay() { if (playTimer) { clearInterval(playTimer); playTimer = null; } }
+RAIL.addEventListener('click', ev => {
+  const b = ev.target.closest('button');
+  if (!b) return;
+  if (b.id === 'rp-play') {
+    if (playTimer) { stopPlay(); return; }
+    let i = 0; setReplay(0);
+    playTimer = setInterval(() => { i++; if (i > TL_MAX) { stopPlay(); return; } setReplay(i); }, 220);
+    return;
+  }
+  if (b.dataset.lens) { S.lens = b.dataset.lens; }
+  else if (b.dataset.layer) { S.layer = S.layer === b.dataset.layer ? null : b.dataset.layer; if (S.layer) S.thread = null; }
+  else if (b.dataset.type) { const k = b.dataset.type; S.off.has(k) ? S.off.delete(k) : S.off.add(k); }
+  else if (b.dataset.act === 'reset') { resetAll(); return; }
+  else return;
+  const st = RAIL.scrollTop;
+  renderRail(); RAIL.scrollTop = st;
+  applyBoard(); renderBar();
+  if (S.sel && S.mv === 'subject') renderSubject();
+  writeHash();
+});
+function resetAll() {
+  stopPlay();
+  S.lens = 'all'; S.off.clear(); S.layer = null; S.thread = null; S.q = ''; $('#q').value = '';
+  rpIndex = TL_MAX; S.cutoff = null;
+  renderRail();
+  select(null);
+}
+
+/* ---------------- dossier ---------------- */
 function marketStrip(tk) {
   const m = MK[tk];
   if (!m) return '';
@@ -521,6 +602,14 @@ function marketStrip(tk) {
     <div><div class="v"><span class="grade g-${m.grade}">${m.grade}</span></div><div class="l">HEALTH</div></div>
   </div>`;
 }
+const ST = { d: ['● DONE', 'st-d'], m: ['◐ IN MOTION', 'st-m'], p: ['○ PENDING', 'st-p'], b: ['✕ BLOCKED', 'st-b'] };
+function ledger(rows) {
+  return `<div class="ledger">${rows.map(o => { const st = ST[o[0]] || ST.p; return `<span class="st ${st[1]}">${st[0]}</span><span>${esc(o[1])}${o[2] ? `<span class="dt">${esc(fmtDate(o[2]))}</span>` : ''}</span>`; }).join('')}</div>`;
+}
+function personRow(id, note) {
+  const o = BY[id];
+  return `<button type="button" class="pp-row" data-go="${id}"><span class="gl t-${o.t} k-${o.k}" aria-hidden="true"></span><span><b>${esc(o.n)}</b><span>${esc(note)}</span></span></button>`;
+}
 function renderDossier(id) {
   const n = BY[id];
   const sy = SYS[n.s];
@@ -528,9 +617,8 @@ function renderDossier(id) {
   const fx = !MK[tk] && (C.markets.foreign || []).find(f => f.node === n.id);
   const edges = [...ADJ[id]].sort((a, b) => (b.date || '0').localeCompare(a.date || '0'));
   const th = NODE_THREADS[id] || [];
-  const ST = { d: ['● DONE', 'st-d'], m: ['◐ IN MOTION', 'st-m'], p: ['○ PENDING', 'st-p'], b: ['✕ BLOCKED', 'st-b'] };
   const h = [];
-  h.push(`<div class="d-head"><span class="eyebrow" style="color:${sy.tint}">${esc(sy.n)} // ${esc(sy.name)} · ${esc(TIER[n.t])}</span>
+  h.push(`<div class="d-head"><span class="eyebrow" style="color:${sy.tint}">${esc(sy.n)} // ${esc(sy.name)} · ${esc(isPerson(n) ? 'Key player' : TIER[n.t])}</span>
     <button type="button" class="btn icon" id="d-close" aria-label="Close dossier"><svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="M2 2l8 8M10 2l-8 8" stroke="currentColor" stroke-width="1.5"/></svg></button></div>`);
   h.push(`<h2 class="d-name">${esc(n.n)}</h2>`);
   const chips = [];
@@ -538,6 +626,7 @@ function renderDossier(id) {
   if (n.pv) chips.push(`<span class="chip">${esc(n.pv)}</span>`);
   chips.push(`<span class="chip">${esc(KIND[n.k] || n.k)}</span>`);
   (n.L || []).forEach(l => chips.push(`<span class="chip">L${l} ${esc(C.layers[l].name)}</span>`));
+  if (n.analysis) chips.push(`<span class="chip" style="color:var(--bone);border-color:rgba(198,180,112,.45)">ANALYSIS</span>`);
   h.push(`<div class="chips">${chips.join('')}</div>`);
   if (tk && MK[tk]) {
     h.push(marketStrip(tk));
@@ -545,10 +634,22 @@ function renderDossier(id) {
   } else if (fx) {
     h.push(`<div class="card" style="padding:12px;font-size:12.5px;line-height:1.5;color:var(--soft)"><span class="eyebrow">${esc(fx.ex)} listing</span><br>${esc(fx.print)}${fx.book ? '<br>' + esc(fx.book) : ''}</div>`);
   }
+  if (isPerson(n) && n.role) h.push(`<p class="d-role">${esc(n.role)}</p>`);
   h.push(`<p class="d-sum">${esc(n.sum)}</p>`);
   if (n.dir) h.push(`<div class="d-sec"><span class="eyebrow">Directive · mission</span><div class="d-dir">${esc(n.dir)}</div></div>`);
-  if (n.obj && n.obj.length) {
-    h.push(`<div class="d-sec"><span class="eyebrow">Objectives ledger</span><div class="ledger">${n.obj.map(o => `<span class="st ${ST[o[0]][1]}">${ST[o[0]][0]}</span><span>${esc(o[1])}${o[2] ? `<span class="dt">${esc(fmtDate(o[2]))}</span>` : ''}</span>`).join('')}</div></div>`);
+  if (n.strat) h.push(`<div class="d-sec"><span class="eyebrow">Strategy</span><p class="d-strat">${esc(n.strat)}</p></div>`);
+  if (n.plan && n.plan.length) h.push(`<div class="d-sec"><span class="eyebrow">Plan of action</span>${ledger(n.plan)}</div>`);
+  if (n.obj && n.obj.length) h.push(`<div class="d-sec"><span class="eyebrow">Objectives ledger</span>${ledger(n.obj)}</div>`);
+  if (isPerson(n)) {
+    const pos = orgsOf(id);
+    if (pos.length) h.push(`<div class="d-sec"><span class="eyebrow">Positions · ${pos.length}</span><div class="ppl-list">${pos.map(({ org, e }) => personRow(org, `${REL[e.type][1].toLowerCase()} · ${e.label}`)).join('')}</div></div>`);
+    const col = colleagues(id);
+    if (col.length) h.push(`<div class="d-sec"><span class="eyebrow">Shares a seat with · ${col.length}</span><div class="ppl-list">${col.map(c => personRow(c.p, 'via ' + c.orgs.map(o => BY[o].n).join(', '))).join('')}</div></div>`);
+  } else {
+    const ppl = peopleOf(id);
+    if (ppl.length) h.push(`<div class="d-sec"><span class="eyebrow">Key people · ${ppl.length}</span><div class="ppl-list">${ppl.map(({ p, e }) => personRow(p, `${REL[e.type][0].toLowerCase()} · ${e.label}`)).join('')}</div></div>`);
+    const il = interlocks(id);
+    if (il.length) h.push(`<div class="d-sec"><span class="eyebrow">Board interlocks · ${il.length}</span><div class="ppl-list">${il.map(x => personRow(x.org, 'via ' + x.via.map(q => BY[q].n).join(', '))).join('')}</div></div>`);
   }
   if (n.f && n.f.length) h.push(`<div class="d-sec"><span class="eyebrow">Facts on file</span><ul class="facts">${n.f.map(x => `<li>${esc(x)}</li>`).join('')}</ul></div>`);
   if (edges.length) {
@@ -568,7 +669,7 @@ $('#dossier').addEventListener('click', ev => {
   const t = ev.target.closest('button, a');
   if (!t) return;
   if (t.id === 'd-close') { select(null); return; }
-  if (t.dataset.go) { select(t.dataset.go, true); return; }
+  if (t.dataset.go) { select(t.dataset.go, 'push'); return; }
   if (t.dataset.thread) { openThread(t.dataset.thread); return; }
   if (t.dataset.openTk) { openTicker(t.dataset.openTk); return; }
   if (t.dataset.copy) { copyText(t.dataset.copy, t); }
@@ -578,205 +679,31 @@ function copyText(text, btn) {
   if (navigator.clipboard) navigator.clipboard.writeText(text).then(done, done); else done();
 }
 
-/* ---------------- rail ---------------- */
-const RAIL = $('#rail');
-function renderRail() {
-  const sysCount = {};
-  NODES.forEach(n => { sysCount[n.s] = (sysCount[n.s] || 0) + 1; });
-  const typeCount = {};
-  EDGES.forEach(e => { typeCount[e.type] = (typeCount[e.type] || 0) + 1; });
-  RAIL.innerHTML = `
-  <section><span class="eyebrow">View</span>
-    <div class="seg" role="group" aria-label="View mode">
-      <button type="button" data-mode="world" aria-pressed="${S.mode === 'world'}">WORLD</button>
-      <button type="button" data-mode="depth" aria-pressed="${S.mode === 'depth'}">DEPTH</button>
-    </div>
-  </section>
-  <section><span class="eyebrow">Lens</span>
-    ${C.lenses.map(l => `<button type="button" class="lens" data-lens="${l.id}" aria-pressed="${S.lens === l.id}"><b>${esc(l.name)}</b><span>${esc(l.d)}</span></button>`).join('')}
-  </section>
-  <section><span class="eyebrow">Master systems · tap to isolate</span>
-    ${[...C.systems].sort((a, b) => a.n.localeCompare(b.n)).map(s => `<button type="button" class="row-btn" data-sys="${s.id}" aria-pressed="${S.sys === s.id}"><span class="n">${esc(s.n)}</span><span>${esc(s.name)}</span><span class="c">${sysCount[s.id] || 0}</span></button>`).join('')}
-  </section>
-  <section><span class="eyebrow">Thread types · tap to hide</span>
-    ${Object.entries(C.edgeTypes).map(([k, T]) => `<button type="button" class="row-btn ${S.off.has(k) ? 'type-off' : ''}" data-type="${k}" aria-pressed="${!S.off.has(k)}" style="border-color:transparent;background:none"><span>${typeSwatch(k)}</span><span>${esc(T.name)}</span><span class="c">${typeCount[k] || 0}</span></button>`).join('')}
-  </section>
-  <section><span class="eyebrow">Node tiers</span>
-    <div class="legend-row"><span class="g"><span style="width:20px;height:20px;border-radius:50%;border:1.5px solid #E7EBF1;box-shadow:0 0 0 4px rgba(231,235,241,.08);display:inline-flex;align-items:center;justify-content:center"><span style="width:6px;height:6px;border-radius:50%;background:#E7EBF1"></span></span></span>Master node</div>
-    <div class="legend-row"><span class="g"><span style="width:14px;height:14px;border-radius:50%;border:1.5px solid #E7EBF1"></span></span>Key node</div>
-    <div class="legend-row"><span class="g"><span style="width:9px;height:9px;border-radius:50%;background:#B9C2CF"></span></span>Node</div>
-    <div class="legend-row"><span class="g"><span style="width:11px;height:11px;border:1.5px solid #F0A63A;background:rgba(240,166,58,.18);transform:rotate(45deg)"></span></span>Sovereign buyer · program</div>
-    <div class="legend-row"><span class="g"><span style="width:10px;height:10px;border-radius:50%;background:#46C2EA"></span></span>Capital</div>
-    <div class="legend-row"><span class="g"><span style="width:10px;height:10px;border-radius:50%;background:#A996FF"></span></span>Model</div>
-    <div class="legend-row"><span class="g"><span style="width:13px;height:13px;border-radius:50%;border:1.5px dashed #FF5B4F"></span></span>Threat · counter-bloc · oversight</div>
-  </section>
-  <section class="rail-foot">
-    <button type="button" class="btn" data-act="labels" aria-pressed="${S.labelsAll}">${S.labelsAll ? 'AUTO LABELS' : 'ALL LABELS'}</button>
-    <button type="button" class="btn" data-act="reset">RESET</button>
-  </section>`;
-}
-RAIL.addEventListener('click', ev => {
-  const b = ev.target.closest('button');
-  if (!b) return;
-  if (b.dataset.mode) setMode(b.dataset.mode);
-  else if (b.dataset.lens) { S.lens = b.dataset.lens; renderRail(); applyState(); writeHash(); }
-  else if (b.dataset.sys) { S.sys = S.sys === b.dataset.sys ? null : b.dataset.sys; renderRail(); applyState(); if (S.sys) flyToSystem(S.sys); writeHash(); }
-  else if (b.dataset.type) { const k = b.dataset.type; S.off.has(k) ? S.off.delete(k) : S.off.add(k); renderRail(); applyState(); }
-  else if (b.dataset.act === 'labels') { S.labelsAll = !S.labelsAll; renderRail(); lod(true); }
-  else if (b.dataset.act === 'reset') resetAll();
-});
-function flyToSystem(id) {
-  if (!controls) return;
-  const [x, y, w, h] = SYS[id].box;
-  const c = new THREE.Vector3(x + w / 2 - 70, S.mode === 'depth' ? 0 : 0, y + h / 2 - 45);
-  const dir = camera.position.clone().sub(controls.target).normalize();
-  flyTo(c.clone().add(dir.multiplyScalar(MOBILE() ? 120 : 85)), c, 1000);
-}
-function resetAll() {
-  S.lens = 'all'; S.sys = null; S.off.clear(); S.thread = null; S.cutoff = null; S.labelsAll = false;
-  setRange(TL_MAX);
-  renderBanner();
-  select(null);
-  renderRail();
-  applyState();
-  flyHome();
-  writeHash();
-}
-$('#rail-toggle').addEventListener('click', () => document.body.classList.toggle('rail-open'));
-
-/* ---------------- hud ---------------- */
-function dolly(f) {
-  if (!controls) return;
-  const off = camera.position.clone().sub(controls.target);
-  const len = THREE.MathUtils.clamp(off.length() * f, controls.minDistance, controls.maxDistance);
-  flyTo(controls.target.clone().add(off.setLength(len)), controls.target.clone(), 450);
-}
-$('#zin').addEventListener('click', () => dolly(0.72));
-$('#zout').addEventListener('click', () => dolly(1.38));
-$('#fit').addEventListener('click', flyHome);
-
-/* background click clears selection */
-let downAt = null;
-if (renderer) {
-  renderer.domElement.addEventListener('pointerdown', ev => { downAt = [ev.clientX, ev.clientY]; });
-  renderer.domElement.addEventListener('pointerup', ev => {
-    if (downAt && Math.hypot(ev.clientX - downAt[0], ev.clientY - downAt[1]) < 4 && S.sel) select(null);
-    downAt = null;
-  });
-}
-
-/* ---------------- thread banner ---------------- */
-function renderBanner() {
-  const b = $('#thread-banner');
-  if (!S.thread) { b.classList.remove('on'); b.innerHTML = ''; return; }
-  const T = THREADS.find(t => t.id === S.thread);
-  b.innerHTML = `<span style="color:#FF9A92">THREAD ${esc(T.id)}</span><span>${esc(T.name.toUpperCase())}</span><button type="button" class="btn" data-b="case">OPEN CASE</button><button type="button" class="btn" data-b="clear">CLEAR</button>`;
-  b.classList.add('on');
-}
-$('#thread-banner').addEventListener('click', ev => {
-  const b = ev.target.closest('button');
-  if (!b) return;
-  if (b.dataset.b === 'case') openThread(S.thread);
-  else { S.thread = null; renderBanner(); applyState(); writeHash(); }
-});
-
-/* ---------------- timeline ---------------- */
-const TL_START = [2024, 10];
-const TL_MAX = 50;
-function monthIndex(d) {
-  const p = d.split('-');
-  const y = +p[0];
-  let m = p[1] ? (p[1].startsWith('Q') ? (+p[1].slice(1)) * 3 : +p[1]) : 6;
-  const day = p[2] ? +p[2] : 15;
-  return (y - TL_START[0]) * 12 + (m - TL_START[1]) + (day - 1) / 31;
-}
-function cutoffFor(i) {
-  const tot = TL_START[1] - 1 + i;
-  const y = TL_START[0] + Math.floor(tot / 12), m = (tot % 12) + 1;
-  return `${y}-${String(m).padStart(2, '0')}-31`;
-}
-const TL_EVENTS = (() => {
-  const out = [], seen = new Set();
-  const map = { threat: 'threat', response: 'contract', context: 'policy' };
-  THREADS.forEach(t => t.events.forEach(e => {
-    const key = e[0] + e[1].slice(0, 24);
-    if (seen.has(key)) return; seen.add(key);
-    out.push({ d: e[0], t: e[1], k: map[e[3]] || 'policy', th: t.id });
-  }));
-  C.timeline.forEach(e => { const key = e[0] + e[1].slice(0, 24); if (!seen.has(key)) { seen.add(key); out.push({ d: e[0], t: e[1], k: e[2] }); } });
-  return out.filter(e => monthIndex(e.d) >= 0 && monthIndex(e.d) <= TL_MAX + 0.99).sort((a, b) => a.d.localeCompare(b.d));
-})();
-function buildTimeline() {
-  const track = $('#tl-track');
-  const years = $('#tl-years');
-  const pct = d => (monthIndex(d) / (TL_MAX + 1)) * 100;
-  years.innerHTML = ['2024-10-01', '2025-01-01', '2025-07-01', '2026-01-01', '2026-07-01', '2027-01-01', '2027-07-01', '2028-01-01', '2028-07-01'].map(d => `<span style="left:${pct(d)}%">${d.slice(5, 7) === '01' ? d.slice(0, 4) : fmtDate(d.slice(0, 7)).toUpperCase()}</span>`).join('');
-  const now = document.createElement('div');
-  now.className = 'now';
-  now.style.left = pct(NOW) + '%';
-  now.innerHTML = '<span>NOW · NOV 3, 2026</span>';
-  track.appendChild(now);
-  TL_EVENTS.forEach((e, i) => {
-    const b = document.createElement('button');
-    b.type = 'button';
-    b.className = `tick k-${e.k}${e.d > NOW ? ' future' : ''}`;
-    b.style.left = pct(e.d) + '%';
-    b.style.top = (19 + ((i % 3) - 1) * 0) + 'px';
-    b.setAttribute('aria-label', `${fmtDate(e.d)}: ${e.t}`);
-    b.addEventListener('mouseenter', ev => { tooltip.innerHTML = `<b>${esc(fmtDate(e.d))}</b>${esc(e.t)}${e.th ? `<span class="m">THREAD ${e.th}</span>` : ''}`; tooltip.classList.add('on'); moveTip(ev); });
-    b.addEventListener('mousemove', moveTip);
-    b.addEventListener('mouseleave', hideTip);
-    b.addEventListener('click', () => { setRange(Math.min(TL_MAX - 1, Math.max(0, Math.floor(monthIndex(e.d))))); });
-    track.appendChild(b);
-  });
-}
-const range = $('#tl-range');
-range.max = TL_MAX;
-function setRange(i) {
-  range.value = i;
-  if (+i >= TL_MAX) { S.cutoff = null; $('#tl-label').textContent = 'ALL DATES'; $('#tl-fill').style.width = '100%'; }
-  else {
-    S.cutoff = cutoffFor(+i);
-    $('#tl-label').textContent = 'THROUGH ' + fmtDate(S.cutoff.slice(0, 7)).toUpperCase();
-    $('#tl-fill').style.width = ((+i + 1) / (TL_MAX + 1)) * 100 + '%';
-  }
-  applyState();
-}
-range.addEventListener('input', () => setRange(+range.value));
-let playTimer = null;
-$('#tl-play').addEventListener('click', () => {
-  if (playTimer) { clearInterval(playTimer); playTimer = null; return; }
-  let i = 0;
-  setRange(0);
-  playTimer = setInterval(() => {
-    i++;
-    if (i > TL_MAX) { clearInterval(playTimer); playTimer = null; return; }
-    setRange(i);
-  }, 260);
-});
-$('#tl-all').addEventListener('click', () => { if (playTimer) { clearInterval(playTimer); playTimer = null; } setRange(TL_MAX); });
-
 /* ---------------- views ---------------- */
+const SHEETS = ['threads', 'players', 'playbook', 'markets', 'brief', 'sources'];
 function setView(v) {
   S.view = v;
+  document.body.classList.toggle('v-map', v === 'map');
   $$('#nav button').forEach(b => { if (b.dataset.view === v) b.setAttribute('aria-current', 'page'); else b.removeAttribute('aria-current'); });
-  ['threads', 'markets', 'brief', 'sources'].forEach(id => $('#sheet-' + id).classList.toggle('on', v === id));
+  SHEETS.forEach(id => $('#sheet-' + id).classList.toggle('on', v === id));
+  if (v === 'players') renderPlayers();
+  if (v === 'playbook') renderPlaybook();
   if (v === 'threads') renderThreads();
   if (v === 'markets') renderMarkets();
   if (v === 'brief') renderBrief();
   if (v === 'sources') renderSources();
+  if (v === 'map') { renderBar(); if (S.sel && S.mv === 'subject') requestAnimationFrame(drawLines); }
   writeHash();
 }
 $('#nav').addEventListener('click', ev => { const b = ev.target.closest('button'); if (b) setView(b.dataset.view); });
 
-/* threads */
 function openThread(id) { S.activeThread = id; setView('threads'); const s = $('#sheet-threads'); s.scrollTop = 0; }
 function renderThreads() {
   const T = THREADS.find(t => t.id === S.activeThread) || THREADS[0];
   const VS = { confirmed: '● CONFIRMED', reported: '◐ REPORTED', stage: '◇ ON STAGE', scheduled: '○ SCHEDULED', unverified: '✕ UNVERIFIED' };
   const evs = T.events.map((e, i) => {
     const side = i % 2 === 0 ? 1 : 3;
-    const card = `<div class="ev k-${e[3]}" style="grid-column:${side}"><div class="ev-top"><span style="color:${e[3] === 'threat' ? '#FF7A70' : e[3] === 'response' ? '#F0A63A' : '#C9D2DE'}">${esc(fmtDate(e[0]).toUpperCase())}</span><span class="vs-${e[4]}">${VS[e[4]] || ''}</span></div><div class="ev-t">${esc(e[1])}</div>${e[2] ? `<div class="ev-x">${esc(e[2])}</div>` : ''}${e[5] ? `<div class="ev-s">${e[6] ? `<a href="${esc(e[6])}" target="_blank" rel="noopener">${esc(e[5])}</a>` : esc(e[5])}</div>` : ''}</div>`;
+    const card = `<div class="ev k-${e[3]}" style="grid-column:${side}"><div class="ev-top"><span style="color:${e[3] === 'threat' ? '#FF7A70' : e[3] === 'response' ? '#F0A63A' : '#C6C6C6'}">${esc(fmtDate(e[0]).toUpperCase())}</span><span class="vs-${e[4]}">${VS[e[4]] || ''}</span></div><div class="ev-t">${esc(e[1])}</div>${e[2] ? `<div class="ev-x">${esc(e[2])}</div>` : ''}${e[5] ? `<div class="ev-s">${e[6] ? `<a href="${esc(e[6])}" target="_blank" rel="noopener">${esc(e[5])}</a>` : esc(e[5])}</div>` : ''}</div>`;
     const pin = `<div class="pin k-${e[3]}" style="grid-column:2"><span></span></div>`;
     const spacer = `<div class="spacer" style="grid-column:${side === 1 ? 3 : 1}"></div>`;
     return side === 1 ? card + pin + spacer : spacer + pin + card;
@@ -808,8 +735,8 @@ $('#sheet-threads').addEventListener('click', ev => {
   const b = ev.target.closest('button');
   if (!b) return;
   if (b.dataset.th) { S.activeThread = b.dataset.th; renderThreads(); writeHash(); }
-  if (b.dataset.show) { S.thread = b.dataset.show; select(null); renderBanner(); applyState(); setView('map'); flyHome(); writeHash(); }
-  if (b.dataset.node) { setView('map'); select(b.dataset.node, true); }
+  if (b.dataset.show) { S.thread = b.dataset.show; S.layer = null; setView('map'); renderRail(); select(null); }
+  if (b.dataset.node) { setView('map'); select(b.dataset.node, 'reset'); }
 });
 
 /* markets */
@@ -958,7 +885,7 @@ $('#sheet-markets').addEventListener('click', ev => {
   const b = ev.target.closest('button');
   if (!b) return;
   if (b.dataset.tkr) { const tk = b.dataset.tkr; S.open.has(tk) ? S.open.delete(tk) : S.open.add(tk); renderMarkets(); writeHash(); return; }
-  if (b.dataset.node) { setView('map'); select(b.dataset.node, true); return; }
+  if (b.dataset.node) { setView('map'); select(b.dataset.node, 'reset'); return; }
   if (b.dataset.openTk) openTicker(b.dataset.openTk);
 });
 $('#sheet-markets').addEventListener('keydown', ev => {
@@ -992,6 +919,10 @@ function renderBrief() {
     <div style="display:flex;flex-direction:column;gap:12px"><span class="eyebrow">Brief // core read</span><h1>The sovereign SI system</h1>
       <p class="lede">How the stack is built, who controls each layer, where leverage moves, and what to watch. Built from the EDGE: SOVEREIGN SI research pages and deep dive.</p></div>
     <div class="core">${B.core.map((c, i) => `<div class="card"><span class="n">0${i + 1}</span><b>${esc(c[0])}</b><p>${esc(c[1])}</p></div>`).join('')}</div>
+    <section style="display:flex;flex-direction:column;gap:12px"><h2>Strategies at a glance</h2>
+      <div class="table-box"><table class="table"><thead><tr><th>Actor</th><th>Strategy</th><th>Next move</th></tr></thead><tbody>${NODES.filter(n => (n.t === 'M' || isPerson(n)) && (n.strat || n.dir)).sort((a, b) => (isPerson(a) - isPerson(b)) || DEG[b.id] - DEG[a.id]).slice(0, 40).map(n => { const nx = nextStep(n); return `<tr><td><button type="button" class="chip" data-node="${n.id}">${esc(n.n)}</button>${isPerson(n) && n.role ? `<br><span class="bt-role">${esc(n.role)}</span>` : ''}</td><td class="bt-strat">${esc(n.dir || shortSum(n.strat))}</td><td>${nx ? `<span class="st ${(ST[nx[0]] || ST.p)[1]}">${(ST[nx[0]] || ST.p)[0]}</span><br>${esc(nx[1])}` : '—'}</td></tr>`; }).join('')}</tbody></table></div>
+      <div class="links"><button type="button" class="btn" data-view-go="playbook">OPEN THE FULL PLAYBOOK</button><button type="button" class="btn" data-view-go="players">OPEN KEY PLAYERS</button></div></section>
+    ${B.patterns && B.patterns.length ? `<section style="display:flex;flex-direction:column;gap:12px"><h2>Patterns across the layers</h2><ul class="weigh">${B.patterns.map(w => `<li>${esc(w)}</li>`).join('')}</ul></section>` : ''}
     <section style="display:flex;flex-direction:column;gap:12px"><h2>The stack, layer by layer</h2>
       <div class="table-box"><table class="table"><thead><tr><th>Layer</th><th>Function</th><th>Nodes on file</th></tr></thead><tbody>${layerRows}</tbody></table></div></section>
     <div class="grid-auto">
@@ -1010,7 +941,7 @@ function renderBrief() {
     <div class="disclaimer">${esc(C.meta.disclaimer)}</div>
   </div>`;
 }
-$('#sheet-brief').addEventListener('click', ev => { const b = ev.target.closest('button[data-node]'); if (b) { setView('map'); select(b.dataset.node, true); } });
+$('#sheet-brief').addEventListener('click', ev => { const g = ev.target.closest('button[data-view-go]'); if (g) { setView(g.dataset.viewGo); return; } const b = ev.target.closest('button[data-node]'); if (b) { setView('map'); select(b.dataset.node, 'reset'); } });
 
 /* sources */
 function renderSources() {
@@ -1023,44 +954,177 @@ function renderSources() {
   </div>`;
 }
 
-/* ---------------- search ---------------- */
-const qIn = $('#q'), qOut = $('#search-results');
-let qSel = 0, qItems = [];
-function runSearch() {
-  const q = qIn.value.trim().toLowerCase();
-  if (!q) { qOut.classList.remove('open'); return; }
-  const items = [];
-  NODES.forEach(n => {
-    const tk = (NODE_TK[n.id] || n.tk || '').toLowerCase();
-    const score = n.n.toLowerCase().startsWith(q) ? 3 : tk === q ? 4 : n.n.toLowerCase().includes(q) ? 2 : tk.includes(q) ? 2 : (n.sum || '').toLowerCase().includes(q) ? 1 : 0;
-    if (score) items.push({ score, kind: 'NODE', name: n.n, tk: NODE_TK[n.id] || n.tk, go: () => { setView('map'); select(n.id, true); } });
-  });
-  Object.keys(MK).forEach(tk => {
-    if (tk.toLowerCase().startsWith(q)) items.push({ score: 3.5, kind: 'TICKER', name: (BY[TK2NODE[tk]] || {}).n || (EXTRA_NAMES[tk] || [tk])[0], tk, go: () => openTicker(tk) });
-  });
-  THREADS.forEach(t => { if (t.name.toLowerCase().includes(q) || t.lede.toLowerCase().includes(q)) items.push({ score: t.name.toLowerCase().includes(q) ? 2.5 : 0.5, kind: 'THREAD ' + t.id, name: t.name, go: () => openThread(t.id) }); });
-  qItems = items.sort((a, b) => b.score - a.score).slice(0, 12);
-  qSel = 0;
-  qOut.innerHTML = qItems.length ? qItems.map((it, i) => `<button type="button" role="option" class="${i === qSel ? 'active' : ''}" data-i="${i}"><span class="r-kind">${esc(it.kind)}</span><span class="r-name">${esc(it.name)}</span>${it.tk ? `<span class="r-tk">${esc(it.tk)}</span>` : ''}</button>`).join('') : '<p style="margin:8px 10px;font-size:12px;color:var(--muted)">No match.</p>';
-  qOut.classList.add('open');
+/* ---------------- players ---------------- */
+const PS = { q: '', col: '', sort: 'links' };
+function colOf(sid) { return COLS.findIndex(c => c.sys.includes(sid)); }
+function playerCard(n) {
+  const sy = SYS[n.s];
+  const pos = PERSON_ORGS[n.id] || [];
+  const ties = ADJ[n.id].filter(e => e.type === 'tie');
+  const col = colleagues(n.id);
+  return `<article class="pl-card">
+    <div class="pl-top"><span class="gl t-${n.t} k-person" aria-hidden="true"></span><div><h3>${esc(n.n)}</h3><span class="eyebrow" style="color:${sy.tint}">${esc(sy.name)}</span></div></div>
+    ${n.role ? `<p class="pl-role">${esc(n.role)}</p>` : ''}
+    ${pos.length ? `<div class="pl-sec"><span class="eyebrow">Positions</span><div class="chips">${pos.map(({ org, e }) => `<button type="button" class="chip pl-org" data-node="${org}"><b>${esc(BY[org].n)}</b>${esc(REL[e.type][1].toLowerCase())}</button>`).join('')}</div></div>` : ''}
+    ${ties.length ? `<div class="pl-sec"><span class="eyebrow">Ties</span><div class="chips">${ties.map(e => { const o = other(e, n.id); return `<button type="button" class="chip" data-node="${o}"><b>${esc(BY[o].n)}</b>${esc(e.label)}</button>`; }).join('')}</div></div>` : ''}
+    ${col.length ? `<div class="pl-sec"><span class="eyebrow">Shares a seat with</span><div class="chips">${col.slice(0, 8).map(c => `<button type="button" class="chip" data-node="${c.p}">${esc(BY[c.p].n)}</button>`).join('')}${col.length > 8 ? `<span class="chip">+${col.length - 8}</span>` : ''}</div></div>` : ''}
+    ${n.strat || n.dir ? `<p class="pl-strat">${esc(n.strat || n.dir)}</p>` : ''}
+    <div class="links"><button type="button" class="btn" data-node="${n.id}">OPEN SUBJECT BOARD</button></div>
+  </article>`;
 }
-qIn.addEventListener('input', runSearch);
-qIn.addEventListener('keydown', ev => {
-  if (!qOut.classList.contains('open')) return;
-  if (ev.key === 'ArrowDown' || ev.key === 'ArrowUp') {
-    ev.preventDefault();
-    qSel = (qSel + (ev.key === 'ArrowDown' ? 1 : -1) + qItems.length) % Math.max(qItems.length, 1);
-    $$('#search-results button').forEach((b, i) => b.classList.toggle('active', i === qSel));
-  } else if (ev.key === 'Enter') { ev.preventDefault(); pick(qSel); }
-  else if (ev.key === 'Escape') { qOut.classList.remove('open'); }
+function renderPlayers() {
+  let ppl = PEOPLE.slice();
+  const ql = PS.q.trim().toLowerCase();
+  if (ql) ppl = ppl.filter(n => (n.n + ' ' + (n.role || '') + ' ' + (PERSON_ORGS[n.id] || []).map(x => BY[x.org].n).join(' ')).toLowerCase().includes(ql));
+  if (PS.col !== '') ppl = ppl.filter(n => colOf(n.s) === +PS.col);
+  const links = n => ADJ[n.id].length + colleagues(n.id).length;
+  ppl.sort(PS.sort === 'name' ? (a, b) => a.n.localeCompare(b.n) : (a, b) => links(b) - links(a) || a.n.localeCompare(b.n));
+  const allIl = [];
+  ORGS.forEach(o => interlocks(o.id).forEach(x => { if (o.id < x.org) allIl.push([o.id, x.org, x.via]); }));
+  allIl.sort((a, b) => b[2].length - a[2].length);
+  const ties = EDGES.filter(e => e.type === 'tie');
+  const seats = PEOPLE.reduce((k, n) => k + (PERSON_ORGS[n.id] || []).length, 0);
+  const groups = COLS.map((c, i) => [c, ppl.filter(n => colOf(n.s) === i)]).filter(g => g[1].length);
+  const sheet = $('#sheet-players');
+  const scroll = sheet.scrollTop;
+  sheet.innerHTML = `<div class="sheet-inner">
+    <div style="display:flex;flex-direction:column;gap:12px"><span class="eyebrow">Players // people behind the stack</span><h1>Key players</h1>
+      <p class="lede">The people running, funding, governing and contesting the sovereign SI buildout. Every position links back to its organization on the map, and shared seats show where boards and executive teams interlock.</p></div>
+    <div class="mk-summary">
+      <div class="card"><div class="v">${PEOPLE.length}</div><span class="eyebrow">People on file</span></div>
+      <div class="card"><div class="v">${seats}</div><span class="eyebrow">Positions</span></div>
+      <div class="card"><div class="v" style="color:#C9A86A">${allIl.length}</div><span class="eyebrow">Board interlocks</span></div>
+      <div class="card"><div class="v" style="color:#E58FB0">${ties.length}</div><span class="eyebrow">Personal ties</span></div>
+    </div>
+    <div class="mk-controls">
+      <label class="sr" for="pl-q">Filter players</label><input id="pl-q" type="search" placeholder="Filter name, role, organization" value="${esc(PS.q)}">
+      <label class="sr" for="pl-col">Column</label><select id="pl-col"><option value="">All columns</option>${COLS.map((c, i) => `<option value="${i}" ${PS.col === String(i) ? 'selected' : ''}>${c.n} ${esc(c.name)}</option>`).join('')}</select>
+      <label class="sr" for="pl-sort">Sort</label><select id="pl-sort"><option value="links" ${PS.sort === 'links' ? 'selected' : ''}>Sort: most connected</option><option value="name" ${PS.sort === 'name' ? 'selected' : ''}>Sort: name</option></select>
+      <span class="eyebrow" style="margin-left:auto">${ppl.length} shown</span>
+    </div>
+    ${groups.map(([c, list]) => `<section style="display:flex;flex-direction:column;gap:12px"><h2><span class="mono" style="color:var(--amber);font-size:12px;margin-right:10px">${c.n}</span>${esc(c.name)}</h2><div class="pl-grid">${list.map(playerCard).join('')}</div></section>`).join('') || '<p class="lede">No players match.</p>'}
+    <section style="display:flex;flex-direction:column;gap:12px"><h2>Board interlocks</h2>
+      <p class="lede" style="font-size:15px">Organizations that share a person: an executive, director, founder, backer or official on both sides.</p>
+      <div class="table-box"><table class="table"><thead><tr><th>Organization</th><th>Organization</th><th>Through</th></tr></thead><tbody>
+      ${allIl.map(([a, b, via]) => `<tr><td><button type="button" class="chip" data-node="${a}">${esc(BY[a].n)}</button></td><td><button type="button" class="chip" data-node="${b}">${esc(BY[b].n)}</button></td><td>${via.map(q => `<button type="button" class="chip" data-node="${q}">${esc(BY[q].n)}</button>`).join(' ')}</td></tr>`).join('') || '<tr><td colspan="3">None on file.</td></tr>'}
+      </tbody></table></div></section>
+    <section style="display:flex;flex-direction:column;gap:12px"><h2>Ties between people</h2>
+      <div class="table-box"><table class="table"><thead><tr><th>Person</th><th>Person</th><th>Tie</th><th>Date</th></tr></thead><tbody>
+      ${ties.map(e => `<tr><td><button type="button" class="chip" data-node="${e.a}">${esc(BY[e.a].n)}</button></td><td><button type="button" class="chip" data-node="${e.b}">${esc(BY[e.b].n)}</button></td><td>${esc(e.label)}${e.v ? '' : ' <span class="uv">· UNVERIFIED</span>'}</td><td class="mono" style="white-space:nowrap">${esc(fmtDate(e.date))}</td></tr>`).join('') || '<tr><td colspan="4">None on file.</td></tr>'}
+      </tbody></table></div></section>
+    <div class="disclaimer">${esc(C.meta.disclaimer)}</div>
+  </div>`;
+  sheet.scrollTop = scroll;
+}
+$('#sheet-players').addEventListener('click', ev => { const b = ev.target.closest('button[data-node]'); if (b) { setView('map'); select(b.dataset.node, 'reset'); } });
+$('#sheet-players').addEventListener('input', ev => { if (ev.target.id === 'pl-q') { PS.q = ev.target.value; const pos = ev.target.selectionStart; renderPlayers(); const i = $('#pl-q'); i.focus(); i.setSelectionRange(pos, pos); } });
+$('#sheet-players').addEventListener('change', ev => { if (ev.target.id === 'pl-col') { PS.col = ev.target.value; renderPlayers(); } if (ev.target.id === 'pl-sort') { PS.sort = ev.target.value; renderPlayers(); } });
+
+/* ---------------- playbook ---------------- */
+const BS = { q: '', type: '', sys: '', status: '', sort: 'rank', open: new Set() };
+const steps = n => [...(n.plan || []), ...(n.obj || [])];
+const nextStep = n => steps(n).find(o => o[0] === 'm') || steps(n).find(o => o[0] === 'p') || null;
+function progress(n) {
+  const all = steps(n), k = { d: 0, m: 0, p: 0, b: 0 };
+  all.forEach(o => { k[o[0]] = (k[o[0]] || 0) + 1; });
+  const t = all.length || 1;
+  return `<span class="pb-bar" title="${k.d} done · ${k.m} in motion · ${k.p} pending · ${k.b} blocked">${['d', 'm', 'p', 'b'].map(x => k[x] ? `<i class="pb-${x}" style="flex:${k[x] / t}"></i>` : '').join('')}</span><span class="pb-k">${k.d}/${all.length}</span>`;
+}
+function renderPlaybook() {
+  const TR = { M: 0, K: 1, N: 2 };
+  let rows = NODES.filter(n => n.strat || (n.plan && n.plan.length) || (n.obj && n.obj.length));
+  const ql = BS.q.trim().toLowerCase();
+  if (ql) rows = rows.filter(n => (n.n + ' ' + (n.strat || '') + ' ' + (n.dir || '') + ' ' + steps(n).map(o => o[1]).join(' ')).toLowerCase().includes(ql));
+  if (BS.type) rows = rows.filter(n => BS.type === 'person' ? isPerson(n) : !isPerson(n));
+  if (BS.sys) rows = rows.filter(n => n.s === BS.sys);
+  if (BS.status) rows = rows.filter(n => steps(n).some(o => o[0] === BS.status));
+  const cnt = st => rows.reduce((k, n) => k + steps(n).filter(o => o[0] === st).length, 0);
+  const sorters = {
+    rank: (a, b) => (TR[a.t] ?? 2) - (TR[b.t] ?? 2) || steps(b).length - steps(a).length,
+    motion: (a, b) => steps(b).filter(o => o[0] === 'm').length - steps(a).filter(o => o[0] === 'm').length,
+    name: (a, b) => a.n.localeCompare(b.n)
+  };
+  rows.sort(sorters[BS.sort]);
+  const sheet = $('#sheet-playbook');
+  const scroll = sheet.scrollTop;
+  sheet.innerHTML = `<div class="sheet-inner">
+    <div style="display:flex;flex-direction:column;gap:12px"><span class="eyebrow">Playbook // strategies and plans of action</span><h1>Playbook</h1>
+      <p class="lede">What each actor is trying to achieve, how, and where each move stands. Steps in motion are live; pending steps are the ones to watch.</p></div>
+    <div class="mk-summary">
+      <div class="card"><div class="v">${rows.length}</div><span class="eyebrow">Actors</span></div>
+      <div class="card"><div class="v" style="color:var(--cyan)">${cnt('d')}</div><span class="eyebrow">Done</span></div>
+      <div class="card"><div class="v" style="color:var(--amber)">${cnt('m')}</div><span class="eyebrow">In motion</span></div>
+      <div class="card"><div class="v">${cnt('p')}</div><span class="eyebrow">Pending</span></div>
+      <div class="card"><div class="v" style="color:var(--red-soft)">${cnt('b')}</div><span class="eyebrow">Blocked</span></div>
+    </div>
+    <div class="mk-controls">
+      <label class="sr" for="pb-q">Filter</label><input id="pb-q" type="search" placeholder="Filter actor, strategy, step" value="${esc(BS.q)}">
+      <label class="sr" for="pb-type">Type</label><select id="pb-type"><option value="">Organizations + people</option><option value="org" ${BS.type === 'org' ? 'selected' : ''}>Organizations</option><option value="person" ${BS.type === 'person' ? 'selected' : ''}>People</option></select>
+      <label class="sr" for="pb-sys">System</label><select id="pb-sys"><option value="">All systems</option>${C.systems.map(sy => `<option value="${sy.id}" ${BS.sys === sy.id ? 'selected' : ''}>${esc(sy.n)} ${esc(sy.name)}</option>`).join('')}</select>
+      <label class="sr" for="pb-status">Status</label><select id="pb-status"><option value="">Any status</option>${[['m', 'Has steps in motion'], ['p', 'Has pending steps'], ['b', 'Has blocked steps'], ['d', 'Has completed steps']].map(o => `<option value="${o[0]}" ${BS.status === o[0] ? 'selected' : ''}>${o[1]}</option>`).join('')}</select>
+      <label class="sr" for="pb-sort">Sort</label><select id="pb-sort">${[['rank', 'Sort: importance'], ['motion', 'Sort: most in motion'], ['name', 'Sort: name']].map(o => `<option value="${o[0]}" ${BS.sort === o[0] ? 'selected' : ''}>${o[1]}</option>`).join('')}</select>
+      <span class="eyebrow" style="margin-left:auto">${rows.length} shown</span>
+    </div>
+    <div>${rows.map(n => {
+      const open = BS.open.has(n.id), nx = nextStep(n), sy = SYS[n.s];
+      return `<div class="tkr pb ${open ? 'open' : ''}" id="pb-${n.id}">
+        <button type="button" class="tkr-head pb-head" data-pb="${n.id}" aria-expanded="${open}">
+          <span class="c-name"><span class="nm">${esc(n.n)}</span><span class="lab" style="color:${sy.tint}">${esc(isPerson(n) ? 'KEY PLAYER' : (KIND[n.k] || '').toUpperCase())} · ${esc(sy.name.toUpperCase())}</span></span>
+          <span class="pb-dir">${esc(n.dir || shortSum(n.strat || n.sum))}</span>
+          <span class="pb-prog">${progress(n)}</span>
+          <span class="pb-next">${nx ? `<span class="st ${(ST[nx[0]] || ST.p)[1]}">${(ST[nx[0]] || ST.p)[0]}</span><span>${esc(nx[1])}</span>` : '<span class="lab">NO OPEN STEPS</span>'}</span>
+          <svg class="chev" width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M3 5l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+        </button>
+        ${open ? `<div class="tkr-body">
+          ${n.strat ? `<div class="d-sec"><span class="eyebrow">Strategy</span><p class="d-strat">${esc(n.strat)}</p></div>` : ''}
+          ${n.dir ? `<div class="d-sec"><span class="eyebrow">Directive · mission</span><div class="d-dir">${esc(n.dir)}</div></div>` : ''}
+          ${n.plan && n.plan.length ? `<div class="d-sec"><span class="eyebrow">Plan of action</span>${ledger(n.plan)}</div>` : ''}
+          ${n.obj && n.obj.length ? `<div class="d-sec"><span class="eyebrow">Objectives ledger</span>${ledger(n.obj)}</div>` : ''}
+          ${isPerson(n) ? (orgsOf(n.id).length ? `<div class="d-sec"><span class="eyebrow">Positions</span><div class="chips">${orgsOf(n.id).map(x => `<button type="button" class="chip" data-node="${x.org}">${esc(BY[x.org].n)}</button>`).join('')}</div></div>` : '') : (peopleOf(n.id).length ? `<div class="d-sec"><span class="eyebrow">Key people</span><div class="chips">${peopleOf(n.id).map(x => `<button type="button" class="chip" data-node="${x.p}">${esc(BY[x.p].n)} · ${esc(REL[x.e.type][0].toLowerCase())}</button>`).join('')}</div></div>` : '')}
+          <div class="links"><button type="button" class="btn" data-node="${n.id}">OPEN SUBJECT BOARD</button>${(NODE_TK[n.id] || n.tk) && MK[NODE_TK[n.id] || n.tk] ? `<button type="button" class="btn" data-open-tk="${esc(NODE_TK[n.id] || n.tk)}">OPEN IN MARKETS</button>` : ''}</div>
+        </div>` : ''}
+      </div>`;
+    }).join('') || '<p class="lede">No actors match.</p>'}</div>
+  </div>`;
+  sheet.scrollTop = scroll;
+}
+$('#sheet-playbook').addEventListener('click', ev => {
+  const b = ev.target.closest('button');
+  if (!b) return;
+  if (b.dataset.pb) { const id = b.dataset.pb; BS.open.has(id) ? BS.open.delete(id) : BS.open.add(id); renderPlaybook(); return; }
+  if (b.dataset.node) { setView('map'); select(b.dataset.node, 'reset'); return; }
+  if (b.dataset.openTk) openTicker(b.dataset.openTk);
 });
-qOut.addEventListener('click', ev => { const b = ev.target.closest('button'); if (b) pick(+b.dataset.i); });
-function pick(i) { const it = qItems[i]; if (!it) return; qOut.classList.remove('open'); qIn.value = ''; qIn.blur(); it.go(); }
-document.addEventListener('click', ev => { if (!ev.target.closest('.search')) qOut.classList.remove('open'); });
+$('#sheet-playbook').addEventListener('input', ev => { if (ev.target.id === 'pb-q') { BS.q = ev.target.value; const pos = ev.target.selectionStart; renderPlaybook(); const i = $('#pb-q'); i.focus(); i.setSelectionRange(pos, pos); } });
+$('#sheet-playbook').addEventListener('change', ev => { const k = { 'pb-type': 'type', 'pb-sys': 'sys', 'pb-status': 'status', 'pb-sort': 'sort' }[ev.target.id]; if (k) { BS[k] = ev.target.value; renderPlaybook(); } });
+
+/* ---------------- search: filters the board in place ---------------- */
+const qIn = $('#q');
+function goMatch(x) {
+  if (!x) return;
+  S.q = ''; qIn.value = ''; qIn.blur();
+  if (x.kind === 'node') { setView('map'); select(x.id, 'reset'); }
+  else if (x.kind === 'ticker') { renderBar(); applyBoard(); openTicker(x.tk); }
+  else if (x.kind === 'thread') { renderBar(); applyBoard(); openThread(x.id); }
+}
+qIn.addEventListener('input', () => {
+  S.q = qIn.value;
+  if (S.view !== 'map') setView('map');
+  if (S.q.trim() && S.sel && S.mv === 'subject') { S.mv = 'board'; showMain(); }
+  renderBar(); applyBoard();
+  const first = searchMatches(S.q).find(x => x.kind === 'node');
+  if (first && ROWS[first.id]) ROWS[first.id].scrollIntoView({ block: 'nearest', behavior: REDUCE ? 'auto' : 'smooth' });
+});
+qIn.addEventListener('keydown', ev => {
+  if (ev.key === 'Enter') { ev.preventDefault(); goMatch(searchMatches(S.q)[0]); }
+  else if (ev.key === 'Escape') { S.q = ''; qIn.value = ''; qIn.blur(); renderBar(); applyBoard(); }
+});
 document.addEventListener('keydown', ev => {
   if (ev.key === '/' && document.activeElement.tagName !== 'INPUT') { ev.preventDefault(); qIn.focus(); }
   if (ev.key === 'Escape' && document.activeElement.tagName !== 'INPUT') {
-    if (S.view !== 'map') setView('map'); else if (S.sel) select(null); else if (S.thread) { S.thread = null; renderBanner(); applyState(); }
+    if (S.view !== 'map') setView('map');
+    else if (S.sel) select(null);
+    else if (S.thread || S.layer) { S.thread = null; S.layer = null; renderRail(); renderBar(); applyBoard(); writeHash(); }
   }
 });
 
@@ -1073,11 +1137,12 @@ function writeHash() {
   if (S.view === 'threads') p.set('thread', S.activeThread);
   if (S.view === 'markets' && S.open.size) p.set('tk', [...S.open].slice(-1)[0]);
   if (S.view === 'map') {
-    if (S.mode !== 'world') p.set('mode', S.mode);
+    if (S.board === 'ppl') p.set('board', 'ppl');
     if (S.sel) p.set('node', S.sel);
+    if (S.sel && S.mv === 'board') p.set('on', 'board');
     if (S.thread) p.set('show', S.thread);
+    if (S.layer) p.set('layer', S.layer);
     if (S.lens !== 'all') p.set('lens', S.lens);
-    if (S.sys) p.set('sys', S.sys);
   }
   const h = p.toString();
   history.replaceState(null, '', h ? '#' + h : location.pathname + location.search);
@@ -1086,100 +1151,37 @@ function readHash() {
   const p = new URLSearchParams(location.hash.slice(1));
   hashLock = true;
   if (p.get('lens') && C.lenses.some(l => l.id === p.get('lens'))) S.lens = p.get('lens');
-  if (p.get('sys') && SYS[p.get('sys')]) S.sys = p.get('sys');
-  if (p.get('show') && THREADS.some(t => t.id === p.get('show'))) { S.thread = p.get('show'); renderBanner(); }
-  if (p.get('mode') === 'depth') setMode('depth', true);
-  if (p.get('node') && BY[p.get('node')]) select(p.get('node'), true);
+  if (p.get('layer') && LAYER_CODES.includes(p.get('layer'))) S.layer = p.get('layer');
+  if (p.get('show') && THREADS.some(t => t.id === p.get('show'))) S.thread = p.get('show');
   if (p.get('thread') && THREADS.some(t => t.id === p.get('thread'))) S.activeThread = p.get('thread');
+  renderRail();
+  if (p.get('node') && BY[p.get('node')]) { select(p.get('node'), 'reset'); if (p.get('on') === 'board') { S.mv = 'board'; showMain(); } }
   const v = p.get('view');
   if (v === 'markets' && p.get('tk')) { hashLock = false; openTicker(p.get('tk')); return; }
-  if (v && ['threads', 'markets', 'brief', 'sources'].includes(v)) setView(v);
+  if (p.get('board') === 'ppl' && S.board !== 'ppl') { S.board = 'ppl'; renderBoard(); }
+  if (v && SHEETS.includes(v)) setView(v);
   hashLock = false;
-  renderRail();
-  applyState();
-}
-
-/* ---------------- loop ---------------- */
-function resize() {
-  const r = stage.getBoundingClientRect();
-  if (renderer) renderer.setSize(r.width, r.height);
-  css.setSize(r.width, r.height);
-  camera.aspect = r.width / r.height;
-  camera.updateProjectionMatrix();
-  EDGES.forEach(e => e.mat.resolution.set(r.width, r.height));
-  shafts.forEach(s => s.mat.resolution.set(r.width, r.height));
-  viewOff = 1e9;
-}
-addEventListener('resize', resize);
-let frame = 0;
-function loop(now) {
-  requestAnimationFrame(loop);
-  if (!renderer) return;
-  if (modeTween) {
-    const k = Math.min(1, (now - modeTween.s) / modeTween.ms);
-    S.t = modeTween.from + (modeTween.to - modeTween.from) * ease(k);
-    positionsDirty = true;
-    if (k >= 1) modeTween = null;
-  }
-  if (positionsDirty) { updatePositions(); positionsDirty = false; }
-  if (fly) {
-    const k = Math.min(1, (now - fly.s) / fly.ms), e = ease(k);
-    camera.position.lerpVectors(fly.p0, fly.p1, e);
-    controls.target.lerpVectors(fly.t0, fly.t1, e);
-    if (k >= 1) fly = null;
-  }
-  const tOff = targetOffset();
-  if (Math.abs(tOff - viewOff) > 0.5) {
-    viewOff = viewOff > 1e8 ? tOff : viewOff + (tOff - viewOff) * 0.14;
-    const r = renderer.domElement;
-    const w = r.clientWidth, h = r.clientHeight;
-    if (Math.abs(viewOff) > 0.5) camera.setViewOffset(w, h, viewOff, 0, w, h); else camera.clearViewOffset();
-  }
-  controls.update();
-  // pulses
-  const pos = pulseGeo.attributes.position.array, col = pulseGeo.attributes.color.array;
-  let c = 0;
-  if (!REDUCE && S.view === 'map') {
-    for (let i = 0; i < strongEdges.length && c < PULSE_MAX; i++) {
-      const e = strongEdges[i];
-      if (!e.line.visible) continue;
-      const t = ((now * 0.00022) + i * 0.137) % 1;
-      e.curve.getPoint(t, tmpV);
-      pos[c * 3] = tmpV.x; pos[c * 3 + 1] = tmpV.y; pos[c * 3 + 2] = tmpV.z;
-      const cc = new THREE.Color(e.T.color);
-      col[c * 3] = cc.r; col[c * 3 + 1] = cc.g; col[c * 3 + 2] = cc.b;
-      c++;
-    }
-  }
-  pulseGeo.setDrawRange(0, c);
-  pulseGeo.attributes.position.needsUpdate = true;
-  pulseGeo.attributes.color.needsUpdate = true;
-  if (++frame % 3 === 0) lod(false);
-  if (S.view === 'map' || frame % 6 === 0) {
-    renderer.render(scene, camera);
-    css.render(scene, camera);
-  }
+  renderBar(); applyBoard();
 }
 
 /* ---------------- boot ---------------- */
-$('#brand-sub').textContent = `${C.meta.file} · AS OF ${fmtDate(C.meta.asof).toUpperCase()}`;
+renderBoard();
+indexRows();
 renderRail();
-buildTimeline();
-setRange(TL_MAX);
-resize();
-applyState();
+renderBar();
+applyBoard();
 readHash();
-requestAnimationFrame(loop);
-window.__casemap = { S, select, setMode, setView, openTicker, openThread };
+let wasMobile = MOBILE();
+addEventListener('resize', () => { if (MOBILE() !== wasMobile) { wasMobile = MOBILE(); renderBar(); } });
+addEventListener('hashchange', readHash);
+window.__casemap = { S, select, setView, openTicker, openThread };
 
-/* dossier edge-row hover isolates one thread on the map */
-$('#dossier').addEventListener('mouseover', ev => {
-  const r = ev.target.closest('.edge-row');
-  const v = r ? +r.dataset.ei : null;
-  if (v !== S.edgeHover) { S.edgeHover = v; applyState(); }
-});
-$('#dossier').addEventListener('mouseleave', () => { if (S.edgeHover != null) { S.edgeHover = null; applyState(); } });
-$('#dossier').addEventListener('focusin', ev => {
-  const r = ev.target.closest('.edge-row');
-  S.edgeHover = r ? +r.dataset.ei : null; applyState();
-});
+/* dossier thread rows: hovering one isolates it on the subject board or the board */
+function dossierHover(ei) {
+  if (ei === S.edgeHover) return;
+  S.edgeHover = ei;
+  if (S.mv === 'subject') hlSubject(ei); else applyBoard();
+}
+$('#dossier').addEventListener('mouseover', ev => { const r = ev.target.closest('.edge-row'); dossierHover(r ? +r.dataset.ei : null); });
+$('#dossier').addEventListener('mouseleave', () => dossierHover(null));
+$('#dossier').addEventListener('focusin', ev => { const r = ev.target.closest('.edge-row'); dossierHover(r ? +r.dataset.ei : null); });

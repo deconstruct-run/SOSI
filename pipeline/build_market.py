@@ -28,6 +28,18 @@ TICKERS = [
     "LHX", "LMT", "NOC", "RTX", "GD", "BA", "DRS", "BAH", "MSI", "ESLT",
     "CRWV", "NBIS", "IREN", "CBRS", "DUOT", "MSFT", "ORCL", "AMZN", "GOOGL", "IBM",
     "QCOM", "AMD", "DELL", "HPE", "LUMN", "SPCX", "RKLB", "PL", "BKSY", "FLY",
+    # silicon + fabs
+    "TSM", "ASML", "AMAT", "LRCX", "KLAC", "INTC", "GFS", "MU", "AMKR", "SKYT", "PLAB", "ONTO", "ENTG", "WOLF", "LIN", "AVGO", "TSLA",
+    # money rails, capital, payments
+    "APO", "COIN", "V", "MA", "RUM",
+    # critical minerals + nuclear fuel
+    "MP", "USAR", "LAC", "TMQ", "UUUU", "NB", "METC", "AREC", "LEU", "CCJ", "UEC", "ALM",
+    # cyber
+    "PANW", "CRWD", "FTNT", "ZS",
+    # war-risk insurance
+    "MRSH", "AON", "WTW", "RYAN", "AJG", "AIG", "KIE",
+    # field, space, theater
+    "ACHR", "SATL", "MELI",
 ]
 
 REV = ["Revenues", "RevenueFromContractWithCustomerExcludingAssessedTax",
@@ -308,7 +320,12 @@ def quote(t):
     return q
 
 
-def health(f, q):
+ETFS = {"KIE"}
+
+
+def health(f, q, tk=None):
+    if tk in ETFS:
+        return "FUND", ["Exchange-traded fund · no company financials"]
     flags = []
     rev = f.get("rev_ttm") or ((f.get("rev_q") or 0) * 4)
     fcf = f.get("fcf_ttm")
@@ -360,7 +377,7 @@ def main():
             if f.get("rev_ttm"):
                 ev = f["market_cap"] + (f.get("debt") or 0) - (f.get("cash") or 0)
                 f["ev_sales"] = ev / f["rev_ttm"]
-        row["grade"], row["flags"] = health(f, q)
+        row["grade"], row["flags"] = health(f, q, t)
         out["tickers"][t] = row
         print(f"{t:6} {row['grade']:11} price={q.get('current_price')} rev_ttm={f.get('rev_ttm')} opts={len(q.get('options', []))}", file=sys.stderr)
     os.makedirs(os.path.dirname(OUT), exist_ok=True)

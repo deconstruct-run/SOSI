@@ -6,11 +6,16 @@ Research as of Nov 3, 2026. Built from the EDGE: SOVEREIGN SI research pages (FI
 
 ## Views
 
-- **Map.** One live 3D world. WORLD lays the 12 master systems flat as an evidence board; DEPTH lifts every node onto its layer (L0 Energy to L9 Effectors, with State + capital above and Threat + counter-bloc below). Vertical shafts mark companies that span several layers.
-  - Hover a node to light its threads; click to open its dossier (mission, objectives ledger, facts, every thread with dates, investigations, evidence).
-  - Hover a thread in the dossier to isolate it on the map.
-  - Lenses (Military, Financial, Political, Technological, Apparatus), system isolation and thread-type toggles cut the clutter.
-  - The timeline replays the build month by month.
+- **Map.** A flat case board where nothing overlaps. Every panel is docked, every company has a fixed place, and interaction changes only opacity, borders and labels.
+  - The board has four columns: Money + mandate, Control, Field + theater, and Infrastructure. Each column holds three of the 12 master systems, with companies listed by tier.
+  - Hover a name to light its connections in place. Each linked company shows its relation (BUYER, VENDOR, INVESTOR, SUPPLIER, PARTNER, THREAT…), and everything else fades.
+  - Click a name to open its subject board. Who acts on the company sits on the left, who it acts on sits on the right, and partners sit underneath. Connectors run only through the gutters between columns. Clicking any card makes that company the subject, and a breadcrumb trail records the path.
+  - The dossier docks on the right: mission, objectives ledger, facts, every thread with dates, investigations, evidence. Hover a thread there to isolate it.
+  - The rail holds lenses (Military, Financial, Political, Technological, Apparatus), stack layers (S, L9 to L0, X), thread-type toggles and a replay of the build month by month.
+  - An ORGANIZATIONS | PEOPLE switch flips the board between companies and the people who run, fund, govern and contest them. Hovering a company also lights other companies that share a person with it (board interlocks). Hovering a person lights everyone who shares a seat with them.
+  - Person views put positions (leads, board seats, founded, stakes, government posts) on the left and personal ties in the center. Each person's file carries their strategy and plan of action.
+- **Players.** Directory of key players grouped by column, with positions, ties and shared seats. Includes the full board-interlock table and the person-to-person ties table.
+- **Playbook.** Every actor's strategy, directive, plan of action and objectives, with progress (done, in motion, pending, blocked) and the next open step. Filter by type, system and status.
 - **Threads.** Ten investigations as dated, sourced case strings. "Show thread on map" isolates the thread in 3D.
 - **Markets.** Every listed ticker with role, SEC XBRL financial health, a Cboe price and options snapshot, latest print, guidance, risk and the next diligence step. Plus private-node exposure routes, non-US listings, a catalyst calendar and a risk register.
 - **Brief.** Core read, layer table, who holds each layer, the five loops, leverage rebalance, global pivot, elements to weigh, signal board.
@@ -18,7 +23,7 @@ Research as of Nov 3, 2026. Built from the EDGE: SOVEREIGN SI research pages (FI
 
 Keyboard: `/` focuses search, `Esc` steps back.
 
-Links are shareable. The URL hash carries the view, selected node, lens, system and thread (for example `#node=armada`, `#view=markets&tk=ONDS`, `#show=07`).
+Links are shareable. The URL hash carries the view, selected node, lens, system and thread (for example `#node=armada`, `#layer=L0`, `#view=markets&tk=ONDS`, `#show=07`).
 
 ## Publish on GitHub Pages
 
@@ -26,7 +31,7 @@ Links are shareable. The URL hash carries the view, selected node, lens, system 
 2. In the repository: Settings → Pages → Build and deployment → Source: Deploy from a branch → `main` / root.
 3. The site is live at `https://<user>.github.io/<repo>/` within a minute or two.
 
-No build step. Everything is static: `index.html`, `assets/`, `data/`. three.js and fonts load from public CDNs.
+No build step. Everything is static: `index.html`, `assets/`, `data/`. Fonts load from Google Fonts; there are no other dependencies.
 
 ## Market data refresh
 
@@ -42,14 +47,23 @@ Health grades:
 - **STRETCHED:** burning cash with net debt, or under six quarters of runway.
 - **SPECULATIVE:** under $100M revenue.
 
+## Research merge
+
+`pipeline/merge_research.js` folds structured research extractions (one JSON file per batch of Notion pages) into `data/case.js`. It reconciles ids across batches, adds new systems and people edge types, numbers new threads, and merges market research, private marks, sources and brief additions:
+
+```
+node pipeline/merge_research.js <extract-dir> --dry   # report only
+node pipeline/merge_research.js <extract-dir>         # write data/case.js
+```
+
 ## Editing the case
 
 All case content lives in `data/case.js`:
 
 | Field | What it holds |
 | --- | --- |
-| `nodes` | Each node's `id`, name, system, tier (M, K, N), kind, layers, position on the 140 × 90 world plane, ticker or private mark, summary, directive, objectives ledger, facts, sources |
-| `edges` | `[from, to, type, label, date, verified]` |
+| `nodes` | Each node's `id`, name, system, tier (M, K, N), kind (`person` for key players, with `role`), `strat` (strategy), `plan` (plan of action), layers, position on the 140 × 90 world plane, ticker or private mark, summary, directive, objectives ledger, facts, sources |
+| `edges` | `[from, to, type, label, date, verified]`. People edge types: leads, board, founded, invests, advises, post, tie |
 | `threads` | Investigations with dated events |
 | `brief`, `markets`, `sources` | Content for those views |
 
