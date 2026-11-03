@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sovereign SI Case Map</title>
+<meta name="description" content="An interactive investigative map of the sovereign SI buildout: master nodes, layers, contracts, capital, threats and investable exposure.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/app.css">
+<script src="data/case.js"></script>
+<script src="data/market.js"></script>
+<script type="importmap">
+{ "imports": {
+  "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+  "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+} }
+</script>
+</head>
+<body class="no-dossier">
+<header id="top">
+  <div class="brand">
+    <div class="brand-title">SOVEREIGN SI <b>//</b> CASE MAP</div>
+    <div class="brand-sub" id="brand-sub">CASE FILE 001 · EDGE: SOVEREIGN SI</div>
+  </div>
+  <nav id="nav" aria-label="Views">
+    <button type="button" data-view="map" aria-current="page">MAP</button>
+    <button type="button" data-view="threads">THREADS</button>
+    <button type="button" data-view="markets">MARKETS</button>
+    <button type="button" data-view="brief">BRIEF</button>
+    <button type="button" data-view="sources">SOURCES</button>
+  </nav>
+  <div class="search">
+    <label for="q" class="sr">Search nodes, tickers and threads</label>
+    <svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><circle cx="6" cy="6" r="4.5" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M9.5 9.5L13 13" stroke="currentColor" stroke-width="1.4"/></svg>
+    <input id="q" type="search" placeholder="Node, ticker, thread" autocomplete="off">
+    <div id="search-results" role="listbox" aria-label="Search results"></div>
+  </div>
+</header>
+
+<main id="stage" aria-label="Case map">
+  <div id="gl"></div>
+  <div id="labels"></div>
+
+  <button type="button" id="rail-toggle" class="btn">FILTERS</button>
+  <aside id="rail" class="glass" aria-label="Map controls"></aside>
+
+  <div id="thread-banner" role="status"></div>
+
+  <div id="hud">
+    <div id="hint" class="glass">DRAG TO ORBIT · SCROLL TO DIVE · CLICK A NODE</div>
+    <button type="button" class="btn icon glass" id="zin" aria-label="Zoom in"><svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M7 2v10M2 7h10" stroke="currentColor" stroke-width="1.5"/></svg></button>
+    <button type="button" class="btn icon glass" id="zout" aria-label="Zoom out"><svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M2 7h10" stroke="currentColor" stroke-width="1.5"/></svg></button>
+    <button type="button" class="btn glass" id="fit">FIT</button>
+  </div>
+
+  <aside id="dossier" class="glass" aria-label="Node dossier"></aside>
+
+  <section id="timeline" class="glass" aria-label="Timeline">
+    <div class="tl-top">
+      <div class="tl-ctrl">
+        <button type="button" class="btn icon" id="tl-play" aria-label="Replay the build"><svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 1.5v9l7.5-4.5z" fill="currentColor"/></svg></button>
+        <span class="eyebrow">Timeline · Oct 2024 → 2028 · drag to replay the build</span>
+      </div>
+      <div class="tl-ctrl">
+        <span id="tl-label">ALL DATES</span>
+        <button type="button" class="btn" id="tl-all">SHOW ALL</button>
+      </div>
+    </div>
+    <div id="tl-track">
+      <div class="axis"></div>
+      <div class="fill" id="tl-fill"></div>
+      <div class="tl-years" id="tl-years"></div>
+      <label for="tl-range" class="sr">Timeline cutoff</label>
+      <input type="range" id="tl-range" min="0" max="50" value="50">
+    </div>
+  </section>
+
+  <div id="tip" role="tooltip"></div>
+</main>
+
+<section class="sheet" id="sheet-threads" aria-label="Investigation threads"></section>
+<section class="sheet" id="sheet-markets" aria-label="Markets"></section>
+<section class="sheet" id="sheet-brief" aria-label="Brief"></section>
+<section class="sheet" id="sheet-sources" aria-label="Sources"></section>
+
+<script type="module" src="assets/app.js"></script>
+</body>
+</html>
