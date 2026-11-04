@@ -96,6 +96,7 @@ for (const file of files) {
     if (!cur) {
       const n = { id, n: inc.n, s: inc.s, t: inc.t || 'N', k: inc.k || 'co', L: inc.L || [], p: [0, 0], sum: inc.sum || '', dir: inc.dir || '' };
       ['tk', 'ex', 'pv', 'role', 'strat'].forEach(k => { if (inc[k]) n[k] = inc[k]; });
+      if (inc.U) n.U = true;
       if (inc.plan && inc.plan.length) n.plan = inc.plan;
       n.obj = []; n.f = inc.f || []; n.src = inc.src || [];
       if (inc.analysis) n.analysis = true;
@@ -111,6 +112,7 @@ for (const file of files) {
       cur.src = mergeList(cur.src, inc.src, srcKey);
       if (inc.t && (inc.t === 'M' || (inc.t === 'K' && cur.t === 'N'))) cur.t = inc.t;
       if (inc.analysis === false && cur.analysis) delete cur.analysis;
+      if (inc.U) cur.U = true;
       log.updated++;
     }
   }
@@ -123,6 +125,7 @@ for (const file of files) {
     if (up.f) cur.f = mergeList(cur.f, up.f);
     if (up.src) cur.src = mergeList(cur.src, up.src, srcKey);
     ['dir', 'role', 'pv', 'tk', 'sum'].forEach(k => { if (!cur[k] && up[k]) cur[k] = up[k]; });
+    if (up.U) cur.U = true;
     log.updated++;
   }
   for (const e of D.edges || []) if (!/\(sector-level\)/.test(e[3] || '')) pendingEdges.push([rid(e[0], file), rid(e[1], file), e[2], e[3] || '', e[4] || '', e[5] === 0 ? 0 : 1, file]);
@@ -148,6 +151,7 @@ for (const file of files) {
   (D.privates || []).forEach(p => { p.node = rid(p.node, file); if (!C.markets.privates.some(x => x.node === p.node)) C.markets.privates.push(p); });
   const ba = D.brief_adds || {};
   C.brief.patterns = mergeList(C.brief.patterns, ba.patterns);
+  (ba.core || []).forEach(c => { if (!C.brief.core.some(x => x[0] === c[0])) C.brief.core.push(c); });
   C.brief.leverage = mergeList(C.brief.leverage, ba.leverage, x => x[0]);
   C.brief.signals = mergeList(C.brief.signals, ba.signals, x => x[0]);
   (D.sources || []).forEach(([g, list]) => {

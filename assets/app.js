@@ -72,13 +72,15 @@ function layerCode(n) {
   return isThreat(n) ? 'X' : 'S';
 }
 function inLayer(n, code) {
+  if (code === 'U') return !!n.U;
   if (n.k === 'person') return false;
   if (code === 'S') return !(n.L && n.L.length) && !isThreat(n);
   if (code === 'X') return isThreat(n);
   return (n.L || []).includes(+code.slice(1));
 }
-const LAYER_CODES = ['S', 'L9', 'L8', 'L7', 'L6', 'L5', 'L4', 'L3', 'L2', 'L1', 'L0', 'X'];
+const LAYER_CODES = ['U', 'S', 'L9', 'L8', 'L7', 'L6', 'L5', 'L4', 'L3', 'L2', 'L1', 'L0', 'X'];
 function layerName(code) {
+  if (code === 'U') return C.bands.U ? C.bands.U.name : 'Upstream';
   if (code === 'S') return C.bands.S.name;
   if (code === 'X') return C.bands.X.name;
   return C.layers[+code.slice(1)].name;

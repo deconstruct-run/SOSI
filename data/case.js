@@ -98,6 +98,11 @@ window.CASE = {
    "code": "X",
    "name": "Threat + counter-bloc",
    "d": "The pressure the stack is built against"
+  },
+  "U": {
+   "code": "U",
+   "name": "Upstream",
+   "d": "First money, first customers, the people pipeline and the policy seats behind the master nodes"
   }
  },
  "systems": [
@@ -1114,7 +1119,12 @@ window.CASE = {
     "House E&C O&I hearing on CMS fraud (March 17, 2026)",
     "FY26 NDAA enacted 17 biotech provisions incl. BIOSECURE Sec. 851; FY27 NDAA adds biotech to Industrial Base Fund (House)",
     "PAHPA authorities lapsed since 2023",
-    "MIND Act (S.2925) introduced Sept 24, 2025 by Schumer, Cantwell, Markey"
+    "MIND Act (S.2925) introduced Sept 24, 2025 by Schumer, Cantwell, Markey",
+    "TRAJECTORY (Nov 4, 2026): Democrats won control of the House and the Senate on November 3, 2026 (CBS, NBC, NPR) [verification pending]",
+    "New Congress seated January 3, 2027; lame duck runs November 4, 2026 to January 3, 2027",
+    "Runs through Congress: appropriations and reconciliation money; oversight, hearings and subpoenas; Senate confirmations; new statutes",
+    "Runs outside Congress: awarded contracts, agency rules and programs, export licenses and Section 232 tariffs, OSTP science policy, standards bodies and private rails, states, courts and allies",
+    "FY27 NDAA in conference"
    ],
    "src": [
     [
@@ -1164,6 +1174,22 @@ window.CASE = {
     [
      "Inside Privacy: MIND Act",
      "https://www.insideprivacy.com/health-privacy/congress-introduces-neural-data-bill/"
+    ],
+    [
+     "CBS News: Democrats win control of House and Senate",
+     "https://www.cbsnews.com/live-updates/election-day-2026-midterms/"
+    ],
+    [
+     "NPR: Democrats win the Senate",
+     "https://www.npr.org/2026/11/03/g-s1-149526/2026-midterms-congress-balance-of-power"
+    ],
+    [
+     "NBC News: Senate results",
+     "https://www.nbcnews.com/politics/2026-elections/senate-results"
+    ],
+    [
+     "EDGE: SOVEREIGN SI // TRAJECTORY (Notion)",
+     "https://app.notion.com/p/40d709555ee281f4acc5cd04eb22aee6"
     ]
    ],
    "plan": []
@@ -1189,7 +1215,8 @@ window.CASE = {
     "Secretary Howard Lutnick",
     "Runs American AI Exports Program (78 full-stack packages)",
     "SILICON LAYER does not name the agency behind the Intel stake, the Wolfspeed financing or the xLight CHIPS award",
-    "Administers Proclamation 11020 Section 232 pharma tariffs; may revisit generics within one year."
+    "Administers Proclamation 11020 Section 232 pharma tariffs; may revisit generics within one year.",
+    "[ANALYSIS] Convergence point: chip export licenses to the Gulf (G42), Section 232 tariffs behind the pharma MFN deals, and led by the man whose former firm holds a stake in Tether and custodies its reserves"
    ],
    "src": [
     [
@@ -1203,6 +1230,14 @@ window.CASE = {
     [
      "Trump administration announces Section 232 tariffs on patented pharmaceuticals (Covington, 2026-04)",
      "https://www.cov.com/en/news-and-insights/insights/2026/04/trump-administration-announces-section-232-tariffs-on-patented-pharmaceuticals-and-ingredients"
+    ],
+    [
+     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
+     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
+    ],
+    [
+     "EDGE: SOVEREIGN SI // TRAJECTORY (Notion)",
+     "https://app.notion.com/p/40d709555ee281f4acc5cd04eb22aee6"
     ]
    ],
    "strat": "Commerce controls chip export approvals for the Gulf, BIS export controls and the American AI Exports Program (78 full-stack packages). Per the financial-layer page it is the hinge between the money and the stack: its Secretary's former firm custodies Tether's U.S. reserves.",
@@ -1367,7 +1402,10 @@ window.CASE = {
     "Reportedly backs Substrate (X-ray lithography) [VERIFY]",
     "Led Neuralink's $280M Series D (Aug 2023)",
     "In syndicate for Neuralink's $205M Series C (2021) and $650M Series E (2025)",
-    "Led NewLimit's $435M Series C at $3.1B (2026-06-02)."
+    "Led NewLimit's $435M Series C at $3.1B (2026-06-02).",
+    "Seeded Anduril (2017); co-founder Trae Stephens came from Founders Fund",
+    "Led Armada's seed (2022) with Lux, Shield Capital and 8090 Industries",
+    "[ANALYSIS] In the newest layer the Thiel network performs the upstream function itself: first money, first staff and the political door"
    ],
    "src": [
     [
@@ -1385,9 +1423,22 @@ window.CASE = {
     [
      "NewLimit raises $435M Series C, valuation hits $3.1B (Yahoo Finance, 2026-06-03)",
      "https://finance.yahoo.com/sectors/healthcare/articles/newlimit-raises-435m-series-c-145642833.html"
+    ],
+    [
+     "Wikipedia: Anduril Industries",
+     "https://en.wikipedia.org/wiki/Anduril_Industries"
+    ],
+    [
+     "Armada: Introducing Armada (seed investors)",
+     "https://www.armada.ai/blog/introducing-armada-bringing-ai-to-the-edge"
+    ],
+    [
+     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
+     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
     ]
    ],
-   "plan": []
+   "plan": [],
+   "U": true
   },
   {
    "id": "e8090",
@@ -1497,7 +1548,9 @@ window.CASE = {
     "Apollo (Marc Rowan's firm) finances xAI/SpaceX compute",
     "Starlink is named as the orbital connectivity layer that stratospheric relay complements at L3",
     "TeraFab exposure runs through SPCX",
-    "HORIZON: Starship lowers launch cost; orbital compute stays at prototype scale through 2032 [ANALYSIS]"
+    "HORIZON: Starship lowers launch cost; orbital compute stays at prototype scale through 2032 [ANALYSIS]",
+    "DARPA/U.S. Air Force FALCON: one of nine Phase 1 study contracts (Dec 2003), Phase 2 award (Sep 2004); first government funding, initially about $0.5M [VERIFY amount]",
+    "NASA COTS award 2006 ($278M initial)"
    ],
    "src": [
     [
@@ -1527,6 +1580,18 @@ window.CASE = {
     [
      "HTX Insights: Musk TeraFab and lithography",
      "https://www.htx.com/news/an-unexpected-player-enters-the-lithography-machine-arena-en51TeWQ/"
+    ],
+    [
+     "ScienceDirect: The DARPA/Air Force FALCON program",
+     "https://www.sciencedirect.com/science/article/abs/pii/S009457650500127X"
+    ],
+    [
+     "Silicon Valley Defense Group: DARPA as SpaceX's first government funding",
+     "https://www.siliconvalleydefense.org/press-releases/space-report-23"
+    ],
+    [
+     "Washington Post: Musk's business empire and government funding",
+     "https://www.washingtonpost.com/technology/interactive/2025/elon-musk-business-government-contracts-funding/"
     ]
    ],
    "strat": "Adds a chip-supply leg: Musk's TeraFab, a chip plant for SpaceX and Tesla compute, with a signaled move into lithography. HORIZON expects Starship to lower launch cost in 2029-2032 and the Starshield backbone to reach full capability in late 2027.",
@@ -1923,7 +1988,9 @@ window.CASE = {
     "NVentures backs Abridge; co-developing a clinical conversation foundation model (June 2026)",
     "Synchron runs real-time neural decoding on NVIDIA Holoscan (Jan 2025) and plans Chiral training with Omniverse and Cosmos (GTC, Mar 2025)",
     "NVIDIA venture arm in Lila's $115M extension (Oct 2025) and reported anchor of Lila's ~$2B round (Jun 2026).",
-    "NVIDIA venture arm invested in Generate's 2023 Series C."
+    "NVIDIA venture arm invested in Generate's 2023 Series C.",
+    "Founded 1993 on private venture money; federal research money came after commercial scale",
+    "DARPA UHPC (Echelon): $25M four-year contract leading Cray, Oak Ridge and six universities (2010); DARPA PERFECT (2012); DOE exascale awards"
    ],
    "src": [
     [
@@ -1977,6 +2044,14 @@ window.CASE = {
     [
      "Lila Sciences said in talks for funds at $8.5 billion valuation (Bloomberg Law, 2026-06-03)",
      "https://news.bloomberglaw.com/private-equity/lila-sciences-said-in-talks-for-funds-at-8-5-billion-valuation"
+    ],
+    [
+     "NVIDIA: $25M DARPA UHPC contract (2010)",
+     "https://nvidianews.nvidia.com/news/nvidia-led-team-receives-25-million-contract-from-darpa-to-develop-high-performance-gpu-computing-systems"
+    ],
+    [
+     "NVIDIA Research: Government programs",
+     "https://www.nvidia.com/en-us/research/government/"
     ]
    ],
    "plan": [
@@ -2056,7 +2131,16 @@ window.CASE = {
     "Shares Founders Fund backing with Erebor and Anduril",
     "Product line: Galleon family (Beacon, Cruiser, Triton, Leviathan, Orion); Armada Platform; Sovereign SI Grid; Galleon Command Center; Galleon Forge One (Arizona)",
     "GTC Berlin messaging: \"Sovereign SI\", \"modular superintelligence factories\", \"distributed sovereign SI capacity\"",
-    "Open question: whether Armada or the Sovereign SI Grid links directly to stratospheric relay nodes"
+    "Open question: whether Armada or the Sovereign SI Grid links directly to stratospheric relay nodes",
+    "Founded Dec 2022 by Dan Wright and Jon Runyan (Gunderson Dettmer, Emergence Capital)",
+    "Seed led by Founders Fund, Lux, Shield Capital and 8090 Industries, with 8VC (Lonsdale), Valor, Marlinspike and others",
+    "Microsoft M12 led a $40M round (2024); Overmatch and Silent Ventures in the $131M round",
+    "Shield Capital was co-founded by former DIU leader Raj Shah [VERIFY]",
+    "Early customer: mining (Nexa Resources)",
+    "No In-Q-Tel stake found",
+    "Dec 2023 round (over $55M) led by Founders Fund, Lux Capital, Shield Capital and 8090 Industries; participants Felicis, Contrary, Valor, Marlinspike, 137 Ventures, Koch Real Estate Investments, 8VC",
+    "$131M round (Jul 2025): Founders Fund, Lux, M12 and Marlinspike re-upped; new investors Pinegrove, Veriten, Glade Brook",
+    "Co-founder and COO Jon Runyan"
    ],
    "src": [
     [
@@ -2106,6 +2190,26 @@ window.CASE = {
     [
      "IDC Nova: Microsoft and Armada",
      "https://www.idcnova.com/html/1/59/153/5419.html"
+    ],
+    [
+     "Armada: Introducing Armada (seed investors)",
+     "https://www.armada.ai/blog/introducing-armada-bringing-ai-to-the-edge"
+    ],
+    [
+     "DCD: Microsoft leads $40M into Armada",
+     "https://www.datacenterdynamics.com/en/news/microsoft-leads-40-million-investment-into-edge-startup-armada/"
+    ],
+    [
+     "Contrary Research: Armada founding story",
+     "https://research.contrary.com/company/armada"
+    ],
+    [
+     "Business Wire: Armada raises more than $55M (Dec 2023)",
+     "https://www.businesswire.com/news/home/20231211233103/en"
+    ],
+    [
+     "Bloomberg: Founders Fund, Microsoft-backed Armada raises $131M (Jul 2025)",
+     "https://www.bloomberg.com/news/articles/2025-07-24/founders-fund-microsoft-backed-armada-raises-131-million-for-ai-data-centers"
     ]
    ],
    "strat": "Move compute to the data: ship pre-configured Galleons in standard ISO containers by truck, sealift or airlift, run them on local power with Starlink backhaul (Cruiser and Triton fully air-gapped), and bind them into the Sovereign SI Grid with node failover. Pair with training hubs (Nscale) as the inference spoke. Supply owned, modular infrastructure for sovereign SI: Galleons at sub-megawatt edge scale and Leviathans at megawatt scale, deployable in days, managed through one control plane and linked into the Sovereign SI Grid for node-level failover. Partner with Palantir for the software, NVIDIA for compute and Johnson Controls for manufacturing and cooling, and build hardware in the U.S. and allied nations.",
@@ -2306,7 +2410,9 @@ window.CASE = {
     "Gemini available for HHS mission use; reportedly Elsa's new primary model [VERIFY]",
     "Health Tech Ecosystem signatory",
     "Fitbit pledged as early adopter in CMS Health Tech Ecosystem (Jul 2025)",
-    "Alphabet owns Isomorphic Labs and Calico; GV and CapitalG invest in Isomorphic."
+    "Alphabet owns Isomorphic Labs and Calico; GV and CapitalG invest in Isomorphic.",
+    "1998 PageRank paper credits NSF, DARPA and NASA funding through the Stanford Digital Library project; Brin held an NSF fellowship",
+    "Bought Keyhole (2004), an In-Q-Tel portfolio company, which became Google Earth"
    ],
    "src": [
     [
@@ -2336,6 +2442,14 @@ window.CASE = {
     [
      "Calico (company) (Wikipedia)",
      "https://en.wikipedia.org/wiki/Calico_(company)"
+    ],
+    [
+     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
+     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
+    ],
+    [
+     "Wikipedia: In-Q-Tel",
+     "https://en.wikipedia.org/wiki/In-Q-Tel"
     ]
    ],
    "plan": []
@@ -2363,7 +2477,8 @@ window.CASE = {
     "VA Federal EHR: $10B (2018) plus $17B ceiling (2026); 13 go-lives in 2026",
     "House VA Committee subpoenaed Ellison and Sicilia, 19-0 (September 2026)",
     "Oracle Health is a CMS Aligned Network early adopter",
-    "Ellison framed Stargate around AI cancer detection, personalized mRNA vaccines and electronic health records (2025-01-21)."
+    "Ellison framed Stargate around AI cancer detection, personalized mRNA vaccines and electronic health records (2025-01-21).",
+    "Founders worked on a CIA-funded project code-named Oracle at Ampex; the CIA was the first customer (1977) and let the company use the code name"
    ],
    "src": [
     [
@@ -2389,6 +2504,14 @@ window.CASE = {
     [
      "Trump launches $500B Project Stargate (HLTH, 2025-01-23)",
      "https://hlth.com/insights/news/trump-launches-500b-project-stargate-tech-giants-unite-for-ai-powered-healthcare-innovation-2025-01-23"
+    ],
+    [
+     "Wikipedia: Oracle Database (CIA project code name, first customer)",
+     "https://en.wikipedia.org/wiki/Oracle_Database"
+    ],
+    [
+     "SFGate: Oracle's coziness with government goes back to its founding",
+     "https://www.sfgate.com/bayarea/article/oracle-s-coziness-with-government-goes-back-to-2820370.php"
     ]
    ]
   },
@@ -2752,7 +2875,14 @@ window.CASE = {
     "NHS FDP £330M; break-clause decision early 2027",
     "Reportedly built ICE's ELITE tool that ingests Medicaid data [VERIFY]",
     "EFF documents say Palantir provides infrastructure for CMS and serves Humana, Cigna and Blue Shield of California [VERIFY]",
-    "Oura supports DoD population-level readiness analysis on Palantir's FedStart platform, authorized at IL5 (Aug 27, 2025); Oura later said Palantir provides the security layer for some DoD projects and is not a partner"
+    "Oura supports DoD population-level readiness analysis on Palantir's FedStart platform, authorized at IL5 (Aug 27, 2025); Oura later said Palantir provides the security layer for some DoD projects and is not a partner",
+    "In-Q-Tel invested about $2M from 2005 (one account: $1.25M); the CIA was effectively its sole customer from about 2005 to 2008",
+    "Thiel funded most of the $30M start",
+    "John Poindexter (DARPA TIA) met the founders, reportedly at Richard Perle's home (Washingtonian, 2012)",
+    "Other early doors: George Tenet (friend of Karp), Allen & Co. (investor), Michael Leiter (senior counselor)",
+    "No documented transfer of TIA staff, code or design",
+    "Staff out of Palantir co-founded Anduril (Brian Schimpf, 2017)",
+    "[ANALYSIS] Integrator across health and enforcement, wearables (FedStart) and agentic lines (IRS Lead and Case Analytics, ImmigrationOS)"
    ],
    "src": [
     [
@@ -2846,6 +2976,30 @@ window.CASE = {
     [
      "Tom's Guide: Oura military partnership and Palantir",
      "https://www.tomsguide.com/wellness/smart-rings/oura-is-expanding-its-partnership-with-the-u-s-military-and-users-are-stressed-heres-what-that-means-for-your-data"
+    ],
+    [
+     "Wikipedia: Palantir Technologies (In-Q-Tel ~$2M)",
+     "https://en.wikipedia.org/wiki/Palantir_Technologies"
+    ],
+    [
+     "Yahoo Finance: From CIA cash to local police",
+     "https://finance.yahoo.com/news/cia-cash-local-police-palantir-163513772.html"
+    ],
+    [
+     "Fortune: Inside the CIA-backed venture fund",
+     "https://fortune.com/2025/07/29/in-q-tel-cia-venture-capital-palantir-anduril/"
+    ],
+    [
+     "Washingtonian: Killer App (Palantir and Poindexter, 2012)",
+     "https://washingtonian.com/2012/01/31/killer-app/"
+    ],
+    [
+     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
+     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
+    ],
+    [
+     "EDGE: SOVEREIGN SI // TRAJECTORY (Notion)",
+     "https://app.notion.com/p/40d709555ee281f4acc5cd04eb22aee6"
     ]
    ],
    "strat": "Own the operating layer for civil, commercial and military buyers at once, then certify an ecosystem around it (modular data center partners, Knox FedRAMP/IL5, Aplos, Accenture Federal) and bundle it with Armada and NVIDIA into export packages. Deliver a Sovereign AI OS (AIP, Ontology, Foundry, Apollo) that runs open-weight and commercial models on infrastructure the customer owns, with the Ontology as the hinge linking data, models and actions. Extend it to physical infrastructure through certified partners (Armada) and to owned mission models through Regna AI with forward-deployed engineers.",
@@ -2947,7 +3101,14 @@ window.CASE = {
     "Founder Palmer Luckey co-founded Erebor Bank",
     "Golden Dome C2 consortium co-lead with Palantir; SBI awardee",
     "Page lists Anduril in the Thiel and Vance network via Founders Fund",
-    "[ANALYSIS] Golden Dome drives Anduril's private valuation"
+    "[ANALYSIS] Golden Dome drives Anduril's private valuation",
+    "Seeded by Founders Fund (2017)",
+    "Co-founders came from Palantir (Brian Schimpf) and Founders Fund (Trae Stephens)",
+    "First government customer: CBP, which paid to test Lattice towers in San Diego and Texas (2017–2018)",
+    "Marine Corps tower contract (about $4.8M, 2018) and Project Maven work",
+    "No DARPA or In-Q-Tel root found",
+    "CBP made Anduril's Autonomous Surveillance Towers a program of record (late June 2020)",
+    "Marine Corps I-CSUAS counter-drone contract, $642.2M over up to 10 years (Mar 2025)"
    ],
    "src": [
     [
@@ -2981,6 +3142,34 @@ window.CASE = {
     [
      "Fortune: Golden Dome SBI awards",
      "https://www.fortune.com/2026/04/25/spacex-anduril-lockheed-raytheon-northrop-golden-dome-interceptor-contracts/"
+    ],
+    [
+     "Wikipedia: Anduril Industries",
+     "https://en.wikipedia.org/wiki/Anduril_Industries"
+    ],
+    [
+     "LAist: Anduril founding and CBP test",
+     "https://laist.com/news/politics/anduril-executives-election-campaign-spending"
+    ],
+    [
+     "Mijente: Anduril Marine Corps and CBP contract",
+     "https://mijente.net/blog/anduril/"
+    ],
+    [
+     "The Intercept: Anduril and Project Maven (2019)",
+     "https://theintercept.com/2019/03/09/anduril-industries-project-maven-palmer-luckey/"
+    ],
+    [
+     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
+     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
+    ],
+    [
+     "Defense Daily: CBP makes Autonomous Surveillance Tower system a program of record (Jul 2020)",
+     "https://defensedaily.com/cbp-makes-autonomous-surveillance-tower-system-program-record/homeland-security"
+    ],
+    [
+     "Washington Technology: Anduril wins $642M Marines counter-drone contract (Mar 2025)",
+     "https://www.washingtontechnology.com/contracts/2025/03/anduril-wins-642m-marines-counter-drone-tech-contract/403613"
     ]
    ],
    "strat": "Second hub after Palantir. Partners: Palantir (Golden Dome C2), Shield AI (Hivemind on YFQ-44A), Meta (EagleEye), Rheinmetall (Europe), EDGE Group (Omen JV, $200M), D-Wave/Davidson (quantum), HD Hyundai (USVs), Archer (VTOL).",
@@ -4625,7 +4814,10 @@ window.CASE = {
     "2020 reports of G42 cooperation with BGI on UAE genomics and COVID test kits [VERIFY]",
     "Said it divested China investments Feb 2024; Microsoft invested $1.5B Apr 2024",
     "Jan 2024 House China Select Committee letter cited ties to Huawei and BGI",
-    "Investor in Neuralink's $650M Series E (Jun 2025)"
+    "Investor in Neuralink's $650M Series E (Jun 2025)",
+    "No federal money; U.S. involvement came as a condition on capital",
+    "Microsoft's $1.5B investment (2024) came with G42 agreeing to strip Chinese hardware and investments under a U.S.–UAE assurance arrangement [VERIFY terms]",
+    "CEO Peng Xiao previously led Pegasus, a subsidiary of DarkMatter, the UAE firm that hired former NSA operatives [VERIFY]"
    ],
    "src": [
     [
@@ -4667,6 +4859,10 @@ window.CASE = {
     [
      "Fierce Biotech: Neuralink $650M Series E",
      "https://www.fiercebiotech.com/medtech/neuralink-secures-650m-series-e-funding-expand-patient-access-brain-chip-technology"
+    ],
+    [
+     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
+     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
     ]
    ],
    "plan": []
@@ -5234,7 +5430,9 @@ window.CASE = {
     "Sold majority of Cantor's businesses to his children; announced May 19, closed October 6",
     "Bloomberg (Mar 18, 2026) reported Tether made a loan to Lutnick's children as they bought the firm",
     "Testified on Tether at a Senate hearing (CoinDesk, Feb 4, 2025)",
-    "Copied as Commerce Secretary on Ossoff's June 24, 2026 synthesis-screening letter"
+    "Copied as Commerce Secretary on Ossoff's June 24, 2026 synthesis-screening letter",
+    "Ran Cantor Fitzgerald when it took rights to a 5% Tether stake and custodied Tether's Treasury reserves",
+    "Senators Warren, Wyden and Blumenthal opened inquiries after Bloomberg reported a Tether loan to a trust for his children; Commerce says he divested and complied with his ethics agreement"
    ],
    "src": [
     [
@@ -5276,6 +5474,18 @@ window.CASE = {
     [
      "Sen. Ossoff letter to OSTP (Jun 24, 2026)",
      "https://www.ossoff.senate.gov/wp-content/uploads/2026/07/26.06.24_OSTP-AI-Letter.pdf"
+    ],
+    [
+     "Senate Banking: Warren and Wyden on Lutnick and Tether",
+     "https://www.banking.senate.gov/newsroom/minority/warren-wyden-probe-national-security-risks-surrounding-reported-lutnick-tether-loan"
+    ],
+    [
+     "Cointelegraph: Blumenthal and Cantor's Tether stake",
+     "https://cointelegraph.com/news/cantor-fitzgerald-faces-senate-democrats-probe-over-tether-ties"
+    ],
+    [
+     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
+     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
     ]
    ]
   },
@@ -6163,7 +6373,12 @@ window.CASE = {
     "B.Next biotech team since 2015 covers biomanufacturing, pandemic preparedness, biodefense and biotech-AI convergence",
     "CEO Steve Bowsher since Sep 8, 2023",
     "New investor in Synchron's $200M Series D (Nov 2025)",
-    "Investor in Science Corp's $230M Series C (Mar 2026)"
+    "Investor in Science Corp's $230M Series C (Mar 2026)",
+    "Founding CEO Gilman Louie; George Tenet assembled the original board",
+    "Invested in Keyhole (2003), which Google bought (2004) and turned into Google Earth",
+    "Invested about $2M in Palantir from 2005 (one account: $1.25M)",
+    "WSJ (Aug 30, 2016): nearly half of In-Q-Tel's trustees had a financial connection to a company it funded; trustee-linked firms received funding on 17 occasions",
+    "No In-Q-Tel stake found in Armada"
    ],
    "src": [
     [
@@ -6189,9 +6404,30 @@ window.CASE = {
     [
      "Business Wire: Science Corp $230M Series C",
      "https://www.businesswire.com/news/home/20260305896789/en/Science-Corporation-Closes-$230-Million-Series-C-to-Accelerate-Commercialization-of-PRIMA"
+    ],
+    [
+     "Wikipedia: In-Q-Tel",
+     "https://en.wikipedia.org/wiki/In-Q-Tel"
+    ],
+    [
+     "Techmeme: WSJ on In-Q-Tel trustee conflicts (2016)",
+     "https://www.techmeme.com/160830/p26"
+    ],
+    [
+     "Wikipedia: Palantir Technologies (In-Q-Tel ~$2M)",
+     "https://en.wikipedia.org/wiki/Palantir_Technologies"
+    ],
+    [
+     "Fortune: Inside the CIA-backed venture fund",
+     "https://fortune.com/2025/07/29/in-q-tel-cia-venture-capital-palantir-anduril/"
+    ],
+    [
+     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
+     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
     ]
    ],
-   "plan": []
+   "plan": [],
+   "U": true
   },
   {
    "id": "kleiner",
@@ -10450,7 +10686,10 @@ window.CASE = {
     "Page uses the phrase 'the Thiel network' with no named person or title",
     "Substrate link is [VERIFY]",
     "Jim O'Neill, HHS Deputy Secretary 2025-2026, was managing director at Thiel Capital and Clarium and CEO of the Thiel Foundation",
-    "Gave $3.5M to the Methuselah Foundation (2006-09-19)."
+    "Gave $3.5M to the Methuselah Foundation (2006-09-19).",
+    "Funded most of Palantir's $30M start",
+    "Michael Kratsios was principal and chief of staff at Thiel Capital",
+    "[ANALYSIS] Thiel-network people took OSTP, HHS and the vice presidency (2025)"
    ],
    "src": [
     [
@@ -10504,6 +10743,10 @@ window.CASE = {
     [
      "PayPal co-founder Peter Thiel invests $3.5M to stop aging (VentureBeat, 2006-09-19)",
      "https://venturebeat.com/ai/paypal-co-founder-peter-thiel-invests-35m-to-stop-aging"
+    ],
+    [
+     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
+     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
     ]
    ],
    "strat": "Stated reasons: taxation, the threat of nuclear war, and runaway AI. [ANALYSIS] The page adds hypotheses to test: Southern Hemisphere distance from a Northern Hemisphere nuclear exchange, Milei's deregulation, lithium, Argentina's nuclear sector and Antarctic access.",
@@ -10559,7 +10802,8 @@ window.CASE = {
     "Narya Capital reported as early Rumble investor (2021) [VERIFY]",
     "True Anomaly is backed by JD Vance-linked venture capital (Narya)",
     "Page thread: \"Thiel and Vance network\" covers Palantir, Anduril (Founders Fund), True Anomaly (Narya)",
-    "Leads the White House Task Force to Eliminate Fraud, partner in the CMS Medicaid Fraud War Room (April 2026)"
+    "Leads the White House Task Force to Eliminate Fraud, partner in the CMS Medicaid Fraud War Room (April 2026)",
+    "People pipeline: Mithril Capital (Thiel-backed); founded Narya; now Vice President, leads the fraud task force"
    ],
    "src": [
     [
@@ -10577,9 +10821,14 @@ window.CASE = {
     [
      "Medicaid Fraud War Room fast facts (CMS)",
      "https://www.cms.gov/files/document/medicaid-fraud-war-room-fast-facts.pdf"
+    ],
+    [
+     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
+     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
     ]
    ],
-   "plan": []
+   "plan": [],
+   "U": true
   },
   {
    "id": "gracias",
@@ -11255,7 +11504,10 @@ window.CASE = {
     "Bloomberg (Mar 18, 2026): Tether loan to Lutnick's children during Cantor purchase",
     "HSGAC minority report 'Tethered to Terrorism' (Sep 28, 2026) examines Tether's role in Iran's shadow banking network",
     "USDT is issued from El Salvador and sits outside GENIUS rules",
-    "Tether Evo invested $200M for a majority stake in Blackrock Neurotech (Apr 29, 2024)"
+    "Tether Evo invested $200M for a majority stake in Blackrock Neurotech (Apr 29, 2024)",
+    "No federal money found",
+    "Cantor Fitzgerald took rights to a 5% stake (2024, convertible bond valued up to $600M)",
+    "Commerce says Lutnick divested and complied with his ethics agreement; loan details disputed"
    ],
    "src": [
     [
@@ -11289,6 +11541,18 @@ window.CASE = {
     [
      "The Block: Ardoino on Blackrock Neurotech",
      "https://www.theblock.co/post/359607/tether-brain-computer-elon-musk-neuralink"
+    ],
+    [
+     "Senate Banking: Warren and Wyden on Lutnick and Tether",
+     "https://www.banking.senate.gov/newsroom/minority/warren-wyden-probe-national-security-risks-surrounding-reported-lutnick-tether-loan"
+    ],
+    [
+     "Cointelegraph: Blumenthal and Cantor's Tether stake",
+     "https://cointelegraph.com/news/cantor-fitzgerald-faces-senate-democrats-probe-over-tether-ties"
+    ],
+    [
+     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
+     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
     ]
    ]
   },
@@ -15518,13 +15782,25 @@ window.CASE = {
    "sum": "Earth-observation partner of Sceye.",
    "dir": "",
    "obj": [],
-   "f": [],
+   "f": [
+    "Credited in the 1998 PageRank paper",
+    "NASA COTS award to SpaceX (2006, $278M initial)"
+   ],
    "src": [
     [
      "IEEE Spectrum: Sceye and SoftBank",
      "https://spectrum.ieee.org/sceye-high-altitude-platform-station"
+    ],
+    [
+     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
+     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
+    ],
+    [
+     "Washington Post: Musk's business empire and government funding",
+     "https://www.washingtonpost.com/technology/interactive/2025/elon-musk-business-government-contracts-funding/"
     ]
-   ]
+   ],
+   "U": true
   },
   {
    "id": "usgs",
@@ -17840,7 +18116,12 @@ window.CASE = {
    ],
    "obj": [],
    "f": [
-    "Dollar amount described only as 'multimillion'"
+    "Dollar amount described only as 'multimillion'",
+    "Both directors came from DARPA's Biological Technologies Office",
+    "Geoffrey Ling, founding BTO director, co-wrote the white paper that became ARPA-H",
+    "Renee Wegrzyn: inaugural director (2022); let go Feb 2025",
+    "Alicia Jackson: director, sworn in Oct 2025",
+    "[ANALYSIS] Bio is where the older, state-seeded model still holds"
    ],
    "src": [
     [
@@ -17854,8 +18135,29 @@ window.CASE = {
     [
      "Washington Examiner: ARPA-H biowearables",
      "https://www.washingtonexaminer.com/?p=4486357"
+    ],
+    [
+     "BioSpace: Former DARPA official Jackson named ARPA-H head",
+     "https://www.biospace.com/policy/former-darpa-official-jackson-named-arpa-h-head"
+    ],
+    [
+     "FABBS: New leadership of ARPA-H",
+     "https://fabbs.org/news/2025/11/new-leadership-arpah/"
+    ],
+    [
+     "Wikipedia: ARPA-H (Ling white paper)",
+     "https://en.wikipedia.org/wiki/Advanced_Research_Projects_Agency_for_Health"
+    ],
+    [
+     "Fierce Biotech: ARPA-H director let go",
+     "https://www.fiercebiotech.com/research/director-advanced-research-projects-agency-health-fired-trump-administration"
+    ],
+    [
+     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
+     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
     ]
-   ]
+   ],
+   "U": true
   },
   {
    "id": "acf",
@@ -19082,7 +19384,9 @@ window.CASE = {
    "f": [
     "160 to 200 AI projects in development (2025)",
     "Particle Health antitrust claims allowed to proceed [VERIFY]",
-    "STAT reported an exodus of key technology leaders"
+    "STAT reported an exodus of key technology leaders",
+    "Founded 1979 as Human Services Computing on about $70,000 from Judy Faulkner, colleagues and family",
+    "Never took venture, private equity or federal seed money (documented clean negative)"
    ],
    "src": [
     [
@@ -19100,6 +19404,14 @@ window.CASE = {
     [
      "Particle's antitrust claims against Epic proceed (HIT Consultant)",
      "https://hitconsultant.net/2025/09/08/us-court-allows-particles-antitrust-claims-against-epic-to-proceed/"
+    ],
+    [
+     "Wikipedia: Epic Systems",
+     "https://en.wikipedia.org/wiki/Epic_Systems"
+    ],
+    [
+     "Forbes: Epic's self-funded growth",
+     "https://www.forbes.com/sites/zinamoukheiber/2012/04/18/epic-systems-tough-billionaire/"
     ]
    ]
   },
@@ -19135,7 +19447,10 @@ window.CASE = {
    ],
    "obj": [],
    "f": [
-    "Health partners: WellStar, University of Miami Health, Hackensack Meridian, Community Health Network, Ochsner"
+    "Health partners: WellStar, University of Miami Health, Hackensack Meridian, Community Health Network, Ochsner",
+    "The original company ran under TSA's Registered Traveler program [VERIFY]",
+    "Caryn Seidman Becker bought its assets, including 190,000 people's fingerprints, out of bankruptcy for $6M (2010)",
+    "Runs Medicare.gov identity and a VA pilot (six VA medical centers); inside Epic MyChart"
    ],
    "src": [
     [
@@ -19145,6 +19460,18 @@ window.CASE = {
     [
      "CMS touts biometric verification for Medicare.gov (Nextgov)",
      "https://nextgov.com/digital-government/2026/03/cms-touts-early-uses-new-biometric-verification-tools-medicaregov/412065"
+    ],
+    [
+     "Wikipedia: Clear Secure",
+     "https://en.wikipedia.org/wiki/Clear_Secure"
+    ],
+    [
+     "Forbes: CLEAR bought out of bankruptcy",
+     "https://www.forbes.com/sites/katharineschwab/2026/06/03/caryn-seidman-becker-bought-clear-out-of-bankruptcy-now-shes-a-billionaire/"
+    ],
+    [
+     "EDGE: SOVEREIGN SI // TRAJECTORY (Notion)",
+     "https://app.notion.com/p/40d709555ee281f4acc5cd04eb22aee6"
     ]
    ]
   },
@@ -19172,7 +19499,11 @@ window.CASE = {
     ]
    ],
    "obj": [],
-   "f": [],
+   "f": [
+    "Founded 2010 as TroopSwap, a veterans deals site, by Blake Hall and Matt Thompson",
+    "Holds contracts with at least 20 federal and 50 state agencies",
+    "First federal contract [VERIFY]"
+   ],
    "src": [
     [
      "ID.me awarded CMS contract for Medicare.gov (ID Tech Wire)",
@@ -19181,6 +19512,10 @@ window.CASE = {
     [
      "CMS touts biometric verification for Medicare.gov (Nextgov)",
      "https://nextgov.com/digital-government/2026/03/cms-touts-early-uses-new-biometric-verification-tools-medicaregov/412065"
+    ],
+    [
+     "Wikipedia: ID.me",
+     "https://en.wikipedia.org/wiki/ID.me"
     ]
    ]
   },
@@ -20230,7 +20565,8 @@ window.CASE = {
     "Mithril Capital managing director, 2012-2019",
     "SENS Research Foundation CEO 2019-2021",
     "Seasteading Institute board until shortly before 2017; ADvantage Therapeutics board 2023",
-    "HHS principal associate deputy secretary under George W. Bush"
+    "HHS principal associate deputy secretary under George W. Bush",
+    "People pipeline: Thiel Capital, Clarium, Thiel Foundation, Mithril to HHS Deputy Secretary and acting CDC director"
    ],
    "src": [
     [
@@ -20252,8 +20588,13 @@ window.CASE = {
     [
      "CDC: TGS passes one million participants",
      "https://www.cdc.gov/media/releases/2026/2026-cdc-surpasses-1-million-voluntary-air-travel-participants-in-biosurveillance-program.html"
+    ],
+    [
+     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
+     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
     ]
-   ]
+   ],
+   "U": true
   },
   {
    "id": "gleason",
@@ -20768,11 +21109,22 @@ window.CASE = {
    "dir": "",
    "role": "CEO, CLEAR",
    "obj": [],
-   "f": [],
+   "f": [
+    "Bought CLEAR's assets out of bankruptcy for $6M (2010)",
+    "Sits on the New York Fed board"
+   ],
    "src": [
     [
      "CLEAR inks contract with CMS to kill the clipboard (Fierce Healthcare)",
      "https://www.fiercehealthcare.com/health-tech/clear-inks-contract-cms-kill-clipboard"
+    ],
+    [
+     "Forbes: CLEAR bought out of bankruptcy",
+     "https://www.forbes.com/sites/katharineschwab/2026/06/03/caryn-seidman-becker-bought-clear-out-of-bankruptcy-now-shes-a-billionaire/"
+    ],
+    [
+     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
+     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
     ]
    ]
   },
@@ -21019,7 +21371,19 @@ window.CASE = {
    "strat": "Runs biotech through BTO: battlefield medicine, distributed biomanufacturing, attribution and foundational biology, with regulatory partnerships such as EQUIP-A-Pharma with ASPR.",
    "obj": [],
    "f": [
-    "No darpa node existed in existing.json; created here"
+    "No darpa node existed in existing.json; created here",
+    "1998 PageRank paper credits DARPA, NSF and NASA funding via the Stanford Digital Library project",
+    "FALCON (with U.S. Air Force): SpaceX's first government funding (Phase 1 Dec 2003, Phase 2 Sep 2004)",
+    "UHPC: NVIDIA Echelon $25M (2010); PERFECT (2012)",
+    "ADEPT: Moderna up to $25M (2013)",
+    "Took part in Synchron's $10M Series A; about $18M to Paradromics",
+    "Funded Blackrock Neurotech Utah Array work, including Revolutionizing Prosthetics with Johns Hopkins APL (arm project ended midstream in 2012)",
+    "Ginkgo: early probiotics work for soldiers; $9.5M with Transcriptic; $18M protein manufacturing (2023)",
+    "Profusa collaboration with JPEO-CBRND since at least 2018",
+    "Directors: Regina Dugan (2009–2012), Arati Prabhakar (2012–2017)",
+    "Total Information Awareness (run by John Poindexter) defunded 2003",
+    "[ANALYSIS] The record does not show DARPA placing political appointees; those placements run through Thiel Capital, Mithril, Palantir and DOGE",
+    "[ANALYSIS] Deepest root on the bio side; not found under the 2017-onward defense and compute builders"
    ],
    "src": [
     [
@@ -21041,6 +21405,54 @@ window.CASE = {
     [
      "Snopes: Profusa biosensor and DARPA",
      "https://www.snopes.com/fact-check/covid-detecting-microchip/"
+    ],
+    [
+     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
+     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
+    ],
+    [
+     "ScienceDirect: The DARPA/Air Force FALCON program",
+     "https://www.sciencedirect.com/science/article/abs/pii/S009457650500127X"
+    ],
+    [
+     "Silicon Valley Defense Group: DARPA as SpaceX's first government funding",
+     "https://www.siliconvalleydefense.org/press-releases/space-report-23"
+    ],
+    [
+     "NVIDIA: $25M DARPA UHPC contract (2010)",
+     "https://nvidianews.nvidia.com/news/nvidia-led-team-receives-25-million-contract-from-darpa-to-develop-high-performance-gpu-computing-systems"
+    ],
+    [
+     "NVIDIA Research: Government programs",
+     "https://www.nvidia.com/en-us/research/government/"
+    ],
+    [
+     "Leiden Madtrics: Moderna and DARPA $25M (2013)",
+     "https://www.leidenmadtrics.nl/articles/vaccine-development-in-context"
+    ],
+    [
+     "Global Venturing: DARPA in Synchron's $10M Series A",
+     "https://globalventuring.com/university/darpa-helps-implant-10m-in-synchron/"
+    ],
+    [
+     "From the Interface: Paradromics DARPA funding",
+     "https://www.from-the-interface.com/bci-funding-clinical-trials/"
+    ],
+    [
+     "Blackrock Neurotech: Utah Array and DARPA",
+     "https://blackrockneurotech.com/insights/the-strength-of-utah-tech/"
+    ],
+    [
+     "Salt Lake Tribune: Blackrock and the DARPA arm project",
+     "https://archive.sltrib.com/article.php?id=2036602&amp=&itype=CMSID"
+    ],
+    [
+     "GenomeWeb: Ginkgo and Transcriptic $9.5M DARPA contract",
+     "https://www.genomeweb.com/applied-markets/ginkgo-bioworks-transcriptic-awarded-95m-darpa-contract/"
+    ],
+    [
+     "O'Reilly: DARPA and synthetic biology (Ginkgo)",
+     "https://www.oreilly.com/content/darpa-and-the-future-of-synthetic-biology/"
     ]
    ],
    "plan": [
@@ -21059,7 +21471,8 @@ window.CASE = {
      "Additional Profusa funding",
      "2019-08"
     ]
-   ]
+   ],
+   "U": true
   },
   {
    "id": "bto",
@@ -21097,7 +21510,10 @@ window.CASE = {
     "Director Michael Koeris since April 2024",
     "DARPA Surgical Competition funded at $3.5M; D2 Sprint at $1M",
     "Bio-Attribution Challenge identifies biological anomalies and defines biothreat origins",
-    "Program manager named in July 2026 newsletter: Dr. William Mounfield"
+    "Program manager named in July 2026 newsletter: Dr. William Mounfield",
+    "Founding director Geoffrey Ling",
+    "Both ARPA-H directors came out of BTO (Wegrzyn, program manager; Jackson, deputy director)",
+    "Matt Hepburn, DARPA program manager (Profusa sensor, pandemic platform), moved to a COVID-era federal vaccine development role [VERIFY title]"
    ],
    "src": [
     [
@@ -21111,8 +21527,17 @@ window.CASE = {
     [
      "DARPA: Michael Koeris",
      "https://www.darpa.mil/about/people/michael-koeris"
+    ],
+    [
+     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
+     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
+    ],
+    [
+     "Nextgov: DARPA's Pandemic Prevention Platform",
+     "https://www.nextgov.com/acquisition/2021/08/darpas-pandemic-prevention-platform/259090/"
     ]
-   ]
+   ],
+   "U": true
   },
   {
    "id": "bmo",
@@ -21844,7 +22269,9 @@ window.CASE = {
    "f": [
     "Waivers: one year, one 180-day extension, with OMB approval",
     "Exceptions: intelligence, certain overseas health care, public multiomic data, MCMs in a declared emergency",
-    "Statute names no companies"
+    "Statute names no companies",
+    "OMB's first BIOSECURE list due December 18, 2026; guidance up to 180 days later; FAR revision up to a year after that",
+    "Set by statute and bipartisan; TRAJECTORY expects it to proceed regardless of the midterm shift"
    ],
    "src": [
     [
@@ -21862,6 +22289,10 @@ window.CASE = {
     [
      "WuXi AppTec added to DOW's 1260H list (Holland & Knight, 2026-06)",
      "https://www.hklaw.com/en/insights/publications/2026/06/wuxi-apptec-added-to-dows-1260h-list"
+    ],
+    [
+     "EDGE: SOVEREIGN SI // TRAJECTORY (Notion)",
+     "https://app.notion.com/p/40d709555ee281f4acc5cd04eb22aee6"
     ]
    ]
   },
@@ -22241,7 +22672,12 @@ window.CASE = {
    "dir": "",
    "obj": [],
    "f": [
-    "Director Michael Kratsios"
+    "Director Michael Kratsios",
+    "Directors: Eric Lander (2021–2022), Arati Prabhakar (2022–2025), Michael Kratsios (2025–)",
+    "Under Lander the office took staff paid through Schmidt Futures (Politico, March 2022; Schmidt disputes)",
+    "Owns the 2026 high-risk life-sciences research policy and the unrevised synthesis-screening framework",
+    "[ANALYSIS] A recurring control seat: held through the Schmidt network, a former DARPA director and a former Thiel Capital executive, across both parties",
+    "Runs outside Congress: science and research policy (OSTP, EO 14292) (TRAJECTORY section 10)"
    ],
    "src": [
     [
@@ -22251,8 +22687,25 @@ window.CASE = {
     [
      "CASRAI: USG Policy for Stopping High-Risk Life Sciences Research",
      "https://casrai.org/news/usg-policy-stopping-high-risk-life-sciences-research-institutions-2026"
+    ],
+    [
+     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
+     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
+    ],
+    [
+     "EDGE: SOVEREIGN SI // TRAJECTORY (Notion)",
+     "https://app.notion.com/p/40d709555ee281f4acc5cd04eb22aee6"
+    ],
+    [
+     "CNBC: Schmidt responds to OSTP report",
+     "https://www.cnbc.com/2022/03/29/ex-google-ceo-eric-schmidt-responds-to-white-house-related-allegations.html"
+    ],
+    [
+     "Forbes: Schmidt Futures and OSTP",
+     "https://www.forbes.com/sites/sarahemerson/2023/11/09/former-google-ceo-eric-schmidt-futures-philanthropic-mess/"
     ]
-   ]
+   ],
+   "U": true
   },
   {
    "id": "nist",
@@ -22633,7 +23086,8 @@ window.CASE = {
    "dir": "",
    "obj": [],
    "f": [
-    "With DoD, $21.4M to 14 BioMADE projects (Apr 2026)"
+    "With DoD, $21.4M to 14 BioMADE projects (Apr 2026)",
+    "1998 PageRank paper credits NSF funding through the Stanford Digital Library project; Sergey Brin held an NSF fellowship"
    ],
    "src": [
     [
@@ -22647,10 +23101,14 @@ window.CASE = {
     [
      "IoT Australia: The Internet of Bio-NanoThings",
      "https://www.iotaustralia.org.au/2015/07/28/iotnewsglobal/get-ready-for-the-internet-of-bio-nanothings"
+    ],
+    [
+     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
+     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
     ]
    ],
-   "strat": "",
-   "plan": []
+   "plan": [],
+   "U": true
   },
   {
    "id": "ginkgo",
@@ -22699,7 +23157,11 @@ window.CASE = {
    "f": [
     "FY2025 revenue $170.2M (down 25%); biosecurity $37.4M (down 30%); GAAP net loss $312.8M; cash and securities $423M",
     "Q2 2026 revenue $20M (down 48%); cash $302M; 2026 burn guide $125-150M",
-    "Former IARPA B24IC prime"
+    "Former IARPA B24IC prime",
+    "Early DARPA work (probiotics for soldiers)",
+    "$9.5M DARPA contract with Transcriptic",
+    "$18M DARPA protein-manufacturing award (2023)",
+    "IARPA B24IC prime"
    ],
    "src": [
     [
@@ -22721,6 +23183,18 @@ window.CASE = {
     [
      "IARPA: B24IC",
      "https://www.iarpa.gov/research-programs/b24ic"
+    ],
+    [
+     "GenomeWeb: Ginkgo and Transcriptic $9.5M DARPA contract",
+     "https://www.genomeweb.com/applied-markets/ginkgo-bioworks-transcriptic-awarded-95m-darpa-contract/"
+    ],
+    [
+     "O'Reilly: DARPA and synthetic biology (Ginkgo)",
+     "https://www.oreilly.com/content/darpa-and-the-future-of-synthetic-biology/"
+    ],
+    [
+     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
+     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
     ]
    ]
   },
@@ -23594,14 +24068,20 @@ window.CASE = {
     "Former professor, Keck Graduate Institute (2020)",
     "NIH RADx portfolio executive",
     "Co-founded Sample6 (acquired 2017)",
-    "Addgene board director; AIMBE Fellow 2026"
+    "Addgene board director; AIMBE Fellow 2026",
+    "People pipeline: NIH RADx and Sample6 founder, then DARPA BTO director (since Apr 2024)"
    ],
    "src": [
     [
      "DARPA: Michael Koeris",
      "https://www.darpa.mil/about/people/michael-koeris"
+    ],
+    [
+     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
+     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
     ]
-   ]
+   ],
+   "U": true
   },
   {
    "id": "pava",
@@ -23933,7 +24413,7 @@ window.CASE = {
   {
    "id": "schmidt-eric",
    "n": "Eric Schmidt",
-   "s": "biodefense",
+   "s": "capital",
    "t": "N",
    "k": "person",
    "L": [],
@@ -23945,13 +24425,39 @@ window.CASE = {
    "dir": "",
    "role": "NSCEB Commissioner",
    "obj": [],
-   "f": [],
+   "f": [
+    "Chaired the Defense Innovation Board and NSCAI, which wrote much of the early federal AI-for-defense agenda",
+    "Commissioner, NSCEB",
+    "Politico (March 2022): Schmidt Futures indirectly paid at least two OSTP staffers' salaries; Schmidt called the story \"largely false\"",
+    "Open: Special Competitive Studies Project and Schmidt-network investments in map companies (UPSTREAM LAYER section 05)"
+   ],
    "src": [
     [
      "Wikipedia: NSCEB",
      "https://en.wikipedia.org/wiki/National_Security_Commission_on_Emerging_Biotechnology"
+    ],
+    [
+     "EPIC: Tech industry and early federal AI policy",
+     "https://epic.org/playing-both-sides-ai-policy/"
+    ],
+    [
+     "CNBC: Schmidt responds to OSTP report",
+     "https://www.cnbc.com/2022/03/29/ex-google-ceo-eric-schmidt-responds-to-white-house-related-allegations.html"
+    ],
+    [
+     "Forbes: Schmidt Futures and OSTP",
+     "https://www.forbes.com/sites/sarahemerson/2023/11/09/former-google-ceo-eric-schmidt-futures-philanthropic-mess/"
+    ],
+    [
+     "Tech Transparency Project: Schmidt's influence apparatus",
+     "https://www.techtransparencyproject.org/articles/eric-schmidts-expanding-influence-apparatus"
+    ],
+    [
+     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
+     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
     ]
-   ]
+   ],
+   "U": true
   },
   {
    "id": "zakheim",
@@ -24191,7 +24697,9 @@ window.CASE = {
    "role": "CEO, In-Q-Tel (since Sep 8, 2023); board of trustees",
    "strat": "Runs IQT's portfolio, including B.Next biotech investing in biomanufacturing and biodefense.",
    "obj": [],
-   "f": [],
+   "f": [
+    "People pipeline: In-Q-Tel CEO since Sep 2023; runs B.Next, IQT's biotech practice"
+   ],
    "src": [
     [
      "GovConWire: Bowsher to lead In-Q-Tel",
@@ -24200,8 +24708,13 @@ window.CASE = {
     [
      "IQT: Biotechnology impact story",
      "https://iqt.org/impact-stories/biotechnology"
+    ],
+    [
+     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
+     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
     ]
-   ]
+   ],
+   "U": true
   },
   {
    "id": "darby",
@@ -24336,7 +24849,11 @@ window.CASE = {
     ]
    ],
    "obj": [],
-   "f": [],
+   "f": [
+    "Principal and chief of staff at Thiel Capital",
+    "U.S. CTO in the first Trump term",
+    "OSTP director (current)"
+   ],
    "src": [
     [
      "Sen. Ossoff letter to OSTP (Jun 24, 2026)",
@@ -24345,8 +24862,13 @@ window.CASE = {
     [
      "CASRAI: USG Policy for Stopping High-Risk Life Sciences Research",
      "https://casrai.org/news/usg-policy-stopping-high-risk-life-sciences-research-institutions-2026"
+    ],
+    [
+     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
+     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
     ]
-   ]
+   ],
+   "U": true
   },
   {
    "id": "ossoff",
@@ -25696,7 +26218,11 @@ window.CASE = {
     "Seven enrolled in GB PRIME by May 2026 (single source)",
     "First patient's implant showed thread retraction",
     "FDA reportedly rejected first human-testing application over wire migration and lithium battery concerns before May 2023 clearance",
-    "Musk, Oct 30, 2026: Blindsight 'ready from an engineering standpoint. Just waiting on regulatory approval.'"
+    "Musk, Oct 30, 2026: Blindsight 'ready from an engineering standpoint. Just waiting on regulatory approval.'",
+    "No direct federal money found",
+    "DJ Seo co-invented neural dust at Berkeley in DARPA-funded research",
+    "Vanessa Tolosa led a neurotech team at Lawrence Livermore National Laboratory",
+    "Paul Merolla worked on IBM's TrueNorth chip, built under DARPA's SyNAPSE program [VERIFY role]"
    ],
    "src": [
     [
@@ -25730,6 +26256,18 @@ window.CASE = {
     [
      "Drive Tesla Canada: Blindsight awaiting approval",
      "https://driveteslacanada.ca/news/elon-musk-neuralink-blindsight-ready-regulatory-approval/"
+    ],
+    [
+     "Contrary Research: Neuralink founding team",
+     "https://research.contrary.com/company/neuralink"
+    ],
+    [
+     "Neurotech Reports: Neuralink launch and neural dust",
+     "https://www.neurotechreports.com/pages/Neuralink-launch-collaborations.html"
+    ],
+    [
+     "From the Interface: neural dust and DARPA funding",
+     "https://www.from-the-interface.com/neural-dust/"
     ]
    ]
   },
@@ -25806,7 +26344,8 @@ window.CASE = {
     "$345M raised to date",
     "First-gen Stentrode has 16 electrodes",
     "Synchron says BCI investment across 2024-2025 exceeded $1B",
-    "OpenAI model integration reported in 2024 (not re-sourced)"
+    "OpenAI model integration reported in 2024 (not re-sourced)",
+    "DoD, including DARPA, took part in its $10M Series A"
    ],
    "src": [
     [
@@ -25828,6 +26367,10 @@ window.CASE = {
     [
      "Becker's: Bezos Expeditions, Gates Frontier in Synchron Series C",
      "https://www.beckershospitalreview.com/innovation/bezos-expeditions-gates-frontier-back-brain-computer-interface-company-in-75m-financing-round.html"
+    ],
+    [
+     "Global Venturing: DARPA in Synchron's $10M Series A",
+     "https://globalventuring.com/university/darpa-helps-implant-10m-in-synchron/"
     ]
    ]
   },
@@ -25880,7 +26423,8 @@ window.CASE = {
    "obj": [],
    "f": [
     "Connect-One NCT07357428; sites UC Davis, MGH, University of Michigan; lead PI David M. Brandman",
-    "Company calls it the first IDE for speech restoration with a fully implantable BCI"
+    "Company calls it the first IDE for speech restoration with a fully implantable BCI",
+    "About $18M in DARPA research funding alongside private rounds"
    ],
    "src": [
     [
@@ -25894,6 +26438,10 @@ window.CASE = {
     [
      "Newsio: Paradromics NEOM investment",
      "https://newsio.com/2025/02/12/neuralink-competitor-paradromics-secures-investment-from-saudi-arabias-neom"
+    ],
+    [
+     "From the Interface: Paradromics DARPA funding",
+     "https://www.from-the-interface.com/bci-funding-clinical-trials/"
     ]
    ]
   },
@@ -26045,7 +26593,8 @@ window.CASE = {
    "obj": [],
    "f": [
     "Ardoino claims 40+ patients (unverified)",
-    "Tether said patients used its technology to operate robotic arms, wheelchairs and drive a car"
+    "Tether said patients used its technology to operate robotic arms, wheelchairs and drive a car",
+    "Utah Array work funded by DARPA, including the Revolutionizing Prosthetics arm program with Johns Hopkins APL; the arm project ended midstream in 2012"
    ],
    "src": [
     [
@@ -26059,6 +26608,14 @@ window.CASE = {
     [
      "MedTech Dive: Neuralink $280M led by Founders Fund",
      "https://www.medtechdive.com/news/elon-musk-neuralink-raises-280-million"
+    ],
+    [
+     "Blackrock Neurotech: Utah Array and DARPA",
+     "https://blackrockneurotech.com/insights/the-strength-of-utah-tech/"
+    ],
+    [
+     "Salt Lake Tribune: Blackrock and the DARPA arm project",
+     "https://archive.sltrib.com/article.php?id=2036602&amp=&itype=CMSID"
     ]
    ]
   },
@@ -26315,7 +26872,9 @@ window.CASE = {
    "obj": [],
    "f": [
     "Needs a separate reader to communicate",
-    "Subject of claim c05"
+    "Subject of claim c05",
+    "DARPA and JPEO-CBRND collaboration since at least 2018",
+    "DARPA program manager Matt Hepburn worked on the Profusa sensor"
    ],
    "src": [
     [
@@ -26325,6 +26884,14 @@ window.CASE = {
     [
      "Lead Stories: Profusa claim",
      "https://leadstories.com/hoax-alert/2020/09/fact-check-profusa-others-have-not-created-an-implantable-chip-to-connect-us-to-the-internet-and-open-door-to-brave-new-world.html"
+    ],
+    [
+     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
+     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
+    ],
+    [
+     "Nextgov: DARPA's Pandemic Prevention Platform",
+     "https://www.nextgov.com/acquisition/2021/08/darpas-pandemic-prevention-platform/259090/"
     ]
    ]
   },
@@ -26398,14 +26965,35 @@ window.CASE = {
    "obj": [],
    "f": [
     "DHA told lawmakers Oura was the only ring cleared for secure facilities",
-    "DHA head Gen. Telita Crossland departed late Feb 2025"
+    "DHA head Gen. Telita Crossland departed late Feb 2025",
+    "Awarded $96M to Oura (Sep 2024) (DefenseScoop)",
+    "A competitor protested (Breaking Defense, Feb 2025)",
+    "Award reported cancelled [VERIFY final status]",
+    "First government customer pattern: DHA for Oura (UPSTREAM LAYER section 08)"
    ],
    "src": [
     [
      "Breaking Defense: DHA cancels $96M wearable solicitation",
      "https://breakingdefense.com/2025/03/this-acquisition-is-no-longer-required-defense-health-agency-cancels-96m-wearable-solicitation/"
+    ],
+    [
+     "DefenseScoop: Pentagon $96M Oura contract",
+     "https://defensescoop.com/2024/10/02/pentagon-contracts-for-96m-in-oura-smart-rings-services/"
+    ],
+    [
+     "Breaking Defense: Oura contract protest",
+     "https://breakingdefense.com/2025/02/pentagons-96m-wearable-contract-sparks-protest-accusations-of-vendor-preference/"
+    ],
+    [
+     "ID Tech: Oura contract cancellation report",
+     "https://idtechwire.com/pentagon-cancels-96m-biometric-ring-contract-amid-privacy-concerns/"
+    ],
+    [
+     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
+     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
     ]
-   ]
+   ],
+   "U": true
   },
   {
    "id": "navycrew",
@@ -26514,7 +27102,12 @@ window.CASE = {
     "5M paid members; 5.5M+ rings sold",
     "Army: 400+ soldiers in field exercise",
     "Collaborators: DEVCOM Soldier Center, AFRL, NHRC",
-    "Says Palantir 'provides the security layer for some of the DoD's projects' and is not a partner"
+    "Says Palantir 'provides the security layer for some of the DoD's projects' and is not a partner",
+    "Partnered with DoD since 2019",
+    "Army Medical Research and Development Command backed the UCSF TemPredict study on Oura rings",
+    "DIU ran the RATE illness-detection project on Oura rings and Garmin watches",
+    "Defense Health Agency awarded $96M (Sep 2024); a competitor protested and the award was reported cancelled [VERIFY final status]",
+    "Opened U.S. manufacturing for its defense business"
    ],
    "src": [
     [
@@ -26548,6 +27141,26 @@ window.CASE = {
     [
      "Renaissance Capital: Oura postpones IPO",
      "https://www.renaissancecapital.com/IPO-Center/News/121945/smart-ring-maker-oura-postpones-2-1-billion-ipo"
+    ],
+    [
+     "DefenseScoop: Pentagon $96M Oura contract",
+     "https://defensescoop.com/2024/10/02/pentagon-contracts-for-96m-in-oura-smart-rings-services/"
+    ],
+    [
+     "USAMRDC: Wearables and TemPredict",
+     "https://mrdc.health.mil/index.cfm/media/articles/2021/for_the_pandemic_and_beyond_wearable_technology_points_the_way"
+    ],
+    [
+     "Breaking Defense: Oura contract protest",
+     "https://breakingdefense.com/2025/02/pentagons-96m-wearable-contract-sparks-protest-accusations-of-vendor-preference/"
+    ],
+    [
+     "ID Tech: Oura contract cancellation report",
+     "https://idtechwire.com/pentagon-cancels-96m-biometric-ring-contract-amid-privacy-concerns/"
+    ],
+    [
+     "Oura: U.S. manufacturing for DoD",
+     "https://ouraring.com/blog/oura-us-department-of-defense/"
     ]
    ]
   },
@@ -29112,7 +29725,9 @@ window.CASE = {
    "tk": "MRNA",
    "ex": "Nasdaq",
    "obj": [],
-   "f": [],
+   "f": [
+    "DARPA ADEPT, up to $25M (2013), years before COVID-19"
+   ],
    "src": [
     [
      "HHS winds down mRNA development under BARDA (HHS, 2025-08-05)",
@@ -29121,6 +29736,10 @@ window.CASE = {
     [
      "OpenAI launches GPT-Rosalind (Manufacturing Chemist, 2026-04-17)",
      "https://manufacturingchemist.com/openai-launches-gpt-rosalind-to-accelerate-life-sciences"
+    ],
+    [
+     "Leiden Madtrics: Moderna and DARPA $25M (2013)",
+     "https://www.leidenmadtrics.nl/articles/vaccine-development-in-context"
     ]
    ]
   },
@@ -30447,6 +31066,1163 @@ window.CASE = {
      "https://www.biospace.com/fda/eli-lillys-oral-obesity-pill-approved-kicking-off-renewed-novo-rivalry"
     ]
    ]
+  },
+  {
+   "id": "cia",
+   "n": "Central Intelligence Agency (CIA)",
+   "s": "state",
+   "t": "K",
+   "k": "buyer",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "First customer of Oracle (1977) and effectively Palantir's sole customer from about 2005 to 2008. Former CIA director George Tenet assembled In-Q-Tel's original board.",
+   "dir": "",
+   "U": true,
+   "obj": [],
+   "f": [
+    "Oracle's founders worked on a CIA-funded project code-named Oracle at Ampex; the CIA was Oracle's first customer (1977) and let the company use the code name",
+    "Effectively Palantir's sole customer from about 2005 to 2008",
+    "George Tenet, former CIA director, assembled In-Q-Tel's original board",
+    "Tenet is named as a friend of Alex Karp and one of Palantir's early doors",
+    "Required by MAP UPDATE WAVE section 03 edges; the spec's node table does not list it"
+   ],
+   "src": [
+    [
+     "Wikipedia: Oracle Database (CIA project code name, first customer)",
+     "https://en.wikipedia.org/wiki/Oracle_Database"
+    ],
+    [
+     "SFGate: Oracle's coziness with government goes back to its founding",
+     "https://www.sfgate.com/bayarea/article/oracle-s-coziness-with-government-goes-back-to-2820370.php"
+    ],
+    [
+     "Yahoo Finance: From CIA cash to local police",
+     "https://finance.yahoo.com/news/cia-cash-local-police-palantir-163513772.html"
+    ],
+    [
+     "Wikipedia: In-Q-Tel",
+     "https://en.wikipedia.org/wiki/In-Q-Tel"
+    ],
+    [
+     "Washingtonian: Killer App (Palantir and Poindexter, 2012)",
+     "https://washingtonian.com/2012/01/31/killer-app/"
+    ]
+   ]
+  },
+  {
+   "id": "keyhole",
+   "n": "Keyhole",
+   "s": "compute",
+   "t": "N",
+   "k": "co",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Received In-Q-Tel investment in 2003. Google bought Keyhole in 2004 and it became Google Earth.",
+   "dir": "",
+   "obj": [],
+   "f": [
+    "In-Q-Tel investment (2003)",
+    "Acquired by Google (2004); became Google Earth",
+    "Upstream door: intelligence, first investor"
+   ],
+   "src": [
+    [
+     "Wikipedia: In-Q-Tel",
+     "https://en.wikipedia.org/wiki/In-Q-Tel"
+    ],
+    [
+     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
+     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
+    ]
+   ]
+  },
+  {
+   "id": "prabhakar",
+   "n": "Arati Prabhakar",
+   "s": "state",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Former DARPA director who later held the White House science office.",
+   "dir": "",
+   "role": "Director, DARPA (2012–2017); Director, White House OSTP (2022–2025)",
+   "U": true,
+   "obj": [],
+   "f": [
+    "DARPA director 2012–2017",
+    "OSTP director 2022–2025",
+    "One of three successive OSTP directors traced to DARPA, Schmidt and Thiel networks [ANALYSIS]"
+   ],
+   "src": [
+    [
+     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
+     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
+    ]
+   ]
+  },
+  {
+   "id": "lander",
+   "n": "Eric Lander",
+   "s": "state",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "OSTP director whose office took staff paid through Schmidt Futures, per Politico (March 2022).",
+   "dir": "",
+   "role": "Director, White House OSTP (2021–2022)",
+   "U": true,
+   "obj": [],
+   "f": [
+    "OSTP director 2021–2022",
+    "Politico (March 2022): Schmidt Futures indirectly paid the salaries of at least two OSTP staffers, including the acting chief of staff, through a fellowship arrangement",
+    "Forbes later reported two more OSTP staff were Schmidt Futures fellows"
+   ],
+   "src": [
+    [
+     "CNBC: Schmidt responds to OSTP report",
+     "https://www.cnbc.com/2022/03/29/ex-google-ceo-eric-schmidt-responds-to-white-house-related-allegations.html"
+    ],
+    [
+     "Forbes: Schmidt Futures and OSTP",
+     "https://www.forbes.com/sites/sarahemerson/2023/11/09/former-google-ceo-eric-schmidt-futures-philanthropic-mess/"
+    ],
+    [
+     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
+     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
+    ]
+   ]
+  },
+  {
+   "id": "schmidtfutures",
+   "n": "Schmidt Futures",
+   "s": "capital",
+   "t": "N",
+   "k": "fund",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Eric Schmidt's foundation. Politico reported in March 2022 that it indirectly paid OSTP staff salaries; Schmidt called the story \"largely false.\"",
+   "dir": "",
+   "U": true,
+   "obj": [],
+   "f": [
+    "Politico (March 2022): indirectly paid the salaries of at least two OSTP staffers, including the acting chief of staff, through a fellowship arrangement",
+    "Forbes (Nov 2023): two more OSTP staff were Schmidt Futures fellows",
+    "Schmidt called the Politico story \"largely false\"",
+    "Status: reported and disputed"
+   ],
+   "src": [
+    [
+     "CNBC: Schmidt responds to OSTP report",
+     "https://www.cnbc.com/2022/03/29/ex-google-ceo-eric-schmidt-responds-to-white-house-related-allegations.html"
+    ],
+    [
+     "Forbes: Schmidt Futures and OSTP",
+     "https://www.forbes.com/sites/sarahemerson/2023/11/09/former-google-ceo-eric-schmidt-futures-philanthropic-mess/"
+    ],
+    [
+     "Tech Transparency Project: Schmidt's influence apparatus",
+     "https://www.techtransparencyproject.org/articles/eric-schmidts-expanding-influence-apparatus"
+    ],
+    [
+     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
+     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
+    ]
+   ]
+  },
+  {
+   "id": "nscai",
+   "n": "National Security Commission on Artificial Intelligence (NSCAI)",
+   "s": "state",
+   "t": "N",
+   "k": "prog",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Commission chaired by Eric Schmidt that wrote much of the early federal AI-for-defense agenda.",
+   "dir": "",
+   "U": true,
+   "obj": [],
+   "f": [
+    "Chaired by Eric Schmidt",
+    "Gilman Louie, founding In-Q-Tel CEO, reportedly served on it [VERIFY]"
+   ],
+   "src": [
+    [
+     "EPIC: Tech industry and early federal AI policy",
+     "https://epic.org/playing-both-sides-ai-policy/"
+    ],
+    [
+     "Tech Transparency Project: Schmidt's influence apparatus",
+     "https://www.techtransparencyproject.org/articles/eric-schmidts-expanding-influence-apparatus"
+    ],
+    [
+     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
+     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
+    ]
+   ]
+  },
+  {
+   "id": "dib",
+   "n": "Defense Innovation Board",
+   "s": "state",
+   "t": "N",
+   "k": "prog",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Pentagon advisory board chaired by Eric Schmidt.",
+   "dir": "",
+   "U": true,
+   "obj": [],
+   "f": [
+    "Chaired by Eric Schmidt"
+   ],
+   "src": [
+    [
+     "EPIC: Tech industry and early federal AI policy",
+     "https://epic.org/playing-both-sides-ai-policy/"
+    ],
+    [
+     "Tech Transparency Project: Schmidt's influence apparatus",
+     "https://www.techtransparencyproject.org/articles/eric-schmidts-expanding-influence-apparatus"
+    ],
+    [
+     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
+     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
+    ]
+   ]
+  },
+  {
+   "id": "wegrzyn",
+   "n": "Renee Wegrzyn",
+   "s": "healthdata",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "DARPA BTO program manager who became ARPA-H's first director; let go in February 2025.",
+   "dir": "",
+   "role": "Inaugural Director, ARPA-H (2022 to Feb 2025); former program manager, DARPA Biological Technologies Office",
+   "U": true,
+   "obj": [],
+   "f": [
+    "DARPA BTO program manager",
+    "Inaugural ARPA-H director (2022)",
+    "Let go Feb 2025"
+   ],
+   "src": [
+    [
+     "Fierce Biotech: ARPA-H director let go",
+     "https://www.fiercebiotech.com/research/director-advanced-research-projects-agency-health-fired-trump-administration"
+    ],
+    [
+     "Wikipedia: ARPA-H (Ling white paper)",
+     "https://en.wikipedia.org/wiki/Advanced_Research_Projects_Agency_for_Health"
+    ],
+    [
+     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
+     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
+    ]
+   ]
+  },
+  {
+   "id": "jackson-alicia",
+   "n": "Alicia Jackson",
+   "s": "healthdata",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Former DARPA BTO deputy director (Obama administration) who founded Evernow and was sworn in as ARPA-H director in October 2025.",
+   "dir": "",
+   "role": "Director, ARPA-H (sworn in Oct 2025); former deputy director, DARPA Biological Technologies Office; founder, Evernow",
+   "U": true,
+   "obj": [],
+   "f": [
+    "DARPA BTO deputy director (Obama administration)",
+    "Founded Evernow",
+    "Sworn in as ARPA-H director Oct 2025"
+   ],
+   "src": [
+    [
+     "BioSpace: Former DARPA official Jackson named ARPA-H head",
+     "https://www.biospace.com/policy/former-darpa-official-jackson-named-arpa-h-head"
+    ],
+    [
+     "FABBS: New leadership of ARPA-H",
+     "https://fabbs.org/news/2025/11/new-leadership-arpah/"
+    ],
+    [
+     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
+     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
+    ]
+   ]
+  },
+  {
+   "id": "ling-geoffrey",
+   "n": "Geoffrey Ling",
+   "s": "biodefense",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Founding director of DARPA's biology office; co-wrote the white paper that became ARPA-H.",
+   "dir": "",
+   "role": "Founding Director, DARPA Biological Technologies Office",
+   "U": true,
+   "obj": [],
+   "f": [
+    "Founding director, DARPA BTO",
+    "Co-wrote the white paper that became ARPA-H"
+   ],
+   "src": [
+    [
+     "Wikipedia: ARPA-H (Ling white paper)",
+     "https://en.wikipedia.org/wiki/Advanced_Research_Projects_Agency_for_Health"
+    ],
+    [
+     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
+     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
+    ]
+   ]
+  },
+  {
+   "id": "dugan",
+   "n": "Regina Dugan",
+   "s": "state",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Former DARPA director who moved to Google ATAP, then Facebook Building 8 (brain-typing BCI), then Wellcome Leap.",
+   "dir": "",
+   "role": "Director, DARPA (2009–2012); later Google ATAP, Facebook Building 8 and Wellcome Leap",
+   "U": true,
+   "obj": [],
+   "f": [
+    "DARPA director 2009–2012",
+    "Google ATAP",
+    "Facebook Building 8 (brain-typing BCI)",
+    "Wellcome Leap"
+   ],
+   "src": [
+    [
+     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
+     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
+    ]
+   ]
+  },
+  {
+   "id": "poindexter",
+   "n": "John Poindexter",
+   "s": "state",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Ran DARPA's Total Information Awareness program and met Palantir's founders, telling them he \"thought they had an interesting idea\" (Washingtonian, 2012).",
+   "dir": "",
+   "role": "Ran DARPA's Total Information Awareness program",
+   "U": true,
+   "obj": [],
+   "f": [
+    "Washingtonian (2012) quotes him: \"I told them I thought they had an interesting idea.\"",
+    "Praised an early Palantir mockup's \"absolutely beautiful user interface\"",
+    "The meeting was reportedly held at Richard Perle's home",
+    "Karp described Poindexter as one of many experts the founders consulted",
+    "No documented transfer of TIA staff, code or design found"
+   ],
+   "src": [
+    [
+     "Washingtonian: Killer App (Palantir and Poindexter, 2012)",
+     "https://washingtonian.com/2012/01/31/killer-app/"
+    ],
+    [
+     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
+     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
+    ]
+   ]
+  },
+  {
+   "id": "tia",
+   "n": "Total Information Awareness (TIA)",
+   "s": "state",
+   "t": "N",
+   "k": "prog",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "DARPA program run by John Poindexter, defunded in 2003. The record shows founder contact with Palantir and no documented transfer of staff, code or design.",
+   "dir": "",
+   "U": true,
+   "obj": [],
+   "f": [
+    "DARPA program, defunded 2003",
+    "Run by John Poindexter",
+    "Link to Palantir upgraded from conceptual lineage to documented contact (Poindexter meeting)",
+    "No documented transfer of TIA staff, code or design found"
+   ],
+   "src": [
+    [
+     "Washingtonian: Killer App (Palantir and Poindexter, 2012)",
+     "https://washingtonian.com/2012/01/31/killer-app/"
+    ],
+    [
+     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
+     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
+    ]
+   ]
+  },
+  {
+   "id": "stephens",
+   "n": "Trae Stephens",
+   "s": "capital",
+   "t": "K",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Founders Fund figure who co-founded Anduril and served on the Trump transition team for Defense.",
+   "dir": "",
+   "role": "Co-founder and chair, Anduril; Founders Fund; served on the Trump transition team for Defense",
+   "U": true,
+   "obj": [],
+   "f": [
+    "Co-founder of Anduril (2017), from Founders Fund",
+    "Chair of Anduril (MAP UPDATE WAVE spec)",
+    "Served on the Trump transition team for Defense"
+   ],
+   "src": [
+    [
+     "Wikipedia: Anduril Industries",
+     "https://en.wikipedia.org/wiki/Anduril_Industries"
+    ],
+    [
+     "LAist: Anduril founding and CBP test",
+     "https://laist.com/news/politics/anduril-executives-election-campaign-spending"
+    ],
+    [
+     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
+     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
+    ],
+    [
+     "EDGE: SOVEREIGN SI // MAP UPDATE WAVE (Notion)",
+     "https://app.notion.com/p/40e709555ee28185959eeb652e6a9642"
+    ]
+   ]
+  },
+  {
+   "id": "schimpf",
+   "n": "Brian Schimpf",
+   "s": "operating",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Anduril co-founder who came out of Palantir.",
+   "dir": "",
+   "role": "Co-founder and CEO, Anduril; formerly Palantir",
+   "U": true,
+   "obj": [],
+   "f": [
+    "Anduril co-founder from Palantir",
+    "Anduril CEO (MAP UPDATE WAVE spec)"
+   ],
+   "src": [
+    [
+     "Wikipedia: Anduril Industries",
+     "https://en.wikipedia.org/wiki/Anduril_Industries"
+    ],
+    [
+     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
+     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
+    ],
+    [
+     "EDGE: SOVEREIGN SI // MAP UPDATE WAVE (Notion)",
+     "https://app.notion.com/p/40e709555ee28185959eeb652e6a9642"
+    ]
+   ]
+  },
+  {
+   "id": "louie",
+   "n": "Gilman Louie",
+   "s": "capital",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Founding CEO of In-Q-Tel (1999–2006), recruited by George Tenet. Member of Schmidt's NSCAI and co-founder and CEO of America's Frontier Fund.",
+   "dir": "",
+   "role": "Founding CEO, In-Q-Tel (1999–2006); co-founder and CEO, America's Frontier Fund; former NSCAI member",
+   "U": true,
+   "obj": [],
+   "f": [
+    "Founding In-Q-Tel CEO",
+    "Later served on Schmidt's NSCAI [VERIFY]",
+    "Chairs America's Frontier Fund [VERIFY]",
+    "Founding In-Q-Tel CEO 1999–2006",
+    "Member, National Security Commission on AI (confirmed)",
+    "Co-founder and CEO of America's Frontier Fund (CEO, not chair)",
+    "Chair, Federation of American Scientists; co-founder, Alsop Louie Partners",
+    "Chairs the National Intelligence University board"
+   ],
+   "src": [
+    [
+     "Wikipedia: In-Q-Tel",
+     "https://en.wikipedia.org/wiki/In-Q-Tel"
+    ],
+    [
+     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
+     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
+    ],
+    [
+     "George Mason University National Security Institute: Gilman Louie",
+     "https://nationalsecurity.gmu.edu/gilman-louie"
+    ],
+    [
+     "The Intercept: America's Frontier Fund (Feb 2023)",
+     "https://theintercept.com/2023/02/03/china-americas-frontier-fund/"
+    ]
+   ]
+  },
+  {
+   "id": "falcon",
+   "n": "DARPA FALCON program",
+   "s": "space",
+   "t": "N",
+   "k": "prog",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "DARPA/U.S. Air Force program that gave SpaceX its first government funding: a Phase 1 study contract (Dec 2003) and a Phase 2 award (Sep 2004).",
+   "dir": "",
+   "U": true,
+   "obj": [],
+   "f": [
+    "SpaceX one of nine Phase 1 study contracts (Dec 2003)",
+    "SpaceX Phase 2 award (Sep 2004)",
+    "Described as SpaceX's first government funding, initially about $0.5M [VERIFY amount]"
+   ],
+   "src": [
+    [
+     "ScienceDirect: The DARPA/Air Force FALCON program",
+     "https://www.sciencedirect.com/science/article/abs/pii/S009457650500127X"
+    ],
+    [
+     "Silicon Valley Defense Group: DARPA as SpaceX's first government funding",
+     "https://www.siliconvalleydefense.org/press-releases/space-report-23"
+    ],
+    [
+     "Washington Post: Musk's business empire and government funding",
+     "https://www.washingtonpost.com/technology/interactive/2025/elon-musk-business-government-contracts-funding/"
+    ]
+   ]
+  },
+  {
+   "id": "uhpc",
+   "n": "DARPA UHPC",
+   "s": "compute",
+   "t": "N",
+   "k": "prog",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "DARPA program under which NVIDIA won a $25M, four-year contract (Echelon) in 2010, leading a team with Cray, Oak Ridge and six universities.",
+   "dir": "",
+   "U": true,
+   "obj": [],
+   "f": [
+    "NVIDIA Echelon: $25M four-year contract (2010)",
+    "Team: Cray, Oak Ridge and six universities",
+    "Federal research money reached NVIDIA after commercial scale"
+   ],
+   "src": [
+    [
+     "NVIDIA: $25M DARPA UHPC contract (2010)",
+     "https://nvidianews.nvidia.com/news/nvidia-led-team-receives-25-million-contract-from-darpa-to-develop-high-performance-gpu-computing-systems"
+    ],
+    [
+     "NVIDIA Research: Government programs",
+     "https://www.nvidia.com/en-us/research/government/"
+    ]
+   ]
+  },
+  {
+   "id": "adept",
+   "n": "DARPA ADEPT program",
+   "s": "biodefense",
+   "t": "N",
+   "k": "prog",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "DARPA program that awarded Moderna up to $25M in 2013, years before COVID-19.",
+   "dir": "",
+   "U": true,
+   "obj": [],
+   "f": [
+    "Moderna award up to $25M (2013)"
+   ],
+   "src": [
+    [
+     "Leiden Madtrics: Moderna and DARPA $25M (2013)",
+     "https://www.leidenmadtrics.nl/articles/vaccine-development-in-context"
+    ]
+   ]
+  },
+  {
+   "id": "tenet",
+   "n": "George Tenet",
+   "s": "state",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "As CIA director he drove the creation of In-Q-Tel (1999) and recruited its founding CEO, Gilman Louie. After government he joined Allen & Co., an investment bank that holds a large Palantir position.",
+   "dir": "",
+   "role": "Director of Central Intelligence (1997–2004); managing director, Allen & Co. (from Oct 2007)",
+   "U": true,
+   "obj": [],
+   "f": [
+    "Director of Central Intelligence 1997–2004",
+    "In-Q-Tel was created because Tenet believed a semi-public venture fund could let the CIA nurture startups (Fast Company)",
+    "Recruited video-game designer Gilman Louie as In-Q-Tel's first CEO",
+    "Became managing director of Allen & Company LLC in October 2007, disclosed through a QinetiQ board announcement (UPI, Feb 2008)",
+    "The source page names him as a friend of Alex Karp and an early Palantir door [VERIFY: not confirmed in a second source]"
+   ],
+   "src": [
+    [
+     "Fast Company (SA): Palantir from CIA investments to police partnerships",
+     "https://fastcompany.co.za/business/2025-11-24-the-evolution-of-palantir-from-cia-investments-to-police-partnerships/"
+    ],
+    [
+     "Wikipedia: In-Q-Tel",
+     "https://en.wikipedia.org/wiki/In-Q-Tel"
+    ],
+    [
+     "UPI: Tenet gets job at secretive NY bank (2008)",
+     "https://www.upi.com/Top_News/Special/2008/02/18/Tenet-gets-job-at-secretive-NY-bank/64181203344822/"
+    ],
+    [
+     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
+     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
+    ]
+   ]
+  },
+  {
+   "id": "leiter",
+   "n": "Michael Leiter",
+   "s": "operating",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Left the directorship of the National Counterterrorism Center and joined Palantir as senior counselor in December 2011, working on market strategy, business practices and internal operations.",
+   "dir": "",
+   "role": "Former director, National Counterterrorism Center; senior counselor, Palantir (from Dec 2011); later partner, Skadden",
+   "U": true,
+   "obj": [],
+   "f": [
+    "Director, National Counterterrorism Center (Bush and Obama administrations)",
+    "Joined Palantir as Senior Counselor, announced Dec 5, 2011",
+    "Palantir role covered market strategy, business practices and internal operations",
+    "Later a partner at Skadden"
+   ],
+   "src": [
+    [
+     "PR Newswire: Michael Leiter joins Palantir Technologies as Senior Counselor (Dec 5, 2011)",
+     "https://www.prnewswire.com/news-releases/michael-leiter-joins-palantir-technologies-as-senior-counselor-135018933.html"
+    ],
+    [
+     "Wikipedia: Michael Leiter",
+     "https://en.wikipedia.org/wiki/Michael_Leiter"
+    ],
+    [
+     "Skadden: Michael E. Leiter",
+     "https://www.skadden.com/en/professionals/l/leiter-michael-e"
+    ]
+   ]
+  },
+  {
+   "id": "hepburn",
+   "n": "Matthew Hepburn",
+   "s": "biodefense",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Infectious disease physician and retired Army colonel who managed DARPA programs including the Profusa hydrogel sensor work, then led vaccine development for Operation Warp Speed and advised the OSTP director on pandemic preparedness.",
+   "dir": "",
+   "role": "Former DARPA program manager (2013–2019); vaccine development lead, Operation Warp Speed; senior advisor to the OSTP director; chief medical officer, JPEO-CBRND",
+   "U": true,
+   "obj": [],
+   "f": [
+    "DARPA program manager 2013–2019 (final Army assignment)",
+    "Appeared in a 2018 DARPA video and on 60 Minutes (Apr 11, 2021) describing the DARPA–Profusa hydrogel sensor",
+    "Joint Project Lead for Enabling Biotechnologies, JPEO-CBRND",
+    "Vaccine Development Lead, Countermeasures Acceleration Group (Operation Warp Speed, HHS–DoD, formed May 2020)",
+    "Senior Advisor to the OSTP Director for pandemic preparedness",
+    "Listed as Chief Medical Officer, JPEO-CBRND (BU profile; current status [VERIFY])"
+   ],
+   "src": [
+    [
+     "Boston University CEID: Matthew Hepburn, MD",
+     "https://www.bu.edu/ceid/about-the-center/team/matthew-hepburn-md"
+    ],
+    [
+     "Science Feedback: DARPA hydrogel sensor (Hepburn, 60 Minutes, Profusa)",
+     "https://science.feedback.org/review/darpa-developed-a-hydrogel-sensor-which-monitors-blood-for-infections-at-early-stages-not-a-microchip-for-covid-19-identification-or-location-tracker"
+    ]
+   ]
+  },
+  {
+   "id": "runyan",
+   "n": "Jon Runyan",
+   "s": "compute",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Co-founded Armada with Dan Wright in late 2022 and serves as COO. The two met at Gunderson Dettmer and later worked together at Emergence Capital.",
+   "dir": "",
+   "role": "Co-founder and COO, Armada; former general counsel, Okta",
+   "U": true,
+   "obj": [],
+   "f": [
+    "Co-founder and COO, Armada (founded late 2022)",
+    "Former General Counsel at Okta, guided its IPO",
+    "Met Dan Wright at Gunderson Dettmer; both later at Emergence Capital"
+   ],
+   "src": [
+    [
+     "Contrary Research: Armada deep dive",
+     "https://research.contrary.com/deep-dive/armada"
+    ],
+    [
+     "Business Wire: Armada raises more than $55M (Dec 2023)",
+     "https://www.businesswire.com/news/home/20231211233103/en"
+    ]
+   ]
+  },
+  {
+   "id": "shah-raj",
+   "n": "Raj M. Shah",
+   "s": "capital",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Former F-16 pilot who ran the Pentagon's Defense Innovation Unit Experimental from 2016 to 2018, co-founded the defense-focused venture firm Shield Capital, and returned to DIU in 2024 to lead its Guard and Reserve detachment.",
+   "dir": "",
+   "role": "Managing partner and co-founder, Shield Capital; director, DIU Experimental (2016–2018); director, DIU Joint Reserve Detachment (from Oct 2024)",
+   "U": true,
+   "obj": [],
+   "f": [
+    "Director, DIUx 2016–2018",
+    "Co-founded Shield Capital with Philip Bilden; fund exceeded its $120M target (2022)",
+    "Director, DIU Joint Reserve Detachment, announced Oct 10, 2024 (about 50 Guard and Reserve personnel)",
+    "Co-author of Unit X, a history of DIU",
+    "Distinct from Raj Shah, the former White House deputy press secretary"
+   ],
+   "src": [
+    [
+     "Defense News: New venture capital fund focused on high-need dual-use technology (Shield Capital, 2022)",
+     "https://www.defensenews.com/industry/2022/03/15/new-venture-capital-fund-focused-on-high-need-dual-use-technology/"
+    ],
+    [
+     "DIU: Raj M. Shah appointed director, Joint Reserve Detachment (Oct 2024)",
+     "https://diu.mil/latest/defense-innovation-unit-appoints-raj-m-shah-as-director-joint-reserve"
+    ]
+   ]
+  },
+  {
+   "id": "hall-blake",
+   "n": "Blake Hall",
+   "s": "agentic",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Co-founded ID.me in 2010 as TroopSwap, a military deals site, and runs it as CEO. ID.me now holds identity contracts with at least 20 federal and 50 state agencies, including IRS, VA, SSA and Medicare.gov sign-in.",
+   "dir": "",
+   "role": "Co-founder and CEO, ID.me",
+   "U": true,
+   "obj": [],
+   "f": [
+    "Co-founded TroopSwap with Matt Thompson in early 2010; renamed ID.me",
+    "Federal contracts: GSA Connect.gov (2014), VA (2019), SSA (2020), IRS login (2021–2022)",
+    "Confirmed one-time use of one-to-many facial recognition, which drew privacy scrutiny",
+    "Army veteran [VERIFY Ranger service]"
+   ],
+   "src": [
+    [
+     "Wikipedia: ID.me",
+     "https://en.wikipedia.org/wiki/ID.me"
+    ],
+    [
+     "Bisnow: Matt Thompson and Blake Hall, ID.me",
+     "https://www.bisnow.com/news/washington-dc/tech/matt-thompson-and-blake-hall-idme-42722"
+    ]
+   ]
+  },
+  {
+   "id": "tolosa",
+   "n": "Vanessa Tolosa",
+   "s": "bodynet",
+   "t": "N",
+   "k": "person",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Led flexible polymer electrode work at Lawrence Livermore National Laboratory, co-founded Neuralink as director of neural interfaces, moved to Meta Reality Labs, and joined Precision Neuroscience as SVP of research and development in June 2025.",
+   "dir": "",
+   "role": "Neuralink co-founder (Director of Neural Interfaces); SVP R&D, Precision Neuroscience (from Jun 2025)",
+   "obj": [],
+   "f": [
+    "Began at Lawrence Livermore National Laboratory leading flexible polymer-based electrode arrays",
+    "Neuralink co-founder; Director of Neural Interfaces; led microfabrication",
+    "Hardware research manager, Meta Reality Labs (EMG wearables)",
+    "SVP R&D, Precision Neuroscience (announced Jun 11, 2025)",
+    "Carries the federal-lab lineage into two BCI makers on the map"
+   ],
+   "src": [
+    [
+     "Wikipedia: Neuralink",
+     "https://en.wikipedia.org/wiki/Neuralink"
+    ],
+    [
+     "BioSpace: Precision Neuroscience expands leadership team with hires from Meta and FDA (Jun 2025)",
+     "https://www.biospace.com/press-releases/precision-neuroscience-expands-leadership-team-with-key-hires-from-meta-and-fda"
+    ]
+   ]
+  },
+  {
+   "id": "lux",
+   "n": "Lux Capital",
+   "s": "capital",
+   "t": "K",
+   "k": "fund",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "New York venture firm with about a third of its investments in defense technology by 2026. Helped fund Anduril's 2017 seed and co-led Armada's December 2023 round.",
+   "dir": "",
+   "U": true,
+   "obj": [],
+   "f": [
+    "Founded 2000 by Peter Hébert, Robert Paull and Josh Wolfe",
+    "Fund IX: $1.5B, closed Jan 2026",
+    "Anduril: 2017 seed and a 2020 round",
+    "Armada: co-led $55M round (Dec 2023) with Founders Fund, Shield Capital and 8090 Industries; returned in the $131M round (Jul 2025)",
+    "Xaira investor",
+    "Venture partners include former SOCOM commander Gen. Tony Thomas (2020) and Brett McGurk (2025)"
+   ],
+   "src": [
+    [
+     "Wikipedia: Lux Capital",
+     "https://en.wikipedia.org/wiki/Lux_Capital"
+    ],
+    [
+     "Business Wire: Armada raises more than $55M (Dec 2023)",
+     "https://www.businesswire.com/news/home/20231211233103/en"
+    ],
+    [
+     "Contrary Research: Armada deep dive",
+     "https://research.contrary.com/deep-dive/armada"
+    ],
+    [
+     "Bloomberg: Founders Fund, Microsoft-backed Armada raises $131M (Jul 2025)",
+     "https://www.bloomberg.com/news/articles/2025-07-24/founders-fund-microsoft-backed-armada-raises-131-million-for-ai-data-centers"
+    ]
+   ]
+  },
+  {
+   "id": "shield",
+   "n": "Shield Capital",
+   "s": "capital",
+   "t": "N",
+   "k": "fund",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Defense and dual-use venture firm co-founded by former DIUx director Raj Shah and Philip Bilden. Co-led Armada's December 2023 round and runs a strategic co-investment partnership with L3Harris.",
+   "dir": "",
+   "U": true,
+   "obj": [],
+   "f": [
+    "Co-founded by Raj Shah and Philip Bilden; first fund exceeded $120M (2022)",
+    "Focus: AI, space, autonomy, cyber",
+    "Strategic partnership with L3Harris (Mar 2022); L3Harris co-invested in two of its first four deals",
+    "Former DIU director Michael Brown joined as venture partner (Oct 2022)",
+    "Co-led Armada's $55M round (Dec 2023)"
+   ],
+   "src": [
+    [
+     "Defense News: New venture capital fund focused on high-need dual-use technology (Shield Capital, 2022)",
+     "https://www.defensenews.com/industry/2022/03/15/new-venture-capital-fund-focused-on-high-need-dual-use-technology/"
+    ],
+    [
+     "L3Harris: L3Harris and Shield Capital form strategic partnership (Mar 2022)",
+     "https://l3harris.com/newsroom/press-release/2022/03/l3harris-and-shield-capital-form-strategic-partnership-accelerate"
+    ],
+    [
+     "Washington Technology: Shield Capital adds former DIU leader (Oct 2022)",
+     "https://www.washingtontechnology.com/companies/2022/10/shield-capital-adds-former-defense-innovation-unit-leader/378579"
+    ],
+    [
+     "Business Wire: Armada raises more than $55M (Dec 2023)",
+     "https://www.businesswire.com/news/home/20231211233103/en"
+    ]
+   ]
+  },
+  {
+   "id": "overmatch",
+   "n": "Overmatch Ventures",
+   "s": "capital",
+   "t": "N",
+   "k": "fund",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Defense, deep tech and space venture firm whose portfolio includes Armada, Saronic, CHAOS Industries, xAI, Nominal and Impulse Space. Raised a $250M second fund in March 2026.",
+   "dir": "",
+   "U": true,
+   "obj": [],
+   "f": [
+    "Fund II: $250M, oversubscribed (Mar 24, 2026); Fund I: $70M",
+    "More than $500M AUM across the platform",
+    "General partners: Evan Loomis, Jordan Blashek, Morgan Hitzig",
+    "Jordan Blashek is also president and COO of America's Frontier Fund and earlier worked at Schmidt's philanthropic fund (The Intercept)",
+    "Named in Armada's later rounds"
+   ],
+   "src": [
+    [
+     "Intelligence Community News: Overmatch raises $250M fund (Mar 2026)",
+     "https://intelligencecommunitynews.com/overmatch-raises-250m-fund-for-defense-space-investment/"
+    ],
+    [
+     "The Intercept: America's Frontier Fund (Feb 2023)",
+     "https://theintercept.com/2023/02/03/china-americas-frontier-fund/"
+    ]
+   ]
+  },
+  {
+   "id": "aff",
+   "n": "America's Frontier Fund",
+   "s": "capital",
+   "t": "N",
+   "k": "fund",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Deep-tech investment fund founded in 2021 by former In-Q-Tel CEO Gilman Louie, with support from Eric Schmidt and Peter Thiel. Sought a $1B federal injection and leads the White House-sponsored Quad Investor Network.",
+   "dir": "",
+   "U": true,
+   "obj": [],
+   "f": [
+    "Founded 2021; Gilman Louie co-founder and CEO",
+    "Founded with support from Eric Schmidt and Peter Thiel (The Intercept; form of support unspecified)",
+    "President and COO Jordan Blashek previously worked at Schmidt's philanthropic fund",
+    "Met lawmakers to request a $1B injection (NYT 2022, via The Intercept)",
+    "Leads the Quad Investor Network (U.S., Australia, India, Japan)",
+    "Focus: AI, microelectronics, deep tech"
+   ],
+   "src": [
+    [
+     "The Intercept: America's Frontier Fund (Feb 2023)",
+     "https://theintercept.com/2023/02/03/china-americas-frontier-fund/"
+    ],
+    [
+     "George Mason University National Security Institute: Gilman Louie",
+     "https://nationalsecurity.gmu.edu/gilman-louie"
+    ],
+    [
+     "GovConWire: America's Frontier Fund to invest in AI, microelectronics",
+     "https://www.govconwire.com/articles/americas-frontier-fund-to-invest-in-ai-deep-tech-to-secure-us-tech-advantage"
+    ]
+   ]
+  },
+  {
+   "id": "allenco",
+   "n": "Allen & Co.",
+   "s": "capital",
+   "t": "N",
+   "k": "fund",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "New York investment bank. Its holding entity reports Palantir as its second-largest public position, and former CIA director George Tenet joined as managing director in 2007.",
+   "dir": "",
+   "U": true,
+   "obj": [],
+   "f": [
+    "Allen Holding Inc. /NY held about 1.6M Palantir shares (about $284M, 27.1% of reported holdings, about 0.07% of Palantir) per 13F",
+    "George Tenet became managing director in October 2007",
+    "Named on the source page as an early Palantir investor [VERIFY round and date]"
+   ],
+   "src": [
+    [
+     "MarketBeat: Allen Holding Inc. /NY has $284.40M position in Palantir (13F)",
+     "https://www.marketbeat.com/instant-alerts/filing-allen-holding-inc-ny-has-28440-million-position-in-palantir-technologies-inc-pltr-2026-06-02/"
+    ],
+    [
+     "UPI: Tenet gets job at secretive NY bank (2008)",
+     "https://www.upi.com/Top_News/Special/2008/02/18/Tenet-gets-job-at-secretive-NY-bank/64181203344822/"
+    ],
+    [
+     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
+     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
+    ]
+   ]
+  },
+  {
+   "id": "usmc",
+   "n": "U.S. Marine Corps",
+   "s": "state",
+   "t": "N",
+   "k": "buyer",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "Anduril's early military customer (tower contract, 2018) and buyer of its 10-year, $642.2M installation counter-drone program.",
+   "dir": "",
+   "U": true,
+   "obj": [],
+   "f": [
+    "Tower contract to Anduril, about $4.8M (2018) [single source]",
+    "I-CSUAS: $642.2M, up to 10 years, to Anduril (Mar 2025); 10 proposals received",
+    "Covers counter-drone systems at Marine Corps installations worldwide plus sustainment"
+   ],
+   "src": [
+    [
+     "Washington Technology: Anduril wins $642M Marines counter-drone contract (Mar 2025)",
+     "https://www.washingtontechnology.com/contracts/2025/03/anduril-wins-642m-marines-counter-drone-tech-contract/403613"
+    ],
+    [
+     "Defense One: Anduril wins $642M Marines counter-drone tech contract",
+     "https://www.defenseone.com/business/2025/03/anduril-wins-642m-marines-counter-drone-tech-contract/403635/"
+    ],
+    [
+     "Mijente: Anduril Marine Corps and CBP contract",
+     "https://mijente.net/blog/anduril/"
+    ]
+   ]
+  },
+  {
+   "id": "omb",
+   "n": "Office of Management and Budget (OMB)",
+   "s": "state",
+   "t": "N",
+   "k": "buyer",
+   "L": [],
+   "p": [
+    0,
+    0
+   ],
+   "sum": "White House budget office. Under the BIOSECURE Act (FY2026 NDAA Sec. 851) it publishes the list of biotechnology companies of concern, runs the criteria-based designation pathway and issues implementation guidance ahead of FAR amendments.",
+   "dir": "",
+   "U": true,
+   "obj": [],
+   "f": [
+    "Must publish the BCC list within one year of enactment (due Dec 18, 2026)",
+    "Leads the interagency criteria pathway: foreign-adversary control, multiomic data transfer, military or intelligence ties",
+    "OMB designees get notice and a window to contest; designations stay nonpublic until final",
+    "Issues implementation guidance, followed by FAR amendments"
+   ],
+   "src": [
+    [
+     "Sidley: BIOSECURE Act included in the FY2026 NDAA (Dec 2025)",
+     "https://www.sidley.com/en/insights/newsupdates/2025/12/biosecure-act-included-in-the-fy2026-national-defense-authorization-act"
+    ],
+    [
+     "Latham & Watkins: BIOSECURE Act becomes law",
+     "https://www.lw.com/en/insights/2025/12/biosecure-act-becomes-law-limiting-grants-with-biotechnology-companies-of-concern"
+    ]
+   ]
   }
  ],
  "edges": [
@@ -30920,14 +32696,6 @@ window.CASE = {
    "capital",
    "Series C co-lead",
    "2026-08-19",
-   1
-  ],
-  [
-   "founders",
-   "armada",
-   "capital",
-   "Existing investor",
-   "",
    1
   ],
   [
@@ -37571,14 +39339,6 @@ window.CASE = {
    1
   ],
   [
-   "kratsios",
-   "ostp",
-   "leads",
-   "Director",
-   "",
-   1
-  ],
-  [
    "ossoff",
    "ostp",
    "pressure",
@@ -38854,7 +40614,7 @@ window.CASE = {
    "dha",
    "oura",
    "contract",
-   "$96M sole-source notice; solicitation canceled",
+   "$96M sole-source notice (Sep 2024); solicitation canceled",
    "2025-03-04",
    1
   ],
@@ -40232,6 +41992,726 @@ window.CASE = {
    "contract",
    "$245 net price",
    "2026-07-01",
+   1
+  ],
+  [
+   "cia",
+   "oracle",
+   "contract",
+   "First customer (1977); company named after the CIA project",
+   "1977",
+   1
+  ],
+  [
+   "nsf",
+   "google",
+   "capital",
+   "Stanford Digital Library funding behind PageRank",
+   "1998",
+   1
+  ],
+  [
+   "darpa",
+   "google",
+   "capital",
+   "Credited in the 1998 PageRank paper",
+   "1998",
+   1
+  ],
+  [
+   "iqt",
+   "keyhole",
+   "capital",
+   "Investment (2003)",
+   "2003",
+   1
+  ],
+  [
+   "google",
+   "keyhole",
+   "own",
+   "Acquired 2004; became Google Earth",
+   "2004",
+   1
+  ],
+  [
+   "iqt",
+   "palantir",
+   "capital",
+   "About $2M from 2005",
+   "2005",
+   1
+  ],
+  [
+   "cia",
+   "palantir",
+   "contract",
+   "Effectively sole customer about 2005–2008",
+   "2005",
+   1
+  ],
+  [
+   "poindexter",
+   "palantir",
+   "advises",
+   "Met founders; \"an interesting idea\" (Washingtonian, 2012)",
+   "",
+   1
+  ],
+  [
+   "darpa",
+   "spacex",
+   "contract",
+   "FALCON program, first government funding",
+   "2003-12",
+   1
+  ],
+  [
+   "darpa",
+   "nvda",
+   "contract",
+   "UHPC $25M (2010)",
+   "2010-08",
+   1
+  ],
+  [
+   "darpa",
+   "moderna",
+   "contract",
+   "ADEPT up to $25M (2013)",
+   "2013",
+   1
+  ],
+  [
+   "darpa",
+   "synchron",
+   "capital",
+   "In the $10M Series A",
+   "",
+   1
+  ],
+  [
+   "darpa",
+   "paradromics",
+   "contract",
+   "About $18M",
+   "",
+   1
+  ],
+  [
+   "darpa",
+   "blackrockneuro",
+   "contract",
+   "Utah Array; Revolutionizing Prosthetics",
+   "",
+   1
+  ],
+  [
+   "darpa",
+   "ginkgo",
+   "contract",
+   "$9.5M with Transcriptic",
+   "",
+   1
+  ],
+  [
+   "founders",
+   "anduril",
+   "capital",
+   "Seed (2017)",
+   "2017",
+   1
+  ],
+  [
+   "palantir",
+   "anduril",
+   "founded",
+   "Founding staff came from Palantir (Schimpf)",
+   "2017",
+   1
+  ],
+  [
+   "stephens",
+   "anduril",
+   "founded",
+   "Co-founder, chair",
+   "2017",
+   1
+  ],
+  [
+   "dhs",
+   "anduril",
+   "contract",
+   "CBP paid to test Lattice towers (2017–2018); first customer",
+   "2017",
+   1
+  ],
+  [
+   "founders",
+   "armada",
+   "capital",
+   "Seed lead (2022)",
+   "2022",
+   1
+  ],
+  [
+   "kratsios",
+   "thiel",
+   "tie",
+   "Business: Thiel Capital chief of staff",
+   "",
+   1
+  ],
+  [
+   "kratsios",
+   "ostp",
+   "post",
+   "Director",
+   "2025",
+   1
+  ],
+  [
+   "prabhakar",
+   "darpa",
+   "post",
+   "Director (2012–2017)",
+   "2012",
+   1
+  ],
+  [
+   "prabhakar",
+   "ostp",
+   "post",
+   "Director (2022–2025)",
+   "2022",
+   1
+  ],
+  [
+   "schmidtfutures",
+   "ostp",
+   "pressure",
+   "Paid staff salaries (Politico; disputed)",
+   "2022-03",
+   0
+  ],
+  [
+   "wegrzyn",
+   "arpah",
+   "leads",
+   "First director",
+   "2022",
+   1
+  ],
+  [
+   "jackson-alicia",
+   "arpah",
+   "leads",
+   "Director (Oct 2025)",
+   "2025-10",
+   1
+  ],
+  [
+   "bto",
+   "arpah",
+   "tie",
+   "Leadership pipeline",
+   "",
+   1
+  ],
+  [
+   "lander",
+   "ostp",
+   "post",
+   "Director (2021–2022)",
+   "2021",
+   1
+  ],
+  [
+   "schmidt-eric",
+   "nscai",
+   "leads",
+   "Chair",
+   "",
+   1
+  ],
+  [
+   "schmidt-eric",
+   "dib",
+   "leads",
+   "Chair",
+   "",
+   1
+  ],
+  [
+   "schmidt-eric",
+   "schmidtfutures",
+   "own",
+   "His foundation",
+   "",
+   1
+  ],
+  [
+   "dugan",
+   "darpa",
+   "post",
+   "Director (2009–2012)",
+   "2009",
+   1
+  ],
+  [
+   "ling-geoffrey",
+   "bto",
+   "leads",
+   "Founding director",
+   "",
+   1
+  ],
+  [
+   "ling-geoffrey",
+   "arpah",
+   "advises",
+   "Co-wrote the white paper that became ARPA-H",
+   "",
+   1
+  ],
+  [
+   "wegrzyn",
+   "bto",
+   "post",
+   "Program manager",
+   "",
+   1
+  ],
+  [
+   "jackson-alicia",
+   "bto",
+   "post",
+   "Deputy director (Obama administration)",
+   "",
+   1
+  ],
+  [
+   "poindexter",
+   "tia",
+   "leads",
+   "Ran the program",
+   "",
+   1
+  ],
+  [
+   "darpa",
+   "tia",
+   "own",
+   "DARPA program; defunded 2003",
+   "2003",
+   1
+  ],
+  [
+   "darpa",
+   "falcon",
+   "own",
+   "Joint DARPA/U.S. Air Force program",
+   "",
+   1
+  ],
+  [
+   "airforce",
+   "falcon",
+   "partner",
+   "Joint DARPA/U.S. Air Force program",
+   "",
+   1
+  ],
+  [
+   "falcon",
+   "spacex",
+   "contract",
+   "Phase 1 study contract (Dec 2003); Phase 2 award (Sep 2004)",
+   "2003-12",
+   1
+  ],
+  [
+   "darpa",
+   "uhpc",
+   "own",
+   "DARPA program",
+   "",
+   1
+  ],
+  [
+   "uhpc",
+   "nvda",
+   "contract",
+   "Echelon: $25M, four years; team with Cray, Oak Ridge and six universities",
+   "2010",
+   1
+  ],
+  [
+   "darpa",
+   "adept",
+   "own",
+   "DARPA program",
+   "",
+   1
+  ],
+  [
+   "adept",
+   "moderna",
+   "contract",
+   "Up to $25M",
+   "2013",
+   1
+  ],
+  [
+   "nasa",
+   "google",
+   "capital",
+   "Credited in the 1998 PageRank paper",
+   "1998",
+   1
+  ],
+  [
+   "nasa",
+   "spacex",
+   "contract",
+   "COTS award, $278M initial",
+   "2006",
+   1
+  ],
+  [
+   "louie",
+   "iqt",
+   "leads",
+   "Founding CEO",
+   "",
+   1
+  ],
+  [
+   "schimpf",
+   "anduril",
+   "founded",
+   "Co-founder; came from Palantir",
+   "2017",
+   1
+  ],
+  [
+   "schimpf",
+   "anduril",
+   "leads",
+   "CEO",
+   "",
+   1
+  ],
+  [
+   "stephens",
+   "dow",
+   "post",
+   "Served on the Trump transition team for Defense",
+   "",
+   1
+  ],
+  [
+   "msft",
+   "armada",
+   "capital",
+   "Microsoft M12 led $40M round",
+   "2024",
+   1
+  ],
+  [
+   "e8090",
+   "armada",
+   "capital",
+   "Seed co-lead",
+   "2022",
+   1
+  ],
+  [
+   "eightvc",
+   "armada",
+   "capital",
+   "Seed participant",
+   "2022",
+   1
+  ],
+  [
+   "seidmanbecker",
+   "fed",
+   "board",
+   "New York Fed board",
+   "",
+   1
+  ],
+  [
+   "tenet",
+   "cia",
+   "post",
+   "Director of Central Intelligence (1997–2004)",
+   "1997",
+   1
+  ],
+  [
+   "tenet",
+   "iqt",
+   "founded",
+   "Drove its creation as DCI",
+   "1999",
+   1
+  ],
+  [
+   "tenet",
+   "louie",
+   "tie",
+   "Professional: recruited Louie as In-Q-Tel's first CEO",
+   "1999",
+   0
+  ],
+  [
+   "tenet",
+   "allenco",
+   "leads",
+   "Managing director",
+   "2007-10",
+   0
+  ],
+  [
+   "leiter",
+   "palantir",
+   "advises",
+   "Senior counselor after leaving NCTC",
+   "2011-12-05",
+   1
+  ],
+  [
+   "hepburn",
+   "darpa",
+   "post",
+   "Program manager (2013–2019); Profusa sensor work",
+   "2013",
+   1
+  ],
+  [
+   "hepburn",
+   "jpeocbrnd",
+   "post",
+   "Joint Project Lead, Enabling Biotechnologies; later chief medical officer",
+   "",
+   0
+  ],
+  [
+   "hepburn",
+   "hhs",
+   "post",
+   "Vaccine development lead, Operation Warp Speed (HHS–DoD)",
+   "2020-05",
+   0
+  ],
+  [
+   "hepburn",
+   "ostp",
+   "post",
+   "Senior advisor to the director, pandemic preparedness",
+   "",
+   0
+  ],
+  [
+   "runyan",
+   "armada",
+   "founded",
+   "Co-founder and COO",
+   "2022",
+   1
+  ],
+  [
+   "runyan",
+   "wright-dan",
+   "tie",
+   "Business partners: Gunderson Dettmer, Emergence Capital, Armada",
+   "",
+   0
+  ],
+  [
+   "shah-raj",
+   "diu",
+   "post",
+   "Director, DIUx (2016–2018); director, Joint Reserve Detachment (2024–)",
+   "2016",
+   1
+  ],
+  [
+   "shah-raj",
+   "shield",
+   "founded",
+   "Co-founder and managing partner",
+   "2022",
+   1
+  ],
+  [
+   "shield",
+   "armada",
+   "capital",
+   "Co-led $55M round",
+   "2023-12",
+   1
+  ],
+  [
+   "lhx",
+   "shield",
+   "partner",
+   "Strategic co-investment partnership",
+   "2022-03-29",
+   1
+  ],
+  [
+   "lux",
+   "armada",
+   "capital",
+   "Co-led $55M round; in $131M round",
+   "2023-12",
+   1
+  ],
+  [
+   "lux",
+   "anduril",
+   "capital",
+   "Seed (2017) and 2020 round",
+   "2017",
+   0
+  ],
+  [
+   "lux",
+   "xaira",
+   "capital",
+   "Investor",
+   "2024",
+   0
+  ],
+  [
+   "overmatch",
+   "armada",
+   "capital",
+   "Portfolio company",
+   "",
+   0
+  ],
+  [
+   "overmatch",
+   "saronic",
+   "capital",
+   "Portfolio company",
+   "",
+   0
+  ],
+  [
+   "overmatch",
+   "chaos",
+   "capital",
+   "Portfolio company",
+   "",
+   0
+  ],
+  [
+   "louie",
+   "aff",
+   "founded",
+   "Co-founder and CEO",
+   "2021",
+   1
+  ],
+  [
+   "louie",
+   "nscai",
+   "post",
+   "Member",
+   "",
+   1
+  ],
+  [
+   "schmidt-eric",
+   "aff",
+   "advises",
+   "Supported its founding (form unspecified)",
+   "2021",
+   0
+  ],
+  [
+   "thiel",
+   "aff",
+   "advises",
+   "Supported its founding (form unspecified)",
+   "2021",
+   0
+  ],
+  [
+   "allenco",
+   "palantir",
+   "capital",
+   "About 1.6M shares, about $284M (13F)",
+   "2026",
+   0
+  ],
+  [
+   "hall-blake",
+   "idme",
+   "founded",
+   "Co-founder (as TroopSwap)",
+   "2010",
+   1
+  ],
+  [
+   "hall-blake",
+   "idme",
+   "leads",
+   "CEO",
+   "",
+   1
+  ],
+  [
+   "tolosa",
+   "neuralink",
+   "founded",
+   "Co-founder; Director of Neural Interfaces",
+   "2016",
+   1
+  ],
+  [
+   "tolosa",
+   "precision",
+   "leads",
+   "SVP, research and development",
+   "2025-06-11",
+   0
+  ],
+  [
+   "usmc",
+   "anduril",
+   "contract",
+   "Tower contract, about $4.8M",
+   "2018",
+   0
+  ],
+  [
+   "usmc",
+   "anduril",
+   "contract",
+   "I-CSUAS counter-drone, $642.2M over up to 10 years",
+   "2025-03",
+   1
+  ],
+  [
+   "dow",
+   "usmc",
+   "own",
+   "Marine Corps is a military service under the Department of the Navy",
+   "",
+   1
+  ],
+  [
+   "omb",
+   "biosecure",
+   "pressure",
+   "Publishes the BCC list (due Dec 18, 2026), runs criteria pathway, issues guidance",
+   "2025-12-18",
    1
   ]
  ],
@@ -46178,9 +48658,820 @@ window.CASE = {
     "Will the 2027 NHS break clause test whether a buyer can leave the operating layer?",
     "Do Gulf genome programmes link to the same compute and operating layers as Gulf AI hubs?"
    ]
+  },
+  {
+   "id": "53",
+   "name": "Upstream funders, first customers and the people pipeline",
+   "lenses": [
+    "apparatus",
+    "political",
+    "financial"
+   ],
+   "lede": "DARPA, NASA and NSF seeded the technology; the CIA and In-Q-Tel supplied first money and first contracts; DARPA alumni and the Thiel and Schmidt networks filled the policy seats.",
+   "nodes": [
+    "darpa",
+    "iqt",
+    "cia",
+    "nsf",
+    "oracle",
+    "google",
+    "keyhole",
+    "palantir",
+    "spacex",
+    "nvda",
+    "moderna",
+    "synchron",
+    "paradromics",
+    "blackrockneuro",
+    "ginkgo",
+    "founders",
+    "anduril",
+    "armada",
+    "stephens",
+    "poindexter",
+    "tenet",
+    "lux",
+    "shield",
+    "overmatch",
+    "aff",
+    "usmc"
+   ],
+   "events": [
+    [
+     "1977",
+     "CIA becomes Oracle's first customer",
+     "Oracle's founders had worked on a CIA-funded project code-named Oracle at Ampex; the CIA let the company use the code name.",
+     "context",
+     "confirmed",
+     "SFGate: Oracle's coziness with government goes back to its founding",
+     "https://www.sfgate.com/bayarea/article/oracle-s-coziness-with-government-goes-back-to-2820370.php"
+    ],
+    [
+     "1998",
+     "PageRank paper credits NSF, DARPA and NASA",
+     "Funding ran through the Stanford Digital Library project; Sergey Brin held an NSF fellowship.",
+     "context",
+     "confirmed",
+     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
+     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
+    ],
+    [
+     "2003",
+     "In-Q-Tel invests in Keyhole",
+     "",
+     "context",
+     "confirmed",
+     "Wikipedia: In-Q-Tel",
+     "https://en.wikipedia.org/wiki/In-Q-Tel"
+    ],
+    [
+     "2003",
+     "DARPA's Total Information Awareness program defunded",
+     "The program was run by John Poindexter.",
+     "context",
+     "confirmed",
+     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
+     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
+    ],
+    [
+     "2003-12",
+     "SpaceX wins a DARPA/USAF FALCON Phase 1 study contract",
+     "One of nine Phase 1 study contracts; described as SpaceX's first government funding, initially about $0.5M [VERIFY amount].",
+     "context",
+     "confirmed",
+     "ScienceDirect: The DARPA/Air Force FALCON program",
+     "https://www.sciencedirect.com/science/article/abs/pii/S009457650500127X"
+    ],
+    [
+     "2004",
+     "Google buys Keyhole",
+     "Keyhole becomes Google Earth.",
+     "context",
+     "confirmed",
+     "Wikipedia: In-Q-Tel",
+     "https://en.wikipedia.org/wiki/In-Q-Tel"
+    ],
+    [
+     "2004-09",
+     "SpaceX receives a FALCON Phase 2 award",
+     "",
+     "context",
+     "confirmed",
+     "Silicon Valley Defense Group: DARPA as SpaceX's first government funding",
+     "https://www.siliconvalleydefense.org/press-releases/space-report-23"
+    ],
+    [
+     "2005",
+     "In-Q-Tel begins investing in Palantir",
+     "About $2M from 2005 (one account: $1.25M). Thiel funded most of the $30M start.",
+     "context",
+     "confirmed",
+     "Wikipedia: Palantir Technologies (In-Q-Tel ~$2M)",
+     "https://en.wikipedia.org/wiki/Palantir_Technologies"
+    ],
+    [
+     "2005",
+     "CIA becomes Palantir's effective sole customer",
+     "Through about 2008.",
+     "context",
+     "confirmed",
+     "Yahoo Finance: From CIA cash to local police",
+     "https://finance.yahoo.com/news/cia-cash-local-police-palantir-163513772.html"
+    ],
+    [
+     "2006",
+     "NASA COTS award to SpaceX",
+     "$278M initial.",
+     "context",
+     "confirmed",
+     "Washington Post: Musk's business empire and government funding",
+     "https://www.washingtonpost.com/technology/interactive/2025/elon-musk-business-government-contracts-funding/"
+    ],
+    [
+     "2009",
+     "Regina Dugan becomes DARPA director",
+     "Serves 2009–2012; later Google ATAP, Facebook Building 8 (brain-typing BCI) and Wellcome Leap.",
+     "context",
+     "confirmed",
+     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
+     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
+    ],
+    [
+     "2010-08",
+     "NVIDIA wins $25M DARPA UHPC contract",
+     "Echelon, four years, leading a team with Cray, Oak Ridge and six universities. NVIDIA was founded in 1993 on private venture money; federal research money came after commercial scale.",
+     "context",
+     "confirmed",
+     "NVIDIA: $25M DARPA UHPC contract (2010)",
+     "https://nvidianews.nvidia.com/news/nvidia-led-team-receives-25-million-contract-from-darpa-to-develop-high-performance-gpu-computing-systems"
+    ],
+    [
+     "2012",
+     "DARPA PERFECT award to NVIDIA",
+     "",
+     "context",
+     "confirmed",
+     "NVIDIA Research: Government programs",
+     "https://www.nvidia.com/en-us/research/government/"
+    ],
+    [
+     "2012",
+     "DARPA arm project with Blackrock ends midstream",
+     "Revolutionizing Prosthetics arm program with Johns Hopkins APL, built on DARPA-funded Utah Array work.",
+     "context",
+     "confirmed",
+     "Salt Lake Tribune: Blackrock and the DARPA arm project",
+     "https://archive.sltrib.com/article.php?id=2036602&amp=&itype=CMSID"
+    ],
+    [
+     "2012-01-31",
+     "Washingtonian reports Poindexter met Palantir's founders",
+     "\"I told them I thought they had an interesting idea.\" Reportedly held at Richard Perle's home. No documented transfer of TIA staff, code or design.",
+     "context",
+     "confirmed",
+     "Washingtonian: Killer App (Palantir and Poindexter, 2012)",
+     "https://washingtonian.com/2012/01/31/killer-app/"
+    ],
+    [
+     "2013",
+     "DARPA ADEPT award to Moderna, up to $25M",
+     "Years before COVID-19.",
+     "context",
+     "confirmed",
+     "Leiden Madtrics: Moderna and DARPA $25M (2013)",
+     "https://www.leidenmadtrics.nl/articles/vaccine-development-in-context"
+    ],
+    [
+     "2016-08-30",
+     "WSJ: nearly half of In-Q-Tel trustees tied to funded firms",
+     "Trustee-linked firms received funding on 17 occasions.",
+     "context",
+     "reported",
+     "Techmeme: WSJ on In-Q-Tel trustee conflicts (2016)",
+     "https://www.techmeme.com/160830/p26"
+    ],
+    [
+     "2017",
+     "Founders Fund seeds Anduril",
+     "Co-founders from Palantir (Brian Schimpf) and Founders Fund (Trae Stephens, who served on the Trump transition team for Defense).",
+     "context",
+     "confirmed",
+     "Wikipedia: Anduril Industries",
+     "https://en.wikipedia.org/wiki/Anduril_Industries"
+    ],
+    [
+     "2017",
+     "CBP pays to test Anduril's Lattice towers",
+     "San Diego and Texas, 2017–2018. Anduril's first government customer.",
+     "context",
+     "confirmed",
+     "LAist: Anduril founding and CBP test",
+     "https://laist.com/news/politics/anduril-executives-election-campaign-spending"
+    ],
+    [
+     "2018",
+     "Marine Corps tower contract to Anduril",
+     "About $4.8M; Project Maven work followed.",
+     "context",
+     "confirmed",
+     "Mijente: Anduril Marine Corps and CBP contract",
+     "https://mijente.net/blog/anduril/"
+    ],
+    [
+     "2022-12",
+     "Armada founded",
+     "Dan Wright and Jon Runyan. Seed led by Founders Fund, Lux, Shield Capital and 8090 Industries. No In-Q-Tel stake found.",
+     "context",
+     "confirmed",
+     "Armada: Introducing Armada (seed investors)",
+     "https://www.armada.ai/blog/introducing-armada-bringing-ai-to-the-edge"
+    ],
+    [
+     "2023",
+     "DARPA $18M protein-manufacturing award to Ginkgo",
+     "Ginkgo also holds a $9.5M DARPA contract with Transcriptic and an IARPA B24IC prime.",
+     "context",
+     "confirmed",
+     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
+     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
+    ],
+    [
+     "2023-09",
+     "Steve Bowsher becomes In-Q-Tel CEO",
+     "Runs B.Next, IQT's biotech practice.",
+     "context",
+     "confirmed",
+     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
+     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
+    ],
+    [
+     "2024",
+     "Microsoft M12 leads $40M round in Armada",
+     "Overmatch and Silent Ventures later joined the $131M round.",
+     "context",
+     "confirmed",
+     "DCD: Microsoft leads $40M into Armada",
+     "https://www.datacenterdynamics.com/en/news/microsoft-leads-40-million-investment-into-edge-startup-armada/"
+    ],
+    [
+     "2024-04",
+     "Michael Koeris becomes DARPA BTO director",
+     "Previously NIH RADx; founded Sample6.",
+     "context",
+     "confirmed",
+     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
+     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
+    ],
+    [
+     "2025",
+     "Thiel-network people take OSTP, HHS and the vice presidency",
+     "Kratsios at OSTP, O'Neill at HHS, Vance as Vice President. [ANALYSIS] Chain: In-Q-Tel funds Palantir (2005), Palantir staff and Founders Fund build Anduril (2017), Founders Fund leads Armada (2022).",
+     "context",
+     "confirmed",
+     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
+     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
+    ]
+   ],
+   "shows": "Two generations. The older layer roots in the state. The newest layer (Anduril, Armada) roots in the Thiel network, which now performs the upstream function itself.",
+   "gains": [
+    "[ANALYSIS] Thiel network: first money, first staff and the political door for the newest layer (Anduril, Armada)",
+    "[ANALYSIS] Companies the state seeded (Palantir above all) became seeders themselves",
+    "[ANALYSIS] DARPA alumni: the bio side still runs on DARPA seed, and both ARPA-H directors came out of DARPA's biology office"
+   ],
+   "exposed": [
+    "[ANALYSIS] Oversight: DARPA and In-Q-Tel money carries program managers, contracts and congressional budget lines; private network money carries none of that, while the same network holds the offices that buy from and regulate these companies",
+    "In-Q-Tel governance: trustee-linked firms received funding on 17 occasions (WSJ, 2016)"
+   ],
+   "questions": [
+    "Is there any documented personnel or design link between Total Information Awareness and Palantir beyond the Poindexter meeting?",
+    "Which In-Q-Tel trustees and portfolio companies overlap with map nodes?",
+    "What upstream role do the Defense Innovation Unit, the Office of Strategic Capital, the JASON advisory group, Battelle and the national labs play?",
+    "Does World / Tools for Humanity have any federal root?",
+    "Was Shield Capital co-founded by former DIU leader Raj Shah?"
+   ],
+   "spine": true
+  },
+  {
+   "id": "54",
+   "name": "White House science office appointments",
+   "lenses": [
+    "apparatus",
+    "political"
+   ],
+   "lede": "OSTP was held successively through the Schmidt network, a former DARPA director and a former Thiel Capital executive; the same office writes the bio-research rules.",
+   "nodes": [
+    "ostp",
+    "lander",
+    "schmidtfutures",
+    "schmidt-eric",
+    "prabhakar",
+    "kratsios",
+    "thiel",
+    "nscai",
+    "dib",
+    "nsceb",
+    "arpah",
+    "wegrzyn",
+    "jackson-alicia",
+    "ling-geoffrey"
+   ],
+   "events": [
+    [
+     "2012",
+     "Arati Prabhakar becomes DARPA director",
+     "Serves 2012–2017.",
+     "context",
+     "confirmed",
+     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
+     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
+    ],
+    [
+     "2021",
+     "Eric Lander becomes OSTP director",
+     "Serves 2021–2022.",
+     "context",
+     "confirmed",
+     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
+     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
+    ],
+    [
+     "2022",
+     "Renee Wegrzyn named inaugural ARPA-H director",
+     "Former DARPA BTO program manager. Geoffrey Ling, founding BTO director, co-wrote the white paper that became ARPA-H.",
+     "context",
+     "confirmed",
+     "Wikipedia: ARPA-H (Ling white paper)",
+     "https://en.wikipedia.org/wiki/Advanced_Research_Projects_Agency_for_Health"
+    ],
+    [
+     "2022-03",
+     "Politico: Schmidt Futures paid OSTP staff salaries",
+     "At least two OSTP staffers, including the acting chief of staff, through a fellowship arrangement.",
+     "context",
+     "reported",
+     "CNBC: Schmidt responds to OSTP report",
+     "https://www.cnbc.com/2022/03/29/ex-google-ceo-eric-schmidt-responds-to-white-house-related-allegations.html"
+    ],
+    [
+     "2022-03-29",
+     "Schmidt calls the report \"largely false\"",
+     "",
+     "response",
+     "reported",
+     "CNBC: Schmidt responds to OSTP report",
+     "https://www.cnbc.com/2022/03/29/ex-google-ceo-eric-schmidt-responds-to-white-house-related-allegations.html"
+    ],
+    [
+     "2022",
+     "Arati Prabhakar becomes OSTP director",
+     "Serves 2022–2025.",
+     "context",
+     "confirmed",
+     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
+     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
+    ],
+    [
+     "2023-11-09",
+     "Forbes: two more OSTP staff were Schmidt Futures fellows",
+     "",
+     "context",
+     "reported",
+     "Forbes: Schmidt Futures and OSTP",
+     "https://www.forbes.com/sites/sarahemerson/2023/11/09/former-google-ceo-eric-schmidt-futures-philanthropic-mess/"
+    ],
+    [
+     "2025",
+     "Michael Kratsios becomes OSTP director",
+     "Former principal and chief of staff at Thiel Capital; U.S. CTO in the first Trump term.",
+     "context",
+     "confirmed",
+     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
+     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
+    ],
+    [
+     "2025-02",
+     "ARPA-H director Renee Wegrzyn let go",
+     "",
+     "context",
+     "confirmed",
+     "Fierce Biotech: ARPA-H director let go",
+     "https://www.fiercebiotech.com/research/director-advanced-research-projects-agency-health-fired-trump-administration"
+    ],
+    [
+     "2025-10",
+     "Alicia Jackson sworn in as ARPA-H director",
+     "Former DARPA BTO deputy director (Obama administration); founded Evernow.",
+     "context",
+     "confirmed",
+     "BioSpace: Former DARPA official Jackson named ARPA-H head",
+     "https://www.biospace.com/policy/former-darpa-official-jackson-named-arpa-h-head"
+    ],
+    [
+     "2026",
+     "OSTP holds the high-risk life-sciences research policy",
+     "OSTP also owns the unrevised synthesis-screening framework.",
+     "context",
+     "confirmed",
+     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
+     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
+    ]
+   ],
+   "shows": "[ANALYSIS] Across both parties, the White House science office has been filled through the same upstream networks: DARPA, Schmidt and Thiel. The same office writes the bio-research and synthesis-screening rules.",
+   "gains": [
+    "Schmidt network: chairs of NSCAI and the Defense Innovation Board, an NSCEB seat, and OSTP staff through Schmidt Futures fellowships (reported; disputed)",
+    "Thiel network: the OSTP directorship since 2025 (Kratsios)",
+    "DARPA BTO alumni: both ARPA-H directorships"
+   ],
+   "exposed": [
+    "OSTP's separation from private funders, per Politico and Forbes reporting that Schmidt disputes"
+   ],
+   "questions": [
+    "What investments does the Schmidt network hold in defense and bio companies on the map?",
+    "What role does the Special Competitive Studies Project play?",
+    "Did Gilman Louie serve on NSCAI, and does he chair America's Frontier Fund?"
+   ]
+  },
+  {
+   "id": "55",
+   "name": "Per-person identity, health, body and payment systems",
+   "lenses": [
+    "apparatus",
+    "technological",
+    "financial",
+    "political"
+   ],
+   "lede": "Identity, health record, body data, money and agent are built as separate systems on one operating layer; the binding integration is the staged step.",
+   "nodes": [
+    "medgovid",
+    "idme",
+    "clear",
+    "cms",
+    "medicaidice",
+    "palantir",
+    "immigrationos",
+    "oura",
+    "neuralink",
+    "tether",
+    "usd1",
+    "x402",
+    "ap2",
+    "erc8004",
+    "rege",
+    "eudi"
+   ],
+   "events": [
+    [
+     "2010",
+     "Caryn Seidman Becker buys CLEAR's assets out of bankruptcy",
+     "$6M, including 190,000 people's fingerprints. The original company ran under TSA's Registered Traveler program [VERIFY].",
+     "context",
+     "confirmed",
+     "Forbes: CLEAR bought out of bankruptcy",
+     "https://www.forbes.com/sites/katharineschwab/2026/06/03/caryn-seidman-becker-bought-clear-out-of-bankruptcy-now-shes-a-billionaire/"
+    ],
+    [
+     "2010",
+     "ID.me founded as TroopSwap",
+     "Veterans deals site founded by Blake Hall and Matt Thompson; now holds contracts with at least 20 federal and 50 state agencies.",
+     "context",
+     "confirmed",
+     "Wikipedia: ID.me",
+     "https://en.wikipedia.org/wiki/ID.me"
+    ],
+    [
+     "2019",
+     "Oura begins partnering with DoD",
+     "Army Medical Research and Development Command backed UCSF TemPredict; DIU ran RATE on Oura rings and Garmin watches.",
+     "context",
+     "confirmed",
+     "USAMRDC: Wearables and TemPredict",
+     "https://mrdc.health.mil/index.cfm/media/articles/2021/for_the_pandemic_and_beyond_wearable_technology_points_the_way"
+    ],
+    [
+     "2025-06-24",
+     "HHS sets goal of a wearable on every American within four years",
+     "No mandate, device or data policy named.",
+     "context",
+     "confirmed",
+     "EDGE: SOVEREIGN SI // TRAJECTORY (Notion)",
+     "https://app.notion.com/p/40d709555ee281f4acc5cd04eb22aee6"
+    ],
+    [
+     "2025-08-27",
+     "Oura runs DoD readiness data on Palantir FedStart",
+     "Oura also opened U.S. manufacturing for defense.",
+     "context",
+     "confirmed",
+     "EDGE: SOVEREIGN SI // TRAJECTORY (Notion)",
+     "https://app.notion.com/p/40d709555ee281f4acc5cd04eb22aee6"
+    ],
+    [
+     "2025-12-04",
+     "HHS issues the OneHHS AI strategy",
+     "Palantir at CDC; fraud task force under the Vice President.",
+     "context",
+     "confirmed",
+     "EDGE: SOVEREIGN SI // TRAJECTORY (Notion)",
+     "https://app.notion.com/p/40d709555ee281f4acc5cd04eb22aee6"
+    ],
+    [
+     "2026-01",
+     "CMS Health Tech Ecosystem delivery window opens",
+     "60+ companies and 21 Aligned Networks committed to deliver from Q1 2026 [VERIFY delivery status].",
+     "context",
+     "unverified",
+     "EDGE: SOVEREIGN SI // TRAJECTORY (Notion)",
+     "https://app.notion.com/p/40d709555ee281f4acc5cd04eb22aee6"
+    ],
+    [
+     "2026-03-04",
+     "Medicare.gov biometric sign-in goes live",
+     "Through Login.gov, ID.me and CLEAR. CLEAR is piloting at six VA medical centers and runs inside Epic MyChart.",
+     "response",
+     "confirmed",
+     "EDGE: SOVEREIGN SI // TRAJECTORY (Notion)",
+     "https://app.notion.com/p/40d709555ee281f4acc5cd04eb22aee6"
+    ],
+    [
+     "2026-04-30",
+     "Use of 22 states' Medicaid data paused",
+     "Pending clarification. Medicaid enrollee data flows to DHS under a court order limited to biographical, location and contact fields; court outcome open.",
+     "context",
+     "confirmed",
+     "EDGE: SOVEREIGN SI // TRAJECTORY (Notion)",
+     "https://app.notion.com/p/40d709555ee281f4acc5cd04eb22aee6"
+    ],
+    [
+     "2026-09-29",
+     "Oura IPO postponed",
+     "The four-year wearable window closes mid-2029.",
+     "context",
+     "confirmed",
+     "EDGE: SOVEREIGN SI // TRAJECTORY (Notion)",
+     "https://app.notion.com/p/40d709555ee281f4acc5cd04eb22aee6"
+    ],
+    [
+     "2026-11",
+     "Palantir runs ImmigrationOS and holds a $1B DHS BPA",
+     "Enforcement side of the same data. Status as of the November 3, 2026 TRAJECTORY build.",
+     "context",
+     "confirmed",
+     "EDGE: SOVEREIGN SI // TRAJECTORY (Notion)",
+     "https://app.notion.com/p/40d709555ee281f4acc5cd04eb22aee6"
+    ],
+    [
+     "2026-11",
+     "BCI capital concentrates in map investors",
+     "G42 and QIA in Neuralink; In-Q-Tel and QIA in Synchron; Tether holds a majority of Blackrock Neurotech. Status as of November 3, 2026.",
+     "context",
+     "confirmed",
+     "EDGE: SOVEREIGN SI // TRAJECTORY (Notion)",
+     "https://app.notion.com/p/40d709555ee281f4acc5cd04eb22aee6"
+    ],
+    [
+     "2026-11",
+     "Stablecoin controls in force",
+     "GENIUS Act in force; freeze capability demonstrated within 70 minutes of the Binance theft; OCC chartered Erebor and World Liberty Trust; MGX used USD1 to settle into Binance.",
+     "context",
+     "confirmed",
+     "EDGE: SOVEREIGN SI // TRAJECTORY (Notion)",
+     "https://app.notion.com/p/40d709555ee281f4acc5cd04eb22aee6"
+    ],
+    [
+     "2026-11",
+     "Agent payment and identity standards live",
+     "x402, Google AP2 and ERC-8004 are live; U.S. agency law attributes an agent's acts to the person.",
+     "context",
+     "confirmed",
+     "EDGE: SOVEREIGN SI // TRAJECTORY (Notion)",
+     "https://app.notion.com/p/40d709555ee281f4acc5cd04eb22aee6"
+    ],
+    [
+     "2026-11",
+     "Neural data law forms from the states up",
+     "Colorado, California, Connecticut, Montana. The MIND Act would order an FTC study.",
+     "context",
+     "stage",
+     "EDGE: SOVEREIGN SI // TRAJECTORY (Notion)",
+     "https://app.notion.com/p/40d709555ee281f4acc5cd04eb22aee6"
+    ],
+    [
+     "2026-11",
+     "Regulation E allocation for agent-initiated transfers pending",
+     "To be settled by a court or the CFPB. No date set.",
+     "context",
+     "stage",
+     "EDGE: SOVEREIGN SI // TRAJECTORY (Notion)",
+     "https://app.notion.com/p/40d709555ee281f4acc5cd04eb22aee6"
+    ],
+    [
+     "2026-11",
+     "EU Digital Identity Wallet mandatory across member states",
+     "eIDAS 2.0 ties government ID to wallets and agents. The U.S. route runs through mobile driver's licenses and bank KYC. No date given on the page.",
+     "context",
+     "stage",
+     "EDGE: SOVEREIGN SI // TRAJECTORY (Notion)",
+     "https://app.notion.com/p/40d709555ee281f4acc5cd04eb22aee6"
+    ],
+    [
+     "2029-06",
+     "Four-year wearable goal window closes",
+     "Mid-2029.",
+     "context",
+     "scheduled",
+     "EDGE: SOVEREIGN SI // TRAJECTORY (Notion)",
+     "https://app.notion.com/p/40d709555ee281f4acc5cd04eb22aee6"
+    ]
+   ],
+   "shows": "Every component of a per-person agentic node is live or standardized: identity, health record, body data, money and agent. They run on the same operating layer, compute and capital. The binding integration is not yet deployed.",
+   "gains": [
+    "[ANALYSIS] Palantir sits in the health and enforcement, wearables (FedStart) and agentic lines (IRS Lead and Case Analytics, ImmigrationOS)",
+    "[ANALYSIS] CLEAR, ID.me and Login.gov sit in identity and health access",
+    "[ANALYSIS] Tether sits in neurotech (Blackrock Neurotech) and money"
+   ],
+   "exposed": [
+    "Medicaid enrollees whose biographical, location and contact data flows to DHS under the court order",
+    "[ANALYSIS] Wearable users whose data may enter readiness, insurance and benefit scoring before federal neural or biometric data rules exist"
+   ],
+   "questions": [
+    "Who writes the binding step, and under what rules?",
+    "How will a court or the CFPB allocate Regulation E liability for agent-initiated transfers?",
+    "What is the court outcome on the 22 states' Medicaid data?",
+    "Has the CMS Health Tech Ecosystem delivered?"
+   ],
+   "spine": true
+  },
+  {
+   "id": "56",
+   "name": "2026 midterms and the lame-duck session",
+   "lenses": [
+    "political",
+    "financial",
+    "apparatus"
+   ],
+   "lede": "Democrats took both chambers on November 3, 2026. Gridlock freezes new statute and new money; contracted systems keep running; oversight targets people and leaves the plumbing.",
+   "nodes": [
+    "congress",
+    "dow",
+    "golden",
+    "cantor",
+    "tether",
+    "lutnick",
+    "dhs",
+    "cms",
+    "biosecure",
+    "ostp"
+   ],
+   "events": [
+    [
+     "2026-11-03",
+     "Democrats win control of the House and Senate",
+     "Projected by CBS News, CNN and other outlets on Nov 4, 2026; the new Congress is seated Jan 3, 2027.",
+     "context",
+     "confirmed",
+     "CBS News",
+     "https://www.cbsnews.com/live-updates/election-day-2026-midterms/"
+    ],
+    [
+     "2026-11-04",
+     "Lame duck begins",
+     "Runs to January 3, 2027. The continuing resolution expires December 11; most new FY27 defense money sits in reconciliation; FY27 NDAA is in conference.",
+     "context",
+     "stage",
+     "EDGE: SOVEREIGN SI // TRAJECTORY (Notion)",
+     "https://app.notion.com/p/40d709555ee281f4acc5cd04eb22aee6"
+    ],
+    [
+     "2026-11",
+     "Senate inquiries into Commerce, Cantor Fitzgerald and Tether",
+     "Warren, Wyden and Blumenthal are already probing; they are in line for committee gavels [VERIFY assignments].",
+     "context",
+     "stage",
+     "Senate Banking: Warren and Wyden on Lutnick and Tether",
+     "https://www.banking.senate.gov/newsroom/minority/warren-wyden-probe-national-security-risks-surrounding-reported-lutnick-tether-loan"
+    ],
+    [
+     "2026-12-11",
+     "Continuing resolution expires",
+     "Sets FY27 levels for NWSS, BARDA and BioWatch.",
+     "context",
+     "scheduled",
+     "EDGE: SOVEREIGN SI // TRAJECTORY (Notion)",
+     "https://app.notion.com/p/40d709555ee281f4acc5cd04eb22aee6"
+    ],
+    [
+     "2026-12-18",
+     "OMB BIOSECURE list due",
+     "Set by statute and bipartisan, so it proceeds regardless of the shift. Guidance up to 180 days later; FAR revision up to a year after that.",
+     "context",
+     "scheduled",
+     "EDGE: SOVEREIGN SI // TRAJECTORY (Notion)",
+     "https://app.notion.com/p/40d709555ee281f4acc5cd04eb22aee6"
+    ],
+    [
+     "2027-01-03",
+     "New Congress seated",
+     "Committee gavels change hands; oversight gains subpoena power.",
+     "context",
+     "scheduled",
+     "EDGE: SOVEREIGN SI // TRAJECTORY (Notion)",
+     "https://app.notion.com/p/40d709555ee281f4acc5cd04eb22aee6"
+    ],
+    [
+     "2027-06",
+     "OMB BIOSECURE guidance window closes",
+     "About mid-2027.",
+     "context",
+     "scheduled",
+     "EDGE: SOVEREIGN SI // TRAJECTORY (Notion)",
+     "https://app.notion.com/p/40d709555ee281f4acc5cd04eb22aee6"
+    ],
+    [
+     "2027",
+     "Federal privacy or neural data bill",
+     "2027 session watch item.",
+     "context",
+     "stage",
+     "EDGE: SOVEREIGN SI // TRAJECTORY (Notion)",
+     "https://app.notion.com/p/40d709555ee281f4acc5cd04eb22aee6"
+    ],
+    [
+     "2028-11",
+     "Presidential election",
+     "Ahead of the January 20, 2029 expiry of the 0% Section 232 pharma tier.",
+     "context",
+     "scheduled",
+     "EDGE: SOVEREIGN SI // TRAJECTORY (Notion)",
+     "https://app.notion.com/p/40d709555ee281f4acc5cd04eb22aee6"
+    ],
+    [
+     "2029-01-20",
+     "0% Section 232 pharma tariff tier expires",
+     "",
+     "context",
+     "scheduled",
+     "EDGE: SOVEREIGN SI // TRAJECTORY (Notion)",
+     "https://app.notion.com/p/40d709555ee281f4acc5cd04eb22aee6"
+    ]
+   ],
+   "shows": "[ANALYSIS] Gridlock freezes new statute and new money and leaves contracted systems running behind operating-layer switching costs. Pressure falls on people and leaves the plumbing in place; action moves to executive orders, procurement, states, courts, standards bodies and allies.",
+   "gains": [
+    "[ANALYSIS] Installed operating-layer vendors: contracts already awarded (Palantir at CDC, HHS, DHS, ImmigrationOS) keep running",
+    "[ANALYSIS] Venues Congress does not control: executive orders, procurement, states, courts, standards bodies and allies",
+    "Congressional oversight: subpoena power for the new majority"
+   ],
+   "exposed": [
+    "[ANALYSIS] Oversight targets: Medicaid data to DHS and ICE, DOGE, Palantir's DHS work, the Lutnick and Tether loan",
+    "[ANALYSIS] Contested lines: Golden Dome cost, reconciliation-only money, enforcement uses of health data"
+   ],
+   "questions": [
+    "Which committee gavels will Warren, Wyden and Blumenthal hold?",
+    "What money and contracts are locked in during the lame duck?",
+    "Will a Democratic Congress pass federal privacy and neural data rules, and would those rules give the binding step its legal rulebook?"
+   ]
   }
  ],
  "timeline": [
+  [
+   "1977",
+   "CIA is Oracle's first customer",
+   "contract"
+  ],
+  [
+   "1998",
+   "PageRank paper credits NSF, DARPA and NASA",
+   "capital"
+  ],
+  [
+   "2003",
+   "In-Q-Tel invests in Keyhole",
+   "capital"
+  ],
+  [
+   "2003-12",
+   "SpaceX wins a DARPA/USAF FALCON Phase 1 study contract",
+   "contract"
+  ],
+  [
+   "2005",
+   "In-Q-Tel begins investing in Palantir",
+   "capital"
+  ],
+  [
+   "2010-08",
+   "NVIDIA wins $25M DARPA UHPC contract",
+   "contract"
+  ],
+  [
+   "2011-12-05",
+   "Michael Leiter joins Palantir as senior counselor",
+   "partner"
+  ],
+  [
+   "2013",
+   "DARPA ADEPT award to Moderna, up to $25M",
+   "contract"
+  ],
   [
    "2015",
    "In-Q-Tel establishes B.Next biotech team",
@@ -46195,6 +49486,16 @@ window.CASE = {
    "2016-08-03",
    "UC Berkeley neural dust published",
    "partner"
+  ],
+  [
+   "2016-08-30",
+   "WSJ: nearly half of In-Q-Tel trustees tied to funded firms",
+   "policy"
+  ],
+  [
+   "2017",
+   "Anduril founded; CBP tests Lattice towers",
+   "contract"
   ],
   [
    "2017-11-13",
@@ -46234,6 +49535,11 @@ window.CASE = {
   [
    "2020-06",
    "DIU RATE deploys wearables",
+   "contract"
+  ],
+  [
+   "2020-06",
+   "CBP makes Anduril Autonomous Surveillance Towers a program of record",
    "contract"
   ],
   [
@@ -46277,6 +49583,16 @@ window.CASE = {
    "policy"
   ],
   [
+   "2022-03",
+   "Politico: Schmidt Futures paid OSTP staff salaries",
+   "policy"
+  ],
+  [
+   "2022-03-29",
+   "L3Harris and Shield Capital form strategic partnership",
+   "capital"
+  ],
+  [
    "2022-05",
    "HHS SHARE BPA with Palantir ($90M)",
    "contract"
@@ -46295,6 +49611,11 @@ window.CASE = {
    "2022-12",
    "CDC Common Operating Picture to Palantir ($443M)",
    "contract"
+  ],
+  [
+   "2022-12",
+   "Armada founded",
+   "capital"
   ],
   [
    "2022-12-15",
@@ -46345,6 +49666,11 @@ window.CASE = {
    "2023-11",
    "NHS FDP awarded to Palantir (£330M)",
    "contract"
+  ],
+  [
+   "2023-12",
+   "Armada round led by Founders Fund, Lux, Shield Capital and 8090",
+   "capital"
   ],
   [
    "2024",
@@ -46505,6 +49831,11 @@ window.CASE = {
    "2025-03",
    "Palantir–Archer Aviation partnership",
    "partner"
+  ],
+  [
+   "2025-03",
+   "Marine Corps awards Anduril $642.2M I-CSUAS",
+   "contract"
   ],
   [
    "2025-03-04",
@@ -46805,6 +50136,11 @@ window.CASE = {
    "2025-10",
    "Visa Intelligent Commerce / Trusted Agent Protocol",
    "partner"
+  ],
+  [
+   "2025-10",
+   "Alicia Jackson sworn in as ARPA-H director",
+   "policy"
   ],
   [
    "2025-10-14",
@@ -47219,6 +50555,11 @@ window.CASE = {
   [
    "2026-03-23",
    "Ondas agrees to acquire World View",
+   "capital"
+  ],
+  [
+   "2026-03-24",
+   "Overmatch closes $250M Fund II",
    "capital"
   ],
   [
@@ -47847,6 +51188,11 @@ window.CASE = {
    "policy"
   ],
   [
+   "2026-11-03",
+   "Democrats win House and Senate",
+   "policy"
+  ],
+  [
    "2026-11-10",
    "BIS 50% Affiliates Rule effective",
    "policy"
@@ -47897,8 +51243,18 @@ window.CASE = {
    "policy"
   ],
   [
+   "2026-12-11",
+   "Continuing resolution expires (lame duck)",
+   "policy"
+  ],
+  [
    "2026-12-18",
    "OMB initial BIOSECURE list due",
+   "policy"
+  ],
+  [
+   "2026-12-18",
+   "OMB BIOSECURE list due",
    "policy"
   ],
   [
@@ -47944,6 +51300,11 @@ window.CASE = {
   [
    "2027-01-01",
    "DFARS ban on Chinese-origin magnets takes effect",
+   "policy"
+  ],
+  [
+   "2027-01-03",
+   "New Congress seated",
    "policy"
   ],
   [
@@ -48071,6 +51432,14 @@ window.CASE = {
    [
     "Exports and counter-blocs",
     "78 US full-stack export packages and NATO's Maven adoption on one side; the EU's Level 4 sovereignty tier, Germany's European alternatives and China's Ascend-plus-DeepSeek stack on the other."
+   ],
+   [
+    "Upstream",
+    "The older layer roots in DARPA, NASA, NSF, the CIA and In-Q-Tel. The newest layer roots in the Thiel network, which now performs the upstream function itself."
+   ],
+   [
+    "Convergence",
+    "The threads converge on the individual. Identity, health record, body data, money and agent are built separately on one operating layer; the binding step is staged."
    ]
   ],
   "loops": [
@@ -48993,7 +52362,11 @@ window.CASE = {
    "Tariff relief is exchanged for MFN pricing plus U.S. plants, codified as a 0% tier to 2029-01-20.",
    "Pharma now owns frontier compute and redistributes NVIDIA models to biotechs (TuneLab).",
    "The same funds (Thrive, Founders Fund, Kleiner, MGX) appear across AI labs, AI drug discovery and longevity.",
-   "Frontier labs release bio-capable models under restricted access (GPT-4b micro not public; GPT-Rosalind trusted access)."
+   "Frontier labs release bio-capable models under restricted access (GPT-4b micro not public; GPT-Rosalind trusted access).",
+   "The OSTP seat rotates between operator networks (Schmidt, DARPA, Thiel); the build continues under both parties.",
+   "The state moved downstream: from seed funder to first customer, gatekeeper and rule writer.",
+   "The state works through three levers: listing, gating and pricing.",
+   "[ANALYSIS] Congressional gridlock freezes new statute and new money; contracted systems keep running behind switching costs."
   ]
  },
  "markets": {
@@ -52552,6 +55925,18 @@ window.CASE = {
     [
      "EDGE: SOVEREIGN SI // AGENTIC LAYER (Notion)",
      "https://app.notion.com/p/40d709555ee2816fb1a9eacf02f74c5e"
+    ],
+    [
+     "EDGE: SOVEREIGN SI // UPSTREAM LAYER",
+     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
+    ],
+    [
+     "EDGE: SOVEREIGN SI // TRAJECTORY",
+     "https://app.notion.com/p/40d709555ee281f4acc5cd04eb22aee6"
+    ],
+    [
+     "EDGE: SOVEREIGN SI // MAP UPDATE WAVE",
+     "https://app.notion.com/p/40e709555ee28185959eeb652e6a9642"
     ]
    ]
   ],
@@ -54342,6 +57727,384 @@ window.CASE = {
     [
      "Vitalik Buterin donates more than $2 million to the Methuselah Foundation (Fight Aging!, 2021-05-17)",
      "https://www.fightaging.org/archives/2021/05/vitalik-buterin-donates-more-than-2-million-to-the-methuselah-foundation/?nc"
+    ]
+   ]
+  ],
+  [
+   "Upstream: first money and first customers",
+   [
+    [
+     "Wikipedia: Oracle Database (CIA project code name, first customer)",
+     "https://en.wikipedia.org/wiki/Oracle_Database"
+    ],
+    [
+     "SFGate: Oracle's coziness with government goes back to its founding",
+     "https://www.sfgate.com/bayarea/article/oracle-s-coziness-with-government-goes-back-to-2820370.php"
+    ],
+    [
+     "Wikipedia: Palantir Technologies (In-Q-Tel ~$2M)",
+     "https://en.wikipedia.org/wiki/Palantir_Technologies"
+    ],
+    [
+     "Yahoo Finance: From CIA cash to local police",
+     "https://finance.yahoo.com/news/cia-cash-local-police-palantir-163513772.html"
+    ],
+    [
+     "Fortune: Inside the CIA-backed venture fund",
+     "https://fortune.com/2025/07/29/in-q-tel-cia-venture-capital-palantir-anduril/"
+    ],
+    [
+     "ScienceDirect: The DARPA/Air Force FALCON program",
+     "https://www.sciencedirect.com/science/article/abs/pii/S009457650500127X"
+    ],
+    [
+     "Silicon Valley Defense Group: DARPA as SpaceX's first government funding",
+     "https://www.siliconvalleydefense.org/press-releases/space-report-23"
+    ],
+    [
+     "Washington Post: Musk's business empire and government funding",
+     "https://www.washingtonpost.com/technology/interactive/2025/elon-musk-business-government-contracts-funding/"
+    ],
+    [
+     "Leiden Madtrics: Moderna and DARPA $25M (2013)",
+     "https://www.leidenmadtrics.nl/articles/vaccine-development-in-context"
+    ],
+    [
+     "Nextgov: DARPA's Pandemic Prevention Platform",
+     "https://www.nextgov.com/acquisition/2021/08/darpas-pandemic-prevention-platform/259090/"
+    ],
+    [
+     "Global Venturing: DARPA in Synchron's $10M Series A",
+     "https://globalventuring.com/university/darpa-helps-implant-10m-in-synchron/"
+    ],
+    [
+     "From the Interface: Paradromics DARPA funding",
+     "https://www.from-the-interface.com/bci-funding-clinical-trials/"
+    ],
+    [
+     "Blackrock Neurotech: Utah Array and DARPA",
+     "https://blackrockneurotech.com/insights/the-strength-of-utah-tech/"
+    ],
+    [
+     "Salt Lake Tribune: Blackrock and the DARPA arm project",
+     "https://archive.sltrib.com/article.php?id=2036602&amp=&itype=CMSID"
+    ],
+    [
+     "GenomeWeb: Ginkgo and Transcriptic $9.5M DARPA contract",
+     "https://www.genomeweb.com/applied-markets/ginkgo-bioworks-transcriptic-awarded-95m-darpa-contract/"
+    ],
+    [
+     "O'Reilly: DARPA and synthetic biology (Ginkgo)",
+     "https://www.oreilly.com/content/darpa-and-the-future-of-synthetic-biology/"
+    ],
+    [
+     "NVIDIA: $25M DARPA UHPC contract (2010)",
+     "https://nvidianews.nvidia.com/news/nvidia-led-team-receives-25-million-contract-from-darpa-to-develop-high-performance-gpu-computing-systems"
+    ],
+    [
+     "NVIDIA Research: Government programs",
+     "https://www.nvidia.com/en-us/research/government/"
+    ]
+   ]
+  ],
+  [
+   "Upstream: defense, neurotech and identity",
+   [
+    [
+     "Wikipedia: Anduril Industries",
+     "https://en.wikipedia.org/wiki/Anduril_Industries"
+    ],
+    [
+     "The Intercept: Anduril and Project Maven (2019)",
+     "https://theintercept.com/2019/03/09/anduril-industries-project-maven-palmer-luckey/"
+    ],
+    [
+     "Mijente: Anduril Marine Corps and CBP contract",
+     "https://mijente.net/blog/anduril/"
+    ],
+    [
+     "LAist: Anduril founding and CBP test",
+     "https://laist.com/news/politics/anduril-executives-election-campaign-spending"
+    ],
+    [
+     "Armada: Introducing Armada (seed investors)",
+     "https://www.armada.ai/blog/introducing-armada-bringing-ai-to-the-edge"
+    ],
+    [
+     "DCD: Microsoft leads $40M into Armada",
+     "https://www.datacenterdynamics.com/en/news/microsoft-leads-40-million-investment-into-edge-startup-armada/"
+    ],
+    [
+     "Contrary Research: Armada founding story",
+     "https://research.contrary.com/company/armada"
+    ],
+    [
+     "Contrary Research: Neuralink founding team",
+     "https://research.contrary.com/company/neuralink"
+    ],
+    [
+     "Neurotech Reports: Neuralink launch and neural dust",
+     "https://www.neurotechreports.com/pages/Neuralink-launch-collaborations.html"
+    ],
+    [
+     "From the Interface: neural dust and DARPA funding",
+     "https://www.from-the-interface.com/neural-dust/"
+    ],
+    [
+     "Wikipedia: Clear Secure",
+     "https://en.wikipedia.org/wiki/Clear_Secure"
+    ],
+    [
+     "Forbes: CLEAR bought out of bankruptcy",
+     "https://www.forbes.com/sites/katharineschwab/2026/06/03/caryn-seidman-becker-bought-clear-out-of-bankruptcy-now-shes-a-billionaire/"
+    ],
+    [
+     "Wikipedia: ID.me",
+     "https://en.wikipedia.org/wiki/ID.me"
+    ],
+    [
+     "Washingtonian: Killer App (Palantir and Poindexter, 2012)",
+     "https://washingtonian.com/2012/01/31/killer-app/"
+    ],
+    [
+     "Wikipedia: In-Q-Tel",
+     "https://en.wikipedia.org/wiki/In-Q-Tel"
+    ],
+    [
+     "Techmeme: WSJ on In-Q-Tel trustee conflicts (2016)",
+     "https://www.techmeme.com/160830/p26"
+    ]
+   ]
+  ],
+  [
+   "Upstream: wearables, records, money and Gulf",
+   [
+    [
+     "DefenseScoop: Pentagon $96M Oura contract",
+     "https://defensescoop.com/2024/10/02/pentagon-contracts-for-96m-in-oura-smart-rings-services/"
+    ],
+    [
+     "USAMRDC: Wearables and TemPredict",
+     "https://mrdc.health.mil/index.cfm/media/articles/2021/for_the_pandemic_and_beyond_wearable_technology_points_the_way"
+    ],
+    [
+     "Breaking Defense: Oura contract protest",
+     "https://breakingdefense.com/2025/02/pentagons-96m-wearable-contract-sparks-protest-accusations-of-vendor-preference/"
+    ],
+    [
+     "ID Tech: Oura contract cancellation report",
+     "https://idtechwire.com/pentagon-cancels-96m-biometric-ring-contract-amid-privacy-concerns/"
+    ],
+    [
+     "Oura: U.S. manufacturing for DoD",
+     "https://ouraring.com/blog/oura-us-department-of-defense/"
+    ],
+    [
+     "Wikipedia: Epic Systems",
+     "https://en.wikipedia.org/wiki/Epic_Systems"
+    ],
+    [
+     "Forbes: Epic's self-funded growth",
+     "https://www.forbes.com/sites/zinamoukheiber/2012/04/18/epic-systems-tough-billionaire/"
+    ],
+    [
+     "Senate Banking: Warren and Wyden on Lutnick and Tether",
+     "https://www.banking.senate.gov/newsroom/minority/warren-wyden-probe-national-security-risks-surrounding-reported-lutnick-tether-loan"
+    ],
+    [
+     "Cointelegraph: Blumenthal and Cantor's Tether stake",
+     "https://cointelegraph.com/news/cantor-fitzgerald-faces-senate-democrats-probe-over-tether-ties"
+    ],
+    [
+     "Senate HSGAC: Crypto and Iran's shadow banking network (Sep 2026)",
+     "https://www.hsgac.senate.gov/wp-content/uploads/2026-09-28-Crypto-and-Irans-Shadow-Banking-Network.pdf"
+    ]
+   ]
+  ],
+  [
+   "Upstream: people pipeline and policy seats",
+   [
+    [
+     "BioSpace: Former DARPA official Jackson named ARPA-H head",
+     "https://www.biospace.com/policy/former-darpa-official-jackson-named-arpa-h-head"
+    ],
+    [
+     "FABBS: New leadership of ARPA-H",
+     "https://fabbs.org/news/2025/11/new-leadership-arpah/"
+    ],
+    [
+     "Wikipedia: ARPA-H (Ling white paper)",
+     "https://en.wikipedia.org/wiki/Advanced_Research_Projects_Agency_for_Health"
+    ],
+    [
+     "Fierce Biotech: ARPA-H director let go",
+     "https://www.fiercebiotech.com/research/director-advanced-research-projects-agency-health-fired-trump-administration"
+    ],
+    [
+     "EPIC: Tech industry and early federal AI policy",
+     "https://epic.org/playing-both-sides-ai-policy/"
+    ],
+    [
+     "CNBC: Schmidt responds to OSTP report",
+     "https://www.cnbc.com/2022/03/29/ex-google-ceo-eric-schmidt-responds-to-white-house-related-allegations.html"
+    ],
+    [
+     "Forbes: Schmidt Futures and OSTP",
+     "https://www.forbes.com/sites/sarahemerson/2023/11/09/former-google-ceo-eric-schmidt-futures-philanthropic-mess/"
+    ],
+    [
+     "Tech Transparency Project: Schmidt's influence apparatus",
+     "https://www.techtransparencyproject.org/articles/eric-schmidts-expanding-influence-apparatus"
+    ]
+   ]
+  ],
+  [
+   "Trajectory: midterm shift",
+   [
+    [
+     "CBS News: Democrats win control of House and Senate",
+     "https://www.cbsnews.com/live-updates/election-day-2026-midterms/"
+    ],
+    [
+     "NPR: Democrats win the Senate",
+     "https://www.npr.org/2026/11/03/g-s1-149526/2026-midterms-congress-balance-of-power"
+    ],
+    [
+     "NBC News: Senate results",
+     "https://www.nbcnews.com/politics/2026-elections/senate-results"
+    ],
+    [
+     "Senate Banking: Warren and Wyden on Lutnick and Tether",
+     "https://www.banking.senate.gov/newsroom/minority/warren-wyden-probe-national-security-risks-surrounding-reported-lutnick-tether-loan"
+    ]
+   ]
+  ],
+  [
+   "Upstream wave 2",
+   [
+    [
+     "UPI: Tenet gets job at secretive NY bank (2008)",
+     "https://www.upi.com/Top_News/Special/2008/02/18/Tenet-gets-job-at-secretive-NY-bank/64181203344822/"
+    ],
+    [
+     "Fast Company (SA): Palantir from CIA investments to police partnerships",
+     "https://fastcompany.co.za/business/2025-11-24-the-evolution-of-palantir-from-cia-investments-to-police-partnerships/"
+    ],
+    [
+     "Wikipedia: In-Q-Tel",
+     "https://en.wikipedia.org/wiki/In-Q-Tel"
+    ],
+    [
+     "PR Newswire: Michael Leiter joins Palantir Technologies as Senior Counselor (Dec 5, 2011)",
+     "https://www.prnewswire.com/news-releases/michael-leiter-joins-palantir-technologies-as-senior-counselor-135018933.html"
+    ],
+    [
+     "Wikipedia: Michael Leiter",
+     "https://en.wikipedia.org/wiki/Michael_Leiter"
+    ],
+    [
+     "Skadden: Michael E. Leiter",
+     "https://www.skadden.com/en/professionals/l/leiter-michael-e"
+    ],
+    [
+     "Boston University CEID: Matthew Hepburn, MD",
+     "https://www.bu.edu/ceid/about-the-center/team/matthew-hepburn-md"
+    ],
+    [
+     "Science Feedback: DARPA hydrogel sensor (Hepburn, 60 Minutes, Profusa)",
+     "https://science.feedback.org/review/darpa-developed-a-hydrogel-sensor-which-monitors-blood-for-infections-at-early-stages-not-a-microchip-for-covid-19-identification-or-location-tracker"
+    ],
+    [
+     "Contrary Research: Armada deep dive",
+     "https://research.contrary.com/deep-dive/armada"
+    ],
+    [
+     "Business Wire: Armada raises more than $55M (Dec 2023)",
+     "https://www.businesswire.com/news/home/20231211233103/en"
+    ],
+    [
+     "Bloomberg: Founders Fund, Microsoft-backed Armada raises $131M (Jul 2025)",
+     "https://www.bloomberg.com/news/articles/2025-07-24/founders-fund-microsoft-backed-armada-raises-131-million-for-ai-data-centers"
+    ],
+    [
+     "Defense News: New venture capital fund focused on high-need dual-use technology (Shield Capital, 2022)",
+     "https://www.defensenews.com/industry/2022/03/15/new-venture-capital-fund-focused-on-high-need-dual-use-technology/"
+    ],
+    [
+     "DIU: Raj M. Shah appointed director, Joint Reserve Detachment (Oct 2024)",
+     "https://diu.mil/latest/defense-innovation-unit-appoints-raj-m-shah-as-director-joint-reserve"
+    ],
+    [
+     "L3Harris: L3Harris and Shield Capital form strategic partnership (Mar 2022)",
+     "https://l3harris.com/newsroom/press-release/2022/03/l3harris-and-shield-capital-form-strategic-partnership-accelerate"
+    ],
+    [
+     "Washington Technology: Shield Capital adds former DIU leader (Oct 2022)",
+     "https://www.washingtontechnology.com/companies/2022/10/shield-capital-adds-former-defense-innovation-unit-leader/378579"
+    ],
+    [
+     "Wikipedia: ID.me",
+     "https://en.wikipedia.org/wiki/ID.me"
+    ],
+    [
+     "Bisnow: Matt Thompson and Blake Hall, ID.me",
+     "https://www.bisnow.com/news/washington-dc/tech/matt-thompson-and-blake-hall-idme-42722"
+    ],
+    [
+     "Wikipedia: Neuralink",
+     "https://en.wikipedia.org/wiki/Neuralink"
+    ],
+    [
+     "BioSpace: Precision Neuroscience expands leadership team with hires from Meta and FDA (Jun 2025)",
+     "https://www.biospace.com/press-releases/precision-neuroscience-expands-leadership-team-with-key-hires-from-meta-and-fda"
+    ],
+    [
+     "Wikipedia: Lux Capital",
+     "https://en.wikipedia.org/wiki/Lux_Capital"
+    ],
+    [
+     "Intelligence Community News: Overmatch raises $250M fund (Mar 2026)",
+     "https://intelligencecommunitynews.com/overmatch-raises-250m-fund-for-defense-space-investment/"
+    ],
+    [
+     "The Intercept: America's Frontier Fund (Feb 2023)",
+     "https://theintercept.com/2023/02/03/china-americas-frontier-fund/"
+    ],
+    [
+     "George Mason University National Security Institute: Gilman Louie",
+     "https://nationalsecurity.gmu.edu/gilman-louie"
+    ],
+    [
+     "GovConWire: America's Frontier Fund to invest in AI, microelectronics",
+     "https://www.govconwire.com/articles/americas-frontier-fund-to-invest-in-ai-deep-tech-to-secure-us-tech-advantage"
+    ],
+    [
+     "MarketBeat: Allen Holding Inc. /NY has $284.40M position in Palantir (13F)",
+     "https://www.marketbeat.com/instant-alerts/filing-allen-holding-inc-ny-has-28440-million-position-in-palantir-technologies-inc-pltr-2026-06-02/"
+    ],
+    [
+     "Washington Technology: Anduril wins $642M Marines counter-drone contract (Mar 2025)",
+     "https://www.washingtontechnology.com/contracts/2025/03/anduril-wins-642m-marines-counter-drone-tech-contract/403613"
+    ],
+    [
+     "Defense One: Anduril wins $642M Marines counter-drone tech contract",
+     "https://www.defenseone.com/business/2025/03/anduril-wins-642m-marines-counter-drone-tech-contract/403635/"
+    ],
+    [
+     "Mijente: Anduril Marine Corps and CBP contract",
+     "https://mijente.net/blog/anduril/"
+    ],
+    [
+     "Defense Daily: CBP makes Autonomous Surveillance Tower system a program of record (Jul 2020)",
+     "https://defensedaily.com/cbp-makes-autonomous-surveillance-tower-system-program-record/homeland-security"
+    ],
+    [
+     "Sidley: BIOSECURE Act included in the FY2026 NDAA (Dec 2025)",
+     "https://www.sidley.com/en/insights/newsupdates/2025/12/biosecure-act-included-in-the-fy2026-national-defense-authorization-act"
+    ],
+    [
+     "Latham & Watkins: BIOSECURE Act becomes law",
+     "https://www.lw.com/en/insights/2025/12/biosecure-act-becomes-law-limiting-grants-with-biotechnology-companies-of-concern"
     ]
    ]
   ]

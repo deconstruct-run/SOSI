@@ -12,7 +12,7 @@ Research as of Nov 3, 2026. Built from the EDGE: SOVEREIGN SI research pages (FI
   - Selecting a row opens the detail panel on the right: mission, strategy, plan of action, facts, people, board interlocks, relationships, threads, claims and sources. Every row in the table then shows its relation to the selected entity, and the overview cards show how many of their entities link to it. "Linked to" filters the table to those entities.
   - CONNECTIONS shows the selected entity's relationships in three columns: inbound on the left, outbound on the right, partners and ties in the center.
   - Search, a thread ("Show on map") and a stack layer each list their entities in the same table. Thread tables carry the order of entry.
-  - The rail holds lenses, stack layers, relationship types and a timeline that dims entities that entered after a chosen month.
+  - The rail holds lenses, stack layers (U Upstream: first money, first customers, the people pipeline and policy seats; S state, buyers and capital; L9 to L0; X threat and counter-bloc), relationship types and a timeline that dims entities that entered after a chosen month.
   - An ORGANIZATIONS | PEOPLE switch changes what the overview and tables list.
 - **Detail panel on every view.** Selecting a name in Players, Playbook, Threads, Markets or Brief opens the detail panel beside the page you are on, and the page keeps its scroll position. OPEN ON MAP moves to the entity's system table.
 - **Players.** Three tabs: People (a sortable table with role, system, positions, shared seats, ties, links and threads), Board interlocks (organizations that share a person) and Personal ties. Selecting a row opens the full record in the detail panel.

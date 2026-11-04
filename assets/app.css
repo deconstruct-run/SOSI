@@ -903,3 +903,4 @@ a.brand-title:hover { filter: brightness(1.25); }
 .ws-split .et th:first-child:not(.nmc) { width: 150px; }
 .ws-split .et td.nmc, .ws-split .et td.nx, .ws-split .et td.wrap { min-width: 0; max-width: none; overflow: hidden; }
 .ws-split .et td.nmc .nm { display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.th-list .th-item { height: auto; flex: none; line-height: 1.35; }
