@@ -3,28 +3,10 @@
 window.CASE = {
  "meta": {
   "title": "SOVEREIGN SI // CASE MAP",
-  "file": "CASE FILE 001 · EDGE: SOVEREIGN SI",
+  "file": "",
   "asof": "2026-11-03",
   "now": "2026-11-03",
-  "disclaimer": "Research map built from public filings, company releases and press coverage through Nov 3, 2026. Items marked UNVERIFIED rest on a single secondary source. Nothing here is investment advice.",
-  "pages": [
-   "EDGE: SOVEREIGN SI",
-   "DEEP DIVE",
-   "FINANCIAL LAYER",
-   "TETHER LAYER",
-   "AGENTIC LAYER",
-   "STRATOSPHERIC LAYER",
-   "EDGE: SOUTH AMERICA",
-   "SILICON LAYER",
-   "HORIZON",
-   "GOLDEN DOME",
-   "BIO LAYER",
-   "HEALTH DATA LAYER",
-   "BIODEFENSE LAYER",
-   "BODY NETWORK LAYER",
-   "PHARMA + LONGEVITY LAYER",
-   "IoB CLAIMS LEDGER"
-  ]
+  "disclaimer": "Research map built from public filings, company releases and press coverage through Nov 3, 2026. Items marked UNVERIFIED rest on a single secondary source. Nothing here is investment advice."
  },
  "layers": [
   {
@@ -670,10 +652,6 @@ window.CASE = {
      "https://www.airandspaceforces.com/where-things-stand-pentagon-350-billion-reconciliation-request/"
     ],
     [
-     "EDGE: SOVEREIGN SI // TETHER LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee281eda4b7d4b17be9dcc9"
-    ],
-    [
      "Renewable Carbon: Final nine DBIMP awards",
      "https://renewable-carbon.eu/news/dod-releases-final-nine-awards-for-distributed-bioindustrial-manufacturing-program/"
     ],
@@ -858,14 +836,6 @@ window.CASE = {
     [
      "Fortune: SBI contracts",
      "https://www.fortune.com/2026/04/25/spacex-anduril-lockheed-raytheon-northrop-golden-dome-interceptor-contracts/"
-    ],
-    [
-     "EDGE: SOVEREIGN SI // FINANCIAL LAYER (Notion)",
-     "https://app.notion.com/p/40c709555ee2813bb795d6ecacf7a0a8"
-    ],
-    [
-     "EDGE: SOVEREIGN SI // TETHER LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee281eda4b7d4b17be9dcc9"
     ],
     [
      "Wikipedia: Golden Dome",
@@ -1186,10 +1156,6 @@ window.CASE = {
     [
      "NBC News: Senate results",
      "https://www.nbcnews.com/politics/2026-elections/senate-results"
-    ],
-    [
-     "EDGE: SOVEREIGN SI // TRAJECTORY (Notion)",
-     "https://app.notion.com/p/40d709555ee281f4acc5cd04eb22aee6"
     ]
    ],
    "plan": []
@@ -1224,20 +1190,8 @@ window.CASE = {
      "https://www.trade.gov/press-release/commerce-statement-application-conclusion-next-steps-american-ai-exports-program"
     ],
     [
-     "EDGE: SOVEREIGN SI // FINANCIAL LAYER (Notion)",
-     "https://app.notion.com/p/40c709555ee2813bb795d6ecacf7a0a8"
-    ],
-    [
      "Trump administration announces Section 232 tariffs on patented pharmaceuticals (Covington, 2026-04)",
      "https://www.cov.com/en/news-and-insights/insights/2026/04/trump-administration-announces-section-232-tariffs-on-patented-pharmaceuticals-and-ingredients"
-    ],
-    [
-     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
-    ],
-    [
-     "EDGE: SOVEREIGN SI // TRAJECTORY (Notion)",
-     "https://app.notion.com/p/40d709555ee281f4acc5cd04eb22aee6"
     ]
    ],
    "strat": "Commerce controls chip export approvals for the Gulf, BIS export controls and the American AI Exports Program (78 full-stack packages). Per the financial-layer page it is the hinge between the money and the stack: its Secretary's former firm custodies Tether's U.S. reserves.",
@@ -1281,14 +1235,6 @@ window.CASE = {
     "HORIZON scenario [ANALYSIS]"
    ],
    "src": [
-    [
-     "EDGE: SOVEREIGN SI // AGENTIC LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee2816fb1a9eacf02f74c5e"
-    ],
-    [
-     "EDGE: SOVEREIGN SI // TETHER LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee281eda4b7d4b17be9dcc9"
-    ],
     [
      "Bruegel: Containing stablecoin risks in the EU",
      "https://www.bruegel.org/policy-brief/new-strategy-contain-stablecoin-risks-european-union"
@@ -1409,10 +1355,6 @@ window.CASE = {
    ],
    "src": [
     [
-     "EDGE: SOVEREIGN SI // FINANCIAL LAYER (Notion)",
-     "https://app.notion.com/p/40c709555ee2813bb795d6ecacf7a0a8"
-    ],
-    [
      "MedTech Dive: Neuralink $280M led by Founders Fund",
      "https://www.medtechdive.com/news/elon-musk-neuralink-raises-280-million"
     ],
@@ -1431,10 +1373,6 @@ window.CASE = {
     [
      "Armada: Introducing Armada (seed investors)",
      "https://www.armada.ai/blog/introducing-armada-bringing-ai-to-the-edge"
-    ],
-    [
-     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
     ]
    ],
    "plan": [],
@@ -1471,12 +1409,7 @@ window.CASE = {
     "Crossover and sovereign funds (T. Rowe Price, Baillie Gifford, JPMorgan SIG, Carlyle, Mubadala, QIA, GIC) now lead private rounds",
     "MGX, PIF and Gulf funds recur across Crusoe, Board of Peace seats and Trump family/envoy-linked ventures"
    ],
-   "src": [
-    [
-     "EDGE: SOVEREIGN SI // FINANCIAL LAYER (Notion)",
-     "https://app.notion.com/p/40c709555ee2813bb795d6ecacf7a0a8"
-    ]
-   ]
+   "src": []
   },
   {
    "id": "spacex",
@@ -1560,10 +1493,6 @@ window.CASE = {
     [
      "TIKR: SpaceX IPO",
      "https://www.tikr.com/blog/spacex-nasdaq-spcx-stock-surges-19-as-historic-public-debut-propels-valuation-past-2-trillion"
-    ],
-    [
-     "EDGE: SOVEREIGN SI // FINANCIAL LAYER (Notion)",
-     "https://app.notion.com/p/40c709555ee2813bb795d6ecacf7a0a8"
     ],
     [
      "Apollo: Valor and xAI $3.5B capital solution",
@@ -2006,10 +1935,6 @@ window.CASE = {
      "https://nvidianews.nvidia.com/news/nvidia-nvqlink-quantum-gpu-computing"
     ],
     [
-     "EDGE: SOVEREIGN SI // FINANCIAL LAYER (Notion)",
-     "https://app.notion.com/p/40c709555ee2813bb795d6ecacf7a0a8"
-    ],
-    [
      "Daily Political: Rowan on energy, chips and data centers",
      "https://www.dailypolitical.com/2026/09/23/apollo-global-management-sees-ai-private-credit-and-retirement-driving-growth.html"
     ],
@@ -2168,10 +2093,6 @@ window.CASE = {
      "https://www.datacenterdynamics.com/en/news/armada-deploys-containerized-data-center-to-us-navy-in-south-carolina/"
     ],
     [
-     "EDGE: SOVEREIGN SI // FINANCIAL LAYER (Notion)",
-     "https://app.notion.com/p/40c709555ee2813bb795d6ecacf7a0a8"
-    ],
-    [
      "Armada: $131M and Leviathan",
      "https://www.armada.ai/blog/131M-strategic-funding-leviathan"
     ],
@@ -2314,10 +2235,6 @@ window.CASE = {
    ],
    "src": [
     [
-     "EDGE: SOVEREIGN SI // FINANCIAL LAYER (Notion)",
-     "https://app.notion.com/p/40c709555ee2813bb795d6ecacf7a0a8"
-    ],
-    [
      "IDC Nova: Microsoft and Armada",
      "https://www.idcnova.com/html/1/59/153/5419.html"
     ],
@@ -2375,10 +2292,6 @@ window.CASE = {
      "https://www.bisnow.com/national/news/data-center-sustainability-operations/iranian-drone-strikes-damage-three-amazon-data-centers-133489"
     ],
     [
-     "EDGE: SOVEREIGN SI // AGENTIC LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee2816fb1a9eacf02f74c5e"
-    ],
-    [
      "FDA's Elsa switches from Claude to Gemini (Clinical Leader)",
      "https://www.clinicalleader.com/doc/fda-s-elsa-ai-switches-from-claude-to-gemini-what-sponsors-need-to-know-0001"
     ],
@@ -2416,10 +2329,6 @@ window.CASE = {
    ],
    "src": [
     [
-     "EDGE: SOVEREIGN SI // AGENTIC LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee2816fb1a9eacf02f74c5e"
-    ],
-    [
      "Agencies begin to shed Anthropic contracts (Nextgov)",
      "https://www.nextgov.com/acquisition/2026/03/agencies-begin-shed-anthropic-contracts-following-trumps-directive/411823/"
     ],
@@ -2442,10 +2351,6 @@ window.CASE = {
     [
      "Calico (company) (Wikipedia)",
      "https://en.wikipedia.org/wiki/Calico_(company)"
-    ],
-    [
-     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
     ],
     [
      "Wikipedia: In-Q-Tel",
@@ -2481,10 +2386,6 @@ window.CASE = {
     "Founders worked on a CIA-funded project code-named Oracle at Ampex; the CIA was the first customer (1977) and let the company use the code name"
    ],
    "src": [
-    [
-     "EDGE: SOVEREIGN SI // FINANCIAL LAYER (Notion)",
-     "https://app.notion.com/p/40c709555ee2813bb795d6ecacf7a0a8"
-    ],
     [
      "VA completes 2026 EHR deployments (Nextgov)",
      "https://www.nextgov.com/modernization/2026/10/va-completes-2026-ehr-system-deployments-final-two-site-go-lives/416823/"
@@ -2538,10 +2439,6 @@ window.CASE = {
     "Quantum-centric supercomputing named in HORIZON as a hybrid quantum model for 2029-2030 [ANALYSIS]"
    ],
    "src": [
-    [
-     "Data Center Knowledge: Hybrid quantum systems take off",
-     "https://www.datacenterknowledge.com/supercomputers/quantum-meets-the-data-center-hybrid-systems-take-off"
-    ],
     [
      "Computer Weekly: Red Hat and DSTA",
      "https://www.computerweekly.com/news/366652656/Red-Hat-opens-Singapore-AI-centre-to-take-customers-beyond-pilots"
@@ -2742,12 +2639,7 @@ window.CASE = {
    "f": [
     "Humain is AI200's first customer"
    ],
-   "src": [
-    [
-     "EDGE: SOVEREIGN SI // FINANCIAL LAYER (Notion)",
-     "https://app.notion.com/p/40c709555ee2813bb795d6ecacf7a0a8"
-    ]
-   ]
+   "src": []
   },
   {
    "id": "groq",
@@ -2898,14 +2790,6 @@ window.CASE = {
      "https://www.escudodigital.com/en/defense/europe/palantir-embeds-across-european-militaries-nato-germany-holds-back.html"
     ],
     [
-     "EDGE: SOVEREIGN SI // FINANCIAL LAYER (Notion)",
-     "https://app.notion.com/p/40c709555ee2813bb795d6ecacf7a0a8"
-    ],
-    [
-     "EDGE: SOVEREIGN SI // AGENTIC LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee2816fb1a9eacf02f74c5e"
-    ],
-    [
      "The Intercept: Palantir and IRS data mining",
      "https://theintercept.com/2026/04/24/palantir-irs-contract-data/"
     ],
@@ -2992,14 +2876,6 @@ window.CASE = {
     [
      "Washingtonian: Killer App (Palantir and Poindexter, 2012)",
      "https://washingtonian.com/2012/01/31/killer-app/"
-    ],
-    [
-     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
-    ],
-    [
-     "EDGE: SOVEREIGN SI // TRAJECTORY (Notion)",
-     "https://app.notion.com/p/40d709555ee281f4acc5cd04eb22aee6"
     ]
    ],
    "strat": "Own the operating layer for civil, commercial and military buyers at once, then certify an ecosystem around it (modular data center partners, Knox FedRAMP/IL5, Aplos, Accenture Federal) and bundle it with Armada and NVIDIA into export packages. Deliver a Sovereign AI OS (AIP, Ontology, Foundry, Apollo) that runs open-weight and commercial models on infrastructure the customer owns, with the Ontology as the hinge linking data, models and actions. Extend it to physical infrastructure through certified partners (Armada) and to owned mission models through Regna AI with forward-deployed engineers.",
@@ -3136,10 +3012,6 @@ window.CASE = {
      "https://www.aljazeera.com/news/2026/7/27/the-ai-military-complex-which-are-the-main-companies-in-it"
     ],
     [
-     "EDGE: SOVEREIGN SI // FINANCIAL LAYER (Notion)",
-     "https://app.notion.com/p/40c709555ee2813bb795d6ecacf7a0a8"
-    ],
-    [
      "Fortune: Golden Dome SBI awards",
      "https://www.fortune.com/2026/04/25/spacex-anduril-lockheed-raytheon-northrop-golden-dome-interceptor-contracts/"
     ],
@@ -3158,10 +3030,6 @@ window.CASE = {
     [
      "The Intercept: Anduril and Project Maven (2019)",
      "https://theintercept.com/2019/03/09/anduril-industries-project-maven-palmer-luckey/"
-    ],
-    [
-     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
     ],
     [
      "Defense Daily: CBP makes Autonomous Surveillance Tower system a program of record (Jul 2020)",
@@ -4364,10 +4232,6 @@ window.CASE = {
    ],
    "src": [
     [
-     "EDGE: SOVEREIGN SI // FINANCIAL LAYER (Notion)",
-     "https://app.notion.com/p/40c709555ee2813bb795d6ecacf7a0a8"
-    ],
-    [
      "Yahoo Finance: Apollo $35B AI credit deal",
      "https://finance.yahoo.com/technology/ai/articles/apollo-lands-record-35-billion-151249670.html"
     ],
@@ -4554,10 +4418,6 @@ window.CASE = {
     "Reviewing the £330M Palantir NHS FDP contract; break clause early 2027"
    ],
    "src": [
-    [
-     "EDGE: SOVEREIGN SI // AGENTIC LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee2816fb1a9eacf02f74c5e"
-    ],
     [
      "Nat Schooler: Britain walks away",
      "https://natschooler.com/blog/digital-id-2026-britain-walks-away-while-europe-and-america-press-on/"
@@ -4779,10 +4639,6 @@ window.CASE = {
     [
      "TNW: Stargate UAE redesign",
      "https://thenextweb.com/news/uae-stargate-data-centre-redesign-iran-threat-underground"
-    ],
-    [
-     "EDGE: SOVEREIGN SI // FINANCIAL LAYER (Notion)",
-     "https://app.notion.com/p/40c709555ee2813bb795d6ecacf7a0a8"
     ]
    ]
   },
@@ -4833,10 +4689,6 @@ window.CASE = {
      "https://www.g42.ai/resources/news/global-tech-alliance-launches-stargate-uae"
     ],
     [
-     "EDGE: SOVEREIGN SI // FINANCIAL LAYER (Notion)",
-     "https://app.notion.com/p/40c709555ee2813bb795d6ecacf7a0a8"
-    ],
-    [
      "TechFlow: WSJ report on UAE royal investment in WLFI",
      "https://www.techflowpost.com/en-US/article/30201"
     ],
@@ -4859,10 +4711,6 @@ window.CASE = {
     [
      "Fierce Biotech: Neuralink $650M Series E",
      "https://www.fiercebiotech.com/medtech/neuralink-secures-650m-series-e-funding-expand-patient-access-brain-chip-technology"
-    ],
-    [
-     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
     ]
    ],
    "plan": []
@@ -4922,10 +4770,6 @@ window.CASE = {
     [
      "Safeguard: Humain chips and power",
      "https://safeguard.sh/resources/blog/saudi-arabia-humain-vision-2030-ai-data-centres-power-and-chips"
-    ],
-    [
-     "EDGE: SOVEREIGN SI // FINANCIAL LAYER (Notion)",
-     "https://app.notion.com/p/40c709555ee2813bb795d6ecacf7a0a8"
     ]
    ]
   },
@@ -4947,12 +4791,7 @@ window.CASE = {
    "f": [
     "Qatar sits on the sovereign buyer list; Qatari capital in Affinity Partners [VERIFY]"
    ],
-   "src": [
-    [
-     "EDGE: SOVEREIGN SI // FINANCIAL LAYER (Notion)",
-     "https://app.notion.com/p/40c709555ee2813bb795d6ecacf7a0a8"
-    ]
-   ]
+   "src": []
   },
   {
    "id": "irgc",
@@ -5025,10 +4864,6 @@ window.CASE = {
     "Beinao-1 in registered trials (2026); registration application 2027"
    ],
    "src": [
-    [
-     "EDGE: SOVEREIGN SI // TETHER LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee281eda4b7d4b17be9dcc9"
-    ],
     [
      "AI Futures: Chinese DUV and EUV forecast",
      "https://blog.aifutures.org/p/a-forecast-of-chinese-duv-and-euv"
@@ -5221,10 +5056,6 @@ window.CASE = {
    ],
    "src": [
     [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ],
-    [
      "Palantir event transcript (Armada: Dan Wright, Pradeep)",
      ""
     ],
@@ -5301,10 +5132,6 @@ window.CASE = {
    ],
    "src": [
     [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ],
-    [
      "Ondas: Ondas Announces Regna AI, Powered by Palantir",
      "https://ir.ondas.com/press-releases/detail/334/ondas-announces-regna-ai-powered-by-palantir-to-advance"
     ],
@@ -5372,10 +5199,6 @@ window.CASE = {
    ],
    "src": [
     [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ],
-    [
      "Holland & Knight: Department of War AI-first agenda",
      "https://www.hklaw.com/en/insights/publications/2026/02/department-of-wars-ai-first-agenda-a-new-era-for-defense-contractors"
     ],
@@ -5436,20 +5259,12 @@ window.CASE = {
    ],
    "src": [
     [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ],
-    [
      "CNBC: Trump administration equity portfolio",
      "https://www.cnbc.com/2026/02/07/trump-administration-equity-portfolio-grows-these-are-investments-so-far.html"
     ],
     [
      "Commonfund: The state as a shareholder",
      "https://www.commonfund.org/blog/the-state-as-a-shareholder-government-equity-stakes"
-    ],
-    [
-     "EDGE: SOVEREIGN SI // FINANCIAL LAYER (Notion)",
-     "https://app.notion.com/p/40c709555ee2813bb795d6ecacf7a0a8"
     ],
     [
      "TechFlow: the unreported Tether loan to Lutnick's children",
@@ -5482,10 +5297,6 @@ window.CASE = {
     [
      "Cointelegraph: Blumenthal and Cantor's Tether stake",
      "https://cointelegraph.com/news/cantor-fitzgerald-faces-senate-democrats-probe-over-tether-ties"
-    ],
-    [
-     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
     ]
    ]
   },
@@ -5512,20 +5323,12 @@ window.CASE = {
    ],
    "src": [
     [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ],
-    [
      "Startup Fortune: Truce runs to January 10",
      "https://startupfortune.com/chinas-rare-earth-truce-runs-out-january-10-not-november/"
     ],
     [
      "InvestingLive: US–China truce extended",
      "https://investinglive.com/news/us-and-china-extend-busan-trade-truce-to-january-10-as-xi-arrives-for-trump-summit/"
-    ],
-    [
-     "EDGE: SOVEREIGN SI // TETHER LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee281eda4b7d4b17be9dcc9"
     ],
     [
      "Crypto Briefing: Bessent on $1T in U.S. debt",
@@ -5585,10 +5388,6 @@ window.CASE = {
     "Quoted on the Lilly lab: AI's 'most profound impact will be in life sciences' (2026-01-12)."
    ],
    "src": [
-    [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ],
     [
      "NVIDIA: NVQLink",
      "https://nvidianews.nvidia.com/news/nvidia-nvqlink-quantum-gpu-computing"
@@ -5675,20 +5474,12 @@ window.CASE = {
    ],
    "src": [
     [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ],
-    [
      "TIKR: SpaceX IPO",
      "https://www.tikr.com/blog/spacex-nasdaq-spcx-stock-surges-19-as-historic-public-debut-propels-valuation-past-2-trillion"
     ],
     [
      "Via Satellite: SpaceX–xAI orbital compute",
      "https://www.satellitetoday.com/connectivity/2026/02/02/spacex-acquires-xai-to-pursue-orbital-data-center-constellation/"
-    ],
-    [
-     "EDGE: SOVEREIGN SI // FINANCIAL LAYER (Notion)",
-     "https://app.notion.com/p/40c709555ee2813bb795d6ecacf7a0a8"
     ],
     [
      "Apollo: Valor and xAI $3.5B capital solution",
@@ -5785,20 +5576,12 @@ window.CASE = {
    ],
    "src": [
     [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ],
-    [
      "Stargate tracker: status as of Oct 18, 2026",
      "https://stargate.how/location"
     ],
     [
      "G42: Stargate UAE launch",
      "https://www.g42.ai/resources/news/global-tech-alliance-launches-stargate-uae"
-    ],
-    [
-     "EDGE: SOVEREIGN SI // FINANCIAL LAYER (Notion)",
-     "https://app.notion.com/p/40c709555ee2813bb795d6ecacf7a0a8"
     ],
     [
      "CNBC: Tahnoon takes 49% stake in Trump family crypto bank venture",
@@ -5848,10 +5631,6 @@ window.CASE = {
    "f": [],
    "src": [
     [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ],
-    [
      "NJCCIC: Volt Typhoon",
      "https://www.cyber.nj.gov/threat-landscape/nation-state-threat-analysis-reports/china-linked-cyber-operations-targeting-us-critical-infrastructure/volt-typhoon"
     ],
@@ -5877,12 +5656,7 @@ window.CASE = {
    "role": "U.S. Senator",
    "obj": [],
    "f": [],
-   "src": [
-    [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ]
-   ]
+   "src": []
   },
   {
    "id": "wyden",
@@ -5903,14 +5677,6 @@ window.CASE = {
     "Senate Finance letter to Palantir"
    ],
    "src": [
-    [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ],
-    [
-     "EDGE: SOVEREIGN SI // AGENTIC LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee2816fb1a9eacf02f74c5e"
-    ],
     [
      "Senate Finance: Wyden and Ocasio-Cortez letter",
      "https://www.finance.senate.gov/ranking-members-news/wyden-ocasio-cortez-demand-answers-from-palantir-about-plans-to-build-irs-mega-database-of-american-citizens"
@@ -5935,12 +5701,7 @@ window.CASE = {
    "role": "U.S. Senator",
    "obj": [],
    "f": [],
-   "src": [
-    [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ]
-   ]
+   "src": []
   },
   {
    "id": "chow",
@@ -5960,14 +5721,6 @@ window.CASE = {
    "obj": [],
    "f": [],
    "src": [
-    [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ],
-    [
-     "Data Center Knowledge: Hybrid quantum systems take off",
-     "https://www.datacenterknowledge.com/supercomputers/quantum-meets-the-data-center-hybrid-systems-take-off"
-    ],
     [
      "Quartz: AI data centers and quantum computing",
      "https://qz.com/quantum-coming-to-data-center-near-you-nvidia-ibm"
@@ -5992,10 +5745,6 @@ window.CASE = {
    "f": [],
    "src": [
     [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ],
-    [
      "Moneywise: Amazon's $150M uninsured Gulf data center loss",
      "https://moneywise.com/news/economy/amazon-data-centers-drone-strikes-iran-insurance-gap-consumer-costs"
     ]
@@ -6018,10 +5767,6 @@ window.CASE = {
    "obj": [],
    "f": [],
    "src": [
-    [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ],
     [
      "Semafor: Gulf war insurance cost up 1,900%",
      "https://www.semafor.com/article/04/01/2026/the-cost-of-war-insurance-in-the-gulf-has-risen-1900"
@@ -6088,10 +5833,6 @@ window.CASE = {
    ],
    "src": [
     [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ],
-    [
      "CNBC: Trump administration equity portfolio",
      "https://www.cnbc.com/2026/02/07/trump-administration-equity-portfolio-grows-these-are-investments-so-far.html"
     ],
@@ -6102,10 +5843,6 @@ window.CASE = {
     [
      "InvestingLive: US–China truce extended",
      "https://investinglive.com/news/us-and-china-extend-busan-trade-truce-to-january-10-as-xi-arrives-for-trump-summit/"
-    ],
-    [
-     "EDGE: SOVEREIGN SI // FINANCIAL LAYER (Notion)",
-     "https://app.notion.com/p/40c709555ee2813bb795d6ecacf7a0a8"
     ],
     [
      "CNN: Board of Peace explainer",
@@ -6196,10 +5933,6 @@ window.CASE = {
    "f": [],
    "src": [
     [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ],
-    [
      "BISI: China's processing dominance after the summit",
      "https://bisi.org.uk/reports/chinas-rare-earth-processing-dominance-and-what-the-trump-xi-summit-didnt-change"
     ],
@@ -6243,10 +5976,6 @@ window.CASE = {
    ],
    "src": [
     [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ],
-    [
      "PR Newswire: Govini Ark Army IDIQ",
      "https://www.prnewswire.com/news-releases/army-opens-door-to-department-of-war-wide-adoption-of-govini-ark-platform-302572362.html"
     ],
@@ -6285,10 +6014,6 @@ window.CASE = {
     "Uses its own models plus OpenAI/Microsoft models"
    ],
    "src": [
-    [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ],
     [
      "Vannevar: DIU production contract",
      "https://www.vannevarlabs.com/media-coverage/vannevar-labs-awarded-diu-production-contract/"
@@ -6338,10 +6063,6 @@ window.CASE = {
    ],
    "src": [
     [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ],
-    [
      "Skydio: Army X10D order",
      "https://www.skydio.com/blog/u-s-army-usd52-million-order-skydio-x10d"
     ],
@@ -6382,10 +6103,6 @@ window.CASE = {
    ],
    "src": [
     [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ],
-    [
      "BHRRC: Vannevar data scope",
      "https://www.business-humanrights.org/en/from-us/briefings/saving-for-the-future-or-threatening-the-future-are-pensioners-funding-the-militarisation-of-ai/"
     ],
@@ -6420,10 +6137,6 @@ window.CASE = {
     [
      "Fortune: Inside the CIA-backed venture fund",
      "https://fortune.com/2025/07/29/in-q-tel-cia-venture-capital-palantir-anduril/"
-    ],
-    [
-     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
     ]
    ],
    "plan": [],
@@ -6447,10 +6160,6 @@ window.CASE = {
     "Investor in Chai Discovery Series C and NewLimit."
    ],
    "src": [
-    [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ],
     [
      "CNBC Disruptor 50: Applied Intuition",
      "https://www.cnbc.com/2026/05/19/applied-intuition-cnbc-disruptor-50-ranking.html"
@@ -6484,10 +6193,6 @@ window.CASE = {
    "f": [],
    "src": [
     [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ],
-    [
      "DroneXL: Skydio Series F",
      "https://dronexl.co/2026/04/23/skydio-110m-series-f-44-billion-valuation/"
     ]
@@ -6508,12 +6213,7 @@ window.CASE = {
    "dir": "",
    "obj": [],
    "f": [],
-   "src": [
-    [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ]
-   ]
+   "src": []
   },
   {
    "id": "rafael",
@@ -6561,10 +6261,6 @@ window.CASE = {
    ],
    "src": [
     [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ],
-    [
      "Tech Times: Rafael at Farnborough",
      "https://www.techtimes.com/articles/320931/20260718/rafael-brings-worlds-first-operational-laser-23b-nato-deal-farnborough.htm"
     ],
@@ -6599,10 +6295,6 @@ window.CASE = {
    "f": [],
    "src": [
     [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ],
-    [
      "Startup Nation Finder: Rafael and Elron",
      "https://finder.startupnationcentral.org/company_page/rafael-advanced-defense-systems"
     ]
@@ -6626,10 +6318,6 @@ window.CASE = {
    "obj": [],
    "f": [],
    "src": [
-    [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ],
     [
      "Breaking Defense: Hanwha and Magnet Defense",
      "https://breakingdefense.com/2026/04/exclusive-hanwha-defense-usa-magnet-defense-partner-to-build-musvs-robotic-shipyards/"
@@ -6655,10 +6343,6 @@ window.CASE = {
    "f": [],
    "src": [
     [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ],
-    [
      "Breaking Defense: Hanwha and Magnet Defense",
      "https://breakingdefense.com/2026/04/exclusive-hanwha-defense-usa-magnet-defense-partner-to-build-musvs-robotic-shipyards/"
     ]
@@ -6680,10 +6364,6 @@ window.CASE = {
    "obj": [],
    "f": [],
    "src": [
-    [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ],
     [
      "Breaking Defense: Hanwha and Magnet Defense",
      "https://breakingdefense.com/2026/04/exclusive-hanwha-defense-usa-magnet-defense-partner-to-build-musvs-robotic-shipyards/"
@@ -6713,10 +6393,6 @@ window.CASE = {
    "f": [],
    "src": [
     [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ],
-    [
      "Seoul Economic Daily: HD Hyundai, Hanwha unmanned fleet",
      "https://en.sedaily.com/finance/2026/04/21/hd-hyundai-hanwha-to-build-us-unmanned-fleet"
     ]
@@ -6740,10 +6416,6 @@ window.CASE = {
    "obj": [],
    "f": [],
    "src": [
-    [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ],
     [
      "Seoul Economic Daily: HD Hyundai, Hanwha unmanned fleet",
      "https://en.sedaily.com/finance/2026/04/21/hd-hyundai-hanwha-to-build-us-unmanned-fleet"
@@ -6780,10 +6452,6 @@ window.CASE = {
    "f": [],
    "src": [
     [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ],
-    [
      "Indian Defence News: sovereign AI decision network",
      "https://www.indiandefensenews.in/2026/10/indias-push-towards-sovereign-ai.html"
     ],
@@ -6817,10 +6485,6 @@ window.CASE = {
    "f": [],
    "src": [
     [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ],
-    [
      "Shabari Seva: Sarvam MoU",
      "https://www.shabariseva.com/post/sarvam-signs-five-year-mou-with-defence-ministry-to-advance-indigenous-ai-for-indian-armed-forces"
     ]
@@ -6847,10 +6511,6 @@ window.CASE = {
    "f": [],
    "src": [
     [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ],
-    [
      "Indian Defence News: sovereign AI decision network",
      "https://www.indiandefensenews.in/2026/10/indias-push-towards-sovereign-ai.html"
     ]
@@ -6874,10 +6534,6 @@ window.CASE = {
    "obj": [],
    "f": [],
    "src": [
-    [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ],
     [
      "Indian Defence News: sovereign AI decision network",
      "https://www.indiandefensenews.in/2026/10/indias-push-towards-sovereign-ai.html"
@@ -6911,10 +6567,6 @@ window.CASE = {
    "f": [],
    "src": [
     [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ],
-    [
      "Al Jazeera: the AI military complex",
      "https://www.aljazeera.com/news/2026/7/27/the-ai-military-complex-which-are-the-main-companies-in-it"
     ]
@@ -6938,10 +6590,6 @@ window.CASE = {
    "obj": [],
    "f": [],
    "src": [
-    [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ],
     [
      "Al Jazeera: the AI military complex",
      "https://www.aljazeera.com/news/2026/7/27/the-ai-military-complex-which-are-the-main-companies-in-it"
@@ -7001,10 +6649,6 @@ window.CASE = {
    ],
    "src": [
     [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ],
-    [
      "The Diplomat: AUKUS Pillar II after five years",
      "https://thediplomat.com/2026/09/what-has-aukus-pillar-ii-achieved-over-5-years/"
     ],
@@ -7047,10 +6691,6 @@ window.CASE = {
    "f": [],
    "src": [
     [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ],
-    [
      "Relay: Ghost Shark program of record",
      "https://therelaymag.com/australias-ghost-shark-fleet-becomes-a1-7b-program-of-record"
     ]
@@ -7086,10 +6726,6 @@ window.CASE = {
    "f": [],
    "src": [
     [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ],
-    [
      "Computer Weekly: Red Hat and DSTA",
      "https://www.computerweekly.com/news/366652656/Red-Hat-opens-Singapore-AI-centre-to-take-customers-beyond-pilots"
     ],
@@ -7120,10 +6756,6 @@ window.CASE = {
    "f": [],
    "src": [
     [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ],
-    [
      "Fortune: Singtel and NVIDIA sovereign lab",
      "https://fortune.com/2026/02/24/singtel-nvidia-ai-data-sovereignty/"
     ]
@@ -7147,12 +6779,7 @@ window.CASE = {
     "~90% of most advanced chip production",
     "Flagged in HORIZON as thin in current research and slated for a dedicated build"
    ],
-   "src": [
-    [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ]
-   ],
+   "src": [],
    "strat": "Taiwan commits investment and credit guarantees to U.S. chipmaking in exchange for tariff relief while TSMC keeps its leading edge at home.",
    "plan": [
     [
@@ -7198,10 +6825,6 @@ window.CASE = {
    "f": [],
    "src": [
     [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ],
-    [
      "Stargate tracker: status as of Oct 18, 2026",
      "https://stargate.how/location"
     ],
@@ -7233,10 +6856,6 @@ window.CASE = {
     "Indirect HAPS exposure via Sceye stake and Japan service"
    ],
    "src": [
-    [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ],
     [
      "G42: Stargate UAE launch",
      "https://www.g42.ai/resources/news/global-tech-alliance-launches-stargate-uae"
@@ -7296,10 +6915,6 @@ window.CASE = {
    "f": [],
    "src": [
     [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ],
-    [
      "G42: Stargate UAE launch",
      "https://www.g42.ai/resources/news/global-tech-alliance-launches-stargate-uae"
     ]
@@ -7326,16 +6941,8 @@ window.CASE = {
    ],
    "src": [
     [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ],
-    [
      "Safeguard: Humain chips and power",
      "https://safeguard.sh/resources/blog/saudi-arabia-humain-vision-2030-ai-data-centres-power-and-chips"
-    ],
-    [
-     "EDGE: SOVEREIGN SI // FINANCIAL LAYER (Notion)",
-     "https://app.notion.com/p/40c709555ee2813bb795d6ecacf7a0a8"
     ],
     [
      "BioProcess International: Saudi Arabia's biotech bet",
@@ -7370,10 +6977,6 @@ window.CASE = {
    "obj": [],
    "f": [],
    "src": [
-    [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ],
     [
      "NVIDIA: Humain partnership",
      "https://nvidianews.nvidia.com/news/humain-and-nvidia-announce-strategic-partnership-to-build-ai-factories-of-the-future-in-saudi-arabia"
@@ -7410,12 +7013,7 @@ window.CASE = {
    ],
    "obj": [],
    "f": [],
-   "src": [
-    [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ]
-   ]
+   "src": []
   },
   {
    "id": "duos",
@@ -7436,12 +7034,7 @@ window.CASE = {
    "ex": "NASDAQ",
    "obj": [],
    "f": [],
-   "src": [
-    [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ]
-   ]
+   "src": []
   },
   {
    "id": "schneider",
@@ -7463,12 +7056,7 @@ window.CASE = {
    "ex": "EPA",
    "obj": [],
    "f": [],
-   "src": [
-    [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ]
-   ]
+   "src": []
   },
   {
    "id": "meta",
@@ -7491,12 +7079,7 @@ window.CASE = {
    "ex": "NASDAQ",
    "obj": [],
    "f": [],
-   "src": [
-    [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ]
-   ]
+   "src": []
   },
   {
    "id": "intel",
@@ -7523,10 +7106,6 @@ window.CASE = {
     "Former CEO Pat Gelsinger is executive chairman of xLight"
    ],
    "src": [
-    [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ],
     [
      "CNBC: Trump administration equity portfolio",
      "https://www.cnbc.com/2026/02/07/trump-administration-equity-portfolio-grows-these-are-investments-so-far.html"
@@ -7561,10 +7140,6 @@ window.CASE = {
    ],
    "src": [
     [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ],
-    [
      "OAG tracker: U.S. government equity stakes",
      "https://www.theoagseo.com/us-government-equity-stakes-tracker/"
     ]
@@ -7598,10 +7173,6 @@ window.CASE = {
    "obj": [],
    "f": [],
    "src": [
-    [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ],
     [
      "POWER: Army Janus microreactors",
      "https://powermag.com/the-janus-five-20-commercial-nuclear-microreactors-starting-in-2028"
@@ -7644,10 +7215,6 @@ window.CASE = {
    "f": [],
    "src": [
     [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ],
-    [
      "POWER: Army Janus microreactors",
      "https://powermag.com/the-janus-five-20-commercial-nuclear-microreactors-starting-in-2028"
     ]
@@ -7672,10 +7239,6 @@ window.CASE = {
    "f": [],
    "src": [
     [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ],
-    [
      "POWER: Army Janus microreactors",
      "https://powermag.com/the-janus-five-20-commercial-nuclear-microreactors-starting-in-2028"
     ]
@@ -7698,12 +7261,7 @@ window.CASE = {
    "dir": "",
    "obj": [],
    "f": [],
-   "src": [
-    [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ]
-   ]
+   "src": []
   },
   {
    "id": "xenergy",
@@ -7722,12 +7280,7 @@ window.CASE = {
    "dir": "",
    "obj": [],
    "f": [],
-   "src": [
-    [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ]
-   ]
+   "src": []
   },
   {
    "id": "aalo",
@@ -7746,12 +7299,7 @@ window.CASE = {
    "dir": "",
    "obj": [],
    "f": [],
-   "src": [
-    [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ]
-   ]
+   "src": []
   },
   {
    "id": "valar",
@@ -7770,12 +7318,7 @@ window.CASE = {
    "dir": "",
    "obj": [],
    "f": [],
-   "src": [
-    [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ]
-   ]
+   "src": []
   },
   {
    "id": "mhi",
@@ -7797,10 +7340,6 @@ window.CASE = {
    "obj": [],
    "f": [],
    "src": [
-    [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ],
     [
      "TNW: power equipment shortages",
      "https://thenextweb.com/news/us-power-companies-scramble-data-centre-equipment"
@@ -7824,12 +7363,7 @@ window.CASE = {
    "ex": "NYSE",
    "obj": [],
    "f": [],
-   "src": [
-    [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ]
-   ]
+   "src": []
   },
   {
    "id": "k2space",
@@ -7849,12 +7383,7 @@ window.CASE = {
    "pv": "$500M raise [UNVERIFIED]",
    "obj": [],
    "f": [],
-   "src": [
-    [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ]
-   ]
+   "src": []
   },
   {
    "id": "aplos",
@@ -7873,12 +7402,7 @@ window.CASE = {
    "dir": "",
    "obj": [],
    "f": [],
-   "src": [
-    [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ]
-   ]
+   "src": []
   },
   {
    "id": "genaimil",
@@ -7899,10 +7423,6 @@ window.CASE = {
    "obj": [],
    "f": [],
    "src": [
-    [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ],
     [
      "Holland & Knight: Department of War AI-first agenda",
      "https://www.hklaw.com/en/insights/publications/2026/02/department-of-wars-ai-first-agenda-a-new-era-for-defense-contractors"
@@ -7947,10 +7467,6 @@ window.CASE = {
    ],
    "src": [
     [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ],
-    [
      "NucNet: Centrus $900M HALEU contract",
      "https://www.nucnet.org/news/centrus-finalises-usd900-million-haleu-enrichment-contract-with-us-doe-7-5-2026"
     ],
@@ -7987,12 +7503,7 @@ window.CASE = {
    "dir": "",
    "obj": [],
    "f": [],
-   "src": [
-    [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ]
-   ]
+   "src": []
   },
   {
    "id": "treasury",
@@ -8016,16 +7527,8 @@ window.CASE = {
    ],
    "src": [
     [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ],
-    [
      "InvestingLive: US–China truce extended",
      "https://investinglive.com/news/us-and-china-extend-busan-trade-truce-to-january-10-as-xi-arrives-for-trump-summit/"
-    ],
-    [
-     "EDGE: SOVEREIGN SI // TETHER LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee281eda4b7d4b17be9dcc9"
     ],
     [
      "CoinDesk: Standard Chartered on T-bill issuance and stablecoins",
@@ -8075,12 +7578,7 @@ window.CASE = {
    "dir": "",
    "obj": [],
    "f": [],
-   "src": [
-    [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ]
-   ]
+   "src": []
   },
   {
    "id": "orcrist",
@@ -8099,12 +7597,7 @@ window.CASE = {
    "dir": "",
    "obj": [],
    "f": [],
-   "src": [
-    [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ]
-   ]
+   "src": []
   },
   {
    "id": "chapsvision",
@@ -8123,12 +7616,7 @@ window.CASE = {
    "dir": "",
    "obj": [],
    "f": [],
-   "src": [
-    [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ]
-   ]
+   "src": []
   },
   {
    "id": "aiexports",
@@ -8154,16 +7642,8 @@ window.CASE = {
    "f": [],
    "src": [
     [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ],
-    [
      "ITA: American AI Exports Program",
      "https://www.trade.gov/press-release/commerce-statement-application-conclusion-next-steps-american-ai-exports-program"
-    ],
-    [
-     "EDGE: SOVEREIGN SI // FINANCIAL LAYER (Notion)",
-     "https://app.notion.com/p/40c709555ee2813bb795d6ecacf7a0a8"
     ]
    ],
    "strat": ""
@@ -8192,10 +7672,6 @@ window.CASE = {
    "f": [],
    "src": [
     [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ],
-    [
      "Taylor Wessing: Cloud and AI Development Act",
      "https://www.taylorwessing.com/en/insights-and-events/insights/2026/06/cloud-and-ai-development-act"
     ]
@@ -8216,12 +7692,7 @@ window.CASE = {
    "dir": "",
    "obj": [],
    "f": [],
-   "src": [
-    [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ]
-   ]
+   "src": []
   },
   {
    "id": "eugiga",
@@ -8259,10 +7730,6 @@ window.CASE = {
    "f": [],
    "src": [
     [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ],
-    [
      "EuroHPC: AI gigafactories call",
      "https://eurohpc-ju.europa.eu/eurohpc-joint-undertaking-launches-ai-gigafactories-call-2026-07-30_en"
     ]
@@ -8291,10 +7758,6 @@ window.CASE = {
    "obj": [],
    "f": [],
    "src": [
-    [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ],
     [
      "Miller & Chevalier: export controls mid-2026",
      "https://www.millerchevalier.com/publication/bis-export-controls-2025-year-review-and-2026-mid-year-update"
@@ -8361,16 +7824,8 @@ window.CASE = {
    "f": [],
    "src": [
     [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ],
-    [
      "Training Camp: CNSA 2.0 deadlines",
      "https://trainingcamp.com/articles/cnsa-2-0-and-january-1-2027-what-contractors-must-know/"
-    ],
-    [
-     "EDGE: SOVEREIGN SI // AGENTIC LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee2816fb1a9eacf02f74c5e"
     ]
    ],
    "strat": "Sets the clock for the cryptographic crunch; HORIZON argues blockchains and stablecoin rails must also move to post-quantum signatures or become harvest-now, decrypt-later targets."
@@ -8401,10 +7856,6 @@ window.CASE = {
    "f": [],
    "src": [
     [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ],
-    [
      "DroneXL: DAWG $54.6B",
      "https://dronexl.co/2026/04/21/pentagon-fy27-75-billion-drone-budget-dawg-largest-boost/"
     ]
@@ -8434,12 +7885,7 @@ window.CASE = {
    ],
    "obj": [],
    "f": [],
-   "src": [
-    [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ]
-   ]
+   "src": []
   },
   {
    "id": "ngc2",
@@ -8459,12 +7905,7 @@ window.CASE = {
    "dir": "",
    "obj": [],
    "f": [],
-   "src": [
-    [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ]
-   ]
+   "src": []
   },
   {
    "id": "busan",
@@ -8500,10 +7941,6 @@ window.CASE = {
    "f": [],
    "src": [
     [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ],
-    [
      "InvestingLive: US–China truce extended",
      "https://investinglive.com/news/us-and-china-extend-busan-trade-truce-to-january-10-as-xi-arrives-for-trump-summit/"
     ],
@@ -8534,10 +7971,6 @@ window.CASE = {
    "f": [],
    "src": [
     [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ],
-    [
      "Carra Globe: the 0.1% rule returns",
      "https://carraglobe.com/china-rare-earth-export-controls-2026/"
     ],
@@ -8564,10 +7997,6 @@ window.CASE = {
    "f": [],
    "src": [
     [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ],
-    [
      "Technology.org: What ends on November 10",
      "https://www.technology.org/2026/10/19/china-rare-earth-export-pause-november-10/"
     ]
@@ -8589,10 +8018,6 @@ window.CASE = {
    "obj": [],
    "f": [],
    "src": [
-    [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ],
     [
      "The Relay: America's HALEU reboot",
      "https://therelaymag.com/americas-haleu-reboot-russian-uranium-ban-2025-2028"
@@ -8620,10 +8045,6 @@ window.CASE = {
    "f": [],
    "src": [
     [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ],
-    [
      "Tech Times: CISA demands tested isolation plans (CI Fortify)",
      "https://www.techtimes.com/articles/321930/20260729/state-hackers-already-inside-cisa-demands-pre-built-infrastructure-isolation-plans.htm"
     ]
@@ -8644,12 +8065,7 @@ window.CASE = {
    "dir": "",
    "obj": [],
    "f": [],
-   "src": [
-    [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ]
-   ]
+   "src": []
   },
   {
    "id": "qbi",
@@ -8666,12 +8082,7 @@ window.CASE = {
    "dir": "",
    "obj": [],
    "f": [],
-   "src": [
-    [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ]
-   ]
+   "src": []
   },
   {
    "id": "ocp",
@@ -8696,10 +8107,6 @@ window.CASE = {
    ],
    "src": [
     [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ],
-    [
      "Quantum Computing Report: OCP standards for QPU integration",
      "https://quantumcomputingreport.com/open-compute-project-foundation-establishes-data-center-architecture-standards-for-multi-modal-qpu-infrastructure-integration/"
     ]
@@ -8720,12 +8127,7 @@ window.CASE = {
    "dir": "",
    "obj": [],
    "f": [],
-   "src": [
-    [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ]
-   ],
+   "src": [],
    "analysis": true
   },
   {
@@ -8743,12 +8145,7 @@ window.CASE = {
    "dir": "",
    "obj": [],
    "f": [],
-   "src": [
-    [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ]
-   ],
+   "src": [],
    "analysis": true
   },
   {
@@ -8794,10 +8191,6 @@ window.CASE = {
    ],
    "src": [
     [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ],
-    [
      "Archer: Anduril and Archer unveil autonomous VTOL platform",
      "https://investors.archer.com/news/news-details/2026/Anduril-and-Archer-Unveil-Jointly-Developed-Autonomous-VTOL-Platform-For-Commercial-and-Defense-Applications/default.aspx"
     ],
@@ -8832,10 +8225,6 @@ window.CASE = {
    "f": [],
    "src": [
     [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ],
-    [
      "Archer: Introducing Halo",
      "https://www.investors.archer.com/news/news-details/2026/Introducing-Halo-Archers-Commercial-Variant-of-Dual-Use-Autonomous-VTOL-Aircraft-Platform-Developed-With-Anduril/default.aspx"
     ]
@@ -8859,10 +8248,6 @@ window.CASE = {
    "obj": [],
    "f": [],
    "src": [
-    [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ],
     [
      "Marsh: Ticker change to MRSH",
      "https://www.corporate.marsh.com/news-events/2025/december/marsh-mclennan-to-change-nyse-symbol-to-mrsh.html"
@@ -8888,10 +8273,6 @@ window.CASE = {
    "f": [],
    "src": [
     [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ],
-    [
      "Semafor: Gulf war insurance cost up 1,900%",
      "https://www.semafor.com/article/04/01/2026/the-cost-of-war-insurance-in-the-gulf-has-risen-1900"
     ]
@@ -8914,12 +8295,7 @@ window.CASE = {
    "ex": "NASDAQ",
    "obj": [],
    "f": [],
-   "src": [
-    [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ]
-   ]
+   "src": []
   },
   {
    "id": "ryan",
@@ -8938,12 +8314,7 @@ window.CASE = {
    "ex": "NYSE",
    "obj": [],
    "f": [],
-   "src": [
-    [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ]
-   ]
+   "src": []
   },
   {
    "id": "ajg",
@@ -8963,10 +8334,6 @@ window.CASE = {
    "obj": [],
    "f": [],
    "src": [
-    [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ],
     [
      "Moneywise: Amazon's $150M uninsured Gulf data center loss",
      "https://moneywise.com/news/economy/amazon-data-centers-drone-strikes-iran-insurance-gap-consumer-costs"
@@ -8990,12 +8357,7 @@ window.CASE = {
    "ex": "NYSE",
    "obj": [],
    "f": [],
-   "src": [
-    [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ]
-   ]
+   "src": []
   },
   {
    "id": "beazley",
@@ -9014,12 +8376,7 @@ window.CASE = {
    "ex": "LSE",
    "obj": [],
    "f": [],
-   "src": [
-    [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ]
-   ]
+   "src": []
   },
   {
    "id": "hiscox",
@@ -9038,12 +8395,7 @@ window.CASE = {
    "ex": "LSE",
    "obj": [],
    "f": [],
-   "src": [
-    [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ]
-   ]
+   "src": []
   },
   {
    "id": "lancashire",
@@ -9062,12 +8414,7 @@ window.CASE = {
    "ex": "LSE",
    "obj": [],
    "f": [],
-   "src": [
-    [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ]
-   ]
+   "src": []
   },
   {
    "id": "howden",
@@ -9085,10 +8432,6 @@ window.CASE = {
    "obj": [],
    "f": [],
    "src": [
-    [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ],
     [
      "Howden Re: Strait of Hormuz report",
      "https://www.howdenre.com/sites/howdenre.howdenprod.com/files/2026-03/HowdenRe_Strait_of_Hormuz_report_March272026.pdf"
@@ -9115,10 +8458,6 @@ window.CASE = {
     "Direct broker positions give more concentrated exposure to the war-risk thesis than KIE"
    ],
    "src": [
-    [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ],
     [
      "State Street: KIE",
      "https://www.ssga.com/us/en/intermediary/etfs/state-street-spdr-sp-insurance-etf-kie"
@@ -9151,10 +8490,6 @@ window.CASE = {
    ],
    "src": [
     [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ],
-    [
      "CNBC: Trump administration equity portfolio",
      "https://www.cnbc.com/2026/02/07/trump-administration-equity-portfolio-grows-these-are-investments-so-far.html"
     ],
@@ -9183,10 +8518,6 @@ window.CASE = {
    "f": [],
    "src": [
     [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ],
-    [
      "OAG tracker: U.S. government equity stakes",
      "https://www.theoagseo.com/us-government-equity-stakes-tracker/"
     ]
@@ -9210,10 +8541,6 @@ window.CASE = {
    "obj": [],
    "f": [],
    "src": [
-    [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ],
     [
      "CNBC: Trump administration equity portfolio",
      "https://www.cnbc.com/2026/02/07/trump-administration-equity-portfolio-grows-these-are-investments-so-far.html"
@@ -9239,10 +8566,6 @@ window.CASE = {
    "f": [],
    "src": [
     [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ],
-    [
      "Fortune: Backlash risks for government-owned stocks",
      "https://fortune.com/2026/08/29/trump-backlash-risks-government-stocks-intel-mp-materials-trilogy-metals/"
     ]
@@ -9264,10 +8587,6 @@ window.CASE = {
    "obj": [],
    "f": [],
    "src": [
-    [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ],
     [
      "OAG tracker: U.S. government equity stakes",
      "https://www.theoagseo.com/us-government-equity-stakes-tracker/"
@@ -9291,10 +8610,6 @@ window.CASE = {
    "f": [],
    "src": [
     [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ],
-    [
      "OAG tracker: U.S. government equity stakes",
      "https://www.theoagseo.com/us-government-equity-stakes-tracker/"
     ]
@@ -9317,12 +8632,7 @@ window.CASE = {
    "ex": "NASDAQ",
    "obj": [],
    "f": [],
-   "src": [
-    [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ]
-   ]
+   "src": []
   },
   {
    "id": "lynas",
@@ -9342,10 +8652,6 @@ window.CASE = {
    "obj": [],
    "f": [],
    "src": [
-    [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ],
     [
      "Skillings Mining Review: Heavy rare earth separation",
      "https://www.skillings.net/rare-earth-export-controls/"
@@ -9369,12 +8675,7 @@ window.CASE = {
    "ex": "NYSE American",
    "obj": [],
    "f": [],
-   "src": [
-    [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ]
-   ]
+   "src": []
   },
   {
    "id": "nb",
@@ -9393,12 +8694,7 @@ window.CASE = {
    "ex": "NASDAQ",
    "obj": [],
    "f": [],
-   "src": [
-    [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ]
-   ]
+   "src": []
   },
   {
    "id": "metc",
@@ -9417,12 +8713,7 @@ window.CASE = {
    "ex": "NASDAQ",
    "obj": [],
    "f": [],
-   "src": [
-    [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ]
-   ]
+   "src": []
   },
   {
    "id": "centrus",
@@ -9462,10 +8753,6 @@ window.CASE = {
    "f": [],
    "src": [
     [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ],
-    [
      "NucNet: Centrus $900M HALEU contract",
      "https://www.nucnet.org/news/centrus-finalises-usd900-million-haleu-enrichment-contract-with-us-doe-7-5-2026"
     ],
@@ -9494,12 +8781,7 @@ window.CASE = {
    "ex": "NYSE",
    "obj": [],
    "f": [],
-   "src": [
-    [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ]
-   ]
+   "src": []
   },
   {
    "id": "uec",
@@ -9520,12 +8802,7 @@ window.CASE = {
    "ex": "NYSE American",
    "obj": [],
    "f": [],
-   "src": [
-    [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ]
-   ]
+   "src": []
   },
   {
    "id": "generalmatter",
@@ -9544,12 +8821,7 @@ window.CASE = {
    "dir": "",
    "obj": [],
    "f": [],
-   "src": [
-    [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ]
-   ],
+   "src": [],
    "analysis": true
   },
   {
@@ -9568,10 +8840,6 @@ window.CASE = {
    "obj": [],
    "f": [],
    "src": [
-    [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ],
     [
      "World Nuclear Association: HALEU",
      "https://world-nuclear.org/information-library/nuclear-fuel-cycle/conversion-enrichment-and-fabrication/high-assay-low-enriched-uranium-haleu"
@@ -9624,10 +8892,6 @@ window.CASE = {
    ],
    "src": [
     [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ],
-    [
      "Z Cyber: Volt Typhoon and the U.S. grid",
      "https://www.ztekcyber.com/resources/volt-typhoon-us-grid-living-off-the-land"
     ],
@@ -9672,12 +8936,7 @@ window.CASE = {
    "dir": "",
    "obj": [],
    "f": [],
-   "src": [
-    [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ]
-   ]
+   "src": []
   },
   {
    "id": "cisa",
@@ -9695,10 +8954,6 @@ window.CASE = {
    "obj": [],
    "f": [],
    "src": [
-    [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ],
     [
      "Tech Times: CISA demands tested isolation plans (CI Fortify)",
      "https://www.techtimes.com/articles/321930/20260729/state-hackers-already-inside-cisa-demands-pre-built-infrastructure-isolation-plans.htm"
@@ -9725,14 +8980,6 @@ window.CASE = {
    "obj": [],
    "f": [],
    "src": [
-    [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ],
-    [
-     "EDGE: SOVEREIGN SI // TETHER LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee281eda4b7d4b17be9dcc9"
-    ],
     [
      "BleepingComputer: FBI attribution",
      "https://www.bleepingcomputer.com/news/security/fbi-links-63-billion-binance-crypto-heist-to-north-korean-hackers/"
@@ -9767,14 +9014,6 @@ window.CASE = {
     "~800 miles from Guam; U.S. radar and missile-defense presence; recognizes Taiwan"
    ],
    "src": [
-    [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ],
-    [
-     "EDGE: SOVEREIGN SI // AGENTIC LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee2816fb1a9eacf02f74c5e"
-    ],
     [
      "RNS.ID: Palau Digital Residency",
      "https://rns.id/"
@@ -9812,12 +9051,7 @@ window.CASE = {
    "ex": "NASDAQ",
    "obj": [],
    "f": [],
-   "src": [
-    [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ]
-   ]
+   "src": []
   },
   {
    "id": "crwd",
@@ -9836,12 +9070,7 @@ window.CASE = {
    "ex": "NASDAQ",
    "obj": [],
    "f": [],
-   "src": [
-    [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ]
-   ]
+   "src": []
   },
   {
    "id": "ftnt",
@@ -9860,12 +9089,7 @@ window.CASE = {
    "ex": "NASDAQ",
    "obj": [],
    "f": [],
-   "src": [
-    [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ]
-   ]
+   "src": []
   },
   {
    "id": "zs",
@@ -9884,12 +9108,7 @@ window.CASE = {
    "ex": "NASDAQ",
    "obj": [],
    "f": [],
-   "src": [
-    [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ]
-   ]
+   "src": []
   },
   {
    "id": "dragos",
@@ -9906,12 +9125,7 @@ window.CASE = {
    "dir": "",
    "obj": [],
    "f": [],
-   "src": [
-    [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ]
-   ]
+   "src": []
   },
   {
    "id": "claroty",
@@ -9928,12 +9142,7 @@ window.CASE = {
    "dir": "",
    "obj": [],
    "f": [],
-   "src": [
-    [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ]
-   ]
+   "src": []
   },
   {
    "id": "worldlib",
@@ -9955,14 +9164,6 @@ window.CASE = {
     "USD1 >$4B circulation by late Aug 2026"
    ],
    "src": [
-    [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ],
-    [
-     "EDGE: SOVEREIGN SI // FINANCIAL LAYER (Notion)",
-     "https://app.notion.com/p/40c709555ee2813bb795d6ecacf7a0a8"
-    ],
     [
      "TechFlow: WSJ report on UAE royal investment in WLFI",
      "https://www.techflowpost.com/en-US/article/30201"
@@ -10024,10 +9225,6 @@ window.CASE = {
    ],
    "src": [
     [
-     "EDGE: SOVEREIGN SI // FINANCIAL LAYER (Notion)",
-     "https://app.notion.com/p/40c709555ee2813bb795d6ecacf7a0a8"
-    ],
-    [
      "OCC Corporate Decision #1385",
      "https://www.occ.gov/topics/charters-and-licensing/interpretations-and-decisions/2026/cd1385.pdf"
     ],
@@ -10059,10 +9256,6 @@ window.CASE = {
    ],
    "src": [
     [
-     "EDGE: SOVEREIGN SI // FINANCIAL LAYER (Notion)",
-     "https://app.notion.com/p/40c709555ee2813bb795d6ecacf7a0a8"
-    ],
-    [
      "Forbes: The UAE investment in World Liberty Financial",
      "https://www.forbes.com/sites/kylemullins/2026/02/02/why-the-trump-uae-crypto-deal-made-no-financial-sense-for-the-emiratis/"
     ],
@@ -10091,10 +9284,6 @@ window.CASE = {
     "Source of the MGX/USD1/Binance announcement (page cites 'Zach Witkoff announcement')"
    ],
    "src": [
-    [
-     "EDGE: SOVEREIGN SI // FINANCIAL LAYER (Notion)",
-     "https://app.notion.com/p/40c709555ee2813bb795d6ecacf7a0a8"
-    ],
     [
      "Center for American Progress: the $500M UAE crypto deal",
      "https://www.americanprogress.org/article/how-trumps-500-million-uae-crypto-deal-trades-u-s-national-security-for-family-profit/"
@@ -10131,10 +9320,6 @@ window.CASE = {
    ],
    "src": [
     [
-     "EDGE: SOVEREIGN SI // FINANCIAL LAYER (Notion)",
-     "https://app.notion.com/p/40c709555ee2813bb795d6ecacf7a0a8"
-    ],
-    [
      "CNN: Board of Peace explainer",
      "https://www.cnn.com/2026/01/22/world/trump-board-of-peace-explainer-intl-hnk"
     ],
@@ -10165,10 +9350,6 @@ window.CASE = {
    ],
    "src": [
     [
-     "EDGE: SOVEREIGN SI // FINANCIAL LAYER (Notion)",
-     "https://app.notion.com/p/40c709555ee2813bb795d6ecacf7a0a8"
-    ],
-    [
      "CoinDesk: Senate probe of Cantor-Tether ties",
      "https://www.coindesk.com/policy/2026/10/08/top-democrat-among-senate-investigators-probes-ties-between-cantor-fitzgerald-tether"
     ]
@@ -10193,10 +9374,6 @@ window.CASE = {
     "Reportedly oversees USD1 inside World Liberty (WSJ via TechFlow)"
    ],
    "src": [
-    [
-     "EDGE: SOVEREIGN SI // FINANCIAL LAYER (Notion)",
-     "https://app.notion.com/p/40c709555ee2813bb795d6ecacf7a0a8"
-    ],
     [
      "TechFlow: WSJ report on UAE royal investment in WLFI",
      "https://www.techflowpost.com/en-US/article/30201"
@@ -10223,10 +9400,6 @@ window.CASE = {
     "StringZ signatory in OCC filing"
    ],
    "src": [
-    [
-     "EDGE: SOVEREIGN SI // FINANCIAL LAYER (Notion)",
-     "https://app.notion.com/p/40c709555ee2813bb795d6ecacf7a0a8"
-    ],
     [
      "OCC Corporate Decision #1385",
      "https://www.occ.gov/topics/charters-and-licensing/interpretations-and-decisions/2026/cd1385.pdf"
@@ -10257,10 +9430,6 @@ window.CASE = {
     "AMGUS LLC signatory 'Folkman', likely Zach Folkman [VERIFY]"
    ],
    "src": [
-    [
-     "EDGE: SOVEREIGN SI // FINANCIAL LAYER (Notion)",
-     "https://app.notion.com/p/40c709555ee2813bb795d6ecacf7a0a8"
-    ],
     [
      "WL Fireside: AMGUS and Folkman",
      "https://wlfireside.substack.com/p/occ-trump-world-liberty-bank-uae-investor"
@@ -10293,10 +9462,6 @@ window.CASE = {
    ],
    "src": [
     [
-     "EDGE: SOVEREIGN SI // FINANCIAL LAYER (Notion)",
-     "https://app.notion.com/p/40c709555ee2813bb795d6ecacf7a0a8"
-    ],
-    [
      "Cointelegraph: OCC approves World Liberty trust charter",
      "https://cointelegraph.com/news/occ-donald-trump-world-liberty-financial-trust-charter"
     ]
@@ -10321,10 +9486,6 @@ window.CASE = {
     "Said the exploit used EIP-7702 account delegation; Binance initially pointed to a compromised engineer's laptop"
    ],
    "src": [
-    [
-     "EDGE: SOVEREIGN SI // TETHER LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee281eda4b7d4b17be9dcc9"
-    ],
     [
      "TRM Labs: North Korea steals $6.36B from Binance",
      "https://www.trmlabs.com/resources/blog/north-korea-steals-usd-6-36-billion-from-binance-in-the-largest-hack-in-history"
@@ -10355,10 +9516,6 @@ window.CASE = {
     "Copied as Assistant to the President for National Security Affairs on Ossoff's June 24, 2026 synthesis-screening letter"
    ],
    "src": [
-    [
-     "EDGE: SOVEREIGN SI // FINANCIAL LAYER (Notion)",
-     "https://app.notion.com/p/40c709555ee2813bb795d6ecacf7a0a8"
-    ],
     [
      "CNN: Board of Peace explainer",
      "https://www.cnn.com/2026/01/22/world/trump-board-of-peace-explainer-intl-hnk"
@@ -10391,10 +9548,6 @@ window.CASE = {
    ],
    "src": [
     [
-     "EDGE: SOVEREIGN SI // FINANCIAL LAYER (Notion)",
-     "https://app.notion.com/p/40c709555ee2813bb795d6ecacf7a0a8"
-    ],
-    [
      "CNN: Board of Peace explainer",
      "https://www.cnn.com/2026/01/22/world/trump-board-of-peace-explainer-intl-hnk"
     ]
@@ -10423,10 +9576,6 @@ window.CASE = {
     "Cross-reference on page: FINANCIAL LAYER, Section 04A"
    ],
    "src": [
-    [
-     "EDGE: SOVEREIGN SI // FINANCIAL LAYER (Notion)",
-     "https://app.notion.com/p/40c709555ee2813bb795d6ecacf7a0a8"
-    ],
     [
      "Daily Political: Rowan on energy, chips and data centers",
      "https://www.dailypolitical.com/2026/09/23/apollo-global-management-sees-ai-private-credit-and-retirement-driving-growth.html"
@@ -10466,10 +9615,6 @@ window.CASE = {
    ],
    "src": [
     [
-     "EDGE: SOVEREIGN SI // FINANCIAL LAYER (Notion)",
-     "https://app.notion.com/p/40c709555ee2813bb795d6ecacf7a0a8"
-    ],
-    [
      "CNN: Board of Peace explainer",
      "https://www.cnn.com/2026/01/22/world/trump-board-of-peace-explainer-intl-hnk"
     ]
@@ -10494,10 +9639,6 @@ window.CASE = {
     "Founding Executive Board member, Board of Peace"
    ],
    "src": [
-    [
-     "EDGE: SOVEREIGN SI // FINANCIAL LAYER (Notion)",
-     "https://app.notion.com/p/40c709555ee2813bb795d6ecacf7a0a8"
-    ],
     [
      "CNN: Board of Peace explainer",
      "https://www.cnn.com/2026/01/22/world/trump-board-of-peace-explainer-intl-hnk"
@@ -10525,14 +9666,6 @@ window.CASE = {
    ],
    "src": [
     [
-     "EDGE: SOVEREIGN SI // FINANCIAL LAYER (Notion)",
-     "https://app.notion.com/p/40c709555ee2813bb795d6ecacf7a0a8"
-    ],
-    [
-     "EDGE: SOVEREIGN SI // TETHER LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee281eda4b7d4b17be9dcc9"
-    ],
-    [
      "Decrypt: Erebor charter and stablecoin wars",
      "https://decrypt.co/344456/trump-allied-erebor-gains-federal-charter-crypto-bank-stablecoin-wars"
     ]
@@ -10557,10 +9690,6 @@ window.CASE = {
     "Letter to Brandon Lutnick, Oct 8, 2026"
    ],
    "src": [
-    [
-     "EDGE: SOVEREIGN SI // FINANCIAL LAYER (Notion)",
-     "https://app.notion.com/p/40c709555ee2813bb795d6ecacf7a0a8"
-    ],
     [
      "CoinDesk: Senate probe of Cantor-Tether ties",
      "https://www.coindesk.com/policy/2026/10/08/top-democrat-among-senate-investigators-probes-ties-between-cantor-fitzgerald-tether"
@@ -10587,10 +9716,6 @@ window.CASE = {
    ],
    "src": [
     [
-     "EDGE: SOVEREIGN SI // FINANCIAL LAYER (Notion)",
-     "https://app.notion.com/p/40c709555ee2813bb795d6ecacf7a0a8"
-    ],
-    [
      "Senate Banking: letter to OCC on Erebor",
      "https://www.banking.senate.gov/imo/media/doc/2026.02.25%20Letter%20to%20OCC%20re%20Erebor%20Approval.pdf"
     ]
@@ -10616,10 +9741,6 @@ window.CASE = {
     "Erebor founder and backer"
    ],
    "src": [
-    [
-     "EDGE: SOVEREIGN SI // FINANCIAL LAYER (Notion)",
-     "https://app.notion.com/p/40c709555ee2813bb795d6ecacf7a0a8"
-    ],
     [
      "Banking Dive: Erebor charter",
      "https://www.bankingdive.com/news/erebor-bank-receives-national-bank-charter/811724/"
@@ -10651,10 +9772,6 @@ window.CASE = {
     "Erebor founder and backer"
    ],
    "src": [
-    [
-     "EDGE: SOVEREIGN SI // FINANCIAL LAYER (Notion)",
-     "https://app.notion.com/p/40c709555ee2813bb795d6ecacf7a0a8"
-    ],
     [
      "Banking Dive: Erebor charter",
      "https://www.bankingdive.com/news/erebor-bank-receives-national-bank-charter/811724/"
@@ -10692,14 +9809,6 @@ window.CASE = {
     "[ANALYSIS] Thiel-network people took OSTP, HHS and the vice presidency (2025)"
    ],
    "src": [
-    [
-     "EDGE: SOVEREIGN SI // FINANCIAL LAYER (Notion)",
-     "https://app.notion.com/p/40c709555ee2813bb795d6ecacf7a0a8"
-    ],
-    [
-     "EDGE: SOVEREIGN SI // TETHER LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee281eda4b7d4b17be9dcc9"
-    ],
     [
      "Ledger Insights: SBI $100M",
      "https://www.ledgerinsights.com/sbi-invests-100m-in-erebor-the-thiel-backed-stablecoin-bank/"
@@ -10743,10 +9852,6 @@ window.CASE = {
     [
      "PayPal co-founder Peter Thiel invests $3.5M to stop aging (VentureBeat, 2006-09-19)",
      "https://venturebeat.com/ai/paypal-co-founder-peter-thiel-invests-35m-to-stop-aging"
-    ],
-    [
-     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
     ]
    ],
    "strat": "Stated reasons: taxation, the threat of nuclear war, and runaway AI. [ANALYSIS] The page adds hypotheses to test: Southern Hemisphere distance from a Northern Hemisphere nuclear exchange, Milei's deregulation, lithium, Argentina's nuclear sector and Antarctic access.",
@@ -10807,10 +9912,6 @@ window.CASE = {
    ],
    "src": [
     [
-     "EDGE: SOVEREIGN SI // TETHER LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee281eda4b7d4b17be9dcc9"
-    ],
-    [
      "Fortune: Golden Dome SBI awards",
      "https://www.fortune.com/2026/04/25/spacex-anduril-lockheed-raytheon-northrop-golden-dome-interceptor-contracts/"
     ],
@@ -10821,10 +9922,6 @@ window.CASE = {
     [
      "Medicaid Fraud War Room fast facts (CMS)",
      "https://www.cms.gov/files/document/medicaid-fraud-war-room-fast-facts.pdf"
-    ],
-    [
-     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
     ]
    ],
    "plan": [],
@@ -10850,10 +9947,6 @@ window.CASE = {
    ],
    "src": [
     [
-     "EDGE: SOVEREIGN SI // FINANCIAL LAYER (Notion)",
-     "https://app.notion.com/p/40c709555ee2813bb795d6ecacf7a0a8"
-    ],
-    [
      "Apollo: Valor and xAI $3.5B capital solution",
      "https://www.apollo.com/insights-news/pressreleases/2026/01/apollo-backs-5-4-billion-valor-and-xai-data-center-compute-infrastructure-transaction-with-3-5-billion-capital-solution-3214463"
     ]
@@ -10878,10 +9971,6 @@ window.CASE = {
     "Forbes, Oct 27, 2026"
    ],
    "src": [
-    [
-     "EDGE: SOVEREIGN SI // FINANCIAL LAYER (Notion)",
-     "https://app.notion.com/p/40c709555ee2813bb795d6ecacf7a0a8"
-    ],
     [
      "Forbes: Apollo's chief economist and AI financing",
      "https://www.forbes.com/sites/johnhyatt/2026/10/27/apollos-chief-economist-doubts-ais-productivity-gains-and-accountability-as-pe-firms-rush-to-finance-it/"
@@ -10911,10 +10000,6 @@ window.CASE = {
     "Said a personalized mRNA cancer vaccine could be made 'robotically, again using AI, in about 48 hours' (2025-01-21)."
    ],
    "src": [
-    [
-     "EDGE: SOVEREIGN SI // FINANCIAL LAYER (Notion)",
-     "https://app.notion.com/p/40c709555ee2813bb795d6ecacf7a0a8"
-    ],
     [
      "Ellison on healthcare data fragmentation (Healthcare IT News)",
      "https://healthcareitnews.com/node/551281"
@@ -10953,12 +10038,7 @@ window.CASE = {
    "f": [
     "Speech: 'A Global Stablecoin Glut' (first name not on page)"
    ],
-   "src": [
-    [
-     "EDGE: SOVEREIGN SI // TETHER LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee281eda4b7d4b17be9dcc9"
-    ]
-   ]
+   "src": []
   },
   {
    "id": "ardoino",
@@ -11032,10 +10112,6 @@ window.CASE = {
    ],
    "src": [
     [
-     "EDGE: SOVEREIGN SI // AGENTIC LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee2816fb1a9eacf02f74c5e"
-    ],
-    [
      "Senate Finance: Wyden and Ocasio-Cortez letter",
      "https://www.finance.senate.gov/ranking-members-news/wyden-ocasio-cortez-demand-answers-from-palantir-about-plans-to-build-irs-mega-database-of-american-citizens"
     ]
@@ -11061,10 +10137,6 @@ window.CASE = {
     "OCC charter lets World Liberty Trust issue, redeem and safeguard USD1"
    ],
    "src": [
-    [
-     "EDGE: SOVEREIGN SI // FINANCIAL LAYER (Notion)",
-     "https://app.notion.com/p/40c709555ee2813bb795d6ecacf7a0a8"
-    ],
     [
      "NextFin: World Liberty bank charter and USD1 circulation",
      "https://www.nextfin.ai/en/news/trump-s-crypto-empire-wins-a-bank-charter-as-a-uae-royal-s-stake-fuels-a-conflict-of-interest-storm-cef5ee29b8"
@@ -11095,10 +10167,6 @@ window.CASE = {
     "Preliminary conditional approval"
    ],
    "src": [
-    [
-     "EDGE: SOVEREIGN SI // FINANCIAL LAYER (Notion)",
-     "https://app.notion.com/p/40c709555ee2813bb795d6ecacf7a0a8"
-    ],
     [
      "OCC Corporate Decision #1385",
      "https://www.occ.gov/topics/charters-and-licensing/interpretations-and-decisions/2026/cd1385.pdf"
@@ -11136,10 +10204,6 @@ window.CASE = {
    ],
    "src": [
     [
-     "EDGE: SOVEREIGN SI // FINANCIAL LAYER (Notion)",
-     "https://app.notion.com/p/40c709555ee2813bb795d6ecacf7a0a8"
-    ],
-    [
      "OCC Corporate Decision #1385",
      "https://www.occ.gov/topics/charters-and-licensing/interpretations-and-decisions/2026/cd1385.pdf"
     ],
@@ -11170,10 +10234,6 @@ window.CASE = {
     "Ultimate beneficial owner unproven"
    ],
    "src": [
-    [
-     "EDGE: SOVEREIGN SI // FINANCIAL LAYER (Notion)",
-     "https://app.notion.com/p/40c709555ee2813bb795d6ecacf7a0a8"
-    ],
     [
      "OCC Corporate Decision #1385",
      "https://www.occ.gov/topics/charters-and-licensing/interpretations-and-decisions/2026/cd1385.pdf"
@@ -11209,10 +10269,6 @@ window.CASE = {
    "f": [],
    "src": [
     [
-     "EDGE: SOVEREIGN SI // FINANCIAL LAYER (Notion)",
-     "https://app.notion.com/p/40c709555ee2813bb795d6ecacf7a0a8"
-    ],
-    [
      "OCC Corporate Decision #1385",
      "https://www.occ.gov/topics/charters-and-licensing/interpretations-and-decisions/2026/cd1385.pdf"
     ],
@@ -11238,10 +10294,6 @@ window.CASE = {
    "obj": [],
    "f": [],
    "src": [
-    [
-     "EDGE: SOVEREIGN SI // FINANCIAL LAYER (Notion)",
-     "https://app.notion.com/p/40c709555ee2813bb795d6ecacf7a0a8"
-    ],
     [
      "WL Fireside: AMGUS and Folkman",
      "https://wlfireside.substack.com/p/occ-trump-world-liberty-bank-uae-investor"
@@ -11269,10 +10321,6 @@ window.CASE = {
    "obj": [],
    "f": [],
    "src": [
-    [
-     "EDGE: SOVEREIGN SI // FINANCIAL LAYER (Notion)",
-     "https://app.notion.com/p/40c709555ee2813bb795d6ecacf7a0a8"
-    ],
     [
      "TechFlow: WSJ report on UAE royal investment in WLFI",
      "https://www.techflowpost.com/en-US/article/30201"
@@ -11315,10 +10363,6 @@ window.CASE = {
    ],
    "src": [
     [
-     "EDGE: SOVEREIGN SI // FINANCIAL LAYER (Notion)",
-     "https://app.notion.com/p/40c709555ee2813bb795d6ecacf7a0a8"
-    ],
-    [
      "Center for American Progress: the $500M UAE crypto deal",
      "https://www.americanprogress.org/article/how-trumps-500-million-uae-crypto-deal-trades-u-s-national-security-for-family-profit/"
     ],
@@ -11343,12 +10387,7 @@ window.CASE = {
    "dir": "",
    "obj": [],
    "f": [],
-   "src": [
-    [
-     "EDGE: SOVEREIGN SI // FINANCIAL LAYER (Notion)",
-     "https://app.notion.com/p/40c709555ee2813bb795d6ecacf7a0a8"
-    ]
-   ]
+   "src": []
   },
   {
    "id": "binance",
@@ -11387,14 +10426,6 @@ window.CASE = {
    ],
    "src": [
     [
-     "EDGE: SOVEREIGN SI // FINANCIAL LAYER (Notion)",
-     "https://app.notion.com/p/40c709555ee2813bb795d6ecacf7a0a8"
-    ],
-    [
-     "EDGE: SOVEREIGN SI // TETHER LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee281eda4b7d4b17be9dcc9"
-    ],
-    [
      "TRM Labs: North Korea steals $6.36B from Binance",
      "https://www.trmlabs.com/resources/blog/north-korea-steals-usd-6-36-billion-from-binance-in-the-largest-hack-in-history"
     ]
@@ -11419,10 +10450,6 @@ window.CASE = {
     "WLTC Corporate Decision #1385, Aug 2026"
    ],
    "src": [
-    [
-     "EDGE: SOVEREIGN SI // FINANCIAL LAYER (Notion)",
-     "https://app.notion.com/p/40c709555ee2813bb795d6ecacf7a0a8"
-    ],
     [
      "OCC Corporate Decision #1385",
      "https://www.occ.gov/topics/charters-and-licensing/interpretations-and-decisions/2026/cd1385.pdf"
@@ -11511,14 +10538,6 @@ window.CASE = {
    ],
    "src": [
     [
-     "EDGE: SOVEREIGN SI // FINANCIAL LAYER (Notion)",
-     "https://app.notion.com/p/40c709555ee2813bb795d6ecacf7a0a8"
-    ],
-    [
-     "EDGE: SOVEREIGN SI // TETHER LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee281eda4b7d4b17be9dcc9"
-    ],
-    [
      "Fortune: Tether $187B in assets, U.S. expansion",
      "https://fortune.com/article/tether-ceo-paolo-ardoino-crypto-firm-stabelcoins-howard-lutnick-usdt-cantor-fitzgerald/"
     ],
@@ -11549,10 +10568,6 @@ window.CASE = {
     [
      "Cointelegraph: Blumenthal and Cantor's Tether stake",
      "https://cointelegraph.com/news/cantor-fitzgerald-faces-senate-democrats-probe-over-tether-ties"
-    ],
-    [
-     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
     ]
    ]
   },
@@ -11574,12 +10589,7 @@ window.CASE = {
     "Adoption surged during crises in Argentina, Turkey, Nigeria and Lebanon",
     "Met billions in redemptions within weeks in 2022 and held its peg"
    ],
-   "src": [
-    [
-     "EDGE: SOVEREIGN SI // TETHER LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee281eda4b7d4b17be9dcc9"
-    ]
-   ]
+   "src": []
   },
   {
    "id": "usat",
@@ -11597,14 +10607,6 @@ window.CASE = {
    "obj": [],
    "f": [],
    "src": [
-    [
-     "EDGE: SOVEREIGN SI // FINANCIAL LAYER (Notion)",
-     "https://app.notion.com/p/40c709555ee2813bb795d6ecacf7a0a8"
-    ],
-    [
-     "EDGE: SOVEREIGN SI // TETHER LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee281eda4b7d4b17be9dcc9"
-    ],
     [
      "Decrypt: Erebor charter and stablecoin wars",
      "https://decrypt.co/344456/trump-allied-erebor-gains-federal-charter-crypto-bank-stablecoin-wars"
@@ -11648,14 +10650,6 @@ window.CASE = {
    ],
    "src": [
     [
-     "EDGE: SOVEREIGN SI // FINANCIAL LAYER (Notion)",
-     "https://app.notion.com/p/40c709555ee2813bb795d6ecacf7a0a8"
-    ],
-    [
-     "EDGE: SOVEREIGN SI // TETHER LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee281eda4b7d4b17be9dcc9"
-    ],
-    [
      "CoinDesk: Senate probe of Cantor-Tether ties",
      "https://www.coindesk.com/policy/2026/10/08/top-democrat-among-senate-investigators-probes-ties-between-cantor-fitzgerald-tether"
     ],
@@ -11691,10 +10685,6 @@ window.CASE = {
    "f": [],
    "src": [
     [
-     "EDGE: SOVEREIGN SI // TETHER LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee281eda4b7d4b17be9dcc9"
-    ],
-    [
      "Decrypt: Erebor charter and stablecoin wars",
      "https://decrypt.co/344456/trump-allied-erebor-gains-federal-charter-crypto-bank-stablecoin-wars"
     ]
@@ -11721,10 +10711,6 @@ window.CASE = {
     "Bitcoin mining unit being sold in a Tether-linked acquisition [VERIFY status]"
    ],
    "src": [
-    [
-     "EDGE: SOVEREIGN SI // TETHER LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee281eda4b7d4b17be9dcc9"
-    ],
     [
      "CoinDesk: Rumble to acquire Northern Data",
      "https://www.coindesk.com/markets/2025/11/10/rumble-shares-soar-on-tether-partnerships-planned-northern-data-acquisition"
@@ -11765,10 +10751,6 @@ window.CASE = {
    ],
    "src": [
     [
-     "EDGE: SOVEREIGN SI // TETHER LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee281eda4b7d4b17be9dcc9"
-    ],
-    [
      "CoinDesk: Rumble to acquire Northern Data",
      "https://www.coindesk.com/markets/2025/11/10/rumble-shares-soar-on-tether-partnerships-planned-northern-data-acquisition"
     ],
@@ -11805,10 +10787,6 @@ window.CASE = {
     "Sits on a Cantor–Mnuchin–Tether–SoftBank loop"
    ],
    "src": [
-    [
-     "EDGE: SOVEREIGN SI // TETHER LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee281eda4b7d4b17be9dcc9"
-    ],
     [
      "Satellogic: completes business combination with CF Acquisition Corp. V",
      "https://investors.satellogic.com/news-releases/news-release-details/satellogic-completes-business-combination-cf-acquisition-corp-v"
@@ -11911,12 +10889,7 @@ window.CASE = {
    "dir": "",
    "obj": [],
    "f": [],
-   "src": [
-    [
-     "EDGE: SOVEREIGN SI // TETHER LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee281eda4b7d4b17be9dcc9"
-    ]
-   ],
+   "src": [],
    "plan": []
   },
   {
@@ -11996,10 +10969,6 @@ window.CASE = {
    ],
    "src": [
     [
-     "EDGE: SOVEREIGN SI // FINANCIAL LAYER (Notion)",
-     "https://app.notion.com/p/40c709555ee2813bb795d6ecacf7a0a8"
-    ],
-    [
      "Senate Banking: letter to OCC on Erebor",
      "https://www.banking.senate.gov/imo/media/doc/2026.02.25%20Letter%20to%20OCC%20re%20Erebor%20Approval.pdf"
     ],
@@ -12054,10 +11023,6 @@ window.CASE = {
    "f": [],
    "src": [
     [
-     "EDGE: SOVEREIGN SI // FINANCIAL LAYER (Notion)",
-     "https://app.notion.com/p/40c709555ee2813bb795d6ecacf7a0a8"
-    ],
-    [
      "Ledger Insights: SBI $100M",
      "https://www.ledgerinsights.com/sbi-invests-100m-in-erebor-the-thiel-backed-stablecoin-bank/"
     ],
@@ -12082,12 +11047,7 @@ window.CASE = {
    "dir": "",
    "obj": [],
    "f": [],
-   "src": [
-    [
-     "EDGE: SOVEREIGN SI // FINANCIAL LAYER (Notion)",
-     "https://app.notion.com/p/40c709555ee2813bb795d6ecacf7a0a8"
-    ]
-   ]
+   "src": []
   },
   {
    "id": "circle",
@@ -12104,16 +11064,7 @@ window.CASE = {
    "dir": "",
    "obj": [],
    "f": [],
-   "src": [
-    [
-     "EDGE: SOVEREIGN SI // FINANCIAL LAYER (Notion)",
-     "https://app.notion.com/p/40c709555ee2813bb795d6ecacf7a0a8"
-    ],
-    [
-     "EDGE: SOVEREIGN SI // TETHER LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee281eda4b7d4b17be9dcc9"
-    ]
-   ]
+   "src": []
   },
   {
    "id": "usdc",
@@ -12130,16 +11081,7 @@ window.CASE = {
    "dir": "",
    "obj": [],
    "f": [],
-   "src": [
-    [
-     "EDGE: SOVEREIGN SI // TETHER LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee281eda4b7d4b17be9dcc9"
-    ],
-    [
-     "EDGE: SOVEREIGN SI // AGENTIC LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee2816fb1a9eacf02f74c5e"
-    ]
-   ]
+   "src": []
   },
   {
    "id": "ripple",
@@ -12156,16 +11098,7 @@ window.CASE = {
    "dir": "",
    "obj": [],
    "f": [],
-   "src": [
-    [
-     "EDGE: SOVEREIGN SI // FINANCIAL LAYER (Notion)",
-     "https://app.notion.com/p/40c709555ee2813bb795d6ecacf7a0a8"
-    ],
-    [
-     "EDGE: SOVEREIGN SI // AGENTIC LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee2816fb1a9eacf02f74c5e"
-    ]
-   ]
+   "src": []
   },
   {
    "id": "jpysc",
@@ -12182,12 +11115,7 @@ window.CASE = {
    "dir": "",
    "obj": [],
    "f": [],
-   "src": [
-    [
-     "EDGE: SOVEREIGN SI // FINANCIAL LAYER (Notion)",
-     "https://app.notion.com/p/40c709555ee2813bb795d6ecacf7a0a8"
-    ]
-   ]
+   "src": []
   },
   {
    "id": "crossriver",
@@ -12204,12 +11132,7 @@ window.CASE = {
    "dir": "",
    "obj": [],
    "f": [],
-   "src": [
-    [
-     "EDGE: SOVEREIGN SI // FINANCIAL LAYER (Notion)",
-     "https://app.notion.com/p/40c709555ee2813bb795d6ecacf7a0a8"
-    ]
-   ]
+   "src": []
   },
   {
    "id": "svb",
@@ -12226,12 +11149,7 @@ window.CASE = {
    "dir": "",
    "obj": [],
    "f": [],
-   "src": [
-    [
-     "EDGE: SOVEREIGN SI // FINANCIAL LAYER (Notion)",
-     "https://app.notion.com/p/40c709555ee2813bb795d6ecacf7a0a8"
-    ]
-   ]
+   "src": []
   },
   {
    "id": "eightvc",
@@ -12248,12 +11166,7 @@ window.CASE = {
    "dir": "",
    "obj": [],
    "f": [],
-   "src": [
-    [
-     "EDGE: SOVEREIGN SI // FINANCIAL LAYER (Notion)",
-     "https://app.notion.com/p/40c709555ee2813bb795d6ecacf7a0a8"
-    ]
-   ]
+   "src": []
   },
   {
    "id": "genius",
@@ -12273,16 +11186,7 @@ window.CASE = {
     "USDT sits outside GENIUS rules",
     "Every token issued is effectively a purchase of U.S. debt (page comparison table)"
    ],
-   "src": [
-    [
-     "EDGE: SOVEREIGN SI // FINANCIAL LAYER (Notion)",
-     "https://app.notion.com/p/40c709555ee2813bb795d6ecacf7a0a8"
-    ],
-    [
-     "EDGE: SOVEREIGN SI // TETHER LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee281eda4b7d4b17be9dcc9"
-    ]
-   ]
+   "src": []
   },
   {
    "id": "hsgacrpt",
@@ -12300,10 +11204,6 @@ window.CASE = {
    "obj": [],
    "f": [],
    "src": [
-    [
-     "EDGE: SOVEREIGN SI // FINANCIAL LAYER (Notion)",
-     "https://app.notion.com/p/40c709555ee2813bb795d6ecacf7a0a8"
-    ],
     [
      "Senate HSGAC: Tethered to Terrorism",
      "https://www.hsgac.senate.gov/wp-content/uploads/2026-09-28-Crypto-and-Irans-Shadow-Banking-Network.pdf"
@@ -12348,10 +11248,6 @@ window.CASE = {
    ],
    "src": [
     [
-     "EDGE: SOVEREIGN SI // FINANCIAL LAYER (Notion)",
-     "https://app.notion.com/p/40c709555ee2813bb795d6ecacf7a0a8"
-    ],
-    [
      "CNN: Board of Peace explainer",
      "https://www.cnn.com/2026/01/22/world/trump-board-of-peace-explainer-intl-hnk"
     ],
@@ -12392,12 +11288,7 @@ window.CASE = {
    "dir": "",
    "obj": [],
    "f": [],
-   "src": [
-    [
-     "EDGE: SOVEREIGN SI // FINANCIAL LAYER (Notion)",
-     "https://app.notion.com/p/40c709555ee2813bb795d6ecacf7a0a8"
-    ]
-   ]
+   "src": []
   },
   {
    "id": "worldbank",
@@ -12414,12 +11305,7 @@ window.CASE = {
    "dir": "",
    "obj": [],
    "f": [],
-   "src": [
-    [
-     "EDGE: SOVEREIGN SI // FINANCIAL LAYER (Notion)",
-     "https://app.notion.com/p/40c709555ee2813bb795d6ecacf7a0a8"
-    ]
-   ]
+   "src": []
   },
   {
    "id": "tbi",
@@ -12436,12 +11322,7 @@ window.CASE = {
    "dir": "",
    "obj": [],
    "f": [],
-   "src": [
-    [
-     "EDGE: SOVEREIGN SI // FINANCIAL LAYER (Notion)",
-     "https://app.notion.com/p/40c709555ee2813bb795d6ecacf7a0a8"
-    ]
-   ],
+   "src": [],
    "analysis": true
   },
   {
@@ -12459,12 +11340,7 @@ window.CASE = {
    "dir": "",
    "obj": [],
    "f": [],
-   "src": [
-    [
-     "EDGE: SOVEREIGN SI // FINANCIAL LAYER (Notion)",
-     "https://app.notion.com/p/40c709555ee2813bb795d6ecacf7a0a8"
-    ]
-   ]
+   "src": []
   },
   {
    "id": "apollo",
@@ -12505,10 +11381,6 @@ window.CASE = {
     "Chief economist Torsten Slok questions AI productivity gains (Forbes Oct 27, 2026)"
    ],
    "src": [
-    [
-     "EDGE: SOVEREIGN SI // FINANCIAL LAYER (Notion)",
-     "https://app.notion.com/p/40c709555ee2813bb795d6ecacf7a0a8"
-    ],
     [
      "Apollo: Valor and xAI $3.5B capital solution",
      "https://www.apollo.com/insights-news/pressreleases/2026/01/apollo-backs-5-4-billion-valor-and-xai-data-center-compute-infrastructure-transaction-with-3-5-billion-capital-solution-3214463"
@@ -12558,12 +11430,7 @@ window.CASE = {
    "dir": "",
    "obj": [],
    "f": [],
-   "src": [
-    [
-     "EDGE: SOVEREIGN SI // FINANCIAL LAYER (Notion)",
-     "https://app.notion.com/p/40c709555ee2813bb795d6ecacf7a0a8"
-    ]
-   ]
+   "src": []
   },
   {
    "id": "valor",
@@ -12583,10 +11450,6 @@ window.CASE = {
    "obj": [],
    "f": [],
    "src": [
-    [
-     "EDGE: SOVEREIGN SI // FINANCIAL LAYER (Notion)",
-     "https://app.notion.com/p/40c709555ee2813bb795d6ecacf7a0a8"
-    ],
     [
      "Apollo: Valor and xAI $3.5B capital solution",
      "https://www.apollo.com/insights-news/pressreleases/2026/01/apollo-backs-5-4-billion-valor-and-xai-data-center-compute-infrastructure-transaction-with-3-5-billion-capital-solution-3214463"
@@ -12613,10 +11476,6 @@ window.CASE = {
    "f": [],
    "src": [
     [
-     "EDGE: SOVEREIGN SI // FINANCIAL LAYER (Notion)",
-     "https://app.notion.com/p/40c709555ee2813bb795d6ecacf7a0a8"
-    ],
-    [
      "Yahoo Finance: Apollo $35B AI credit deal",
      "https://finance.yahoo.com/technology/ai/articles/apollo-lands-record-35-billion-151249670.html"
     ]
@@ -12639,10 +11498,6 @@ window.CASE = {
    "f": [],
    "src": [
     [
-     "EDGE: SOVEREIGN SI // TETHER LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee281eda4b7d4b17be9dcc9"
-    ],
-    [
      "CoinDesk: Standard Chartered on T-bill issuance and stablecoins",
      "https://www.coindesk.com/business/2026/02/23/u-s-treasury-may-boost-t-bill-issuance-as-stablecoins-eye-usd2-trillion-market-cap-stanchart"
     ]
@@ -12663,12 +11518,7 @@ window.CASE = {
    "dir": "",
    "obj": [],
    "f": [],
-   "src": [
-    [
-     "EDGE: SOVEREIGN SI // TETHER LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee281eda4b7d4b17be9dcc9"
-    ]
-   ]
+   "src": []
   },
   {
    "id": "eurodollar",
@@ -12686,10 +11536,6 @@ window.CASE = {
    "obj": [],
    "f": [],
    "src": [
-    [
-     "EDGE: SOVEREIGN SI // TETHER LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee281eda4b7d4b17be9dcc9"
-    ],
     [
      "Intereconomics: Wholesale digital euro",
      "https://www.intereconomics.eu/contents/year/2026/number/2/article/anchoring-europe-s-monetary-future-why-a-wholesale-digital-euro-is-the-immediate-priority.html"
@@ -12728,10 +11574,6 @@ window.CASE = {
    ],
    "src": [
     [
-     "EDGE: SOVEREIGN SI // TETHER LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee281eda4b7d4b17be9dcc9"
-    ],
-    [
      "BleepingComputer: FBI attribution",
      "https://www.bleepingcomputer.com/news/security/fbi-links-63-billion-binance-crypto-heist-to-north-korean-hackers/"
     ],
@@ -12762,10 +11604,6 @@ window.CASE = {
    "f": [],
    "src": [
     [
-     "EDGE: SOVEREIGN SI // TETHER LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee281eda4b7d4b17be9dcc9"
-    ],
-    [
      "TRM Labs: North Korea steals $6.36B from Binance",
      "https://www.trmlabs.com/resources/blog/north-korea-steals-usd-6-36-billion-from-binance-in-the-largest-hack-in-history"
     ]
@@ -12788,10 +11626,6 @@ window.CASE = {
    "f": [],
    "src": [
     [
-     "EDGE: SOVEREIGN SI // TETHER LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee281eda4b7d4b17be9dcc9"
-    ],
-    [
      "Elliptic: largest theft in history",
      "https://www.elliptic.co/insights/binance-largest-hack-in-history/"
     ]
@@ -12812,12 +11646,7 @@ window.CASE = {
    "dir": "",
    "obj": [],
    "f": [],
-   "src": [
-    [
-     "EDGE: SOVEREIGN SI // TETHER LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee281eda4b7d4b17be9dcc9"
-    ]
-   ],
+   "src": [],
    "analysis": true
   },
   {
@@ -12838,10 +11667,6 @@ window.CASE = {
    "obj": [],
    "f": [],
    "src": [
-    [
-     "EDGE: SOVEREIGN SI // AGENTIC LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee2816fb1a9eacf02f74c5e"
-    ],
     [
      "UsageBox: 2026 agent payment stack",
      "https://usagebox.com/articles/ai-agent-payment-stack-2026-x402-ap2-agent-pay-metering-gap"
@@ -12875,10 +11700,6 @@ window.CASE = {
    "f": [],
    "src": [
     [
-     "EDGE: SOVEREIGN SI // AGENTIC LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee2816fb1a9eacf02f74c5e"
-    ],
-    [
      "UsageBox: 2026 agent payment stack",
      "https://usagebox.com/articles/ai-agent-payment-stack-2026-x402-ap2-agent-pay-metering-gap"
     ]
@@ -12902,10 +11723,6 @@ window.CASE = {
    "obj": [],
    "f": [],
    "src": [
-    [
-     "EDGE: SOVEREIGN SI // AGENTIC LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee2816fb1a9eacf02f74c5e"
-    ],
     [
      "Visa: Agentic payments, onchain data",
      "https://www.visa.com/en-us/thought-leadership/innovation/agentic-payments-from-the-ground-up"
@@ -12931,10 +11748,6 @@ window.CASE = {
    "f": [],
    "src": [
     [
-     "EDGE: SOVEREIGN SI // AGENTIC LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee2816fb1a9eacf02f74c5e"
-    ],
-    [
      "Mastercard: Agent Pay for Machines",
      "https://www.mastercard.com/global/en/news-and-trends/press/2026/june/mastercard-launches-agent-pay-for-machines.html"
     ]
@@ -12958,10 +11771,6 @@ window.CASE = {
    "obj": [],
    "f": [],
    "src": [
-    [
-     "EDGE: SOVEREIGN SI // AGENTIC LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee2816fb1a9eacf02f74c5e"
-    ],
     [
      "Medium (Masood): ACP, UCP, AP2 and x402",
      "https://medium.com/@adnanmasood/agentic-payments-101-2-2-payment-standards-and-protocols-acp-ucp-ap2-and-x402-26486e6d511f"
@@ -12990,10 +11799,6 @@ window.CASE = {
    "obj": [],
    "f": [],
    "src": [
-    [
-     "EDGE: SOVEREIGN SI // AGENTIC LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee2816fb1a9eacf02f74c5e"
-    ],
     [
      "QuickNode: ERC-8004 guide",
      "https://blog.quicknode.com/erc-8004-a-developers-guide-to-trustless-ai-agent-identity/"
@@ -13025,10 +11830,6 @@ window.CASE = {
    ],
    "src": [
     [
-     "EDGE: SOVEREIGN SI // AGENTIC LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee2816fb1a9eacf02f74c5e"
-    ],
-    [
      "BlockEden: Know Your Agent and World ID AgentKit",
      "https://blockeden.xyz/blog/2026/04/03/know-your-agent-kya-identity-framework-web3-ai-authentication/"
     ],
@@ -13058,10 +11859,6 @@ window.CASE = {
    "f": [],
    "src": [
     [
-     "EDGE: SOVEREIGN SI // AGENTIC LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee2816fb1a9eacf02f74c5e"
-    ],
-    [
      "European Commission: European Digital Identity",
      "https://commission.europa.eu/topics/digital-economy-and-society/european-digital-identity_en"
     ],
@@ -13089,10 +11886,6 @@ window.CASE = {
    "obj": [],
    "f": [],
    "src": [
-    [
-     "EDGE: SOVEREIGN SI // AGENTIC LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee2816fb1a9eacf02f74c5e"
-    ],
     [
      "TSA: Digital ID",
      "https://www.tsa.gov/digital-id"
@@ -13124,12 +11917,7 @@ window.CASE = {
    "dir": "",
    "obj": [],
    "f": [],
-   "src": [
-    [
-     "EDGE: SOVEREIGN SI // AGENTIC LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee2816fb1a9eacf02f74c5e"
-    ]
-   ]
+   "src": []
   },
   {
    "id": "irslca",
@@ -13149,10 +11937,6 @@ window.CASE = {
    "obj": [],
    "f": [],
    "src": [
-    [
-     "EDGE: SOVEREIGN SI // AGENTIC LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee2816fb1a9eacf02f74c5e"
-    ],
     [
      "The Intercept: Palantir and IRS data mining",
      "https://theintercept.com/2026/04/24/palantir-irs-contract-data/"
@@ -13188,10 +11972,6 @@ window.CASE = {
    ],
    "src": [
     [
-     "EDGE: SOVEREIGN SI // AGENTIC LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee2816fb1a9eacf02f74c5e"
-    ],
-    [
      "Capture Cascade: ImmigrationOS expansion",
      "https://capturecascade.org/event/2026-04-01--immigrationos-palantir-tracking-us-citizens-medicaid-irs-dmv/"
     ],
@@ -13223,10 +12003,6 @@ window.CASE = {
    "f": [],
    "src": [
     [
-     "EDGE: SOVEREIGN SI // AGENTIC LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee2816fb1a9eacf02f74c5e"
-    ],
-    [
      "The Intercept: Palantir and IRS data mining",
      "https://theintercept.com/2026/04/24/palantir-irs-contract-data/"
     ]
@@ -13250,10 +12026,6 @@ window.CASE = {
     "Receives Medicaid enrollee data via DHS under court-limited categories; ELITE tool reportedly ingests Medicaid data [VERIFY]"
    ],
    "src": [
-    [
-     "EDGE: SOVEREIGN SI // AGENTIC LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee2816fb1a9eacf02f74c5e"
-    ],
     [
      "ACLU: Palantir and removals",
      "https://www.aclu.org/news/privacy-technology/palantir-deportation-roundup"
@@ -13287,10 +12059,6 @@ window.CASE = {
    ],
    "src": [
     [
-     "EDGE: SOVEREIGN SI // AGENTIC LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee2816fb1a9eacf02f74c5e"
-    ],
-    [
      "NIH: Digital twins grand challenge",
      "https://www.nih.gov/challenges/digital-twins-andor-synthetic-data-population-modeling-whole-person-health-mitigate-chronic-disease-disparities-grand-challenge"
     ],
@@ -13321,10 +12089,6 @@ window.CASE = {
    "f": [],
    "src": [
     [
-     "EDGE: SOVEREIGN SI // AGENTIC LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee2816fb1a9eacf02f74c5e"
-    ],
-    [
      "Proskauer: Contract law and agentic AI",
      "https://www.proskauer.com/blog/contract-law-in-the-age-of-agentic-ai-whos-really-clicking-accept"
     ],
@@ -13351,10 +12115,6 @@ window.CASE = {
    "f": [],
    "src": [
     [
-     "EDGE: SOVEREIGN SI // AGENTIC LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee2816fb1a9eacf02f74c5e"
-    ],
-    [
      "Baker McKenzie: US legal accountability for AI agents",
      "https://www.bakermckenzie.com/en/insight/publications/2026/06/united-states-legal-accountability-for-ai-agents"
     ]
@@ -13375,12 +12135,7 @@ window.CASE = {
    "dir": "",
    "obj": [],
    "f": [],
-   "src": [
-    [
-     "EDGE: SOVEREIGN SI // AGENTIC LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee2816fb1a9eacf02f74c5e"
-    ]
-   ]
+   "src": []
   },
   {
    "id": "caailaw",
@@ -13398,10 +12153,6 @@ window.CASE = {
    "obj": [],
    "f": [],
    "src": [
-    [
-     "EDGE: SOVEREIGN SI // AGENTIC LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee2816fb1a9eacf02f74c5e"
-    ],
     [
      "Baker McKenzie: US legal accountability for AI agents",
      "https://www.bakermckenzie.com/en/insight/publications/2026/06/united-states-legal-accountability-for-ai-agents"
@@ -13425,10 +12176,6 @@ window.CASE = {
    "f": [],
    "src": [
     [
-     "EDGE: SOVEREIGN SI // AGENTIC LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee2816fb1a9eacf02f74c5e"
-    ],
-    [
      "Baker McKenzie: US legal accountability for AI agents",
      "https://www.bakermckenzie.com/en/insight/publications/2026/06/united-states-legal-accountability-for-ai-agents"
     ]
@@ -13450,10 +12197,6 @@ window.CASE = {
    "obj": [],
    "f": [],
    "src": [
-    [
-     "EDGE: SOVEREIGN SI // AGENTIC LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee2816fb1a9eacf02f74c5e"
-    ],
     [
      "Astraea Counsel: Who is liable when an AI agent loses your money",
      "https://astraea.law/insights/who-is-liable-when-ai-agents-lose-money"
@@ -13489,10 +12232,6 @@ window.CASE = {
    "f": [],
    "src": [
     [
-     "EDGE: SOVEREIGN SI // AGENTIC LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee2816fb1a9eacf02f74c5e"
-    ],
-    [
      "Freshfields: Product Liability Directive and the AI Act",
      "https://www.freshfields.com/en/our-thinking/blogs/risk-and-compliance/product-risks-today-how-the-new-product-liability-directive-turns-ai-act-complia-102mpu2"
     ],
@@ -13520,10 +12259,6 @@ window.CASE = {
     "Exchange acceptance disputed: program claims Binance; Kraken cites anti-evasion checks; Crypto.com does not recognize; Huobi only actual residents"
    ],
    "src": [
-    [
-     "EDGE: SOVEREIGN SI // AGENTIC LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee2816fb1a9eacf02f74c5e"
-    ],
     [
      "RNS.ID: Palau Digital Residency",
      "https://rns.id/"
@@ -13566,10 +12301,6 @@ window.CASE = {
    ],
    "src": [
     [
-     "EDGE: SOVEREIGN SI // AGENTIC LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee2816fb1a9eacf02f74c5e"
-    ],
-    [
      "NewLimit raises $435M Series C, valuation hits $3.1B (Yahoo Finance, 2026-06-03)",
      "https://finance.yahoo.com/sectors/healthcare/articles/newlimit-raises-435m-series-c-145642833.html"
     ]
@@ -13591,12 +12322,7 @@ window.CASE = {
    "tk": "NET",
    "obj": [],
    "f": [],
-   "src": [
-    [
-     "EDGE: SOVEREIGN SI // AGENTIC LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee2816fb1a9eacf02f74c5e"
-    ]
-   ]
+   "src": []
   },
   {
    "id": "stripe",
@@ -13613,12 +12339,7 @@ window.CASE = {
    "dir": "",
    "obj": [],
    "f": [],
-   "src": [
-    [
-     "EDGE: SOVEREIGN SI // AGENTIC LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee2816fb1a9eacf02f74c5e"
-    ]
-   ]
+   "src": []
   },
   {
    "id": "visa",
@@ -13637,10 +12358,6 @@ window.CASE = {
    "obj": [],
    "f": [],
    "src": [
-    [
-     "EDGE: SOVEREIGN SI // AGENTIC LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee2816fb1a9eacf02f74c5e"
-    ],
     [
      "Visa: Agentic payments, onchain data",
      "https://www.visa.com/en-us/thought-leadership/innovation/agentic-payments-from-the-ground-up"
@@ -13665,10 +12382,6 @@ window.CASE = {
    "f": [],
    "src": [
     [
-     "EDGE: SOVEREIGN SI // AGENTIC LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee2816fb1a9eacf02f74c5e"
-    ],
-    [
      "Mastercard: Agent Pay for Machines",
      "https://www.mastercard.com/global/en/news-and-trends/press/2026/june/mastercard-launches-agent-pay-for-machines.html"
     ]
@@ -13690,10 +12403,6 @@ window.CASE = {
    "obj": [],
    "f": [],
    "src": [
-    [
-     "EDGE: SOVEREIGN SI // AGENTIC LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee2816fb1a9eacf02f74c5e"
-    ],
     [
      "ACLU: Palantir and removals",
      "https://www.aclu.org/news/privacy-technology/palantir-deportation-roundup"
@@ -13718,10 +12427,6 @@ window.CASE = {
     "Said ICE uses a Palantir tool on Medicaid data to 'stalk people for arrest'; obtained documents tying Palantir to WISeR vendor Zyter"
    ],
    "src": [
-    [
-     "EDGE: SOVEREIGN SI // AGENTIC LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee2816fb1a9eacf02f74c5e"
-    ],
     [
      "Palantir: response to EFF (Jan 2026)",
      "https://blog.palantir.com/correcting-the-record-response-to-the-eff-january-15-2026-report-on-palantir-4b3a12536cd2?gi=22f2d695fdf1"
@@ -13755,10 +12460,6 @@ window.CASE = {
    ],
    "src": [
     [
-     "EDGE: SOVEREIGN SI // FINANCIAL LAYER (Notion)",
-     "https://app.notion.com/p/40c709555ee2813bb795d6ecacf7a0a8"
-    ],
-    [
      "Washington Times: State Dept compliance report on China (Apr 2025)",
      "https://www.washingtontimes.com/news/2025/apr/22/us-says-china-using-ai-boost-biological-weapons-research/"
     ]
@@ -13779,12 +12480,7 @@ window.CASE = {
    "dir": "",
    "obj": [],
    "f": [],
-   "src": [
-    [
-     "EDGE: SOVEREIGN SI // FINANCIAL LAYER (Notion)",
-     "https://app.notion.com/p/40c709555ee2813bb795d6ecacf7a0a8"
-    ]
-   ]
+   "src": []
   },
   {
    "id": "whitehouse",
@@ -13801,12 +12497,7 @@ window.CASE = {
    "dir": "",
    "obj": [],
    "f": [],
-   "src": [
-    [
-     "EDGE: SOVEREIGN SI // FINANCIAL LAYER (Notion)",
-     "https://app.notion.com/p/40c709555ee2813bb795d6ecacf7a0a8"
-    ]
-   ]
+   "src": []
   },
   {
    "id": "guetlein",
@@ -15790,10 +14481,6 @@ window.CASE = {
     [
      "IEEE Spectrum: Sceye and SoftBank",
      "https://spectrum.ieee.org/sceye-high-altitude-platform-station"
-    ],
-    [
-     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
     ],
     [
      "Washington Post: Musk's business empire and government funding",
@@ -18151,10 +16838,6 @@ window.CASE = {
     [
      "Fierce Biotech: ARPA-H director let go",
      "https://www.fiercebiotech.com/research/director-advanced-research-projects-agency-health-fired-trump-administration"
-    ],
-    [
-     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
     ]
    ],
    "U": true
@@ -19468,10 +18151,6 @@ window.CASE = {
     [
      "Forbes: CLEAR bought out of bankruptcy",
      "https://www.forbes.com/sites/katharineschwab/2026/06/03/caryn-seidman-becker-bought-clear-out-of-bankruptcy-now-shes-a-billionaire/"
-    ],
-    [
-     "EDGE: SOVEREIGN SI // TRAJECTORY (Notion)",
-     "https://app.notion.com/p/40d709555ee281f4acc5cd04eb22aee6"
     ]
    ]
   },
@@ -20588,10 +19267,6 @@ window.CASE = {
     [
      "CDC: TGS passes one million participants",
      "https://www.cdc.gov/media/releases/2026/2026-cdc-surpasses-1-million-voluntary-air-travel-participants-in-biosurveillance-program.html"
-    ],
-    [
-     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
     ]
    ],
    "U": true
@@ -21121,10 +19796,6 @@ window.CASE = {
     [
      "Forbes: CLEAR bought out of bankruptcy",
      "https://www.forbes.com/sites/katharineschwab/2026/06/03/caryn-seidman-becker-bought-clear-out-of-bankruptcy-now-shes-a-billionaire/"
-    ],
-    [
-     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
     ]
    ]
   },
@@ -21407,10 +20078,6 @@ window.CASE = {
      "https://www.snopes.com/fact-check/covid-detecting-microchip/"
     ],
     [
-     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
-    ],
-    [
      "ScienceDirect: The DARPA/Air Force FALCON program",
      "https://www.sciencedirect.com/science/article/abs/pii/S009457650500127X"
     ],
@@ -21527,10 +20194,6 @@ window.CASE = {
     [
      "DARPA: Michael Koeris",
      "https://www.darpa.mil/about/people/michael-koeris"
-    ],
-    [
-     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
     ],
     [
      "Nextgov: DARPA's Pandemic Prevention Platform",
@@ -22289,10 +20952,6 @@ window.CASE = {
     [
      "WuXi AppTec added to DOW's 1260H list (Holland & Knight, 2026-06)",
      "https://www.hklaw.com/en/insights/publications/2026/06/wuxi-apptec-added-to-dows-1260h-list"
-    ],
-    [
-     "EDGE: SOVEREIGN SI // TRAJECTORY (Notion)",
-     "https://app.notion.com/p/40d709555ee281f4acc5cd04eb22aee6"
     ]
    ]
   },
@@ -22687,14 +21346,6 @@ window.CASE = {
     [
      "CASRAI: USG Policy for Stopping High-Risk Life Sciences Research",
      "https://casrai.org/news/usg-policy-stopping-high-risk-life-sciences-research-institutions-2026"
-    ],
-    [
-     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
-    ],
-    [
-     "EDGE: SOVEREIGN SI // TRAJECTORY (Notion)",
-     "https://app.notion.com/p/40d709555ee281f4acc5cd04eb22aee6"
     ],
     [
      "CNBC: Schmidt responds to OSTP report",
@@ -23101,10 +21752,6 @@ window.CASE = {
     [
      "IoT Australia: The Internet of Bio-NanoThings",
      "https://www.iotaustralia.org.au/2015/07/28/iotnewsglobal/get-ready-for-the-internet-of-bio-nanothings"
-    ],
-    [
-     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
     ]
    ],
    "plan": [],
@@ -23191,10 +21838,6 @@ window.CASE = {
     [
      "O'Reilly: DARPA and synthetic biology (Ginkgo)",
      "https://www.oreilly.com/content/darpa-and-the-future-of-synthetic-biology/"
-    ],
-    [
-     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
     ]
    ]
   },
@@ -24075,10 +22718,6 @@ window.CASE = {
     [
      "DARPA: Michael Koeris",
      "https://www.darpa.mil/about/people/michael-koeris"
-    ],
-    [
-     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
     ]
    ],
    "U": true
@@ -24451,10 +23090,6 @@ window.CASE = {
     [
      "Tech Transparency Project: Schmidt's influence apparatus",
      "https://www.techtransparencyproject.org/articles/eric-schmidts-expanding-influence-apparatus"
-    ],
-    [
-     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
     ]
    ],
    "U": true
@@ -24708,10 +23343,6 @@ window.CASE = {
     [
      "IQT: Biotechnology impact story",
      "https://iqt.org/impact-stories/biotechnology"
-    ],
-    [
-     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
     ]
    ],
    "U": true
@@ -24862,10 +23493,6 @@ window.CASE = {
     [
      "CASRAI: USG Policy for Stopping High-Risk Life Sciences Research",
      "https://casrai.org/news/usg-policy-stopping-high-risk-life-sciences-research-institutions-2026"
-    ],
-    [
-     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
     ]
    ],
    "U": true
@@ -26886,10 +25513,6 @@ window.CASE = {
      "https://leadstories.com/hoax-alert/2020/09/fact-check-profusa-others-have-not-created-an-implantable-chip-to-connect-us-to-the-internet-and-open-door-to-brave-new-world.html"
     ],
     [
-     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
-    ],
-    [
      "Nextgov: DARPA's Pandemic Prevention Platform",
      "https://www.nextgov.com/acquisition/2021/08/darpas-pandemic-prevention-platform/259090/"
     ]
@@ -26987,10 +25610,6 @@ window.CASE = {
     [
      "ID Tech: Oura contract cancellation report",
      "https://idtechwire.com/pentagon-cancels-96m-biometric-ring-contract-amid-privacy-concerns/"
-    ],
-    [
-     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
     ]
    ],
    "U": true
@@ -31135,10 +29754,6 @@ window.CASE = {
     [
      "Wikipedia: In-Q-Tel",
      "https://en.wikipedia.org/wiki/In-Q-Tel"
-    ],
-    [
-     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
     ]
    ]
   },
@@ -31163,12 +29778,7 @@ window.CASE = {
     "OSTP director 2022–2025",
     "One of three successive OSTP directors traced to DARPA, Schmidt and Thiel networks [ANALYSIS]"
    ],
-   "src": [
-    [
-     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
-    ]
-   ]
+   "src": []
   },
   {
    "id": "lander",
@@ -31199,10 +29809,6 @@ window.CASE = {
     [
      "Forbes: Schmidt Futures and OSTP",
      "https://www.forbes.com/sites/sarahemerson/2023/11/09/former-google-ceo-eric-schmidt-futures-philanthropic-mess/"
-    ],
-    [
-     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
     ]
    ]
   },
@@ -31239,10 +29845,6 @@ window.CASE = {
     [
      "Tech Transparency Project: Schmidt's influence apparatus",
      "https://www.techtransparencyproject.org/articles/eric-schmidts-expanding-influence-apparatus"
-    ],
-    [
-     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
     ]
    ]
   },
@@ -31273,10 +29875,6 @@ window.CASE = {
     [
      "Tech Transparency Project: Schmidt's influence apparatus",
      "https://www.techtransparencyproject.org/articles/eric-schmidts-expanding-influence-apparatus"
-    ],
-    [
-     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
     ]
    ]
   },
@@ -31306,10 +29904,6 @@ window.CASE = {
     [
      "Tech Transparency Project: Schmidt's influence apparatus",
      "https://www.techtransparencyproject.org/articles/eric-schmidts-expanding-influence-apparatus"
-    ],
-    [
-     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
     ]
    ]
   },
@@ -31342,10 +29936,6 @@ window.CASE = {
     [
      "Wikipedia: ARPA-H (Ling white paper)",
      "https://en.wikipedia.org/wiki/Advanced_Research_Projects_Agency_for_Health"
-    ],
-    [
-     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
     ]
    ]
   },
@@ -31378,10 +29968,6 @@ window.CASE = {
     [
      "FABBS: New leadership of ARPA-H",
      "https://fabbs.org/news/2025/11/new-leadership-arpah/"
-    ],
-    [
-     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
     ]
    ]
   },
@@ -31409,10 +29995,6 @@ window.CASE = {
     [
      "Wikipedia: ARPA-H (Ling white paper)",
      "https://en.wikipedia.org/wiki/Advanced_Research_Projects_Agency_for_Health"
-    ],
-    [
-     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
     ]
    ]
   },
@@ -31438,12 +30020,7 @@ window.CASE = {
     "Facebook Building 8 (brain-typing BCI)",
     "Wellcome Leap"
    ],
-   "src": [
-    [
-     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
-    ]
-   ]
+   "src": []
   },
   {
    "id": "poindexter",
@@ -31472,10 +30049,6 @@ window.CASE = {
     [
      "Washingtonian: Killer App (Palantir and Poindexter, 2012)",
      "https://washingtonian.com/2012/01/31/killer-app/"
-    ],
-    [
-     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
     ]
    ]
   },
@@ -31504,10 +30077,6 @@ window.CASE = {
     [
      "Washingtonian: Killer App (Palantir and Poindexter, 2012)",
      "https://washingtonian.com/2012/01/31/killer-app/"
-    ],
-    [
-     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
     ]
    ]
   },
@@ -31540,14 +30109,6 @@ window.CASE = {
     [
      "LAist: Anduril founding and CBP test",
      "https://laist.com/news/politics/anduril-executives-election-campaign-spending"
-    ],
-    [
-     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
-    ],
-    [
-     "EDGE: SOVEREIGN SI // MAP UPDATE WAVE (Notion)",
-     "https://app.notion.com/p/40e709555ee28185959eeb652e6a9642"
     ]
    ]
   },
@@ -31575,14 +30136,6 @@ window.CASE = {
     [
      "Wikipedia: Anduril Industries",
      "https://en.wikipedia.org/wiki/Anduril_Industries"
-    ],
-    [
-     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
-    ],
-    [
-     "EDGE: SOVEREIGN SI // MAP UPDATE WAVE (Notion)",
-     "https://app.notion.com/p/40e709555ee28185959eeb652e6a9642"
     ]
    ]
   },
@@ -31616,10 +30169,6 @@ window.CASE = {
     [
      "Wikipedia: In-Q-Tel",
      "https://en.wikipedia.org/wiki/In-Q-Tel"
-    ],
-    [
-     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
     ],
     [
      "George Mason University National Security Institute: Gilman Louie",
@@ -31757,10 +30306,6 @@ window.CASE = {
     [
      "UPI: Tenet gets job at secretive NY bank (2008)",
      "https://www.upi.com/Top_News/Special/2008/02/18/Tenet-gets-job-at-secretive-NY-bank/64181203344822/"
-    ],
-    [
-     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
     ]
    ]
   },
@@ -32150,10 +30695,6 @@ window.CASE = {
     [
      "UPI: Tenet gets job at secretive NY bank (2008)",
      "https://www.upi.com/Top_News/Special/2008/02/18/Tenet-gets-job-at-secretive-NY-bank/64181203344822/"
-    ],
-    [
-     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
     ]
    ]
   },
@@ -43862,8 +42403,8 @@ window.CASE = {
      "G42 is chaired by Tahnoon",
      "context",
      "confirmed",
-     "EDGE: SOVEREIGN SI // DEEP DIVE",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
+     "",
+     ""
     ],
     [
      "2026-01-09",
@@ -43880,8 +42421,8 @@ window.CASE = {
      "Drew criticism; Wyden and Warren demand Palantir's federal contract list",
      "context",
      "reported",
-     "EDGE: SOVEREIGN SI // DEEP DIVE",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
+     "",
+     ""
     ],
     [
      "2026-09-24",
@@ -43898,8 +42439,8 @@ window.CASE = {
      "",
      "context",
      "scheduled",
-     "EDGE: SOVEREIGN SI // DEEP DIVE",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
+     "",
+     ""
     ]
    ],
    "shows": "A small set of officials and founders sit at the decision points that the circuit runs through.",
@@ -44351,8 +42892,8 @@ window.CASE = {
      "Banking, insurance, ports, Class 7 transport",
      "threat",
      "reported",
-     "EDGE: SOVEREIGN SI // DEEP DIVE",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
+     "",
+     ""
     ],
     [
      "2028-01-01",
@@ -44489,8 +43030,8 @@ window.CASE = {
      "",
      "context",
      "confirmed",
-     "EDGE: SOVEREIGN SI // DEEP DIVE",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
+     "",
+     ""
     ],
     [
      "2026-07-20",
@@ -44694,8 +43235,8 @@ window.CASE = {
      "",
      "context",
      "confirmed",
-     "EDGE: SOVEREIGN SI // DEEP DIVE",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
+     "",
+     ""
     ],
     [
      "2026-08",
@@ -44879,8 +43420,8 @@ window.CASE = {
      "Date not given on page",
      "context",
      "confirmed",
-     "EDGE FINANCIAL LAYER",
-     "https://app.notion.com/p/40c709555ee2813bb795d6ecacf7a0a8"
+     "",
+     ""
     ],
     [
      "",
@@ -45001,8 +43542,8 @@ window.CASE = {
      "Year not stated on page; Brandon Lutnick now CEO",
      "context",
      "confirmed",
-     "EDGE FINANCIAL LAYER",
-     "https://app.notion.com/p/40c709555ee2813bb795d6ecacf7a0a8"
+     "",
+     ""
     ],
     [
      "2026-09-28",
@@ -45134,8 +43675,8 @@ window.CASE = {
      "",
      "context",
      "confirmed",
-     "EDGE FINANCIAL LAYER",
-     "https://app.notion.com/p/40c709555ee2813bb795d6ecacf7a0a8"
+     "",
+     ""
     ],
     [
      "2026-11",
@@ -45152,8 +43693,8 @@ window.CASE = {
      "",
      "stage",
      "reported",
-     "Bloomberg via page",
-     "https://app.notion.com/p/40c709555ee2813bb795d6ecacf7a0a8"
+     "",
+     ""
     ]
    ],
    "shows": "The same capital network behind the operating and effector layers now runs a federally chartered stablecoin rail.",
@@ -45211,8 +43752,8 @@ window.CASE = {
      "Gaza Executive Board",
      "context",
      "confirmed",
-     "EDGE FINANCIAL LAYER",
-     "https://app.notion.com/p/40c709555ee2813bb795d6ecacf7a0a8"
+     "",
+     ""
     ],
     [
      "",
@@ -45229,8 +43770,8 @@ window.CASE = {
      "",
      "context",
      "reported",
-     "EDGE FINANCIAL LAYER",
-     "https://app.notion.com/p/40c709555ee2813bb795d6ecacf7a0a8"
+     "",
+     ""
     ]
    ],
    "shows": "Authority concentrated in the chairman, with board seats overlapping Gulf capital, Apollo credit and World Liberty.",
@@ -45363,8 +43904,8 @@ window.CASE = {
      "",
      "context",
      "confirmed",
-     "EDGE TETHER LAYER",
-     "https://app.notion.com/p/40d709555ee281eda4b7d4b17be9dcc9"
+     "",
+     ""
     ],
     [
      "2025-02",
@@ -45523,8 +44064,8 @@ window.CASE = {
      "",
      "context",
      "confirmed",
-     "EDGE TETHER LAYER",
-     "https://app.notion.com/p/40d709555ee281eda4b7d4b17be9dcc9"
+     "",
+     ""
     ],
     [
      "2026-02-23",
@@ -45541,8 +44082,8 @@ window.CASE = {
      "",
      "context",
      "confirmed",
-     "EDGE TETHER LAYER",
-     "https://app.notion.com/p/40d709555ee281eda4b7d4b17be9dcc9"
+     "",
+     ""
     ],
     [
      "2026-06-30",
@@ -45550,8 +44091,8 @@ window.CASE = {
      "More than 60% of the market",
      "context",
      "confirmed",
-     "EDGE TETHER LAYER",
-     "https://app.notion.com/p/40d709555ee281eda4b7d4b17be9dcc9"
+     "",
+     ""
     ],
     [
      "2027",
@@ -45559,8 +44100,8 @@ window.CASE = {
      "Rollover risk sharpens with more bill financing",
      "scheduled",
      "scheduled",
-     "EDGE TETHER LAYER",
-     "https://app.notion.com/p/40d709555ee281eda4b7d4b17be9dcc9"
+     "",
+     ""
     ]
    ],
    "shows": "[ANALYSIS] Offshore dollar demand routed through Tether substitutes for pulled-back foreign central bank buying.",
@@ -45638,8 +44179,8 @@ window.CASE = {
      "",
      "context",
      "confirmed",
-     "EDGE AGENTIC LAYER",
-     "https://app.notion.com/p/40d709555ee2816fb1a9eacf02f74c5e"
+     "",
+     ""
     ],
     [
      "2025-05",
@@ -45674,8 +44215,8 @@ window.CASE = {
      "Stripe and Tempo",
      "context",
      "confirmed",
-     "EDGE AGENTIC LAYER",
-     "https://app.notion.com/p/40d709555ee2816fb1a9eacf02f74c5e"
+     "",
+     ""
     ],
     [
      "2026-04-24",
@@ -45692,8 +44233,8 @@ window.CASE = {
      "",
      "context",
      "confirmed",
-     "EDGE AGENTIC LAYER",
-     "https://app.notion.com/p/40d709555ee2816fb1a9eacf02f74c5e"
+     "",
+     ""
     ],
     [
      "2026-06",
@@ -45755,8 +44296,8 @@ window.CASE = {
      "Post-quantum migration",
      "scheduled",
      "scheduled",
-     "EDGE AGENTIC LAYER",
-     "https://app.notion.com/p/40d709555ee2816fb1a9eacf02f74c5e"
+     "",
+     ""
     ]
    ],
    "shows": "[ANALYSIS] U.S. law starts from the position that the person acted when an agent acts; the EU is moving losses toward producers; Reg E decides the U.S. allocation.",
@@ -45906,7 +44447,7 @@ window.CASE = {
      "Hits interceptor supply chains.",
      "threat",
      "scheduled",
-     "EDGE: SOVEREIGN SI // GOLDEN DOME",
+     "",
      ""
     ],
     [
@@ -46603,7 +45144,7 @@ window.CASE = {
      "Anchors",
      "context",
      "scheduled",
-     "DEEP DIVE (Notion)",
+     "",
      ""
     ],
     [
@@ -46612,7 +45153,7 @@ window.CASE = {
      "Anchor",
      "context",
      "scheduled",
-     "DEEP DIVE (Notion)",
+     "",
      ""
     ],
     [
@@ -46621,7 +45162,7 @@ window.CASE = {
      "Phase 1 anchors",
      "context",
      "scheduled",
-     "DEEP DIVE (Notion)",
+     "",
      ""
     ],
     [
@@ -46648,7 +45189,7 @@ window.CASE = {
      "Anchor",
      "context",
      "scheduled",
-     "DEEP DIVE (Notion)",
+     "",
      ""
     ],
     [
@@ -48712,8 +47253,8 @@ window.CASE = {
      "Funding ran through the Stanford Digital Library project; Sergey Brin held an NSF fellowship.",
      "context",
      "confirmed",
-     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
+     "",
+     ""
     ],
     [
      "2003",
@@ -48730,8 +47271,8 @@ window.CASE = {
      "The program was run by John Poindexter.",
      "context",
      "confirmed",
-     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
+     "",
+     ""
     ],
     [
      "2003-12",
@@ -48793,8 +47334,8 @@ window.CASE = {
      "Serves 2009–2012; later Google ATAP, Facebook Building 8 (brain-typing BCI) and Wellcome Leap.",
      "context",
      "confirmed",
-     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
+     "",
+     ""
     ],
     [
      "2010-08",
@@ -48892,8 +47433,8 @@ window.CASE = {
      "Ginkgo also holds a $9.5M DARPA contract with Transcriptic and an IARPA B24IC prime.",
      "context",
      "confirmed",
-     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
+     "",
+     ""
     ],
     [
      "2023-09",
@@ -48901,8 +47442,8 @@ window.CASE = {
      "Runs B.Next, IQT's biotech practice.",
      "context",
      "confirmed",
-     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
+     "",
+     ""
     ],
     [
      "2024",
@@ -48919,8 +47460,8 @@ window.CASE = {
      "Previously NIH RADx; founded Sample6.",
      "context",
      "confirmed",
-     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
+     "",
+     ""
     ],
     [
      "2025",
@@ -48928,8 +47469,8 @@ window.CASE = {
      "Kratsios at OSTP, O'Neill at HHS, Vance as Vice President. [ANALYSIS] Chain: In-Q-Tel funds Palantir (2005), Palantir staff and Founders Fund build Anduril (2017), Founders Fund leads Armada (2022).",
      "context",
      "confirmed",
-     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
+     "",
+     ""
     ]
    ],
    "shows": "Two generations. The older layer roots in the state. The newest layer (Anduril, Armada) roots in the Thiel network, which now performs the upstream function itself.",
@@ -48982,8 +47523,8 @@ window.CASE = {
      "Serves 2012–2017.",
      "context",
      "confirmed",
-     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
+     "",
+     ""
     ],
     [
      "2021",
@@ -48991,8 +47532,8 @@ window.CASE = {
      "Serves 2021–2022.",
      "context",
      "confirmed",
-     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
+     "",
+     ""
     ],
     [
      "2022",
@@ -49027,8 +47568,8 @@ window.CASE = {
      "Serves 2022–2025.",
      "context",
      "confirmed",
-     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
+     "",
+     ""
     ],
     [
      "2023-11-09",
@@ -49045,8 +47586,8 @@ window.CASE = {
      "Former principal and chief of staff at Thiel Capital; U.S. CTO in the first Trump term.",
      "context",
      "confirmed",
-     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
+     "",
+     ""
     ],
     [
      "2025-02",
@@ -49072,8 +47613,8 @@ window.CASE = {
      "OSTP also owns the unrevised synthesis-screening framework.",
      "context",
      "confirmed",
-     "EDGE: SOVEREIGN SI // UPSTREAM LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
+     "",
+     ""
     ]
    ],
    "shows": "[ANALYSIS] Across both parties, the White House science office has been filled through the same upstream networks: DARPA, Schmidt and Thiel. The same office writes the bio-research and synthesis-screening rules.",
@@ -49153,8 +47694,8 @@ window.CASE = {
      "No mandate, device or data policy named.",
      "context",
      "confirmed",
-     "EDGE: SOVEREIGN SI // TRAJECTORY (Notion)",
-     "https://app.notion.com/p/40d709555ee281f4acc5cd04eb22aee6"
+     "",
+     ""
     ],
     [
      "2025-08-27",
@@ -49162,8 +47703,8 @@ window.CASE = {
      "Oura also opened U.S. manufacturing for defense.",
      "context",
      "confirmed",
-     "EDGE: SOVEREIGN SI // TRAJECTORY (Notion)",
-     "https://app.notion.com/p/40d709555ee281f4acc5cd04eb22aee6"
+     "",
+     ""
     ],
     [
      "2025-12-04",
@@ -49171,8 +47712,8 @@ window.CASE = {
      "Palantir at CDC; fraud task force under the Vice President.",
      "context",
      "confirmed",
-     "EDGE: SOVEREIGN SI // TRAJECTORY (Notion)",
-     "https://app.notion.com/p/40d709555ee281f4acc5cd04eb22aee6"
+     "",
+     ""
     ],
     [
      "2026-01",
@@ -49180,8 +47721,8 @@ window.CASE = {
      "60+ companies and 21 Aligned Networks committed to deliver from Q1 2026 [VERIFY delivery status].",
      "context",
      "unverified",
-     "EDGE: SOVEREIGN SI // TRAJECTORY (Notion)",
-     "https://app.notion.com/p/40d709555ee281f4acc5cd04eb22aee6"
+     "",
+     ""
     ],
     [
      "2026-03-04",
@@ -49189,8 +47730,8 @@ window.CASE = {
      "Through Login.gov, ID.me and CLEAR. CLEAR is piloting at six VA medical centers and runs inside Epic MyChart.",
      "response",
      "confirmed",
-     "EDGE: SOVEREIGN SI // TRAJECTORY (Notion)",
-     "https://app.notion.com/p/40d709555ee281f4acc5cd04eb22aee6"
+     "",
+     ""
     ],
     [
      "2026-04-30",
@@ -49198,8 +47739,8 @@ window.CASE = {
      "Pending clarification. Medicaid enrollee data flows to DHS under a court order limited to biographical, location and contact fields; court outcome open.",
      "context",
      "confirmed",
-     "EDGE: SOVEREIGN SI // TRAJECTORY (Notion)",
-     "https://app.notion.com/p/40d709555ee281f4acc5cd04eb22aee6"
+     "",
+     ""
     ],
     [
      "2026-09-29",
@@ -49207,8 +47748,8 @@ window.CASE = {
      "The four-year wearable window closes mid-2029.",
      "context",
      "confirmed",
-     "EDGE: SOVEREIGN SI // TRAJECTORY (Notion)",
-     "https://app.notion.com/p/40d709555ee281f4acc5cd04eb22aee6"
+     "",
+     ""
     ],
     [
      "2026-11",
@@ -49216,8 +47757,8 @@ window.CASE = {
      "Enforcement side of the same data. Status as of the November 3, 2026 TRAJECTORY build.",
      "context",
      "confirmed",
-     "EDGE: SOVEREIGN SI // TRAJECTORY (Notion)",
-     "https://app.notion.com/p/40d709555ee281f4acc5cd04eb22aee6"
+     "",
+     ""
     ],
     [
      "2026-11",
@@ -49225,8 +47766,8 @@ window.CASE = {
      "G42 and QIA in Neuralink; In-Q-Tel and QIA in Synchron; Tether holds a majority of Blackrock Neurotech. Status as of November 3, 2026.",
      "context",
      "confirmed",
-     "EDGE: SOVEREIGN SI // TRAJECTORY (Notion)",
-     "https://app.notion.com/p/40d709555ee281f4acc5cd04eb22aee6"
+     "",
+     ""
     ],
     [
      "2026-11",
@@ -49234,8 +47775,8 @@ window.CASE = {
      "GENIUS Act in force; freeze capability demonstrated within 70 minutes of the Binance theft; OCC chartered Erebor and World Liberty Trust; MGX used USD1 to settle into Binance.",
      "context",
      "confirmed",
-     "EDGE: SOVEREIGN SI // TRAJECTORY (Notion)",
-     "https://app.notion.com/p/40d709555ee281f4acc5cd04eb22aee6"
+     "",
+     ""
     ],
     [
      "2026-11",
@@ -49243,8 +47784,8 @@ window.CASE = {
      "x402, Google AP2 and ERC-8004 are live; U.S. agency law attributes an agent's acts to the person.",
      "context",
      "confirmed",
-     "EDGE: SOVEREIGN SI // TRAJECTORY (Notion)",
-     "https://app.notion.com/p/40d709555ee281f4acc5cd04eb22aee6"
+     "",
+     ""
     ],
     [
      "2026-11",
@@ -49252,8 +47793,8 @@ window.CASE = {
      "Colorado, California, Connecticut, Montana. The MIND Act would order an FTC study.",
      "context",
      "stage",
-     "EDGE: SOVEREIGN SI // TRAJECTORY (Notion)",
-     "https://app.notion.com/p/40d709555ee281f4acc5cd04eb22aee6"
+     "",
+     ""
     ],
     [
      "2026-11",
@@ -49261,8 +47802,8 @@ window.CASE = {
      "To be settled by a court or the CFPB. No date set.",
      "context",
      "stage",
-     "EDGE: SOVEREIGN SI // TRAJECTORY (Notion)",
-     "https://app.notion.com/p/40d709555ee281f4acc5cd04eb22aee6"
+     "",
+     ""
     ],
     [
      "2026-11",
@@ -49270,8 +47811,8 @@ window.CASE = {
      "eIDAS 2.0 ties government ID to wallets and agents. The U.S. route runs through mobile driver's licenses and bank KYC. No date given on the page.",
      "context",
      "stage",
-     "EDGE: SOVEREIGN SI // TRAJECTORY (Notion)",
-     "https://app.notion.com/p/40d709555ee281f4acc5cd04eb22aee6"
+     "",
+     ""
     ],
     [
      "2029-06",
@@ -49279,8 +47820,8 @@ window.CASE = {
      "Mid-2029.",
      "context",
      "scheduled",
-     "EDGE: SOVEREIGN SI // TRAJECTORY (Notion)",
-     "https://app.notion.com/p/40d709555ee281f4acc5cd04eb22aee6"
+     "",
+     ""
     ]
    ],
    "shows": "Every component of a per-person agentic node is live or standardized: identity, health record, body data, money and agent. They run on the same operating layer, compute and capital. The binding integration is not yet deployed.",
@@ -49338,8 +47879,8 @@ window.CASE = {
      "Runs to January 3, 2027. The continuing resolution expires December 11; most new FY27 defense money sits in reconciliation; FY27 NDAA is in conference.",
      "context",
      "stage",
-     "EDGE: SOVEREIGN SI // TRAJECTORY (Notion)",
-     "https://app.notion.com/p/40d709555ee281f4acc5cd04eb22aee6"
+     "",
+     ""
     ],
     [
      "2026-11",
@@ -49356,8 +47897,8 @@ window.CASE = {
      "Sets FY27 levels for NWSS, BARDA and BioWatch.",
      "context",
      "scheduled",
-     "EDGE: SOVEREIGN SI // TRAJECTORY (Notion)",
-     "https://app.notion.com/p/40d709555ee281f4acc5cd04eb22aee6"
+     "",
+     ""
     ],
     [
      "2026-12-18",
@@ -49365,8 +47906,8 @@ window.CASE = {
      "Set by statute and bipartisan, so it proceeds regardless of the shift. Guidance up to 180 days later; FAR revision up to a year after that.",
      "context",
      "scheduled",
-     "EDGE: SOVEREIGN SI // TRAJECTORY (Notion)",
-     "https://app.notion.com/p/40d709555ee281f4acc5cd04eb22aee6"
+     "",
+     ""
     ],
     [
      "2027-01-03",
@@ -49374,8 +47915,8 @@ window.CASE = {
      "Committee gavels change hands; oversight gains subpoena power.",
      "context",
      "scheduled",
-     "EDGE: SOVEREIGN SI // TRAJECTORY (Notion)",
-     "https://app.notion.com/p/40d709555ee281f4acc5cd04eb22aee6"
+     "",
+     ""
     ],
     [
      "2027-06",
@@ -49383,8 +47924,8 @@ window.CASE = {
      "About mid-2027.",
      "context",
      "scheduled",
-     "EDGE: SOVEREIGN SI // TRAJECTORY (Notion)",
-     "https://app.notion.com/p/40d709555ee281f4acc5cd04eb22aee6"
+     "",
+     ""
     ],
     [
      "2027",
@@ -49392,8 +47933,8 @@ window.CASE = {
      "2027 session watch item.",
      "context",
      "stage",
-     "EDGE: SOVEREIGN SI // TRAJECTORY (Notion)",
-     "https://app.notion.com/p/40d709555ee281f4acc5cd04eb22aee6"
+     "",
+     ""
     ],
     [
      "2028-11",
@@ -49401,8 +47942,8 @@ window.CASE = {
      "Ahead of the January 20, 2029 expiry of the 0% Section 232 pharma tier.",
      "context",
      "scheduled",
-     "EDGE: SOVEREIGN SI // TRAJECTORY (Notion)",
-     "https://app.notion.com/p/40d709555ee281f4acc5cd04eb22aee6"
+     "",
+     ""
     ],
     [
      "2029-01-20",
@@ -49410,8 +47951,8 @@ window.CASE = {
      "",
      "context",
      "scheduled",
-     "EDGE: SOVEREIGN SI // TRAJECTORY (Notion)",
-     "https://app.notion.com/p/40d709555ee281f4acc5cd04eb22aee6"
+     "",
+     ""
     ]
    ],
    "shows": "[ANALYSIS] Gridlock freezes new statute and new money and leaves contracted systems running behind operating-layer switching costs. Pressure falls on people and leaves the plumbing in place; action moves to executive orders, procurement, states, courts, standards bodies and allies.",
@@ -54964,15 +53505,6 @@ window.CASE = {
    ]
   ],
   [
-   "Deep dive (Notion)",
-   [
-    [
-     "EDGE: SOVEREIGN SI // DEEP DIVE (Notion)",
-     "https://app.notion.com/p/40c709555ee28196933ddbd1c0750526"
-    ]
-   ]
-  ],
-  [
    "Autonomy software, intelligence and drones",
    [
     [
@@ -55151,10 +53683,6 @@ window.CASE = {
   [
    "Hybrid quantum and drop-ship logistics",
    [
-    [
-     "Data Center Knowledge: Hybrid quantum systems take off",
-     "https://www.datacenterknowledge.com/supercomputers/quantum-meets-the-data-center-hybrid-systems-take-off"
-    ],
     [
      "Quartz: AI data centers and quantum computing",
      "https://qz.com/quantum-coming-to-data-center-near-you-nvidia-ibm"
@@ -55912,35 +54440,6 @@ window.CASE = {
    ]
   ],
   [
-   "Research pages (Notion)",
-   [
-    [
-     "EDGE: SOVEREIGN SI // FINANCIAL LAYER (Notion)",
-     "https://app.notion.com/p/40c709555ee2813bb795d6ecacf7a0a8"
-    ],
-    [
-     "EDGE: SOVEREIGN SI // TETHER LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee281eda4b7d4b17be9dcc9"
-    ],
-    [
-     "EDGE: SOVEREIGN SI // AGENTIC LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee2816fb1a9eacf02f74c5e"
-    ],
-    [
-     "EDGE: SOVEREIGN SI // UPSTREAM LAYER",
-     "https://app.notion.com/p/40d709555ee2811b9e87ffa07a5422b8"
-    ],
-    [
-     "EDGE: SOVEREIGN SI // TRAJECTORY",
-     "https://app.notion.com/p/40d709555ee281f4acc5cd04eb22aee6"
-    ],
-    [
-     "EDGE: SOVEREIGN SI // MAP UPDATE WAVE",
-     "https://app.notion.com/p/40e709555ee28185959eeb652e6a9642"
-    ]
-   ]
-  ],
-  [
    "Golden Dome",
    [
     [
@@ -56308,19 +54807,6 @@ window.CASE = {
     [
      "The Species Game: Beyond EUV",
      "https://thespeciesgame.substack.com/p/beyond-extreme-ultraviolet-light"
-    ]
-   ]
-  ],
-  [
-   "Research pages",
-   [
-    [
-     "EDGE: SOVEREIGN SI // SILICON LAYER (Notion)",
-     "https://app.notion.com/p/40d709555ee281079945dddcd4fac864"
-    ],
-    [
-     "EDGE: SOVEREIGN SI // HORIZON (Notion)",
-     "https://app.notion.com/p/40d709555ee28101b720c635edb2f547"
     ]
    ]
   ],

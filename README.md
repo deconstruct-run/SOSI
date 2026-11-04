@@ -2,7 +2,7 @@
 
 An interactive investigative map of the sovereign SI buildout: the master nodes, the ten-layer stack, every contract, capital and partnership thread, the threats the stack is built against, and the investable exposure across it.
 
-Research as of Nov 3, 2026. Built from the EDGE: SOVEREIGN SI research pages (FIELD NOTES), including the BIO LAYER pages on health data, biodefense, the body network and pharma.
+Research as of Nov 4, 2026, covering the core stack, capital and money rails, theaters, infrastructure, health and biotech, and the upstream funders and policy seats.
 
 ## Views
 
@@ -51,7 +51,7 @@ Health grades:
 
 ## Research merge
 
-`pipeline/merge_research.js` folds structured research extractions (one JSON file per batch of Notion pages) into `data/case.js`. It reconciles ids across batches, adds new systems and people edge types, numbers new threads, and merges market research, private marks, sources and brief additions:
+`pipeline/merge_research.js` folds structured research extractions (one JSON file per research batch) into `data/case.js`. It reconciles ids across batches, adds new systems and people edge types, numbers new threads, and merges market research, private marks, sources and brief additions:
 
 ```
 node pipeline/merge_research.js <extract-dir> --dry   # report only

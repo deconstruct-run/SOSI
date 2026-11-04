@@ -177,7 +177,7 @@ C.nodes.forEach(n => { if (n.k === 'person') { if (ROLE_OVERRIDE[n.id]) n.role =
 /* threads: drop unknown node ids */
 C.threads.forEach(t => { const bad = t.nodes.filter(x => !BY[x]); if (bad.length) log.notes.push(`thread ${t.id} unknown nodes ${bad.join(',')}`); t.nodes = t.nodes.filter(x => BY[x]); });
 C.timeline = uniq(C.timeline, x => x[0] + (x[1] || '').slice(0, 30)).sort((a, b) => String(a[0]).localeCompare(String(b[0])));
-C.meta.pages = ['EDGE: SOVEREIGN SI', 'DEEP DIVE', 'FINANCIAL LAYER', 'TETHER LAYER', 'AGENTIC LAYER', 'STRATOSPHERIC LAYER', 'EDGE: SOUTH AMERICA', 'SILICON LAYER', 'HORIZON', 'GOLDEN DOME', 'BIO LAYER', 'HEALTH DATA LAYER', 'BIODEFENSE LAYER', 'BODY NETWORK LAYER', 'PHARMA + LONGEVITY LAYER', 'IoB CLAIMS LEDGER'];
+delete C.meta.pages;
 C.claims = (C.claims || []).map(c => ({ ...c, nodes: (c.nodes || []).filter(x => BY[x]) }));
 
 console.log(JSON.stringify({ files: log.files, added: log.added, updated: log.updated, edges: log.edges, threads: log.threads, skipped: log.skippedEdges.length, totals: { nodes: C.nodes.length, people: C.nodes.filter(n => n.k === 'person').length, edges: C.edges.length, threads: C.threads.length, systems: C.systems.length } }, null, 1));

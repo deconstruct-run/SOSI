@@ -1295,7 +1295,7 @@ function renderBrief() {
   }
   keepPanes(sheet, () => {
     sheet.innerHTML = `<div class="ws">
-      ${wsHead('Brief', 'Sovereign SI', 'Findings, structure, control points, leverage, indicators and the claims ledger, from the EDGE: SOVEREIGN SI research pages.', [[NODES.length, 'entities'], [EDGES.length, 'relationships'], [THREADS.length, 'threads'], [Object.keys(MK).length, 'tickers']])}
+      ${wsHead('Brief', 'Sovereign SI', 'Findings, structure, control points, leverage, indicators and the claims ledger.', [[NODES.length, 'entities'], [EDGES.length, 'relationships'], [THREADS.length, 'threads'], [Object.keys(MK).length, 'tickers']])}
       ${wsTabs(BRS.tab, tabs, 'data-brtab')}
       ${body}
     </div>`;
