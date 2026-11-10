@@ -1,0 +1,16 @@
+{
+  "start": "2026-10-01",
+  "feed_window": 12,
+  "vectors": {
+    "capital-state": {"n": "01", "name": "Capital + state", "run": "B"},
+    "control": {"n": "02", "name": "Control", "run": "B"},
+    "operations": {"n": "03", "name": "Operations + theaters", "run": "A"},
+    "infrastructure": {"n": "04", "name": "Infrastructure", "run": "A"},
+    "health-biotech": {"n": "05", "name": "Health + biotech", "run": "A"},
+    "upstream": {"n": "U", "name": "Upstream", "run": "B"}
+  },
+  "patterns": ["anchor-contract", "capital-raise", "partnership", "acquisition", "deployment", "product-launch", "infrastructure-build", "earnings-print", "policy-rule", "legislation", "export-control", "listing-ban", "appointment", "oversight", "legal-action", "threat-event"],
+  "tiers": {"d": "Documented", "ar": "Active research", "c": "Contested", "i": "Interpretation"},
+  "read_opener": "The map reads ",
+  "banned": ["transmedia", "diversity, equity", "stakeholder capitalism", "equitable", "underrepresented", "marginalized", "inclusive", "belonging", "allyship", "lived experience", "notion.so", "notion.com", "field notes", " dei ", " esg "]
+}
